@@ -1,0 +1,40 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+						
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+						
+#Record	0	-				
+#Record	1	-				
+#Record	2	KillerHideAtk				
+#Record	3	-				
+#Record	4	KillerHideSum				
+#Record	5	-				
+#Record	6	-				
+#Record	7	-				
+#Record	8	KillerHideSum				
+#Record	9	-				
+#Record	10	-				
+#Record	11	KillerHideAtk				
+#Record	12	-				
+#Record	13	-				
+#Record	14	-				
+#Record	15	KillerHideSum				
+#Record	16	-				
+#Record	17	-				
+#Record	18	-				
+#Record	19	KillerHideAtk				
+#Record	20	-				
+#Record	21	KillerHideSum				
+						
+#Table	SkillChange			
+#ColumnType	Index	Index	String[33]	String[33]		
+#ColumnName	Condition	Value	From	To		
+#Record	OutOfRange	-	-	KillerHideAtk	
+						
+#End						

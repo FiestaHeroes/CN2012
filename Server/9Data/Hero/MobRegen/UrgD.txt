@@ -1,0 +1,139 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		UrgD_001	N	17333	10094	655	78	25										
+#record		UrgD_002	N	17230	11517	73	576	8										
+#record		UrgD_003	N	15591	10353	22	732	24										
+#record		UrgD_006	N	14342	7845	0	0	448										
+#record		UrgD_007	N	15902	7440	0	0	469										
+#record		UrgD_008	N	15639	6180	0	0	511										
+#record		UrgD_011	N	12365	9098	0	0	546										
+#record		UrgD_012	N	12945	10776	0	0	518										
+#record		UrgD_013	N	13519	12976	0	0	497										
+#record		UrgD_014	N	15017	13651	0	0	511										
+#record		UrgD_016	N	10618	13889	0	0	511										
+#record		UrgD_017	N	11389	13507	0	0	476										
+#record		UrgD_018	N	10479	11473	0	0	574										
+#record		UrgD_019	N	8150	13571	0	0	511										
+#record		UrgD_020	N	8693	13872	0	0	490										
+#record		UrgD_021	N	4003	17388	0	0	651										
+#record		UrgD_022	N	7956	10117	0	0	539										
+#record		UrgD_023	N	7665	10831	0	0	427										
+#record		UrgD_024	N	5348	13262	0	0	574										
+#record		UrgD_025	N	6078	13735	0	0	539										
+#record		UrgD_026	N	4455	17878	0	0	553										
+#record		UrgD_027	N	1543	13606	0	0	588										
+#record		UrgD_028	N	2970	13204	0	0	672										
+#record		UrgD_029	N	1516	11001	0	0	511										
+#record		UrgD_031	N	3735	10604	0	0	595										
+#record		UrgD_032	N	1814	9920	0	0	553										
+#record		UrgD_033	N	1740	7281	0	0	497										
+#record		UrgD_034	N	3351	7015	0	0	469										
+#record		UrgD_035	N	2385	6421	0	0	476										
+#record		UrgD_036	N	4384	9376	0	0	518										
+#record		UrgD_037	N	5408	10410	0	0	476										
+#record		UrgD_041	N	5470	7124	0	0	630										
+#record		UrgD_042	N	7706	7449	0	0	532										
+#record		UrgD_043	N	6903	4320	0	0	553										
+#record		UrgD_044	N	9680	5215	0	0	553										
+#record		UrgD_045	N	11798	7002	0	0	525										
+#record		UrgD_046	N	8482	7804	0	0	511										
+#record		UrgD_047	N	9183	4510	0	0	602										
+#record		UrgD_048	N	8759	2007	0	0	854										
+#record		UrgD_Mine1	N	11575	15703	0	0	350										
+#record		UrgD_Mine2	N	11814	15731	0	0	350										
+#record		UrgD_Mine3	N	8324	3992	0	0	350										
+#record		UrgD_Mine4	N	9062	16243	0	0	350										
+#record		UrgD_Mine5	N	7484	5095	0	0	350										
+#record		UrgD_Mine6	N	5140	15614	0	0	350										
+#record		UrgD_Mine7	N	3589	15854	0	0	350										
+#record		UrgD_Mine8	N	7801	5072	0	0	350										
+#record		UrgD_Mine9	N	7748	4343	0	0	350										
+#record		UrgD_Mine10	N	8404	5263	0	0	350										
+#record		P01	N	8913	1637	0	0	581										
+#record		UrgDGuard01	N	18048	10424	0	0	13										
+#record		UrgDGuard02	N	18044	11158	0	0	13										
+#record		UrgD_C1_01	N	7498	1115	0	0	167										
+#record		UrgD_C2_01	N	8008	2986	0	0	202										
+#record		UrgD_C3_01	N	6980	4415	0	0	188										
+#record		UrgD_C4_01	N	8913	1637	0	0	209										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		UrgD_001	BabyLeipoonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_002	BabyLeipoonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_003	BabyLeipoonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_006	PixyA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_007	PixyA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_008	PixyA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_011	GiantPixyA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_012	GiantPixyA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_013	GiantPixyA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_014	GiantPixyA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_016	ArchonJuinorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_017	ArchonJuinorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_018	ArchonJuinorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_019	ArchonJuinorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_020	ArchonJuinorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_021	ArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_022	ArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_023	ArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_024	ArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_025	ArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_026	OldArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_027	OldArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_028	OldArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_029	OldArchonA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_031	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_031	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_032	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_032	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_033	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_033	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_034	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_034	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_035	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_035	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_036	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_036	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_037	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_037	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_041	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_042	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_043	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_044	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_045	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_046	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_047	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_048	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine1	MINE4	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine2	MINE4	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine3	MINE4	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine4	MINE4	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine5	MINE4	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine6	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine7	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine8	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine9	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		UrgD_Mine10	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		P01	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		UrgDGuard01	GuardMihael02	1	0	45	28	63	-18	28	-9	37	18	54	23	63	0	
+#record		UrgDGuard02	GuardMihael02	1	0	45	28	63	-18	28	-9	37	18	54	23	63	0	
+#record		UrgD_C1_01	LegendaryTree	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		UrgD_C2_01	LegendaryTree	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		UrgD_C3_01	LegendaryTree	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		UrgD_C4_01	LegendaryTree	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+																		
+#end																		

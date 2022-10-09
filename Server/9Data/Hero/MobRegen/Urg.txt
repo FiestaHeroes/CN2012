@@ -1,0 +1,256 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		Urg_001	N	2732	10483	0	0	350										
+#record		Urg_002	N	1574	7684	0	0	265										
+#record		Urg_003	N	2067	8256	0	0	350										
+#record		Urg_004	N	2423	8892	0	0	293										
+#record		Urg_005	N	3696	4469	0	0	314										
+#record		Urg_006	N	3167	3753	0	0	293										
+#record		Urg_007	N	2264	4411	0	0	279										
+#record		Urg_008	N	3342	3412	0	0	307										
+#record		Urg_009	N	1335	6088	0	0	350										
+#record		Urg_010	N	2652	5274	449	150	41										
+#record		Urg_011	N	1838	4264	0	0	350										
+#record		Urg_012	N	2447	3229	0	0	350										
+#record		Urg_013	N	2260	2677	0	0	350										
+#record		Urg_014	N	1422	2399	145	582	57										
+#record		Urg_015	N	1785	3491	75	495	0										
+#record		Urg_016	N	5754	3875	0	0	230										
+#record		Urg_017	N	5257	4361	0	0	279										
+#record		Urg_018	N	6937	3597	0	0	286										
+#record		Urg_019	N	6453	3674	0	0	272										
+#record		Urg_020	N	4685	4460	403	153	0										
+#record		Urg_021	N	5931	2946	0	0	350										
+#record		Urg_022	N	5771	2338	0	0	293										
+#record		Urg_023	N	5623	1822	332	179	-9										
+#record		Urg_024	N	6968	2862	332	110	24										
+#record		Urg_025	N	4794	1405	148	381	55										
+#record		Urg_026	N	4942	1046	0	0	350										
+#record		Urg_027	N	6074	940	419	150	0										
+#record		Urg_028	N	7104	1100	357	142	-12										
+#record		Urg_029	N	8069	1361	0	0	293										
+#record		Urg_030	N	9403	2221	0	0	350										
+#record		Urg_031	N	8512	4506	96	389	0										
+#record		Urg_032	N	8481	5441	0	0	251										
+#record		Urg_033	N	8873	5424	0	0	350										
+#record		Urg_034	N	8750	3198	130	628	45										
+#record		Urg_035	N	9548	3617	0	0	350										
+#record		Urg_036	N	10301	4263	0	0	350										
+#record		Urg_037	N	9697	6154	0	0	265										
+#record		Urg_038	N	9846	6684	0	0	251										
+#record		Urg_039	N	9847	4582	0	0	350										
+#record		Urg_040	N	10421	5193	0	0	350										
+#record		Urg_041	N	10441	9049	0	0	553										
+#record		Urg_042	N	10958	8221	125	674	-11										
+#record		Urg_043	N	9268	9143	0	0	244										
+#record		Urg_044	N	8789	8514	77	424	54										
+#record		Urg_045	N	9769	10707	0	0	307										
+#record		Urg_046	N	9757	9596	0	0	350										
+#record		Urg_047	N	10969	9416	0	0	350										
+#record		Urg_048	N	10928	9962	0	0	350										
+#record		Urg_049	N	9097	10180	475	78	16										
+#record		Urg_050	N	8971	10907	497	79	22										
+#record		FLOWER1	N	2509	4740	0	0	594										
+#record		FLOWER2	N	2511	3736	0	0	573										
+#record		FLOWER3	N	2917	4255	0	0	629										
+#record		FLOWER4	N	2400	3417	0	0	636										
+#record		FLOWER5	N	9500	4460	0	0	790										
+#record		FLOWER6	N	9182	4896	0	0	846										
+#record		FLOWER7	N	9641	4973	0	0	853										
+#record		FLOWER8	N	10459	9222	0	0	741										
+#record		FLOWER9	N	10273	9735	0	0	832										
+#record		FLOWER10	N	10056	10140	0	0	748										
+#record		HERB1	N	9604	4653	0	0	944										
+#record		HERB2	N	10244	9807	0	0	972										
+#record		WOOD6	N	2753	3991	0	0	923										
+#record		WOOD7	N	10217	9715	0	0	1049										
+#record		MUSHROOM6	N	9535	5098	0	0	986										
+#record		MUSHROOM7	N	8344	10752	0	0	671										
+#record		UrgP001	N	5583	4235	3296	94	15										
+#record		UrgP002	N	10558	8178	364	2383	0										
+#record		UrgGuard01	N	4907	7658	0	0	13										
+#record		UrgGuard02	N	4702	7445	0	0	13										
+#record		UrgGuard03	N	5036	5344	0	0	13										
+#record		UrgGuard04	N	5090	5245	0	0	13										
+#record		UrgGuard05	N	7794	4822	0	0	13										
+#record		UrgGuard06	N	7921	4953	0	0	13										
+#record		UrgGuard07	N	2345	11150	0	0	13										
+#record		UrgGuard08	N	7137	5764	0	0	13										
+#record		UrgGuard09	N	10916	10703	0	0	13										
+#record		Urg_H1_01	N	1518	8765	0	0	13										
+#record		Urg_H1_02	N	1975	6286	0	0	41										
+#record		Urg_H1_03	N	2449	2642	0	0	13										
+#record		Urg_H1_04	N	4911	4307	0	0	33										
+#record		Urg_H1_05	N	4886	1588	0	0	34										
+#record		Urg_H1_06	N	8315	1391	0	0	20										
+#record		Urg_H1_07	N	10549	4255	0	0	41										
+#record		Urg_H1_08	N	8853	7338	41	25	15										
+#record		Urg_H1_09	N	11017	8952	0	0	47										
+#record		Urg_H2_01	N	2460	8637	0	0	13										
+#record		Urg_H2_02	N	1750	5651	0	0	41										
+#record		Urg_H2_03	N	1894	2359	0	0	48										
+#record		Urg_H2_04	N	5554	4053	0	0	19										
+#record		Urg_H2_05	N	6254	871	0	0	62										
+#record		Urg_H2_06	N	8261	1891	0	0	20										
+#record		Urg_H2_07	N	9892	3470	0	0	27										
+#record		Urg_H2_08	N	9298	5867	45	39	15										
+#record		Urg_H2_09	N	9999	8789	0	0	26										
+#record		Urg_H3_01	N	1923	8352	0	0	34										
+#record		Urg_H3_02	N	2366	5594	0	0	41										
+#record		Urg_H3_03	N	1773	3392	0	0	41										
+#record		Urg_H3_04	N	5382	4421	0	0	12										
+#record		Urg_H3_05	N	5737	2069	0	0	27										
+#record		Urg_H3_06	N	9735	2378	0	0	41										
+#record		Urg_H3_07	N	9705	4459	0	0	41										
+#record		Urg_H3_08	N	9741	6527	34	28	15										
+#record		Urg_H3_09	N	9684	9404	0	0	26										
+#record		Urg_H4_01	N	1541	7512	0	0	41										
+#record		Urg_H4_02	N	1349	6177	0	0	27										
+#record		Urg_H4_03	N	1407	2535	0	0	34										
+#record		Urg_H4_04	N	4492	4514	0	0	19										
+#record		Urg_H4_05	N	5483	1162	0	0	55										
+#record		Urg_H4_06	N	9493	1930	0	0	34										
+#record		Urg_H4_07	N	10054	4036	0	0	41										
+#record		Urg_H4_08	N	9679	7191	42	29	15										
+#record		Urg_H4_09	N	10893	8502	0	0	68										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		Urg_001	BabyLeipoon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_002	BabyLeipoon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_003	BabyLeipoon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_004	BabyLeipoon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_005	BabyLeipoon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_006	Pixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_007	Pixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_008	Pixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_009	Pixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_010	Pixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_011	GiantPixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_012	GiantPixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_013	GiantPixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_014	GiantPixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_015	GiantPixy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_016	ArchonJuinor	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_017	ArchonJuinor	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_018	ArchonJuinor	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_019	ArchonJuinor	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_020	ArchonJuinor	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_021	Archon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_022	Archon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_023	Archon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_024	Archon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_025	Archon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_026	OldArchon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_027	OldArchon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_028	OldArchon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_029	OldArchon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_030	OldArchon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_031	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_031	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_032	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_032	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_033	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_033	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_034	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_034	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_035	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_035	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_036	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_036	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_037	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_037	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_038	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_038	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_039	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_039	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_040	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_040	Orc	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_041	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_042	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_043	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_044	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_045	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_046	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_047	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_048	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_049	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Urg_050	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER1	FLOWER6	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER2	FLOWER6	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER3	FLOWER6	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER4	FLOWER6	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER5	FLOWER6	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER6	FLOWER7	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER7	FLOWER7	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER8	FLOWER7	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER9	FLOWER7	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER10	FLOWER7	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		HERB1	HERB5	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		HERB2	HERB6	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		WOOD6	WOOD6	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		WOOD7	WOOD7	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		MUSHROOM6	MUSHROOM6	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		MUSHROOM7	MUSHROOM7	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		UrgP001	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		UrgP002	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		UrgGuard01	GuardMihael02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		UrgGuard02	GuardMihael02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		UrgGuard03	GuardMihael02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		UrgGuard04	GuardMihael02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		UrgGuard05	GuardMihael02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		UrgGuard06	GuardMihael02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		UrgGuard07	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		UrgGuard08	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		UrgGuard09	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		Urg_H1_01	MarvellBook02	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H1_02	MarvellBook03	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H1_03	MarvellBook04	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H1_04	MarvellBook05	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H1_05	MarvellBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H1_06	BlueArchon	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H1_07	MarvellBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H1_08	MarvellBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H1_09	MarvellBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_01	MarvellBook02	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_02	MarvellBook03	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_03	MarvellBook04	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_04	MarvellBook05	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_05	MarvellBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_06	BlueArchon	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_07	MarvellBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_08	MarvellBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H2_09	MarvellBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_01	MarvellBook02	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_02	MarvellBook03	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_03	MarvellBook04	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_04	MarvellBook05	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_05	MarvellBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_06	BlueArchon	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_07	MarvellBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_08	MarvellBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H3_09	MarvellBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_01	MarvellBook02	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_02	MarvellBook03	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_03	MarvellBook04	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_04	MarvellBook05	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_05	MarvellBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_06	BlueArchon	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_07	MarvellBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_08	MarvellBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Urg_H4_09	MarvellBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+																		
+#end																		

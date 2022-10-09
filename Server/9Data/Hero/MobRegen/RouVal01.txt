@@ -1,0 +1,484 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		RouVal01_001	N	14159	4170	0	0	300										
+#record		RouVal01_002	N	11911	4615	0	0	300										
+#record		RouVal01_003	N	11546	5734	0	0	300										
+#record		RouVal01_004	N	10628	4838	0	0	300										
+#record		RouVal01_005	N	12091	3962	0	0	300										
+#record		RouVal01_006	N	10124	4614	0	0	300										
+#record		RouVal01_007	N	14112	4731	0	0	300										
+#record		RouVal01_008	N	14699	5491	0	0	300										
+#record		RouVal01_009	N	15044	5987	0	0	300										
+#record		RouVal01_010	N	11011	5396	0	0	300										
+#record		RouVal01_011	N	14906	4398	0	0	300										
+#record		RouVal01_012	N	15780	5965	0	0	300										
+#record		RouVal01_013	N	15477	4355	0	0	300										
+#record		RouVal01_014	N	10767	4190	0	0	300										
+#record		RouVal01_015	N	11336	4563	0	0	300										
+#record		RouVal01_016	N	11058	3772	0	0	300										
+#record		RouVal01_017	N	16365	5808	0	0	300										
+#record		RouVal01_018	N	15460	5342	0	0	300										
+#record		RouVal01_019	N	15822	4906	0	0	300										
+#record		RouVal01_020	N	10175	3663	0	0	300										
+#record		RouVal01_021	N	18291	5864	0	0	300										
+#record		RouVal01_022	N	8896	5543	0	0	300										
+#record		RouVal01_023	N	8520	6055	0	0	300										
+#record		RouVal01_024	N	9418	4281	0	0	300										
+#record		RouVal01_025	N	9231	3710	0	0	300										
+#record		RouVal01_026	N	8985	4777	0	0	300										
+#record		RouVal01_027	N	16393	4387	0	0	300										
+#record		RouVal01_028	N	16763	4933	0	0	300										
+#record		RouVal01_029	N	17619	5836	0	0	300										
+#record		RouVal01_030	N	17129	4530	0	0	300										
+#record		RouVal01_031	N	17747	4515	0	0	300										
+#record		RouVal01_032	N	17370	4045	0	0	300										
+#record		RouVal01_033	N	18040	4011	0	0	300										
+#record		RouVal01_034	N	18162	5288	0	0	300										
+#record		RouVal01_035	N	18742	5511	0	0	300										
+#record		RouVal01_036	N	7604	5178	0	0	300										
+#record		RouVal01_037	N	8031	4442	0	0	300										
+#record		RouVal01_038	N	8527	3379	0	0	300										
+#record		RouVal01_039	N	8480	4207	0	0	300										
+#record		RouVal01_040	N	8007	5282	0	0	300										
+#record		RouVal01_041	N	18614	4868	0	0	50										
+#record		RouVal01_042	N	5849	3361	0	0	50										
+#record		RouVal01_043	N	6244	3297	0	0	50										
+#record		RouVal01_044	N	7502	4159	0	0	50										
+#record		RouVal01_045	N	7235	2718	0	0	50										
+#record		RouVal01_046	N	6628	2795	0	0	50										
+#record		RouVal01_047	N	6414	3908	0	0	50										
+#record		RouVal01_048	N	18928	3585	0	0	50										
+#record		RouVal01_049	N	6686	4851	0	0	50										
+#record		RouVal01_050	N	19487	4186	0	0	50										
+#record		RouVal01_051	N	7353	3204	0	0	50										
+#record		RouVal01_052	N	19658	3731	0	0	50										
+#record		RouVal01_053	N	19483	3361	0	0	50										
+#record		RouVal01_054	N	18458	3842	0	0	50										
+#record		RouVal01_055	N	7681	3569	0	0	50										
+#record		RouVal01_056	N	6309	4490	0	0	50										
+#record		RouVal01_057	N	19071	3932	0	0	50										
+#record		RouVal01_058	N	7771	2884	0	0	50										
+#record		RouVal01_059	N	19100	4573	0	0	50										
+#record		RouVal01_060	N	5943	3847	0	0	50										
+#record		RouVal01_061	N	13989	11497	0	0	300										
+#record		RouVal01_062	N	12419	10129	0	0	300										
+#record		RouVal01_063	N	12023	11413	0	0	300										
+#record		RouVal01_064	N	11826	13187	0	0	300										
+#record		RouVal01_065	N	12082	13800	0	0	300										
+#record		RouVal01_066	N	13307	13555	0	0	300										
+#record		RouVal01_067	N	13743	12712	0	0	300										
+#record		RouVal01_068	N	13544	10752	0	0	300										
+#record		RouVal01_069	N	14022	9847	0	0	300										
+#record		RouVal01_070	N	11519	12607	0	0	300										
+#record		RouVal01_071	N	11686	14314	0	0	300										
+#record		RouVal01_072	N	14865	11134	0	0	300										
+#record		RouVal01_073	N	13667	13954	0	0	300										
+#record		RouVal01_074	N	14262	10662	0	0	300										
+#record		RouVal01_075	N	14159	13228	0	0	300										
+#record		RouVal01_076	N	11279	13569	0	0	300										
+#record		RouVal01_077	N	10872	12801	0	0	300										
+#record		RouVal01_078	N	11871	10634	0	0	300										
+#record		RouVal01_079	N	11373	11104	0	0	300										
+#record		RouVal01_080	N	14538	9953	0	0	300										
+#record		RouVal01_081	N	11910	10101	0	0	50										
+#record		RouVal01_082	N	10452	11208	0	0	50										
+#record		RouVal01_083	N	10788	11029	0	0	50										
+#record		RouVal01_084	N	15104	10000	0	0	50										
+#record		RouVal01_085	N	14895	10555	0	0	50										
+#record		RouVal01_086	N	15731	10745	0	0	50										
+#record		RouVal01_087	N	16554	11666	0	0	50										
+#record		RouVal01_088	N	13879	14466	0	0	50										
+#record		RouVal01_089	N	10606	14079	0	0	50										
+#record		RouVal01_090	N	14115	13708	0	0	50										
+#record		RouVal01_091	N	16531	11148	0	0	50										
+#record		RouVal01_092	N	10840	13332	0	0	50										
+#record		RouVal01_093	N	10060	13934	0	0	50										
+#record		RouVal01_094	N	14394	14605	0	0	50										
+#record		RouVal01_095	N	9783	13264	0	0	50										
+#record		RouVal01_096	N	10349	13211	0	0	50										
+#record		RouVal01_097	N	15968	11313	0	0	50										
+#record		RouVal01_098	N	9649	12623	0	0	50										
+#record		RouVal01_099	N	11318	10160	0	0	50										
+#record		RouVal01_100	N	10179	12632	0	0	50										
+#record		RouVal01_101	N	12910	17507	0	0	300										
+#record		RouVal01_102	N	14125	17509	0	0	300										
+#record		RouVal01_103	N	13473	17074	0	0	300										
+#record		RouVal01_104	N	12665	18200	0	0	300										
+#record		RouVal01_105	N	12337	19439	0	0	300										
+#record		RouVal01_106	N	17905	17464	0	0	300										
+#record		RouVal01_107	N	18025	18108	0	0	300										
+#record		RouVal01_108	N	17644	19318	0	0	300										
+#record		RouVal01_109	N	17420	20158	0	0	300										
+#record		RouVal01_110	N	17358	20858	0	0	300										
+#record		RouVal01_111	N	17909	20941	0	0	300										
+#record		RouVal01_112	N	12840	18953	0	0	300										
+#record		RouVal01_113	N	19161	18738	0	0	300										
+#record		RouVal01_114	N	18112	19923	0	0	300										
+#record		RouVal01_115	N	18681	18922	0	0	300										
+#record		RouVal01_116	N	13823	18019	0	0	300										
+#record		RouVal01_117	N	13451	19032	0	0	300										
+#record		RouVal01_118	N	13378	19628	0	0	300										
+#record		RouVal01_119	N	13926	20915	0	0	300										
+#record		RouVal01_120	N	13226	20807	0	0	300										
+#record		RouVal01_121	N	10440	20164	0	0	300										
+#record		RouVal01_122	N	19299	20851	0	0	300										
+#record		RouVal01_123	N	8520	17621	0	0	300										
+#record		RouVal01_124	N	9804	17733	0	0	300										
+#record		RouVal01_125	N	9268	19716	0	0	300										
+#record		RouVal01_126	N	9085	17910	0	0	300										
+#record		RouVal01_127	N	19330	19480	0	0	300										
+#record		RouVal01_128	N	9897	19724	0	0	300										
+#record		RouVal01_129	N	19889	20076	0	0	300										
+#record		RouVal01_130	N	18764	20519	0	0	300										
+#record		RouVal01_131	N	5649	19925	0	0	50										
+#record		RouVal01_132	N	5869	20560	0	0	50										
+#record		RouVal01_133	N	5244	21179	0	0	50										
+#record		RouVal01_134	N	5962	21164	0	0	50										
+#record		RouVal01_135	N	6853	19972	0	0	50										
+#record		RouVal01_136	N	6306	19382	0	0	50										
+#record		RouVal01_137	N	6461	20585	0	0	50										
+#record		RouVal01_138	N	5365	20496	0	0	50										
+#record		RouVal01_139	N	7275	18411	0	0	50										
+#record		RouVal01_140	N	7869	18876	0	0	50										
+#record		RouVal01_141	N	9944	20689	0	0	50										
+#record		RouVal01_142	N	8801	16849	0	0	50										
+#record		RouVal01_143	N	19995	21173	0	0	50										
+#record		RouVal01_144	N	20636	20431	0	0	50										
+#record		RouVal01_145	N	20595	21445	0	0	50										
+#record		RouVal01_146	N	20974	20803	0	0	50										
+#record		RouVal01_147	N	19890	19328	0	0	50										
+#record		RouVal01_148	N	18778	21031	0	0	50										
+#record		RouVal01_149	N	20301	19821	0	0	50										
+#record		RouVal01_150	N	19438	21242	0	0	50										
+#record		RouVal01_151	N	6805	14895	0	0	300										
+#record		RouVal01_152	N	6412	15241	0	0	300										
+#record		RouVal01_153	N	4620	13411	0	0	300										
+#record		RouVal01_154	N	4501	12908	0	0	300										
+#record		RouVal01_155	N	18446	14657	0	0	300										
+#record		RouVal01_156	N	18332	13955	0	0	300										
+#record		RouVal01_157	N	18760	14009	0	0	300										
+#record		RouVal01_158	N	19527	15185	0	0	300										
+#record		RouVal01_159	N	18915	15017	0	0	300										
+#record		RouVal01_160	N	5942	15047	0	0	300										
+#record		RouVal01_161	N	4830	12033	0	0	300										
+#record		RouVal01_162	N	4496	10371	0	0	300										
+#record		RouVal01_163	N	4526	11415	0	0	300										
+#record		RouVal01_164	N	5012	12567	0	0	300										
+#record		RouVal01_165	N	4680	9802	0	0	300										
+#record		RouVal01_166	N	20288	12690	0	0	300										
+#record		RouVal01_167	N	20458	13145	0	0	300										
+#record		RouVal01_168	N	19127	12696	0	0	300										
+#record		RouVal01_169	N	18921	13156	0	0	300										
+#record		RouVal01_170	N	20811	15317	0	0	300										
+#record		RouVal01_171	N	20749	10008	0	0	300										
+#record		RouVal01_172	N	21248	10222	0	0	300										
+#record		RouVal01_173	N	18425	8959	0	0	300										
+#record		RouVal01_174	N	21200	8790	0	0	300										
+#record		RouVal01_175	N	21204	8209	0	0	300										
+#record		RouVal01_176	N	6899	11673	0	0	300										
+#record		RouVal01_177	N	7270	9933	0	0	300										
+#record		RouVal01_178	N	6599	9066	0	0	300										
+#record		RouVal01_179	N	7129	9318	0	0	300										
+#record		RouVal01_180	N	6643	12184	0	0	300										
+#record		FLOWER1	N	13395	4663	0	0	300										
+#record		FLOWER2	N	12337	12424	0	0	300										
+#record		FLOWER3	N	13089	4091	0	0	300										
+#record		FLOWER4	N	12878	12614	0	0	300										
+#record		FLOWER5	N	13121	12047	0	0	300										
+#record		FLOWER6	N	16649	17505	0	0	300										
+#record		FLOWER7	N	15315	17218	0	0	300										
+#record		FLOWER8	N	16374	17238	0	0	300										
+#record		FLOWER9	N	12818	4706	0	0	300										
+#record		FLOWER10	N	15891	17471	0	0	300										
+#record		HERB1	N	13023	4404	0	0	643										
+#record		HERB2	N	13836	12338	0	0	692										
+#record		WOOD4	N	13070	4491	0	0	552										
+#record		WOOD5	N	11943	12086	0	0	629										
+#record		MUSHROOM4	N	12839	13246	0	0	720										
+#record		MUSHROOM5	N	15938	17412	0	0	566										
+#record		RouVal01AreaPbox01	N	12597	4759	5748	439	-5										
+#record		RouVal01AreaPbox02	N	12747	12198	1458	2556	-62										
+#record		RouVal01Guard01	N	13243	7695	0	0	11										
+#record		RouVal01Guard02	N	14774	17305	0	0	10										
+#record		RouVal01_H1_01	N	16450	4273	0	0	50										
+#record		RouVal01_H1_02	N	8882	4360	0	0	50										
+#record		RouVal01_H1_03	N	18476	5502	0	0	50										
+#record		RouVal01_H1_04	N	7882	3506	0	0	50										
+#record		RouVal01_H1_05	N	13514	10598	0	0	50										
+#record		RouVal01_H1_06	N	13235	13209	0	0	50										
+#record		RouVal01_H1_07	N	10170	13775	0	0	50										
+#record		RouVal01_H1_08	N	15550	12136	0	0	50										
+#record		RouVal01_H1_09	N	17248	19952	0	0	50										
+#record		RouVal01_H1_10	N	12896	18697	0	0	50										
+#record		RouVal01_H1_11	N	13020	20777	0	0	50										
+#record		RouVal01_H1_12	N	19181	18878	0	0	50										
+#record		RouVal01_H1_13	N	10278	20012	0	0	50										
+#record		RouVal01_H1_14	N	19603	20907	0	0	50										
+#record		RouVal01_H1_15	N	21190	9055	0	0	50										
+#record		RouVal01_H1_16	N	6954	9326	0	0	61										
+#record		RouVal01_H2_01	N	17495	4428	0	0	50										
+#record		RouVal01_H2_02	N	8578	5670	0	0	50										
+#record		RouVal01_H2_03	N	18657	4523	0	0	50										
+#record		RouVal01_H2_04	N	7694	4422	0	0	50										
+#record		RouVal01_H2_05	N	14090	11322	0	0	50										
+#record		RouVal01_H2_06	N	12051	13141	0	0	50										
+#record		RouVal01_H2_07	N	9809	12571	0	0	50										
+#record		RouVal01_H2_08	N	16208	10883	0	0	50										
+#record		RouVal01_H2_09	N	16373	19628	0	0	50										
+#record		RouVal01_H2_10	N	13434	17660	0	0	50										
+#record		RouVal01_H2_11	N	13803	20625	0	0	50										
+#record		RouVal01_H2_12	N	18343	19191	0	0	50										
+#record		RouVal01_H2_13	N	9171	19783	0	0	50										
+#record		RouVal01_H2_14	N	19884	20081	0	0	50										
+#record		RouVal01_H2_15	N	21056	10201	0	0	50										
+#record		RouVal01_H2_16	N	6718	11364	0	0	61										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		RouVal01_001	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_002	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_003	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_004	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_005	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_006	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_007	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_008	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_009	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_010	ScareImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_011	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_012	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_013	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_014	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_015	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_016	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_017	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_018	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_019	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_020	BoneImp	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_021	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_022	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_023	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_024	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_025	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_026	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_027	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_028	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_029	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_030	JokeKebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_031	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_032	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_033	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_034	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_035	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_036	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_037	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_038	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_039	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_040	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_041	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_042	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_043	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_044	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_045	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_046	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_047	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_048	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_049	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_050	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_051	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_052	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_053	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_054	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_055	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_056	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_057	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_058	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_059	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_060	Prock	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_061	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_062	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_063	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_064	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_065	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_066	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_067	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_068	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_069	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_070	SmartPhino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_071	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_072	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_073	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_074	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_075	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_076	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_077	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_078	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_079	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_080	Phino	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_081	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_082	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_083	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_084	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_085	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_086	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_087	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_088	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_089	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_090	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_091	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_092	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_093	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_094	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_095	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_096	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_097	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_098	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_099	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_100	PhinoFlie	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_101	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_102	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_103	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_104	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_105	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_106	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_107	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_108	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_109	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_110	Ratman	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_111	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_112	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_113	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_114	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_115	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_116	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_117	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_118	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_119	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_120	RatmanKnight	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01_121	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_122	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_123	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_124	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_125	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_126	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_127	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_128	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_129	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_130	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_131	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_132	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_133	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_134	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_135	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_136	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_137	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_138	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_139	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_140	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_141	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_142	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_143	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_144	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_145	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_146	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_147	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_148	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_149	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_150	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_151	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_152	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_153	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_154	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_155	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_156	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_157	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_158	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_159	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_160	SubBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_161	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_162	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_163	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_164	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_165	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_166	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_167	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_168	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_169	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_170	Boar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_171	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_172	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_173	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_174	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_175	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_176	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_177	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_178	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_179	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouVal01_180	SharpBoar	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		FLOWER1	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER2	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER3	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER4	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER5	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER6	FLOWER4	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER7	FLOWER4	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER8	FLOWER4	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER9	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER10	FLOWER4	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		HERB1	HERB3	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		HERB2	HERB4	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		WOOD4	WOOD4	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		WOOD5	WOOD5	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		MUSHROOM4	MUSHROOM4	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		MUSHROOM5	MUSHROOM5	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouVal01AreaPbox01	PresentBox5	2	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		RouVal01AreaPbox02	PresentBox6	2	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		RouVal01Guard01	GuardLue00	1	0	8	5	11	-3	5	-2	7	3	9	4	11	0	
+#record		RouVal01Guard02	GuardLue00	1	0	8	5	11	-3	5	-2	7	3	9	4	11	0	
+#record		RouVal01_H1_01	CaveKebing	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_02	CaveKebing	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_03	KebingSpeeder	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_04	KebingSpeeder	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_05	AlkemisBook02	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_06	AlkemisBook02	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_07	BigPhinoFlie	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_08	BigPhinoFlie	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_09	RatmanFighter	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_10	RatmanFighter	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H1_11	Q_Rat_EL_Knight	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H1_12	Q_Rat_EL_Knight	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H1_13	HobFighter	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H1_14	HobFighter	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H1_15	AlkemisBook03	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H1_16	AlkemisBook03	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H2_01	CaveKebing	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_02	CaveKebing	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_03	KebingSpeeder	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_04	KebingSpeeder	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_05	AlkemisBook02	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_06	AlkemisBook02	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_07	BigPhinoFlie	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_08	BigPhinoFlie	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_09	RatmanFighter	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_10	RatmanFighter	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouVal01_H2_11	Q_Rat_EL_Knight	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H2_12	Q_Rat_EL_Knight	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H2_13	HobFighter	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H2_14	HobFighter	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H2_15	AlkemisBook03	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouVal01_H2_16	AlkemisBook03	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+																		
+#end																		

@@ -1,0 +1,148 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+																																		
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	HellasSword	GedSword	RaxesSword	MetatronSword	-	-																											
+#Record	1	ValorSword	GorgonSword	GabestoSword	AstarothSword	-	-																											
+#Record	2	ValorAxe	GorgonAxe	AlastoAxe	AstarothAxe	-	-																											
+																																		
+#Table	Tab01	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	RedcliffBoots	RedcliffHelmet	RedcliffPants	RedcliffArmor	-	-																											
+#Record	1	ElishaBoots	ElishaHelmet	ElishaPants	ElishaArmor	KatiaesShield	-																											
+#Record	2	BasilersBoots	BasilersHelmet	BasilersPants	BasilersArmor	-	-																											
+#Record	3	BasileiaBoots	BasileiaHelmet	BasileiaPants	BasileiaArmor	GloriaShield	-																											
+#Record	4	ZakarBoots	ZakarHelmet	ZakarPants	ZakarArmor	-	-																											
+#Record	5	RaxesBoots	RaxesHelmet	RaxesPants	RaxesArmor	GabeonShield	-																											
+#Record	6	AstarothBoots	AstarothHelmet	AstarothPants	AstarothArmor	-	-																											
+#Record	7	MetatronBoots	MetatronHelmet	MetatronPants	MetatronArmor	MetatronShield	-																											
+																																		
+#Table	Tab02	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	HolyMace	RudicMace	DumbleMace	DynamisMace	-	-																											
+#Record	1	HolyHammer	BillholyshionHammer	CrageaHammer	SeraphimHammer	-	-																											
+																																		
+#Table	Tab03	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	FloofBoots	FloofHelmet	FloofPants	FloofArmor	MajesticShield	-																											
+#Record	1	EleazarBoots	EleazarHelmet	EleazarPants	EleazarArmor	MajesticShield	-																											
+#Record	2	HolyshionBoots	HolyshionHelmet	HolyshionPants	HolyshionArmor	HolyousShield	-																											
+#Record	3	RudicBoots	RudicHelmet	RudicPants	RudicArmor	HolyousShield	-																											
+#Record	4	KhrajeBoots	KhrajeHelmet	KhrajePants	KhrajeArmor	DumbligaShield	-																											
+#Record	5	DumblinBoots	DumblinHelmet	DumblinPants	DumblinArmor	DumbligaShield	-																											
+#Record	6	DynamisBoots	DynamisHelmet	DynamisPants	DynamisArmor	DynamisShield	-																											
+#Record	7	SeraphimBoots	SeraphimHelmet	SeraphimPants	SeraphimArmor	DynamisShield	-																											
+																																		
+#Table	Tab04	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	ShadowBow	PakahBow	DarkshuterBow	ResberkBow	-	-																											
+#Record	1	ShadowCrossBow	ShebaCrossBow	MoottalisCrossBow	ZephyrosCrossBow	-	-																											
+																																		
+#Table	Tab05	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	OhelBoots	OhelHat	OhelPants	OhelArmor	-	-																											
+#Record	1	GreenStormBoots	GreenStormHelmet	GreenStormPants	GreenStormArmor	-	-																											
+#Record	2	TanishuterBoots	TanishuterHat	TanishuterPants	TanishuterArmor	-	-																											
+#Record	3	MenesBoots	MenesHat	MenesPants	MenesArmor	-	-																											
+#Record	4	DarkshuterBoots	DarkshuterHat	DarkshuterPants	DarkshuterArmor	-	-																											
+#Record	5	MoottalisBoots	MoottalisHat	MoottalisPants	MoottalisArmor	-	-																											
+#Record	6	ResberkBoots	ResberkHat	ResberkPants	ResberkShirt	-	-																											
+#Record	7	ZephyrosBoots	ZephyrosHat	ZephyrosPants	ZephyrosShirt	-	-																											
+																																		
+#Table	Tab06	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	IllusionStaff	ManoahStaff	NefertiStaff	MidgardStaff	-	-																											
+#Record	1	IllusionWand	DinahWand	ChamorWand	LeonarWand	-	-																											
+																																		
+#Table	Tab07	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	MarineBloodBoots	MarineBloodHat	MarineBloodPants	MarineBloodShirt	-	-																											
+#Record	1	EliBoots	EliHat	EliPants	EliShirt	-	-																											
+#Record	2	ShebetBoots	ShebetHat	ShebetPants	ShebetShirt	-	-																											
+#Record	3	XharBoots	XharHat	XharPants	XharShirt	-	-																											
+#Record	4	NefertiBoots	NefertiHat	NefertiPants	NefertiShirt	-	-																											
+#Record	5	ChamorBoots	ChamorHat	ChamorPants	ChamorShirt	-	-																											
+#Record	6	LeonarBoots	LeonarHat	LeonarPants	LeonarShirt	-	-																											
+#Record	7	MidgardBoots	MidgardHat	MidgardPants	MidgardShirt	-	-																											
+																																		
+#Table	Tab08	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	HellClaw	DistClaw	RodClaw	AbyssClaw	-	-																											
+#Record	1	HellDoubleSword	DistDoubleSword	RodDoubleSword	MartialartsDoubleSword	-	-																											
+																																		
+#Table	Tab09	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	LuciusBoots	LuciusGoggles	LuciusPants	LuciusArmor	-	-																											
+#Record	1	CaligoBoots	CaligoHood	CaligoPants	CaligoArmor	-	-																											
+#Record	2	RisioBoots	RisioGoggles	RisioPants	RisioArmor	-	-																											
+#Record	3	MistBoots	MistHood	MistPants	MistArmor	-	-																											
+#Record	4	MagaBoots	MagaGoggles	MagaPants	MagaArmor	-	-																											
+#Record	5	ViktorBoots	ViktorHood	ViktorPants	ViktorArmor	-	-																											
+#Record	6	MartialartsBoots	MartialartsGoggles	MartialartsPants	MartialartsArmor	-	-																											
+#Record	7	AbyssBoots	AbyssHood	AbyssPants	AbyssArmor	-	-																											
+																																		
+#Table	Tab10	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	-	-	-	-	-	-																											
+#Record	1	-	-	-	-	-	-																											
+																																		
+#End																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+	0																																	
+	1																																	
+	2																																	
+	3																																	

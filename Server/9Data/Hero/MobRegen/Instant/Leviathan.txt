@@ -1,0 +1,94 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		Leviathan001	Y	3003	4470	0	0	132										
+#record		Leviathan002	Y	3011	3728	0	0	167										
+#record		Leviathan003	Y	2213	3267	0	0	160										
+#record		Leviathan004	Y	3001	4419	0	0	50										
+#record		Leviathan005	Y	3009	3627	0	0	50										
+#record		Leviathan006	Y	2217	3248	0	0	50										
+#record		Leviathan007	Y	1922	4687	0	0	188										
+#record		Leviathan008	Y	822	4800	0	0	188										
+#record		Leviathan009	Y	508	3464	110	373	-26										
+#record		Leviathan010	Y	1161	3448	128	60	-62										
+#record		Leviathan011	Y	1092	3461	121	376	23										
+#record		Leviathan012	Y	477	3423	143	56	64										
+#record		Leviathan013	Y	1532	2016	0	0	55										
+#record		Leviathan014	Y	3373	1854	0	0	83										
+#record		Leviathan015	Y	2622	1866	141	50	31										
+#record		Leviathan016	Y	1507	2023	0	0	167										
+#record		Leviathan017	Y	2634	1864	254	103	28										
+#record		Leviathan018	Y	3233	1850	193	82	-14										
+#record		Leviathan019	Y	3398	840	342	109	29										
+#record		Leviathan020	Y	5111	1613	0	0	164										
+#record		Leviathan021	Y	4687	1220	0	0	227										
+#record		Leviathan022	Y	4764	877	0	0	237										
+#record		Leviathan023	Y	4324	1248	0	0	244										
+#record		Leviathan024	Y	4956	1454	0	0	265										
+#record		Leviathan025	Y	5796	2741	0	0	78										
+#record		Leviathan026	Y	4901	3351	0	0	92										
+#record		Leviathan027	Y	3958	2786	0	0	92										
+#record		Leviathan028	Y	5783	2736	0	0	209										
+#record		Leviathan029	Y	4912	3367	0	0	195										
+#record		Leviathan030	Y	3938	2871	50	162	-12										
+#record		Leviathan031	Y	5352	4844	330	50	-47										
+#record		Leviathan032	Y	5043	5949	50	326	-65										
+#record		Leviathan033	Y	4223	5300	53	292	0										
+#record		Leviathan034	Y	4221	5237	50	229	0										
+#record		Leviathan035	Y	3012	2696	0	0	500										
+#record		Leviathan036	Y	3012	2703	0	0	500										
+#record		Leviathan037	Y	3012	2703	0	0	500										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		Leviathan001	ID_NestBat	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan002	ID_NestBat	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan003	ID_NestBat	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan004	ID_NestCaimanJunior	1	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan005	ID_NestCaimanJunior	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan006	ID_NestCaimanJunior	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan007	ID_NestBoogy	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan008	ID_NestBoogy	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan009	ID_NestBoogy	4	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan010	ID_NestAlca	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan011	ID_NestBoogy	4	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan012	ID_NestAlca	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan013	ID_NestAlca	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan014	ID_NestAlca	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan015	ID_NestAlca	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan016	ID_NestCaimanGiant	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan017	ID_NestCaimanGiant	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan018	ID_NestCaimanGiant	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan019	ID_NestMadSlug	4	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan020	ID_NestBaridon	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan021	ID_NestAlca	4	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan022	ID_NestCrab	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan023	ID_NestCrab	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan024	ID_NestCrab	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan025	ID_NestBaridon	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan026	ID_NestBaridon	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan027	ID_NestBaridon	2	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan028	ID_NestWeasel	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan029	ID_NestWeasel	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan030	ID_NestWeasel	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan031	ID_NestGagoyle	4	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan032	ID_NestGagoyle	5	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan033	ID_NestGagoyle	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan034	ID_NestBaridon	3	0	1800	1795	1805	0	2	0	3	0	4	0	5	0	
+#record		Leviathan035	ID_NestGuardianEgg	2	0	180	175	185	0	2	0	3	0	4	0	5	0	
+#record		Leviathan036	ID_NestGuardEgg	2	0	180	175	185	0	2	0	3	0	4	0	5	0	
+#record		Leviathan037	ID_NestBuffEgg	2	0	180	175	185	0	2	0	3	0	4	0	5	0	
+																		
+#end																		

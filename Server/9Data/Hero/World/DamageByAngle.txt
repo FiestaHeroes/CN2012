@@ -1,0 +1,36 @@
+
+				
+#Ignore	\o042			
+#Exchange	#	\x20		
+
+#Table	DamageByAngle_Chr			
+
+#ColumnType	WORD	WORD	WORD	
+
+				
+
+
+
+#ColumnName	DamagedAngle	DamageRate	CheckSum	
+#Record	0	1000	0	
+#Record	45	1100	45	
+#Record	90	1200	90	
+#Record	135	1300	135	
+#Record	170	1400	170	
+#Record	180	1500	180	
+				
+				
+				
+#Table	DamageByAngle_Mob			
+
+#ColumnType	WORD	WORD	WORD	
+
+#ColumnName	DamagedAngle	DamageRate	CheckSum	
+#Record	0	1000	0	
+#Record	45	1100	45	
+#Record	90	1200	90	
+#Record	135	1300	135	
+#Record	170	1400	170	
+#Record	175	1500	175	
+#Record	180	1600	180	
+#end				

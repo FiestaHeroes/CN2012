@@ -1,0 +1,135 @@
+
+										
+#Ignore	\o042									
+#Exchange	#	\x20								
+
+#Table	DownExpMaxChaos									
+#ColumnType	BYTE	DWORD								
+#ColumnName	Index	SetDownMax								
+#Record	DownExpMax	812900000	
+
+#Table	DownChaos									
+
+#ColumnType	BYTE	WORD	WORD	WORD	WORD	WORD	WORD	WORD	WORD	
+#ColumnName	Lv	DownExp0	DropItem0	DownExp1	DropItem1	DownExp2	DropItem2	DownExp3	DropItem3	
+#Record	1	0	0	20	10	20	0	10	0	
+#Record	2	0	0	20	10	20	0	10	0	
+#Record	3	0	0	20	10	20	0	10	0	
+#Record	4	0	0	20	10	20	0	10	0	
+#Record	5	0	0	20	10	20	0	10	0	
+#Record	6	0	0	20	10	20	0	10	0	
+#Record	7	0	0	20	10	20	0	10	0	
+#Record	8	0	0	20	10	20	0	10	0	
+#Record	9	0	0	20	10	20	0	10	0	
+#Record	10	0	0	20	10	20	0	10	0	
+#Record	11	0	0	20	10	20	0	10	0	
+#Record	12	0	0	20	10	20	0	10	0	
+#Record	13	0	0	20	10	20	0	10	0	
+#Record	14	0	0	20	10	20	0	10	0	
+#Record	15	0	0	20	10	20	0	10	0	
+#Record	16	0	0	20	10	20	0	10	0	
+#Record	17	0	0	20	10	20	0	10	0	
+#Record	18	0	0	20	10	20	0	10	0	
+#Record	19	0	0	20	10	20	0	10	0	
+#Record	20	0	0	20	10	20	0	10	0	
+#Record	21	0	0	20	10	20	0	10	0	
+#Record	22	0	0	20	10	20	0	10	0	
+#Record	23	0	0	20	10	20	0	10	0	
+#Record	24	0	0	20	10	20	0	10	0	
+#Record	25	0	0	20	10	20	0	10	0	
+#Record	26	0	0	20	10	20	0	10	0	
+#Record	27	0	0	20	10	20	0	10	0	
+#Record	28	0	0	20	10	20	0	10	0	
+#Record	29	0	0	20	10	20	0	10	0	
+#Record	30	0	0	20	10	20	0	10	0	
+#Record	31	0	0	20	10	20	0	10	0	
+#Record	32	0	0	20	10	20	0	10	0	
+#Record	33	0	0	20	10	20	0	10	0	
+#Record	34	0	0	20	10	20	0	10	0	
+#Record	35	0	0	20	10	20	0	10	0	
+#Record	36	0	0	20	10	20	0	10	0	
+#Record	37	0	0	20	10	20	0	10	0	
+#Record	38	0	0	20	10	20	0	10	0	
+#Record	39	0	0	20	10	20	0	10	0	
+#Record	40	0	0	20	10	20	0	10	0	
+#Record	41	0	0	20	10	20	0	10	0	
+#Record	42	0	0	20	10	20	0	10	0	
+#Record	43	0	0	20	10	20	0	10	0	
+#Record	44	0	0	20	10	20	0	10	0	
+#Record	45	0	0	20	10	20	0	10	0	
+#Record	46	0	0	20	10	20	0	10	0	
+#Record	47	0	0	20	10	20	0	10	0	
+#Record	48	0	0	20	10	20	0	10	0	
+#Record	49	0	0	20	10	20	0	10	0	
+#Record	50	0	0	20	10	20	0	10	0	
+#Record	51	0	0	20	10	20	0	10	0	
+#Record	52	0	0	20	10	20	0	10	0	
+#Record	53	0	0	20	10	20	0	10	0	
+#Record	54	0	0	20	10	20	0	10	0	
+#Record	55	0	0	20	10	20	0	10	0	
+#Record	56	0	0	20	10	20	0	10	0	
+#Record	57	0	0	20	10	20	0	10	0	
+#Record	58	0	0	20	10	20	0	10	0	
+#Record	59	0	0	20	10	20	0	10	0	
+#Record	60	0	0	20	10	20	0	10	0	
+#Record	61	0	0	30	10	20	0	10	0	
+#Record	62	0	0	30	10	20	0	10	0	
+#Record	63	0	0	30	10	20	0	10	0	
+#Record	64	0	0	30	10	20	0	10	0	
+#Record	65	0	0	30	10	20	0	10	0	
+#Record	66	0	0	30	10	20	0	10	0	
+#Record	67	0	0	30	10	20	0	10	0	
+#Record	68	0	0	30	10	20	0	10	0	
+#Record	69	0	0	30	10	20	0	10	0	
+#Record	70	0	0	30	10	20	0	10	0	
+#Record	71	0	0	30	10	20	0	10	0	
+#Record	72	0	0	30	10	20	0	10	0	
+#Record	73	0	0	30	10	20	0	10	0	
+#Record	74	0	0	30	10	20	0	10	0	
+#Record	75	0	0	30	10	20	0	10	0	
+#Record	76	0	0	30	10	20	0	10	0	
+#Record	77	0	0	30	10	20	0	10	0	
+#Record	78	0	0	30	10	20	0	10	0	
+#Record	79	0	0	30	10	20	0	10	0	
+#Record	80	0	0	30	10	20	0	10	0	
+#Record	81	0	0	30	10	20	0	10	0	
+#Record	82	0	0	30	10	20	0	10	0	
+#Record	83	0	0	30	10	20	0	10	0	
+#Record	84	0	0	30	10	20	0	10	0	
+#Record	85	0	0	30	10	20	0	10	0	
+#Record	86	0	0	30	10	20	0	10	0	
+#Record	87	0	0	30	10	20	0	10	0	
+#Record	88	0	0	30	10	20	0	10	0	
+#Record	89	0	0	30	10	20	0	10	0	
+#Record	90	0	0	30	10	20	0	10	0	
+#Record	91	0	0	30	10	20	0	10	0	
+#Record	92	0	0	30	10	20	0	10	0	
+#Record	93	0	0	30	10	20	0	10	0	
+#Record	94	0	0	30	10	20	0	10	0	
+#Record	95	0	0	30	10	20	0	10	0	
+#Record	96	0	0	30	10	20	0	10	0	
+#Record	97	0	0	30	10	20	0	10	0	
+#Record	98	0	0	30	10	20	0	10	0	
+#Record	99	0	0	30	10	20	0	10	0	
+#Record	100	0	0	30	10	20	0	10	0	
+#Record	101	0	0	30	10	20	0	10	0	
+#Record	102	0	0	30	10	20	0	10	0	
+#Record	103	0	0	30	10	20	0	10	0	
+#Record	104	0	0	30	10	20	0	10	0	
+#Record	105	0	0	30	10	20	0	10	0	
+#Record	106	0	0	30	10	20	0	10	0	
+#Record	107	0	0	30	10	20	0	10	0	
+#Record	108	0	0	30	10	20	0	10	0	
+#Record	109	0	0	30	10	20	0	10	0	
+#Record	110	0	0	30	10	20	0	10	0	
+#Record	111	0	0	30	10	20	0	10	0	
+#Record	112	0	0	30	10	20	0	10	0	
+#Record	113	0	0	30	10	20	0	10	0	
+#Record	114	0	0	30	10	20	0	10	0	
+#Record	115	0	0	30	10	20	0	10	0	
+#Record	116	0	0	9999	10	9999	0	9999	0	
+#Record	117	0	0	9999	10	9999	0	9999	0	
+#Record	118	0	0	9999	10	9999	0	9999	0	
+#Record	119	0	0	9999	10	9999	0	9999	0	
+#Record	120	0	0	9999	10	9999	0	9999	0	
+End										

@@ -1,0 +1,142 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		LField02D_001	N	16206	6996	0	0	420										
+#record		LField02D_002	N	15677	6104	0	0	441										
+#record		LField02D_003	N	14840	7246	0	0	553										
+#record		LField02D_004	N	14179	7817	120	643	-25										
+#record		LField02D_006	N	13646	10556	0	0	546										
+#record		LField02D_007	N	12553	9217	0	0	539										
+#record		LField02D_008	N	12736	10837	0	0	483										
+#record		LField02D_009	N	11858	9607	0	0	595										
+#record		LField02D_012	N	10430	10589	0	0	448										
+#record		LField02D_013	N	10309	11303	0	0	483										
+#record		LField02D_014	N	11152	11440	0	0	497										
+#record		LField02D_016	N	12176	7255	0	0	441										
+#record		LField02D_017	N	9068	7624	0	0	525										
+#record		LField02D_018	N	11685	7135	0	0	462										
+#record		LField02D_019	N	10072	5450	0	0	518										
+#record		LField02D_020	N	9503	4741	0	0	560										
+#record		LField02D_021	N	8087	5311	0	0	448										
+#record		LField02D_022	N	6995	4652	0	0	441										
+#record		LField02D_023	N	7620	6283	0	0	350										
+#record		LField02D_024	N	7658	7509	0	0	350										
+#record		LField02D_025	N	6707	7286	0	0	350										
+#record		LField02D_026	N	8032	1307	0	0	539										
+#record		LField02D_027	N	8075	3112	0	0	455										
+#record		LField02D_028	N	7178	1312	0	0	469										
+#record		LField02D_029	N	8770	1845	0	0	476										
+#record		LField02D_031	N	4368	9410	612	269	-10										
+#record		LField02D_032	N	4614	10498	0	0	350										
+#record		LField02D_033	N	3264	10335	0	0	511										
+#record		LField02D_034	N	1825	10078	0	0	574										
+#record		LField02D_035	N	1484	10771	0	0	511										
+#record		LField02D_036	N	3012	6815	0	0	420										
+#record		LField02D_037	N	1851	6813	0	0	434										
+#record		LField02D_038	N	1904	7624	0	0	469										
+#record		LField02D_039	N	2998	7505	0	0	483										
+#record		LField02D_041	N	4313	17592	0	0	616										
+#record		LField02D_042	N	3085	17974	0	0	518										
+#record		LField02D_043	N	3941	18100	0	0	490										
+#record		LField02D_044	N	6031	13832	0	0	546										
+#record		LField02D_045	N	5164	13150	0	0	469										
+#record		LField02D_046	N	8893	13688	0	0	595										
+#record		LField02D_047	N	7937	13527	0	0	455										
+#record		LField02D_048	N	11863	13633	0	0	462										
+#record		LField02D_049	N	10804	13656	0	0	455										
+#record		LField02D_050	N	7944	10610	0	0	609										
+#record		LField02D_Mine1	N	3307	13479	0	0	406										
+#record		LField02D_Mine2	N	1341	13853	0	0	420										
+#record		LField02D_Mine3	N	1153	13369	0	0	434										
+#record		LField02D_Mine4	N	2255	13381	0	0	434										
+#record		LField02D_Mine5	N	3125	12939	0	0	399										
+#record		LField02D_Mine6	N	5038	7064	0	0	350										
+#record		LField02D_Mine7	N	5650	7059	0	0	350										
+#record		LField02D_Mine8	N	14906	13219	0	0	469										
+#record		LField02D_Mine9	N	14029	13339	0	0	420										
+#record		LField02D_Mine10	N	13825	12967	0	0	581										
+#record		P01	N	8044	10687	0	0	595										
+#record		LField02DGuard01	N	16947	11242	0	0	13										
+#record		LField02DGuard02	N	16951	10526	0	0	20										
+#record		LField02D_C1_01	N	8841	13629	0	0	83										
+#record		LField02D_C2_01	N	8427	11351	0	0	104										
+#record		LField02D_C3_01	N	7641	10354	0	0	104										
+#record		LField02D_C4_01	N	7848	13648	0	0	125										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		LField02D_001	PixyB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_002	PixyB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_003	PixyB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_004	PixyB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_006	D_Pixy	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_007	D_Pixy	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_008	D_Pixy	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_009	D_Pixy	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_012	ArchonJuinorB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_013	ArchonJuinorB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_014	ArchonJuinorB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_016	ArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_017	ArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_018	ArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_019	ArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_020	ArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_021	OldArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_022	OldArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_023	OldArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_024	OldArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_025	OldArchonB	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_026	D_Pinky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_027	D_Pinky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_028	D_Pinky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_029	D_Pinky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_031	D_Greenky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_032	D_Greenky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_033	D_Greenky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_034	D_Greenky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_035	D_Greenky	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_036	LizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_037	LizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_038	LizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_039	LizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_041	GreedyLizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_042	GreedyLizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_043	GreedyLizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_044	GreedyLizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_045	GreedyLizardManA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_046	LizardManKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_047	LizardManKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_048	LizardManKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_049	LizardManKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_050	LizardManKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine1	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine2	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine3	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine4	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine5	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine6	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine7	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine8	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine9	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		LField02D_Mine10	MINE5	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		P01	PresentBox10	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		LField02DGuard01	GuardMihael02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		LField02DGuard02	GuardMihael02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		LField02D_C1_01	MarvellBook10	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		LField02D_C2_01	MarvellBook10	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		LField02D_C3_01	MarvellBook10	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		LField02D_C4_01	MarvellBook10	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+																		
+#end																		

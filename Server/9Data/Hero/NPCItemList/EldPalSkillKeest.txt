@@ -1,0 +1,159 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+																																																																			
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+#Record	3	-	-	-	-	-	-																																																												
+#Record	4	-	-	-	-	-	-																																																												
+#Record	5	-	-	-	-	-	-																																																												
+#Record	6	-	-	-	-	-	-																																																												
+#Record	7	-	-	-	-	-	-																																																												
+#Record	8	-	-	-	-	-	-																																																												
+#Record	9	-	-	-	-	-	-																																																												
+#Record	10	-	-	-	-	-	-																																																												
+#Record	11	-	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab01	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+#Record	3	-	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab02	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	Wield03	Wield04	Wield05	Wield06	Wield07	Wield08																																																												
+#Record	1	Wield09	Wield10	Wield11	-	-	-																																																												
+#Record	2	Heal02	Heal03	Heal04	Heal05	Heal06	Heal07																																																												
+#Record	3	Heal08	Heal09	Heal10	-	-	-																																																												
+#Record	4	Blessing02	Blessing03	Blessing04	Blessing05	Blessing06	Blessing07																																																												
+#Record	5	Blessing08	Blessing09	Blessing10	-	-	-																																																												
+#Record	6	DivineShield01	DivineShield02	DivineShield03	DivineShield04	DivineShield05	DivineShield06																																																												
+#Record	7	DivineShield07	DivineShield08	DivineShield09	-	-	-																																																												
+#Record	8	MentalShout01	MentalShout02	MentalShout03	MentalShout04	MentalShout05	MentalShout06																																																												
+#Record	9	MentalShout07	MentalShout08	MentalShout09	-	-	-																																																												
+#Record	10	GreatCure01	GreatCure02	GreatCure03	-	-	-																																																												
+#Record	11	Restore01	Restore02	Restore03	Restore04	Restore05	Restore06																																																												
+#Record	12	Restore07	Restore08	Restore09	-	-	-																																																												
+#Record	13	DarknessProtection01	DarknessProtection02	DarknessProtection03	DarknessProtection04	DarknessProtection05	DarknessProtection06																																																												
+#Record	14	DarknessProtection07	-	-	-	-	-																																																												
+#Record	15	PsychicBlunt01	PsychicBlunt02	PsychicBlunt03	PsychicBlunt04	PsychicBlunt05	PsychicBlunt06																																																												
+#Record	16	PsychicBlunt07	PsychicBlunt08	PsychicBlunt09	-	-	-																																																												
+#Record	17	PsychicChop01	PsychicChop02	PsychicChop03	PsychicChop04	PsychicChop05	PsychicChop06																																																												
+#Record	18	PsychicChop07	PsychicChop08	PsychicChop09	-	-	-																																																												
+#Record	19	HitProtection01	HitProtection02	HitProtection03	HitProtection04	HitProtection05	HitProtection06																																																												
+#Record	20	HitProtection07	HitProtection08	-	-	-	-																																																												
+#Record	21	GreatHeal01	GreatHeal02	GreatHeal03	GreatHeal04	GreatHeal05	GreatHeal06																																																												
+#Record	22	GreatHeal07	GreatHeal08	GreatHeal09	-	-	-																																																												
+#Record	23	SafeProtection01	SafeProtection02	SafeProtection03	SafeProtection04	SafeProtection05	SafeProtection06																																																												
+#Record	24	SafeProtection07	SafeProtection08	SafeProtection09	-	-	-																																																												
+#Record	25	Revival01	-	-	-	-	-																																																												
+#Record	26	SilverLining01	-	-	-	-	-																																																												
+#Record	27	Sacrifice01	-	-	-	-	-																																																												
+#Record	28	HorrorForce01	-	-	-	-	-																																																												
+#Record	29	CrossCasting01	-	-	-	-	-																																																												
+#Record	30	HolySmite01	-	-	-	-	-																																																												
+#Record	31	ExplosionNova01	-	-	-	-	-																																																												
+#Record	32	MightyChop01	-	-	-	-	-																																																												
+#Record	33	MightyPunch01	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab03	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	MaceMastery03	MaceMastery04	MaceMastery05	MaceMastery06	-	-																																																												
+#Record	1	HolySpirit02	HolySpirit03	HolySpirit04	HolySpirit05	HolySpirit06	-																																																												
+#Record	2	HammerMastery01	HammerMastery02	HammerMastery03	HammerMastery04	HammerMastery05	-																																																												
+																																																																			
+#Table	Tab04	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab05	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab06	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab07	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab08	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+#Record	3	-	-	-	-	-	-																																																												
+#Record	4	-	-	-	-	-	-																																																												
+#Record	5	-	-	-	-	-	-																																																												
+#Record	6	-	-	-	-	-	-																																																												
+#Record	7	-	-	-	-	-	-																																																												
+#Record	8	-	-	-	-	-	-																																																												
+#Record	9	-	-	-	-	-	-																																																												
+#Record	10	-	-	-	-	-	-																																																												
+#Record	11	-	-	-	-	-	-																																																												
+#Record	12	-	-	-	-	-	-																																																												
+#Record	13	-	-	-	-	-	-																																																												
+#Record	14	-	-	-	-	-	-																																																												
+#Record	15	-	-	-	-	-	-																																																												
+#Record	16	-	-	-	-	-	-																																																												
+#Record	17	-	-	-	-	-	-																																																												
+#Record	18	-	-	-	-	-	-																																																												
+#Record	19	-	-	-	-	-	-																																																												
+#Record	20	-	-	-	-	-	-																																																												
+#Record	21	-	-	-	-	-	-																																																												
+#Record	22	-	-	-	-	-	-																																																												
+																																																																			
+#End																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+																																																																			
+	0																																																																		
+	1																																																																		
+	2																																																																		
+	3																																																																		

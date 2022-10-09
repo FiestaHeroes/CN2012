@@ -1,0 +1,11 @@
+
+#ignore	\o042		
+
+
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Summon	"부하들이여, 저들을 공격하라!!!"
+
+#End			

@@ -1,0 +1,21 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+#Record	0	-				
+#Record	1	MasicStaffSk1				
+#Record	2	-				
+#Record	3	MasicStaffSk1				
+						
+#Table	SkillChange			
+#ColumnType	Index	Index	String[33]	String[33]		
+#ColumnName	Condition	Value	From	To		
+#Record	OutOfRange	-	-	MasicStaffSk1	
+						
+#End						

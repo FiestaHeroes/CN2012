@@ -1,0 +1,87 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Chat0101	欢迎诸君来到艾杰之塔.		
+#Record	Chat0102	可以击退所有空间的怪物后到达目的地吗?		
+#Record	Chat0103	不管怎么样, 先铲除因普吧!		
+				
+#Record	Chat0201	好, 现在就到下一个房间吧?		
+				
+#Record	Chat0301	好, 现在再到下个房间吧?		
+				
+#Record	Chat0401	尘石巨魔出现了!		
+				
+#Record	Chat0501	消灭尘石巨魔!		
+#Record	Chat0502	但要走的路还很远!		
+#Record	Chat0503	快点!		
+				
+#Record	Chat0501Boss	尘石巨魔在召唤敌人!		
+#Record	Chat0502Boss	又要召唤?		
+				
+#Record	Chat0601	辛苦了, 就到此为止,回去好不好?		
+#Record	Chat0602	不要的话, 就往下移动!		
+				
+#Record	Chat0701	我喜欢你的斗志. 很好, 继续往前...		
+				
+#Record	Chat0801	接下来会更强. 没关系吗?		
+				
+#Record	Chat0901	石巨魔出现了!		
+#Record	Chat0902	害怕的话回去吧!		
+				
+#Record	Chat1001	结果还是击退了石巨魔!		
+#Record	Chat1002	很好,但也不要高兴的太早,要走的路还很远呢!		
+#Record	Chat1003	好, 往下一个空间移动!		
+				
+#Record	Chat1001Boss	小心! 石巨魔在召唤塔怪!		
+#Record	Chat1002Boss	小心! 石巨魔第二次召唤!		
+				
+#Record	Chat1101	要走的路还很远, 所以快点往下一个空间前进 !		
+				
+#Record	Chat1201	快点快点前进 !		
+				
+#Record	Chat1301	糟糕! 剧毒石巨魔好像醒来了!		
+#Record	Chat1302	剧毒石巨魔的毒还蛮毒的, 没关系吗?		
+				
+#Record	Chat1401	结果还是击退了剧毒石巨魔!		
+#Record	Chat1402	现在神器也拿到手了, 出去好不好?		
+#Record	Chat1403	若想要看铁棍石巨魔就没有办法了 !		
+				
+#Record	Chat1401Boss	小心! 剧毒石巨魔在召唤塔怪!		
+#Record	Chat1402Boss	小心! 剧毒石巨魔第二次召唤!		
+				
+#Record	Chat1501	呼! 现在终于好像可以看得到目的地了!		
+				
+#Record	Chat1601	越来越接近魔法空间的尽头了.太好了.		
+#Record	Chat1602	下一个是艾杰邪恶蜘蛛,供你参考!		
+				
+#Record	Chat1701	嗯, 接下来说是什么?		
+#Record	Chat1702	好久没来这里了...		
+#Record	Chat1703	好像是野熊王, 往前去确认一下!		
+				
+#Record	Chat1801	最后目的地就快到了.前进!		
+#Record	Chat1802	该不会想要现在放弃吧 !		
+#Record	Chat1803	快速前进!		
+				
+#Record	Chat2001	你看! 好壮观!		
+#Record	Chat2002	没想到真的击退了铁棍石巨魔!		
+#Record	Chat2003	你一定要成为艾德林最强的勇士...		
+				
+#Record	Chat2001Boss	铁棍石巨魔在召唤怪物了!		
+#Record	Chat2002Boss	铁棍石巨魔第二次召唤!		
+#Record	Chat2003Boss	铁棍石巨魔最后一次召唤!		
+				
+#Record	Chat2001System	1分后离开王国任务		
+#Record	Chat2002System	30秒后离开王国任务		
+#Record	Chat2003System	10秒后离开王国任务		
+				
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				

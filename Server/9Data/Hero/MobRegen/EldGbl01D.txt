@@ -1,0 +1,152 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		EldGbl01D_001	N	9564	4856	0	0	420										
+#record		EldGbl01D_002	N	7317	4382	218	475	-23										
+#record		EldGbl01D_003	N	9844	5217	0	0	350										
+#record		EldGbl01D_004	N	8487	5150	0	0	350										
+#record		EldGbl01D_006	N	5451	7077	0	0	511										
+#record		EldGbl01D_007	N	7454	7754	0	0	504										
+#record		EldGbl01D_008	N	9339	7828	0	0	518										
+#record		EldGbl01D_009	N	9151	7297	0	0	441										
+#record		EldGbl01D_010	N	11832	6963	0	0	448										
+#record		EldGbl01D_011	N	4485	9560	0	0	490										
+#record		EldGbl01D_012	N	2002	9801	0	0	406										
+#record		EldGbl01D_013	N	1842	10716	0	0	525										
+#record		EldGbl01D_014	N	3427	10505	0	0	490										
+#record		EldGbl01D_015	N	4174	10368	0	0	350										
+#record		EldGbl01D_016	N	3290	7001	0	0	399										
+#record		EldGbl01D_017	N	1545	7274	0	0	427										
+#record		EldGbl01D_018	N	2432	7538	0	0	350										
+#record		EldGbl01D_019	N	1666	6728	0	0	371										
+#record		EldGbl01D_020	N	3000	6509	0	0	399										
+#record		EldGbl01D_021	N	1589	13153	0	0	350										
+#record		EldGbl01D_022	N	1295	13717	0	0	350										
+#record		EldGbl01D_023	N	3068	13347	0	0	497										
+#record		EldGbl01D_025	N	2627	15675	0	0	350										
+#record		EldGbl01D_026	N	3241	17301	0	0	350										
+#record		EldGbl01D_027	N	4312	17937	0	0	350										
+#record		EldGbl01D_028	N	3738	18355	0	0	350										
+#record		EldGbl01D_029	N	4357	17292	0	0	350										
+#record		EldGbl01D_031	N	8516	14462	0	0	350										
+#record		EldGbl01D_032	N	8204	10470	0	0	434										
+#record		EldGbl01D_033	N	7761	10481	0	0	448										
+#record		EldGbl01D_034	N	8083	13489	0	0	350										
+#record		EldGbl01D_035	N	8853	13741	0	0	350										
+#record		EldGbl01D_036	N	10755	13645	0	0	518										
+#record		EldGbl01D_037	N	11615	13642	0	0	455										
+#record		EldGbl01D_038	N	10630	11781	0	0	350										
+#record		EldGbl01D_039	N	10489	10825	0	0	350										
+#record		EldGbl01D_040	N	10959	11132	0	0	350										
+#record		EldGbl01D_041	N	13645	8027	0	0	427										
+#record		EldGbl01D_042	N	15527	6191	0	0	441										
+#record		EldGbl01D_043	N	14347	6640	0	0	406										
+#record		EldGbl01D_044	N	16344	6835	0	0	328										
+#record		EldGbl01D_045	N	15298	7892	0	0	350										
+#record		EldGbl01D_046	N	16831	11072	0	0	350										
+#record		EldGbl01D_047	N	17572	10303	0	0	350										
+#record		EldGbl01D_048	N	17452	12048	0	0	350										
+#record		EldGbl01D_Mine1	N	5634	10383	0	0	350										
+#record		EldGbl01D_Mine2	N	5410	13530	0	0	350										
+#record		EldGbl01D_Mine3	N	5975	13614	0	0	350										
+#record		EldGbl01D_Mine4	N	14156	13349	0	0	350										
+#record		EldGbl01D_Mine5	N	13919	13021	0	0	350										
+#record		EldGbl01D_Mine6	N	13693	12608	0	0	350										
+#record		EldGbl01D_Mine7	N	12263	9398	0	0	350										
+#record		EldGbl01D_Mine8	N	12385	9158	0	0	350										
+#record		EldGbl01D_Mine9	N	5707	9883	0	0	350										
+#record		EldGbl01D_Mine10	N	13294	11071	0	0	350										
+#record		P01	N	17955	11162	0	0	350										
+#record		EldGbl01DGuard01	N	7826	3483	0	0	13										
+#record		EldGbl01DGuard02	N	8681	3550	0	0	13										
+#record		EldGbl01D_C1_01	N	17333	11658	0	0	111										
+#record		EldGbl01D_C2_01	N	17595	10136	0	0	125										
+#record		EldGbl01D_C3_01	N	15970	6416	0	0	111										
+#record		EldGbl01D_C4_01	N	14298	6748	0	0	174										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		EldGbl01D_001	DeadTreeSoulA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_002	DeadTreeSoulA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_003	DeadTreeSoulA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_004	DeadTreeSoulA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_006	WeakenedOgreB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_007	WeakenedOgreB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_008	WeakenedOgreB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_009	WeakenedOgreB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_010	WeakenedOgreB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_011	WereBearA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_012	WereBearA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_013	WereBearA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_014	WereBearA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_015	WereBearA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_016	D_KingCall	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_017	D_KingCall	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_018	D_KingCall	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_019	D_KingCall	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_020	D_KingCall	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_021	DesertArchonA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_022	DesertArchonA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_023	DesertArchonA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_025	DesertArchonA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_026	RatmanB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_027	RatmanB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_028	RatmanB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_029	RatmanB	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_031	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_032	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_033	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_034	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_035	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_036	D_GoblinSwordman	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_037	D_GoblinSwordman	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_038	D_GoblinSwordman	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_039	D_GoblinSwordman	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_040	D_GoblinSwordman	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_041	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_041	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_042	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_042	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_043	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_043	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_044	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_044	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_045	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_045	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_046	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_046	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_047	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_047	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_048	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_048	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine1	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine2	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine3	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine4	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine5	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine6	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine7	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine8	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine9	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		EldGbl01D_Mine10	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		P01	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldGbl01DGuard01	GuardMihael01	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		EldGbl01DGuard02	GuardMihael01	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		EldGbl01D_C1_01	Rock	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		EldGbl01D_C2_01	Rock	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		EldGbl01D_C3_01	Rock	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		EldGbl01D_C4_01	Rock	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+																		
+#end																		

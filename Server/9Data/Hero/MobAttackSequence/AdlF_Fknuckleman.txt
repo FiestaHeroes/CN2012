@@ -1,0 +1,16 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+						
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+						
+#Record	0	-				
+#Record	1	FKnuckleman_Skill_N01				
+#Record	2	FKnuckleman_Skill_N_OPU				
+#Record	3	FKnuckleman_Skill_N02				
+#End						

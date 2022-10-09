@@ -1,0 +1,246 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		EldPri01_001	N	1850	5091	86	735	0										
+#record		EldPri01_002	N	4383	2584	0	0	413										
+#record		EldPri01_003	N	3127	4818	784	43	-33										
+#record		EldPri01_004	N	6195	3608	600	164	33										
+#record		EldPri01_005	N	1926	4670	0	0	350										
+#record		EldPri01_006	N	6900	3077	605	102	42										
+#record		EldPri01_007	N	1861	6073	0	0	350										
+#record		EldPri01_008	N	3185	6302	106	827	-46										
+#record		EldPri01_009	N	5687	5604	386	272	0										
+#record		EldPri01_010	N	945	3160	0	0	434										
+#record		EldPri01_011	N	3306	994	0	0	427										
+#record		EldPri01_012	N	3687	1965	580	184	68										
+#record		EldPri01_013	N	5170	2934	198	488	-27										
+#record		EldPri01_014	N	986	6103	143	999	-8										
+#record		EldPri01_015	N	5962	1959	424	257	10										
+#record		EldPri01_016	N	1017	7834	0	0	483										
+#record		EldPri01_017	N	8294	1407	450	213	14										
+#record		EldPri01_018	N	8307	2400	302	357	10										
+#record		EldPri01_019	N	9160	2142	0	0	350										
+#record		EldPri01_020	N	9237	1273	418	178	0										
+#record		EldPri01_021	N	1665	7383	0	0	518										
+#record		EldPri01_022	N	4674	712	0	0	448										
+#record		EldPri01_023	N	7113	1112	0	0	434										
+#record		EldPri01_024	N	6473	839	0	0	406										
+#record		EldPri01_026	N	4394	7279	389	225	64										
+#record		EldPri01_027	N	5390	7827	561	231	70										
+#record		EldPri01_028	N	11421	3240	185	480	52										
+#record		EldPri01_029	N	9953	4012	778	34	25										
+#record		EldPri01_030	N	11941	3961	183	373	0										
+#record		EldPri01_031	N	10731	4940	0	0	455										
+#record		EldPri01_032	N	10367	4662	0	0	371										
+#record		EldPri01_033	N	3995	8626	0	0	350										
+#record		EldPri01_034	N	3719	9375	0	0	350										
+#record		EldPri01_035	N	9538	5001	0	0	350										
+#record		EldPri01_036	N	3184	10005	0	0	350										
+#record		EldPri01_037	N	9080	5194	0	0	350										
+#record		EldPri01_038	N	7823	5108	0	0	350										
+#record		EldPri01_039	N	8972	5934	911	41	-8										
+#record		EldPri01_040	N	2740	10703	161	588	-26										
+#record		EldPri01_041	N	7359	11832	0	0	518										
+#record		EldPri01_042	N	4917	11372	0	0	462										
+#record		EldPri01_043	N	6057	11198	0	0	490										
+#record		EldPri01_044	N	6320	9235	0	0	350										
+#record		EldPri01_045	N	8541	7410	0	0	406										
+#record		EldPri01_046	N	11533	7299	0	0	483										
+#record		EldPri01_047	N	11968	8747	240	864	23										
+#record		EldPri01_048	N	9852	7633	461	234	0										
+#record		EldPri01_049	N	10174	11067	0	0	350										
+#record		FLOWER1	N	5679	2388	603	357	0										
+#record		FLOWER2	N	6293	2154	502	372	0										
+#record		FLOWER3	N	7143	2029	647	191	0										
+#record		FLOWER4	N	4382	1185	566	263	0										
+#record		FLOWER5	N	4874	7655	808	373	0										
+#record		FLOWER6	N	4716	8086	708	254	0										
+#record		FLOWER7	N	4455	8521	642	165	0										
+#record		FLOWER8	N	10765	7561	763	269	0										
+#record		FLOWER9	N	10617	7626	739	223	0										
+#record		FLOWER10	N	10534	7804	880	199	-27										
+#record		HERB1	N	5969	2210	880	363	0										
+#record		HERB2	N	4560	8237	1196	100	52										
+#record		WOOD8	N	6159	2293	1186	180	12										
+#record		WOOD9	N	4450	8180	974	78	52										
+#record		MUSHROOM8	N	4509	8123	1167	84	43										
+#record		MUSHROOM9	N	10441	7752	1225	74	-10										
+#record		EldPri01AreaPbox01	N	6307	2120	2566	1233	0										
+#record		EldPri01AreaPbox02	N	6197	10733	1236	963	0										
+#record		EldPri01Guard01	N	4916	5775	0	0	27										
+#record		EldPri01Guard02	N	12172	10571	0	0	13										
+#record		EldPri01_H1_01	N	4453	3360	0	0	40										
+#record		EldPri01_H1_02	N	2506	6734	0	0	19										
+#record		EldPri01_H1_03	N	7218	1398	0	0	82										
+#record		EldPri01_H1_04	N	9818	4011	0	0	19										
+#record		EldPri01_H1_05	N	10236	5284	0	0	54										
+#record		EldPri01_H1_06	N	3357	10222	0	0	26										
+#record		EldPri01_H1_07	N	4935	11766	0	0	48										
+#record		EldPri01_H1_08	N	8281	7844	0	0	27										
+#record		EldPri01_H1_09	N	7213	9175	0	0	20										
+#record		EldPri01_H2_01	N	4657	2669	0	0	26										
+#record		EldPri01_H2_02	N	1844	5060	0	0	12										
+#record		EldPri01_H2_03	N	6400	672	0	0	12										
+#record		EldPri01_H2_04	N	9297	4381	0	0	40										
+#record		EldPri01_H2_05	N	10268	4454	0	0	12										
+#record		EldPri01_H2_06	N	2958	9849	0	0	26										
+#record		EldPri01_H2_07	N	4916	10969	0	0	62										
+#record		EldPri01_H2_08	N	9622	7589	0	0	41										
+#record		EldPri01_H2_09	N	6484	9419	0	0	34										
+#record		EldPri01_H3_01	N	4388	1890	0	0	54										
+#record		EldPri01_H3_02	N	1695	6324	0	0	54										
+#record		EldPri01_H3_03	N	5799	1226	0	0	54										
+#record		EldPri01_H3_04	N	11295	3051	0	0	12										
+#record		EldPri01_H3_05	N	11045	5004	0	0	40										
+#record		EldPri01_H3_06	N	2531	11148	0	0	12										
+#record		EldPri01_H3_07	N	6141	11696	0	0	41										
+#record		EldPri01_H3_08	N	8172	7288	0	0	13										
+#record		EldPri01_H3_09	N	6661	10267	0	0	13										
+#record		EldPri01_H4_01	N	4063	2556	0	0	47										
+#record		EldPri01_H4_02	N	1956	5708	0	0	40										
+#record		EldPri01_H4_03	N	7031	762	0	0	19										
+#record		EldPri01_H4_04	N	10435	3796	0	0	26										
+#record		EldPri01_H4_05	N	9848	4832	0	0	47										
+#record		EldPri01_H4_06	N	2677	10524	0	0	33										
+#record		EldPri01_H4_07	N	5541	11366	0	0	34										
+#record		EldPri01_H4_08	N	8989	7525	0	0	41										
+#record		EldPri01_H4_09	N	7309	10142	0	0	34										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		EldPri01_001	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_002	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_003	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_004	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_005	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_006	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_007	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_008	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_009	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_010	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_011	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_012	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_013	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_014	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_015	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_016	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_016	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_017	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_017	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_018	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_018	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_019	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_019	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_020	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_020	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_021	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_021	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_022	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_022	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_023	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_023	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_024	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_024	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_026	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_027	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_028	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_029	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_030	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_031	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_032	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_033	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_034	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_035	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_036	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_037	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_038	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_039	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_040	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_041	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_041	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_042	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_042	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_043	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_043	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_044	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_044	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_045	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_045	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_046	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_046	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_047	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_047	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_048	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_048	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_049	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01_049	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER1	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER2	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER3	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER4	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER5	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER6	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER7	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER8	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER9	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER10	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		HERB1	HERB5	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		HERB2	HERB6	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		WOOD8	WOOD8	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		WOOD9	WOOD9	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		MUSHROOM8	MUSHROOM8	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		MUSHROOM9	MUSHROOM9	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldPri01AreaPbox01	PresentBox10	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldPri01AreaPbox02	PresentBox11	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldPri01Guard01	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		EldPri01Guard02	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		EldPri01_H1_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H1_02	Q_BrightGoldenBat	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H1_03	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H1_04	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H1_05	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H1_06	LittleMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H1_07	FireGolem	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H1_08	Q_A_KaraTempler	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H1_09	TameMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_02	Q_BrightGoldenBat	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_03	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_04	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_05	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_06	LittleMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_07	FireGolem	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_08	Q_A_KaraTempler	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H2_09	TameMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_02	Q_BrightGoldenBat	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_03	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_04	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_05	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_06	LittleMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_07	FireGolem	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_08	Q_A_KaraTempler	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H3_09	TameMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_02	Q_BrightGoldenBat	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_03	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_04	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_05	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_06	LittleMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_07	FireGolem	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_08	Q_A_KaraTempler	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldPri01_H4_09	TameMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+																		
+#end																		

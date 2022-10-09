@@ -1,0 +1,132 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		KDPrtShipArea01	N	10459	8693	100	100	0										
+#record		KDPrtShipArea02	N	9744	8904	100	100	0										
+#record		KDPrtShipArea03	N	8051	8594	200	100	113										
+#record		KDPrtShipArea04	N	9121	8993	200	150	-90										
+#record		KDPrtShipArea05	N	8596	8792	200	150	0										
+#record		KDPrtShipArea06	N	7308	8623	200	150	-89										
+#record		KDPrtShipArea07	N	7277	9177	200	150	-91										
+#record		KDPrtShipArea08	N	6885	8766	200	150	0										
+#record		KDPrtShipArea09	N	5849	8700	100	100	0										
+#record		KDPrtShipArea10	Y	6208	10634	200	150	-131										
+#record		KDPrtShipArea12	Y	7235	11515	200	150	0										
+#record		KDPrtShipArea13	Y	5488	10186	200	150	-129										
+#record		KDPrtShipArea14	Y	8378	12160	200	150	20										
+#record		KDPrtShipArea15	N	6678	11521	200	150	0										
+#record		KDPrtShipArea16	Y	8971	12751	200	150	16										
+#record		KDPrtShipArea17	N	8489	14105	200	150	-74										
+#record		KDPrtShipArea18	N	9350	13343	200	150	-117										
+#record		KDPrtShipArea19	N	9200	12076	200	100	-103										
+#record		KDPrtShipArea21	N	8133	14252	200	150	-84										
+#record		KDPrtShipArea22	Y	8779	16282	200	100	0										
+#record		KDPrtShipArea23	N	8596	16151	200	150	82										
+#record		KDPrtShipArea24	N	9275	16903	196	153	-41										
+#record		KDPrtShipArea25	N	7690	14526	200	100	0										
+#record		KDPrtShipArea26	Y	8552	17586	200	150	-134										
+#record		KDPrtShipArea27	Y	9078	18462	200	150	68										
+#record		KDPrtShipArea28	N	7561	19445	200	150	44										
+#record		KDPrtShipArea29	N	7823	19182	200	150	43										
+#record		KDPrtShipArea30	Y	7284	19325	200	150	-46										
+#record		KDPrtShipArea31	Y	6843	20109	200	150	4										
+#record		KDPrtShipArea32	Y	6854	20524	200	150	-12										
+#record		KDPrtShipArea33	N	5146	20584	0	0	100										
+#record		KDPrtShipArea34	Y	6429	19874	200	150	4										
+#record		KDPrtShipArea35	N	5550	19309	0	0	160										
+#record		KDPrtShipArea36	Y	9407	17055	0	0	200										
+#record		KDPrtShipArea37	N	5449	20314	200	150	0										
+#record		KDPrtShipArea38	N	5659	19635	200	150	0										
+#record		KDPrtShipArea39	N	5376	20074	0	0	200										
+#record		KDPrtShipArea40	N	4648	19065	0	0	120										
+#record		KDPrtShipArea41	N	4421	19857	0	0	120										
+#record		KDPrtShipArea42	N	4623	19014	0	0	120										
+#record		KDPrtShipArea43	N	5387	9506	0	0	140										
+#record		KDPrtShipArea44	Y	8314	15045	200	100	-6										
+#record		KDPrtShipArea45	N	4456	19855	0	0	120										
+#record		KDPrtShipArea46	Y	8346	15979	200	100	0										
+#record		KDPrtShipArea47	N	7745	11481	0	0	120										
+#record		KDPrtShipArea48	N	8588	18366	0	0	120										
+#record		KDPrtShipArea49	N	5830	9232	0	0	120										
+#record		KDPrtShipArea50	N	7274	12200	0	0	160										
+#record		KDPrtShipArea51	N	8854	13396	0	0	140										
+#record		KDPrtShipArea52	Y	9222	13987	0	0	160										
+#record		KDPrtShipArea53	N	4838	18985	0	0	100										
+#record		KDPrtShipArea54	N	4609	20019	0	0	100										
+#record		KDPrtShipArea55	N	4547	19472	0	0	160										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		KDPrtShipArea01	KQ_Boogy	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea02	KQ_Boogy	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea03	KQ_MaraCrew	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea04	KQ_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea05	KQ_MaraCrew	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea06	KQ_MaraSailor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea07	KQ_MaraCrew	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea08	KQ_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea09	KQ_MaraElite	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea10	KQ_MaraSailor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea12	KQ_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea13	KQ_MaraSailor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea14	KQ_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea15	KQ_MaraElite	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea16	KQ_MaraElite	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea17	KQ_MaraElite	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea18	KQ_MaraSailor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea19	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea21	KQ_MaraSailor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea22	KQ_MarloneMegaton	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea23	KQ_MarloneMegaton	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea24	KQ_MaraSailor	3	0	4	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea25	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea26	KQ_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea27	KQ_MaraSailor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea28	KQ_MarloneMegaton	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea29	KQ_MarloneFighter	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea30	KQ_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea31	KQ_MarloneFighter	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea32	KQ_MarloneArcher	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea32	KQ_MaraSailor	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea33	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea34	KQ_MaraSailor	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea34	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea35	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea36	KQ_MarloneFighter	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea37	KQ_MaraCrew	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea38	KQ_MaraElite	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea39	KQ_MarloneFighter	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea40	KQ_TrueMarlone	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea41	KQ_Mara	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea42	KQ_Marlone	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea43	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea43	KQ_MarloneFighter	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea44	KQ_MarloneFighter	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea45	KQ_TrueMara	1	0	0	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea46	KQ_MarloneMegaton	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea47	KQ_Mara	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea48	KQ_Marlone	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea49	KQ_MarloneFighter	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea49	KQ_MaraElite	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea50	KQ_MarloneArcher	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea51	KQ_MarloneFighter	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea51	KQ_MarloneArcher	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea52	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea52	KQ_MarloneFighter	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea53	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea54	KQ_MarloneArcher	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KDPrtShipArea55	KQ_MarloneFighter	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+																		
+#end																		

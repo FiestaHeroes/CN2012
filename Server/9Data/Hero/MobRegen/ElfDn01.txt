@@ -1,0 +1,145 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		ElfDn_006	N	2663	5205	139	344	0										
+#record		ElfDn_007	N	4588	6691	333	156	0										
+#record		ElfDn_008	N	4559	7174	309	119	0										
+#record		ElfDn_009	N	1297	3966	520	180	0										
+#record		ElfDn_010	N	3193	5253	113	409	0										
+#record		ElfDn_011	N	1303	3292	497	222	0										
+#record		ElfDn_012	N	4615	5891	78	502	0										
+#record		ElfDn_013	N	6617	4913	432	140	0										
+#record		ElfDn_014	N	4048	5243	570	89	0										
+#record		ElfDn_015	N	6609	5440	378	128	0										
+#record		ElfDn_016	N	8587	7463	362	131	0										
+#record		ElfDn_017	N	8141	6816	202	319	0										
+#record		ElfDn_018	N	5224	3726	383	137	0										
+#record		ElfDn_019	N	5218	3228	414	150	0										
+#record		ElfDn_020	N	8769	6836	163	326	0										
+#record		ElfDn_026	N	1999	1799	148	337	0										
+#record		ElfDn_027	N	565	1743	104	347	0										
+#record		ElfDn_028	N	943	1753	350	120	0										
+#record		ElfDn_029	N	10621	6565	0	0	350										
+#record		ElfDn_030	N	10584	5933	0	0	350										
+#record		ElfDn_031	N	11715	6685	0	0	350										
+#record		ElfDn_032	N	11719	5944	0	0	350										
+#record		ElfDn_033	N	11653	5396	0	0	350										
+#record		ElfDn_034	N	8399	5872	488	28	0										
+#record		ElfDn_035	N	8643	5341	10	442	0										
+#record		ElfDn_036	N	965	851	120	431	0										
+#record		ElfDn_037	N	1521	931	141	463	0										
+#record		ElfDn_038	N	1030	527	474	125	0										
+#record		ElfDn_039	N	8109	5207	144	366	0										
+#record		ElfDn_041	N	5012	1595	384	429	0										
+#record		ElfDn_043	N	10394	1597	72	664	0										
+#record		ElfDn_044	N	6850	504	1137	66	0										
+#record		ElfDn_045	N	3668	532	958	83	0										
+#record		ElfDn_046	N	9169	2084	0	0	321										
+#record		ElfDn_047	N	9188	1270	0	0	314										
+#record		ElfDn_048	N	9969	2065	0	0	314										
+#record		ElfDn_049	N	9977	1291	0	0	314										
+#record		ElfDn_050	N	8504	1649	102	723	0										
+#record		ElfDnPresent_01	N	9589	1737	0	0	588										
+#record		ElfDn_MINE01	N	7632	3846	0	0	350										
+#record		ElfDn_MINE02	N	6533	6991	0	0	350										
+#record		ElfDn_MINE03	N	3139	3560	0	0	350										
+#record		ElfDn_MINE04	N	3364	1808	688	88	0										
+#record		ElfDn_MINE05	N	6495	1806	545	85	0										
+#record		ElfDn_MINE06	N	7319	2513	0	0	62										
+#record		ElfDn_MINE07	N	7429	2415	0	0	62										
+#record		ElfDn_MINE08	N	7329	2317	0	0	62										
+#record		ElfDn_MINE09	N	7450	2277	0	0	62										
+#record		ElfDn_MINE10	N	7387	2159	0	0	97										
+#record		ElfDn01Guard01	N	3293	7008	0	0	13										
+#record		ElfDn01Guard02	N	2787	6502	0	0	13										
+#record		ElfDn_C1_01	N	8933	2268	0	0	62										
+#record		ElfDn_C2_01	N	10116	2224	0	0	41										
+#record		ElfDn_C3_01	N	8989	1078	0	0	27										
+#record		ElfDn_C4_01	N	10081	1119	0	0	13										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		ElfDn_006	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_006	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_007	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_007	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_008	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_008	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_009	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_009	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_010	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_010	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_011	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_011	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_012	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_012	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_013	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_013	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_014	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_014	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_015	OldArchonA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_015	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_016	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_016	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_017	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_017	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_018	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_018	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_019	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_019	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_020	PinkyA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_020	OrcA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_026	OrcA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_027	OrcA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_028	OrcA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_029	OrcA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_030	OrcA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_031	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_032	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_033	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_034	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_035	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_036	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_037	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_038	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_039	OrcHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_041	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_043	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_044	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_045	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_046	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_047	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_048	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_049	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_050	OrcCaptainA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDnPresent_01	PresentBox11	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		ElfDn_MINE01	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE02	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE03	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE04	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE05	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE06	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE07	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE08	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE09	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_MINE10	MINE5	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn01Guard01	GuardMihael02	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn01Guard02	GuardMihael02	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ElfDn_C1_01	AlkemisBook10	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		ElfDn_C2_01	AlkemisBook10	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		ElfDn_C3_01	AlkemisBook10	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		ElfDn_C4_01	AlkemisBook10	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+																		
+#end																		

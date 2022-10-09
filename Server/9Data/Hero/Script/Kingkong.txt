@@ -1,0 +1,46 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	KQStart60	60秒后,王国任务即将开始.		
+#Record	KQStart30	30秒后,王国任务即将开始.		
+#Record	KQStart20	20秒后,王国任务即将开始.		
+#Record	KQStart10	10秒后,王国任务即将开始.		
+#Record	KQStart5	5秒后,王国任务即将开始.		
+				
+#Record	KQReturn60	终于击退了金刚木偶比诺.		
+#Record	KQReturn50	50秒后离开王国任务		
+#Record	KQReturn40	40秒后离开王国任务		
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn50	5秒后离开王国任务		
+				
+#Record	KQFReturn30	30秒后离开王国任务		
+#Record	KQFReturn20	20秒后离开王国任务		
+#Record	KQFReturn10	10秒后离开王国任务		
+#Record	KQFReturn5	5秒后离开王国任务		
+				
+#Record	Kingkong01	什么??? 赫尼斯探险队员欺负我心爱的菲莉?		
+#Record	Kingkong02	咳~~嗯!我再也不能忍受了. 咳~~嗯!		
+#Record	Kingkong03	你们这些赫尼斯探险队的小毛头们.		
+#Record	Kingkong04	你们若敢动我老婆身上一根汗毛试试看		
+#Record	Kingkong05	让你们连骨头都不剩.咳~~嗯!		
+				
+#Record	Phinoflie01	亲爱的~~ 金刚木偶比诺,亲爱的~~		
+#Record	Phinoflie02	有伙叫赫尼斯探险队的...		
+#Record	Phinoflie03	奇怪的孩子们,总是来伤害我. 噢嗯!		
+#Record	Phinoflie04	有胆量就过来!		
+#Record	Phinoflie05	敢惹我吗?金刚木偶比诺会替我报仇的....		
+#Record	Phinoflie06	会让你们连骨头都不剩...		
+				
+				
+#Record	Heal01	涌出力量吧. 咳~咳~		
+				
+#Record	Summon01	部下们! 快醒来攻击他们!		
+				
+#End				

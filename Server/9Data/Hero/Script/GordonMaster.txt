@@ -1,0 +1,64 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+#Record	Rumenus0	感觉到西北方有股神圣的气息,去那里看看吧.		
+#Record	Rumenus1	在那里可以见到,已经没有邪气的英雄莱因赫特.		
+#Record	Rumenus2	去见那个英雄,找出可以击败这里恶灵的线索回来...		
+#Record	Rumenus3	我能帮你的就到此了,希望能再见到你们.		
+				
+#Record	ItemDrop	发现了钥匙.		
+				
+#Record	Hero00	我是很久前为了击退恶灵戈登领主,而来到这里的莱因赫特.		
+#Record	Hero01	我本想用这厄尔比斯神力的装备去击退恶灵,但却如你们所见,变成了这个狼狈相.		
+#Record	Hero02	长久以来我都在等待,可以分送这装备的人....		
+#Record	Hero03	我将这些武器分送给各位,希望你们能击退这里的恶灵.		
+#Record	Hero04	这个剑是可以撕破恶灵保护罩的勇士剑.		
+#Record	Hero05	恶灵身上都有巨大的保护罩		
+#Record	Hero06	若不是这把剑,就伤不到它们.		
+#Record	Hero07	持有此剑及其周围的人,都可以不受恶灵保护罩的影响,		
+#Record	Hero08	攻击并伤害恶灵.		
+#Record	Hero09	接下来是纯真的红宝,它可以拆穿一切恶魔的假象.		
+#Record	Hero10	恶灵会在假象庇护下欺骗你们.		
+#Record	Hero11	请你拿着这个可以让恶灵假象无用武之地的纯正红宝石.		
+#Record	Hero12	你会穿过假象避护找到恶灵的位置.		
+#Record	Hero13	还有,给你这精神之水晶.		
+#Record	Hero14	精神之水晶,可以帮你找到恶灵的位置.		
+#Record	Hero15	恶灵在你眼前消失时使用.		
+#Record	Hero16	最后,你们朝恶灵方向走,会发现有一个没有钥匙的门,		
+#Record	Hero17	那个门被下过咒,所以用普通的方式是打不开的.		
+#Record	Hero18	一定要去接受那些使用邪恶力量的怪物帮助,才有办法破坏.		
+#Record	Hero19	要怎么打开那个门,就要看各位了.		
+				
+#Record	GM_Teleport800	愚蠢的人们啊!有本事就来找我啊!		
+#Record	GM_Teleport600	清醒吧~黑暗的力量....		
+#Record	GM_Teleport400	你们是赢不了我的....		
+#Record	GM_Teleport200	你们会发现生命的延长,只是痛苦的增加....		
+				
+#Record	Success	不行!!!!		
+#Record	Fail	呵呵呵....上等的灵魂都聚在这里了....		
+				
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#Record	KQStart60	60秒后,王国任务即將开始.		
+#Record	KQStart30	30秒后,王国任务即將开始.		
+#Record	KQStart20	20秒后,王国任务即將开始.		
+#Record	KQStart10	10秒后,王国任务即將开始.		
+#Record	KQStart5	5秒后,王国任务即將开始.		
+				
+				
+#Record	QuestFailMidBossDead	暗黑古代雕像被破坏无法继续进行		
+				
+#End				
+				
+				
+				
+				
+				
+				

@@ -1,0 +1,305 @@
+open [main]
+    var NPC                     ""
+        MiddleMara              ""
+        MiddleMarlone           ""
+        LastMara                ""
+        LastMarlone             ""
+        VirtualMara00           ""
+        VirtualMara01           ""
+        VirtualMarlone00        ""
+        VirtualMarlone01        ""
+        InterruptBlock          ""
+        InterruptArg            ""
+        Temp                    "".
+
+    waitlogin NPC.
+    if NPC == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+		;ReturnGate				"" ; 인던 >원정대 킹퀘 전환으로 주석 해제
+		;CompleteGate			"". ; 인던 >원정대 킹퀘 전환으로 주석 해제
+	
+	;npcstand	ReturnGate 		"Gate_ID_Exit" 		11047	9193	0 1000	"Normal". ; 인던 >원정대 킹퀘 전환으로 주석 해제
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick". ; 인던 >원정대 킹퀘 전환으로 주석 해제
+
+    pause Sec 5.
+
+    scriptfile "KQMaraPirate".
+
+    regengroup "MI_R_Mara" "KDPrtShipArea01".
+    regengroup "MI_R_Mara" "KDPrtShipArea02".
+    regengroup "MI_R_Mara" "KDPrtShipArea03".
+    regengroup "MI_R_Mara" "KDPrtShipArea04".
+    regengroup "MI_R_Mara" "KDPrtShipArea05".
+    regengroup "MI_R_Mara" "KDPrtShipArea06".
+    regengroup "MI_R_Mara" "KDPrtShipArea07".
+    regengroup "MI_R_Mara" "KDPrtShipArea08".
+    regengroup "MI_R_Mara" "KDPrtShipArea09".
+    regengroup "MI_R_Mara" "KDPrtShipArea10".
+    regengroup "MI_R_Mara" "KDPrtShipArea12".
+    regengroup "MI_R_Mara" "KDPrtShipArea13".
+    regengroup "MI_R_Mara" "KDPrtShipArea14".
+    regengroup "MI_R_Mara" "KDPrtShipArea15".
+
+    npcstand NPC "EldSpeGuard01" 10443 8712 180 1000 "Normal".
+
+    pause Sec 10.                        ; 5초간 대기
+    npcchat NPC "SpyLie0".
+    pause Sec 5.                        ; 5초간 대기
+
+    npcchat NPC "SpyLie1".
+    pause Sec 5.                        ; 5초간 대기
+
+    npcchat NPC "SpyLie2".
+    pause Sec 5.                        ; 5초간 대기
+
+    npcchat NPC "SpyLie3".
+    pause Sec 3.                        ; 3초간 대기
+    
+    vanish NPC.
+
+    ; 중간보스 리젠
+    mobregen MiddleMara "MID_Mara" 9249 17289 90 1000 "Normal".
+    mobregen MiddleMarlone "MID_Marlone" 9565 17142 90 1000 "Normal".
+
+    chatwin "KQ_TrueMara" "SpyReport0".
+    pause Sec 1.                        ; 1초간 대기
+    chatwin "EldSpeGuard01" "SpyReport1".
+    pause MilliSec 500.                        ; 1초간 대기
+    chatwin "KQ_TrueMarlone" "SpyReport2".
+
+    ;timelimit Min 50. ; 인던 >원정대 킹퀘 전환으로 주석 해제 (플레이 시간 설정)
+
+    regengroup "MI_R_Mara" "KDPrtShipArea16".
+    regengroup "MI_R_Mara" "KDPrtShipArea17".
+    regengroup "MI_R_Mara" "KDPrtShipArea18".
+    regengroup "MI_R_Mara" "KDPrtShipArea19".
+    regengroup "MI_R_Mara" "KDPrtShipArea21".
+    regengroup "MI_R_Mara" "KDPrtShipArea22".
+    regengroup "MI_R_Mara" "KDPrtShipArea23".
+    regengroup "MI_R_Mara" "KDPrtShipArea24".
+    regengroup "MI_R_Mara" "KDPrtShipArea25".
+    regengroup "MI_R_Mara" "KDPrtShipArea26".
+    regengroup "MI_R_Mara" "KDPrtShipArea27".
+    regengroup "MI_R_Mara" "KDPrtShipArea28".
+    regengroup "MI_R_Mara" "KDPrtShipArea29".
+    regengroup "MI_R_Mara" "KDPrtShipArea30".
+    regengroup "MI_R_Mara" "KDPrtShipArea31".
+    regengroup "MI_R_Mara" "KDPrtShipArea32".
+    regengroup "MI_R_Mara" "KDPrtShipArea33".
+    regengroup "MI_R_Mara" "KDPrtShipArea34".
+    regengroup "MI_R_Mara" "KDPrtShipArea35".
+    regengroup "MI_R_Mara" "KDPrtShipArea36".
+    regengroup "MI_R_Mara" "KDPrtShipArea37".
+    regengroup "MI_R_Mara" "KDPrtShipArea38".
+    regengroup "MI_R_Mara" "KDPrtShipArea39".
+    regengroup "MI_R_Mara" "KDPrtShipArea43".
+    regengroup "MI_R_Mara" "KDPrtShipArea44".
+    regengroup "MI_R_Mara" "KDPrtShipArea46".
+    regengroup "MI_R_Mara" "KDPrtShipArea49".
+    regengroup "MI_R_Mara" "KDPrtShipArea50".
+    regengroup "MI_R_Mara" "KDPrtShipArea51".
+    regengroup "MI_R_Mara" "KDPrtShipArea52".
+    regengroup "MI_R_Mara" "KDPrtShipArea53".
+    regengroup "MI_R_Mara" "KDPrtShipArea54".
+    regengroup "MI_R_Mara" "KDPrtShipArea55".
+
+
+    chatwin "KQ_TrueMara" "SpyReport3".
+    pause MilliSec 1000.
+    chatwin "EldSpeGuard01" "SpyReport4".
+
+
+    call "BeforeFakeBoss".      ; 가짜보스까지 진행
+
+    ; 최종보스 리젠
+    mobregen LastMara       "MID_TrueMara" 4338 19628 90 1000 "Normal".
+    mobregen VirtualMara00  "MID_Mara"     4338 19628 90 1000 "Normal".
+    mobregen VirtualMara01  "MID_Mara"     4338 19628 90 1000 "Normal".
+    mobregen Temp           "MID_Mara"     4338 19628 90 1000 "Normal".
+
+
+    mobregen LastMarlone       "MID_TrueMarlone" 5549 19683 90 1000 "Normal".
+    mobregen VirtualMarlone00  "MID_Marlone"     5549 19683 90 1000 "Normal".
+    mobregen VirtualMarlone01  "MID_Marlone"     5549 19683 90 1000 "Normal".
+    mobregen Temp              "MID_Marlone"     5549 19683 90 1000 "Normal".
+ 
+    chatwin "KQ_TrueMarlone" "MiddleReport0".
+    pause Sec 5.                        ; 5초간 대기
+    chatwin "KQ_TrueMara" "MiddleReport1".
+    pause Sec 5.                        ; 5초간 대기
+    chatwin "KQ_TrueMarlone" "MiddleReport2".
+    pause Sec 5.                        ; 5초간 대기
+    chatwin "KQ_TrueMara" "MiddleReport3".
+    pause Sec 5.                        ; 5초간 대기
+    chatwin "KQ_TrueMara" "MiddleReport4".
+
+    call "LastStage".
+close
+
+open [BeforeFakeBoss]
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail". ;원정대 인던 구현 관련 주석 해제
+    ;interruptset TimeOut "" 1 "QuestFail". ;원정대 인던 구현 관련 주석 해제
+    interruptset DeadHandle "" 1 MiddleMara "MiddleMaraDead".
+    interruptset DeadHandle "" 1 MiddleMarlone "MiddleMarloneDead".
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick". ;리턴 게이트 없음 주석 처리
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [MiddleMaraDead]
+    npcchat MiddleMara "MidMaraDead".
+    MiddleMara = 0.
+    if MiddleMarlone == 0
+    then open       ; 말론이 이미 죽었으면...
+        break "BeforeFakeBoss".
+    close
+close
+
+open [MiddleMarloneDead]
+    npcchat MiddleMarlone "MidMarloneDead".
+    MiddleMarlone = 0.
+    if MiddleMara == 0
+    then open       ; 마라가 이미 죽었으면...
+        break "BeforeFakeBoss".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [LastStage]
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail". ;원정대 인던 구현 관련 주석 해제
+    ;interruptset TimeOut "" 1 "QuestFail".  ;원정대 인던 구현 관련 주석 해제
+    interruptset DeadHandle "" 1 VirtualMara00 "VirtualMaraDead".
+    interruptset DeadHandle "" 1 VirtualMarlone00 "VirtualMarloneDead".
+    interruptset DeadHandle "" 1 VirtualMara01 "VirtualMaraDead".
+    interruptset DeadHandle "" 1 VirtualMarlone01 "VirtualMarloneDead".
+    interruptset DeadHandle "" 1 LastMara "LastMaraDead".
+    interruptset DeadHandle "" 1 LastMarlone "LastMarloneDead".
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick". ;리턴 게이트 없음 주석 처리
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [VirtualMaraDead]
+    mobregen VirtualMara00 "MID_Mara" 4466 19237 0 1000 "Normal".
+close
+
+open [VirtualMarloneDead]
+    mobregen VirtualMarlone00 "MID_TrueMarlone" 4500 19436 0 1000 "Normal".
+close
+
+open [LastMaraDead]
+    npcchat LastMara "LastMaraDead".
+    LastMara = 0.
+    if LastMarlone == 0
+    then open
+        call "QuestSuccess".
+    close
+close
+
+open [LastMarloneDead]
+    npcchat LastMarlone "LastMarloneDead".
+    LastMarlone = 0.
+    if LastMara == 0
+    then open
+        call "QuestSuccess".
+    close
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestSuccess]
+    questresult Suc.                   ; 성공패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+    reward MID. ; 킹퀘 매칭으로 보상 명령어 변경됨
+    MIDClearCount Online.;킹퀘 플레이 카운트 설정
+
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+    break "main".
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;원정대 인던 구성 관련 아래 사항 주석 처리
+	
+	;interruptclear.
+	
+	;npcstand	ReturnGate 		"Gate_ID_Exit" 		11047	9193	0 1000	"Normal".
+	;npcstand	CompleteGate 	"Gate_ID_Complete" 	4656	19083	0 1000	"Normal".
+	
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+	;interruptset	NPCClickHandle	"CompleteGateClick"		1	CompleteGate		"onCompleteGateClick".
+	
+	;infinite
+   ; open
+       ; waitinterrupt InterruptBlock "InterruptArg".
+       ; call InterruptBlock.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;여기까지
+
+    close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+
+    chatwin "EldSpeGuard01" "Fail0".
+    pause MilliSec 5000.             ; 5초간 대기
+
+    chatwin "EldSpeGuard01" "Fail1".
+    pause MilliSec 5000.             ; 5초간 대기
+
+    chatwin "EldSpeGuard01" "Fail2".
+    pause MilliSec 5000.              ; 5초간 대기
+
+    chatwin "KQ_TrueMara" "Fail3".
+
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+    break "main".
+	
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;원정대 인던 구성 관련 아래 사항 주석 처리
+;open [onReturnGateClick]
+ ; var mclicker 0.
+ ; whoclickme mclicker InterruptArg.
+;	linkto	mclicker	"RouCos03"	"RouCos03" 14259 18103.
+;  interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+;close
+
+;open [onCompleteGateClick]
+;  var mclicker 0.
+ ; whoclickme mclicker InterruptArg.
+;	linkto	mclicker	"RouCos03"	"RouCos03" 14259 18103.
+ ; interruptset	NPCClickHandle	"CompleteGateClick"		1	CompleteGate	"onCompleteGateClick".
+;close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;여기까지

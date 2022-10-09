@@ -1,0 +1,1447 @@
+open [main]
+    var InterruptBlock  ""
+        InterruptArg    ""
+
+        Entrance        ""
+        Exit            ""
+        
+        PatternList     ""
+        CurrentPattern  0
+        
+        LastStage       0
+        CurrentStage    1
+        NextStage       2
+        
+        LastDoor        ""
+        CurrentDoor     "0"
+        NextDoor        "1"
+        
+        CurrentArea     ""
+        
+        TargetObject    ""
+        TargetHandle    ""
+        Phase           0
+        NumOfPillar     4
+        
+        JewelOfIyzel    "Q_CJewel1"
+        
+        RewardTimeLimit 60
+        
+        CurrentGenX     0
+        CurrentGenY     0
+        
+        StageGenX1      1185
+        StageGenY1      4460
+        
+        StageGenX2      2118
+        StageGenY2      2454
+        
+        StageGenX3      4351
+        StageGenY3      1244
+        
+        StageGenX4      6780
+        StageGenY4      957
+        
+        StageGenX5      9228
+        StageGenY5      983
+        
+        StageGenX6      10222
+        StageGenY6      3036
+        
+        StageGenX7      11019
+        StageGenY7      5312
+        
+        StageGenX8      11734
+        StageGenY8      7709
+        
+        StageGenX9      10723
+        StageGenY9      9788
+
+        Door0           ""
+        Door00          ""
+        Door01          ""
+        Door02          ""
+        Door03          ""
+        Door04          ""
+        Door05          ""
+        Door06          ""
+        Door07          ""
+        Door08          "".
+
+    scriptfile  "Tower02".
+
+    doorbuild Door0  "C_Gate03" 1194 6749 0 1000 "Normal".
+    doorclose Door0  "DOOR0".
+    doorbuild Door00 "C_Gate03" 1191 3949 0 1000 "Normal".
+    doorclose Door00 "DOOR00".
+    doorbuild Door01 "C_Gate03" 2589 1944 0 1000 "Normal".
+    doorclose Door01 "DOOR01".
+    doorbuild Door02 "C_Gate03" 4899 1072 0 1000 "Normal".
+    doorclose Door02 "DOOR02".
+    doorbuild Door03 "C_Gate03" 7373 960 0 1000 "Normal".
+    doorclose Door03 "DOOR03".
+    doorbuild Door04 "C_Gate03" 9847 959 0 1000 "Normal".
+    doorclose Door04 "DOOR04".
+    doorbuild Door05 "C_Gate03" 10250 3698 0 1000 "Normal".
+    doorclose Door05 "DOOR05".
+    doorbuild Door06 "C_Gate03" 11415 5872 0 1000 "Normal".
+    doorclose Door06 "DOOR06".
+    doorbuild Door07 "C_Gate03" 11710 8284 0 1000 "Normal".
+    doorclose Door07 "DOOR07".
+    doorbuild Door08 "C_Gate03" 10323 10216 0 1000 "Normal".
+    doorclose Door08 "DOOR08".
+    
+    npcstand Entrance "C_Gate01" 1193 7669 0 1000 "Normal".
+    interruptset NPCClickHandle "EntranceClick" 1 Entrance "onEntranceClick".
+
+    pause Sec 10.
+    
+    ; 1번 패턴 ~ 33번 패턴이 존재한다.
+    ; 1에서 33까지의 리스트를 만든다. 구분자는 공백. 순서는 랜덤하게 섞기.
+    PatternList = @Range(1 33 "Shuffle").
+    PatternList = "27 28 32 33 1 2 3 4 5".
+
+    ; 테스트용
+    broadcast all PatternList.
+    
+    open [NormalPattern]
+        infinite
+        open
+            CurrentGenX = #("StageGenX" % CurrentStage).
+            CurrentGenY = #("StageGenY" % CurrentStage).
+            ; 테스트용
+            broadcast all CurrentStage % " 스테이지 - 좌표: " % CurrentGenX % ", " % CurrentGenY.
+            Phase = 0.
+            CurrentPattern = @RemoveFirst("PatternList" " ").
+            ; 테스트용
+            broadcast all CurrentPattern % " 패턴".
+            
+            dooropen #("Door0" % LastDoor) "DOOR0" % LastDoor.
+            doorclose #("Door0" % CurrentDoor) "DOOR0" % CurrentDoor.
+            
+            pause Sec 5.
+            
+            call "Pattern_" % CurrentPattern.
+            
+            LastStage = CurrentStage.
+            CurrentStage = NextStage.
+            NextStage = NextStage + 1.
+            
+            LastDoor = CurrentDoor.
+            CurrentDoor = NextDoor.
+            NextDoor = NextDoor + 1.
+            
+            if CurrentStage >= 10
+            then open
+                dooropen #("Door0" % LastDoor) "DOOR0" % LastDoor.
+                break "NormalPattern".
+            close
+        close
+    close
+    
+    open [BossPattern]
+        call "Boss1".
+    close
+    
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onEntranceClick]
+    var mclicker 0.
+    whoclickme mclicker InterruptArg.
+    linkto mclicker "Urg" "Urg" 9375 1079.
+    interruptset NPCClickHandle "EntranceClick" 1 Entrance "onEntranceClick".
+close
+
+open [onMobEliminate]
+    if Phase == 0
+    then open
+        break "WaitClearStage".
+    close
+    else open
+        interruptset MobEliminate "" 1 "onMobEliminate".
+    close
+close
+
+open [onTick]
+    var Total 0.
+    
+    Total = @Count("all").
+    
+    if Total == 0
+    then open
+        break "WaitClearStage".
+    close
+    else open
+        interruptset Sec "Tick" 1 10 "onTick".
+    close
+close
+
+open [WaitClearStage]
+    interruptset MobEliminate "" 1 "onMobEliminate".
+
+    ; 체크 못하고 지나갈때가 있어서 10초마다 체크한다
+    ; interruptset Sec "Tick" 1 10 "onTick".
+    
+    pause Sec 5.
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open [onPhaseZero]
+    Phase = 0.
+close
+
+open [onBossDead]
+    suicide all.
+    break "WaitKillBoss".
+close
+
+open [WaitKillBoss]
+    interruptset DeadIndex "BossDead" 1 TargetObject "onBossDead".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open [onOpenSomething]
+    interrupterase "SummonMob".
+    interrupterase "DropJewel".
+    break "WaitOpenSomething".
+close
+
+open [onOpenJewelBox]
+    itemdrop InterruptArg JewelOfIyzel 1000000.
+close
+
+open [WaitOpenSomething]
+    interruptset DeadIndex "" 1 TargetObject "onOpenSomething".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+; 몹 잡는 패턴 1~8
+open [Pattern_1]
+    regengroup "Tower02" "RGN_C1_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C1_2" CurrentGenX CurrentGenY.
+    
+    chatwin "KQ_G_BossTombRaider" "ChatC1_1".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_2]
+    regengroup "Tower02" "RGN_C2_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C2_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldArcGuard01" "ChatC2_1".
+    pause Sec 2.
+    chatwin "EldArcGuard01" "ChatC2_2".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_3]
+    regengroup "Tower02" "RGN_C3_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C3_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldWarSkillMarty" "ChatC3_1".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC3_2".
+    
+    call "WaitClearStage".
+close
+
+
+open [Pattern_4]
+    regengroup "Tower02" "RGN_C4_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C4_2" CurrentGenX CurrentGenY.
+    
+    chatwin "HairDesignerB" "ChatC4_1".
+    pause Sec 2.
+    chatwin "HairDesignerB" "ChatC4_2".
+    pause Sec 2.
+    chatwin "HairDesignerB" "ChatC4_3".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_5]
+    regengroup "Tower02" "RGN_C5_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C5_2" CurrentGenX CurrentGenY.
+    
+    chatwin "Job2_BraveR" "ChatC5_1".
+    pause Sec 2.
+    chatwin "Job2_BraveR" "ChatC5_2".
+    pause Sec 2.
+    chatwin "Job2_BraveR" "ChatC5_3".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_6]
+    regengroup "Tower02" "RGN_C6_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C6_2" CurrentGenX CurrentGenY.
+    
+    chatwin "UruItemMctVellon" "ChatC6_1".
+    pause Sec 2.
+    chatwin "UruItemMctVellon" "ChatC6_2".
+    pause Sec 2.
+    chatwin "UruItemMctVellon" "ChatC6_3".
+    pause Sec 2.
+    chatwin "UruItemMctVellon" "ChatC6_4".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_7]
+    regengroup "Tower02" "RGN_C7_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C7_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldArcGuard01" "ChatC7_1".
+    pause Sec 2.
+    chatwin "EldArcGuard01" "ChatC7_2".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_8]
+    regengroup "Tower02" "RGN_C8_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C8_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldWarSkillMarty" "ChatC8_1".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC8_2".
+    
+    call "WaitClearStage".
+close
+
+; 보스잡는 패턴 9~16
+open [Pattern_9]
+    regengroup "Tower02" "RGN_C9_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C9_2" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_BigJewelKeeper".
+    
+    chatwin "EldWarSkillMarty" "ChatC9_1".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC9_2".
+    
+    call "WaitKillBoss".
+close
+
+open [Pattern_10]
+    regengroup "Tower02" "RGN_C10_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C10_2" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_BigDarkArchon".
+    
+    chatwin "EldGuardNus" "ChatC10_1".
+    pause Sec 2.
+    chatwin "EldGuardNus" "ChatC10_2".
+    
+    call "WaitKillBoss".
+close
+
+open [Pattern_11]
+    regengroup "Tower02" "RGN_C11_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C11_2" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_BigDarkLips".
+    
+    chatwin "RouSkillRubi" "ChatC11_1".
+    pause Sec 2.
+    chatwin "RouSkillRubi" "ChatC11_2".
+    
+    call "WaitKillBoss".
+close
+
+open [Pattern_12]
+    regengroup "Tower02" "RGN_C12_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C12_2" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_CurseDarkOrc".
+    
+    chatwin "UruGuildLump" "ChatC12_1".
+    pause Sec 2.
+    chatwin "UruGuildLump" "ChatC12_2".
+    
+    call "WaitKillBoss".
+close
+
+open [Pattern_13]
+    regengroup "Tower02" "RGN_C13_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C13_2" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_CurseDarkNavar".
+    
+    chatwin "UruSmithHans" "ChatC13_1".
+    pause Sec 2.
+    chatwin "UruSmithHans" "ChatC13_2".
+    
+    call "WaitKillBoss".
+close
+
+open [Pattern_14]
+    regengroup "Tower02" "RGN_C14_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C14_2" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_BigDarkSpakeDog".
+    
+    chatwin "UruStoreCurly" "ChatC14_1".
+    pause Sec 2.
+    chatwin "UruStoreCurly" "ChatC14_2".
+    
+    call "WaitKillBoss".
+close
+
+open [Pattern_15]
+    regengroup "Tower02" "RGN_C15_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C15_2" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_BigGoldJewelKeeper".
+    
+    chatwin "UruTownChiefAdrien" "ChatC15_1".
+    
+    call "WaitKillBoss".
+close
+
+open [Pattern_16]
+    regengroup "Tower02" "RGN_C16_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C16_2" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_KingMushRoom".
+    
+    chatwin "EldFurnitureForestTall" "ChatC16_1".
+    
+    call "WaitKillBoss".
+close
+
+; 물방/마방 강한 몹 잡는 패턴 17~20
+open [Pattern_17]
+    regengroup "Tower02" "RGN_C17_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C17_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldCastleLordElderiss" "ChatC17_1".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC17_3".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC17_4".
+    pause Sec 2.
+    chatwin "EldGuardCaptainShutian" "ChatC17_5".
+    pause Sec 2.
+    chatwin "EldGuardCaptainShutian" "ChatC17_6".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_18]
+    regengroup "Tower02" "RGN_C18_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C18_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldCastleLordElderiss" "ChatC18_1".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC18_2".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC18_3".
+    pause Sec 2.
+    chatwin "EldGuardCaptainShutian" "ChatC18_4".
+    pause Sec 2.
+    chatwin "EldGuardCaptainShutian" "ChatC18_5".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_19]
+    regengroup "Tower02" "RGN_C19_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C19_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldItemMctKenton" "ChatC19_1".
+    pause Sec 2.
+    chatwin "EldItemMctKenton" "ChatC19_2".
+    pause Sec 2.
+    chatwin "RouGaianMaria" "ChatC19_3".
+    pause Sec 2.
+    chatwin "RouGaianMaria" "ChatC19_4".
+    pause Sec 2.
+    chatwin "RouGaianMaria" "ChatC19_5".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_20]
+    regengroup "Tower02" "RGN_C20_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C20_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldItemMctKenton" "ChatC20_1".
+    pause Sec 2.
+    chatwin "EldItemMctKenton" "ChatC20_2".
+    pause Sec 2.
+    chatwin "RouGaianMaria" "ChatC20_3".
+    pause Sec 2.
+    chatwin "RouGaianMaria" "ChatC20_4".
+    pause Sec 2.
+    chatwin "RouGaianMaria" "ChatC20_5".
+    
+    call "WaitClearStage".
+close
+
+; 2페이즈 진행 몹 잡기 21~23
+open [Pattern_21]
+    Phase = 1.
+    regengroup "Tower02" "RGN_C21_1" CurrentGenX CurrentGenY.
+    interruptset DeadIndex "" 1 "C_KQ_Kamaris" "Pattern_21_Phase1".
+    
+    chatwin "RouTownChiefRoumenus" "ChatC21_1".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "ChatC21_2".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_21_Phase1]
+    regengroup "Tower02" "RGN_C21_2" CurrentGenX CurrentGenY.
+    
+    chatwin "RouTownChiefRoumenus" "ChatC21_3".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "ChatC21_4".
+    
+    interruptset Sec "" 1 5 "onPhaseZero".
+close
+
+open [Pattern_22]
+    Phase = 1.
+    regengroup "Tower02" "RGN_C22_1" CurrentGenX CurrentGenY.
+    interruptset DeadIndex "" 1 "C_KQ_Kamaris" "Pattern_22_Phase1".
+    
+    chatwin "RouTownChiefRoumenus" "ChatC22_1".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "ChatC22_2".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_22_Phase1]
+    regengroup "Tower02" "RGN_C22_2" CurrentGenX CurrentGenY.
+    
+    chatwin "RouTownChiefRoumenus" "ChatC22_3".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "ChatC22_4".
+    
+    interruptset Sec "" 1 5 "onPhaseZero".
+close
+
+open [Pattern_23]
+    Phase = 1.
+    regengroup "Tower02" "RGN_C23_1" CurrentGenX CurrentGenY.
+    interruptset DeadIndex "" 1 "C_KQ_Kamaris" "Pattern_23_Phase1".
+    
+    chatwin "RouTownChiefRoumenus" "ChatC23_1".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "ChatC23_2".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_23_Phase1]
+    regengroup "Tower02" "RGN_C23_2" CurrentGenX CurrentGenY.
+    
+    chatwin "RouTownChiefRoumenus" "ChatC23_3".
+    pause Sec 2.
+    chatwin "RouTownChiefRoumenus" "ChatC23_4".
+      
+    interruptset Sec "" 1 5 "onPhaseZero".
+close
+
+; 몹 잡는 패턴 24~25
+open [Pattern_24]
+    regengroup "Tower02" "RGN_C24_1" CurrentGenX CurrentGenY.
+    
+    chatwin "EldArcGuard01" "ChatC24_1".
+    pause Sec 2.
+    chatwin "EldArcGuard01" "ChatC24_2".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_25]
+    regengroup "Tower02" "RGN_C25_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C25_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldScoSkillDeikid" "ChatC25_1".
+    pause Sec 2.
+    chatwin "EldScoSkillDeikid" "ChatC25_2".
+    
+    call "WaitClearStage".
+close
+
+; 보스잡는 패턴 26
+open [Pattern_26]
+    regengroup "Tower02" "RGN_C26_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C26_2" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C26_3" CurrentGenX CurrentGenY.
+    
+    TargetObject = "C_RangerSkelArcher".
+    
+    chatwin "EldWarSkillMarty" "ChatC26_1".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC26_2".
+    
+    call "WaitKillBoss".
+close
+
+
+; 복불복 27~28
+open [Pattern_27]
+    regengroup "Tower02" "RGN_C27_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C27_2" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C27_4" CurrentGenX CurrentGenY.
+    
+    interruptset DeadIndex "SummonMob" 99 "C_DarkPresentBox02" "onOpenZombieBox".
+    interruptset DeadIndex "DropJewel" 99 "C_DarkPresentBox03" "onOpenJewelBox".
+    
+    TargetObject = "C_DarkPresentBox01".
+    
+    chatwin "EldWarSkillMarty" "ChatC27_1".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC27_2".
+    
+    call "WaitOpenSomething".
+    
+    vanish MobIndex "C_DarkPresentBox02".
+    vanish MobIndex "C_DarkPresentBox03".
+    
+    chatwin "EldWarSkillMarty" "ChatC27_4".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC27_5".
+    
+    call "WaitClearStage".
+close
+
+open [onOpenZombieBox]
+    regengroup "Tower02" "RGN_C27_3" CurrentGenX CurrentGenY.
+    chatwin "EldWarSkillMarty" "ChatC27_3".
+close
+
+open [Pattern_28]
+    regengroup "Tower02" "RGN_C28_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C28_2" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C28_4" CurrentGenX CurrentGenY.
+    
+    interruptset DeadIndex "SummonMob" 99 "C_DarkMine2" "onOpenSkelMine".
+    interruptset DeadIndex "DropJewel" 99 "C_DarkMine3" "onOpenJewelBox".
+    
+    TargetObject = "C_DarkMine1".
+    
+    chatwin "RouDiggerPalmers" "ChatC28_1".
+    pause Sec 2.
+    chatwin "RouDiggerPalmers" "ChatC28_2".
+    
+    call "WaitOpenSomething".
+    
+    vanish MobIndex "C_DarkMine2".
+    vanish MobIndex "C_DarkMine3".
+    
+    chatwin "RouDiggerPalmers" "ChatC28_4".
+    pause Sec 2.
+    chatwin "RouDiggerPalmers" "ChatC28_5".
+    
+    call "WaitClearStage".
+close       
+
+open [onOpenSkelMine]
+    regengroup "Tower02" "RGN_C28_3" CurrentGenX CurrentGenY.
+    chatwin "RouDiggerPalmers" "ChatC28_3".
+close
+
+; 몹 잡는 패턴 29~31
+open [Pattern_29]
+    regengroup "Tower02" "RGN_C29_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C29_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldSpeGuard01" "ChatC29_1".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_30]
+    regengroup "Tower02" "RGN_C30_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C30_2" CurrentGenX CurrentGenY.
+    
+    chatwin "EldSpeGuard01" "ChatC30_1".
+    
+    call "WaitClearStage".
+close
+
+open [Pattern_31]
+    regengroup "Tower02" "RGN_C31_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C31_2" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C31_3" CurrentGenX CurrentGenY.
+    
+    chatwin "KQ_G_Marlone" "ChatC31_1".
+    pause Sec 2.
+    chatwin "KQ_G_Marlone" "ChatC31_2".
+    pause Sec 2.
+    chatwin "RouSkillRubi" "ChatC31_3".
+    pause Sec 2.
+    chatwin "RouSkillRubi" "ChatC31_4".
+    
+    call "WaitClearStage".
+    
+    chatwin "KQ_G_Marlone" "ChatC31_5".
+    pause Sec 2.
+    chatwin "KQ_G_Marlone" "ChatC31_6".
+    pause Sec 2.
+    chatwin "UruItemMctVellon" "ChatC31_7".
+    pause Sec 2.
+    chatwin "UruItemMctVellon" "ChatC31_8".
+close
+
+; 복불복 32
+open [Pattern_32]
+    regengroup "Tower02" "RGN_C35_1" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C35_2" CurrentGenX CurrentGenY.
+    regengroup "Tower02" "RGN_C35_3" CurrentGenX CurrentGenY.
+    
+    interruptset DeadIndex "SummonMob" 99 "DarkCoffin02" "onOpenZombieCoffin".
+    interruptset DeadIndex "DropJewel" 99 "DarkCoffin03" "onOpenJewelBox".
+    
+    TargetObject = "DarkCoffin01".
+    
+    chatwin "EldWarSkillMarty" "ChatC35_1".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC35_2".
+    
+    call "WaitOpenSomething".
+    
+    vanish MobIndex "DarkCoffin02".
+    vanish MobIndex "DarkCoffin03".
+    
+    chatwin "EldWarSkillMarty" "ChatC35_4".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC35_5".
+    
+    call "WaitClearStage".
+close
+
+open [onOpenZombieCoffin]
+    regengroup "Tower02" "RGN_C35_4" CurrentGenX CurrentGenY.
+    chatwin "EldWarSkillMarty" "ChatC35_3".
+close
+
+; 3페이즈 가둬놓고 서바이벌 33
+open [Pattern_33]
+    CurrentArea = "Tower02_A" % (CurrentStage + 1).
+    interruptset Sec "CheckArea" 1 5 "onCheckArea".
+    
+    chatwin "EldWarSkillMarty" "ChatC36_1".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC36_2".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "ChatC36_3".
+    
+    Phase = 2.
+    
+    call "WaitClearStage".
+    
+    interrupterase "EliminateIn33".
+    interrupterase "CheckArea".
+    dooropen #("Door0" % LastDoor) "DOOR0" % LastDoor.
+close
+
+open [onEliminateIn33]
+    interrupterase "Pattern_33_Phase2".
+    interrupterase "PhaseZero".
+    Phase = 2.
+    vanish all.
+    interruptset Sec "CheckArea" 1 5 "onCheckArea".
+    dooropen #("Door0" % LastDoor) "DOOR0" % LastDoor.
+close
+
+open [onCheckArea]
+    var Cond        0
+        NumOfPlayer 0.
+    
+    NumOfPlayer = @PlayerInArea("player" CurrentArea).
+    
+    if NumOfPlayer > 0
+    then open
+        if @Count("player") == NumOfPlayer
+        then open
+            Cond = 1.
+        close
+    close
+    
+    if Cond == 1
+    then open   
+        doorclose #("Door0" % LastDoor) "DOOR0" % LastDoor.
+        chatwin "EldWarSkillMarty" "ChatC36_4".
+        
+        interruptset PlayerEliminate "EliminateIn33" 1 "onEliminateIn33".
+        interruptset Sec "Pattern_33_Phase2" 1 15 "Pattern_33_Phase2".
+        
+        Phase = 1.
+        regengroup "Tower02" "RGN_C35_4" CurrentGenX CurrentGenY.
+    close
+    else open
+        interruptset Sec "CheckArea" 1 5 "onCheckArea".
+    close
+close
+
+open [Pattern_33_Phase2]
+    chatwin "EldWarSkillMarty" "ChatC36_5".
+    regengroup "Tower02" "RGN_C35_4" CurrentGenX CurrentGenY.
+    
+    interruptset Sec "PhaseZero" 1 5 "onPhaseZero".
+close
+
+; Boss 1~3
+
+open [onPillar2Dead]
+    abstatereset TargetHandle "StaMobACPlus".
+close
+
+open [onPillar3Dead]
+    abstatereset TargetHandle "StaMobMRPlus".
+close
+
+open [onDeadInBoss1]
+    if @PlayerInArea("player" "Tower02_A11") == 0
+    then open
+        interrupterase "Boss1_HP75Per".
+        interrupterase "Boss1_HP50Per".
+        interrupterase "Boss1_HP25Per".
+        interrupterase "Time2Close1".
+        interrupterase "Boss1Dead".
+        interrupterase "Pillar2Dead".
+        interrupterase "Pillar3Dead".
+        
+        vanish all.
+        
+        call "InitBoss1".
+        
+        interruptset Sec "CheckBossArea1" 1 5 "onCheckBossArea1".
+        dooropen Door08 "DOOR08".
+        
+        chatwin "Iyzel" "ChatC32_6".
+        pause Sec 2.
+        chatwin "Iyzel" "ChatC32_7".
+    close
+    else open
+        interruptset playerdead "DeadInBoss1" 1 "onDeadInBoss1".
+    close
+close
+
+open [onTime2Close1]
+    if @PlayerInArea("player" "Tower02_A11") > 0
+    then open
+        doorclose Door08 "DOOR08".
+        
+        chatwin "RouSkillRubi" "ChatC32_4".
+        broadcast all "ChatC32_5".
+    close
+    else open
+        interruptset Sec "CheckBossArea1" 1 5 "onCheckBossArea1".
+    close
+close
+
+open [onCheckBossArea1]
+    if @PlayerInArea("player" "Tower02_A11") > 0
+    then open
+        interruptset Sec "Time2Close1" 1 7 "onTime2Close1".
+    close
+    else open
+        interruptset Sec "CheckBossArea1" 1 5 "onCheckBossArea1".
+    close
+close
+
+open [onBoss1_HP75Per]
+    regengroup "Tower02" "RGN_C32_2".
+    chatwin "RouSkillRubi" "ChatC32_8".
+close
+
+open [onBoss1_HP50Per]
+    regengroup "Tower02" "RGN_C32_3".
+    chatwin "RouSkillRubi" "ChatC32_8".
+close
+
+open [onBoss1_HP25Per]
+    regengroup "Tower02" "RGN_C32_2".
+    regengroup "Tower02" "RGN_C32_3".
+    chatwin "RouSkillRubi" "ChatC32_8".
+close
+
+open [onBoss1Dead]
+    break "WaitKillBoss1".
+close
+
+open [onOpenBoxBoss1]
+    var RndNum 0
+        Opener "".
+    RndNum = @Random(1 4).
+    whokillme Opener InterruptArg.
+    
+    if RndNum == 1
+    then open
+        itemdrop InterruptArg "NorHpPotion" 1000000.
+    close
+    else if RndNum == 2
+    then open
+        itemdrop InterruptArg "NorHpPotion" 1000000.
+    close
+    else if RndNum == 3
+    then open
+        itemdrop InterruptArg "NorSpPotion" 1000000.
+    close
+    else if RndNum == 4
+    then open
+        itemdrop InterruptArg "NorSpPotion" 1000000.
+    close
+    
+    ;broadcast all @CharName(Opener) % "님이 보물을 발견했습니다!".
+    
+    interrupterase "TimeOut1".
+    call "onBoss1End".
+close
+
+open [onTimeOut1]
+    interrupterase "OpenBoxBoss1".
+    call "onBoss1End".
+close
+
+open [onBoss1End]
+    vanish all.
+    
+    chatwin "Iyzel" "ChatC32_16".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC32_17".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC32_18".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC32_19".
+close
+
+open [InitBoss1]
+    mobregen TargetHandle "C_PillarofLightIyzel02" 8488 11097 53 1000 "Normal".
+    mobregen TargetHandle "C_PillarofLightIyzel03" 8775 11583 53 1000 "Normal".        
+    mobregen TargetHandle "C_LizardManGuardian" 8800 11213 53 1000 "Normal".
+    abstateset TargetHandle "StaMobACPlus" 1 4200000000.
+    abstateset TargetHandle "StaMobMRPlus" 1 4200000000.
+
+    interruptset HPLow "Boss1_HP75Per" 1 TargetHandle 750 "onBoss1_HP75Per".
+    interruptset HPLow "Boss1_HP50Per" 1 TargetHandle 500 "onBoss1_HP50Per".
+    interruptset HPLow "Boss1_HP25Per" 1 TargetHandle 250 "onBoss1_HP25Per".
+    interruptset DeadIndex "Boss1Dead" 1 "C_LizardManGuardian" "onBoss1Dead".
+    interruptset DeadIndex "Pillar2Dead" 1 "C_PillarofLightIyzel02" "onPillar2Dead".
+    interruptset DeadIndex "Pillar3Dead" 1 "C_PillarofLightIyzel03" "onPillar3Dead".
+    
+    regengroup "Tower02" "RGN_C32_2".
+    regengroup "Tower02" "RGN_C32_3".
+
+    interruptset playerdead "DeadInBoss1" 1 "onDeadInBoss1".
+close
+
+open [Boss1]
+    var Iyzel 0.
+    
+    call "InitBoss1".
+    
+    chatwin "RouSkillRubi" "ChatC32_1".
+    pause Sec 2.
+    chatwin "RouSkillRubi" "ChatC32_2".
+    pause Sec 2.
+    chatwin "RouSkillRubi" "ChatC32_3".
+
+    interruptset Sec "CheckBossArea1" 1 5 "onCheckBossArea1".
+    
+    open [WaitKillBoss1]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+        close
+    close
+    
+    suicide all.    
+    dooropen Door08 "DOOR08".
+    interrupterase "DeadInBoss1".
+    
+    broadcast all "ChatC32_9".
+    
+    call "ExitGateOpen".
+    
+    chatwin "RouSkillRubi" "ChatC32_10".
+    pause Sec 2.
+    chatwin "RouSkillRubi" "ChatC32_11".
+    
+    pause Sec 5.
+    
+    npcstand Iyzel "Iyzel" 8800 11213 315 1000 "Normal".
+    abstateset Iyzel "StaImmortal" 1 4200000000.
+
+    regengroup "Tower02" "RGN_C32_4".
+    regengroup "Tower02" "RGN_C32_5".
+    regengroup "Tower02" "RGN_C32_6".
+    
+    timelimit Sec RewardTimeLimit.
+    interruptset DeadIndex "OpenBoxBoss1" 1 "C_IyzenPresentBox01" "onOpenBoxBoss1".    
+    interruptset TimeOut "TimeOut1" 1 "onTimeOut1".
+    
+    chatwin "Iyzel" "ChatC32_12".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC32_13".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC32_14".
+close
+
+open [onDeadInBoss2]
+    if @PlayerInArea("player" "Tower02_A11") == 0
+    then open
+        interrupterase "Boss2_HP75Per".
+        interrupterase "Boss2_HP50Per".
+        interrupterase "Boss2_HP25Per".
+        interrupterase "Time2Close2".
+        interrupterase "Boss2Dead".
+        interrupterase "Pillar2Dead".
+        interrupterase "Pillar3Dead".
+        
+        vanish all.
+        
+        call "InitBoss2".
+        
+        interruptset Sec "CheckBossArea2" 1 5 "onCheckBossArea2".
+        dooropen Door08 "DOOR08".
+        
+        chatwin "Iyzel" "ChatC33_7".
+        pause Sec 2.
+        chatwin "Iyzel" "ChatC33_8".
+    close
+    else open
+        interruptset playerdead "DeadInBoss2" 1 "onDeadInBoss2".
+    close
+close
+
+open [onTime2Close2]
+    if @PlayerInArea("player" "Tower02_A11") > 0
+    then open
+        doorclose Door08 "DOOR08".
+        
+        chatwin "UruGuildLump" "ChatC33_5".
+        broadcast all "ChatC33_6".
+    close
+    else open
+        interruptset Sec "CheckBossArea2" 1 5 "onCheckBossArea2".
+    close
+close
+
+open [onCheckBossArea2]
+    if @PlayerInArea("player" "Tower02_A11") > 0
+    then open
+        interruptset Sec "Time2Close2" 1 7 "onTime2Close2".
+    close
+    else open
+        interruptset Sec "CheckBossArea2" 1 5 "onCheckBossArea2".
+    close
+close
+
+open [onBoss2_HP75Per]
+    regengroup "Tower02" "RGN_C33_2".
+    chatwin "UruGuildLump" "ChatC33_9".
+close
+
+open [onBoss2_HP50Per]
+    regengroup "Tower02" "RGN_C33_3".
+    chatwin "UruGuildLump" "ChatC33_9".
+close
+
+open [onBoss2_HP25Per]
+    regengroup "Tower02" "RGN_C33_2".
+    regengroup "Tower02" "RGN_C33_3".
+    chatwin "UruGuildLump" "ChatC33_9".
+close
+
+open [onBoss2Dead]
+    break "WaitKillBoss2".
+close
+
+open [onOpenBoxBoss2]
+    var RndNum 0
+        Opener "".
+    RndNum = @Random(1 4).
+    whokillme Opener InterruptArg.
+    
+    if RndNum == 1
+    then open
+        itemdrop InterruptArg "NorHpPotion" 1000000.
+    close
+    else if RndNum == 2
+    then open
+        itemdrop InterruptArg "NorHpPotion" 1000000.
+    close
+    else if RndNum == 3
+    then open
+        itemdrop InterruptArg "NorSpPotion" 1000000.
+    close
+    else if RndNum == 4
+    then open
+        itemdrop InterruptArg "NorSpPotion" 1000000.
+    close
+    
+    ;broadcast all @CharName(Opener) % "님이 보물을 발견했습니다!".
+    
+    interrupterase "TimeOut2".
+    call "onBoss2End".
+close
+
+open [onTimeOut2]
+    interrupterase "OpenBoxBoss2".
+    call "onBoss2End".
+close
+
+open [onBoss2End]
+    vanish all.
+    
+    chatwin "Iyzel" "ChatC33_17".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC33_18".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC33_19".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC33_20".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC33_21".
+close
+
+open[InitBoss2]
+    mobregen TargetHandle "C_PillarofLightIyzel02" 8488 11097 53 1000 "Normal".
+    mobregen TargetHandle "C_PillarofLightIyzel03" 8775 11583 53 1000 "Normal". 
+    mobregen TargetHandle "C_HeavyOrc" 8800 11213 53 1000 "Normal".
+    abstateset TargetHandle "StaMobACPlus" 1 4200000000.
+    abstateset TargetHandle "StaMobMRPlus" 1 4200000000.
+
+    interruptset HPLow "Boss2_HP75Per" 1 TargetHandle 750 "onBoss2_HP75Per".
+    interruptset HPLow "Boss2_HP50Per" 1 TargetHandle 500 "onBoss2_HP50Per".
+    interruptset HPLow "Boss2_HP25Per" 1 TargetHandle 250 "onBoss2_HP25Per".
+    interruptset DeadIndex "Boss2Dead" 1 "C_HeavyOrc" "onBoss2Dead".
+    interruptset DeadIndex "Pillar2Dead" 1 "C_PillarofLightIyzel02" "onPillar2Dead".
+    interruptset DeadIndex "Pillar3Dead" 1 "C_PillarofLightIyzel03" "onPillar3Dead".
+    
+    regengroup "Tower02" "RGN_C33_2".
+    regengroup "Tower02" "RGN_C33_3".
+
+    interruptset playerdead "DeadInBoss2" 1 "onDeadInBoss2".
+close
+
+open [Boss2]
+    var Iyzel 0.
+    
+    call "InitBoss2".
+    
+    chatwin "UruGuildLump" "ChatC33_1".
+    pause Sec 2.
+    chatwin "UruGuildLump" "ChatC33_2".
+    pause Sec 2.
+    chatwin "UruGuildLump" "ChatC33_3".
+    pause Sec 2.
+    chatwin "UruGuildLump" "ChatC33_4".
+
+    interruptset Sec "CheckBossArea2" 1 5 "onCheckBossArea2".
+    
+    open [WaitKillBoss2]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+        close
+    close
+    
+    suicide all.    
+    dooropen Door08 "DOOR08".
+    interrupterase "DeadInBoss2".
+    
+    broadcast all "ChatC33_10".
+    
+    call "ExitGateOpen".
+    
+    chatwin "UruGuildLump" "ChatC33_11".
+    pause Sec 2.
+    chatwin "UruGuildLump" "ChatC33_12".
+    
+    pause Sec 5.
+    
+    npcstand Iyzel "Iyzel" 8800 11213 315 1000 "Normal".
+    abstateset Iyzel "StaImmortal" 1 4200000000.
+
+    regengroup "Tower02" "RGN_C33_4".
+    regengroup "Tower02" "RGN_C33_5".
+    regengroup "Tower02" "RGN_C33_6".
+    
+    timelimit Sec RewardTimeLimit.
+    interruptset DeadIndex "OpenBoxBoss2" 1 "C_IyzenPresentBox02" "onOpenBoxBoss2".    
+    interruptset TimeOut "TimeOut2" 1 "onTimeOut2".
+    
+    chatwin "Iyzel" "ChatC33_13".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC33_14".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC33_15".
+close
+
+open [onCrash]
+    NumOfPillar = NumOfPillar - 1.
+    
+    if NumOfPillar == 0
+    then open
+        abstatereset TargetHandle "StaMobImmortal".
+        interrupterase "Crash".
+    close
+close
+
+open [onDeadInBoss3]
+    if @PlayerInArea("player" "Tower02_A11") == 0
+    then open
+        interrupterase "Boss3_HP75Per".
+        interrupterase "Boss3_HP50Per".
+        interrupterase "Boss3_HP25Per".
+        interrupterase "Boss3_HP20Per".
+        interrupterase "Boss3_HP15Per".
+        interrupterase "Time2Close3".
+        interrupterase "Boss3Dead".
+        interrupterase "Crash".
+        
+        NumOfPillar = 4.
+        
+        vanish all.
+        
+        call "InitBoss3".
+        
+        interruptset Sec "CheckBossArea3" 1 5 "onCheckBossArea3".
+        dooropen Door08 "DOOR08".
+        
+        chatwin "Iyzel" "ChatC34_7".
+        pause Sec 2.
+        chatwin "Iyzel" "ChatC34_8".
+    close
+    else open
+        interruptset playerdead "DeadInBoss3" 1 "onDeadInBoss3".
+    close
+close
+
+open [onTime2Close3]
+    if @PlayerInArea("player" "Tower02_A11") > 0
+    then open
+        doorclose Door08 "DOOR08".
+        
+        chatwin "EldCastleLordElderiss" "ChatC34_6".
+        broadcast all "ChatC34_24".
+    close
+    else open
+        interruptset Sec "CheckBossArea3" 1 5 "onCheckBossArea3".
+    close
+close
+
+open [onCheckBossArea3]
+    if @PlayerInArea("player" "Tower02_A11") > 0
+    then open
+        interruptset Sec "Time2Close3" 1 7 "onTime2Close3".
+    close
+    else open
+        interruptset Sec "CheckBossArea3" 1 5 "onCheckBossArea3".
+    close
+close
+
+open [onBoss3_HP75Per]
+    regengroup "Tower02" "RGN_C34_2".
+    chatwin "EldCastleLordElderiss" "ChatC34_9".
+close
+
+open [onBoss3_HP50Per]
+    regengroup "Tower02" "RGN_C34_3".
+    chatwin "EldCastleLordElderiss" "ChatC34_9".
+close
+
+open [onBoss3_HP25Per]
+    regengroup "Tower02" "RGN_C34_3".
+    chatwin "EldCastleLordElderiss" "ChatC34_9".
+close
+
+open [onBoss3_HP20Per]
+    NumOfPillar = 4.
+    regengroup "Tower02" "RGN_C34_5".
+    regengroup "Tower02" "RGN_C34_6".
+    regengroup "Tower02" "RGN_C34_7".
+    regengroup "Tower02" "RGN_C34_8".
+    interruptset DeadIndex "Crash" 99 "C_PillarofLight" "onCrash".
+    abstateset TargetHandle "StaMobImmortal" 1 4200000000.
+    
+    regengroup "Tower02" "RGN_C34_2".
+    regengroup "Tower02" "RGN_C34_3".
+    chatwin "EldCastleLordElderiss" "ChatC34_25".
+close
+
+open [onBoss3_HP15Per]
+    regengroup "Tower02" "RGN_C34_2".
+    regengroup "Tower02" "RGN_C34_3".
+    chatwin "EldCastleLordElderiss" "ChatC34_10".
+close
+
+open [onBoss3Dead]
+    break "WaitKillBoss3".
+close
+
+open [onOpenBoxBoss3]
+    var RndNum 0
+        Opener "".
+    RndNum = @Random(1 4).
+    whokillme Opener InterruptArg.
+    
+    if RndNum == 1
+    then open
+        itemdrop InterruptArg "NorHpPotion" 1000000.
+    close
+    else if RndNum == 2
+    then open
+        itemdrop InterruptArg "NorHpPotion" 1000000.
+    close
+    else if RndNum == 3
+    then open
+        itemdrop InterruptArg "NorSpPotion" 1000000.
+    close
+    else if RndNum == 4
+    then open
+        itemdrop InterruptArg "NorSpPotion" 1000000.
+    close
+    
+    ;broadcast all @CharName(Opener) % "님이 보물을 발견했습니다!".
+    
+    interrupterase "TimeOut3".
+    call "onBoss3End".
+close
+
+open [onTimeOut3]
+    interrupterase "OpenBoxBoss3".
+    call "onBoss3End".
+close
+
+open [onBoss3End]
+    vanish all.
+    
+    chatwin "Iyzel" "ChatC34_21".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC34_22".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC34_23".
+close
+
+open [InitBoss3]
+    mobregen TargetHandle "C_JewelGolem" 8800 11213 53 1000 "Normal".
+    abstateset TargetHandle "StaMobImmortal" 1 4200000000.
+
+    interruptset HPLow "Boss3_HP75Per" 1 TargetHandle 750 "onBoss3_HP75Per".
+    interruptset HPLow "Boss3_HP50Per" 1 TargetHandle 500 "onBoss3_HP50Per".
+    interruptset HPLow "Boss3_HP25Per" 1 TargetHandle 250 "onBoss3_HP25Per".
+    interruptset HPLow "Boss3_HP20Per" 1 TargetHandle 200 "onBoss3_HP20Per".
+    interruptset HPLow "Boss3_HP15Per" 1 TargetHandle 150 "onBoss3_HP15Per".
+    interruptset DeadIndex "Boss3Dead" 1 "C_JewelGolem" "onBoss3Dead".
+    
+    regengroup "Tower02" "RGN_C34_2".
+    regengroup "Tower02" "RGN_C34_3".
+    
+    regengroup "Tower02" "RGN_C34_5".
+    regengroup "Tower02" "RGN_C34_6".
+    regengroup "Tower02" "RGN_C34_7".
+    regengroup "Tower02" "RGN_C34_8".
+    interruptset DeadIndex "Crash" 99 "C_PillarofLight" "onCrash".
+
+    interruptset playerdead "DeadInBoss3" 1 "onDeadInBoss3".
+close
+
+open [Boss3]
+    var Iyzel 0.
+    
+    call "InitBoss3".
+    
+    chatwin "EldCastleLordElderiss" "ChatC34_1".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC34_2".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC34_3".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC34_4".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC34_5".
+
+    interruptset Sec "CheckBossArea3" 1 5 "onCheckBossArea3".
+    
+    open [WaitKillBoss3]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+        close
+    close
+    
+    suicide all.    
+    dooropen Door08 "DOOR08".
+    interrupterase "DeadInBoss3".
+    
+    broadcast all "ChatC34_11".
+    
+    call "ExitGateOpen".
+    
+    chatwin "EldCastleLordElderiss" "ChatC34_12".
+    pause Sec 2.
+    chatwin "EldCastleLordElderiss" "ChatC34_13".
+    
+    pause Sec 5.
+    
+    npcstand Iyzel "Iyzel" 8800 11213 315 1000 "Normal".
+    abstateset Iyzel "StaImmortal" 1 4200000000.
+
+    regengroup "Tower02" "RGN_C34_9".
+    regengroup "Tower02" "RGN_C34_10".
+    regengroup "Tower02" "RGN_C34_11".
+    
+    timelimit Sec RewardTimeLimit.
+    interruptset DeadIndex "OpenBoxBoss3" 1 "C_IyzenClPresentBox" "onOpenBoxBoss3".    
+    interruptset TimeOut "TimeOut3" 1 "onTimeOut3".
+    
+    chatwin "Iyzel" "ChatC34_14".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC34_15".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC34_16".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC34_17".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC34_18".
+    pause Sec 2.
+    chatwin "Iyzel" "ChatC34_19".
+close
+
+open [ExitGateOpen]
+    npcstand Exit "C_Gate02" 8572 11355 0 1000 "Normal".
+    interruptset NPCClickHandle "ExitClick" 1 Exit "onExitClick".
+close
+
+open [onExitClick]
+    var mclicker 0.
+    whoclickme mclicker InterruptArg.
+    linkto mclicker "Urg" "Urg" 9375 1079.
+    interruptset NPCClickHandle "ExitClick" 1 Exit "onExitClick".
+close

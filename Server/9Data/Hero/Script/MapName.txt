@@ -1,0 +1,43 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+
+#Record	Roumen	罗恩镇		
+#Record	Elderin	艾德林城		
+#Record	Uruga	乌鲁加城		
+#Record	Allston	奥斯镇		
+#Record	Ferra	费拉城		
+#Record	Kassha	卡夏城		
+#Record	Sadiin	萨丁镇		
+#Record	Korika	坷利卡城		
+#Record	Igen	艾格城		
+#Record	Venucia	贝努基亚镇		
+#Record	Myslen	神秘大陆		
+#Record	Rou	罗恩镇		
+#Record	Eld	艾德林城		
+#Record	Urg	乌鲁加城		
+#Record	All	奥斯镇		
+#Record	Fer	费拉城		
+#Record	Kas	卡夏城		
+#Record	Sad	萨丁镇		
+#Record	Kor	坷利卡城		
+#Record	Ige	艾格城		
+#Record	Ven	贝努基亚镇		
+#Record	Mys	神秘大陆		
+				
+
+#Record	RouCos01	沙海		
+#Record	RouCos02	波浪森林		
+#Record	RouCos03	探索海岸		
+#Record	RouCos04	玛拉巢穴		
+#Record	RouVal01	枯雾森林		
+#Record	RouVal02	裂焰山谷		
+#Record	RouTemDn01	光石洞窟 第1层		
+#Record	EldCem01	月光墓园		
+#Record	EchoCave	回音谷		
+				
+#End				

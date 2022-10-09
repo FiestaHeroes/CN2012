@@ -1,0 +1,204 @@
+;	Shine Monster Regeneration Table			V0.3															
+;	Monster Group																		
+#ignore	\o042																		
+#exchange	#	\x20																	
+																			
+#table	MobRegenGroup																		
+;		GroupID	Family	Regen Region															
+;			Y/N	X	Y	X	Y	Range/Degree											
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD											
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree											
+#record		KD_EnMaze01_01	Y	1897	1584	0	0	130											
+#record		KD_EnMaze01_02	Y	1906	2164	0	0	170											
+#record		KD_EnMaze01_03	Y	1890	2530	0	0	130											
+#record		KD_EnMaze01_04	Y	1880	2857	0	0	170											
+#record		KD_EnMaze01_05	Y	1527	2938	0	0	130											
+#record		KD_EnMaze01_06	Y	2194	3033	0	0	130											
+#record		KD_EnMaze01_07	Y	1297	3206	0	0	170											
+#record		KD_EnMaze01_08	Y	2447	3291	0	0	170											
+#record		KD_EnMaze01_09	Y	1020	3490	0	0	130											
+#record		KD_EnMaze01_10	Y	2679	3522	0	0	130											
+#record		KD_EnMaze01_11	Y	990	3837	0	0	170											
+#record		KD_EnMaze01_12	Y	2822	3816	0	0	170											
+#record		KD_EnMaze02_01	Y	1490	5427	0	0	130											
+#record		KD_EnMaze02_02	Y	1524	4957	0	0	130											
+#record		KD_EnMaze02_03	Y	475	5413	0	0	130											
+#record		KD_EnMaze02_04	Y	444	4938	0	0	130											
+#record		KD_EnMaze02_05	Y	1005	5159	0	0	170											
+#record		KD_EnMaze02_06	Y	749	4659	0	0	130											
+#record		KD_EnMaze02_07	Y	1187	4653	0	0	130											
+#record		KD_EnMaze02_08	Y	989	5735	0	0	130											
+#record		KD_EnMaze03_01	Y	2812	4709	0	0	170											
+#record		KD_EnMaze03_02	Y	2303	5187	0	0	170											
+#record		KD_EnMaze03_03	Y	3295	5176	0	0	170											
+#record		KD_EnMaze03_04	Y	2853	5183	0	0	130											
+#record		KD_EnMaze03_05	Y	2812	5684	0	0	170											
+#record		KD_EnMaze03_06	Y	2836	6353	0	0	130											
+#record		KD_EnMaze03_07	Y	2739	6911	0	0	170											
+#record		KD_EnMaze03_08	Y	2139	7071	0	0	130											
+#record		KD_EnMaze03_09	Y	1399	7098	0	0	170											
+#record		KD_EnMaze03_10	Y	422	7084	0	0	170											
+#record		KD_EnMaze03_11	Y	916	7081	0	0	130											
+#record		KD_EnMaze03_12	Y	916	7588	0	0	170											
+#record		KD_EnMaze03_13	Y	915	6579	0	0	170											
+#record		KD_EnMaze03_14	Y	922	8308	0	0	130											
+#record		KD_EnMaze03_15	Y	1076	8864	0	0	170											
+#record		KD_EnMaze03_16	Y	1630	8983	0	0	130											
+#record		KD_EnMaze03_17	Y	2322	8973	0	0	130											
+#record		KD_EnMaze03_18	Y	2456	8590	0	0	130											
+#record		KD_EnMaze03_19	Y	3189	8586	0	0	130											
+#record		KD_EnMaze03_20	Y	3343	8977	0	0	130											
+#record		KD_EnMaze03_21	Y	3163	9335	0	0	130											
+#record		KD_EnMaze03_22	Y	2482	9352	0	0	130											
+#record		KD_EnMaze03_23	Y	2825	9163	0	0	170											
+#record		KD_EnMaze03_24	Y	2827	8779	0	0	170											
+#record		KD_EnMaze03_25	Y	4029	8984	0	0	130											
+#record		KD_EnMaze03_26	Y	4535	8803	0	0	170											
+#record		KD_EnMaze03_27	Y	4719	8300	0	0	130											
+#record		KD_EnMaze03_28	Y	4725	7575	0	0	170											
+#record		KD_EnMaze03_29	Y	4215	7093	0	0	170											
+#record		KD_EnMaze03_30	Y	4720	6572	0	0	170											
+#record		KD_EnMaze03_31	Y	5220	7084	0	0	170											
+#record		KD_EnMaze03_32	Y	4735	7087	0	0	130											
+#record		KD_EnMaze03_33	Y	4723	5816	0	0	130											
+#record		KD_EnMaze03_34	Y	4557	5315	0	0	170											
+#record		KD_EnMaze03_35	Y	4006	5169	0	0	130											
+#record		KD_EnMaze04_01	Y	2527	11403	0	0	170											
+#record		KD_EnMaze04_02	Y	3167	11412	0	0	170											
+#record		KD_EnMaze04_03	Y	2247	11727	0	0	170											
+#record		KD_EnMaze04_04	Y	3458	11709	0	0	170											
+#record		KD_EnMaze04_05	Y	2247	12187	0	0	170											
+#record		KD_EnMaze04_06	Y	3447	12199	0	0	170											
+#record		KD_EnMaze04_07	Y	2823	12437	0	0	170											
+#record		KD_EnMaze04_08	Y	3070	12019	0	0	170											
+#record		KD_EnMaze04_09	Y	2620	12020	0	0	170											
+#record		KD_EnMaze04_10	Y	2850	11677	0	0	170											
+																			
+																			
+																			
+#table	MobRegen																		
+;		GroupID	MobIndex	number		number	Regen Time(sec)							Base					
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE		BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum		KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		KD_EnMaze01_01	KQ_G_Stonie	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_01	KQ_G_SparkDog	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_02	KQ_G_SparkDog	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_02	KQ_G_Stonie	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_03	KQ_G_JewelKeeper	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_03	KQ_G_SparkDog	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_04	KQ_G_SparkDog	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_04	KQ_G_JewelKeeper	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_05	KQ_G_Stonie	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_05	KQ_G_SparkDog	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_06	KQ_G_Stonie	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_06	KQ_G_SparkDog	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_07	KQ_G_JewelKeeper	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_07	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_08	KQ_G_JewelKeeper	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_08	KQ_G_Pixy	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_09	KQ_G_JewelKeeper	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_09	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_10	KQ_G_JewelKeeper	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_10	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_11	KQ_G_Pixy	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_11	KQ_G_Nox	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_12	KQ_G_Pixy	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze01_12	KQ_G_Nox	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_01	KQ_G_JewelKeeper	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_01	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_02	KQ_G_JewelKeeper	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_02	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_03	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_03	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_04	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_04	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_05	KQ_G_Pixy	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_05	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_06	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_06	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_07	KQ_G_Nox	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_07	KQ_G_Shylph	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_08	KQ_G_Nox	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze02_08	KQ_G_Shylph	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_01	KQ_G_Pixy	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_01	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_01	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_02	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_02	KQ_G_OrcCaptain	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_02	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_03	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_03	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_03	KQ_G_NaiadDemon	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_04	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_05	KQ_G_Shylph	4		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_06	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_07	KQ_G_Shylph	4		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_08	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_08	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_09	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_09	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_09	KQ_G_Pixy	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_10	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_10	KQ_G_OrcCaptain	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_10	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_11	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_11	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_12	KQ_G_Shylph	4		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_13	KQ_G_Shylph	4		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_14	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_15	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_15	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_15	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_16	KQ_G_Shylph	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_16	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_17	KQ_G_Shylph	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_17	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_18	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_18	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_19	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_19	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_20	KQ_G_Shylph	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_20	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_21	KQ_G_Shylph	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_21	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_22	KQ_G_Shylph	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_22	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_23	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_23	KQ_G_Archon	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_24	KQ_G_Incubus	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_24	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_24	KQ_G_Shylph	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_25	KQ_G_Incubus	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_25	KQ_G_Archon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_26	KQ_G_Incubus	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_26	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_27	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_28	KQ_G_Pixy	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_28	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_28	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_29	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_29	KQ_G_OrcCaptain	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_29	KQ_G_NaiadDemon	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_30	KQ_G_Pixy	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_30	KQ_G_OrcCaptain	1		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_30	KQ_G_NaiadDemon	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_31	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_31	KQ_G_Archon	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_32	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_33	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_34	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_34	KQ_G_Archon	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze03_35	KQ_G_Shylph	2		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_01	KQ_G_Archon	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_02	KQ_G_Archon	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_03	KQ_G_Shylph	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_04	KQ_G_Shylph	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_05	KQ_G_Shylph	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_06	KQ_G_Archon	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_07	KQ_G_Incubus	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_08	KQ_G_Nox	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_09	KQ_G_BlackIncubus	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KD_EnMaze04_10	KQ_G_BlackIncubus	3		0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+																			
+#end																			

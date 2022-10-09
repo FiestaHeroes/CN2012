@@ -1,0 +1,35 @@
+
+					
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+#Table	ItemUseFunction				
+
+
+#ColumnType	String[33]	BYTE	Index		
+#ColumnName	ItemIndex	BroadCast	UseFunction		
+#Record	SilverWings	0	UseSilverWings		
+#Record	FreeStatusReloadAll	0	StatClearStat		
+#Record	SkillReloadbundleAll	0	StatClearEmpow		
+#Record	LicenseClear	0	LicenceClear		
+#Record	HPMPotion1	0	AmountHP		
+#Record	HPMPotion2	0	AmountHP		
+#Record	HPMPotion0	0	AmountHP		
+#Record	HPMPotion3	0	AmountHP		
+#Record	HPMPotion5	0	AmountHP		
+#Record	SPMPotion1	0	AmountMP		
+#Record	SPMPotion2	0	AmountMP		
+#Record	SPMPotion0	0	AmountMP		
+#Record	SPMPotion3	0	AmountMP		
+#Record	MemoryFeather	0	MemoryFeather		
+#Record	KQ_SoulCrystal	0	BossMobDetect		
+#Record	Firecracker02	1	NoEffect		
+#Record	Firecracker01	1	NoEffect		
+#Record	HFirecracker00	1	NoEffect		
+#Record	HPMPotion2_1	0	AmountHP		
+#Record	SPMPotion2_1	0	AmountMP		
+#Record	HPMPotion5_1	0	AmountHP		
+#Record	HPMPotion2_2	0	AmountHP		
+#Record	SPMPotion2_2	0	AmountMP		
+
+#end					

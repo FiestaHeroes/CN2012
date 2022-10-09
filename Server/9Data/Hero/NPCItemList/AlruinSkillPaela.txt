@@ -1,0 +1,110 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+								
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	SnearShout15	-	-	-	-	-	
+#Record	1	GreatSwing07	GreatSwing08	-	-	-	-	
+#Record	2	PowerDrain07	PowerDrain08	-	-	-	-	
+#Record	3	BashStrike07	BashStrike08	-	-	-	-	
+#Record	4	CrushStrike07	CrushStrike08	-	-	-	-	
+#Record	5	WindyRaid07	WindyRaid08	-	-	-	-	
+								
+#Table	Tab01	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	OHSwdMastery11	-	-	-	-	-	
+#Record	1	BraveMastery10	-	-	-	-	-	
+#Record	2	THSwdMastery09	-	-	-	-	-	
+#Record	3	THAxeMastery09	-	-	-	-	-	
+								
+#Table	Tab02	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	Heal16	Heal17	-	-	-	-	
+#Record	1	Restore15	-	-	-	-	-	
+#Record	2	SilverLining07	SilverLining08	-	-	-	-	
+#Record	3	Sacrifice07	Sacrifice08	-	-	-	-	
+#Record	4	HolySmite07	HolySmite08	-	-	-	-	
+#Record	5	ExplosionNova07	-	-	-	-	-	
+								
+#Table	Tab03	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	MaceMastery11	-	-	-	-	-	
+#Record	1	HolySpirit10	-	-	-	-	-	
+#Record	2	HammerMastery09	-	-	-	-	-	
+								
+#Table	Tab04	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	SpiritFog07	SpiritFog08	-	-	-	-	
+#Record	1	HawkTalon07	-	-	-	-	-	
+#Record	2	PiercingGuard07	PiercingGuard08	-	-	-	-	
+								
+#Table	Tab05	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	BowMastery11	-	-	-	-	-	
+#Record	1	DodgeMastery10	-	-	-	-	-	
+#Record	2	CBowMastery09	-	-	-	-	-	
+								
+#Table	Tab06	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	MagicMissile17	MagicMissile18	-	-	-	-	
+#Record	1	ChainLightning07	ChainLightning08	-	-	-	-	
+#Record	2	FrostNova07	FrostNova08	-	-	-	-	
+#Record	3	Inferno07	-	-	-	-	-	
+								
+#Table	Tab07	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	StaffMastery11	-	-	-	-	-	
+#Record	1	WisdomMastery10	-	-	-	-	-	
+#Record	2	WandMastery09	-	-	-	-	-	
+								
+#Table	Tab08	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	-	-	-	-	-	-	
+#Record	1	-	-	-	-	-	-	
+#Record	2	-	-	-	-	-	-	
+#Record	3	-	-	-	-	-	-	
+#Record	4	-	-	-	-	-	-	
+#Record	5	-	-	-	-	-	-	
+#Record	6	-	-	-	-	-	-	
+#Record	7	-	-	-	-	-	-	
+#Record	8	-	-	-	-	-	-	
+#Record	9	-	-	-	-	-	-	
+#Record	10	-	-	-	-	-	-	
+#Record	11	-	-	-	-	-	-	
+#Record	12	-	-	-	-	-	-	
+#Record	13	-	-	-	-	-	-	
+#Record	14	-	-	-	-	-	-	
+#Record	15	-	-	-	-	-	-	
+#Record	16	-	-	-	-	-	-	
+#Record	17	-	-	-	-	-	-	
+#Record	18	-	-	-	-	-	-	
+#Record	19	-	-	-	-	-	-	
+#Record	20	-	-	-	-	-	-	
+#Record	21	-	-	-	-	-	-	
+#Record	22	-	-	-	-	-	-	
+								
+#Table	Tab09	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	WeaponBlast07	WeaponBlast08	-	-	-	-	
+#Record	1	PowerWeaponBlast07	PowerWeaponBlast08	-	-	-	-	
+								
+#Table	Tab10	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	ClawMastery11	-	-	-	-	-	
+#Record	1	CleaveMastery10	-	-	-	-	-	
+#Record	2	DSwordMastery09	-	-	-	-	-	
+								
+#End								

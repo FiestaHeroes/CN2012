@@ -1,0 +1,26 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+#Record	0	-				
+#Record	1	H_P_Mage2MFireBolt				
+#Record	2	H_P_Mage2MFireBolt				
+#Record	3	-				
+#Record	4	H_P_Mage2MFireBolt				
+#Record	5	H_P_Mage2MFireBolt				
+#Record	6	-				
+#Record	7	H_P_Mage2MFireBolt				
+#Record	8	H_P_Mage2MFireBolt				
+						
+#Table	SkillChange			
+#ColumnType	Index	Index	String[33]	String[33]		
+#ColumnName	Condition	Value	From	To		
+#Record	OutOfRange	-	-	H_P_Mage2MFireBolt	
+						
+#End						

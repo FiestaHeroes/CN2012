@@ -1,0 +1,116 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+																																																																			
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	Flourish03	Flourish04	Flourish05	-	-	-																																																												
+#Record	1	TomaHawk03	TomaHawk04	TomaHawk05	-	-	-																																																												
+#Record	2	Discharge03	Discharge04	Discharge05	-	-	-																																																												
+#Record	3	FatalShout03	FatalShout04	FatalShout05	-	-	-																																																												
+#Record	4	DegroSlash03	DegroSlash04	DegroSlash05	-	-	-																																																												
+																																																																			
+#Table	Tab01	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	OHSwdMastery13	-	-	-	-	-																																																												
+#Record	1	BraveMastery12	BraveMastery13	-	-	-	-																																																												
+#Record	2	THSwdMastery12	-	-	-	-	-																																																												
+#Record	3	THAxeMastery12	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab02	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	SilverLining11	-	-	-	-	-																																																												
+#Record	1	Benediction03	Benediction04	Benediction05	-	-	-																																																												
+#Record	2	Rebirth03	Rebirth04	Rebirth05	-	-	-																																																												
+																																																																			
+#Table	Tab03	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	MaceMastery13	-	-	-	-	-																																																												
+#Record	1	HolySpirit12	HolySpirit13	-	-	-	-																																																												
+#Record	2	HammerMastery11	HammerMastery12	-	-	-	-																																																												
+																																																																			
+#Table	Tab04	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	SpiritFog11	-	-	-	-	-																																																												
+#Record	1	UtmostArrow03	UtmostArrow04	UtmostArrow05	-	-	-																																																												
+#Record	2	MultiBloodShot03	MultiBloodShot04	-	-	-	-																																																												
+#Record	3	Distant03	Distant04	Distant05	-	-	-																																																												
+#Record	4	SlowShot03	SlowShot04	SlowShot05	-	-	-																																																												
+#Record	5	Entrap03	Entrap04	Entrap05	-	-	-																																																												
+																																																																			
+#Table	Tab05	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	BowMastery13	-	-	-	-	-																																																												
+#Record	1	DodgeMastery12	DodgeMastery13	-	-	-	-																																																												
+#Record	2	CBowMastery12	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab06	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	ChainLightning11	-	-	-	-	-																																																												
+#Record	1	FirePole03	FirePole04	FirePole05	-	-	-																																																												
+#Record	2	Summon03	Summon04	Summon05	-	-	-																																																												
+																																																																			
+#Table	Tab07	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	StaffMastery13	-	-	-	-	-																																																												
+#Record	1	WisdomMastery12	WisdomMastery13	-	-	-	-																																																												
+#Record	2	WandMastery12	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab08	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+#Record	3	-	-	-	-	-	-																																																												
+#Record	4	-	-	-	-	-	-																																																												
+#Record	5	-	-	-	-	-	-																																																												
+#Record	6	-	-	-	-	-	-																																																												
+#Record	7	-	-	-	-	-	-																																																												
+#Record	8	-	-	-	-	-	-																																																												
+#Record	9	-	-	-	-	-	-																																																												
+#Record	10	-	-	-	-	-	-																																																												
+#Record	11	-	-	-	-	-	-																																																												
+#Record	12	-	-	-	-	-	-																																																												
+#Record	13	-	-	-	-	-	-																																																												
+#Record	14	-	-	-	-	-	-																																																												
+#Record	15	-	-	-	-	-	-																																																												
+#Record	16	-	-	-	-	-	-																																																												
+#Record	17	-	-	-	-	-	-																																																												
+#Record	18	-	-	-	-	-	-																																																												
+#Record	19	-	-	-	-	-	-																																																												
+#Record	20	-	-	-	-	-	-																																																												
+#Record	21	-	-	-	-	-	-																																																												
+#Record	22	-	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab09	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	FinalSwordForce03	FinalSwordForce04	FinalSwordForce05	-	-	-																																																												
+#Record	1	ResistCurse03	ResistCurse04	-	-	-	-																																																												
+#Record	2	BodyForce03	BodyForce04	-	-	-	-																																																												
+#Record	3	SwordForce03	SwordForce04	SwordForce05	-	-	-																																																												
+#Record	4	NobleFrgrance03	NobleFrgrance04	-	-	-	-																																																												
+#Record	5	FatalCondition03	FatalCondition04	-	-	-	-																																																												
+#Record	6	FinalDynastBlood03	FinalDynastBlood04	FinalDynastBlood05	-	-	-																																																												
+#Record	7	ShockEnemy03	ShockEnemy04	-	-	-	-																																																												
+#Record	8	FatalShadow03	FatalShadow04	-	-	-	-																																																												
+																																																																			
+																																																																			
+#Table	Tab10	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	ClawMastery13	-	-	-	-	-																																																												
+#Record	1	CleaveMastery12	CleaveMastery13	-	-	-	-																																																												
+#Record	2	DSwordMastery12	-	-	-	-	-																																																												
+																																																																			
+#End																																																																			

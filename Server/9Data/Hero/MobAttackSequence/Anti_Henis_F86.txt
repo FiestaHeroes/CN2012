@@ -1,0 +1,23 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+#Record	0	-				
+#Record	1	Anti_Henis_F86CrushStrike				
+#Record	2	Anti_Henis_F86RedSlash				
+#Record	3	Anti_Henis_F86GreatSwing				
+#Record	4	-				
+#Record	5	Anti_Henis_F86CrushStrike				
+#Record	6	Anti_Henis_F86RedSlash				
+#Record	7	Anti_Henis_F86GreatSwing				
+#Record	8	-				
+#Record	9	Anti_Henis_F86CrushStrike				
+#Record	10	Anti_Henis_F86RedSlash				
+#Record	11	Anti_Henis_F86GreatSwing				
+#End						

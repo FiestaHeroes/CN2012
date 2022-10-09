@@ -1,0 +1,133 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+								
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	EdgedSword	Splitter	AvantGardeSword	SerpentSword	-	-	
+#Record	1	BastardSword	Claymore	Flamberge	GiantSword	-	-	
+#Record	2	PoleAxe	Halberd	BikingAxe	GiantAxe	-	-	
+								
+#Table	Tab01	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	BrigandineBoots	BrigandineHelmet	BrigandinePants	BrigandineArmor	FSplendor	-	
+#Record	1	LightPlateBoots	LightPlateHelmet	LightPlatePants	LightPlateArmor	AvantGardeShield	-	
+#Record	2	HalfPlateBoots	HalfPlateHelmet	HalfPlatePants	HalfPlateArmor	LionHeartShield	-	
+#Record	3	MightyPlateBoots	MightyPlateHelmet	MightyPlatePants	MightyPlateArmor	HeaterShield	-	
+								
+#Table	Tab02	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	MorningStar	WarMace	BattleMace	GiantMace	-	-	
+#Record	1	Morgenstern	WarHammer	BattleHammer	GiantHammer	-	-	
+								
+#Table	Tab03	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	PlateBoots	PlateHelmet	PlatePants	PlateArmor	Splendor	-	
+#Record	1	FieldPlateBoots	FieldPlateHelmet	FieldPlatePants	FieldPlateArmor	ReflectionShield	-	
+#Record	2	FullPlateBoots	FullPlateHelmet	FullPlatePants	FullPlateArmor	Towershield	-	
+#Record	3	HolyBoots	HolyHelmet	HolyPants	HolyArmor	HolyShield	-	
+								
+#Table	Tab04	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	CompositBow	WarBow	BattleBow	GiantBow	-	-	
+#Record	1	CompositCrossBow	WarCrossBow	BattleCrossBow	GiantCrossBow	-	-	
+								
+#Table	Tab05	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	HunterBoots	HunterHat	HunterPants	HunterArmor	-	-	
+#Record	1	MasterBoots	MasterHat	MasterPants	MasterArmor	-	-	
+#Record	2	DuskBoots	DuskHat	DuskPants	DuskArmor	-	-	
+#Record	3	DarknessBoots	DarknessHat	DarknessPants	DarknessArmor	-	-	
+								
+#Table	Tab06	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	SpiritStaff	FairyStaff	BattleStaff	GiantStaff	-	-	
+#Record	1	SpiritWand	FairyWand	BattleWand	GiantWand	-	-	
+								
+#Table	Tab07	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	NatureBoots	NatureHat	NaturePants	NatureShirt	-	-	
+#Record	1	ElementBoots	ElementHat	ElementPants	ElementShirt	-	-	
+#Record	2	SuperiorBoots	SuperiorHat	SuperiorPants	SuperiorShirt	-	-	
+#Record	3	wisdomBoots	wisdomHat	wisdomPants	wisdomShirt	-	-	
+								
+#Table	Tab08	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	MidianClaw	RingClaw	ZabadClaw	RedeyeClaw	-	-	
+#Record	1	MidianDoubleSword	RingDoubleSword	ZabadDoubleSword	RedeyeDoubleSword	-	-	
+								
+#Table	Tab09	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	LupeBoots	LupeHood	LupePants	LupeArmor	-	-	
+#Record	1	StellaBoots	StellaHood	StellaPants	StellaArmor	-	-	
+#Record	2	LunaBoots	LunaHood	LunaPants	LunaArmor	-	-	
+#Record	3	OrdoBoots	OrdoHood	OrdoPants	OrdoArmor	-	-	
+								
+#Table	Tab10	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	StrAquaMarineRing	ConAquaMarineRing	DexAquaMarineRing	IntAquaMarineRing	MenAquaMarineRing	-	
+#Record	1	StrTopazRing	ConTopazRing	DexTopazRing	IntTopazRing	MenTopazRing	-	
+								
+#End								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+	0							
+	1							
+	2							
+	3							

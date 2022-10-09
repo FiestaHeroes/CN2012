@@ -1,0 +1,12 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn50	5秒后离开王国任务		
+#End				

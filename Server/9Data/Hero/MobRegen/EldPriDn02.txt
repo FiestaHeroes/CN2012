@@ -1,0 +1,104 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		EldPriDn02_001	N	3981	4028	488	158	0										
+#record		EldPriDn02_002	N	3106	2668	95	820	0										
+#record		EldPriDn02_003	N	5490	4348	496	187	0										
+#record		EldPriDn02_004	N	5060	1695	501	167	0										
+#record		EldPriDn02_005	N	5150	916	508	208	0										
+#record		EldPriDn02_011	N	7520	623	443	139	0										
+#record		EldPriDn02_012	N	8435	306	330	183	0										
+#record		EldPriDn02_013	N	8470	967	359	151	0										
+#record		EldPriDn02_014	N	9631	2564	273	605	0										
+#record		EldPriDn02_015	N	10602	2609	276	555	0										
+#record		EldPriDn02_021	N	9875	4945	150	394	0										
+#record		EldPriDn02_022	N	7977	3900	0	0	388										
+#record		EldPriDn02_023	N	6673	3885	0	0	451										
+#record		EldPriDn02_024	N	7632	4843	0	0	423										
+#record		EldPriDn02_025	N	6651	4886	0	0	402										
+#record		EldPriDn02_031	N	10270	7793	145	790	-2										
+#record		EldPriDn02_032	N	7815	6642	0	0	458										
+#record		EldPriDn02_033	N	8406	6342	0	0	458										
+#record		EldPriDn02_034	N	8626	10071	626	164	0										
+#record		EldPriDn02_041	N	6577	8425	0	0	458										
+#record		EldPriDn02_042	N	7356	8480	0	0	423										
+#record		EldPriDn02_043	N	6567	11698	0	0	472										
+#record		EldPriDn02_044	N	7118	12071	0	0	521										
+#record		EldPriDn02_045	N	4682	10014	915	148	0										
+#record		EldPriDn02_046	N	3782	7923	144	843	0										
+#record		EldPriDn02P01	N	6938	7822	0	0	150										
+#record		EldPriDn02_MINE01	N	7336	4236	0	0	150										
+#record		EldPriDn02_MINE02	N	6993	4088	0	0	150										
+#record		EldPriDn02_MINE03	N	7097	4449	0	0	150										
+#record		EldPriDn02_MINE04	N	7666	4309	0	0	150										
+#record		EldPriDn02_MINE05	N	7401	3892	0	0	150										
+#record		EldPriDn02_MINE06	N	7711	4030	0	0	150										
+#record		EldPriDn02_MINE07	N	7484	4665	0	0	150										
+#record		EldPriDn02_MINE08	N	4943	4357	0	0	150										
+#record		EldPriDn02_MINE09	N	9614	4493	0	0	150										
+#record		EldPriDn02_MINE10	N	5060	1358	0	0	150										
+#record		EldPriDn02Guard01	N	1097	4844	0	0	16										
+#record		EldPriDn02Guard02	N	1092	5180	0	0	16										
+#record		EldPriDn02_C1_01	N	6291	8302	0	0	16										
+#record		EldPriDn02_C2_01	N	7551	8236	0	0	16										
+#record		EldPriDn02_C3_01	N	7659	11930	0	0	30										
+#record		EldPriDn02_C4_01	N	6380	11900	0	0	37										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		EldPriDn02_001	LightingViVi	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_002	LightingViVi	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_003	LightingViVi	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_004	LightingViVi	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_005	LightingViVi	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_011	NavarA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_012	NavarA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_013	NavarA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_014	NavarA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_015	NavarA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_021	NavarHenterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_022	NavarHenterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_023	NavarHenterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_024	NavarHenterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_025	NavarHenterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_031	GiantSparkDogA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_032	GiantSparkDogA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_033	GiantSparkDogA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_034	GiantSparkDogA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_041	BlackIncubusA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_042	BlackIncubusA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_043	BlackIncubusA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_044	BlackIncubusA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_045	BlackIncubusA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_046	BlackIncubusA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02P01	PresentBox12	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldPriDn02_MINE01	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE02	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE03	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE04	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE05	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE06	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE07	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE08	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE09	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_MINE10	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02Guard01	GuardMihael02	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02Guard02	GuardMihael02	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPriDn02_C1_01	GhostKnight	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		EldPriDn02_C2_01	GhostKnight	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		EldPriDn02_C3_01	GhostKnight	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		EldPriDn02_C4_01	GhostKnight	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+																		
+#end																		

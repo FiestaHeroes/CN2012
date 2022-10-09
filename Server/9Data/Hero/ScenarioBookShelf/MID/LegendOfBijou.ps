@@ -1,0 +1,676 @@
+; 비쥬의 전승자
+; 중간부분 문 수정(부서지는 것으로)
+
+open [main]
+    var PrintIndex                  @Random(0 100) % " : "
+
+        ; 최초 성문앞 카마리스 위치    LSH
+        CamarisAIndex               "KQ_Kamaris"             ; 스켈소환 없는 카마리스
+        CamarisACoord               "6122 1850"
+        CamarisACoord2              "6179 3026"         ; 카마리스 무시하고 문을 공격할때 카마리스 소환 위치
+
+        ; 첫번째 문    LSH
+        ;FirstDoor_Mob               "KQ_VGate01 6118  3325 0"
+        FirstDoor_Mob               "KQ_VGate01 6118  3335 0"
+        FirstDoor_GateBlock         "DoorBlock02"
+        FirstDoor_MobHandle         0
+        FirstDoor_GateHandle        0
+
+        ; 첫째 성벽 위에 리젠될 몬스터들    LSH
+        MaxFirstGuardians           6
+        FirstGuardianIndex1         "KQ_SK_SkelArcher1"
+        FirstGuardianIndex2         "KQ_SK_SkelArcher2"
+        FirstGuardianIndex3         "KQ_SK_SkelArcher3"
+        FirstGuardianRegenSec       10                                      ; 15초마다 리젠
+
+        ;FirstGuardianXCoordList     "5730 5702 5631 5575 5512 5466 5442 5412 5415 5412 5405 5427 5446 6484 6521 6561 6614 6659 6712"    ; 위아래로 한쌍
+        ;FirstGuardianYCoordList     "3375 3340 3275 3226 3172 3095 3005 2940 2970 2775 2694 2603 2549 3393 3355 3323 3284 3244 3199"
+
+		; LSH : 작은공간
+        ;FirstGuardianXCoordList     "5767 5746 5721 5699 5672 5660 5639 5618 5604 5599 5600 5592 5600 6442 6468 6491 6519 6555 6583"    ; 위아래로 한쌍
+        ;FirstGuardianYCoordList     "3246 3225 3187 3165 3143 3106 3066 3029 2988 2928 2873 2828 2787 3276 3258 3236 3201 3166 3137"
+		
+		; KHRIX : 수 줄였다.
+        FirstGuardianXCoordList     "5767 5746 5721 6442 6468 6491"    ; 위아래로 한쌍
+        FirstGuardianYCoordList     "3246 3225 3187 3276 3258 3236"
+
+        FirstGuardianHandle0        0
+        FirstGuardianHandle1        0
+        FirstGuardianHandle2        0
+        FirstGuardianHandle3        0
+        FirstGuardianHandle4        0
+        FirstGuardianHandle5        0
+
+        ; 첫번째 문 밖의 돌격대    LSH
+        FirstChargerAIndex          "KQ_SK_Dash"
+        FirstChargerAPoint          "5915 4086 0 127 127"
+
+
+        ; 첫째방 카마리스들    LSH
+        CamarisBIndex               "KQ_Kamaris2"         ; 스켈 소환하는 카마리스
+        CamarisBNumber              5
+        CamarisBLocate              "5190 3894 " %      ; 각 카마리스들의 위치-오른쪽아래, 왼쪽위, 오른쪽 위, 왼쪽아래,가운데  ;;@;;
+                                    "5190 5530 " %
+                                    "7205 5530 " %
+                                    "7030 3983 " %
+                                    "6107 5234"
+        CamarisBRegenNum            11	; LSH
+        CamarisBRegenIndex          "Regen00 " %
+                                    "Regen01 " %
+                                    "Regen02 " %
+                                    "Regen03 " %
+                                    "Regen04 " %
+                                    "Regen05 " %
+                                    "Regen06 " %
+                                    "Regen07 " %
+                                    "Regen08 " %
+                                    "Regen09 " %
+                                    "Regen100 ".
+
+
+        ; 두번째 문    LSH
+    var SecondDoor_Gate              "KQ_VGate02 6128 6822 0"
+        SecondDoor_GateBlock         "DoorBlock03"
+        SecondDoor_GateHandle        0
+        SecondDoor_NPCHandle         0
+
+
+        ; 세번째 문의 경비병들    LSH
+        MaxThirdGuardians           8                                      ; 두번째 성벽을 지키는 가디언들
+        ThirdGurdianLoc             "Anti_Henis_G_F100 6000 8471 " %          ; 첫째 몹 인덱스와 좌표
+                                    "Anti_Henis_G_M100 6020 8471 " %          ; 둘째 몹 인덱스와 좌표
+                                    "Anti_Henis_G_A100 6040 8471 " %          ; 셋째 몹 인덱스와 좌표
+                                    "Anti_Henis_G_F100 6060 8471 " %
+                                    "Anti_Henis_G_A100 6080 8471 " %
+                                    "Anti_Henis_G_C100 6100 8471 " %
+                                    "Anti_Henis_G_F100 6120 8471 " %
+                                    "Anti_Henis_G_M100 6309 8471"
+
+        ; 세번째 문의 카마리스    LSH
+        ThirdDarkBijou              "5889 8485 0 " %                       ; 어둠의 비쥬 두개의 위치                ;;@;;
+                                    "6340 8485 0"
+
+
+        ; 세번째 문 밖의 돌격대    LSH
+        ThirdChargerAIndex          "KQ_SK_Dash"
+        ThirdChargerAPoint          "5915 9000 0 127 127"
+
+        ; 세번째 문    LSH
+        ;ThirdDoor_Mob               "KQ_VGate01 6120 8676 0"
+        ThirdDoor_Mob               "KQ_VGate01 6120 8691 0"
+        ThirdDoor_GateBlock         "DoorBlock04"
+        ThirdDoor_MobHandle         0
+        ThirdDoor_GateHandle        0
+
+
+
+        ; 보스방 카마리스들    LSH
+        CamarisCIndex               "KQ_Kamaris3"         ; 스켈 소환하는 카마리스
+        CamarisCNumber              4
+        CamarisCLocate              "4892  9297 " %      ; 각 카마리스들의 위치-오른쪽아래, 왼쪽위, 오른쪽 위, 왼쪽아래,가운데  ;;@;;
+                                    "4892 11097 " %
+                                    "7522 11097 " %
+                                    "7522  9270 "
+        CamarisCRegenNum            9                      ; LSH
+        CamarisCRegenIndex          "Regen10 " %
+                                    "Regen11 " %
+                                    "Regen12 " %
+                                    "Regen13 " %
+                                    "Regen14 " %
+                                    "Regen15 " %
+                                    "Regen16 " %
+                                    "Regen17 " %
+                                    "Regen101 "
+
+
+        ; 보스 위치    LSH
+        LastBossRegen               "6081 10506"
+
+
+        TmpHnd                      0
+        GateBlock                   ""
+        GateHandle                  0
+        ExitAtGateDown              ""
+        InterruptBlock              ""
+        InterruptArg                "".
+		;ReturnGate					"" ; 킹퀘 매칭으로 주석 처리
+		;CompleteGate				"". ; 킹퀘 매칭으로 주석 처리
+		
+	;npcstand	ReturnGate 		"Gate_ID_Exit" 		6113	1027	0 1000	"Normal". ; 킹퀘 매칭으로 주석 처리
+	
+    call "Initialize".
+    call "ScoutCamarisStage".
+
+    ; 첫째 공성전 스테이지
+    call "FirstGateEngagement".
+
+
+    ; 바깥쪽 방
+    call "GardenSquar".         ; 첫째성문과 둘째성문 사이
+
+    chatwin "EldSpeGuard01" "KQLbMessage4".
+    call "InnerCastleGate".     ; 둘째 성문 앞
+
+
+    chatwin "EldSpeGuard01" "KQLbMessage5".
+    chatwin "EldSpeGuard01" "KQLbMessage6".
+    call "BossSquar".           ; 보스의 광장
+
+
+
+    chatwin "EldSpeGuard01" "KQLbMessage7".
+    call "LastBoss".            ; 막보스
+
+
+close
+
+open [Initialize]
+
+    var PlayerNumber        "".                     ; 맵에 들어온 플레이어 수를 얻기 위해
+    waitlogin PlayerNumber.
+    if PlayerNumber == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+    mapfog 70 1600.
+
+    scriptfile "LegendOfBijou".
+    
+    pause Sec 5.
+    
+    ; 혹시 대사가 있으면 여기
+    ; LSH
+    chatwin "EldSpeGuard01" "KQLbMessage1".
+
+    ;timelimit Min 50.
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [ScoutCamarisStage]
+                                  printf PrintIndex % "ScoutCamarisStage".
+    var CamarisHandle   0
+        CamarisCoordX   0
+        CamarisCoordY   0
+
+        GateIndex       0
+        GateX           0
+        GateY           0
+        GateDir         0
+        .
+
+    CamarisCoordX = @RemoveFirst("CamarisACoord" " ").
+    CamarisCoordY = @RemoveFirst("CamarisACoord" " ").
+    mobregen CamarisHandle CamarisAIndex CamarisCoordX CamarisCoordY 0 1000 "Normal".    
+
+
+    GateIndex = @RemoveFirst("FirstDoor_Mob" " ").
+    GateX     = @RemoveFirst("FirstDoor_Mob" " ").
+    GateY     = @RemoveFirst("FirstDoor_Mob" " ").
+    GateDir   = @RemoveFirst("FirstDoor_Mob" " ").
+    mobregen FirstDoor_MobHandle GateIndex GateX GateY GateDir 1000 "Normal".    
+
+
+    doorbuild FirstDoor_GateHandle "OX_gate" GateX GateY GateDir 1000 "Normal".  ; 킹슬라임처럼 블럭정보만 있는 문
+    doorclose FirstDoor_GateHandle FirstDoor_GateBlock.
+
+
+
+    interruptclear.
+    ;interruptset PlayerEliminate    "" 1 "QuestFail".                               ; 플레이어가 전멸했을때
+    ;interruptset TimeOut            "" 1 "QuestFail".                               ; 시간이 다 지났을 경우
+    interruptset DeadHandle         "" 1 CamarisHandle "ScoutCamarisDown".          ; 카마리스가 부서진 경우
+    interruptset HPLow              "" 1 FirstDoor_MobHandle 999 "GateKnock".       ; 문이 공격받았을때(문의 피가 99.9%가 되었을때)
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".; 킹퀘 매칭으로 인한 주석처리
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [GateKnock]
+                                  printf PrintIndex % "GateKnock".
+    ;chatwin "KQ_KingSlime" "GateKnock".
+
+    CamarisCoordX = @RemoveFirst("CamarisACoord2" " ").
+    CamarisCoordY = @RemoveFirst("CamarisACoord2" " ").
+    teleport Coord CamarisHandle CamarisCoordX CamarisCoordY.
+    break "ScoutCamarisStage".
+close
+
+open [ScoutCamarisDown]
+                                  printf PrintIndex % "ScoutCamarisDown".
+    ; LSH
+    chatwin "EldSpeGuard01" "KQLbMessage2".
+    break "ScoutCamarisStage".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [FirstGateEngagement]
+                                  printf PrintIndex % "FirstGateEngagement".
+    call "GuardianInit".
+
+
+    ; 돌격대 세팅
+    var ChargerLoc              FirstChargerAPoint
+        ChargerIndex            FirstChargerAIndex.
+    call "RegenChargers".
+
+    ; 문 만들기
+    GateBlock  = FirstDoor_GateBlock.
+    GateHandle = FirstDoor_GateHandle.
+    ExitAtGateDown = "FirstGateEngagement".
+ 
+
+    interruptclear.
+    ;interruptset PlayerEliminate    ""     1 "QuestFail".                                   ; 플레이어가 전멸했을때
+    ;interruptset TimeOut            ""     1 "QuestFail".                                   ; 시간이 다 지났을 경우
+    interruptset DeadHandle         ""     1 FirstDoor_MobHandle    "GateDown".             ; 문 부서짐
+    interruptset DeadIndex          "" 99999 FirstGuardianIndex1    "GuardianDead".         ; 죽은 가디언을 모아놓았다가 다시 리젠시키기 위해
+    interruptset DeadIndex          "" 99999 FirstGuardianIndex2    "GuardianDead".         ; 죽은 가디언을 모아놓았다가 다시 리젠시키기 위해
+    interruptset DeadIndex          "" 99999 FirstGuardianIndex3    "GuardianDead".         ; 죽은 가디언을 모아놓았다가 다시 리젠시키기 위해
+    interruptset Sec                "" 99999 FirstGuardianRegenSec  "GuardianStand".        ; GuardianDead에서 모인 가디언 리젠
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".; 킹퀘 매칭으로 인한 주석처리
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+
+
+
+close
+
+open [GuardianInit]
+                                  printf PrintIndex % "GuardianInit".
+    var Init                0.
+    while Init < MaxFirstGuardians
+    open
+        #("FirstGuardianHandle" % Init) = "".
+        Init = Init + 1.
+    close
+    call "GuardianStand".
+close
+
+open [GuardianStand]
+                                  printf PrintIndex % "GuardianStand".
+    var Sub                 0
+        MobIdx              ""
+        CoordX              0
+        CoordY              0
+        XCoordList          FirstGuardianXCoordList
+        YCoordList          FirstGuardianYCoordList.
+    while Sub < MaxFirstGuardians
+    open
+        CoordX = @RemoveFirst("XCoordList" " ").
+        CoordY = @RemoveFirst("YCoordList" " ").
+        if #("FirstGuardianHandle" % Sub) === ""
+        then open
+            mobregen #("FirstGuardianHandle" % Sub) #("FirstGuardianIndex" % @Random(1 3)) CoordX CoordY 0 1000 "Normal".   ; 성벽위의 가디언들
+            abstateset #("FirstGuardianHandle" % Sub) "StaQuestEntangle2" 1 4200000000.                                     ; 움직이지 못하도록
+        close
+        Sub = Sub + 1.
+    close
+close
+
+open [GuardianDead]
+                                                          printf PrintIndex % "GuardianDead " % InterruptArg.
+    var Sub                 0.
+
+    while Sub < MaxFirstGuardians
+    open
+        if #("FirstGuardianHandle" % Sub) == InterruptArg
+        then open
+            #("FirstGuardianHandle" % Sub) = "".
+        close
+        Sub = Sub + 1.
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [GardenSquar]
+                                     printf PrintIndex % "GardenSquar".
+    var Sub             0
+        CoordX          0
+        CoordY          0
+        DoorIndex       @RemoveFirst("SecondDoor_Gate" " ")
+        DoorX           @RemoveFirst("SecondDoor_Gate" " ")
+        DoorY           @RemoveFirst("SecondDoor_Gate" " ")
+        DoorDir         @RemoveFirst("SecondDoor_Gate" " ").
+
+    ; 문 리젠
+    npcstand SecondDoor_NPCHandle DoorIndex DoorX DoorY DoorDir 1000 "Normal".
+
+    ;chatwin "RouTownChiefRoumenus"  "OutGateDown0".
+    ;pause Sec 3.
+    ;chatwin "KQ_KingSlime"          "OutGateDown1".
+    ;pause Sec 3.
+    ;chatwin "RouTownChiefRoumenus"  "OutGateDown2".
+
+
+
+    ; 카마리스 리젠
+    while Sub < CamarisBNumber
+    open
+        CoordX = @RemoveFirst("CamarisBLocate" " ").
+        CoordY = @RemoveFirst("CamarisBLocate" " ").
+        mobregen TmpHnd CamarisBIndex CoordX CoordY 0 1000 "Normal".
+
+        Sub = Sub + 1.
+    close
+
+    Sub = 0.
+    while Sub < CamarisBRegenNum
+    open
+        CoordX = @RemoveFirst("CamarisBRegenIndex" " ").
+        regengroup "KDVictor" CoordX.
+
+        Sub = Sub + 1.
+    close
+
+
+
+    doorbuild SecondDoor_GateHandle "OX_gate" 6129  6850    1 1000 "Normal".      ; 2층과 3층 사이
+    doorclose SecondDoor_GateHandle SecondDoor_GateBlock.
+
+    interruptclear.
+    ;interruptset PlayerEliminate    ""      1                       "QuestFail".            ; 플레이어가 전멸했을때
+    ;interruptset TimeOut            ""      1                       "QuestFail".            ; 시간이 다 지났을 경우
+    interruptset NPCClickHandle     "" 999999 SecondDoor_NPCHandle  "CenterDoorOpen".
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".; 킹퀘 매칭으로 인한 주석처리
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [CenterDoorOpen]
+                                  printf PrintIndex % "CenterDoorOpen".
+    if @Count(CamarisBIndex) == 0           ; 모든 카마리스들이 사라졌다면(혹시 interruptset DeadIndex에서 놓쳤을 경우 대비)
+    then open
+        suicide #"SecondDoor_NPCHandle".
+        dooropen SecondDoor_GateHandle SecondDoor_GateBlock.
+        break "GardenSquar".
+    close
+close
+
+open [RegenChargers]
+                                  printf PrintIndex % "RegenChargers".
+    var StartX  0
+        StartY  0
+        Direct  0
+        InterX  0
+        InterY  0
+        X       0
+        Y       0.
+    StartX = @RemoveFirst("ChargerLoc" " ").
+    StartY = @RemoveFirst("ChargerLoc" " ").
+    Direct = @RemoveFirst("ChargerLoc" " ").
+    InterX = @RemoveFirst("ChargerLoc" " ").
+    InterY = @RemoveFirst("ChargerLoc" " ").
+
+    while X < 2
+    open
+        Y = 0.
+        while Y < 3
+        open
+            mobregen TmpHnd ChargerIndex StartX + X * InterX StartY + Y * InterY Direct 1000 "Normal".
+
+            Y = Y + 1.
+        close
+        X = X + 1.
+    close
+    abstateset ChargerIndex "StaQuestEntangle" 1 4200000000.  ; 문 열릴때까지 대기
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [InnerCastleGate]
+                                  printf PrintIndex % "InnerCastleGate".
+    var Sub                 0
+        MobIdx              ""
+        CoordX              0
+        CoordY              0
+        CoordD              0
+        Handle              0
+        .
+    ; 가디언 세우기
+    Sub = 0.
+    while Sub < MaxThirdGuardians
+    open
+        MobIdx = @RemoveFirst("ThirdGurdianLoc" " ").
+        CoordX = @RemoveFirst("ThirdGurdianLoc" " ").
+        CoordY = @RemoveFirst("ThirdGurdianLoc" " ").
+
+        mobregen Handle MobIdx CoordX CoordY 0 1000 "Normal".                    ; 성벽 앞의 가디언들
+
+        Sub = Sub + 1.
+    close
+
+    ; 어둠의비쥬 세우기
+    Sub = 0.
+    while Sub < 2
+    open
+        CoordX = @RemoveFirst("ThirdDarkBijou" " ").
+        CoordY = @RemoveFirst("ThirdDarkBijou" " ").
+        CoordD = @RemoveFirst("ThirdDarkBijou" " ").
+
+        mobregen Handle CamarisAIndex CoordX CoordY CoordD 1000 "Normal".
+
+        Sub = Sub + 1.
+    close
+
+
+    ; 돌격대 세우기
+    ; 돌격대 세팅
+    var ChargerLoc              ThirdChargerAPoint
+        ChargerIndex            ThirdChargerAIndex.
+    call "RegenChargers".
+
+
+    ; 문 세우기
+    MobIdx = @RemoveFirst("ThirdDoor_Mob" " ").
+    CoordX = @RemoveFirst("ThirdDoor_Mob" " ").
+    CoordY = @RemoveFirst("ThirdDoor_Mob" " ").
+    CoordD = @RemoveFirst("ThirdDoor_Mob" " ").
+    mobregen ThirdDoor_MobHandle MobIdx CoordX CoordY CoordD 1000 "Normal".    
+
+
+    doorbuild ThirdDoor_GateHandle "OX_gate" GateX GateY GateDir 1000 "Normal".  ; 킹슬라임처럼 블럭정보만 있는 문
+    doorclose ThirdDoor_GateHandle ThirdDoor_GateBlock.
+
+    GateBlock  = ThirdDoor_GateBlock.
+    GateHandle = ThirdDoor_GateHandle.
+    ExitAtGateDown = "InnerCastleGate".
+
+
+    interruptclear.
+    ;interruptset PlayerEliminate    "" 1                        "QuestFail".                  ; 플레이어가 전멸했을때
+    ;interruptset TimeOut            "" 1                        "QuestFail".                  ; 시간이 다 지났을 경우
+    interruptset DeadHandle         "" 1 ThirdDoor_MobHandle    "GateDown".                   ; 문이 부서진 경우
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".; 킹퀘 매칭으로 인한 주석처리
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+
+
+close
+
+open [GateDown]
+                                                          printf PrintIndex % "GateDown".
+    interruptclear.
+    dooropen GateHandle GateBlock.
+    pause Sec 3.                                    ; 3초후 경직 풂
+    abstatereset ChargerIndex "StaQuestEntangle".
+	interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+    break ExitAtGateDown.
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [BossSquar]
+                                     printf PrintIndex % "BossSquar".
+    var Sub             0
+        CoordX          0
+        CoordY          0
+        .
+
+    ; 카마리스 리젠
+    while Sub < CamarisCNumber
+    open
+        CoordX = @RemoveFirst("CamarisCLocate" " ").
+        CoordY = @RemoveFirst("CamarisCLocate" " ").
+        mobregen TmpHnd CamarisCIndex CoordX CoordY 0 1000 "Normal".
+
+        Sub = Sub + 1.
+    close
+
+    Sub = 0.
+    while Sub < CamarisCRegenNum
+    open
+        CoordX = @RemoveFirst("CamarisCRegenIndex" " ").
+        regengroup "KDVictor" CoordX.
+
+        Sub = Sub + 1.
+    close
+
+
+    interruptclear.
+    ;interruptset PlayerEliminate    ""      1           "QuestFail".            ; 플레이어가 전멸했을때
+    ;interruptset TimeOut            ""      1           "QuestFail".            ; 시간이 다 지났을 경우
+    interruptset Sec                ""      99999 10    "BossRegen".            ; 10초마다 카마리스 갯수 계산
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".; 킹퀘 매칭으로 인한 주석처리
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [BossRegen]
+                                  printf PrintIndex % "SkellRegen".
+    if @Count(CamarisCIndex) == 0           ; 모든 카마리스들이 사라졌다면(혹시 interruptset DeadIndex에서 놓쳤을 경우 대비)
+    then open
+        break "BossSquar".
+    close
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [LastBoss]
+                                  printf PrintIndex % "LastBoss".
+    var BossHandle                  0
+        CoordX                      0
+        CoordY                      0
+        .
+
+    CoordX = @RemoveFirst("LastBossRegen" " ").
+    CoordY = @RemoveFirst("LastBossRegen" " ").
+
+    mobregen BossHandle "KQ_KalBanObeb"   CoordX CoordY 0 1000 "Normal".                         ; 보스와 위치           ;;@;;
+    mobregen TmpHnd "Anti_Henis_G_M100"     CoordX CoordY 0 1000 "Normal".                         ; 친위대 위치           ;;@;;
+    mobregen TmpHnd "Anti_Henis_G_C100"     CoordX CoordY 0 1000 "Normal".
+    mobregen TmpHnd "Anti_Henis_G_F100"     CoordX CoordY 0 1000 "Normal".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".                                      ; 플레이어가 전멸했을때
+    ;interruptset TimeOut "" 1 "QuestFail".                                              ; 시간이 다 지났을 경우
+    interruptset DeadHandle "" 1 BossHandle "QuestSuccess".                             ; 보스가 죽었음
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".; 킹퀘 매칭으로 인한 주석처리
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestFail]
+                                  printf PrintIndex % "QuestFail 0".
+    questresult Fail.                  ; 실패패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+                                  printf PrintIndex % "QuestFail 1".
+
+    broadcast all "FailMessage".
+                                  printf PrintIndex % "QuestFail 2".
+
+    ;broadcast all "KQReturnEld30".
+    ;pause sec 10.
+    ;broadcast all "KQReturnEld20".
+    ;pause sec 10.
+    ;broadcast all "KQReturnEld10".
+    ;pause sec 5.
+    broadcast all "KQReturnEld5".
+    pause sec 5.
+                                  printf PrintIndex % "QuestFail 3".
+    
+                                  printf PrintIndex % "QuestFail 4".
+    endofmid. ;매칭 인던으로 수정함
+                                  printf PrintIndex % "QuestFail 5".
+    break "main".
+close
+
+open [QuestSuccess]
+                                  printf PrintIndex % "QuestSuccess 0".
+    questresult Suc.                   ; 성공패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+                                  printf PrintIndex % "QuestSuccess 1".
+    reward MID. ; 킹퀘 매칭으로 보상 명령어 변경됨
+                                  printf PrintIndex % "QuestSuccess 2".
+    MIDClearCount Online.;킹퀘 플레이 카운트 설정
+
+    broadcast all "SucMessage".
+                                  printf PrintIndex % "QuestSuccess 3".
+
+
+    chatwin "EldSpeGuard01" "KQLbMessage8".
+    chatwin "EldSpeGuard01" "KQLbMessage9".
+
+    broadcast all "KQReturnUrg30".
+    pause sec 10.
+    broadcast all "KQReturnUrg20".
+    pause sec 10.
+    broadcast all "KQReturnUrg10".
+    pause sec 5.
+    broadcast all "KQReturnUrg5".
+    pause sec 5.
+                                  printf PrintIndex % "QuestSuccess 4".
+
+                                  printf PrintIndex % "QuestSuccess 5".
+    endofmid. ;매칭 인던으로 수정함
+                                  printf PrintIndex % "QuestSuccess 6".
+    break "main".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 킹퀘 매칭으로 인한 주석처리
+;open [QuestSuccess]
+;    questresult Suc.                   ; 성공패킷 날림
+	
+;	interruptclear.
+	
+;	npcstand	ReturnGate 		"Gate_ID_Exit" 		6113	1027	0 1000	"Normal".
+;	npcstand	CompleteGate 	"Gate_ID_Complete" 	6104	11762	0 1000	"Normal".
+	
+;	chatwin "EldSpeGuard01" "KQLbMessage8".
+;    chatwin "EldSpeGuard01" "KQLbMessage9".
+	
+;	interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+;	interruptset	NPCClickHandle	"CompleteGateClick"		1	CompleteGate		"onCompleteGateClick".
+	
+;	infinite
+;   open
+;        waitinterrupt InterruptBlock "InterruptArg".
+;        call InterruptBlock.
+;   close
+;close
+
+;open [onReturnGateClick]
+;  var mclicker 0.
+;  whoclickme mclicker InterruptArg.
+;	linkto	mclicker	"UrgDark01"	"UrgDark01" 18084 16255.
+;  interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+;close
+
+;open [onCompleteGateClick]
+;  var mclicker 0.
+;  whoclickme mclicker InterruptArg.
+;	linkto	mclicker	"UrgDark01"	"UrgDark01" 18084 16255.
+;  interruptset	NPCClickHandle	"CompleteGateClick"		1	CompleteGate	"onCompleteGateClick".
+;close

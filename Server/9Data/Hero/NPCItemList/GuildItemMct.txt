@@ -1,0 +1,142 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+								
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	Unicorn00	-	-	-	-	-	
+#Record	1	PvP_FlameAlchemistRing	PvP_RainbowCrystalEar	PvP_IcarusNeck	-	-	-	
+#Record	2	PvP_DarkAlchemistRing	PvP_GoldBallEar	PvP_BalacasNeck	-	-	-	
+#Record	3	PvP_EdgedSword	PvP_AvantGardeSword	-	-	-	-	
+#Record	4	PvP_BastardSword	PvP_Flamberge	-	-	-	-	
+#Record	5	PvP_PoleAxe	PvP_BikingAxe	-	-	-	-	
+#Record	6	PvP_SwingBoots	PvP_SwingPants	PvP_SwingArmor	PvP_BloodBoots	PvP_BloodPants	PvP_BloodArmor	
+#Record	7	PvP_FSplendor	PvP_LionHeartShield	-	-	-	-	
+#Record	8	PvP_MorningStar	PvP_BattleMace	-	-	-	-	
+#Record	9	PvP_Morgenstern	PvP_BattleHammer	-	-	-	-	
+#Record	10	PvP_DivineBoots	PvP_DivinePants	PvP_DivineArmor	PvP_LifeBoots	PvP_LifePants	PvP_LifeArmor	
+#Record	11	PvP_CSplendor	PvP_Towershield	-	-	-	-	
+#Record	12	PvP_CompositBow	PvP_BattleBow	-	-	-	-	
+#Record	13	PvP_CompositCrossBow	PvP_BattleCrossBow	-	-	-	-	
+#Record	14	PvP_DiseaseBoots	PvP_DiseasePants	PvP_DiseaseArmor	PvP_KorinBoots	PvP_KorinPants	PvP_KorinArmor	
+#Record	15	PvP_SpiritStaff	PvP_BattleStaff	-	-	-	-	
+#Record	16	PvP_SpiritWand	PvP_BattleWand	-	-	-	-	
+#Record	17	PvP_SunBoots	PvP_SunPants	PvP_SunShirt	PvP_MindBoots	PvP_MindPants	PvP_MindShirt	
+#Record	18	PvP_MidianClaw	PvP_ZabadClaw	-	-	-	-	
+#Record	19	PvP_MidianDoubleSword	PvP_ZabadDoubleSword	-	-	-	-	
+#Record	20	PvP_SpeedFitBoots	PvP_SpeedFitPants	PvP_SpeedFitArmor	PvP_WeaponBoots	PvP_WeaponPants	PvP_WeaponArmor	
+								
+#End								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+	0							
+	1							
+	2							
+	3							

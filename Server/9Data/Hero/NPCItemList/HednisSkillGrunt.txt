@@ -1,0 +1,225 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+																																																																			
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	TripleHit03	TripleHit04	TripleHit05	TripleHit06	TripleHit07	TripleHit08																																																												
+#Record	1	TripleHit09	TripleHit10	TripleHit11	-	-	-																																																												
+#Record	2	SeverBone02	SeverBone03	SeverBone04	SeverBone05	SeverBone06	SeverBone07																																																												
+#Record	3	SeverBone08	SeverBone09	SeverBone10	-	-	-																																																												
+#Record	4	RedSlash01	RedSlash02	RedSlash03	RedSlash04	RedSlash05	RedSlash06																																																												
+#Record	5	RedSlash07	RedSlash08	RedSlash09	-	-	-																																																												
+#Record	6	SnearKick02	SnearKick03	SnearKick04	SnearKick05	SnearKick06	SnearKick07																																																												
+#Record	7	SnearKick08	SnearKick09	SnearKick10	-	-	-																																																												
+#Record	8	MightySoul01	MightySoul02	MightySoul03	MightySoul04	MightySoul05	MightySoul06																																																												
+#Record	9	MightySoul07	MightySoul08	MightySoul09	-	-	-																																																												
+#Record	10	PowerHit01	PowerHit02	PowerHit03	PowerHit04	PowerHit05	PowerHit06																																																												
+#Record	11	PowerHit07	PowerHit08	PowerHit09	-	-	-																																																												
+#Record	12	SnearShout01	SnearShout02	SnearShout03	SnearShout04	SnearShout05	SnearShout06																																																												
+#Record	13	SnearShout07	SnearShout08	SnearShout09	-	-	-																																																												
+#Record	14	MoraleDecrease01	MoraleDecrease02	MoraleDecrease03	MoraleDecrease04	MoraleDecrease05	MoraleDecrease06																																																												
+#Record	15	MoraleDecrease07	MoraleDecrease08	MoraleDecrease09	-	-	-																																																												
+#Record	16	SpeedShield01	SpeedShield02	SpeedShield03	SpeedShield04	SpeedShield05	SpeedShield06																																																												
+#Record	17	SpeedShield07	SpeedShield08	SpeedShield09	-	-	-																																																												
+#Record	18	HarmDefect01	HarmDefect02	HarmDefect03	HarmDefect04	HarmDefect05	HarmDefect06																																																												
+#Record	19	HarmDefect07	HarmDefect08	HarmDefect09	-	-	-																																																												
+#Record	20	GreatSwing01	-	-	-	-	-																																																												
+#Record	21	PowerDrain01	-	-	-	-	-																																																												
+#Record	22	BashStrike01	-	-	-	-	-																																																												
+#Record	23	BattleBlow01	-	-	-	-	-																																																												
+#Record	24	CrushStrike01	-	-	-	-	-																																																												
+#Record	25	WindyRaid01	-	-	-	-	-																																																												
+#Record	26	Deeper01	-	-	-	-	-																																																												
+#Record	27	Release01	-	-	-	-	-																																																												
+#Record	28	LowDash01	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab01	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	OHSwdMastery03	OHSwdMastery04	OHSwdMastery05	OHSwdMastery06	-	-																																																												
+#Record	1	BraveMastery02	BraveMastery03	BraveMastery04	BraveMastery05	BraveMastery06	-																																																												
+#Record	2	THSwdMastery01	THSwdMastery02	THSwdMastery03	THSwdMastery04	THSwdMastery05	-																																																												
+#Record	3	THAxeMastery01	THAxeMastery02	THAxeMastery03	THAxeMastery04	THAxeMastery05	-																																																												
+																																																																			
+#Table	Tab02	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	Wield03	Wield04	Wield05	Wield06	Wield07	Wield08																																																												
+#Record	1	Wield09	Wield10	Wield11	-	-	-																																																												
+#Record	2	Heal02	Heal03	Heal04	Heal05	Heal06	Heal07																																																												
+#Record	3	Heal08	Heal09	Heal10	-	-	-																																																												
+#Record	4	Blessing02	Blessing03	Blessing04	Blessing05	Blessing06	Blessing07																																																												
+#Record	5	Blessing08	Blessing09	Blessing10	-	-	-																																																												
+#Record	6	DivineShield01	DivineShield02	DivineShield03	DivineShield04	DivineShield05	DivineShield06																																																												
+#Record	7	DivineShield07	DivineShield08	DivineShield09	-	-	-																																																												
+#Record	8	MentalShout01	MentalShout02	MentalShout03	MentalShout04	MentalShout05	MentalShout06																																																												
+#Record	9	MentalShout07	MentalShout08	MentalShout09	-	-	-																																																												
+#Record	10	GreatCure01	GreatCure02	GreatCure03	-	-	-																																																												
+#Record	11	Restore01	Restore02	Restore03	Restore04	Restore05	Restore06																																																												
+#Record	12	Restore07	Restore08	Restore09	-	-	-																																																												
+#Record	13	DarknessProtection01	DarknessProtection02	DarknessProtection03	DarknessProtection04	DarknessProtection05	DarknessProtection06																																																												
+#Record	14	DarknessProtection07	-	-	-	-	-																																																												
+#Record	15	PsychicBlunt01	PsychicBlunt02	PsychicBlunt03	PsychicBlunt04	PsychicBlunt05	PsychicBlunt06																																																												
+#Record	16	PsychicBlunt07	PsychicBlunt08	PsychicBlunt09	-	-	-																																																												
+#Record	17	PsychicChop01	PsychicChop02	PsychicChop03	PsychicChop04	PsychicChop05	PsychicChop06																																																												
+#Record	18	PsychicChop07	PsychicChop08	PsychicChop09	-	-	-																																																												
+#Record	19	HitProtection01	HitProtection02	HitProtection03	HitProtection04	HitProtection05	HitProtection06																																																												
+#Record	20	HitProtection07	HitProtection08	-	-	-	-																																																												
+#Record	21	GreatHeal01	GreatHeal02	GreatHeal03	GreatHeal04	GreatHeal05	GreatHeal06																																																												
+#Record	22	GreatHeal07	GreatHeal08	GreatHeal09	-	-	-																																																												
+#Record	23	SafeProtection01	SafeProtection02	SafeProtection03	SafeProtection04	SafeProtection05	SafeProtection06																																																												
+#Record	24	SafeProtection07	SafeProtection08	SafeProtection09	-	-	-																																																												
+#Record	25	Revival01	-	-	-	-	-																																																												
+#Record	26	SilverLining01	-	-	-	-	-																																																												
+#Record	27	Sacrifice01	-	-	-	-	-																																																												
+#Record	28	HorrorForce01	-	-	-	-	-																																																												
+#Record	29	CrossCasting01	-	-	-	-	-																																																												
+#Record	30	HolySmite01	-	-	-	-	-																																																												
+#Record	31	ExplosionNova01	-	-	-	-	-																																																												
+#Record	32	MightyChop01	-	-	-	-	-																																																												
+#Record	33	MightyPunch01	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab03	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	MaceMastery03	MaceMastery04	MaceMastery05	MaceMastery06	-	-																																																												
+#Record	1	HolySpirit02	HolySpirit03	HolySpirit04	HolySpirit05	HolySpirit06	-																																																												
+#Record	2	HammerMastery01	HammerMastery02	HammerMastery03	HammerMastery04	HammerMastery05	-																																																												
+																																																																			
+#Table	Tab04	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	AimingShot03	AimingShot04	AimingShot05	AimingShot06	AimingShot07	AimingShot08																																																												
+#Record	1	AimingShot09	AimingShot10	AimingShot11	-	-	-																																																												
+#Record	2	PowerShot02	PowerShot03	PowerShot04	PowerShot05	PowerShot06	PowerShot07																																																												
+#Record	3	PowerShot08	PowerShot09	PowerShot10	-	-	-																																																												
+#Record	4	PuryImpact01	PuryImpact02	PuryImpact03	PuryImpact04	PuryImpact05	PuryImpact06																																																												
+#Record	5	PuryImpact07	PuryImpact08	PuryImpact09	-	-	-																																																												
+#Record	6	BoneArrow01	BoneArrow02	BoneArrow03	BoneArrow04	BoneArrow05	BoneArrow06																																																												
+#Record	7	BoneArrow07	BoneArrow08	BoneArrow09	-	-	-																																																												
+#Record	8	MultiShot01	MultiShot02	MultiShot03	MultiShot04	MultiShot05	MultiShot06																																																												
+#Record	9	MultiShot07	MultiShot08	-	-	-	-																																																												
+#Record	10	WindCharge01	WindCharge02	WindCharge03	WindCharge04	WindCharge05	WindCharge06																																																												
+#Record	11	WindCharge07	WindCharge08	WindCharge09	-	-	-																																																												
+#Record	12	PoisonShot01	PoisonShot02	PoisonShot03	PoisonShot04	PoisonShot05	PoisonShot06																																																												
+#Record	13	PoisonShot07	PoisonShot08	PoisonShot09	-	-	-																																																												
+#Record	14	WolfClaw01	-	-	-	-	-																																																												
+#Record	15	SpiritFog01	-	-	-	-	-																																																												
+#Record	16	HawkTalon01	-	-	-	-	-																																																												
+#Record	17	NatureCasting01	-	-	-	-	-																																																												
+#Record	18	Deeper01	-	-	-	-	-																																																												
+#Record	19	PiercingGuard01	-	-	-	-	-																																																												
+#Record	20	Release01	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab05	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	BowMastery03	BowMastery04	BowMastery05	BowMastery06	-	-																																																												
+#Record	1	DodgeMastery02	DodgeMastery03	DodgeMastery04	DodgeMastery05	DodgeMastery06	-																																																												
+#Record	2	CBowMastery01	CBowMastery02	CBowMastery03	CBowMastery04	CBowMastery05	-																																																												
+																																																																			
+#Table	Tab06	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	MagicMissile03	MagicMissile04	MagicMissile05	MagicMissile06	MagicMissile07	MagicMissile08																																																												
+#Record	1	MagicMissile09	MagicMissile10	MagicMissile11	-	-	-																																																												
+#Record	2	IceBolt03	IceBolt04	IceBolt05	IceBolt06	IceBolt07	IceBolt08																																																												
+#Record	3	FireBolt02	FireBolt03	FireBolt04	FireBolt05	FireBolt06	FireBolt07																																																												
+#Record	4	FireBolt08	-	-	-	-	-																																																												
+#Record	5	LightningBolt02	LightningBolt03	LightningBolt04	LightningBolt05	LightningBolt06	LightningBolt07																																																												
+#Record	6	LightningBolt08	-	-	-	-	-																																																												
+#Record	7	VitalConversion01	VitalConversion02	VitalConversion03	VitalConversion04	VitalConversion05	VitalConversion06																																																												
+#Record	8	VitalConversion07	VitalConversion08	VitalConversion09	-	-	-																																																												
+#Record	9	MagicBurst01	MagicBurst02	MagicBurst03	MagicBurst04	MagicBurst05	MagicBurst06																																																												
+#Record	10	MagicBurst07	MagicBurst08	MagicBurst09	-	-	-																																																												
+#Record	11	DispelTrick01	DispelTrick02	DispelTrick03	DispelTrick04	-	-																																																												
+#Record	12	ManaBurn01	ManaBurn02	ManaBurn03	ManaBurn04	ManaBurn05	ManaBurn06																																																												
+#Record	13	ManaBurn07	ManaBurn08	ManaBurn09	-	-	-																																																												
+#Record	14	Bleach01	-	-	-	-	-																																																												
+#Record	15	MagicBall01	MagicBall02	MagicBall03	MagicBall04	MagicBall05	MagicBall06																																																												
+#Record	16	MagicBall07	MagicBall08	MagicBall09	-	-	-																																																												
+#Record	17	IceBlast01	IceBlast02	IceBlast03	IceBlast04	IceBlast05	IceBlast06																																																												
+#Record	18	IceBlast07	IceBlast08	IceBlast09	-	-	-																																																												
+#Record	19	FireBall01	FireBall02	FireBall03	FireBall04	FireBall05	FireBall06																																																												
+#Record	20	FireBall07	FireBall08	FireBall09	-	-	-																																																												
+#Record	21	ChainLightning01	-	-	-	-	-																																																												
+#Record	22	DrainMind01	-	-	-	-	-																																																												
+#Record	23	ChainCasting01	-	-	-	-	-																																																												
+#Record	24	FrostNova01	-	-	-	-	-																																																												
+#Record	25	Inferno01	-	-	-	-	-																																																												
+#Record	26	CurseMagic01	-	-	-	-	-																																																												
+#Record	27	StealEnchant01	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab07	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	StaffMastery03	StaffMastery04	StaffMastery05	StaffMastery06	-	-																																																												
+#Record	1	WisdomMastery02	WisdomMastery03	WisdomMastery04	WisdomMastery05	WisdomMastery06	-																																																												
+#Record	2	WandMastery01	WandMastery02	WandMastery03	WandMastery04	WandMastery05	-																																																												
+																																																																			
+#Table	Tab08	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	-	-	-	-	-	-																																																												
+#Record	1	-	-	-	-	-	-																																																												
+#Record	2	-	-	-	-	-	-																																																												
+#Record	3	-	-	-	-	-	-																																																												
+#Record	4	-	-	-	-	-	-																																																												
+#Record	5	-	-	-	-	-	-																																																												
+#Record	6	-	-	-	-	-	-																																																												
+#Record	7	-	-	-	-	-	-																																																												
+#Record	8	-	-	-	-	-	-																																																												
+#Record	9	-	-	-	-	-	-																																																												
+#Record	10	-	-	-	-	-	-																																																												
+#Record	11	-	-	-	-	-	-																																																												
+#Record	12	-	-	-	-	-	-																																																												
+#Record	13	-	-	-	-	-	-																																																												
+#Record	14	-	-	-	-	-	-																																																												
+#Record	15	-	-	-	-	-	-																																																												
+#Record	16	-	-	-	-	-	-																																																												
+#Record	17	-	-	-	-	-	-																																																												
+#Record	18	-	-	-	-	-	-																																																												
+#Record	19	-	-	-	-	-	-																																																												
+#Record	20	-	-	-	-	-	-																																																												
+#Record	21	-	-	-	-	-	-																																																												
+#Record	22	-	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab09	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	BenTear03	BenTear04	BenTear05	BenTear06	BenTear07	BenTear08																																																												
+#Record	1	BenTear09	BenTear10	BenTear11	-	-	-																																																												
+#Record	2	PowerBenTear03	PowerBenTear04	PowerBenTear05	PowerBenTear06	PowerBenTear07	PowerBenTear08																																																												
+#Record	3	PowerBenTear09	PowerBenTear10	PowerBenTear11	-	-	-																																																												
+#Record	4	NorthTear02	NorthTear03	NorthTear04	NorthTear05	NorthTear06	NorthTear07																																																												
+#Record	5	NorthTear08	NorthTear09	NorthTear10	-	-	-																																																												
+#Record	6	PowerNorthTear02	PowerNorthTear03	PowerNorthTear04	PowerNorthTear05	PowerNorthTear06	PowerNorthTear07																																																												
+#Record	7	PowerNorthTear08	PowerNorthTear09	PowerNorthTear10	-	-	-																																																												
+#Record	8	FitBlood01	FitBlood02	FitBlood03	FitBlood04	FitBlood05	FitBlood06																																																												
+#Record	9	FitBlood07	FitBlood08	FitBlood09	-	-	-																																																												
+#Record	10	NorthBreeze01	NorthBreeze02	NorthBreeze03	NorthBreeze04	NorthBreeze05	NorthBreeze06																																																												
+#Record	11	NorthBreeze07	NorthBreeze08	NorthBreeze09	-	-	-																																																												
+#Record	12	PerfectBody01	PerfectBody02	PerfectBody03	PerfectBody04	-	-																																																												
+#Record	13	PowerNorthBreeze01	PowerNorthBreeze02	PowerNorthBreeze03	PowerNorthBreeze04	PowerNorthBreeze05	PowerNorthBreeze06																																																												
+#Record	14	PowerNorthBreeze07	PowerNorthBreeze08	PowerNorthBreeze09	-	-	-																																																												
+#Record	15	FitPoison01	FitPoison02	FitPoison03	FitPoison04	FitPoison05	FitPoison06																																																												
+#Record	16	FitPoison07	FitPoison08	FitPoison09	-	-	-																																																												
+#Record	17	FragranceOfPoison01	FragranceOfPoison02	FragranceOfPoison03	FragranceOfPoison04	-	-																																																												
+#Record	18	WeaponBlast01	-	-	-	-	-																																																												
+#Record	19	ResistPoison01	-	-	-	-	-																																																												
+#Record	20	PowerWeaponBlast01	-	-	-	-	-																																																												
+#Record	21	ResistBlood01	-	-	-	-	-																																																												
+#Record	22	DeepFire01	-	-	-	-	-																																																												
+#Record	23	Burden01	-	-	-	-	-																																																												
+																																																																			
+#Table	Tab10	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																																																												
+#Record	0	ClawMastery03	ClawMastery04	ClawMastery05	ClawMastery06	-	-																																																												
+#Record	1	CleaveMastery02	CleaveMastery03	CleaveMastery04	CleaveMastery05	CleaveMastery06	-																																																												
+#Record	2	DSwordMastery01	DSwordMastery02	DSwordMastery03	DSwordMastery04	DSwordMastery05	-																																																												
+																																																																			
+#End																																																																			

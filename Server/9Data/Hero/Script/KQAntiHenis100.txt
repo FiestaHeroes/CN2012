@@ -1,0 +1,39 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script	离开		
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	KQStart60	60秒后,王国任务即将开始.		
+#Record	KQStart30	30秒后,王国任务即将开始.		
+#Record	KQStart20	20秒后,王国任务即将开始.		
+#Record	KQStart10	10秒后,王国任务即将开始.		
+#Record	KQStart5	5秒后,王国任务即将开始.		
+				
+#Record	Guardian	警卫枪兵		
+				
+#Record	AntiHenis0	赫尼斯同盟的命运就到这里了!		
+#Record	AntiHenis1	我们一起让这些可恶的赫尼斯同盟从这球上消失吧!!!		
+#Record	AntiHenisSummon	有人来捣蛋啰,妨害我们的家伙通通都要处理掉!!!		
+#Record	AntiHenisDead	嗯!我们先撤退,去招集更多的兵力...气死我了!		
+				
+#Record	StartWarn0	你是来帮赫尼斯同盟的吧.		
+#Record	StartWarn1	反赫尼斯同盟聚集在那山上.		
+#Record	StartWarn2	若没办法拿下所有的反赫尼斯同盟,就会完蛋了.		
+#Record	StartWarn3	我这就去号召援军~~~~		
+#Record	StartWarn4	各位!麻烦你们帮忙挡一下~		
+				
+#Record	GuardianSuc0	各位, 你们都还好吗?		
+#Record	GuardianSuc1	你们不是阻挡而是击退了他们,超出了我的期待!!!		
+#Record	GuardianSuc2	幸运与各位同在!		
+				
+
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				
+				

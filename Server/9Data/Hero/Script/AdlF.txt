@@ -1,0 +1,113 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	GuardAlber01_01	规定时间内无法到达...		
+#Record	Marlene01_01	啊! 那个.鲁西耶在那边. 被怪物包围了. 快点		
+#Record	GuardAlber01_02	是啊. 在那里. 快点过去.		
+				
+#Record	Salare01_S01	依葛莱,刚才那个小孩好像活着.		
+#Record	Eglack01_S01	哦? 是吗? 怎么活下来的?		
+#Record	Salare01_S02	好像有什么一行人出现救了他.		
+#Record	Eglack01_S02	是吗? 是追我们的人吗.先不要管了还是去雅典里亚吧.		
+				
+#Record	Marlene01_S01	鲁西耶没事真是太好了.		
+#Record	Loussier01_S01	嗯. 你们救了我.多谢.		
+#Record	GuardAlber01_S01	没事就好.但是有什么事?		
+#Record	Loussier01_S02	依葛莱突然出现把我身上奶奶的遗物"星星精灵项链"抢走了		
+#Record	Loussier01_S03	幸亏有项链的力量保护我我才没事的.		
+#Record	Loussier01_S04	但是... 抢走项链的依葛莱的身体发生了变化.		
+#Record	Loussier01_S05	身体周围的花纹消失...说着 " 应该可以进到城里面去了",和萨拉勒一起往城里方向去了.		
+#Record	GuardAlber01_S02	坏了.萨拉勒和依葛莱去破坏雅典里亚去了.		
+#Record	Marlene01_S02	鲁西耶. 请首先和这里的探险队员一起出发.我们去寻求帮助再聚集些人就马上出发.		
+#Record	Loussier01_S06	好的,那我们就先出发了.		
+#Record	Marlene01_S03	啊! 鲁西耶你的项链的力量好像可以弱化卡莲的魔力.		
+#Record	Marlene01_S04	所以依葛莱才可以穿过对魔力有反应的雅典里亚的结界.		
+#Record	Marlene01_S05	如果真是这样的话, 项链的力量可以把依葛莱和萨拉勒变回原来的样子.		
+#Record	Loussier01_S07	啊? 真的吗? 所以才接近我....无论如何为了雅典里亚要一起努力了. 我先出发了		
+				
+#Record	Salare01_F01	依葛莱,刚才那个小孩处理的很好啊.		
+#Record	Eglack01_F01	是吗? 吼吼吼 知道了. 我们快点去雅典里亚城里面吧.		
+				
+#Record	Salare03_01	哦吼~ 依葛莱,那孩子好像追着我们来了.		
+#Record	Eglack03_01	这个这个.被他们耽误了事可不行.萨拉勒你这次和他们直接对战吧.		
+#Record	Salare03_02	知道了. 你先出发吧. 我对付他们再去追你.		
+#Record	Eglack03_02	好. 你先去等着.		
+				
+#Record	Salare03_S01	愚蠢的家伙们不知道我们是谁吗?竟然追过来? 看来很不爱惜自己的性命啊.		
+#Record	Loussier03_S01	萨拉勒你不会如愿的.奶奶的遗物会把你打回原形.		
+#Record	Salare03_S02	可笑的孩子你可能是我的对手吗?		
+#Record	Loussier03_S02	那试试就知道了		
+				
+#Record	Salare03_F01	愚蠢的家伙们不知道我们是谁吗?竟然追过来? 看来很不爱惜自己的性命啊.		
+				
+#Record	Salare03_F02	哼哼. 和我比试. 一点也不可行... 那里将会成为你们的墓地. 啊哈哈...		
+				
+#Record	Salare03_S03	哼哼. 和我比试. 一点也不可行... 那里将会成为你们的墓地. 啊哈哈...		
+#Record	Loussier03_S03	看来要确认一下你是不是能变回人形了.		
+				
+#Record	Salare03_S04	什么..你干嘛? 啊啊啊~! 啊啊啊~		
+				
+#Record	Loussier03_S04	现在有精神了吧? 我叫鲁西耶		
+#Record	SalareMan03_S01	知..知道了..		
+#Record	Loussier03_S05	你和依葛莱在守卫雅典里亚的时候被卡莲的魔法魅惑了		
+#Record	Loussier03_S06	现在使用我奶奶的遗物把你变回本来的人的样子.		
+#Record	SalareMan03_S02	额...... 这样.. 还.. 应该把我杀掉的....		
+#Record	SalareMan03_S03	这样把我变成人形真是谢谢你 ....		
+#Record	Loussier03_S07	萨拉勒..		
+#Record	SalareMan03_S04	你叫鲁西耶?.. 请你快点去帮忙把依葛莱也变回人形吧..		
+#Record	Loussier03_S08	好. 知道了. 萨拉勒. 我会把它变回人形的.		
+#Record	SalareMan03_S05	好..好.. 知道了.. 那快去吧..不要再晚了..		
+#Record	Loussier03_S09	 .. .. 好 那我们去了.		
+				
+#Record	Eglack04_01	萨拉勒.你抵挡一下...  水平不怎么样的家伙!		
+#Record	Eglack04_02	hohho.. 不管怎么样现在我到了雅典里亚.终于可以实现长久来的愿望了		
+				
+#Record	Eglack05_S01	什么? 追到这里了? 呵呵呵... 你看到了已经烧起来了.~ 哈哈哈.		
+#Record	Loussier05_S01	啊~  城镇.. 城镇..		
+#Record	Eglack05_S02	看在你们追到这里的份上那我就亲自和你们比试比试. 向死亡的世界来吧~		
+				
+#Record	EglackMan05_S01	额. 这是哪? 我在这...你们是?		
+#Record	Loussier05_S02	依葛莱你清醒了吗? 我叫鲁西耶. 这些是来帮我的人.		
+#Record	Loussier05_S03	你被卡莲的魔法魅惑了使雅典里亚陷入了恐怖之中.		
+#Record	Loussier05_S04	但是城镇无法阻挡那股力量...就被破坏成这样.		
+#Record	EglackMan05_S02	啊!~ 怎么会这样.... 那这个城是被我的手破坏的?鲁西耶有事拜托你.		
+#Record	Loussier05_S05	啊? 那.. 你. 刚才要拜托我的是什么事...		
+#Record	EglackMan05_S03	我再也不好意思回去了.		
+#Record	EglackMan05_S04	这段时间我犯下的罪行...就算不是我的真身做的...		
+#Record	EglackMan05_S05	我还是要离开的.能为我对居民们保守秘密吗? 这是我最后的请求.		
+#Record	Loussier05_S06	啊?! 那.. 这.. 该怎么好?.. 知道了.如果你想这样的话...		
+#Record	EglackMan05_S06	谢谢你.鲁西耶.		
+				
+#Record	EglackMan05_S07	嗯~ 什么时候有缘再见....		
+#Record	Loussier05_S07	大家都辛苦了.		
+				
+#Record	Eglack05_F01	什么? 追到这里了? 呵呵呵... 你看到了已经烧起来了.~ 哈哈哈.		
+#Record	Eglack05_F02	看在你们追到这里的份上那我就亲自和你们比试比试. 向死亡的世界来吧~		
+				
+#Record	Eglack05_F03	吼吼. 啊.. 这是怎么回事? 我要给敌人.. 额~ 给我施展更强的力量.. 力量..		
+#Record	Karen05_F01	啊哈哈哈...依葛莱. 你想要更强的力量吗?		
+#Record	Eglack05_F04	是. 比现在更强的力量!		
+#Record	Karen05_F02	好. 反正你是我的.让你更强大的复活去把那些人都给我消灭		
+#Record	Eglack05_F04	是. 比现在更强的力量!		
+#Record	Karen05_F03	不要着急.现在马上就可以新生了~		
+#Record	Eglack05_F05	哈哈哈哈哈啊 ~~!!!		
+				
+#Record	EglackMad05_F01	哈啊. 哈啊.. 哈哈哈. 哈哈哈. 吼吼吼.~ 充满了力量! 那. 重新开始吗?		
+				
+#Record	EglackMad05_F02	怎么样.怎么样..! 额哈哈~		
+#Record	Karen05_F04	你们觉得我很可笑吗?以后再见吧.那时候不会这么轻易结束的....		
+				
+#Record	Loussier_Dead	额.. 到这就是界限了. 对不起....		
+#Record	Marlene_Dead	在这倒下了.. 没帮上忙真是抱歉... 拜托后面的人了...		
+				
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				

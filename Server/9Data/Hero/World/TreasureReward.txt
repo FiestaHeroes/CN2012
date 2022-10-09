@@ -1,0 +1,488 @@
+
+
+															
+#Ignore	\o042									
+#Exchange	#	\x20								
+
+#Table	Container														
+#ColumnType		DWRD	WORD	String[33]	WORD	WORD	String[33]								
+#ColumnName		ItemID	Index	CardInx	MinLot	MaxLot	DummyInx								
+															
+#Table	Content														
+#ColumnType		DWRD	WORD		String[33]	WORD	BYTE	BYTE	DWRD	WORD					
+#ColumnName		ItemID	Index		RewardInx	RewardLot	UpgradeLow	UpgradeHigh	RewardRate	CheckSum					
+															
+															
+
+#RecordIn	Container	0	0	Tbag01	1	1	DTbag01					
+#RecordIn	Content	1001	0		CopperLump	10	0	0	360000	1001		
+#RecordIn	Content	1002	0		StageRouRecallScroll	1	0	0	90000	1002		
+#RecordIn	Content	1003	0		StageEldRecallScroll	1	0	0	90000	1003		
+#RecordIn	Content	1004	0		StageUrgRecallScroll	1	0	0	90000	1004		
+#RecordIn	Content	1005	0		StrNamedBonzeRing	1	0	0	90000	1005		
+#RecordIn	Content	1006	0		CurNamedBronzeNeck	1	0	0	90000	1006		
+#RecordIn	Content	1007	0		BestLowStrCriPotion	5	0	0	50000	1007		
+#RecordIn	Content	1008	0		S_WolfBroadSword	1	0	0	30000	1008		
+#RecordIn	Content	1009	0		S_BoogySpikedClub	1	0	0	30000	1009		
+#RecordIn	Content	1010	0		S_WolfLightBow	1	0	0	30000	1010		
+#RecordIn	Content	1011	0		S_BoogyMagicStaff	1	0	0	30000	1011		
+#RecordIn	Content	1012	0		IN_Normalplant01	1	0	0	10000	1012		
+#RecordIn	Content	1013	0		IN_NormalChair01	1	0	0	10000	1013		
+
+#RecordIn	Container	0	1	Tbag02	1	1	-					
+#RecordIn	Content	2001	1		LowMeat	1	0	0	32000	2001		
+#RecordIn	Content	2002	1		LowMeat	30	0	0	11000	2002		
+#RecordIn	Content	2003	1		LowCleanWater	1	0	0	32000	2003		
+#RecordIn	Content	2004	1		LowCleanWater	30	0	0	11000	2004		
+#RecordIn	Content	2005	1		LowMagicCrystal	1	0	0	32000	2005		
+#RecordIn	Content	2006	1		LowMagicCrystal	30	0	0	11000	2006		
+#RecordIn	Content	2007	1		NorCleanWater	1	0	0	32000	2007		
+#RecordIn	Content	2008	1		NorCleanWater	30	0	0	11000	2008		
+#RecordIn	Content	2009	1		NorMagicCrystal	1	0	0	32000	2009		
+#RecordIn	Content	2010	1		NorMagicCrystal	30	0	0	11000	2010		
+#RecordIn	Content	2011	1		NorBrokenBone	1	0	0	32000	2011		
+#RecordIn	Content	2012	1		NorBrokenBone	30	0	0	10500	2012		
+#RecordIn	Content	2013	1		HighCopperOre	1	0	0	32000	2013		
+#RecordIn	Content	2014	1		HighCopperOre	30	0	0	10000	2014		
+#RecordIn	Content	2015	1		NorSpiritDust	1	0	0	32000	2015		
+#RecordIn	Content	2016	1		NorSpiritDust	30	0	0	10000	2016		
+#RecordIn	Content	2017	1		NorGemDust	1	0	0	32000	2017		
+#RecordIn	Content	2018	1		NorGemDust	30	0	0	10000	2018		
+#RecordIn	Content	2019	1		NorSoulDust	1	0	0	32000	2019		
+#RecordIn	Content	2020	1		NorSoulDust	30	0	0	10000	2020		
+#RecordIn	Content	2021	1		Topaz	1	0	0	32045	2021		
+#RecordIn	Content	2022	1		Topaz	30	0	0	10000	2022		
+#RecordIn	Content	2023	1		LowSkin	1	0	0	32000	2023		
+#RecordIn	Content	2024	1		LowSkin	30	0	0	10000	2024		
+#RecordIn	Content	2025	1		LowKylinLeather	1	0	0	32000	2025		
+#RecordIn	Content	2026	1		LowKylinLeather	30	0	0	10000	2026		
+#RecordIn	Content	2027	1		NorKylinLeather	1	0	0	32000	2027		
+#RecordIn	Content	2028	1		NorKylinLeather	30	0	0	10000	2028		
+#RecordIn	Content	2029	1		KylinTail	1	0	0	32000	2029		
+#RecordIn	Content	2030	1		KylinTail	30	0	0	10000	2030		
+#RecordIn	Content	2031	1		NorBeastTooth	1	0	0	32000	2031		
+#RecordIn	Content	2032	1		NorBeastTooth	30	0	0	10500	2032		
+#RecordIn	Content	2033	1		NorSkin	1	0	0	32000	2033		
+#RecordIn	Content	2034	1		NorSkin	30	0	0	10000	2034		
+#RecordIn	Content	2035	1		StageRouRecallScroll	1	0	0	15000	2035		
+#RecordIn	Content	2036	1		StageRouRecallScroll	5	0	0	8000	2036		
+#RecordIn	Content	2037	1		StageEldRecallScroll	1	0	0	12000	2037		
+#RecordIn	Content	2038	1		StageEldRecallScroll	5	0	0	7000	2038		
+#RecordIn	Content	2039	1		StageUrgRecallScroll	1	0	0	8000	2039		
+#RecordIn	Content	2040	1		StageUrgRecallScroll	5	0	0	300	2040		
+#RecordIn	Content	2041	1		MightyPotion01_1	1	0	0	13000	2041		
+#RecordIn	Content	2042	1		MightyPotion01_1	5	0	0	8000	2042		
+#RecordIn	Content	2043	1		MightyPotion01_3	1	0	0	9000	2043		
+#RecordIn	Content	2044	1		MightyPotion01_3	5	0	0	900	2044		
+#RecordIn	Content	2045	1		MightyPotion01_4	1	0	0	5000	2045		
+#RecordIn	Content	2046	1		MightyPotion01_4	5	0	0	500	2046		
+#RecordIn	Content	2047	1		IN_AntiqueBed01	1	0	0	22800	2047		
+#RecordIn	Content	2048	1		IN_AntiqueBookcase01	1	0	0	20000	2048		
+#RecordIn	Content	2049	1		IN_AntiqueDrawer01	1	0	0	20000	2049		
+#RecordIn	Content	2050	1		CopperLump	1	0	0	30000	2050		
+#RecordIn	Content	2051	1		CopperLump	10	0	0	10000	2051		
+#RecordIn	Content	2052	1		CopperLump	50	0	0	1000	2052		
+#RecordIn	Content	2053	1		APower5_1	1	0	0	7000	2053		
+#RecordIn	Content	2054	1		APower5_1	5	0	0	900	2054		
+#RecordIn	Content	2055	1		GoldNine02_2	1	0	0	27000	2055		
+#RecordIn	Content	2056	1		GoldNine02_2	5	0	0	8000	2056		
+#RecordIn	Content	2057	1		GoldNine03_2	1	0	0	15000	2057		
+#RecordIn	Content	2058	1		GoldNine03_2	5	0	0	6000	2058		
+#RecordIn	Content	2059	1		GoldNine04_2	1	0	0	10000	2059		
+#RecordIn	Content	2060	1		GoldNine04_2	5	0	0	4450	2060		
+#RecordIn	Content	2061	1		Hat_Honeying01_1	1	0	0	10	2061		
+#RecordIn	Content	2062	1		Hat_Honeying01_2	1	0	0	1000	2062		
+#RecordIn	Content	2063	1		Hat_Honeying01_3	1	0	0	100	2063		
+#RecordIn	Content	2064	1		T_WarriorAxe	1	0	4	800	2064		
+#RecordIn	Content	2065	1		T_BridgeSword	1	0	4	900	2065		
+#RecordIn	Content	2066	1		T_WarriorSword	1	0	4	850	2066		
+#RecordIn	Content	2067	1		T_PaladinMace	1	0	4	1100	2067		
+#RecordIn	Content	2068	1		T_PaladinHammer	1	0	4	650	2068		
+#RecordIn	Content	2069	1		T_ScoutBow	1	0	4	550	2069		
+#RecordIn	Content	2070	1		T_ScoutCrossBow	1	0	4	500	2070		
+#RecordIn	Content	2071	1		T_EnchanterStaff	1	0	4	440	2071		
+#RecordIn	Content	2072	1		T_EnchanterWand	1	0	4	500	2072		
+#RecordIn	Content	2073	1		T_TwoHandAxe	1	0	4	220	2073		
+#RecordIn	Content	2074	1		T_Cutlas	1	0	4	220	2074		
+#RecordIn	Content	2075	1		T_Zweihander	1	0	4	250	2075		
+#RecordIn	Content	2076	1		T_HorsemansFlail	1	0	4	420	2076		
+#RecordIn	Content	2077	1		T_HorsemansHammer	1	0	4	310	2077		
+#RecordIn	Content	2078	1		T_HeavyBow	1	0	4	330	2078		
+#RecordIn	Content	2079	1		T_HeavyCrossBow	1	0	4	400	2079		
+#RecordIn	Content	2080	1		T_PowerStaff	1	0	4	250	2080		
+#RecordIn	Content	2081	1		T_PowerWand	1	0	4	220	2081		
+#RecordIn	Content	2082	1		ST_PoleAxe	1	0	4	200	2082		
+#RecordIn	Content	2083	1		ST_EdgedSword	1	0	4	160	2083		
+#RecordIn	Content	2084	1		ST_BastardSword	1	0	4	90	2084		
+#RecordIn	Content	2085	1		ST_MorningStar	1	0	4	80	2085		
+#RecordIn	Content	2086	1		ST_Morgenstern	1	0	4	130	2086		
+#RecordIn	Content	2087	1		ST_CompositBow	1	0	4	90	2087		
+#RecordIn	Content	2088	1		ST_CompositCrossBow	1	0	4	140	2088		
+#RecordIn	Content	2089	1		ST_SpiritStaff	1	0	4	113	2089		
+#RecordIn	Content	2090	1		ST_SpiritWand	1	0	4	80	2090		
+#RecordIn	Content	2091	1		MiniMusa01_1	1	0	4	2	2091		
+
+#RecordIn	Container	0	2	Tbag03	1	1	-					
+#RecordIn	Content	3001	2		LowMeat	30	0	0	20000	3001		
+#RecordIn	Content	3002	2		NorMeat	1	0	0	15000	3002		
+#RecordIn	Content	3003	2		NorMeat	30	0	0	11000	3003		
+#RecordIn	Content	3004	2		HighMeat	1	0	0	20000	3004		
+#RecordIn	Content	3005	2		HighMeat	30	0	0	18000	3005		
+#RecordIn	Content	3006	2		LowCleanWater	30	0	0	20000	3006		
+#RecordIn	Content	3007	2		NorCleanWater	1	0	0	15000	3007		
+#RecordIn	Content	3008	2		NorCleanWater	30	0	0	11000	3008		
+#RecordIn	Content	3009	2		HighCleanWater	1	0	0	11000	3009		
+#RecordIn	Content	3010	2		HighCleanWater	30	0	0	9000	3010		
+#RecordIn	Content	3011	2		LowMagicCrystal	30	0	0	20000	3011		
+#RecordIn	Content	3012	2		NorMagicCrystal	1	0	0	15000	3012		
+#RecordIn	Content	3013	2		NorMagicCrystal	30	0	0	11000	3013		
+#RecordIn	Content	3014	2		HighMagicCrystal	1	0	0	11000	3014		
+#RecordIn	Content	3015	2		HighMagicCrystal	30	0	0	9000	3015		
+#RecordIn	Content	3016	2		NorBrokenBone	30	0	0	20000	3016		
+#RecordIn	Content	3017	2		HighBrokenBone	1	0	0	15000	3017		
+#RecordIn	Content	3018	2		HighBrokenBone	30	0	0	11000	3018		
+#RecordIn	Content	3019	2		HighCopperOre	1	0	0	22000	3019		
+#RecordIn	Content	3020	2		HighCopperOre	30	0	0	16000	3020		
+#RecordIn	Content	3021	2		LowSilverOre	1	0	0	10000	3021		
+#RecordIn	Content	3022	2		LowSilverOre	30	0	0	8000	3022		
+#RecordIn	Content	3023	2		NorSpiritDust	30	0	0	20000	3023		
+#RecordIn	Content	3024	2		HighSpiritDust	1	0	0	16000	3024		
+#RecordIn	Content	3025	2		HighSpiritDust	30	0	0	11000	3025		
+#RecordIn	Content	3026	2		NorGemDust	30	0	0	20000	3026		
+#RecordIn	Content	3027	2		HighGemDust	1	0	0	15000	3027		
+#RecordIn	Content	3028	2		HighGemDust	30	0	0	11000	3028		
+#RecordIn	Content	3029	2		NorSoulDust	30	0	0	23000	3029		
+#RecordIn	Content	3030	2		HighSoulDust	1	0	0	16000	3030		
+#RecordIn	Content	3031	2		HighSoulDust	30	0	0	12000	3031		
+#RecordIn	Content	3032	2		Topaz	1	0	0	20000	3032		
+#RecordIn	Content	3033	2		Topaz	30	0	0	13000	3033		
+#RecordIn	Content	3034	2		Ruby	1	0	0	20000	3034		
+#RecordIn	Content	3035	2		Ruby	30	0	0	13000	3035		
+#RecordIn	Content	3036	2		LowSkin	1	0	0	26000	3036		
+#RecordIn	Content	3037	2		LowSkin	30	0	0	15000	3037		
+#RecordIn	Content	3038	2		NorSkin	1	0	0	20000	3038		
+#RecordIn	Content	3039	2		NorSkin	30	0	0	14000	3039		
+#RecordIn	Content	3040	2		LowKylinLeather	30	0	0	20000	3040		
+#RecordIn	Content	3041	2		NorKylinLeather	30	0	0	20000	3041		
+#RecordIn	Content	3042	2		HighKylinLeather	1	0	0	17000	3042		
+#RecordIn	Content	3043	2		HighKylinLeather	30	0	0	15000	3043		
+#RecordIn	Content	3044	2		KylinTail	1	0	0	20000	3044		
+#RecordIn	Content	3045	2		KylinTail	30	0	0	14000	3045		
+#RecordIn	Content	3046	2		NorBeastTooth	30	0	0	15000	3046		
+#RecordIn	Content	3047	2		HighBeastTooth	1	0	0	14000	3047		
+#RecordIn	Content	3048	2		HighBeastTooth	30	0	0	8000	3048		
+#RecordIn	Content	3049	2		StageRouRecallScroll	1	0	0	9000	3049		
+#RecordIn	Content	3050	2		StageRouRecallScroll	5	0	0	5000	3050		
+#RecordIn	Content	3051	2		StageEldRecallScroll	1	0	0	12000	3051		
+#RecordIn	Content	3052	2		StageEldRecallScroll	5	0	0	3000	3052		
+#RecordIn	Content	3053	2		StageUrgRecallScroll	1	0	0	11000	3053		
+#RecordIn	Content	3054	2		StageUrgRecallScroll	5	0	0	1000	3054		
+#RecordIn	Content	3055	2		MightyPotion01_4	1	0	0	15490	3055		
+#RecordIn	Content	3056	2		MightyPotion01_4	5	0	0	1000	3056		
+#RecordIn	Content	3057	2		MightyPotion01_5	1	0	0	5000	3057		
+#RecordIn	Content	3058	2		MightyPotion01_5	5	0	0	800	3058		
+#RecordIn	Content	3059	2		MightyPotion01_6	1	0	0	3000	3059		
+#RecordIn	Content	3060	2		MightyPotion01_6	5	0	0	400	3060		
+#RecordIn	Content	3061	2		IN_AntiqueBed01	1	0	0	1000	3061		
+#RecordIn	Content	3062	2		IN_AntiqueBookcase01	1	0	0	11200	3062		
+#RecordIn	Content	3063	2		IN_AntiqueDrawer01	1	0	0	12200	3063		
+#RecordIn	Content	3064	2		IN_AntiqueSofa01	1	0	0	11000	3064		
+#RecordIn	Content	3065	2		IN_GothicDoor01	1	0	0	11300	3065		
+#RecordIn	Content	3066	2		IN_GothicFlag01	1	0	0	3500	3066		
+#RecordIn	Content	3067	2		CopperLump	10	0	0	10000	3067		
+#RecordIn	Content	3068	2		CopperLump	50	0	0	1000	3068		
+#RecordIn	Content	3069	2		SilverLump	1	0	0	5000	3069		
+#RecordIn	Content	3070	2		SilverLump	10	0	0	900	3070		
+#RecordIn	Content	3071	2		SilverLump	30	0	0	200	3071		
+#RecordIn	Content	3072	2		LuckyEl3	1	0	0	15000	3072		
+#RecordIn	Content	3073	2		LuckyEl3	5	0	0	10000	3073		
+#RecordIn	Content	3074	2		APower5_1	1	0	0	15000	3074		
+#RecordIn	Content	3075	2		APower5_1	5	0	0	9000	3075		
+#RecordIn	Content	3076	2		APower5_2	1	0	0	11000	3076		
+#RecordIn	Content	3077	2		APower5_2	5	0	0	4000	3077		
+#RecordIn	Content	3078	2		APower5_3	1	0	0	8000	3078		
+#RecordIn	Content	3079	2		APower5_3	5	0	0	205	3079		
+#RecordIn	Content	3080	2		GoldNine02_3	1	0	0	15000	3080		
+#RecordIn	Content	3081	2		GoldNine02_3	5	0	0	11000	3081		
+#RecordIn	Content	3082	2		GoldNine03_3	1	0	0	10000	3082		
+#RecordIn	Content	3083	2		GoldNine03_3	5	0	0	5000	3083		
+#RecordIn	Content	3084	2		GoldNine04_3	1	0	0	1000	3084		
+#RecordIn	Content	3085	2		GoldNine04_3	5	0	0	200	3085		
+#RecordIn	Content	3086	2		Comic_Market01_1	1	0	0	5	3086		
+#RecordIn	Content	3087	2		Comic_Market01_2	1	0	0	1100	3087		
+#RecordIn	Content	3088	2		Comic_Market01_3	1	0	0	500	3088		
+#RecordIn	Content	3089	2		T_Halberd	1	1	4	305	3089		
+#RecordIn	Content	3090	2		T_Splitter	1	1	4	400	3090		
+#RecordIn	Content	3091	2		T_Claymore	1	1	4	450	3091		
+#RecordIn	Content	3092	2		T_WarMace	1	1	4	300	3092		
+#RecordIn	Content	3093	2		T_WarHammer	1	1	4	500	3093		
+#RecordIn	Content	3094	2		T_WarBow	1	1	4	300	3094		
+#RecordIn	Content	3095	2		T_WarCrossBow	1	1	4	300	3095		
+#RecordIn	Content	3096	2		T_FairyStaff	1	1	4	100	3096		
+#RecordIn	Content	3097	2		T_FairyWand	1	1	4	150	3097		
+#RecordIn	Content	3098	2		T_FSplendor	1	1	4	140	3098		
+#RecordIn	Content	3099	2		T_Splendor	1	1	4	200	3099		
+#RecordIn	Content	3100	2		T_BikingAxe	1	1	4	60	3100		
+#RecordIn	Content	3101	2		T_AvantGardeSword	1	1	4	90	3101		
+#RecordIn	Content	3102	2		T_Flamberge	1	1	4	80	3102		
+#RecordIn	Content	3103	2		T_BattleMace	1	1	4	70	3103		
+#RecordIn	Content	3104	2		T_BattleHammer	1	1	4	50	3104		
+#RecordIn	Content	3105	2		T_BattleBow	1	1	4	40	3105		
+#RecordIn	Content	3106	2		T_BattleCrossBow	1	1	4	60	3106		
+#RecordIn	Content	3107	2		T_BattleStaff	1	1	4	30	3107		
+#RecordIn	Content	3108	2		T_BattleWand	1	1	4	35	3108		
+#RecordIn	Content	3109	2		T_AvantGardeShield	1	1	4	40	3109		
+#RecordIn	Content	3110	2		T_ReflectionShield	1	1	4	40	3110		
+#RecordIn	Content	3111	2		ST_GiantAxe	1	1	4	22	3111		
+#RecordIn	Content	3112	2		ST_SerpentSword	1	1	4	25	3112		
+#RecordIn	Content	3113	2		ST_GiantSword	1	1	4	30	3113		
+#RecordIn	Content	3114	2		ST_GiantMace	1	1	4	26	3114		
+#RecordIn	Content	3115	2		ST_GiantHammer	1	1	4	22	3115		
+#RecordIn	Content	3116	2		ST_GiantBow	1	1	4	25	3116		
+#RecordIn	Content	3117	2		ST_GiantCrossBow	1	1	4	23	3117		
+#RecordIn	Content	3118	2		ST_GiantStaff	1	1	4	20	3118		
+#RecordIn	Content	3119	2		ST_GiantWand	1	1	4	22	3119		
+#RecordIn	Content	3120	2		ST_LionHeartShield	1	1	4	24	3120		
+#RecordIn	Content	3121	2		ST_Towershield	1	1	4	20	3121		
+#RecordIn	Content	3122	2		MiniHina02_1	1	0	0	1	3122		
+
+#RecordIn	Container	0	3	Tbag04	2	5	-					
+#RecordIn	Content	4001	3		SilverLump	30	0	0	200000	4001		
+#RecordIn	Content	4002	3		StageRouRecallScroll	10	0	0	200000	4002		
+#RecordIn	Content	4003	3		StageEldRecallScroll	10	0	0	150000	4003		
+#RecordIn	Content	4004	3		StageUrgRecallScroll	10	0	0	100000	4004		
+#RecordIn	Content	4005	3		StrNamedTopazRing	1	0	0	60000	4005		
+#RecordIn	Content	4006	3		RareUrgaNeck01	1	0	0	60000	4006		
+#RecordIn	Content	4007	3		HighStrCriPotion	5	0	0	30000	4007		
+#RecordIn	Content	4008	3		BellowKnightVulcanSword	1	0	0	20000	4008		
+#RecordIn	Content	4009	3		BellowKnightTitanicSword	1	0	0	20000	4009		
+#RecordIn	Content	4010	3		BellowKnightTitanicAxe	1	0	0	20000	4010		
+#RecordIn	Content	4011	3		BellowKnightTitanicMace	1	0	0	20000	4011		
+#RecordIn	Content	4012	3		BellowKnightTitanicHammer	1	0	0	20000	4012		
+#RecordIn	Content	4013	3		BellowKnightTitanicBow	1	0	0	20000	4013		
+#RecordIn	Content	4014	3		BellowKnightTitanicCrossBow	1	0	0	20000	4014		
+#RecordIn	Content	4015	3		BellowKnightTitanicStaff	1	0	0	20000	4015		
+#RecordIn	Content	4016	3		BellowKnightTitanicWand	1	0	0	20000	4016		
+#RecordIn	Content	4017	3		IN_GothicFlag01	1	0	0	10000	4017		
+#RecordIn	Content	4018	3		IN_Normalpicture02	1	0	0	10000	4018		
+
+#RecordIn	Container	0	4	Tbag05	3	3	-					
+#RecordIn	Content	5001	4		GoldLump	10	0	0	300000	5001		
+#RecordIn	Content	5002	4		StageRouRecallScroll	10	0	0	200000	5002		
+#RecordIn	Content	5003	4		StageEldRecallScroll	10	0	0	200000	5003		
+#RecordIn	Content	5004	4		StageUrgRecallScroll	10	0	0	200000	5004		
+#RecordIn	Content	5005	4		BestHighStrCriPotion	5	0	0	100000	5005		
+
+#RecordIn	Container	0	5	Ticebar00	1	1	DTbag01					
+#RecordIn	Content	6001	5		NorHpPotion	10	0	0	50000	6001		
+#RecordIn	Content	6002	5		BestHighHpPotion	10	0	0	50000	6002		
+#RecordIn	Content	6003	5		NorSpPotion	10	0	0	50000	6003		
+#RecordIn	Content	6004	5		BestHighSpPotion	10	0	0	50000	6004		
+#RecordIn	Content	6005	5		NorConHPPotion	10	0	0	50000	6005		
+#RecordIn	Content	6006	5		BestHighConHPPotion	10	0	0	50000	6006		
+#RecordIn	Content	6007	5		NorConSPPotion	10	0	0	50000	6007		
+#RecordIn	Content	6008	5		BestHighConSPPotion	10	0	0	50000	6008		
+#RecordIn	Content	6009	5		NorTHScroll	5	0	0	40000	6009		
+#RecordIn	Content	6010	5		HighTHScroll	5	0	0	40000	6010		
+#RecordIn	Content	6011	5		NorCriScroll	5	0	0	40000	6011		
+#RecordIn	Content	6012	5		HighCriScroll	5	0	0	40000	6012		
+#RecordIn	Content	6013	5		NorTBScroll	5	0	0	40000	6013		
+#RecordIn	Content	6014	5		HighTBScroll	5	0	0	40000	6014		
+#RecordIn	Content	6015	5		NorCurScroll	5	0	0	40000	6015		
+#RecordIn	Content	6016	5		HighCurScroll	5	0	0	40000	6016		
+#RecordIn	Content	6017	5		BlessEl2	1	0	0	20000	6017		
+#RecordIn	Content	6018	5		BlessEl3	1	0	0	20000	6018		
+#RecordIn	Content	6019	5		BlessEl4	1	0	0	20000	6019		
+#RecordIn	Content	6020	5		IN_GardnChair01	1	0	0	100000	6020		
+#RecordIn	Content	6021	5		IN_GardonParasol01	1	0	0	80000	6021		
+#RecordIn	Content	6022	5		IN_Dice01	1	0	0	40000	6022		
+
+															
+#end															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															

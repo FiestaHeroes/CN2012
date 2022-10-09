@@ -1,0 +1,78 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		Regen00	Y	5220	3891	0	0	400										
+#record		Regen01	Y	4770	4399	0	0	300										
+#record		Regen02	Y	4844	5495	0	0	400										
+#record		Regen03	Y	4844	6257	0	0	300										
+#record		Regen04	Y	7412	5540	0	0	400										
+#record		Regen05	Y	7346	6278	0	0	300										
+#record		Regen06	Y	7007	3962	0	0	400										
+#record		Regen07	Y	7499	4419	0	0	300										
+#record		Regen08	Y	6134	5625	0	0	400										
+#record		Regen09	Y	6111	5179	0	0	300										
+#record		Regen10	Y	4998	9952	0	0	400										
+#record		Regen11	Y	5356	9279	0	0	300										
+#record		Regen12	Y	5332	11182	0	0	400										
+#record		Regen13	Y	4873	11092	0	0	300										
+#record		Regen14	Y	6969	11184	0	0	400										
+#record		Regen15	Y	7503	11084	0	0	300										
+#record		Regen16	Y	7297	9933	0	0	400										
+#record		Regen17	Y	6901	9296	0	0	300										
+#record		Regen100	Y	6109	4766	0	0	300										
+#record		Regen101	Y	6166	10267	0	0	400										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		Regen00	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen00	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen01	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen01	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen02	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen02	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen03	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen03	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen04	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen04	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen05	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen05	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen06	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen06	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen07	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen07	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen08	KQ_SK_Sudder	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen08	KQ_SK_Sudder2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen09	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen09	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen10	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen10	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen11	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen11	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen12	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen12	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen13	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen13	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen14	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen14	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen15	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen15	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen16	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen16	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen17	KQ_SK_Elec	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen17	KQ_SK_Elec2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen100	KQ_SK_Sudder3	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Regen101	KQ_SK_Elec3	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+																		
+#end																		

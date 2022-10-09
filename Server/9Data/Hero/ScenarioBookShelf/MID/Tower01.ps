@@ -1,0 +1,488 @@
+open [main]
+    var InterruptBlock  ""
+        InterruptArg    ""
+        
+        Boss            ""
+
+        Door00          ""
+        Door01          ""
+        Door02          ""
+        Door03          ""
+        Door04          ""
+        Door05          ""
+        Door06          ""
+        Door07          ""
+        Door08          ""
+        Door09          ""
+        Door10          ""
+        Door11          ""
+        Door12          ""
+        Door13          ""
+        Door14          ""
+        Door15          ""
+        Door16          ""
+        Door17          "".
+
+        ;ReturnGate      "";킹퀘 매칭으로 인한 주석처리
+        ;CompleteGate    "".;킹퀘 매칭으로 인한 주석처리
+
+    scriptfile  "Tower01".
+    
+    interruptclear.
+    
+    doorbuild Door00 "T_Gate" 1184 3723 0 1000 "Normal".
+    doorclose Door00 "DOOR00".
+    doorbuild Door01 "T_Gate" 2732 1863 0 1000 "Normal".
+    doorclose Door01 "DOOR01".
+    doorbuild Door02 "T_Gate" 5069 1058 0 1000 "Normal".
+    doorclose Door02 "DOOR02".
+    doorbuild Door03 "T_Gate" 7556 937 0 1000 "Normal".
+    doorclose Door03 "DOOR03".
+    doorbuild Door04 "T_Gate" 10035 951 0 1000 "Normal".
+    doorclose Door04 "DOOR04".
+    doorbuild Door05 "T_Gate" 10241 3883 0 1000 "Normal".
+    doorclose Door05 "DOOR05".
+    doorbuild Door06 "T_Gate" 11531 5975 0 1000 "Normal".
+    doorclose Door06 "DOOR06".
+    doorbuild Door07 "T_Gate" 11727 8426 0 1000 "Normal".
+    doorclose Door07 "DOOR07".
+    doorbuild Door08 "T_Gate" 10190 10335 0 1000 "Normal".
+    doorclose Door08 "DOOR08".
+    doorbuild Door09 "T_Gate" 8139 11611 0 1000 "Normal".
+    doorclose Door09 "DOOR09".
+    doorbuild Door10 "T_Gate" 5701 11825 0 1000 "Normal".
+    doorclose Door10 "DOOR10".
+    doorbuild Door11 "T_Gate" 3564 10499 0 1000 "Normal".
+    doorclose Door11 "DOOR11".
+    doorbuild Door12 "T_Gate" 3278 8097 0 1000 "Normal".
+    doorclose Door12 "DOOR12".
+    doorbuild Door13 "T_Gate" 3276 5629 0 1000 "Normal".
+    doorclose Door13 "DOOR13".
+    doorbuild Door14 "T_Gate" 5394 4529 0 1000 "Normal".
+    doorclose Door14 "DOOR14".
+    doorbuild Door15 "T_Gate" 7902 4434 0 1000 "Normal".
+    doorclose Door15 "DOOR15".
+    doorbuild Door16 "T_Gate" 8976 6493 0 1000 "Normal".
+    doorclose Door16 "DOOR16".
+    doorbuild Door17 "T_Gate" 7003 7615 0 1000 "Normal".
+    doorclose Door17 "DOOR17".
+
+    ;npcstand ReturnGate "T_Gate02" 1179 7721 0 1000 "Normal".
+    ;interruptset NPCClickHandle "ReturnGateClick" 1 ReturnGate "onReturnGateClick".;킹퀘 
+    
+    pause Sec 10.
+    
+    chatwin "EldSpeGuard01" "Chat0101".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat0102".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat0103".
+    regengroup "Tower01" "201".
+    regengroup "Tower01" "202".
+    call "WaitClearStage".
+    dooropen Door00 "DOOR00".
+    chatwin "EldSpeGuard01" "Chat0201".
+    
+    regengroup "Tower01" "301".
+    regengroup "Tower01" "302".
+    call "WaitClearStage".
+    dooropen Door01 "DOOR01".
+    chatwin "EldSpeGuard01" "Chat0301".
+    
+    regengroup "Tower01" "401".
+    regengroup "Tower01" "402".
+    call "WaitClearStage".
+    dooropen Door02 "DOOR02".
+    chatwin "EldSpeGuard01" "Chat0401".
+    
+    regengroup "Tower01" "501".
+    regengroup "Tower01" "502".
+    call "WaitBoss1Dead".
+    dooropen Door03 "DOOR03".
+
+    
+    chatwin "EldSpeGuard01" "Chat0501".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat0502".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat0503".
+    
+    regengroup "Tower01" "601".
+    call "WaitClearStage".
+    dooropen Door04 "DOOR04".
+    chatwin "EldSpeGuard01" "Chat0601".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat0602".
+    
+    regengroup "Tower01" "701".
+    call "WaitClearStage".
+    dooropen Door05 "DOOR05".
+    chatwin "EldSpeGuard01" "Chat0701".
+    
+    regengroup "Tower01" "801".
+    regengroup "Tower01" "802".
+    call "WaitClearStage".
+    dooropen Door06 "DOOR06".
+    chatwin "EldSpeGuard01" "Chat0801".
+    
+    regengroup "Tower01" "901".
+    regengroup "Tower01" "902".
+    regengroup "Tower01" "903".
+    regengroup "Tower01" "904".
+    regengroup "Tower01" "905".
+    regengroup "Tower01" "906".
+    call "WaitClearStage".
+    dooropen Door07 "DOOR07".
+    chatwin "EldSpeGuard01" "Chat0901".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat0902".
+    
+    regengroup "Tower01" "1001".
+    regengroup "Tower01" "1002".
+    call "WaitBoss2Dead".
+    dooropen Door08 "DOOR08".
+
+
+    chatwin "EldSpeGuard01" "Chat1001".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1002".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1003".
+    
+    regengroup "Tower01" "1101".
+    regengroup "Tower01" "1102".
+    call "WaitClearStage".
+    dooropen Door09 "DOOR09".
+    chatwin "EldSpeGuard01" "Chat1101".
+    
+    regengroup "Tower01" "1201".
+    regengroup "Tower01" "1202".
+    call "WaitClearStage".
+    dooropen Door10 "DOOR10".
+    chatwin "EldSpeGuard01" "Chat1201".
+    
+    regengroup "Tower01" "1301".
+    call "WaitClearStage".
+    dooropen Door11 "DOOR11".
+    chatwin "EldSpeGuard01" "Chat1301".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1302".
+    
+    regengroup "Tower01" "1401".
+    regengroup "Tower01" "1402".
+    regengroup "Tower01" "1403".
+    call "WaitBoss3Dead".
+    dooropen Door12 "DOOR12".
+
+
+    chatwin "EldSpeGuard01" "Chat1401".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1402".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1403".
+    
+    regengroup "Tower01" "1501".
+    regengroup "Tower01" "1502".
+    call "WaitClearStage".
+    dooropen Door13 "DOOR13".
+    chatwin "EldSpeGuard01" "Chat1501".
+    
+    regengroup "Tower01" "1601".
+    call "WaitClearStage".
+    dooropen Door14 "DOOR14".
+    chatwin "EldSpeGuard01" "Chat1601".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1602".
+    
+    regengroup "Tower01" "1701".
+    call "WaitClearStage".
+    dooropen Door15 "DOOR15".
+    chatwin "EldSpeGuard01" "Chat1701".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1702".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1703".
+    
+    regengroup "Tower01" "1801".
+    call "WaitClearStage".
+    dooropen Door16 "DOOR16".
+    chatwin "EldSpeGuard01" "Chat1801".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1802".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat1803".
+    
+    regengroup "Tower01" "1901".
+    call "WaitClearStage".
+    dooropen Door17 "DOOR17".
+    
+    regengroup "Tower01" "2001".
+    regengroup "Tower01" "2002".
+    regengroup "Tower01" "2003".
+    call "WaitBoss4Dead".
+    chatwin "EldSpeGuard01" "Chat2001".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat2002".
+    pause Sec 2.
+    chatwin "EldSpeGuard01" "Chat2003".
+    
+    call "QuestSuccess".
+close
+
+
+
+open [QuestSuccess]
+    questresult Suc.                   ; 성공패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+    reward MID. ; 킹퀘 매칭으로 보상 명령어 변경됨
+    MIDClearCount Online.;킹퀘 플레이 카운트 설정
+    interruptclear.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 킹퀘 매칭으로 인한 주석처리
+    ;npcstand CompleteGate  "Gate_ID_Complete"  4704  7618 0 1000 "Normal". ;킹퀘 매칭으로 인한 주석처리
+    
+    ;interruptset NPCClickHandle "ReturnGateClick"  1 ReturnGate  "onReturnGateClick".;킹퀘 매칭으로 인한 주석처리
+    ;interruptset NPCClickHandle "CompleteGateClick"  1 CompleteGate  "onCompleteGateClick". ;킹퀘 매칭으로 인한 주석처리
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;킹퀘 매칭으로 인한 주석처리
+
+    someoneshout "Guardian" "GuardianSuc0".
+    pause Sec 2.                        ; 2초간 대기
+
+    someoneshout "Guardian" "GuardianSuc1".
+    pause Sec 2.                        ; 2초간 대기
+
+    someoneshout "Guardian" "GuardianSuc2".
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+
+    infinite
+
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+    
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+    break "main".
+
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;킹퀘 매칭 작업으로 주석처리
+;open [onReturnGateClick]
+;    var mclicker 0.
+;    whoclickme mclicker InterruptArg.
+;    linkto mclicker "RouVal01" "RouVal01" 4664 8416.
+;    interruptset NPCClickHandle "ReturnGateClick"  1 ReturnGate  "onReturnGateClick".
+;close
+
+;open [onCompleteGateClick]
+;    var mclicker 0.
+;    whoclickme mclicker InterruptArg.
+;    linkto mclicker "RouVal01" "RouVal01" 4664 8416.
+;    interruptset NPCClickHandle "CompleteGateClick"  1 CompleteGate "onCompleteGateClick".
+;close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;킹퀘 매칭 작업으로 주석처리
+
+open [WaitClearStage]
+    ; Index를 _NONE_ 이라고 주면 어떤 몹/플레이어가 죽어도 인터럽트 발생
+    ; interruptset DeadIndex "AnyMobDead" 1 "_NONE_" "onAnyMobDead".
+    
+    interruptset MobEliminate "" 1 "onMobEliminate".
+    ; 체크 못하고 지나갈때가 있어서 10초마다 체크한다
+    interruptset Sec "Tick" 1 10 "onTick".
+    ; 몹들이 한번 전부 죽으면 연속적으로 Eliminate 인터럽트가 일어나더라
+    pause sec 5.
+    
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open [onMobEliminate]
+    break "WaitClearStage".
+close
+
+open [onAnyMobDead]
+    var Total 0
+        Guard 0.
+    ; 죽이지 않아도 될 몹이 있다
+    Total = @Count("all").
+    Guard = @Count("Anti_Henis_A14") + @Count("Anti_Henis_A18") + @Count("Anti_Henis_F21") + @Count("Anti_Henis_M24") + @Count("Anti_Henis_M25") + @Count("Anti_Henis_F30") + @Count("Anti_Henis_A32") + @Count("Anti_Henis_C39") + @Count("Anti_Henis_C40") + @Count("Anti_Henis_F29") + @Count("Anti_Henis_A31") + @Count("Anti_Henis_C36") + @Count("Anti_Henis_F47") + @Count("Anti_Henis_C47") + @Count("Anti_Henis_A50") + @Count("Anti_Henis_M50").
+    Total = Total - Guard.
+    
+    if Total == 0
+    then open
+        break "WaitClearStage".
+    close
+    else open
+        interruptset DeadIndex "AnyMobDead" 1 "_NONE_" "onAnyMobDead".
+    close
+close
+
+open [onTick]
+    var Total 0.
+    
+    Total = @Count("all").
+    
+    if Total == 0
+    then open
+        break "WaitClearStage".
+    close
+    else open
+        interruptset Sec "Tick" 1 10 "onTick".
+    close
+close
+
+open [WaitBoss1Dead]
+    pause sec 1.
+    findhandle Boss "T_DustGolem" 0.
+    interruptset HPLow "Boss1HP80" 1 Boss 800 "onBoss1HP80".
+    interruptset HPLow "Boss1HP20" 1 Boss 200 "onBoss1HP20".
+    interruptset DeadIndex "Boss1Dead" 1 "T_DustGolem" "onBoss1Dead".
+    
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open[onBoss1HP80]
+    chatwin "EldSpeGuard01" "Chat0501Boss".
+    summonmob Boss "T_Imp" 2.
+    summonmob Boss "T_GangImp" 2.
+close
+
+open[onBoss1HP20]
+    chatwin "EldSpeGuard01" "Chat0502Boss".
+    summonmob Boss "T_HungryWolf" 1.
+    summonmob Boss "T_Ratman" 1.
+close
+
+open[onBoss1Dead]
+    suicide all.
+    break "WaitBoss1Dead".
+close
+
+open [WaitBoss2Dead]
+    pause sec 1.
+    findhandle Boss "T_StoneGolem" 0.
+    interruptset HPLow "Boss2HP70" 1 Boss 700 "onBoss2HP70".
+    interruptset HPLow "Boss2HP20" 1 Boss 200 "onBoss2HP20".
+    interruptset DeadIndex "Boss2Dead" 1 "T_StoneGolem" "onBoss2Dead".
+    
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open[onBoss2HP70]
+    chatwin "EldSpeGuard01" "Chat1001Boss".
+    summonmob Boss "T_SkelArcher01" 2.
+close
+
+open[onBoss2HP20]
+    chatwin "EldSpeGuard01" "Chat1002Boss".
+    summonmob Boss "T_SkelWarrior" 2.
+    summonmob Boss "T_SkelArcher02" 1.
+close
+
+open[onBoss2Dead]
+    suicide all.
+    break "WaitBoss2Dead".
+close
+
+open [WaitBoss3Dead]
+    pause sec 1.
+    findhandle Boss "T_PoisonGolem" 0.
+    interruptset HPLow "Boss3HP70" 1 Boss 700 "onBoss3HP70".
+    interruptset HPLow "Boss3HP20" 1 Boss 200 "onBoss3HP20".
+    interruptset DeadIndex "Boss3Dead" 1 "T_PoisonGolem" "onBoss3Dead".
+    
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open[onBoss3HP70]
+    chatwin "EldSpeGuard01" "Chat1401Boss".
+    summonmob Boss "T_OldFox" 2.
+    summonmob Boss "T_DesertWolf" 2.
+close
+
+open[onBoss3HP20]
+    chatwin "EldSpeGuard01" "Chat1402Boss".
+    summonmob Boss "T_Ghost" 2.
+    summonmob Boss "T_IceViVi" 2.
+close
+
+open[onBoss3Dead]
+    suicide all.
+    break "WaitBoss3Dead".
+close
+
+open [WaitBoss4Dead]
+    pause sec 1.
+    findhandle Boss "T_IronGolem" 0.
+    interruptset HPLow "Boss4HP70" 1 Boss 700 "onBoss4HP70".
+    interruptset HPLow "Boss4HP50" 1 Boss 500 "onBoss4HP50".
+    interruptset HPLow "Boss4HP20" 1 Boss 200 "onBoss4HP20".
+    interruptset DeadIndex "Boss4Dead" 1 "T_IronGolem" "onBoss4Dead".
+    
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open[onBoss4HP70]
+    chatwin "EldSpeGuard01" "Chat2001Boss".
+    summonmob Boss "T_Prock" 1.
+    summonmob Boss "T_Spider00" 4.
+close
+
+open[onBoss4HP50]
+    chatwin "EldSpeGuard01" "Chat2002Boss".
+    summonmob Boss "T_KingCall" 2.
+close
+
+open[onBoss4HP20]
+    chatwin "EldSpeGuard01" "Chat2003Boss".
+    summonmob Boss "T_FlyingStaff01" 2.
+    summonmob Boss "T_IronSlime01" 2.
+close
+
+open[onBoss4Dead]
+    suicide all.
+    break "WaitBoss4Dead".
+close

@@ -1,0 +1,134 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		UrgSwaDn01_001	N	3696	5487	0	0	295										
+#record		UrgSwaDn01_002	N	3655	6044	0	0	288										
+#record		UrgSwaDn01_003	N	7592	5413	0	0	218										
+#record		UrgSwaDn01_004	N	7592	5950	0	0	225										
+#record		UrgSwaDn01_005	N	6593	4407	0	0	351										
+#record		UrgSwaDn01_006	N	4688	4437	0	0	358										
+#record		UrgSwaDn01_007	N	5599	4268	30	577	89										
+#record		UrgSwaDn01_008	N	5576	7839	1032	64	0										
+#record		UrgSwaDn01_009	N	5586	5766	1049	48	0										
+#record		UrgSwaDn01_011	N	6769	8693	844	41	0										
+#record		UrgSwaDn01_012	N	4457	8964	754	32	0										
+#record		UrgSwaDn01_013	N	5666	8510	203	330	0										
+#record		UrgSwaDn01_014	N	5688	10921	191	495	0										
+#record		UrgSwaDn01_015	N	5651	9732	173	495	0										
+#record		UrgSwaDn01_016	N	4269	11551	918	52	0										
+#record		UrgSwaDn01_021	N	3910	10079	0	0	337										
+#record		UrgSwaDn01_022	N	8248	8490	0	0	316										
+#record		UrgSwaDn01_023	N	7215	9446	601	38	0										
+#record		UrgSwaDn01_024	N	4818	10246	458	43	0										
+#record		UrgSwaDn01_025	N	7181	10495	726	55	0										
+#record		UrgSwaDn01_026	N	2430	8922	971	36	0										
+#record		UrgSwaDn01_031	N	1945	11298	0	0	288										
+#record		UrgSwaDn01_032	N	1878	10018	0	0	295										
+#record		UrgSwaDn01_033	N	1270	10549	0	0	337										
+#record		UrgSwaDn01_034	N	9448	10172	0	0	344										
+#record		UrgSwaDn01_035	N	9511	11224	0	0	330										
+#record		UrgSwaDn01_036	N	10051	10820	0	0	330										
+#record		UrgSwaDn01_037	N	2568	5531	30	818	0										
+#record		UrgSwaDn01_038	N	2527	2886	46	951	0										
+#record		UrgSwaDn01_039	N	8776	5428	42	889	0										
+#record		UrgSwaDn01_040	N	8754	2621	58	1033	0										
+#record		UrgSwaDn01_041	N	5951	3056	0	0	323										
+#record		UrgSwaDn01_042	N	5322	3040	0	0	274										
+#record		UrgSwaDn01_043	N	4623	2222	0	0	386										
+#record		UrgSwaDn01_044	N	6495	2361	0	0	400										
+#record		UrgSwaDn01_045	N	5594	1664	0	0	414										
+#record		UrgSwaDn01_046	N	6084	1419	0	0	330										
+#record		UrgSwaDn01_047	N	4823	1628	0	0	337										
+#record		UrgSwaDn01_048	N	3633	726	668	26	0										
+#record		UrgSwaDn01_049	N	7695	783	682	29	0										
+#record		UrgSwaDn01_MINE01	N	1641	2194	0	0	176										
+#record		UrgSwaDn01_MINE02	N	1769	2004	0	0	246										
+#record		UrgSwaDn01_MINE03	N	1836	2069	0	0	253										
+#record		UrgSwaDn01_MINE04	N	1777	2067	0	0	267										
+#record		UrgSwaDn01_MINE05	N	1759	2072	0	0	302										
+#record		UrgSwaDn01_MINE06	N	7093	11530	0	0	50										
+#record		UrgSwaDn01_MINE07	N	7328	11543	0	0	50										
+#record		UrgSwaDn01_MINE08	N	7527	11529	0	0	50										
+#record		UrgSwaDn01_MINE09	N	7749	11541	0	0	50										
+#record		UrgSwaDn01_MINE10	N	7948	11527	0	0	50										
+#record		P01	N	5589	2135	0	0	1002										
+#record		UrgSwaDn01Guard01	N	6802	6799	0	0	14										
+#record		UrgSwaDn01Guard02	N	4501	6793	0	0	14										
+#record		UrgSwaDn01_C1_01	N	5656	2304	0	0	56										
+#record		UrgSwaDn01_C2_01	N	6267	1632	0	0	35										
+#record		UrgSwaDn01_C3_01	N	5019	1703	0	0	28										
+#record		UrgSwaDn01_C4_01	N	5641	1664	0	0	35										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		UrgSwaDn01_001	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_002	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_003	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_004	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_005	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_006	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_007	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_008	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_009	LivingStatueA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_011	LivingStoneA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_012	LivingStoneA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_013	LivingStoneA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_014	LivingStoneA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_015	LivingStoneA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_016	LivingStoneA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_021	ShellaA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_022	ShellaA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_023	ShellaA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_024	ShellaA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_025	ShellaA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_026	ShellaA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_031	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_032	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_033	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_034	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_035	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_036	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_037	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_038	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_039	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_040	ShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_041	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_042	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_043	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_044	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_045	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_046	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_047	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_048	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_049	RedShadowA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE01	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE02	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE03	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE04	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE05	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE06	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE07	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE08	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE09	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UrgSwaDn01_MINE10	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		P01	PresentBox15	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		UrgSwaDn01Guard01	GuardMihael03	1	0	60	36	84	-24	36	-12	48	24	72	30	84	0	
+#record		UrgSwaDn01Guard02	GuardMihael03	1	0	60	36	84	-24	36	-12	48	24	72	30	84	0	
+#record		UrgSwaDn01_C1_01	ShadowMaster	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		UrgSwaDn01_C2_01	ShadowMaster	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		UrgSwaDn01_C3_01	ShadowMaster	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		UrgSwaDn01_C4_01	ShadowMaster	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+																		
+#end																		

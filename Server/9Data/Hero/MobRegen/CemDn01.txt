@@ -1,0 +1,156 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		CemDn_001	N	7670	4663	0	0	350										
+#record		CemDn_002	N	9919	5718	0	0	350										
+#record		CemDn_003	N	9370	4569	0	0	350										
+#record		CemDn_004	N	10250	4967	0	0	350										
+#record		CemDn_005	N	8681	5216	0	0	350										
+#record		CemDn_006	N	5399	7223	0	0	420										
+#record		CemDn_007	N	4897	6962	0	0	378										
+#record		CemDn_008	N	12148	7153	0	0	385										
+#record		CemDn_009	N	11748	6653	0	0	350										
+#record		CemDn_010	N	8376	7508	2169	255	0										
+#record		CemDn_011	N	4502	10803	0	0	420										
+#record		CemDn_012	N	3531	10912	0	0	469										
+#record		CemDn_013	N	1767	10528	0	0	511										
+#record		CemDn_014	N	2350	9963	0	0	504										
+#record		CemDn_015	N	3869	9455	0	0	511										
+#record		CemDn_016	N	3334	7145	0	0	350										
+#record		CemDn_017	N	2395	7349	0	0	693										
+#record		CemDn_018	N	2248	6290	0	0	518										
+#record		CemDn_019	N	1672	7917	0	0	350										
+#record		CemDn_020	N	1387	7140	0	0	350										
+#record		CemDn_021	N	1413	13384	151	489	14										
+#record		CemDn_022	N	3225	13626	0	0	350										
+#record		CemDn_023	N	2146	14333	0	0	399										
+#record		CemDn_024	N	4013	18089	0	0	350										
+#record		CemDn_025	N	2732	18491	0	0	350										
+#record		CemDn_026	N	3591	18839	0	0	350										
+#record		CemDn_027	N	4934	17833	0	0	350										
+#record		CemDn_028	N	3093	17699	0	0	350										
+#record		CemDn_029	N	2890	13096	0	0	350										
+#record		CemDn_030	N	4198	15848	1452	113	0										
+#record		CemDn_031	N	8675	13761	0	0	441										
+#record		CemDn_032	N	7590	10381	0	0	448										
+#record		CemDn_033	N	11104	14393	0	0	350										
+#record		CemDn_034	N	11546	9736	0	0	420										
+#record		CemDn_035	N	7936	13844	0	0	448										
+#record		CemDn_036	N	11876	13962	0	0	462										
+#record		CemDn_037	N	11366	13477	0	0	441										
+#record		CemDn_038	N	11209	10933	0	0	504										
+#record		CemDn_039	N	8481	10592	0	0	427										
+#record		CemDn_040	N	8309	13331	0	0	462										
+#record		CemDn_041	N	15651	6645	0	0	441										
+#record		CemDn_043	N	16328	7234	0	0	448										
+#record		CemDn_044	N	16497	6499	0	0	399										
+#record		CemDn_046	N	17056	11592	0	0	350										
+#record		CemDn_047	N	15572	10475	0	0	350										
+#record		CemDn_048	N	17272	10538	0	0	350										
+#record		CemDn_Mine1	N	7170	7437	0	0	350										
+#record		CemDn_Mine2	N	8966	7590	0	0	350										
+#record		CemDn_Mine3	N	5426	10095	0	0	350										
+#record		CemDn_Mine4	N	5484	13816	0	0	350										
+#record		CemDn_Mine5	N	5858	13632	0	0	350										
+#record		CemDn_Mine6	N	8631	16026	0	0	350										
+#record		CemDn_Mine7	N	14327	13310	0	0	350										
+#record		CemDn_Mine8	N	13923	12803	0	0	350										
+#record		CemDn_Mine9	N	13743	12497	0	0	350										
+#record		CemDn_Mine10	N	12947	10717	0	0	350										
+#record		CemDnPresent01	N	17597	11081	0	0	350										
+#record		CemDn01Guard01	N	7727	3439	0	0	13										
+#record		CemDn01Guard02	N	8672	3476	0	0	13										
+#record		CemDn_C1_01	N	17077	11849	0	0	83										
+#record		CemDn_C2_01	N	18055	10681	0	0	76										
+#record		CemDn_C3_01	N	16265	6743	0	0	48										
+#record		CemDn_C4_01	N	13823	6441	0	0	76										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		CemDn_001	BatB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_002	BatB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_003	BatB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_004	BatB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_005	BatB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_006	SpiderB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_007	SpiderB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_008	SpiderB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_009	SpiderB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_010	SpiderB	6	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_011	CemWolfB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_012	CemWolfB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_013	CemWolfB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_014	CemWolfB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_015	CemWolfB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_016	SkeletonB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_017	SkeletonB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_018	SkeletonB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_019	SkeletonB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_020	SkeletonB	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_021	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_021	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_022	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_022	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_023	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_023	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_024	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_024	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_025	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_025	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_026	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_026	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_027	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_027	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_028	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_028	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_029	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_029	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_030	SkelSoldierB	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_030	D_LavaVivi	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_031	GhostA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_032	GhostA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_033	GhostA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_034	GhostA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_035	GhostA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_036	D_Zombie	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_037	D_Zombie	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_038	D_Zombie	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_039	D_Zombie	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_040	D_Zombie	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_041	FoxA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_043	FoxA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_044	FoxA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_046	OldFoxA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_047	OldFoxA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_048	OldFoxA	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine1	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine2	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine3	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine4	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine5	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine6	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine7	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine8	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine9	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDn_Mine10	MINE4	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		CemDnPresent01	PresentBox8	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		CemDn01Guard01	GuardMihael01	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		CemDn01Guard02	GuardMihael01	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		CemDn_C1_01	Robo	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		CemDn_C2_01	Robo	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		CemDn_C3_01	Robo	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		CemDn_C4_01	Robo	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+																		
+#end																		

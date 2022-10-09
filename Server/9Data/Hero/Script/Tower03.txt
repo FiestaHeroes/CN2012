@@ -1,0 +1,91 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	T3_01_01	我们进到危险区了.这里有可怕的试验体走动!		
+#Record	T3_01_02	要特别小心在中央的怪物,最好不要去碰它们.		
+#Record	T3_01_03	时间到了怪物就会醒来, 一定要赶快处理掉.		
+#Record	T3_01_04	对! 还有,若没有弄醒任何试验体,应该就会找到试验道具箱!		
+#Record	T3_01_05	大家小心! 动作要快!		
+				
+#Record	T3_02_01	嗯! 总算安全过关了!		
+#Record	T3_02_02	啊别的房间也在进行试验!		
+#Record	T3_02_03	快点移到下一个地方,去阻止错误的试验体醒来!		
+#Record	T3_02_TA01	谁吵醒我?绝不会饶了他!		
+#Record	T3_02_TA02	大家一起击退入侵者!		
+				
+#Record	T3_03_01	这次也安全过关了!		
+#Record	T3_03_02	快点移到下一个地方,去阻止错误的试验体醒来!		
+#Record	T3_03_TA01	咳噜噜噜! 咳噜噜噜! 我全都要杀光!		
+				
+#Record	T3_04_01	竟然来妨碍我们的试验! 无法原谅!		
+#Record	T3_04_02	趁现在还来得及, 我给你逃跑的机会!		
+#Record	T3_04_03	不要怕! 怪物全都给我扫光光!		
+				
+#Record	T3_05_01	这么快就已经来到这里?		
+#Record	T3_05_02	但我劝你,还是快点回去.不然就在你们看到我的同时,你们会遭受歼灭!		
+#Record	T3_05_03	呼,你以为我们会怕到那个程度吗?		
+				
+#Record	T3_06_01	咳嘻嘻嘻嘻! 出乎意料的强哦!		
+#Record	T3_06_02	但是,不会就此结束!		
+#Record	T3_06_03	最厉害的试验体将会迎接你们! 会诅咒打倒我的你们!		
+#Record	T3_06_SUMMON	被诅咒的生命~击退入侵者!		
+#Record	T3_06_SUMMON_RE	在召唤敌人,小心点!		
+				
+#Record	T3_07_01	快点来吧! 你们只是我的食物而已!		
+#Record	T3_07_02	咳勒勒勒! 今天有好吃的可以吃哦!		
+#Record	T3_07_03	那些像怪物的家伙,竟然把我们当成食物,真是好笑! 快点走吧!		
+#Record	T3_07_TA01	绝不会原谅吵醒我的人!		
+#Record	T3_07_TA02	要扫荡光那些懦弱的人类!		
+				
+#Record	T3_08_01	食物越来越靠近了!		
+#Record	T3_08_02	咳嘻嘻嘻嘻! 好好吃的味道! 咳嘻嘻嘻嘻!		
+				
+#Record	T3_09_01	就快好了! 再加把劲打倒怪物!		
+#Record	T3_09_02	勇士们加油吧!		
+				
+#Record	T3_10_01	好吃的食物欢迎你们!		
+#Record	T3_10_02	终于到吃饭时间了!		
+#Record	T3_10_03	终于连最后一个试验体也来啦!		
+#Record	T3_10_04	我们处理掉那个嘲弄我们的家伙后,去救孩子们!		
+				
+#Record	T3_11_01	冤枉啊! 冤枉! 竟然被食物打倒!		
+#Record	T3_11_02	我们所做的试验只有这样?		
+#Record	T3_11_03	咳哈哈哈哈! 太棒了,了不起的勇士!		
+#Record	T3_11_04	终于把孩子们救出来了, 真的是最了不起的勇士!		
+#Record	T3_11_SUMMON01	阻挡入侵者!		
+#Record	T3_11_SUMMON02	呜哈哈哈! 惹我生气? 试验室的冤魂们帮帮我吧!		
+#Record	T3_11_SUMMON03	咳咳咳咳咳! 黑暗的生命体啊,请你们复活后全力攻击入侵者吧!		
+#Record	T3_11_SUMMON01_RE	他们在使用召唤技能, 要小心!		
+#Record	T3_11_SUMMON02_RE	切!在使用召唤技能! 全都给我扫光光!		
+#Record	T3_11_SUMMON03_RE	在做最后的挣扎啊! 我先处理掉召唤的怪物后,再来处理你!		
+				
+#Record	T3_11_CHILD01	救救我!		
+#Record	T3_11_CHILD02	救我们出去!		
+#Record	T3_11_CHILD03	我们被可恶的怪物抓进来的, 勇士们救救我们.		
+#Record	T3_11_CHILD04	嗯嗯! 好想回家!		
+#Record	T3_11_CHILD05	拜托救救我们!		
+#Record	T3_11_CHILD06	再这样下去,我们会被怪物吃掉!		
+				
+#Record	T3_11_CHILD001	谢谢你!		
+#Record	T3_11_CHILD002	终于可以回城了!		
+#Record	T3_11_CHILD003	呀呼! 好高兴!		
+#Record	T3_11_CHILD004	托勇士们的福, 终于可以回家了!		
+#Record	T3_11_CHILD005	快点走吧!		
+#Record	T3_11_CHILD006	呼! 真是万幸,刚刚差点被怪物吓死...		
+#Record	T3_11_CHILD007	救我们的第一勇士万岁!		
+#Record	T3_11_CHILD008	万岁! 万岁!		
+#Record	T3_11_CHILD009	万岁! 万岁!		
+#Record	T3_11_CHILD010	现在开始我们会小心怪物!		
+#Record	T3_11_CHILD011	我也想成为了不起的勇士!		
+#Record	T3_11_CHILD012	嗯嗯! 谢谢你.刚才真的好害怕.太感谢你了.		
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				

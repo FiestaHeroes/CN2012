@@ -1,0 +1,238 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		Linkfield02_001	N	2702	5373	0	0	294										
+#record		Linkfield02_002	N	3305	5744	152	879	0										
+#record		Linkfield02_003	N	3874	3658	389	249	2										
+#record		Linkfield02_004	N	4242	2390	0	0	350										
+#record		Linkfield02_005	N	2757	3232	0	0	350										
+#record		Linkfield02_006	N	3534	2546	0	0	350										
+#record		Linkfield02_011	N	4892	4089	0	0	350										
+#record		Linkfield02_012	N	5107	2346	0	0	350										
+#record		Linkfield02_013	N	5517	4378	0	0	350										
+#record		Linkfield02_014	N	5468	3878	0	0	350										
+#record		Linkfield02_015	N	5887	2446	0	0	350										
+#record		Linkfield02_017	N	6531	2899	0	0	350										
+#record		Linkfield02_018	N	7273	3395	0	0	350										
+#record		Linkfield02_019	N	9132	6965	548	2096	41										
+#record		Linkfield02_020	N	8017	3586	0	0	350										
+#record		Linkfield02_021	N	8498	3101	0	0	350										
+#record		Linkfield02_022	N	8128	5302	0	0	300										
+#record		Linkfield02_023	N	8790	5403	0	0	350										
+#record		Linkfield02_024	N	9130	4745	0	0	350										
+#record		Linkfield02_025	N	8389	5906	0	0	350										
+#record		Linkfield02_026	N	7694	6988	0	0	350										
+#record		Linkfield02_027	N	8471	7499	0	0	350										
+#record		Linkfield02_028	N	9512	6639	0	0	350										
+#record		Linkfield02_029	N	10124	6834	0	0	350										
+#record		Linkfield02_030	N	10447	7630	65	585	20										
+#record		Linkfield02_031	N	8991	6248	0	0	350										
+#record		Linkfield02_032	N	10528	8794	0	0	350										
+#record		Linkfield02_033	N	9891	9438	0	0	350										
+#record		Linkfield02_034	N	8871	8547	0	0	350										
+#record		Linkfield02_035	N	8912	9456	0	0	350										
+#record		Linkfield02_036	N	6194	7249	0	0	350										
+#record		Linkfield02_037	N	6666	7688	0	0	350										
+#record		Linkfield02_038	N	7270	9867	285	457	139										
+#record		Linkfield02_039	N	7838	9547	0	0	350										
+#record		Linkfield02_040	N	5362	7992	0	0	350										
+#record		Linkfield02_041	N	5678	8646	0	0	350										
+#record		Linkfield02_042	N	4454	5693	0	0	350										
+#record		Linkfield02_043	N	5122	5884	0	0	350										
+#record		Linkfield02_044	N	4628	6514	0	0	350										
+#record		Linkfield02_045	N	4321	5085	0	0	350										
+#record		Linkfield02_046	N	4602	9303	0	0	350										
+#record		Linkfield02_047	N	4956	10399	578	283	13										
+#record		Linkfield02_048	N	3901	10251	548	323	-26										
+#record		Linkfield02_049	N	2974	8621	596	146	1										
+#record		Linkfield02_050	N	3004	9917	457	342	0										
+#record		FLOWER1	N	4457	3102	0	0	868										
+#record		FLOWER2	N	5242	3184	0	0	770										
+#record		FLOWER3	N	5215	3853	0	0	609										
+#record		FLOWER4	N	5749	3083	0	0	735										
+#record		FLOWER5	N	8275	5639	0	0	791										
+#record		FLOWER6	N	8485	6641	0	0	882										
+#record		FLOWER7	N	8417	6625	0	0	966										
+#record		FLOWER8	N	7505	9199	0	0	868										
+#record		FLOWER9	N	7262	8725	0	0	784										
+#record		FLOWER10	N	6946	8428	0	0	735										
+#record		HERB1	N	5213	3505	0	0	917										
+#record		HERB2	N	8481	6764	0	0	1022										
+#record		WOOD6	N	8391	6552	0	0	980										
+#record		WOOD7	N	6822	10000	0	0	728										
+#record		MUSHROOM6	N	8498	5181	0	0	637										
+#record		MUSHROOM7	N	6339	8202	0	0	959										
+#record		P01	N	4936	9717	2525	626	0										
+#record		P02	N	6471	4167	0	0	350										
+#record		Linkfield02Guard01	N	2902	6188	0	0	13										
+#record		Linkfield02Guard02	N	5676	7353	0	0	13										
+#record		Linkfield02_H1_01	N	2470	5762	0	0	61										
+#record		Linkfield02_H1_02	N	2680	3623	0	0	75										
+#record		Linkfield02_H1_03	N	6524	4526	0	0	55										
+#record		Linkfield02_H1_04	N	10233	3868	0	0	69										
+#record		Linkfield02_H1_05	N	7358	6613	0	0	34										
+#record		Linkfield02_H1_06	N	10599	9505	0	0	62										
+#record		Linkfield02_H1_07	N	5812	8672	0	0	83										
+#record		Linkfield02_H1_08	N	4862	5234	0	0	48										
+#record		Linkfield02_H1_09	N	3134	7560	0	0	26										
+#record		Linkfield02_H2_01	N	2673	5164	0	0	54										
+#record		Linkfield02_H2_02	N	3712	2226	0	0	68										
+#record		Linkfield02_H2_03	N	4680	4238	0	0	62										
+#record		Linkfield02_H2_04	N	8956	4235	0	0	55										
+#record		Linkfield02_H2_05	N	8644	7729	0	0	83										
+#record		Linkfield02_H2_06	N	10190	9317	0	0	41										
+#record		Linkfield02_H2_07	N	4380	8520	0	0	83										
+#record		Linkfield02_H2_08	N	4167	5993	0	0	69										
+#record		Linkfield02_H2_09	N	2463	7635	0	0	12										
+#record		Linkfield02_H3_01	N	3333	6889	0	0	61										
+#record		Linkfield02_H3_02	N	3199	2591	0	0	47										
+#record		Linkfield02_H3_03	N	5841	4421	0	0	69										
+#record		Linkfield02_H3_04	N	9608	4088	0	0	69										
+#record		Linkfield02_H3_05	N	8077	7710	0	0	41										
+#record		Linkfield02_H3_06	N	10428	10244	0	0	62										
+#record		Linkfield02_H3_07	N	5164	7781	0	0	55										
+#record		Linkfield02_H3_08	N	5176	5972	0	0	55										
+#record		Linkfield02_H3_09	N	2812	7352	0	0	33										
+#record		Linkfield02_H4_01	N	3598	6174	0	0	61										
+#record		Linkfield02_H4_02	N	2768	2883	0	0	61										
+#record		Linkfield02_H4_03	N	5188	4578	0	0	62										
+#record		Linkfield02_H4_04	N	9916	3318	0	0	83										
+#record		Linkfield02_H4_05	N	7642	7210	0	0	76										
+#record		Linkfield02_H4_06	N	9671	10241	0	0	55										
+#record		Linkfield02_H4_07	N	5130	8526	0	0	76										
+#record		Linkfield02_H4_08	N	4154	4893	0	0	62										
+#record		Linkfield02_H4_09	N	2950	8279	0	0	40										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		Linkfield02_001	OldArchon	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_001	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_002	OldArchon	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_002	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_003	OldArchon	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_003	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_004	OldArchon	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_004	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_005	OldArchon	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_005	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_006	OldArchon	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_006	MiniPinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_011	Orc	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_012	Orc	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_013	Orc	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_014	Orc	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_015	Orc	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_017	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_018	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_019	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_020	OrcHunter	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_021	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_022	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_023	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_024	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_025	OrcCaptain	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_026	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_026	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_027	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_027	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_028	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_028	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_029	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_029	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_030	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_030	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_031	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_031	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_032	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_032	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_033	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_033	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_034	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_034	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_035	Lips	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_035	LittleLizardMan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_036	LizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_037	LizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_038	LizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_039	LizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_040	LizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_041	GreedyLizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_042	GreedyLizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_043	GreedyLizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_044	GreedyLizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_045	GreedyLizardMan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_046	LizardManKnight	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_047	LizardManKnight	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_048	LizardManKnight	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_049	LizardManKnight	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		Linkfield02_050	LizardManKnight	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER1	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER2	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER3	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER4	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER5	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER6	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER7	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER8	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER9	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER10	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		HERB1	HERB5	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		HERB2	HERB6	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		WOOD6	WOOD6	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		WOOD7	WOOD7	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		MUSHROOM6	MUSHROOM6	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		MUSHROOM7	MUSHROOM7	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		P01	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		P02	PresentBox10	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		Linkfield02Guard01	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		Linkfield02Guard02	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		Linkfield02_H1_01	BlueArchon	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H1_02	MarvellBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H1_03	MarvellBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H1_04	MarvellBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H1_05	PokaPolkaBook01	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H1_06	PokaPolkaBook02	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H1_07	PokaPolkaBook03	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H1_08	PokaPolkaBook04	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H1_09	PokaPolkaBook05	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_01	BlueArchon	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_02	MarvellBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_03	MarvellBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_04	MarvellBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_05	PokaPolkaBook01	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_06	PokaPolkaBook02	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_07	PokaPolkaBook03	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_08	PokaPolkaBook04	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H2_09	PokaPolkaBook05	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_01	BlueArchon	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_02	MarvellBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_03	MarvellBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_04	MarvellBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_05	PokaPolkaBook01	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_06	PokaPolkaBook02	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_07	PokaPolkaBook03	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_08	PokaPolkaBook04	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H3_09	PokaPolkaBook05	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_01	BlueArchon	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_02	MarvellBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_03	MarvellBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_04	MarvellBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_05	PokaPolkaBook01	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_06	PokaPolkaBook02	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_07	PokaPolkaBook03	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_08	PokaPolkaBook04	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		Linkfield02_H4_09	PokaPolkaBook05	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+																		
+#end																		

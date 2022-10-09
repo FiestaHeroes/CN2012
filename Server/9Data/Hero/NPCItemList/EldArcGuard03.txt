@@ -1,0 +1,148 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+																																			
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																												
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																												
+#Record	0	Q_Peg	Q_Hammer	Pickaxe	-	-	-																												
+#Record	1	Hobby01	WhiteHobby01	BlackHobby01	FlyStone	-	-																												
+#Record	2	House_MushRoom01	-	-	-	-	-																												
+#Record	3	ShortSword	LongSword	BroadSword	RoumenSword	BridgeSword	-																												
+#Record	4	StealSword	Crusader	-	-	-	-																												
+#Record	5	StealAxe	HideAxe	-	-	-	-																												
+#Record	6	ShortMace	LongMace	SpikedClub	RoumenMace	StoutMace	-																												
+#Record	7	HeavenHammer	StoutHammer	-	-	-	-																												
+#Record	8	ShortBow	LongBow	LightBow	RoumenBow	CloseBow	-																												
+#Record	9	StealCrossBow	CloseCrossBow	-	-	-	-																												
+#Record	10	ShortStaff	LongStaff	MagicStaff	RoumenStaff	ZestStaff	-																												
+#Record	11	RuneWand	ZestWand	-	-	-	-																												
+#Record	12	AbelClaw	BonoClaw	CrimsonClaw	AvaClaw	SpinClaw	-																												
+#Record	13	EvanDoubleSword	SpinDoubleSword	-	-	-	-																												
+#Record	14	LeatherBoots	LeatherHelmet	LeatherPants	ChainBoots	ChainHelmet	ChainPants																												
+#Record	15	ChainArmor	HideBoots	HideHelmet	HidePants	HideArmor	ScailBoots																												
+#Record	16	ScailHelmet	ScailPants	ScailArmor	-	-	-																												
+#Record	17	WoodenShield	Buckler	FChainShield	HideShield	FKiteShield	-																												
+#Record	18	LitanyBoots	LitanyHelmet	LitanyPants	BlessBoots	BlessHelmet	BlessPants																												
+#Record	19	BlessArmor	RestoreBoots	RestoreHelmet	RestorePants	RestoreArmor	SplintBoots																												
+#Record	20	SplintHelmet	SplintPants	SplintArmor	-	-	-																												
+#Record	21	FighterShield	RoundShield	ChainShield	Pelta	KiteShield	-																												
+#Record	22	TrivialBoots	TrivialHat	TrivialPants	HardLeatherBoots	HardLeatherHat	HardLeatherPants																												
+#Record	23	HardLeatherArmor	DisguiseBoots	DisguiseHat	DisguisePants	DisguiseArmor	SneakBoots																												
+#Record	24	SneakHat	SneakPants	SneakArmor	-	-	-																												
+#Record	25	NoviceBoots	NoviceHat	NovicePants	MagicBoots	MagicHat	MagicPants																												
+#Record	26	MagicShirt	DelightBoots	DelightHat	DelightPants	DelightShirt	SilkBoots																												
+#Record	27	SilkHat	SilkPants	SilkShirt	-	-	-																												
+#Record	28	ReoBoots	ReoHood	ReoPants	MarioBoots	MarioHood	MarioPants																												
+#Record	29	MarioArmor	NaiveBoots	NaiveHood	NaivePants	NaiveArmor	TerraBoots																												
+#Record	30	TerraHood	TerraPants	TerraArmor	-	-	-																												
+#Record	31	StrBronzeRing	ConBronzeRing	DexBronzeRing	IntBronzeRing	MenBronzeRing	-																												
+#Record	32	StrSilverRing	ConSilverRing	DexSilverRing	IntSilverRing	MenSilverRing	-																												
+#End																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+	0																																		
+	1																																		
+	2																																		
+	3																																		

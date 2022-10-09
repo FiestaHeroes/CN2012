@@ -1,0 +1,243 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		RouVal02_001	N	5667	11145	0	0	244										
+#record		RouVal02_002	N	3964	10523	0	0	244										
+#record		RouVal02_004	N	6881	10825	0	0	244										
+#record		RouVal02_006	N	4087	11241	0	0	244										
+#record		RouVal02_007	N	8848	11161	0	0	244										
+#record		RouVal02_008	N	3033	10562	0	0	244										
+#record		RouVal02_009	N	3018	9913	0	0	244										
+#record		RouVal02_011	N	9330	10475	0	0	244										
+#record		RouVal02_013	N	7107	11055	0	0	244										
+#record		RouVal02_014	N	10081	10526	0	0	244										
+#record		RouVal02_015	N	2284	9575	0	0	244										
+#record		RouVal02_016	N	2143	8448	0	0	244										
+#record		RouVal02_017	N	2316	7360	0	0	244										
+#record		RouVal02_019	N	10886	8994	0	0	244										
+#record		RouVal02_020	N	10755	7677	0	0	244										
+#record		RouVal02_022	N	11104	6964	0	0	244										
+#record		RouVal02_024	N	2198	6156	0	0	244										
+#record		RouVal02_025	N	2421	4606	0	0	272										
+#record		RouVal02_026	N	1867	5199	0	0	314										
+#record		RouVal02_027	N	11281	5741	0	0	244										
+#record		RouVal02_028	N	11150	4921	0	0	244										
+#record		RouVal02_029	N	2445	3501	0	0	349										
+#record		RouVal02_030	N	3432	2917	0	0	286										
+#record		RouVal02_032	N	4533	2338	0	0	244										
+#record		RouVal02_033	N	6458	2996	0	0	244										
+#record		RouVal02_036	N	9443	2584	0	0	244										
+#record		RouVal02_038	N	10732	4243	0	0	244										
+#record		RouVal02_039	N	10128	3240	0	0	244										
+#record		RouVal02_040	N	7587	2169	0	0	244										
+#record		RouVal02_041	N	5479	3016	0	0	244										
+#record		RouVal02_043	N	5145	4483	0	0	363										
+#record		RouVal02_044	N	4322	6906	0	0	244										
+#record		RouVal02_045	N	7851	4543	0	0	244										
+#record		RouVal02_046	N	6946	4417	0	0	244										
+#record		RouVal02_047	N	4131	6005	0	0	293										
+#record		RouVal02_048	N	4230	5469	0	0	244										
+#record		RouVal02_049	N	6240	5544	0	0	244										
+#record		RouVal02_050	N	4305	7463	0	0	244										
+#record		RouVal02_051	N	6632	6318	0	0	244										
+#record		RouVal02_052	N	5919	6266	0	0	244										
+#record		RouVal02_053	N	8183	5267	0	0	244										
+#record		RouVal02_054	N	8632	5788	0	0	244										
+#record		RouVal02_055	N	8444	6934	0	0	244										
+#record		RouVal02_056	N	8390	7588	0	0	244										
+#record		RouVal02_057	N	6784	7461	0	0	244										
+#record		RouVal02_058	N	6337	7449	0	0	244										
+#record		RouVal02_059	N	4196	8262	0	0	244										
+#record		RouVal02_060	N	5261	8104	0	0	244										
+#record		RouVal02_061	N	6885	7007	0	0	244										
+#record		RouVal02_062	N	8707	8441	0	0	244										
+#record		RouVal02_063	N	8200	8170	0	0	244										
+#record		RouVal02_064	N	6020	8690	0	0	244										
+#record		RouVal02_065	N	5933	7032	0	0	244										
+#record		RouVal02_066	N	4081	8694	0	0	244										
+#record		RouVal02_067	N	7257	8757	0	0	244										
+#record		RouVal02_068	N	5966	8439	0	0	244										
+#record		RouVal02_069	N	8656	8917	0	0	244										
+#record		RouVal02_070	N	6595	8454	0	0	244										
+#record		PresentBox01	N	6095	4494	6432	2750	0										
+#record		PresentBox02	N	6286	9543	6525	3050	0										
+#record		FLOWER1	N	5015	10671	0	0	324										
+#record		FLOWER2	N	5525	11085	0	0	282										
+#record		FLOWER3	N	6713	11035	0	0	247										
+#record		FLOWER4	N	3920	10849	0	0	401										
+#record		FLOWER5	N	3761	3101	0	0	513										
+#record		FLOWER6	N	5651	2577	0	0	541										
+#record		FLOWER7	N	6789	2571	0	0	534										
+#record		FLOWER8	N	7534	5354	0	0	387										
+#record		FLOWER9	N	6171	5256	0	0	310										
+#record		FLOWER10	N	5019	5325	0	0	352										
+#record		HERB1	N	6905	11096	1198	108	0										
+#record		HERB2	N	3869	3011	0	0	590										
+#record		WOOD4	N	3038	10208	0	0	422										
+#record		WOOD5	N	5629	2639	0	0	555										
+#record		MUSHROOM4	N	4680	2722	0	0	464										
+#record		MUSHROOM5	N	6402	5330	1532	190	0										
+#record		RouVal02Guard01	N	3665	10709	0	0	19										
+#record		RouVal02Guard02	N	6142	2307	0	0	19										
+#record		RouVal02Guard03	N	4338	10971	0	0	23										
+#record		RouVal02Guard04	N	5032	11051	0	0	37										
+#record		RouVal02_H1_01	N	3002	10566	190	84	-1										
+#record		RouVal02_H1_02	N	10760	8975	64	147	0										
+#record		RouVal02_H1_03	N	3995	3439	119	157	0										
+#record		RouVal02_H1_04	N	5405	5807	0	0	26										
+#record		RouVal02_H1_05	N	5860	8747	87	70	0										
+#record		RouVal02_H2_01	N	5995	10957	136	51	-1										
+#record		RouVal02_H2_02	N	10671	6894	58	118	0										
+#record		RouVal02_H2_03	N	5430	3352	118	88	0										
+#record		RouVal02_H2_04	N	5737	6489	0	0	12										
+#record		RouVal02_H2_05	N	7271	8794	66	43	0										
+#record		RouVal02_H3_01	N	3962	10417	71	87	-1										
+#record		RouVal02_H3_02	N	11517	6011	60	166	0										
+#record		RouVal02_H3_03	N	6786	2305	111	63	0										
+#record		RouVal02_H3_04	N	7052	6128	0	0	75										
+#record		RouVal02_H3_05	N	6658	8551	62	53	0										
+#record		RouVal02_H4_01	N	7449	11155	66	107	-1										
+#record		RouVal02_H4_02	N	11173	7945	62	123	0										
+#record		RouVal02_H4_03	N	6779	3007	119	73	0										
+#record		RouVal02_H4_04	N	6404	6139	0	0	54										
+#record		RouVal02_H4_05	N	6112	8027	40	44	0										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		RouVal02_001	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_002	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_004	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_006	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_007	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_008	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_009	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_011	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_013	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_014	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_015	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_016	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_017	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_019	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_020	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_022	DesertWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_024	DesertWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_025	DesertWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_026	DesertWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_027	DesertWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_028	DesertWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_029	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_029	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_030	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_030	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_032	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_032	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_033	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_033	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_036	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_036	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_038	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_038	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_039	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_039	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_040	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_040	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_041	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_041	MarloneSoldier	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_043	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_043	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_044	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_044	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_045	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_045	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_046	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_046	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_047	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_047	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_048	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_048	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_049	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_049	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_050	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_050	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_051	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_051	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_052	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_052	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_053	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_053	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_054	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_054	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_055	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_055	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_056	MarloneFighter	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_056	MarloneArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_057	MarloneMegaton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_058	MarloneMegaton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_059	MarloneMegaton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_060	MarloneMegaton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_061	MarloneMegaton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_062	MarloneMegaton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_063	MarloneMegaton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_064	MarloneCaptain	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_065	MarloneCaptain	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_066	MarloneCaptain	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_067	MarloneCaptain	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_068	MarloneCaptain	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_069	MarloneCaptain	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_070	MarloneCaptain	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		PresentBox01	PresentBox6	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		PresentBox02	PresentBox7	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		FLOWER1	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER2	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER3	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER4	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER5	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER6	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER7	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER8	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER9	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER10	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		HERB1	HERB3	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		HERB2	HERB4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		WOOD4	WOOD4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		WOOD5	WOOD5	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		MUSHROOM4	MUSHROOM4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		MUSHROOM5	MUSHROOM5	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02Guard01	GuardLue01	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02Guard02	GuardLue01	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02Guard03	GuardMihael01	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02Guard04	GuardMihael01	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		RouVal02_H1_01	PigBat	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H1_02	BloodWolf	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H1_03	Q_QueenSpider	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H1_04	AlkemisBook04	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H1_05	AlkemisBook05	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H2_01	PigBat	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H2_02	BloodWolf	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H2_03	Q_QueenSpider	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H2_04	AlkemisBook04	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H2_05	AlkemisBook05	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H3_01	PigBat	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H3_02	BloodWolf	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H3_03	Q_QueenSpider	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H3_04	AlkemisBook04	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H3_05	AlkemisBook05	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H4_01	PigBat	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H4_02	BloodWolf	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H4_03	Q_QueenSpider	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H4_04	AlkemisBook04	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		RouVal02_H4_05	AlkemisBook05	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+																		
+#end																		

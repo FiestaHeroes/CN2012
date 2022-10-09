@@ -1,0 +1,148 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+								
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	El1	StageRouRecallScroll	-	-	-	-	
+#Record	1	Q_Peg	Q_Hammer	Pickaxe	-	-	-	
+#Record	2	Hobby01	WhiteHobby01	BlackHobby01	FlyStone	-	-	
+#Record	3	House_MushRoom01	-	-	-	-	-	
+#Record	4	SongeMushroom	LowMushrooms	NorMushrooms	HighMushrooms	BestMushrooms	-	
+#Record	5	PoisonMushroom	LowToadStool	NorToadStool	HighToadStool	BestToadStool	-	
+#Record	6	LowSkin	NorSkin	HighSkin	BestSkin	-	-	
+#Record	7	LowWoodSab	NorWoodSab	HighWoodSab	BestWoodSab	-	-	
+#Record	8	IronBadge	CommanderBadge	-	-	-	-	
+#Record	9	KylinTail	KylinFighterTail	-	-	-	-	
+#Record	10	-	-	-	-	-	-	
+#Record	11	-	-	-	-	-	-	
+#Record	12	-	-	-	-	-	-	
+#Record	13	-	-	-	-	-	-	
+#Record	14	-	-	-	-	-	-	
+#End								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+	0							
+	1							
+	2							
+	3							

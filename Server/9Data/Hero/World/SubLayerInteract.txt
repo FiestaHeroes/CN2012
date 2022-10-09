@@ -1,0 +1,38 @@
+
+#ignore	\o042				
+#exchange	#	\x20			
+#delimiter	\x20				
+																		
+#Table	SendMyBrief																	
+#ColumnType	BYTE	Index	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE									
+#ColumnName	CheckSumA	DoNotCare	Base	RangerStealth	Observer	AdminHide	GMDoor	GMPlayer	CheckSumB		
+#Record	0	Base	1	1	1	1	0	1	0									
+#Record	1	RangerStealth	0	0	0	1	0	1	1									
+#Record	2	Observer	0	0	0	1	1	1	2									
+#Record	3	AdminHide	0	0	0	0	1	1	3									
+#Record	4	GMDoor	0	0	0	0	0	0	4									
+#Record	5	GMPlayer	1	0	0	0	1	1	5									
+																		
+
+																		
+#Table	CanAttack																	
+#ColumnType	BYTE	Index	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE	BYTE									
+#ColumnName	CheckSumA	DoNotCare	Base	RangerStealth	Observer	AdminHide	GMDoor	GMPlayer	CheckSumB		
+#Record	0	Base	1	0	0	0	0	1	0									
+#Record	1	RangerStealth	1	0	0	0	0	1	1									
+#Record	2	Observer	0	0	0	0	0	0	2									
+#Record	3	AdminHide	0	0	0	0	0	0	3									
+#Record	4	GMDoor	0	0	0	0	0	0	4									
+#Record	5	GMPlayer	1	0	0	0	0	0	5									
+																		
+
+																		
+#End																		
+
+
+
+
+
+
+
+

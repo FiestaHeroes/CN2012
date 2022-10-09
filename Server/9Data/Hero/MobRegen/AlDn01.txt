@@ -1,0 +1,118 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		AlDn01_001	Y	11891	3477	67	426	35										
+#record		AlDn01_002	Y	11627	4808	81	371	135										
+#record		AlDn01_003	N	10204	5794	96	249	42										
+#record		AlDn01_004	N	10802	5352	128	271	68										
+#record		AlDn01_006	N	10420	7236	187	242	42										
+#record		AlDn01_007	N	9871	7499	115	266	42										
+#record		AlDn01_008	N	10431	7837	122	175	41										
+#record		AlDn01_011	N	9506	9236	146	246	8										
+#record		AlDn01_012	N	8617	9820	221	119	0										
+#record		AlDn01_013	N	9324	9917	228	107	38										
+#record		AlDn01_016	N	7150	11628	154	270	42										
+#record		AlDn01_017	N	7031	10121	146	355	56										
+#record		AlDn01_018	N	7299	11210	126	248	42										
+#record		AlDn01_021	N	6345	11081	153	266	42										
+#record		AlDn01_023	N	6190	11508	206	214	42										
+#record		AlDn01_024	N	5879	10867	179	405	5										
+#record		AlDn01_026	N	4582	10190	68	247	103										
+#record		AlDn01_027	N	3447	10234	52	251	42										
+#record		AlDn01_028	N	3758	10329	113	238	72										
+#record		AlDn01_031	N	2927	7302	94	261	44										
+#record		AlDn01_032	N	1969	8338	52	251	42										
+#record		AlDn01_033	N	2862	8194	95	252	42										
+#record		AlDn01_036	N	3083	7689	543	97	94										
+#record		AlDn01_037	N	2325	7013	70	462	128										
+#record		AlDn01_038	N	1696	7772	550	74	92										
+#record		AlDn01_041	N	3942	6094	274	163	42										
+#record		AlDn01_042	N	4145	4847	90	337	91										
+#record		AlDn01_043	N	5640	5217	111	554	40										
+#record		AlDn01_047	N	6645	5703	413	196	42										
+#record		AlDn01_048	N	5700	4015	484	179	42										
+#record		AlDn01_049	N	6764	4245	215	470	42										
+#record		AlDn01_050	N	8450	4019	464	191	42										
+#record		AlDn01_Mine01	N	10420	6599	97	94	42										
+#record		AlDn01_Mine02	N	10059	7798	152	159	41										
+#record		AlDn01_Mine03	N	10572	7632	106	153	42										
+#record		AlDn01_Mine04	N	6484	10513	52	251	42										
+#record		AlDn01_Mine05	N	7001	10697	52	251	42										
+#record		AlDn01_Mine06	N	6467	10916	52	251	42										
+#record		AlDn01_Mine07	N	6779	11118	52	251	42										
+#record		AlDn01_Mine08	N	6652	10424	52	251	42										
+#record		AlDn01_Mine09	N	2501	7633	52	251	42										
+#record		AlDn01_Mine10	N	2240	7862	52	251	42										
+#record		P01	N	6450	4437	317	345	42										
+#record		AlDn01Guard01	N	10269	2031	10	11	35										
+#record		AlDn01Guard02	N	11295	2642	10	11	35										
+#record		AlDn01_C1_01	N	6103	5869	65	60	42										
+#record		AlDn01_C2_01	N	5593	4242	47	54	42										
+#record		AlDn01_C3_01	N	6515	4099	64	67	42										
+#record		AlDn01_C4_01	N	7231	5305	57	72	42										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		AlDn01_001	D_MagriteImp	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_002	D_MagriteImp	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_003	D_MagriteImp	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_004	D_MagriteImp	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_006	D_MagriteImp	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_007	D_MagriteImp	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_008	D_MagriteImp	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_011	D_MagriteHoneying	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_012	D_MagriteHoneying	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_013	D_MagriteHoneying	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_016	D_MagriteHoneying	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_017	D_MagriteHoneying	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_018	D_MagriteHoneying	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_021	D_Seidhunter	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_023	D_Seidhunter	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_024	D_Seidhunter	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_026	D_Seidhunter	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_027	D_Seidhunter	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_028	D_Seidhunter	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_031	D_Seidwarrior	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_032	D_Seidwarrior	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_033	D_Seidwarrior	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_036	D_Seidwarrior	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_037	D_Seidwarrior	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_038	D_Seidwarrior	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_041	D_Seidstar	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_042	D_Seidstar	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_043	D_Seidstar	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_047	D_Seidstar	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_048	D_Seidstar	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_049	D_Seidstar	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_050	D_Seidstar	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine01	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine02	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine03	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine04	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine05	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine06	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine07	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine08	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine09	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		AlDn01_Mine10	MINE8	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		P01	PresentBox13	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		AlDn01Guard01	GuardMihael03	1	0	60	36	84	-24	36	-12	48	24	72	30	84	0	
+#record		AlDn01Guard02	GuardMihael03	1	0	60	36	84	-24	36	-12	48	24	72	30	84	0	
+#record		AlDn01_C1_01	Magrite	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		AlDn01_C2_01	Magrite	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		AlDn01_C3_01	Magrite	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		AlDn01_C4_01	Magrite	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+																		
+#end																		

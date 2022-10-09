@@ -1,0 +1,144 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		ForDn01_001	N	5402	6868	371	367	0										
+#record		ForDn01_002	N	5393	5406	318	318	0										
+#record		ForDn01_003	N	6899	5373	291	326	0										
+#record		ForDn01_004	N	6883	6861	332	363	0										
+#record		ForDn01_005	N	6142	4214	1897	84	0										
+#record		ForDn01_006	N	10450	3613	0	0	384										
+#record		ForDn01_007	N	6140	4485	203	289	0										
+#record		ForDn01_008	N	6048	8451	1911	102	0										
+#record		ForDn01_009	N	4484	6127	367	184	0										
+#record		ForDn01_010	N	7745	6034	309	171	0										
+#record		ForDn01_011	N	11829	6102	259	702	0										
+#record		ForDn01_012	N	10868	6115	291	576	0										
+#record		ForDn01_013	N	8672	1835	375	362	0										
+#record		ForDn01_014	N	8449	6225	146	1764	0										
+#record		ForDn01_015	N	3850	6212	153	1841	0										
+#record		ForDn01_016	N	6590	1127	292	496	0										
+#record		ForDn01_017	N	5819	1213	0	0	447										
+#record		ForDn01_018	N	3531	1874	0	0	370										
+#record		ForDn01_019	N	1821	3728	0	0	419										
+#record		ForDn01_020	N	6129	2627	132	480	0										
+#record		ForDn01_021	N	5666	475	0	0	314										
+#record		ForDn01_022	N	6616	383	0	0	237										
+#record		ForDn01_026	N	1149	6427	484	444	0										
+#record		ForDn01_027	N	657	5753	457	403	0										
+#record		ForDn01_028	N	2629	6150	762	69	0										
+#record		ForDn01_029	N	1862	8740	0	0	433										
+#record		ForDn01_030	N	3552	10459	0	0	433										
+#record		ForDn01_031	N	462	6582	0	0	293										
+#record		ForDn01_032	N	2020	8898	0	0	251										
+#record		ForDn01_036	N	5651	11026	0	0	356										
+#record		ForDn01_037	N	6505	11016	0	0	433										
+#record		ForDn01_038	N	6135	9591	109	570	0										
+#record		ForDn01_039	N	8521	10286	0	0	272										
+#record		ForDn01_040	N	10268	8782	0	0	342										
+#record		ForDn01_041	N	6517	11847	0	0	454										
+#record		ForDn01_042	N	5703	11672	0	0	356										
+#record		ForDn01_043	N	8856	10590	0	0	356										
+#record		ForDn01_044	N	10561	8591	0	0	328										
+#record		ForDn01_Mine01	N	6098	456	0	0	117										
+#record		ForDn01_Mine02	N	11840	6287	0	0	181										
+#record		ForDn01_Mine03	N	10804	6183	0	0	181										
+#record		ForDn01_Mine04	N	6581	694	0	0	181										
+#record		ForDn01_Mine05	N	6572	1282	0	0	181										
+#record		ForDn01_Mine06	N	11753	5839	0	0	181										
+#record		ForDn01_Mine07	N	5634	1271	0	0	181										
+#record		ForDn01_Mine08	N	10854	5845	0	0	181										
+#record		ForDn01_Mine09	N	11151	5616	0	0	181										
+#record		ForDn01_Mine10	N	5641	715	0	0	181										
+#record		Pbox01	N	6069	11339	0	0	685										
+#record		ForDn01Guard01	N	6356	6163	0	0	12										
+#record		ForDn01Guard02	N	5912	6203	0	0	12										
+#record		ForDn01_C1_01	N	3289	10693	0	0	82										
+#record		ForDn01_C2_01	N	8996	10707	0	0	54										
+#record		ForDn01_C3_01	N	5444	11948	0	0	68										
+#record		ForDn01_C4_01	N	6820	11878	0	0	54										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		ForDn01_001	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_002	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_003	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_004	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_005	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_006	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_007	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_008	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_009	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_010	D_CloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_011	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_012	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_013	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_014	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_015	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_016	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_016	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_017	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_017	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_018	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_018	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_019	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_019	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_020	D_BlueCloverTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_020	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_021	D_BlueCloverTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_021	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_022	D_BlueCloverTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_022	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_026	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_026	D_SpadeGuardTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_027	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_027	D_SpadeGuardTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_028	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_028	D_SpadeGuardTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_029	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_029	D_SpadeGuardTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_030	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_030	D_SpadeGuardTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_031	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_031	D_SpadeGuardTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_032	D_HeartTrumpy	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_032	D_SpadeGuardTrumpy	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_036	D_SpadeGuardTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_037	D_SpadeGuardTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_038	D_SpadeGuardTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_039	D_SpadeGuardTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_040	D_SpadeGuardTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_041	D_SpadeTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_042	D_SpadeTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_043	D_SpadeTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_044	D_SpadeTrumpy	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine01	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine02	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine03	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine04	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine05	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine06	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine07	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine08	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine09	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		ForDn01_Mine10	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		Pbox01	PresentBox11	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		ForDn01Guard01	GuardMihael02	1	0	45	28	63	-18	28	-9	37	18	54	23	63	0	
+#record		ForDn01Guard02	GuardMihael02	1	0	45	28	63	-18	28	-9	37	18	54	23	63	0	
+#record		ForDn01_C1_01	ViciousGhostElfKnight	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		ForDn01_C2_01	ViciousGhostElfKnight	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		ForDn01_C3_01	ViciousGhostElfKnight	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		ForDn01_C4_01	ViciousGhostElfKnight	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+																		
+#end																		

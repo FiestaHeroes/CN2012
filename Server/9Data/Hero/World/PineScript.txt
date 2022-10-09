@@ -1,0 +1,98 @@
+
+
+															
+
+
+#Delimiter	\x20	
+															
+#Table	PineScript														
+#ColumnType	String[32]														
+#ColumnName	ScriptName	
+#Record	ID/KingSlime														
+#Record	ID/MaraPirate														
+#Record	ID/UnderHall														
+#Record	ID/GoldHill														
+#Record	ID/MiniDragon														
+#Record	ID/Kingkong														
+#Record	ID/Honeying														
+#Record	ID/UnderHall2														
+#Record	ID/GordonMaster														
+#Record	ID/KDHenis														
+#Record	Quest/Quest														
+#Record	Promote/JobChange1														
+#Record	Promote/JobChange2-1														
+#Record	Promote/JobChange2-2														
+#Record	Promote/JobChange2-3														
+#Record	Guild/GuildTournament														
+#Record	Wedding/Wedding														
+#Record	ID/LegendOfBijou														
+#Record	ID/d_NestOfLeviathan														
+#Record	ID/d_graveyard														
+#Record	MID/KQHBat1														
+#Record	ID/Tower01/Tower01														
+#Record	ID/Tower02														
+#Record	ID/Tower02_1														
+#Record	ID/Tower02_2														
+#Record	ID/Tower02_3														
+#Record	ID/Tower03														
+
+#Record	KQ/MI_R_Slime														
+#Record	KQ/MI_R_Mara														
+#Record	KQ/MI_R_Honey														
+#Record	MID/d_graveyard														
+#Record	MID/d_NestOfLeviathan														
+#Record	MID/Tower01														
+#Record	MID/Tower02														
+#Record	MID/KingSlime														
+#Record	MID/MaraPirate														
+#Record	MID/Honeying														
+#Record	MID/UnderHall														
+#Record	MID/GoldHill														
+#Record	MID/Kingkong														
+#Record	MID/KDHenis														
+#Record	MID/UnderHall2														
+#Record	MID/GordonMaster														
+#Record	MID/MiniDragon														
+#Record	MID/LegendOfBijou														
+#Record	MID/Tower03														
+#Record	MID/MI_R_Slime														
+#Record	MID/MI_R_Mara														
+#Record	MID/MI_R_Honey														
+#Record	MID/MI_R_Gold														
+#Record	MID/MI_R_Henis														
+#Record	MID/MI_R_Phino														
+#Record	MID/MI_R_Spider														
+#Record	MID/MI_R_UnHall														
+#Record	ID/AdlF/AdlF	
+															
+#Table	DialogFile	
+#ColumnType	String[32]														
+#ColumnName	ScriptName														
+#Record	KQKingSlime														
+#Record	KQMaraPirate														
+#Record	KQUnderHall														
+#Record	KQUnderHall2														
+#Record	KQGoldHill														
+#Record	KQMiniDragon														
+#Record	KQKingkong														
+#Record	KQConditionOfHero														
+#Record	KQHoneying														
+#Record	KQGordonMaster														
+#Record	KQAntiHenis100														
+#Record	JobChange1														
+#Record	JobChange2-1														
+#Record	JobChange2-2														
+#Record	JobChange2-3														
+#Record	Wedding														
+#Record	D_Graveyard														
+#Record	LegendOfBijou														
+#Record	d_NestOfLeviathan														
+#Record	KQHBat1														
+#Record	Tower01														
+#Record	Tower02														
+#Record	Tower03														
+#Record	AdlF														
+															
+
+															
+#End															

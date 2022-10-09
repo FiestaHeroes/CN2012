@@ -1,0 +1,39 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	StartDear0	问我是谁?我就是你要找的那个人.		
+#Record	StartDear1	像你这样没用的人,不配活在这个世界上.		
+#Record	StartDear2	我要让你消失,相对的我要成为这世上的新希望.		
+				
+#Record	ShadowFlie	啊哈,就这点水准吗？？慢慢地跟着我....		
+				
+#Record	SkellBreed0	想跟你好好切磋一下,但太疲惫了.		
+#Record	SkellBreed1	先跟这些孩子们玩一玩,再来找我!		
+#Record	SkellBreed2	跟着蓝色光线走就能找到我. 		
+				
+#Record	Last0	这里....还合你的胃口吗?		
+#Record	Last1	这里就是你要长眠的地方....		
+#Record	Last2	觉悟吧!		
+				
+#Record	GoblinBreed	我要....杀了你....		
+				
+#Record	ShadowDead0	你出乎我意料,拥有很强的能力.		
+#Record	ShadowDead1	若能找到那力量,你将会是一个不平凡的人啊!		
+				
+#Record	KQReturn30	30秒后移动到转职管理员肖恩处.		
+#Record	KQReturn20	20秒后移动到转职管理员肖恩处.		
+#Record	KQReturn10	10秒后移动到转职管理员肖恩处.		
+#Record	KQReturn5	5秒后移动到转职管理员肖恩处.		
+				
+#Record	RouReturn30	30秒后移动到转职管理员肖恩处..		
+#Record	RouReturn20	20秒后移动到转职管理员肖恩处..		
+#Record	RouReturn10	10秒后移动到转职管理员肖恩处..		
+#Record	RouReturn5	5秒后移动到转职管理员肖恩处..		
+				
+				
+#End				

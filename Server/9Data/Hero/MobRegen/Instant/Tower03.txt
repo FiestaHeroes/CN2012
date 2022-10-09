@@ -1,0 +1,244 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		RGN_T3_02_01	N	10815	9889	0	0	16										
+#record		RGN_T3_02_02	N	10591	9694	0	0	16										
+#record		RGN_T3_02_03	N	11058	9817	0	0	16										
+#record		RGN_T3_02_04	N	10683	9488	0	0	16										
+#record		RGN_T3_02_05	N	10599	9944	0	0	150										
+#record		RGN_T3_02_06	N	10902	9677	0	0	150										
+#record		RGN_T3_03_01	N	11745	7590	0	0	16										
+#record		RGN_T3_03_02	N	11742	7694	0	0	16										
+#record		RGN_T3_03_03	N	11719	7314	0	0	16										
+#record		RGN_T3_03_04	N	11439	7792	0	0	16										
+#record		RGN_T3_03_05	N	12027	7792	0	0	16										
+#record		RGN_T3_03_06	N	11624	7536	0	0	150										
+#record		RGN_T3_03_07	N	11796	7324	0	0	16										
+#record		RGN_T3_03_08	N	11888	7776	0	0	150										
+#record		RGN_T3_04_01	N	10989	5289	0	0	16										
+#record		RGN_T3_04_02	N	11317	5724	0	0	16										
+#record		RGN_T3_04_03	N	10995	5860	0	0	16										
+#record		RGN_T3_04_04	N	11258	5475	0	0	150										
+#record		RGN_T3_04_06	N	10917	5199	0	0	150										
+#record		RGN_T3_04_07	N	11100	5086	0	0	16										
+#record		RGN_T3_04_09	N	10829	5504	0	0	16										
+#record		RGN_T3_04_10	N	11253	5191	0	0	16										
+#record		RGN_T3_04_11	N	10938	5634	0	0	16										
+#record		RGN_T3_04_12	N	11354	5355	0	0	16										
+#record		RGN_T3_05_01	N	10286	3151	0	0	16										
+#record		RGN_T3_05_02	N	10029	3495	0	0	16										
+#record		RGN_T3_05_03	N	10068	3531	0	0	16										
+#record		RGN_T3_05_04	N	10256	3360	0	0	16										
+#record		RGN_T3_05_05	N	10195	2828	0	0	16										
+#record		RGN_T3_05_06	N	10334	3296	0	0	150										
+#record		RGN_T3_05_07	N	9954	3259	0	0	16										
+#record		RGN_T3_05_08	N	10466	3201	0	0	16										
+#record		RGN_T3_05_09	N	10072	3092	0	0	150										
+#record		RGN_T3_05_10	N	10462	2971	0	0	16										
+#record		RGN_T3_06_01	N	9198	937	0	0	16										
+#record		RGN_T3_06_02	N	10221	937	0	0	16										
+#record		RGN_T3_06_03	N	9330	683	0	0	16										
+#record		RGN_T3_06_04	N	9194	1226	0	0	16										
+#record		RGN_T3_06_05	N	9647	950	0	0	16										
+#record		RGN_T3_07_01	N	6833	928	0	0	16										
+#record		RGN_T3_07_02	N	6879	1189	0	0	16										
+#record		RGN_T3_07_03	N	6501	706	0	0	16										
+#record		RGN_T3_07_04	N	6452	801	0	0	16										
+#record		RGN_T3_07_05	N	6601	1162	0	0	16										
+#record		RGN_T3_07_06	N	6840	661	0	0	16										
+#record		RGN_T3_07_07	N	6789	1000	0	0	16										
+#record		RGN_T3_07_08	N	7035	1293	0	0	16										
+#record		RGN_T3_08_01	N	4349	1221	0	0	16										
+#record		RGN_T3_08_02	N	4245	1523	0	0	16										
+#record		RGN_T3_08_03	N	4077	999	0	0	16										
+#record		RGN_T3_08_04	N	4003	1250	0	0	16										
+#record		RGN_T3_08_05	N	4056	1382	0	0	16										
+#record		RGN_T3_08_06	N	4095	1323	0	0	150										
+#record		RGN_T3_08_07	N	4337	936	0	0	16										
+#record		RGN_T3_08_08	N	4444	1190	0	0	16										
+#record		RGN_T3_08_09	N	4474	1205	0	0	150										
+#record		RGN_T3_09_01	N	2089	2442	0	0	16										
+#record		RGN_T3_09_02	N	2485	2091	0	0	16										
+#record		RGN_T3_09_03	N	2251	2649	0	0	16										
+#record		RGN_T3_09_04	N	2639	2239	0	0	16										
+#record		RGN_T3_09_05	N	2340	2338	0	0	150										
+#record		RGN_T3_09_06	N	2163	2269	0	0	16										
+#record		RGN_T3_09_07	N	1925	2612	0	0	16										
+#record		RGN_T3_09_08	N	2293	2401	0	0	16										
+#record		RGN_T3_09_09	N	1923	2282	0	0	16										
+#record		RGN_T3_09_10	N	2402	2531	0	0	16										
+#record		RGN_T3_09_11	N	2085	2386	0	0	150										
+#record		RGN_T3_10_01	N	1153	4439	0	0	16										
+#record		RGN_T3_10_02	N	933	4697	0	0	16										
+#record		RGN_T3_10_03	N	1344	4115	0	0	16										
+#record		RGN_T3_10_04	N	1370	4144	0	0	16										
+#record		RGN_T3_10_05	N	1176	4103	0	0	16										
+#record		RGN_T3_10_06	N	1313	4099	0	0	16										
+#record		RGN_T3_10_07	N	1150	4366	0	0	150										
+#record		RGN_T3_10_08	N	1357	4456	0	0	16										
+#record		RGN_T3_10_09	N	1419	4455	0	0	16										
+#record		RGN_T3_10_10	N	937	4444	0	0	16										
+#record		RGN_T3_10_11	N	1235	4701	0	0	150										
+#record		RGN_T3_10_12	N	1242	4839	0	0	16										
+#record		RGN_T3_10_13	N	1109	4840	0	0	16										
+#record		RGN_T3_10_14	N	1402	4697	0	0	16										
+#record		RGN_T3_10_15	N	1170	4838	0	0	16										
+#record		RGN_T3_10_16	N	1348	7267	0	0	16										
+#record		RGN_T3_11_01	N	1176	7463	0	0	16										
+#record		RGN_T3_11_02	N	1203	6998	0	0	16										
+#record		RGN_T3_11_03	N	1470	6986	0	0	16										
+#record		RGN_T3_11_04	N	1148	6997	0	0	16										
+#record		RGN_T3_11_05	N	1042	7440	0	0	150										
+#record		RGN_T3_11_06	N	1442	6957	0	0	16										
+#record		RGN_T3_11_07	N	1403	6922	0	0	16										
+#record		RGN_T3_11_08	N	1206	7141	0	0	150										
+#record		RGN_T3_11_09	N	956	7291	0	0	16										
+#record		RGN_T3_11_10	N	905	7284	0	0	16										
+#record		RGN_T3_11_11	N	1004	7357	0	0	16										
+#record		RGN_T3_11_12	N	939	7361	0	0	16										
+#record		RGN_T3_02_07	N	10558	9916	0	0	16										
+#record		RGN_T3_02_08	N	10612	9970	0	0	16										
+#record		RNG_T3_03_09	N	11653	7923	0	0	16										
+#record		RGN_T3_03_10	N	11810	7909	0	0	16										
+#record		RGN_T3_04_13	N	11130	5548	0	0	16										
+#record		RGN_T3_04_14	N	11202	5478	0	0	16										
+#record		RGN_T3_05_11	N	9954	3154	0	0	16										
+#record		RGN_T3_05_12	N	10475	3145	0	0	16										
+#record		RGN_T3_05_13	N	10246	3475	0	0	16										
+#record		RGN_T3_07_09	N	7023	969	0	0	16										
+#record		RGN_T3_07_10	N	6712	931	0	0	16										
+#record		RGN_T3_08_10	N	4603	1186	0	0	16										
+#record		RGN_T3_08_11	N	4587	1138	0	0	16										
+#record		RGN_T3_09_12	N	2415	2276	0	0	16										
+#record		RGN_T3_09_13	N	2304	2157	0	0	16										
+#record		RGN_T3_10_17	N	1339	4323	0	0	16										
+#record		RGN_T3_10_18	N	948	4231	0	0	16										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		RGN_T3_02_01	Lab_19	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_02_02	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_02_03	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_02_04	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_02_05	Lab_Guardian01	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_02_06	Lab_Watchman01	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_03_01	Lab_19	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_03_02	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_03_03	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_03_04	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_03_05	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_03_06	Lab_Watchman01	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_03_07	Lab_Watchman01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_03_08	Lab_Ghost01	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_01	Lab_19	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_02	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_03	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_04	Lab_Guardian01	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_06	Lab_Watchman01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_07	Lab_Watchman01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_09	Lab_Ghost01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_10	Lab_Ghost01	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_11	Lab_Battle01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_04_12	Lab_Battle01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_01	Lab_19	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_02	Lab_Guardian01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_03	Lab_Guardian02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_04	Lab_Guardian02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_05	Lab_Watchman01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_06	Lab_Watchman01	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_07	Lab_Battle01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_08	Lab_Battle01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_09	Lab_Ghost02	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_05_10	Lab_Ghost02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_06_01	Lab_20	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_06_02	Lab_Battle01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_06_03	Lab_Battle01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_06_04	Lab_Watchman01	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_06_05	Lab_Watchman01	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_07_01	Lab_23	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_07_02	Lab_Guardian02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_07_03	Lab_Guardian02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_07_04	Lab_Guardian02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_07_05	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_07_06	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_07_07	Lab_Battle02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_07_08	Lab_Ghost02	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_01	Lab_23	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_02	Lab_Guardian02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_03	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_04	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_05	Lab_Battle02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_06	Lab_Snake_In	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_07	Lab_Snake_In	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_08	Lab_Snake_In	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_08_09	Lab_Ghost02	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_01	Lab_23	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_02	Lab_Guardian02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_03	Lab_Snake_In	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_04	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_05	Lab_Snake_In	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_06	Lab_Battle02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_07	Lab_Ghost02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_08	Lab_Battle02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_09	Lab_Ghost02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_10	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_09_11	Lab_Watchman02	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_01	Lab_23	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_02	Lab_Guardian02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_03	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_04	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_05	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_06	Lab_Snake_In	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_07	Lab_Snake_In	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_08	Lab_Battle02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_09	Lab_Ghost02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_10	Lab_Battle02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_11	Lab_Ghost02	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_12	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_13	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_14	Lab_Snake_In	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_15	Lab_Snake_In	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_10_16	Gate_Lab	1	0	-2	8	0	10	2	13	4	0	0	0	0	0	
+#record		RGN_T3_11_01	Lab_25	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_02	Lab_Snake_In	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_03	Lab_Ghost02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_04	Lab_Snake_In	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_05	Lab_Ghost02	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_06	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_07	Lab_Watchman02	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_08	Lab_Watchman02	2	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_09	Lab_Child_Melt	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_10	Lab_Child_Balus	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_11	Lab_Child_Chechale	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_11_12	Lab_Child_Fred	1	0	8	0	10	2	13	4	0	0	0	0	0	0	
+#record		RGN_T3_02_07	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	84672638	0	
+#record		RGN_T3_02_08	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RNG_T3_03_09	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	84672533	0	
+#record		RGN_T3_03_10	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_04_13	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	54949160	0	
+#record		RGN_T3_04_14	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_05_11	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_05_12	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	462112340	0	
+#record		RGN_T3_05_13	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_07_09	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_07_10	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	101449911	0	
+#record		RGN_T3_08_10	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_08_11	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_09_12	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_09_13	Lab_Snake_Out	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_10_17	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+#record		RGN_T3_10_18	Lab_Unfinished	1	0	15	-4	5	-2	8	0	10	2	13	4	0	0	
+																		
+#end																		

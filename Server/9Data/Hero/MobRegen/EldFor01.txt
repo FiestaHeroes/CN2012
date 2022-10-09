@@ -1,0 +1,259 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		EldFor01_001	N	9108	17295	0	0	350										
+#record		EldFor01_002	N	9849	17227	0	0	448										
+#record		EldFor01_003	N	10430	17336	0	0	490										
+#record		EldFor01_004	N	8939	18874	0	0	392										
+#record		EldFor01_005	N	9352	19693	0	0	441										
+#record		EldFor01_006	N	10982	19148	0	0	350										
+#record		EldFor01_007	N	11025	19803	0	0	350										
+#record		EldFor01_008	N	12205	20197	0	0	350										
+#record		EldFor01_009	N	12054	17794	0	0	413										
+#record		EldFor01_010	N	11637	16687	0	0	427										
+#record		EldFor01_011	N	11555	17331	0	0	462										
+#record		EldFor01_012	N	12447	19389	0	0	350										
+#record		EldFor01_013	N	13309	19797	0	0	350										
+#record		EldFor01_014	N	14333	19181	0	0	350										
+#record		EldFor01_015	N	15685	19571	0	0	350										
+#record		EldFor01_016	N	9302	13507	841	42	50										
+#record		EldFor01_017	N	9555	15185	0	0	350										
+#record		EldFor01_018	N	9349	14366	466	129	38										
+#record		EldFor01_019	N	10400	14997	0	0	392										
+#record		EldFor01_020	N	8802	15522	0	0	350										
+#record		EldFor01_021	N	11179	14452	0	0	350										
+#record		EldFor01_022	N	11430	13668	99	454	-16										
+#record		EldFor01_023	N	10438	13138	73	565	-37										
+#record		EldFor01_024	N	10147	13801	0	0	350										
+#record		EldFor01_025	N	11462	12802	156	490	39										
+#record		EldFor01_026	N	7879	11569	0	0	504										
+#record		EldFor01_027	N	10341	10218	0	0	630										
+#record		EldFor01_028	N	6839	12237	0	0	623										
+#record		EldFor01_029	N	6562	9899	0	0	602										
+#record		EldFor01_030	N	6723	8591	0	0	637										
+#record		EldFor01_031	N	9156	7479	0	0	490										
+#record		EldFor01_032	N	9215	8492	0	0	550										
+#record		EldFor01_033	N	8465	6457	0	0	462										
+#record		EldFor01_034	N	9818	9259	0	0	400										
+#record		EldFor01_035	N	8116	8439	0	0	539										
+#record		EldFor01_036	N	15874	11568	501	220	-8										
+#record		EldFor01_037	N	14340	7876	0	0	469										
+#record		EldFor01_038	N	15713	10486	0	0	378										
+#record		EldFor01_039	N	17011	11160	0	0	350										
+#record		EldFor01_040	N	16616	11725	0	0	350										
+#record		EldFor01_041	N	16462	9355	268	467	40										
+#record		EldFor01_042	N	15496	9789	0	0	378										
+#record		EldFor01_043	N	16966	11795	0	0	413										
+#record		EldFor01_045	N	16391	10283	0	0	350										
+#record		EldFor01_046	N	18396	12750	0	0	490										
+#record		EldFor01_047	N	18007	13303	0	0	525										
+#record		EldFor01_048	N	16670	8662	0	0	504										
+#record		EldFor01_049	N	17444	8861	0	0	307										
+#record		EldFor01_050	N	17461	10229	300	651	-8										
+#record		FLOWER1	N	9849	19171	0	0	679										
+#record		FLOWER2	N	10643	19347	0	0	490										
+#record		FLOWER3	N	11624	19562	0	0	658										
+#record		FLOWER4	N	12931	19618	0	0	756										
+#record		FLOWER5	N	7352	11779	0	0	714										
+#record		FLOWER6	N	6928	10515	0	0	553										
+#record		FLOWER7	N	7020	11376	0	0	700										
+#record		FLOWER8	N	16534	10673	0	0	651										
+#record		FLOWER9	N	17023	11460	0	0	728										
+#record		FLOWER10	N	17434	10140	0	0	602										
+#record		HERB1	N	7227	11598	0	0	735										
+#record		HERB2	N	16697	10553	0	0	826										
+#record		WOOD8	N	9699	19203	0	0	882										
+#record		WOOD9	N	7177	8860	0	0	882										
+#record		MUSHROOM8	N	10731	19443	0	0	623										
+#record		MUSHROOM9	N	6844	9385	0	0	798										
+#record		EldFor01P01	N	11235	18335	2158	2034	0										
+#record		EldFor01P02	N	6924	9542	701	3613	0										
+#record		EldFor01Guard01	N	8260	17422	0	0	13										
+#record		EldFor01Guard02	N	18339	14188	0	0	13										
+#record		EldFor01_H1_01	N	8489	18595	0	0	27										
+#record		EldFor01_H1_02	N	11749	17779	0	0	48										
+#record		EldFor01_H1_03	N	13937	20046	0	0	76										
+#record		EldFor01_H1_04	N	9952	13902	0	0	75										
+#record		EldFor01_H1_05	N	8874	10343	0	0	167										
+#record		EldFor01_H1_06	N	6627	7705	0	0	48										
+#record		EldFor01_H1_07	N	13864	7597	0	0	40										
+#record		EldFor01_H1_08	N	15635	10394	0	0	13										
+#record		EldFor01_H1_09	N	17969	9447	0	0	26										
+#record		EldFor01_H2_01	N	9566	20007	0	0	48										
+#record		EldFor01_H2_02	N	11278	16945	0	0	20										
+#record		EldFor01_H2_03	N	14555	18857	0	0	41										
+#record		EldFor01_H2_04	N	11477	13717	0	0	75										
+#record		EldFor01_H2_05	N	8874	10343	0	0	167										
+#record		EldFor01_H2_06	N	6938	6509	0	0	27										
+#record		EldFor01_H2_07	N	14797	7608	0	0	33										
+#record		EldFor01_H2_08	N	15659	9550	0	0	13										
+#record		EldFor01_H2_09	N	18458	8236	0	0	40										
+#record		EldFor01_H3_01	N	10710	19894	0	0	13										
+#record		EldFor01_H3_02	N	12132	16554	0	0	27										
+#record		EldFor01_H3_03	N	16220	19800	0	0	55										
+#record		EldFor01_H3_04	N	10708	12717	0	0	40										
+#record		EldFor01_H3_05	N	8874	10343	0	0	167										
+#record		EldFor01_H3_06	N	8536	6317	0	0	41										
+#record		EldFor01_H3_07	N	13966	9089	0	0	26										
+#record		EldFor01_H3_08	N	16446	9306	0	0	20										
+#record		EldFor01_H3_09	N	17195	8535	0	0	12										
+#record		EldFor01_H4_01	N	9086	19339	0	0	41										
+#record		EldFor01_H4_02	N	12670	17364	0	0	34										
+#record		EldFor01_H4_03	N	15558	19587	0	0	48										
+#record		EldFor01_H4_04	N	10764	14701	0	0	82										
+#record		EldFor01_H4_05	N	8874	10343	0	0	167										
+#record		EldFor01_H4_06	N	8041	7467	0	0	48										
+#record		EldFor01_H4_07	N	14282	10456	0	0	12										
+#record		EldFor01_H4_08	N	16361	10063	0	0	20										
+#record		EldFor01_H4_09	N	17587	8904	0	0	12										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		EldFor01_001	MiniGreenky	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_002	MiniGreenky	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_003	MiniGreenky	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_004	MiniGreenky	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_005	MiniGreenky	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_006	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_006	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_007	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_007	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_008	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_008	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_009	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_009	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_010	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_010	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_011	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_011	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_012	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_012	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_013	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_013	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_014	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_014	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_015	Greenky	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_015	Pinky	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_016	CloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_017	CloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_018	CloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_019	CloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_020	CloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_021	BlueCloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_022	BlueCloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_023	BlueCloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_024	BlueCloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_025	BlueCloverTrumpy	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_026	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_026	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_027	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_027	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_028	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_028	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_029	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_029	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_030	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_030	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_031	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_031	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_032	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_032	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_033	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_033	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_034	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_034	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_035	HeartTrumpy	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_035	SpadeGuardTrumpy	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_036	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_036	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_037	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_037	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_038	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_038	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_039	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_039	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_040	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_040	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_041	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_041	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_042	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_042	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_043	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_043	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_045	NaiadSoul	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_045	ElfKnightSoul	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_046	ElfKnightDemon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_047	ElfKnightDemon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_048	ElfKnightDemon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_049	ElfKnightDemon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01_050	ElfKnightDemon	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER1	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER2	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER3	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER4	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER5	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER6	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER7	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER8	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER9	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		FLOWER10	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		HERB1	HERB5	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		HERB2	HERB6	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		WOOD8	WOOD8	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		WOOD9	WOOD9	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		MUSHROOM8	MUSHROOM8	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		MUSHROOM9	MUSHROOM9	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
+#record		EldFor01P01	PresentBox10	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldFor01P02	PresentBox11	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldFor01Guard01	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		EldFor01Guard02	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
+#record		EldFor01_H1_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H1_02	GreenkyBig	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H1_03	FastidousPinky	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H1_04	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H1_05	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H1_06	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H1_07	GhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H1_08	GrudgeGhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H1_09	DirtyGhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_02	GreenkyBig	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_03	FastidousPinky	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_04	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_05	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_06	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_07	GhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_08	GrudgeGhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H2_09	DirtyGhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_02	GreenkyBig	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_03	FastidousPinky	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_04	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_05	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_06	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_07	GhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_08	GrudgeGhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H3_09	DirtyGhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_02	GreenkyBig	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_03	FastidousPinky	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_04	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_05	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_06	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_07	GhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_08	GrudgeGhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+#record		EldFor01_H4_09	DirtyGhostElfKnight	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
+																		
+#end																		

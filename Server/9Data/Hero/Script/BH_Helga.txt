@@ -1,0 +1,13 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+
+#Record	HelgaBuff	"헬가에게 에너지가 주입되고 있습니다"
+#Record	Invader	"침입자다!!!"	
+#Record	HelgaWake	"헬가님을 깨워라!, 헬가님에게 힘을!!!"
+
+#END			

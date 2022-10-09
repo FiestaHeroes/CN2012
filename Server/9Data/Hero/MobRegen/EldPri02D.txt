@@ -1,0 +1,165 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		EldPri02D_001	N	7061	4238	0	0	420										
+#record		EldPri02D_002	N	10570	7142	0	0	532										
+#record		EldPri02D_003	N	10036	4574	0	0	476										
+#record		EldPri02D_004	N	7172	6964	0	0	539										
+#record		EldPri02D_005	N	8485	5048	0	0	560										
+#record		EldPri02D_006	N	5570	7008	0	0	483										
+#record		EldPri02D_007	N	5998	7963	0	0	483										
+#record		EldPri02D_008	N	7595	8242	0	0	497										
+#record		EldPri02D_009	N	8521	8050	0	0	441										
+#record		EldPri02D_010	N	11913	7182	0	0	525										
+#record		EldPri02D_011	N	12899	10592	0	0	623										
+#record		EldPri02D_012	N	13367	10186	0	0	490										
+#record		EldPri02D_013	N	12254	9071	0	0	539										
+#record		EldPri02D_014	N	13729	7895	0	0	406										
+#record		EldPri02D_015	N	14247	6516	0	0	462										
+#record		EldPri02D_016	N	3535	17877	0	0	511										
+#record		EldPri02D_017	N	15873	7790	0	0	350										
+#record		EldPri02D_018	N	12165	11077	0	0	371										
+#record		EldPri02D_021	N	15799	6908	0	0	441										
+#record		EldPri02D_022	N	15323	9640	187	755	-6										
+#record		EldPri02D_023	N	17173	10543	0	0	427										
+#record		EldPri02D_024	N	17373	11749	0	0	560										
+#record		EldPri02D_025	N	18258	10762	0	0	427										
+#record		EldPri02D_026	N	14578	13617	0	0	651										
+#record		EldPri02D_027	N	13386	15494	903	277	11										
+#record		EldPri02D_028	N	8090	11237	0	0	623										
+#record		EldPri02D_029	N	13580	12778	0	0	672										
+#record		EldPri02D_030	N	8288	13729	0	0	602										
+#record		EldPri02D_031	N	5181	13020	0	0	455										
+#record		EldPri02D_032	N	6039	13744	0	0	504										
+#record		EldPri02D_033	N	4998	15482	678	227	0										
+#record		EldPri02D_034	N	4736	18051	0	0	672										
+#record		EldPri02D_035	N	1531	13900	0	0	504										
+#record		EldPri02D_036	N	2914	13320	0	0	518										
+#record		EldPri02D_037	N	2684	12834	0	0	441										
+#record		EldPri02D_038	N	2436	15132	166	580	42										
+#record		EldPri02D_039	N	1564	13220	0	0	350										
+#record		EldPri02D_040	N	1707	10447	0	0	525										
+#record		EldPri02D_041	N	3502	10518	0	0	560										
+#record		EldPri02D_042	N	3342	9331	0	0	497										
+#record		EldPri02D_043	N	4820	10090	0	0	630										
+#record		EldPri02D_044	N	1714	9682	0	0	350										
+#record		EldPri02D_045	N	3155	7485	0	0	293										
+#record		EldPri02D_046	N	1707	7636	0	0	350										
+#record		EldPri02D_047	N	1673	6452	0	0	350										
+#record		EldPri02D_048	N	3164	6818	0	0	350										
+#record		EldPri02D_049	N	2315	6212	0	0	350										
+#record		EldPri02D_Mine1	N	11204	13754	0	0	350										
+#record		EldPri02D_Mine2	N	10932	13420	0	0	350										
+#record		EldPri02D_Mine3	N	11576	13386	0	0	350										
+#record		EldPri02D_Mine4	N	10980	13991	0	0	350										
+#record		EldPri02D_Mine5	N	11349	14188	0	0	350										
+#record		EldPri02D_Mine6	N	8302	10460	0	0	350										
+#record		EldPri02D_Mine7	N	7989	10727	0	0	350										
+#record		EldPri02D_Mine8	N	8460	11030	0	0	350										
+#record		EldPri02D_Mine9	N	7894	11357	0	0	350										
+#record		EldPri02D_Mine10	N	8210	11155	0	0	350										
+#record		P01	N	2318	7208	0	0	237										
+#record		EldPri02DGuard01	N	7800	2958	0	0	13										
+#record		EldPri02DGuard02	N	8605	2916	0	0	13										
+#record		EldPri02D_C1_01	N	1575	7298	0	0	110										
+#record		EldPri02D_C2_01	N	1781	6322	0	0	68										
+#record		EldPri02D_C3_01	N	3168	6858	0	0	96										
+#record		EldPri02D_C4_01	N	2338	7866	0	0	82										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		EldPri02D_001	KingSpiderB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_002	KingSpiderB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_003	KingSpiderB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_004	KingSpiderB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_005	KingSpiderB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_006	KaraWarriorB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_007	KaraWarriorB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_008	KaraWarriorB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_009	KaraWarriorB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_010	KaraWarriorB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_011	KaraDarkTemplerB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_011	NoxB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_012	KaraDarkTemplerB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_012	NoxB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_013	KaraDarkTemplerB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_013	NoxB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_014	KaraDarkTemplerB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_014	NoxB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_015	KaraDarkTemplerB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_015	NoxB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_016	KaraDarkTemplerB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_016	NoxB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_017	KaraDarkTemplerB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_017	NoxB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_018	KaraDarkTemplerB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_018	NoxB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_021	NoxHunterB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_022	NoxHunterB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_023	NoxHunterB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_024	NoxHunterB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_025	NoxHunterB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_026	SparkDogB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_027	SparkDogB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_028	SparkDogB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_029	SparkDogB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_030	SparkDogB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_031	MiniJewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_032	MiniJewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_033	MiniJewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_034	MiniJewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_035	MiniJewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_036	JewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_037	JewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_038	JewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_039	JewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_040	JewelKeeperB	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_041	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_041	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_042	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_042	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_043	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_043	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_044	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_044	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_045	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_045	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_046	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_046	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_047	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_047	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_048	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_048	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_049	GoldJewelKeeperB	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_049	IncubusB	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine1	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine2	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine3	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine4	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine5	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine6	MINE8	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine7	MINE8	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine8	MINE8	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine9	MINE8	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		EldPri02D_Mine10	MINE8	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0	
+#record		P01	PresentBox13	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldPri02DGuard01	GuardMihael02	1	0	45	23	68	-18	23	-9	31	18	59	23	68	0	
+#record		EldPri02DGuard02	GuardMihael02	1	0	45	23	68	-18	23	-9	31	18	59	23	68	0	
+#record		EldPri02D_C1_01	CrazyMimic	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		EldPri02D_C2_01	CrazyMimic	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		EldPri02D_C3_01	CrazyMimic	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+#record		EldPri02D_C4_01	CrazyMimic	1	0	240	120	360	-200	120	-110	168	110	312	200	360	0	
+																		
+#end																		

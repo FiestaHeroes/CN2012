@@ -1,0 +1,49 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	SpyName	警备枪兵		
+#Record	MaraName	威风凛凛的玛拉		
+#Record	MarloneName	领袖风范的玛仑		
+				
+#Record	KQStart60	60秒后,王国任务即将开始.		
+#Record	KQStart30	30秒后,王国任务即将开始.		
+#Record	KQStart20	20秒后,王国任务即将开始.		
+#Record	KQStart10	10秒后,王国任务即将开始.		
+#Record	KQStart5	5秒后,王国任务即将开始.		
+				
+#Record	SpyLie0	啊,吓我一跳!		
+#Record	SpyLie1	啊,不好意思,以为被海盗发现了........		
+#Record	SpyLie2	为了剿灭海盜,我正在监视呢.		
+#Record	SpyLie3	稍等,我去拿武器来帮你.		
+#Record	SpyReport0	什么?讨伐军来了?		
+#Record	SpyReport1	是的.幸亏我赶紧跑过来,要不........		
+#Record	SpyReport2	全军戒备!无论发生什么情况也要在出港之前先撑50分钟!		
+#Record	SpyReport3	你赶快报告给司令官.		
+#Record	SpyReport4	是!		
+#Record	MiddleReport0	中间防线被占领.		
+#Record	MiddleReport1	真是没用的家伙.		
+#Record	MiddleReport2	別担心,玛拉,我玛仑会帮你消灭掉全部敌人.		
+#Record	MiddleReport3	哼!不能独自好好欣赏.		
+#Record	MiddleReport4	全体准备进攻!		
+#Record	MidMaraDead	可恶啊,气死我啦..		
+#Record	MidMarloneDead	不行!		
+#Record	LastMaraDead	这,这样结束了吗?		
+#Record	LastMarloneDead	天空真美丽........		
+				
+#Record	Fail0	首领大人,没有我在的话,一定会遭到突袭.		
+#Record	Fail1	不是我要夸赞我自己,只是就是这样啊, 嘿嘿嘿		
+#Record	Fail2	所以,前几天做的承诺........		
+#Record	Fail3	给我滚蛋.不要再让我看到!		
+				
+
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				

@@ -1,0 +1,208 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		LinkField01_001	N	4285	2898	70	417	-85										
+#record		LinkField01_002	N	5762	2588	0	0	286										
+#record		LinkField01_003	N	4715	3367	0	0	293										
+#record		LinkField01_004	N	2707	4062	44	435	-20										
+#record		LinkField01_007	N	5324	3659	0	0	335										
+#record		LinkField01_008	N	6311	2653	0	0	265										
+#record		LinkField01_009	N	2060	5100	0	0	188										
+#record		LinkField01_010	N	3261	4636	0	0	202										
+#record		LinkField01_011	N	6849	2800	0	0	293										
+#record		LinkField01_013	N	6594	3990	0	0	350										
+#record		LinkField01_014	N	5930	3956	0	0	350										
+#record		LinkField01_015	N	7060	3913	0	0	350										
+#record		LinkField01_016	N	2123	5605	0	0	237										
+#record		LinkField01_017	N	3669	5635	107	545	14										
+#record		LinkField01_019	N	7407	4469	0	0	286										
+#record		LinkField01_020	N	8643	4069	0	0	314										
+#record		LinkField01_021	N	7610	4945	0	0	293										
+#record		LinkField01_022	N	2470	7560	623	62	33										
+#record		LinkField01_023	N	3877	6734	86	437	0										
+#record		LinkField01_024	N	2606	7025	0	0	350										
+#record		LinkField01_031	N	9908	4380	0	0	258										
+#record		LinkField01_032	N	9678	4681	0	0	279										
+#record		LinkField01_034	N	9569	5346	0	0	300										
+#record		LinkField01_035	N	3298	8411	162	544	0										
+#record		LinkField01_036	N	4259	8142	0	0	314										
+#record		LinkField01_038	N	4727	8494	0	0	279										
+#record		LinkField01_039	N	9185	5107	0	0	265										
+#record		LinkField01_043	N	4704	9447	0	0	350										
+#record		LinkField01_044	N	2150	9732	0	0	314										
+#record		LinkField01_045	N	2369	10414	0	0	350										
+#record		LinkField01_046	N	8354	8050	0	0	454										
+#record		LinkField01_047	N	9196	6005	0	0	286										
+#record		LinkField01_048	N	8202	6538	57	920	10										
+#record		LinkField01_049	N	6483	9216	0	0	370										
+#record		LinkField01_050	N	6176	7370	0	0	258										
+#record		LinkField01_052	N	7055	8275	675	101	7										
+#record		LinkField01_053	N	5853	7356	0	0	265										
+#record		LinkField01_055	N	6815	9420	0	0	342										
+#record		LinkField01_056	N	6579	10310	180	504	-7										
+#record		LinkField01_057	N	6497	7006	0	0	264										
+#record		LinkField01_058	N	7789	7966	0	0	244										
+#record		LinkField01_062	N	8030	9340	725	130	-19										
+#record		LinkField01_063	N	10457	9984	76	534	-22										
+#record		LinkField01_064	N	9145	9816	213	613	70										
+#record		LinkField01_065	N	8830	8827	659	67	-19										
+#record		FLOWER1	N	5325	3466	0	0	314										
+#record		FLOWER2	N	5815	3614	0	0	314										
+#record		FLOWER3	N	6076	3158	0	0	314										
+#record		FLOWER4	N	6609	3232	0	0	314										
+#record		FLOWER5	N	8678	6155	0	0	314										
+#record		FLOWER6	N	8570	6609	0	0	314										
+#record		FLOWER7	N	8815	7101	0	0	314										
+#record		FLOWER8	N	6788	8600	0	0	314										
+#record		FLOWER9	N	6386	8594	0	0	314										
+#record		FLOWER10	N	5892	8636	0	0	314										
+#record		HERB1	N	6499	3359	0	0	720										
+#record		HERB2	N	6707	8879	0	0	748										
+#record		WOOD4	N	5828	3271	0	0	671										
+#record		WOOD5	N	6705	8906	0	0	776										
+#record		MUSHROOM4	N	9069	5488	0	0	482										
+#record		MUSHROOM5	N	8640	6141	0	0	503										
+#record		Box01	N	6648	3658	2023	426	-16										
+#record		Box02	N	6010	8721	2666	282	0										
+#record		Linkfield01Guard01	N	5501	3195	0	0	12										
+#record		Linkfield01Guard02	N	7799	8582	0	0	12										
+#record		Linkfield01Guard03	N	3386	3038	0	0	16										
+#record		Linkfield01Guard04	N	3101	3313	0	0	15										
+#record		LinkField01_H1_01	N	6391	3906	0	0	40										
+#record		LinkField01_H1_02	N	3407	4764	39	55	44										
+#record		LinkField01_H1_03	N	4170	7915	0	0	40										
+#record		LinkField01_H1_04	N	9286	6193	48	48	10										
+#record		LinkField01_H1_05	N	6874	9832	36	27	-7										
+#record		LinkField01_H2_01	N	5761	3808	0	0	33										
+#record		LinkField01_H2_02	N	3568	5775	28	41	14										
+#record		LinkField01_H2_03	N	4532	8341	0	0	75										
+#record		LinkField01_H2_04	N	8352	7470	46	49	9										
+#record		LinkField01_H2_05	N	6319	9320	24	49	-7										
+#record		LinkField01_H3_01	N	7050	2770	0	0	68										
+#record		LinkField01_H3_02	N	3954	6300	21	27	14										
+#record		LinkField01_H3_03	N	5200	8577	0	0	33										
+#record		LinkField01_H3_04	N	9261	7323	41	46	-20										
+#record		LinkField01_H3_05	N	7371	9308	29	58	-7										
+#record		LinkField01_H4_01	N	6287	2577	0	0	82										
+#record		LinkField01_H4_02	N	3673	5334	33	24	14										
+#record		LinkField01_H4_03	N	3275	8557	0	0	47										
+#record		LinkField01_H4_04	N	8218	6278	46	114	10										
+#record		LinkField01_H4_05	N	6436	10187	28	41	-7										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		LinkField01_001	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_002	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_003	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_004	BabyBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_007	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_008	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_009	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_010	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_011	Bat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_013	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_014	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_015	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_016	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_017	GlowWolf	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_019	DesertWolf	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_019	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_020	DesertWolf	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_020	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_021	DesertWolf	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_021	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_022	DesertWolf	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_022	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_023	DesertWolf	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_023	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_024	DesertWolf	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_024	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_031	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_031	Spider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_032	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_032	Spider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_034	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_034	Spider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_035	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_035	Spider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_036	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_036	Spider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_038	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_038	Spider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_039	ProckZone	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_039	Spider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_043	VampireBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_044	VampireBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_045	VampireBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_046	VampireBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_047	VampireBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_048	VampireBat	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_049	MasicStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_050	MasicStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_052	MasicStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_053	MasicStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_055	FlyingStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_056	FlyingStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_057	FlyingStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_058	FlyingStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_062	KingStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_063	KingStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_064	KingStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		LinkField01_065	KingStaff	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER1	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER2	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER3	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER4	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER5	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER6	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER7	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER8	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER9	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER10	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		HERB1	HERB3	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		HERB2	HERB4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		WOOD4	WOOD4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		WOOD5	WOOD5	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		MUSHROOM4	MUSHROOM4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		MUSHROOM5	MUSHROOM5	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		MUSHROOM5	Q_Desert_Mush	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		Box01	PresentBox6	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		Box02	PresentBox7	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		Linkfield01Guard01	GuardLue01	1	0	11	8	15	-4	8	-2	10	4	12	6	15	0	
+#record		Linkfield01Guard02	GuardLue01	1	0	11	8	15	-4	8	-2	10	4	12	6	15	0	
+#record		Linkfield01Guard03	GuardMihael01	1	0	11	8	15	-4	8	-2	10	4	12	6	15	0	
+#record		Linkfield01Guard04	GuardMihael01	1	0	11	8	15	-4	8	-2	10	4	12	6	15	0	
+#record		LinkField01_H1_01	PigBat	1	0	40	20	60	-20	20	-10	28	10	52	20	60	0	
+#record		LinkField01_H1_02	BloodWolf	1	0	40	20	60	-20	20	-10	28	10	52	20	60	0	
+#record		LinkField01_H1_03	Q_QueenSpider	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H1_04	AlkemisBook04	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H1_05	AlkemisBook05	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H2_01	PigBat	1	0	40	20	60	-20	20	-10	28	10	52	20	60	0	
+#record		LinkField01_H2_02	BloodWolf	1	0	40	20	60	-20	20	-10	28	10	52	20	60	0	
+#record		LinkField01_H2_03	Q_QueenSpider	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H2_04	AlkemisBook04	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H2_05	AlkemisBook05	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H3_01	PigBat	1	0	40	20	60	-20	20	-10	28	10	52	20	60	0	
+#record		LinkField01_H3_02	BloodWolf	1	0	40	20	60	-20	20	-10	28	10	52	20	60	0	
+#record		LinkField01_H3_03	Q_QueenSpider	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H3_04	AlkemisBook04	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H3_05	AlkemisBook05	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H4_01	PigBat	1	0	40	20	60	-20	20	-10	28	10	52	20	60	0	
+#record		LinkField01_H4_02	BloodWolf	1	0	40	20	60	-20	20	-10	28	10	52	20	60	0	
+#record		LinkField01_H4_03	Q_QueenSpider	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H4_04	AlkemisBook04	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		LinkField01_H4_05	AlkemisBook05	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+																		
+#end																		

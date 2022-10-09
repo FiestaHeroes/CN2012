@@ -1,0 +1,254 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		EldCem01_001	N	11512	3245	236	718	25										
+#record		EldCem01_002	N	10223	2629	0	0	404										
+#record		EldCem01_003	N	9193	1321	474	223	0										
+#record		EldCem01_004	N	7882	1300	729	163	5										
+#record		EldCem01_005	N	11712	4066	248	765	8										
+#record		EldCem01_006	N	8004	3547	0	0	278										
+#record		EldCem01_007	N	7265	4187	0	0	285										
+#record		EldCem01_008	N	7804	4014	0	0	306										
+#record		EldCem01_009	N	6918	4162	0	0	292										
+#record		EldCem01_010	N	10677	6678	0	0	306										
+#record		EldCem01_011	N	10421	5194	0	0	376										
+#record		EldCem01_012	N	11710	5453	244	594	0										
+#record		EldCem01_013	N	10179	5785	0	0	530										
+#record		EldCem01_014	N	11668	6639	252	541	0										
+#record		EldCem01_015	N	10122	6297	0	0	397										
+#record		EldCem01_016	N	7432	6819	0	0	348										
+#record		EldCem01_017	N	8006	7213	0	0	334										
+#record		EldCem01_018	N	4515	3439	0	0	355										
+#record		EldCem01_019	N	3494	2802	0	0	390										
+#record		EldCem01_020	N	4772	2705	0	0	348										
+#record		EldCem01_021	N	2531	2340	0	0	54										
+#record		EldCem01_022	N	2965	1261	0	0	432										
+#record		EldCem01_023	N	2603	2029	0	0	474										
+#record		EldCem01_024	N	3892	1136	0	0	432										
+#record		EldCem01_025	N	5096	1256	0	0	460										
+#record		EldCem01_026	N	7994	8175	349	93	0										
+#record		EldCem01_027	N	7201	7997	0	0	285										
+#record		EldCem01_028	N	6734	7539	0	0	271										
+#record		EldCem01_029	N	1860	1709	0	0	425										
+#record		EldCem01_030	N	6546	6928	0	0	250										
+#record		EldCem01_031	N	3053	5861	616	141	0										
+#record		EldCem01_032	N	7233	9578	0	0	250										
+#record		EldCem01_033	N	6846	10226	0	0	243										
+#record		EldCem01_034	N	2019	6255	449	185	54										
+#record		EldCem01_035	N	4000	6388	0	0	355										
+#record		EldCem01_036	N	8016	9529	0	0	264										
+#record		EldCem01_037	N	3006	6887	0	0	481										
+#record		EldCem01_038	N	7973	10211	0	0	299										
+#record		EldCem01_039	N	7471	10822	0	0	306										
+#record		EldCem01_040	N	4080	7172	0	0	369										
+#record		EldCem01_041	N	2028	7402	0	0	390										
+#record		EldCem01_042	N	6697	10870	0	0	292										
+#record		EldCem01_043	N	2266	8009	0	0	334										
+#record		EldCem01_044	N	4109	7954	0	0	341										
+#record		EldCem01_045	N	7475	11676	594	287	0										
+#record		EldCem01_046	N	4095	10561	0	0	278										
+#record		EldCem01_047	N	4848	10409	0	0	292										
+#record		EldCem01_048	N	5369	11368	0	0	313										
+#record		EldCem01_049	N	3442	11466	0	0	278										
+#record		EldCem01_050	N	4475	11609	682	244	0										
+#record		FLOWER1	N	3487	2327	0	0	881										
+#record		FLOWER2	N	4119	1583	0	0	881										
+#record		FLOWER3	N	2976	2031	0	0	881										
+#record		FLOWER4	N	3733	2412	0	0	881										
+#record		FLOWER5	N	7275	7335	0	0	881										
+#record		FLOWER6	N	7651	6622	0	0	881										
+#record		FLOWER7	N	6609	6584	0	0	881										
+#record		FLOWER8	N	7466	10319	0	0	881										
+#record		FLOWER9	N	8494	10217	0	0	881										
+#record		FLOWER10	N	9331	10312	0	0	881										
+#record		HERB1	N	3700	2037	0	0	881										
+#record		HERB2	N	7529	7323	0	0	1287										
+#record		WOOD6	N	7159	7130	0	0	1385										
+#record		WOOD7	N	7486	10446	0	0	1140										
+#record		MUSHROOM6	N	3634	2408	0	0	1007										
+#record		MUSHROOM7	N	8343	10290	1795	387	0										
+#record		EldCem01Pbox01	N	7583	7277	0	0	1512										
+#record		EldCem01Pbox02	N	3094	6962	0	0	1540										
+#record		EldCem01Guard01	N	3409	10451	0	0	11										
+#record		EldCem01Guard02	N	10662	2116	0	0	11										
+#record		EldCem01_H1_01	N	6573	1711	35	46	-40										
+#record		EldCem01_H1_02	N	11688	6252	0	0	39										
+#record		EldCem01_H1_03	N	4560	3607	0	0	74										
+#record		EldCem01_H1_04	N	1559	1681	0	0	53										
+#record		EldCem01_H1_05	N	8074	7527	0	0	32										
+#record		EldCem01_H1_06	N	5246	1565	0	0	60										
+#record		EldCem01_H1_07	N	2291	6121	0	0	74										
+#record		EldCem01_H1_08	N	5420	11512	0	0	46										
+#record		EldCem01_H2_01	N	6969	1346	41	54	-40										
+#record		EldCem01_H2_02	N	11667	5541	0	0	67										
+#record		EldCem01_H2_03	N	3657	2773	0	0	60										
+#record		EldCem01_H2_04	N	1890	2420	0	0	60										
+#record		EldCem01_H2_05	N	7703	6879	0	0	32										
+#record		EldCem01_H2_06	N	4507	1365	0	0	46										
+#record		EldCem01_H2_07	N	2112	7439	0	0	95										
+#record		EldCem01_H2_08	N	3382	11452	0	0	53										
+#record		EldCem01_H3_01	N	6499	2812	29	50	-40										
+#record		EldCem01_H3_02	N	10428	5201	0	0	46										
+#record		EldCem01_H3_03	N	4827	2907	0	0	39										
+#record		EldCem01_H3_04	N	2201	1279	0	0	39										
+#record		EldCem01_H3_05	N	6968	7276	0	0	53										
+#record		EldCem01_H3_06	N	3937	930	0	0	39										
+#record		EldCem01_H3_07	N	3879	6433	0	0	74										
+#record		EldCem01_H3_08	N	4513	11274	0	0	53										
+#record		EldCem01_H4_01	N	6036	2282	24	47	-40										
+#record		EldCem01_H4_02	N	10054	5899	0	0	60										
+#record		EldCem01_H4_03	N	3946	2613	0	0	60										
+#record		EldCem01_H4_04	N	2647	1871	0	0	53										
+#record		EldCem01_H4_05	N	7346	7925	0	0	53										
+#record		EldCem01_H4_06	N	5064	1056	0	0	60										
+#record		EldCem01_H4_07	N	4210	7675	0	0	81										
+#record		EldCem01_H4_08	N	3913	10713	0	0	53										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		EldCem01_001	DeadTreeSoul	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_002	DeadTreeSoul	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_003	DeadTreeSoul	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_004	DeadTreeSoul	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_005	DeadTreeSoul	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_006	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_006	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_007	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_007	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_008	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_008	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_009	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_009	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_010	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_010	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_011	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_011	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_012	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_012	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_013	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_013	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_014	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_014	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_015	DesertTree	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_015	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_016	Ghost	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_017	Ghost	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_018	Ghost	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_019	Ghost	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_020	Ghost	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_021	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_021	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_022	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_022	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_023	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_023	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_024	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_024	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_025	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_025	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_026	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_026	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_027	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_027	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_028	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_028	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_029	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_029	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_030	Zombie	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_030	FireViVi	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_031	Skeleton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_032	Skeleton	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_033	Skeleton	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_033	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_034	Skeleton	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_034	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_035	Skeleton	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_035	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_036	Skeleton	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_036	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_037	Skeleton	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_037	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_038	Skeleton	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_038	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_039	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_039	SkelWarrior	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_040	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_040	SkelWarrior	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_041	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_041	SkelWarrior	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_042	SkelArcher	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_042	SkelWarrior	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_043	SkelWarrior	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_044	SkelWarrior	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_045	SkelWarrior	6	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_046	SkelSoldier	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_047	SkelSoldier	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_048	SkelSoldier	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_049	SkelSoldier	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01_050	SkelSoldier	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER1	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER2	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER3	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER4	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER5	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER6	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER7	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER8	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER9	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		FLOWER10	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		HERB1	HERB5	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		HERB2	HERB6	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		WOOD6	WOOD6	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		WOOD7	WOOD7	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		MUSHROOM6	MUSHROOM6	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		MUSHROOM7	MUSHROOM7	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
+#record		EldCem01Pbox01	PresentBox8	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldCem01Pbox02	PresentBox8	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		EldCem01Guard01	GuardLue01	1	0	11	8	15	-4	8	-2	10	4	12	6	15	0	
+#record		EldCem01Guard02	GuardLue01	1	0	11	8	15	-4	8	-2	10	4	12	6	15	0	
+#record		EldCem01_H1_01	AlkemisBook07	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H1_02	AlkemisBook08	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H1_03	GhostLump	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H1_04	ZombieKnight	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H1_05	ZombieMaster	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H1_06	Q_LampViVi	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H1_07	AlkemisBook09	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H1_08	MarvellBook01	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H2_01	AlkemisBook07	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H2_02	AlkemisBook08	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H2_03	GhostLump	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H2_04	ZombieKnight	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H2_05	ZombieMaster	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H2_06	Q_LampViVi	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H2_07	AlkemisBook09	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H2_08	MarvellBook01	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H3_01	AlkemisBook07	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H3_02	AlkemisBook08	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H3_03	GhostLump	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H3_04	ZombieKnight	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H3_05	ZombieMaster	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H3_06	Q_LampViVi	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H3_07	AlkemisBook09	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H3_08	MarvellBook01	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H4_01	AlkemisBook07	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H4_02	AlkemisBook08	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H4_03	GhostLump	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H4_04	ZombieKnight	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H4_05	ZombieMaster	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H4_06	Q_LampViVi	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H4_07	AlkemisBook09	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+#record		EldCem01_H4_08	MarvellBook01	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
+																		
+#end																		

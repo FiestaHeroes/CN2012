@@ -1,0 +1,942 @@
+open [main]
+    var InterruptBlock  ""
+        InterruptArg    ""
+
+        ;Entrance        "";킹퀘 매칭으로 인한 주석처리
+        ;Exit            "";킹퀘 매칭으로 인한 주석처리
+
+        PatternList     "2 3 4 5 6 7 8 9 10 11"
+        CurrentPattern  0
+
+        CurrentStage    1
+
+        CurrentDoor     2
+
+        TargetObject    ""
+        TargetHandle    0
+		DoorHandle		0
+        TimeAtkHandle   ""
+        MissCount		0
+        Box				""
+
+        Child1          ""
+        Child2          ""
+        Child3          ""
+        Child4          ""
+        Prison          ""
+        Key             "ID_Lab_Key"
+        Warn            1
+
+        CurrentGenX     0
+        CurrentGenY     0
+
+        StageGenX1      10719
+        StageGenY1      9805
+
+        StageGenX2      11727
+        StageGenY2      7553
+
+        StageGenX3      11007
+        StageGenY3      5298
+
+        StageGenX4      10244
+        StageGenY4      3139
+
+        StageGenX5      9288
+        StageGenY5      956
+
+        StageGenX6      6798
+        StageGenY6      952
+
+        StageGenX7      4330
+        StageGenY7      1207
+
+        StageGenX8      2102
+        StageGenY8      2477
+
+        StageGenX9      1192
+        StageGenY9      4492
+
+        StageGenX10     1186
+        StageGenY10     7321
+
+        Door01          ""
+        Door02          ""
+        Door03          ""
+        Door04          ""
+        Door05          ""
+        Door06          ""
+        Door07          ""
+        Door08          ""
+        Door09          ""
+        Door10          "".
+
+    scriptfile  "Tower03".
+
+    interruptclear.  ; 인던에서 인터럽트가 자꾸 쌓이는 현상 방지
+
+    doorbuild Door01 "Lab_Gate" 9175 11012 0 1000 "Normal".
+    doorclose Door01 "DBLOCK01".
+    doorbuild Door02 "Lab_Gate" 11097 9428 0 1000 "Normal".
+    doorclose Door02 "DBLOCK02".
+    doorbuild Door03 "Lab_Gate" 11732 7187 0 1000 "Normal".
+    doorclose Door03 "DBLOCK03".
+    doorbuild Door04 "Lab_Gate" 10793 5009 0 1000 "Normal".
+    doorclose Door04 "DBLOCK04".
+    doorbuild Door05 "Lab_Gate" 10230 2643 0 1000 "Normal".
+    doorclose Door05 "DBLOCK05".
+    doorbuild Door06 "Lab_Gate" 8772 952 0 1000 "Normal".
+    doorclose Door06 "DBLOCK06".
+    doorbuild Door07 "Lab_Gate" 6296 951 0 1000 "Normal".
+    doorclose Door07 "DBLOCK07".
+    doorbuild Door08 "Lab_Gate" 3876 1354 0 1000 "Normal".
+    doorclose Door08 "DBLOCK08".
+    doorbuild Door09 "Lab_Gate" 1844 2714 0 1000 "Normal".
+    doorclose Door09 "DBLOCK09".
+    doorbuild Door10 "Lab_Gate" 1179 4985 0 1000 "Normal".
+    doorclose Door10 "DBLOCK10".
+    
+    doorbuild Prison "Lab_Prison" 1368 7658 0 1000 "Normal".
+    doorclose Prison "DBLOCK11".
+    
+    ;npcstand Entrance "Lab_Gate" 8455 11431 0 1000 "Normal".;킹퀘 매칭 작업에 의한 주석처리
+    ;interruptset NPCClickHandle "EntranceClick" 1 Entrance "onEntranceClick".;킹퀘 매칭 작업에 의한 주석처리
+
+    pause Sec 17.
+    
+    dooropen Door01 "DBLOCK01".
+
+    chatwin "UruSkillChyburn" "T3_01_01".
+    pause Sec 2.
+    chatwin "UruSkillChyburn" "T3_01_02".
+    pause Sec 2.
+    chatwin "UruSkillChyburn" "T3_01_03".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "T3_01_05".
+
+    open [NormalPattern]
+        infinite
+        open
+            CurrentGenX = #("StageGenX" % CurrentStage).
+            CurrentGenY = #("StageGenY" % CurrentStage).
+
+            CurrentPattern = @RemoveFirst("PatternList" " ").
+            
+            call "Pattern_" % CurrentPattern.
+            
+            interrupterase "AwakeWarning".
+            interrupterase "AwakeWarning2".
+
+            if CurrentStage > 9
+            then open
+                break "NormalPattern".
+            close
+            else open
+            	if CurrentDoor >= 10
+            	then open
+            	    dooropen #("Door" % CurrentDoor) "DBLOCK" % CurrentDoor.
+            	close
+            	else open
+            	    dooropen #("Door0" % CurrentDoor) "DBLOCK0" % CurrentDoor.
+            	close
+
+            	call "After_Pattern_" % CurrentPattern.
+
+            	CurrentStage = CurrentStage + 1.
+            	CurrentDoor = CurrentDoor + 1.
+            close
+        close
+    close
+
+    DoorHandle = Prison.
+    call "WaitOpenPrison".
+    
+;    ScinarioCodeParty OpenerHandle 100.
+    dooropen Prison "DBLOCK11".
+    npcstand Child1 "Lab_Child_Melt" 1321 7676 0 1000 "Normal".
+    npcstand Child2 "Lab_Child_Balus" 1341 7631 0 1000 "Normal".
+    npcstand Child3 "Lab_Child_Chechale" 1389 7627 0 1000 "Normal".
+    npcstand Child4 "Lab_Child_Fred" 1368 7658 0 1000 "Normal".
+    pause Sec 1.    
+    
+    if MissCount == 0
+    then open
+    	mobregen Box "Lab_Box" CurrentGenX CurrentGenY 0 1000 "Normal".
+    close
+   
+    chatwin "Lab_25" "T3_11_01".
+    pause Sec 2.
+    chatwin "Lab_25" "T3_11_02".
+    pause Sec 2.    
+    chatwin "UruItemMctVellon" "T3_11_03".
+    pause Sec 2.
+    chatwin "UruItemMctVellon" "T3_11_04".
+
+    animate Child1 "EldKidWorze_Speech1".
+    pause Sec 1.
+    NPCChatNoFacecut Child1 "T3_11_CHILD001".
+    pause Sec 1.
+    NPCChatNoFacecut Child2 "T3_11_CHILD004".
+    pause Sec 1.
+    NPCChatNoFacecut Child3 "T3_11_CHILD012".
+    pause Sec 1.
+    NPCChatNoFacecut Child4 "T3_11_CHILD002".
+
+    pause Sec 5.
+
+    run Child1 1119 6950.
+    run Child2 1172 6952.
+    run Child3 1218 6947.
+    run Child4 1182 6899.
+
+    pause Sec 5.
+
+    vanish handle Child1.
+    vanish handle Child2.
+    vanish handle Child3.
+    vanish handle Child4.
+
+    ; call "ExitGateOpen".;킹퀘 매칭 작업을 위한 주석처리
+
+    questresult Suc.                   ; 성공패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+
+    reward MID. ; 킹퀘 매칭으로 보상 명령어 변경됨
+    MIDClearCount Online.;킹퀘 플레이 카운트 설정
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+
+; Signal Waiting
+
+open [WaitClearStage]
+
+	if CurrentStage < 3
+    then open
+    	interruptset Sec "Tick" 1 10 "onTick0".
+    close
+	    else open
+		if CurrentStage < 6
+		then open
+			interruptset Sec "Tick" 1 10 "onTick".
+	    close
+	    else open
+			interruptset Sec "Tick" 1 10 "onTick2".
+	    close
+    close
+	
+    pause Sec 5.
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open [WaitKillBoss]
+    interruptset DeadIndex "BossDead" 1 TargetObject "onBossDead".
+
+    pause Sec 5.
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+open [WaitOpenPrison]
+    interruptset NPCClickHandle "" 1 DoorHandle "onOpenPrison".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+    call InterruptBlock.
+    close
+close
+
+
+; EventHandler
+
+open [onEntranceClick]
+    var Clicker 0.
+    whoclickme Clicker InterruptArg.
+    linkto Clicker "Croad01" "Croad01" 2856 7439.
+    interruptset NPCClickHandle "EntranceClick" 1 Entrance "onEntranceClick".
+close
+
+;open [onExitClick];킹퀘 매칭을 위한 주석 처리
+;    var Clicker 0.;킹퀘 매칭을 위한 주석 처리
+;    whoclickme Clicker InterruptArg.;킹퀘 매칭을 위한 주석 처리
+;    linkto Clicker "Croad01" "Croad01" 2856 7439.;킹퀘 매칭을 위한 주석 처리
+;    interruptset NPCClickHandle "ExitClick" 1 Exit "onExitClick".;킹퀘 매칭을 위한 주석 처리
+;close;킹퀘 매칭을 위한 주석 처리
+
+open [onBossDead]
+    suicide all.
+    break "WaitKillBoss".
+close
+
+open [onOpenPrison]
+	var Slot         ""
+    	OpenerHandle "".
+
+    whoclickme OpenerHandle InterruptArg.
+    invensearch Slot OpenerHandle Key.
+
+    if Slot =!= ""
+    then open
+        itemerase OpenerHandle Key 1.
+        break "WaitOpenPrison".
+    close
+    else open
+        interruptset NPCClickHandle "" 1 DoorHandle "onOpenPrison".
+    close
+close
+
+open [onTick0]
+    var Total 0
+        Except 0
+        Have 0.
+
+    Total = @Count("all").
+    Except = @Count("Lab_Slime").
+
+    if Except > 0
+    then open
+        HasAbstate Have TimeAtkHandle "StaTimeAttackMini" 1.
+
+        if Have == 1
+        then open
+            Total = Total - Except.
+        close
+        else open
+            if Warn == 1
+            then open
+                HasAbstate Have TimeAtkHandle "StaTimeAttackMini" 2.
+            close
+        close
+        
+    	if Have == 0
+	    then open
+            if Warn == 1
+            then open
+            	BroadcastCode all "ERR_NOERR_TIMEATK_EXPLODE".
+                Warn = 0.
+                MissCount = MissCount + 1.
+                interrupterase "AwakeWarning".
+                interrupterase "AwakeWarning2".
+            close
+	    close
+    close
+    
+    if Total == 0
+    then open
+    	Warn = 1.
+        break "WaitClearStage".
+    close
+    else open
+    	if Except > 0
+        then open
+        	interruptset Sec "Tick" 1 1 "onTick0".
+        close
+        else open
+        	interruptset Sec "Tick" 1 10 "onTick0".
+        close
+    close
+close
+
+open [onTick]
+    var Total 0
+        Except 0
+        Have 0.
+
+    Total = @Count("all").
+    Except = @Count("Lab_19").
+
+    if Except > 0
+    then open
+        HasAbstate Have TimeAtkHandle "StaTimeAttack" 1.
+
+        if Have == 1
+        then open
+            Total = Total - Except.
+        close
+        else open
+            if Warn == 1
+            then open
+                HasAbstate Have TimeAtkHandle "StaTimeAttack" 2.
+            close
+        close
+        
+    	if Have == 0
+	    then open
+            if Warn == 1
+            then open
+                BroadcastCode all "ERR_NOERR_TIMEATK_EXPLODE".
+                Warn = 0.
+                MissCount = MissCount + 1.
+                chatwin "Lab_19" "T3_02_TA01".
+                pause Sec 2.
+                chatwin "Lab_19" "T3_02_TA02".
+                interrupterase "AwakeWarning".
+                interrupterase "AwakeWarning2".
+            close
+	    close
+    close
+    
+    if Total == 0
+    then open
+        Warn = 1.
+        break "WaitClearStage".
+    close
+    else open
+    	if Except > 0
+        then open
+        	interruptset Sec "Tick" 1 1 "onTick".
+        close
+        else open
+        	interruptset Sec "Tick" 1 10 "onTick".
+        close
+    close
+close
+
+open [onTick2]
+    var Total 0
+        Except 0
+        Have 0.
+
+    Total = @Count("all").
+    Except = @Count("Lab_23").
+
+    if Except > 0
+    then open
+        HasAbstate Have TimeAtkHandle "StaTimeAttack" 1.
+
+        if Have == 1
+        then open
+            Total = Total - Except.
+        close
+        else open
+            if Warn == 1
+            then open
+                HasAbstate Have TimeAtkHandle "StaTimeAttack" 2.
+            close
+        close
+        
+    	if Have == 0
+	    then open
+            if Warn == 1
+            then open
+                BroadcastCode all "ERR_NOERR_TIMEATK_EXPLODE".
+                Warn = 0.
+                MissCount = MissCount + 1.
+              	chatwin "Lab_23" "T3_07_TA01".
+               	pause Sec 2.
+               	chatwin "Lab_23" "T3_07_TA02".
+                interrupterase "AwakeWarning".
+                interrupterase "AwakeWarning2".
+            close
+	    close
+    close
+    
+    if Total == 0
+    then open
+        Warn = 1.
+        break "WaitClearStage".
+    close
+    else open
+    	if Except > 0
+        then open
+        	interruptset Sec "Tick" 1 1 "onTick2".
+        close
+        else open
+        	interruptset Sec "Tick" 1 10 "onTick2".
+        close
+    close
+close
+
+open [onHelpUs]
+	var num 1.
+    num = @Random(1 6).
+
+    NPCChatNoFacecut Prison "T3_11_CHILD0" % num.
+
+	interruptset Sec "HelpUs" 1 10 "onHelpUs".
+close
+
+
+; Function
+
+;open [ExitGateOpen]; 킹퀘 매칭 작업으로 인한 주석처리
+;    npcstand Exit "Lab_Gate" 1178 7727 0 1000 "Normal".; 킹퀘 매칭 작업으로 인한 주석처리
+;    interruptset NPCClickHandle "ExitClick" 1 Exit "onExitClick".; 킹퀘 매칭 작업으로 인한 주석처리
+;close
+
+
+; Pattern
+
+open [Pattern_2]
+    ; Normal
+    regengroup "Tower03" "RGN_T3_02_02".
+    regengroup "Tower03" "RGN_T3_02_03".
+    regengroup "Tower03" "RGN_T3_02_04".
+    regengroup "Tower03" "RGN_T3_02_05".
+    regengroup "Tower03" "RGN_T3_02_06".
+
+    call "WaitClearStage".
+close
+
+open [After_Pattern_2]
+    chatwin "RouSkillRubi" "T3_02_01".
+    pause Sec 2.
+    chatwin "UruGuildLump" "T3_02_02".
+    pause Sec 2.
+    chatwin "UruSmithHans" "T3_02_03".
+    
+    interruptset AreaEntry "" 1 "TimeStart01" "onEnterArea".
+
+    open [BeforeContact]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close
+close
+
+open [Pattern_3]
+    ; Normal
+    regengroup "Tower03" "RGN_T3_03_02".
+    regengroup "Tower03" "RGN_T3_03_03".
+    regengroup "Tower03" "RGN_T3_03_04".
+    regengroup "Tower03" "RGN_T3_03_05".
+    regengroup "Tower03" "RGN_T3_03_06".
+    regengroup "Tower03" "RGN_T3_03_07".
+    regengroup "Tower03" "RGN_T3_03_08".
+
+    mobregen TimeAtkHandle "Lab_Slime" CurrentGenX CurrentGenY 0 1000 "Normal".
+    abstateset TimeAtkHandle "StaTimeAttackMini" 1 180000.
+
+    call "WaitClearStage".
+    if 0 < @Count("Lab_Slime")
+    then open
+    	abstateset TimeAtkHandle "StaImmortal" 1 180000.
+	    abstatereset TimeAtkHandle "StaTimeAttackMini".
+	    pause Sec 1.
+    	suicide TimeAtkHandle.
+    close
+    TimeAtkHandle = 0.
+close
+
+open [After_Pattern_3]
+    chatwin "EldGuardCaptainShutian" "T3_03_01".
+    pause Sec 2.
+    chatwin "EldGuardCaptainShutian" "T3_03_02".
+
+    interruptset AreaEntry "" 1 "TimeStart02" "onEnterArea".
+
+    open [BeforeContact]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close
+close
+
+open [Pattern_4]
+    ; TimeAttack
+    regengroup "Tower03" "RGN_T3_04_02".
+;    regengroup "Tower03" "RGN_T3_04_03".
+;    regengroup "Tower03" "RGN_T3_04_04".
+    regengroup "Tower03" "RGN_T3_04_05".
+    regengroup "Tower03" "RGN_T3_04_06".
+    regengroup "Tower03" "RGN_T3_04_07".
+    regengroup "Tower03" "RGN_T3_04_08".
+    regengroup "Tower03" "RGN_T3_04_09".
+    regengroup "Tower03" "RGN_T3_04_10".
+    regengroup "Tower03" "RGN_T3_04_11".
+    regengroup "Tower03" "RGN_T3_04_12".
+    regengroup "Tower03" "RGN_T3_04_13".
+    regengroup "Tower03" "RGN_T3_04_14".
+
+    mobregen TimeAtkHandle "Lab_19" CurrentGenX CurrentGenY 0 1000 "Normal".
+    abstateset TimeAtkHandle "StaTimeAttack" 1 180000.
+
+    call "WaitClearStage".
+    if 0 < @Count("Lab_19")
+    then open
+	    abstateset TimeAtkHandle "StaImmortal" 1 180000.
+	    abstatereset TimeAtkHandle "StaTimeAttack".
+	    pause Sec 1.
+    	suicide TimeAtkHandle.
+    close
+    TimeAtkHandle = 0.
+close
+
+open [After_Pattern_4]
+    chatwin "Lab_Guardian01" "T3_04_01".
+    pause Sec 2.
+    chatwin "Lab_Guardian01" "T3_04_02".
+    pause Sec 2.
+    chatwin "EldScoSkillDeikid" "T3_04_03".
+
+    interruptset AreaEntry "" 1 "TimeStart03" "onEnterArea".
+
+    open [BeforeContact]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close    
+close
+
+open [Pattern_5]
+    ; TimeAttack
+;    regengroup "Tower03" "RGN_T3_05_02".
+;    regengroup "Tower03" "RGN_T3_05_03".
+    regengroup "Tower03" "RGN_T3_05_04".
+    regengroup "Tower03" "RGN_T3_05_05".
+    regengroup "Tower03" "RGN_T3_05_06".
+    regengroup "Tower03" "RGN_T3_05_07".
+    regengroup "Tower03" "RGN_T3_05_08".
+    regengroup "Tower03" "RGN_T3_05_09".
+    regengroup "Tower03" "RGN_T3_05_10".
+    regengroup "Tower03" "RGN_T3_05_11".
+    regengroup "Tower03" "RGN_T3_05_12".
+
+    mobregen TimeAtkHandle "Lab_19" CurrentGenX CurrentGenY 0 1000 "Normal".
+    abstateset TimeAtkHandle "StaTimeAttack" 1 180000.
+
+    call "WaitClearStage".
+    if 0 < @Count("Lab_19")
+    then open
+	    abstateset TimeAtkHandle "StaImmortal" 1 180000.
+	    abstatereset TimeAtkHandle "StaTimeAttack".
+	    pause Sec 1.
+    	suicide TimeAtkHandle.
+    close
+    TimeAtkHandle = 0.
+close
+
+open [After_Pattern_5]
+    chatwin "Lab_20" "T3_05_01".
+    pause Sec 2.
+    chatwin "Lab_20" "T3_05_02".
+    pause Sec 2.
+    chatwin "EldScoSkillDeikid" "T3_05_03".
+close
+
+open [Pattern_6]
+    ; MiddleBoss
+    regengroup "Tower03" "RGN_T3_06_02".
+;    regengroup "Tower03" "RGN_T3_06_03".
+;    regengroup "Tower03" "RGN_T3_06_04".
+    regengroup "Tower03" "RGN_T3_06_05".
+
+    mobregen TargetHandle "Lab_20" CurrentGenX CurrentGenY 0 1000 "Normal".
+    interruptset HPLow "Boss1_HP50Per" 1 TargetHandle 500 "onBoss1_HP50Per".
+    TargetObject = "Lab_20".
+
+    call "WaitKillBoss".
+	
+	TargetHandle = 0.
+	
+    interrupterase "TickBoss1Summon".
+	interrupterase "Boss1_HP50Per_Upper".
+close
+
+open [After_Pattern_6]
+    chatwin "Lab_20" "T3_06_01".
+    pause Sec 2.
+    chatwin "Lab_20" "T3_06_02".
+    pause Sec 2.
+    chatwin "Lab_20" "T3_06_03".
+close
+
+open [onBoss1_HP50Per]
+	if TargetHandle > 0
+	then open
+		call "onTickBoss1Summon".
+		interruptset HPUpper "Boss1_HP50Per_Upper" 1 TargetHandle 500 "onBoss1_HP50Per_Upper".
+	close
+close
+
+open [onBoss1_HP50Per_Upper]
+    interrupterase "TickBoss1Summon".
+    interruptset HPLow "Boss1_HP50Per" 1 TargetHandle 500 "onBoss1_HP50Per".
+close
+
+open [onTickBoss1Summon]
+	if TargetHandle > 0
+	then open
+		;NPCChatNoFacecut TargetHandle "ChatC32_1".
+		chatwin "Lab_20" "T3_06_SUMMON".
+		pause Sec 1.
+		chatwin "EldScoSkillDeikid" "T3_06_SUMMON_RE".
+		summonmob TargetHandle "Lab_Ghost02" 2.
+		interruptset Sec "TickBoss1Summon" 1 180 "onTickBoss1Summon".
+	close
+close
+
+open [Pattern_7]
+    ; Normal
+    regengroup "Tower03" "RGN_T3_07_02".
+    regengroup "Tower03" "RGN_T3_07_03".
+    regengroup "Tower03" "RGN_T3_07_04".
+    regengroup "Tower03" "RGN_T3_07_05".
+    regengroup "Tower03" "RGN_T3_07_06".
+    regengroup "Tower03" "RGN_T3_07_07".
+;    regengroup "Tower03" "RGN_T3_07_08".
+
+    call "WaitClearStage".
+close
+
+open [After_Pattern_7]
+    chatwin "Lab_25" "T3_07_01".
+    pause Sec 2.
+    chatwin "Lab_25" "T3_07_02".
+    pause Sec 2.
+    chatwin "EldWarSkillMarty" "T3_07_03".
+close
+
+open [Pattern_8]
+    ; Normal
+    regengroup "Tower03" "RGN_T3_08_02".
+    regengroup "Tower03" "RGN_T3_08_03".
+    regengroup "Tower03" "RGN_T3_08_04".
+    regengroup "Tower03" "RGN_T3_08_05".
+    regengroup "Tower03" "RGN_T3_08_06".
+    regengroup "Tower03" "RGN_T3_08_07".
+    regengroup "Tower03" "RGN_T3_08_08".
+;    regengroup "Tower03" "RGN_T3_08_09".
+
+    call "WaitClearStage".
+close
+
+open [After_Pattern_8]
+    chatwin "Lab_25" "T3_08_01".
+    pause Sec 2.
+    chatwin "Lab_25" "T3_08_02".
+
+    interruptset AreaEntry "" 1 "TimeStart04" "onEnterArea".
+
+    open [BeforeContact]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close
+close
+
+open [Pattern_9]
+    ; TimeAttack
+    regengroup "Tower03" "RGN_T3_09_02".
+    regengroup "Tower03" "RGN_T3_09_03".
+;    regengroup "Tower03" "RGN_T3_09_04".
+;    regengroup "Tower03" "RGN_T3_09_05".
+    regengroup "Tower03" "RGN_T3_09_06".
+    regengroup "Tower03" "RGN_T3_09_07".
+    regengroup "Tower03" "RGN_T3_09_08".
+    regengroup "Tower03" "RGN_T3_09_09".
+    regengroup "Tower03" "RGN_T3_09_10".
+    regengroup "Tower03" "RGN_T3_09_11".
+    regengroup "Tower03" "RGN_T3_09_12".
+    regengroup "Tower03" "RGN_T3_09_13".
+
+
+    mobregen TimeAtkHandle "Lab_23" CurrentGenX CurrentGenY 0 1000 "Normal".
+    abstateset TimeAtkHandle "StaTimeAttack" 1 180000.
+
+    call "WaitClearStage".
+    if 0 < @Count("Lab_23")
+    then open
+	    abstateset TimeAtkHandle "StaImmortal" 1 180000.
+	    abstatereset TimeAtkHandle "StaTimeAttack".
+	    pause Sec 1.
+    	suicide TimeAtkHandle.
+    close
+    TimeAtkHandle = 0.
+close
+
+open [After_Pattern_9]
+    chatwin "EldWarSkillMarty" "T3_09_01".
+    pause Sec 2.
+    chatwin "EldScoSkillDeikid" "T3_09_02".
+
+    interruptset AreaEntry "" 1 "TimeStart05" "onEnterArea".
+
+    open [BeforeContact]
+        infinite
+        open
+            waitinterrupt InterruptBlock "InterruptArg".
+            call InterruptBlock.
+        close
+    close
+close
+
+open [Pattern_10]
+    ; TimeAttack
+    regengroup "Tower03" "RGN_T3_10_02".
+;    regengroup "Tower03" "RGN_T3_10_03".
+;    regengroup "Tower03" "RGN_T3_10_04".
+    regengroup "Tower03" "RGN_T3_10_05".
+;    regengroup "Tower03" "RGN_T3_10_06".
+    regengroup "Tower03" "RGN_T3_10_07".
+    regengroup "Tower03" "RGN_T3_10_08".
+    regengroup "Tower03" "RGN_T3_10_09".
+    regengroup "Tower03" "RGN_T3_10_10".
+    regengroup "Tower03" "RGN_T3_10_11".
+    regengroup "Tower03" "RGN_T3_10_12".
+    regengroup "Tower03" "RGN_T3_10_13".
+    regengroup "Tower03" "RGN_T3_10_14".
+    regengroup "Tower03" "RGN_T3_10_15".
+    regengroup "Tower03" "RGN_T3_10_17".
+    regengroup "Tower03" "RGN_T3_10_18".
+
+    mobregen TimeAtkHandle "Lab_23" CurrentGenX CurrentGenY 0 1000 "Normal".
+    abstateset TimeAtkHandle "StaTimeAttack" 1 180000.
+
+    call "WaitClearStage".
+    if 0 < @Count("Lab_23")
+    then open
+	    abstateset TimeAtkHandle "StaImmortal" 1 180000.
+	    abstatereset TimeAtkHandle "StaTimeAttack".
+	    pause Sec 1.
+    	suicide TimeAtkHandle.
+    close
+    TimeAtkHandle = 0.
+close
+
+open [After_Pattern_10]
+    chatwin "Lab_25" "T3_10_01".
+    pause Sec 2.
+    chatwin "Lab_25" "T3_10_02".
+    pause Sec 2.
+    chatwin "EldGuardCaptainShutian" "T3_10_03".
+    pause Sec 2.
+    chatwin "EldGuardCaptainShutian" "T3_10_04".
+close
+
+open [Pattern_11]
+    ; Boss
+    regengroup "Tower03" "RGN_T3_11_02".
+;    regengroup "Tower03" "RGN_T3_11_03".
+    regengroup "Tower03" "RGN_T3_11_04".
+;    regengroup "Tower03" "RGN_T3_11_05".
+;    regengroup "Tower03" "RGN_T3_11_06".
+;    regengroup "Tower03" "RGN_T3_11_07".
+;    regengroup "Tower03" "RGN_T3_11_08".
+
+    mobregen TargetHandle "Lab_25" CurrentGenX CurrentGenY 0 1000 "Normal".
+    interruptset HPLow "Boss2_HP75Per" 1 TargetHandle 750 "onBoss2_HP75Per".
+    interruptset HPLow "Boss2_HP70Per" 1 TargetHandle 700 "onBoss2_HP70Per".
+    interruptset HPLow "Boss2_HP25Per" 1 TargetHandle 250 "onBoss2_HP25Per".
+    TargetObject = "Lab_25".
+    
+    call "onHelpUs".
+
+    call "WaitKillBoss".
+	
+	TargetHandle = 0.
+
+    interrupterase "TickBoss2Summon1".
+    interrupterase "TickBoss2Summon2".
+    interrupterase "HelpUs".
+	interrupterase "Boss2_HP70Per_Upper".
+	interrupterase "Boss2_HP25Per_Upper".
+close
+
+open [onBoss2_HP75Per]
+	if TargetHandle > 0
+	then open
+		chatwin "Lab_25" "T3_11_SUMMON01".
+		pause Sec 1.
+		chatwin "UruSkillChyburn" "T3_11_SUMMON01_RE".
+		summonmob TargetHandle "Lab_Battle02" 1.
+	close
+close
+
+open [onBoss2_HP70Per]
+	if TargetHandle > 0
+	then open
+		call "onTickBoss2Summon1".
+		interruptset HPUpper "Boss2_HP70Per_Upper" 1 TargetHandle 700 "onBoss2_HP70Per_Upper".
+	close
+close
+
+open [onBoss2_HP70Per_Upper]
+    interrupterase "TickBoss2Summon1".
+    interruptset HPLow "Boss2_HP70Per" 1 TargetHandle 700 "onBoss2_HP70Per".
+close
+
+open [onBoss2_HP25Per]
+    interrupterase "TickBoss2Summon1".
+	if TargetHandle > 0
+	then open
+		call "onTickBoss2Summon2".
+		interruptset HPUpper "Boss2_HP25Per_Upper" 1 TargetHandle 250 "onBoss2_HP25Per_Upper".
+	close
+close
+
+open [onBoss2_HP25Per_Upper]
+    interrupterase "TickBoss2Summon2".
+    interruptset HPLow "Boss2_HP25Per" 1 TargetHandle 250 "onBoss2_HP25Per".
+close
+
+open [onTickBoss2Summon1]
+	if TargetHandle > 0
+	then open
+		chatwin "Lab_25" "T3_11_SUMMON02".
+		pause Sec 1.
+		chatwin "RouSkillRubi" "T3_11_SUMMON02_RE".
+		summonmob TargetHandle "Lab_Ghost02" 2.
+		interruptset Sec "TickBoss2Summon1" 1 180 "onTickBoss2Summon1".
+	close
+close
+
+open [onTickBoss2Summon2]
+	if TargetHandle > 0
+	then open
+		chatwin "Lab_25" "T3_11_SUMMON03".
+		pause Sec 1.
+		chatwin "RouSkillRubi" "T3_11_SUMMON03_RE".
+		summonmob TargetHandle "Lab_Snake_In" 2.
+		interruptset Sec "TickBoss2Summon2" 1 180 "onTickBoss2Summon2".
+	close
+close
+
+open [onEnterArea]
+    BroadcastCode all "ERR_NOERR_TIMEATK_START".
+    interruptset Sec "AwakeWarning" 1 150 "onWarning".
+    interruptset Sec "AwakeWarning2" 1 120 "onWarning2".
+    break "BeforeContact".
+close
+
+open [onWarning]
+    BroadcastCode all "ERR_NOERR_TIMEATK_WARNING".
+close
+
+open [onWarning2]
+    BroadcastCode all "ERR_NOERR_TIMEATK_WARNING_2".
+close

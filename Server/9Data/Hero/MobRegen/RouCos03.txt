@@ -1,0 +1,328 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		RouCos03_001	N	6208	5669	0	0	300										
+#record		RouCos03_002	N	5909	5187	0	0	440										
+#record		RouCos03_003	N	6959	3631	0	0	300										
+#record		RouCos03_004	N	5770	4155	0	0	384										
+#record		RouCos03_005	N	6457	3714	0	0	300										
+#record		RouCos03_008	N	8365	4223	0	0	300										
+#record		RouCos03_009	N	6023	3589	0	0	300										
+#record		RouCos03_010	N	7351	3455	0	0	300										
+#record		RouCos03_011	N	6468	3341	0	0	300										
+#record		RouCos03_012	N	7400	3017	0	0	300										
+#record		RouCos03_013	N	6955	3174	0	0	300										
+#record		RouCos03_016	N	8022	5483	0	0	300										
+#record		RouCos03_017	N	8795	5179	552	266	0										
+#record		RouCos03_018	N	8130	4957	0	0	300										
+#record		RouCos03_019	N	7355	5579	0	0	300										
+#record		RouCos03_020	N	7546	4439	0	0	300										
+#record		RouCos03_021	N	7185	4790	0	0	300										
+#record		RouCos03_023	N	12450	2969	796	84	0										
+#record		RouCos03_024	N	8321	3014	0	0	300										
+#record		RouCos03_025	N	11585	3012	1024	87	7										
+#record		RouCos03_026	N	9543	3195	0	0	300										
+#record		RouCos03_027	N	8440	3455	0	0	300										
+#record		RouCos03_028	N	8925	3168	0	0	300										
+#record		RouCos03_029	N	9449	3669	0	0	300										
+#record		RouCos03_032	N	6916	11243	0	0	412										
+#record		RouCos03_033	N	7292	11703	0	0	433										
+#record		RouCos03_034	N	6371	11545	0	0	349										
+#record		RouCos03_035	N	6415	12043	0	0	419										
+#record		RouCos03_037	N	8056	10564	484	300	0										
+#record		RouCos03_038	N	9238	10427	394	346	-143										
+#record		RouCos03_039	N	10362	7325	0	0	391										
+#record		RouCos03_040	N	10308	6283	0	0	300										
+#record		RouCos03_041	N	6704	11648	440	134	-42										
+#record		RouCos03_042	N	10058	6780	0	0	300										
+#record		RouCos03_043	N	9973	5943	0	0	300										
+#record		RouCos03_044	N	11712	7180	564	14	0										
+#record		RouCos03_045	N	11890	6160	0	0	300										
+#record		RouCos03_046	N	12421	6197	0	0	229										
+#record		RouCos03_047	N	11488	5984	0	0	300										
+#record		RouCos03_048	N	12347	10059	0	0	461										
+#record		RouCos03_049	N	12234	10812	0	0	475										
+#record		RouCos03_050	N	11692	10476	0	0	573										
+#record		RouCos03_058	N	13862	12964	0	0	398										
+#record		RouCos03_059	N	11553	12229	0	0	545										
+#record		RouCos03_060	N	12498	13024	0	0	482										
+#record		RouCos03_061	N	10628	11555	0	0	552										
+#record		RouCos03_062	N	13859	12196	0	0	524										
+#record		RouCos03_063	N	8008	13965	0	0	391										
+#record		RouCos03_064	N	8786	14484	0	0	461										
+#record		RouCos03_065	N	9803	14746	0	0	461										
+#record		RouCos03_066	N	8948	15380	0	0	440										
+#record		RouCos03_067	N	7457	14576	0	0	377										
+#record		RouCos03_068	N	14541	11845	0	0	559										
+#record		RouCos03_069	N	12132	12560	0	0	447										
+#record		RouCos03_070	N	12626	15890	0	0	545										
+#record		RouCos03_071	N	11306	17378	0	0	594										
+#record		RouCos03_072	N	11908	17541	0	0	405										
+#record		RouCos03_073	N	12830	16449	0	0	433										
+#record		RouCos03_074	N	14802	15733	0	0	447										
+#record		RouCos03_075	N	12823	17753	0	0	419										
+#record		RouCos03_076	N	15263	17541	0	0	559										
+#record		RouCos03_077	N	14423	17268	0	0	447										
+#record		RouCos03_078	N	15872	16067	0	0	398										
+#record		RouCos03_079	N	14434	10441	0	0	524										
+#record		RouCos03_081	N	15257	6662	0	0	356										
+#record		RouCos03_082	N	15064	5657	0	0	300										
+#record		RouCos03_083	N	15949	6645	0	0	384										
+#record		RouCos03_084	N	15921	9989	681	83	9										
+#record		RouCos03_086	N	16504	6891	0	0	412										
+#record		RouCos03_087	N	15774	5450	0	0	440										
+#record		RouCos03_088	N	15471	10461	0	0	489										
+#record		RouCos03_089	N	13801	10233	0	0	475										
+#record		RouCos03_090	N	15099	10093	514	86	-171										
+#record		RouCos03_091	N	16811	6331	0	0	391										
+#record		RouCos03_092	N	16364	5214	0	0	489										
+#record		RouCos03_093	N	17924	10263	0	0	482										
+#record		RouCos03_094	N	16979	10707	0	0	545										
+#record		RouCos03_095	N	17096	3622	0	0	475										
+#record		RouCos03_096	N	17637	6050	0	0	447										
+#record		RouCos03_097	N	19099	11945	0	0	398										
+#record		RouCos03_098	N	17641	11164	0	0	454										
+#record		RouCos03_099	N	17909	4325	0	0	419										
+#record		RouCos03_100	N	17926	3603	0	0	412										
+#record		RouCos03_101	N	19234	5093	600	268	36										
+#record		RouCos03_102	N	18862	4538	0	0	405										
+#record		RouCos03_103	N	18526	11749	0	0	419										
+#record		RouCos03_104	N	18100	12231	0	0	384										
+#record		RouCos03_105	N	18973	11349	0	0	384										
+#record		RouCos03_106	N	18652	3999	0	0	370										
+#record		RouCos03_107	N	19439	3799	0	0	300										
+#record		RouCos03_108	N	19816	4666	0	0	405										
+#record		RouCos03_109	N	20102	11690	0	0	377										
+#record		RouCos03_110	N	19185	12460	0	0	377										
+#record		RouCos03_111	N	19583	4103	0	0	300										
+#record		RouCos03_112	N	20194	4167	0	0	300										
+#record		RouCos03_113	N	20238	12274	0	0	356										
+#record		RouCos03AreaPbox01	N	13711	6134	3840	117	16										
+#record		RouCos03AreaPbox02	N	12279	10728	5404	428	0										
+#record		FLOWER1	N	7948	4169	0	0	330										
+#record		FLOWER2	N	8904	4737	0	0	330										
+#record		FLOWER3	N	8354	4644	0	0	330										
+#record		FLOWER4	N	11569	6608	0	0	330										
+#record		FLOWER5	N	12331	6784	0	0	330										
+#record		FLOWER6	N	12932	6732	0	0	330										
+#record		FLOWER7	N	15417	6530	0	0	330										
+#record		FLOWER8	N	15898	6314	0	0	330										
+#record		FLOWER9	N	16461	5980	0	0	330										
+#record		FLOWER10	N	17120	5601	0	0	330										
+#record		HERB1	N	11585	6482	0	0	575										
+#record		HERB2	N	16208	5880	0	0	687										
+#record		WOOD4	N	8705	4635	0	0	736										
+#record		WOOD5	N	16380	5719	0	0	645										
+#record		MUSHROOM4	N	11166	6451	0	0	841										
+#record		MUSHROOM5	N	16314	5845	0	0	624										
+#record		STARFISH1	N	11118	12470	2301	90	-31										
+#record		CLAM1	N	15071	12006	1810	89	33										
+#record		RouCos03Guard01	N	5398	4741	0	0	19										
+#record		RouCos03Guard02	N	19652	7387	0	0	11										
+#record		RouCos03_H1_01	N	7229	4631	0	0	60										
+#record		RouCos03_H1_02	N	7540	3146	0	0	123										
+#record		RouCos03_H1_03	N	9076	11761	66	89	0										
+#record		RouCos03_H1_04	N	9958	6463	102	53	-10										
+#record		RouCos03_H1_05	N	15294	6807	119	109	0										
+#record		RouCos03_H1_06	N	19412	5056	54	116	200										
+#record		RouCos03_H1_07	N	12354	17796	0	0	144										
+#record		RouCos03_H2_01	N	7521	5664	0	0	60										
+#record		RouCos03_H2_02	N	8567	3042	0	0	109										
+#record		RouCos03_H2_03	N	9217	10174	95	82	0										
+#record		RouCos03_H2_04	N	11012	7096	80	49	-10										
+#record		RouCos03_H2_05	N	17626	6173	108	65	0										
+#record		RouCos03_H2_06	N	17432	3941	42	100	200										
+#record		RouCos03_H2_07	N	15002	17039	0	0	144										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		RouCos03_001	ScareImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_002	ScareImp	12	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_003	ScareImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_004	ScareImp	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_005	ScareImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_008	BoneImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_009	BoneImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_010	BoneImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_011	BoneImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_012	BoneImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_013	BoneImp	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_016	JokeKebing	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_016	CaveKebing	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_017	JokeKebing	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_018	JokeKebing	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_019	JokeKebing	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_020	JokeKebing	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_021	JokeKebing	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_023	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_023	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_024	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_024	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_025	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_025	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_026	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_026	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_027	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_027	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_028	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_028	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_029	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_029	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_032	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_032	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_033	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_033	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_034	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_034	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_035	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_035	Kebing	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_035	KebingSpeeder	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_037	Prock	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_037	SmartPhino	14	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_038	Prock	6	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_038	SmartPhino	14	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_039	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_039	SmartPhino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_040	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_040	SmartPhino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_041	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_041	SmartPhino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_042	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_042	SmartPhino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_043	Prock	4	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_043	SmartPhino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_043	AlkemisBook02	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_044	Phino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_045	Phino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_046	Phino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_047	Phino	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_048	Phino	14	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_049	Phino	14	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_050	Phino	14	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_050	BigPhinoFlie	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_058	MaraCrew	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_059	MaraCrew	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_060	MaraCrew	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_061	MaraCrew	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_062	MaraCrew	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_063	MaraCrew	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_064	MaraCrew	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_065	MaraElite	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_065	AlkemisBook03	2	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouCos03_066	MaraElite	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_067	MaraElite	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_068	MaraElite	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_069	MaraElite	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_070	MaraElite	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_071	MaraElite	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_072	MaraSailor	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_073	MaraSailor	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_074	MaraSailor	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_075	MaraSailor	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_076	MaraSailor	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_077	MaraSailor	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_078	MaraSailor	8	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03_078	MaraCommando	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_079	Hob	5	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_079	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_081	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_081	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_082	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_082	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_083	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_083	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_084	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_084	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_086	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_086	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_087	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_087	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_088	Hob	5	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_088	MiniLips	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_089	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_089	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_090	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_090	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_091	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_091	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_092	Hob	3	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_092	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_092	HobFighter	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouCos03_093	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_093	SubBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_094	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_094	SubBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_095	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_095	SubBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_096	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_096	SubBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_097	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_097	SubBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_098	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_098	SubBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_099	MiniLips	2	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_099	SubBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_100	Boar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_101	Boar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_102	Boar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_103	Boar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_104	Boar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_105	Boar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_106	Boar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_107	SharpBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_108	SharpBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_109	SharpBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_110	SharpBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_111	SharpBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_112	SharpBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03_113	SharpBoar	4	0	12	3	20	-3	20	-2	60	5	180	3	240	4	
+#record		RouCos03AreaPbox01	PresentBox5	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		RouCos03AreaPbox02	PresentBox6	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		FLOWER1	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER2	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER3	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER4	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER5	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER6	FLOWER4	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER7	FLOWER4	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER8	FLOWER4	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER9	FLOWER3	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		FLOWER10	FLOWER4	2	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		HERB1	HERB3	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		HERB2	HERB4	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		WOOD4	WOOD4	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		WOOD5	WOOD5	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		MUSHROOM4	MUSHROOM4	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		MUSHROOM5	MUSHROOM5	10	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		STARFISH1	STARFISH1	20	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		CLAM1	CLAM1	20	0	3	1	6	-2	20	-1	60	5	180	1	240	2	
+#record		RouCos03Guard01	GuardLue00	1	0	12	7	17	-3	7	-2	9	5	15	6	17	0	
+#record		RouCos03Guard02	GuardLue00	1	0	12	7	17	-3	7	-2	9	5	15	6	17	0	
+#record		RouCos03_H1_01	CaveKebing	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H1_02	KebingSpeeder	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H1_03	AlkemisBook02	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H1_04	BigPhinoFlie	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H1_05	HobFighter	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouCos03_H1_06	AlkemisBook03	2	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouCos03_H1_07	MaraCommando01	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H2_01	CaveKebing	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H2_02	KebingSpeeder	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H2_03	AlkemisBook02	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H2_04	BigPhinoFlie	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+#record		RouCos03_H2_05	HobFighter	1	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouCos03_H2_06	AlkemisBook03	2	0	20	5	40	-15	50	-10	60	10	180	10	240	10	
+#record		RouCos03_H2_07	MaraCommando01	2	0	5	3	10	-2	50	-1	100	10	180	2	240	2	
+																		
+#end																		

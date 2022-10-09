@@ -1,0 +1,111 @@
+
+
+																			
+
+
+#Delimiter	\x20	
+																			
+																			
+#Table	SkillBreedMob																		
+																			
+	
+	
+	
+	
+	
+	
+#ColumnType	Byte	String[33]	String[33]	BYTE	Index	Index	DWRD	String[33]	Index	DWRD	WORD	WORD	String[33]	Index	Index	Index	Byte		
+#ColumnName	Serial	Skill	MobIndex	SummonNum	AI	RegenLoc	LifeTime	AbState	TriggerObject	TriggerRange	Delay	ExplNo	Explosion	ExplosionWhere	Debuff	MultiTarget	CheckSum		
+#Record	0	Entrap01	EntrapFlower	1	Root	Caster	150000	StaEntrapHide	Enemy	100	0	1	EntrapFlowerWide	MyObj	-	-	0	
+#Record	1	Entrap02	BlindFlower	1	Root	Caster	150000	StaEntrapHide	Enemy	100	0	1	BlindFlowerWide	MyObj	-	-	1	
+#Record	2	Entrap03	SlowFlower	1	Root	Caster	150000	StaEntrapHide	Enemy	100	0	1	SlowFlowerWide	MyObj	-	-	2	
+#Record	3	Entrap04	BloodFlower	1	Root	Caster	150000	StaEntrapHide	Enemy	100	0	1	BloodFlowerWide	MyObj	-	-	3	
+#Record	4	Entrap05	ShockFlower	1	Root	Caster	150000	StaEntrapHide	Enemy	100	0	1	ShockFlowerWide	MyObj	-	-	4	
+#Record	5	SlowShot01	SlowShot_arrow	1	Chase	Caster	60000	-	CasterTarget	30	0	1	SlowShot_arrow1	TargetObj	-	-	5	
+#Record	6	SlowShot02	SlowShot_arrow1	1	Chase	Caster	60000	-	CasterTarget	30	0	1	SlowShot_arrow2	TargetObj	-	-	6	
+#Record	7	SlowShot03	SlowShot_arrow2	1	Chase	Caster	60000	-	CasterTarget	30	0	1	SlowShot_arrow3	TargetObj	-	-	7	
+#Record	8	SlowShot04	SlowShot_arrow3	1	Chase	Caster	60000	-	CasterTarget	30	0	1	SlowShot_arrow4	TargetObj	-	-	8	
+#Record	9	SlowShot05	SlowShot_arrow4	1	Chase	Caster	60000	-	CasterTarget	30	0	1	SlowShot_arrow5	TargetObj	-	-	9	
+#Record	10	Summon01	Skeleton_sum	3	Rampage	Target	60000	-	-	0	0	0	-	-	Dead	-	10	
+#Record	11	Summon02	Skeleton_sum1	3	Rampage	Target	60000	-	-	0	0	0	-	-	Dead	-	11	
+#Record	12	Summon03	Skeleton_sum2	3	Rampage	Target	60000	-	-	0	0	0	-	-	Dead	-	12	
+#Record	13	Summon04	Skeleton_sum3	3	Rampage	Target	60000	-	-	0	0	0	-	-	Dead	-	13	
+#Record	14	Summon05	Skeleton_sum4	3	Rampage	Target	60000	-	-	0	0	0	-	-	Dead	-	14	
+#Record	15	FirePole01	FirePole_sum	1	Roam	Target	150000	-	Always	0	7000	30000	FlameWorkerWide	MyObj	Dead	-	15		
+#Record	16	FirePole02	WindWorker	1	Roam	Target	150000	-	Always	0	7000	30000	WindWorkerWide	MyObj	Dead	-	16		
+#Record	17	FirePole03	IceWorker	1	Roam	Target	150000	-	Always	0	7000	30000	IceWorkerWide	MyObj	Dead	-	17		
+#Record	18	FirePole04	PoisonWorker	1	Roam	Target	150000	-	Always	0	7000	30000	PoisonWorkerWide	MyObj	Dead	-	18		
+#Record	19	FirePole05	SenseWorker	1	Rampage	Target	150000	-	Always	0	7000	30000	SenseWorkerWide	MyObj	Dead	-	19		
+#Record	20	PsySumSkill01	PsykenDog	1	Rampage	Caster	0	-	-	0	10000	10000	-	-	-	-	20		
+#Record	21	IDNerpaSlowShot01	SlowShot_arrow1	1	Chase	Caster	60000	-	CasterTarget	30	0	1	SlowShot_arrow2	TargetObj	-	-	21	
+#Record	22	IDFireSellPole01	FirePole_sum	1	Roam	Target	60000	-	Always	0	10000	10000	FlameWorkerWide	MyObj	Dead	-	22		
+#Record	23	KamaSummonSkill1	KQ_SK_Sum_Skel01	1	Rampage	Caster	90000	-	-	0	0	0	-	-	-	-	23		
+#Record	24	KamaSummonSkill2	KQ_SK_Sum_Skel02	1	Rampage	Caster	90000	-	-	0	0	0	-	-	-	-	24		
+#Record	25	KamaSummonSkill3	KQ_SK_Sum_ElecSkel01	1	Rampage	Caster	90000	-	-	0	0	0	-	-	-	-	25		
+#Record	26	KamaSummonSkill4	KQ_SK_Sum_ElecSkel02	1	Rampage	Caster	90000	-	-	0	0	0	-	-	-	-	26		
+#Record	27	KalBanSummonSkill1	KQ_SK_Sum_ElecSkel02	5	Rampage	Caster	180000	-	-	0	0	0	-	-	-	-	27		
+#Record	28	KamaSummonSkill100	KQ_SK_Sum_SkelArcher01	1	Rampage	Caster	90000	-	-	0	0	0	-	-	-	-	28		
+#Record	29	KamaSummonSkill300	KQ_SK_Sum_SkelArcher02	1	Rampage	Caster	90000	-	-	0	0	0	-	-	-	-	29		
+#Record	30	CallBoogyGuardian	ID_Sum_BoogyGuard	1	Rampage	Caster	150000	-	-	0	0	0	-	-	-	-	30	
+#Record	31	CallNestGuardian	ID_NestGuardian	2	Rampage	Caster	150000	-	-	0	0	0	-	-	-	-	31	
+#Record	32	CallNestGuard	ID_NestGuard	15	Rampage	Caster	150000	-	-	0	0	0	-	-	-	-	32	
+#Record	33	KBoogyEntangle	BombBoogy01	2	Roam	Target	15100	-	Always	0	15000	2	BombBoogy01Bomb	MyObj	Dead	-	33	
+#Record	34	KBoogyToggle01	BombBoogy02	2	Roam	Target	15100	-	Always	0	15000	2	BombBoogy02Bomb	MyObj	Dead	-	34	
+#Record	35	KBoogyToggle02	BombBoogy03	2	Roam	Target	15100	-	Always	0	15000	2	BombBoogy03Bomb	MyObj	Dead	-	35	
+#Record	36	KBoogySumon04	BombBoogy04	2	Roam	Target	60000	-	Always	0	0	1	CallBoogyGuardian	MyObj	Dead	-	36	
+#Record	37	ECrabSummon	ID_Sum_NestCrab	1	Rampage	Caster	180000	-	-	0	0	0	-	-	-	-	37	
+#Record	38	T_Kamaris00_Sum0	T_FirePole_sum	1	Chase	Caster	60000	-	CasterTarget	30	0	1	T_FirePole_sumPowerHit	TargetObj	-	-	38	
+#Record	39	FirePameliaSum	DevilHoneying	5	Rampage	Target	1500000	-	-	0	0	0	-	-	Dead	-	39	
+#Record	40	KillerHideSum	KillerHideShadow	3	Rampage	Caster	1500000	-	-	0	0	0	-	-	Dead	-	40	
+#Record	41	C_KQ_KamarisSummon	C_Sum_DarkBat01	5	Rampage	Caster	180000	-	-	0	0	0	-	-	-	-	41		
+#Record	42	DoppelgngerWishisSummon	Skeleton_sum	4	Rampage	Caster	180000	-	-	0	0	0	-	-	Dead	-	42	
+#Record	43	PsySumSkill01	Psy_PsykenDog	1	Rampage	Caster	0	-	-	0	10000	10000	-	-	-	-	43		
+#Record	44	MultiProtect01	MultiProtect	1	Root	Caster	0	-	-	0	0	0	-	-	-	-	44		
+#Record	45	Salare_Skill03_N	DBead	1	Chase	Caster	150000	-	Target	30	0	1	DBead_Skill01_W	TargetObj	Dead	Multi	45	
+
+
+
+
+
+
+
+
+
+
+																			
+#Table	Polymorph																		
+#ColumnType	Byte	String[33]	String[33]	BYTE	BYTE	Byte													
+#ColumnName	Serial	Skill	MobIndex	CanMove	CanAttack	CheckSum													
+#Record	0	Metamorphosis01	Metamorphosis_bird	1	0	0													
+
+
+
+
+																			
+#Table	Neutralization																		
+#ColumnType	Byte	String[33]	Word	Word	Word	Word	Byte												
+#ColumnName	Serial	Skill	Weapon	Shield	Body	Leg	CheckSum												
+#Record	0	Neutralization01	1000	0	0	0	0												
+#Record	1	IDCorneliusNeut01	1000	0	0	0	1												
+#Record	2	IDGMagmaNeut01	0	1000	0	0	2												
+#Record	3	IDFireTaiNeut01	0	1000	0	0	3												
+																			
+#Table	AbStateReset																		
+#ColumnType	Byte	String[33]	Byte	Byte	Byte	Byte	Index	Index	Byte										
+#ColumnName	Serial	AbState	Run	Walk	Attack	Attacked	EquipWhere	EquipClass	CheckSum										
+#Record	0	StaBuckler	0	0	0	0	LeftHand	Shield	0										
+#Record	1	StaNeglect	1	1	1	0	-	-	1										
+#Record	2	StaHide	0	0	1	1	-	-	2										
+#Record	3	StaMesmerize	0	0	0	1	-	-	3										
+#Record	4	StaEntrapHide	0	0	1	1	-	-	4										
+#Record	5	StaGTIConfusion	0	0	0	1	-	-	5										
+#Record	6	StaGTIHide	0	0	1	1	-	-	6										
+																			
+#Table	ExpandSkill																		
+#ColumnType	Byte	String[33]	String[33]	Word	String[33]	Word	Byte												
+#ColumnName	Serial	Skill	Condition	Dmg	AbState	Critical	CheckSum												
+#Record	0	PowerBenTear	Stun	1500	-	0	0												
+#Record	1	PowerWeaponBlast	Slow	1000	StaIceField	0	1												
+#Record	2	FinalSwordForce	ACMRMinus	1000	-	1000	2												
+#Record	3	WeaponBlast	Stun	1500	-	0	3												
+#End																			

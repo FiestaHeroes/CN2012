@@ -1,0 +1,147 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+								
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	El1	-	-	-	-	-	
+#Record	1	Pickaxe	-	-	-	-	-	
+#Record	2	GoldColl01	FireColl01	RedColl01	ThoroColl01	FlyStone	-	
+#Record	3	House_MushRoom01	House_MushRoom02	House_MushRoom03	-	-	-	
+#Record	4	SongeMushroom	LowMushrooms	NorMushrooms	HighMushrooms	BestMushrooms	-	
+#Record	5	PoisonMushroom	LowToadStool	NorToadStool	HighToadStool	BestToadStool	-	
+#Record	6	LowSkin	NorSkin	HighSkin	BestSkin	-	-	
+#Record	7	LowWoodSab	NorWoodSab	HighWoodSab	BestWoodSab	-	-	
+#Record	8	IronBadge	CommanderBadge	-	-	-	-	
+#Record	9	KylinTail	KylinFighterTail	-	-	-	-	
+								
+#End								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+	0							
+	1							
+	2							
+	3							

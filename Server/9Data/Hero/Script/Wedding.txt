@@ -1,0 +1,33 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Wedding1	结婚典礼即将开始,参加婚礼的来宾请准备入场.		
+#Record	Wedding2	在众神祝福之下,神圣的结婚典礼即将开始.		
+#Record	Wedding3	宣誓携手共度一生的两位,请走到誓盟书前		
+#Record	Wedding4	愿意携手共进、相亲相爱、白头偕老的两位		
+#Record	Wedding5	一起站到神圣的誓盟书前了		
+#Record	Wedding6	你们愿意成为对方照亮人生旅途的明灯		
+#Record	Wedding7	愿意信任及信赖对方,并许下承诺		
+#Record	Wedding8	愿意成为对方可依靠、依赖的支柱		
+#Record	Wedding9	在这充满惊险却很美丽的大陆上		
+#Record	Wedding10	祝福你们俩人永远过着恩典满溢的日子.		
+#Record	Wedding11	你俩要相互扶持,为永恒的爱不断努力,永不怠懈.		
+#Record	Wedding12	世上没有不劳而获的事		
+#Record	Book1	现在在此诚心对天宣誓		
+#Record	Book2	不论遇到任何试炼和痛苦都不放弃		
+#Record	Book3	任何苦难及悲伤都不屈服		
+#Record	Book4	对于双方内心深处的伤痛		
+#Record	Book5	要以最温暖的光辉去拥抱		
+#Record	Book6	用纯真的爱意来包容		
+#Record	Book7	圣洁的光辉照亮彼此		
+#Record	Book8	我们今天在此宣誓		
+#Record	Book9	将永远携手走向人生路途.		
+#Record	Wedding13	正式宣布,在钻石的永恒力量见证下,俩人合二为一.		
+#Record	Wedding14	在万物创造主的见证下		
+#Record	Wedding15	宣告浓情蜜意的两位结为人生伴侣		
+#End				

@@ -1,0 +1,62 @@
+
+#ignore	\o042		
+
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Robo	千年狼王		
+#Record	FireVivi	炎魔		
+#Record	WildKebing	洞穴克比		
+#Record	DesertWolf	沙漠食人狼		
+				
+#Record	KQStart60	60秒后,王国任务即将开始.		
+#Record	KQStart30	30秒后,王国任务即将开始.		
+#Record	KQStart20	20秒后,王国任务即将开始.		
+#Record	KQStart10	10秒后,王国任务即将开始.		
+#Record	KQStart5	5秒后,王国任务即将开始.		
+				
+#Record	Intro00	把我们当怪物的人类、精灵和妖精们........		
+#Record	Intro01	今天就让你们知道,自然的报复有多可怕.		
+#Record	Intro02	全部给我击退!		
+#Record	Intro03	击退........		
+#Record	Intro04	呃!		
+#Record	Intro05	让你们清楚地看到它的可怕.		
+#Record	Intro06	被人类、精灵、妖精所破坏的大自然........		
+#Record	Intro07	人类要觉悟!		
+#Record	Intro08	人类要觉........		
+#Record	Intro09	別插嘴!		
+#Record	Intro10	呃!		
+#Record	Intro11	灵魂之石发光的30分钟內,我们是无敌的.你们都会死!		
+#Record	Intro12	怎么会泄露那种秘密!		
+#Record	Intro13	哎哟!		
+#Record	Intro14	哎,没办法了,30分钟內全部消灭掉!		
+#Record	RoboOut	哼,没用的東西,还要我亲自出马.		
+				
+#Record	Suc00	全部集合!		
+#Record	Suc01	坐下!		
+#Record	Suc02	起來!		
+#Record	Suc03	躺下!		
+#Record	Suc04	起床!		
+#Record	Suc05	还没精神?臥倒!		
+#Record	Suc06	起床!		
+#Record	Suc07	看这些动作!都趴下!		
+#Record	Suc08	沙漠食人狼,你...你给我当心点!还不好好做？		
+#Record	Suc09	你........你,小心你那张嘴,懂了吧？		
+#Record	Suc10	你再乱说话,看着办........		
+#Record	Suc11	除了沙漠食人狼,全部集合!		
+#Record	Suc12	以后,到下个王国任务为止,全部禁假.明白吗!		
+
+
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+
+#Record	Spider01	嘿嘿嘿!虽然你们很辛苦撑到现在,但你们也就到此了.		
+#Record	Spider02	你要用那么烂的刀,箭,魔法来对付我?嘿嘿嘿		
+#Record	Roumenus01	探险队啊, 要坚持到底,不要放弃!要活着回来哦!		
+#Record	Roumenus02	在希望之都─艾德林城再会!		
+
+#End				

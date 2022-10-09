@@ -1,0 +1,27 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+#Record	0	-				
+#Record	1	D_HeartTrumpysk2				
+#Record	2	-				
+#Record	3	D_HeartTrumpysk2				
+#Record	4	D_HeartTrumpyheal2				
+#Record	5	-				
+#Record	6	D_HeartTrumpysk2				
+#Record	7	-				
+#Record	8	D_HeartTrumpysk2				
+#Record	9	D_HeartTrumpyheal2				
+						
+#Table	SkillChange			
+#ColumnType	Index	Index	String[33]	String[33]		
+#ColumnName	Condition	Value	From	To		
+#Record	OutOfRange	-	-	D_HeartTrumpysk2	
+						
+#End						

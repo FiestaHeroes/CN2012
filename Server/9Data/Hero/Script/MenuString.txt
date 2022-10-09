@@ -1,0 +1,34 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	LinkTitle	要移动到%s吗?		
+				
+
+#Record	SilverWingTitle	使用银翼		
+#Record	SilverWingLocSet	记录当前位置		
+#Record	SilverWingPortal	飞行		
+				
+
+#Record	Revive	现在要复活吗?		
+				
+
+#Record	ItemBreakWarn0	丢弃该道具时将会自动破坏无法恢复.		
+#Record	ItemBreakWarn1	要破坏所选择的道具吗?		
+
+#Record	ItemDropWarn	要丢弃道具吗?		
+				
+
+#Record	ID_DeleteNow	有保留中的王国任务, 要初始化吗?		
+				
+
+#Record	Summons	配偶在召唤你, 要移动吗?		
+#Record	InstantDivorce	使用申请书,会消耗道具,无法取消申请.		
+				
+
+#Record	ReleasePrison	服刑期限已满, 可以出狱了.1分钟后自动离开.		
+#End				

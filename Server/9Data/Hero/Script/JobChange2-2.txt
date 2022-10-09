@@ -1,0 +1,37 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Intro00	....6!为720,6C2为9,这种时候分布的标准误差是2,43....!!		
+#Record	Intro01	呃?终于来了.我预测你来的概率为97.5%		
+#Record	Intro02	刚算出来的?是你获胜的概率		
+#Record	Intro03	很不幸,你的胜算不到1.03%.还要挑战吗?		
+#Record	Intro04	游戏很简单,你先选择一个骰子,然后转动轮盘.		
+#Record	Intro05	如果你的选择是错的,那到时候就会和我的奴隶们一起度过美好的日子.		
+				
+#Record	Roulette1	选择骰子后,转动轮盘		
+				
+#Record	PlayerWin	我的好运好像也到尽头了.		
+				
+#Record	Reward	一定要遵守约定.从那个门进去取宝物吧.		
+				
+
+#Record	Betray	接下来,开始第二场比赛吧? 两个当中只能活一个.怎么样?		
+				
+#Record	NotSelect	选择骰子后,转动轮盘		
+#Record	Luck	祝你好运....祝我更更好运....嘻嘻....		
+				
+#Record	RouReturn30	30秒后移动到罗恩镇.		
+#Record	RouReturn20	20秒后移动到罗恩镇.		
+#Record	RouReturn10	10秒后移动到罗恩镇.		
+#Record	RouReturn5	10秒后移动到罗恩镇.		
+				
+
+#Record	LastScript0	从哪儿开始算错了呢？是时空碎片!对,就是它遮住了我的眼.		
+#Record	LastScript1	好啊,你就拿走那时空碎片吧.愿它也能遮住你的眼睛!		
+				
+#End				

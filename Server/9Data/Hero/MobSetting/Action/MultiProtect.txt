@@ -1,0 +1,14 @@
+
+										
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+										
+										
+#Table	Trigger									
+#ColumnType	DWORD	DWORD								
+#ColumnName	ConditionID	ActionID								
+										
+#Record	18	29								
+#Record	19	30								
+#End										

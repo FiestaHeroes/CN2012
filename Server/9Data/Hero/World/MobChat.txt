@@ -1,0 +1,2410 @@
+
+#Ignore	\o042		
+
+
+#Table	PIECE										
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]			
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3			
+											
+#Table	ATTACK										
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]			
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3			
+											
+#Table	DAMAGED										
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]			
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3			
+											
+#Table	DEAD										
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]			
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3			
+											
+#Table	HELPMAIN										
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]			
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3			
+											
+#Table	HELPSUB										
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]			
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3			
+											
+#Table	RACERESCUE										
+#ColumnType		Index	Dwrd	Dwrd	String[65]	String[65]	String[65]	String[65]			
+#ColumnName		MobIndex	Rate0	Rate1	Script0	Script1	Script2	Script3			
+											
+											
+											
+											
+											
+											
+#RecordIn	PIECE	Slime	1800000	3400000	欢迎你来到艾莎大陆!	有种冉冉上升的感觉!!	小可爱史莱姆登场～	欢迎～			
+#RecordIn	ATTACK	Slime	50	0	救救小可爱～	嗨!	我是个小小可爱呀~	滑溜滑溜接我招吧!			
+#RecordIn	DAMAGED	Slime	50	0	反对暴力!!	喂!会痛啊!	好痛,好痛啊!史莱姆受不了!!	弹掉攻击!!这技能只有我会.			
+#RecordIn	DEAD	Slime	50	0	嗯~好过份.	咕噜!	你,你只会欺负史莱姆!	我要跟我们王说哦!喀!			
+#RecordIn	PIECE	HeroSlime	1800000	3400000	敢小看我?我是英雄史莱姆!	最帅的史莱姆!	大胆的家伙.	我是史莱姆的英雄!!			
+#RecordIn	ATTACK	HeroSlime	50	0	嘻嘻,看你把戏多,还是我多!	要为史莱姆手下报仇!!	让你尝尝我的厉害!	感觉如何?要改变"史莱姆是最弱的怪物"这种错误想法～			
+#RecordIn	DAMAGED	HeroSlime	50	0	通通推倒!!	喀!虽然痛但还不会死.	啊喳喳喳喳!	你看我的名字,叫英雄史莱姆啊!!			
+#RecordIn	DEAD	HeroSlime	50	0	啊~~史莱姆英雄要离开人世啦~	不要以为会就这样结束!	全体史莱姆集合!!	打得漂亮!			
+#RecordIn	PIECE	MushRoom	2000000	3600000	你敢惹我?我很强哟!	吃饭了吗?	如果仔细看,我的脸还说得过去吧?	真不喜欢史莱姆那些家伙,到处在践踏蘑菇.			
+#RecordIn	ATTACK	MushRoom	50	0	小心喽!我要打－你－哦!	我的拳头滋味怎么样?	愤怒的勾拳来了!	1+1是?..........回答.不知道才要问你啊!			
+#RecordIn	DAMAGED	MushRoom	50	0	哼哼,一点都不痛!	什么?他们说我像外星人!(怒)	乔纳森可怕吧!	其实1+1=窗户!!吱吱			
+#RecordIn	DEAD	MushRoom	50	0	不对,其实很疼,哇哇～～	早知道就用「天马流星拳」就好了...	光萌可不是街头霸王!	把我埋在阳光普照的地方,让我可以重生为传说中的蘑菇...			
+#RecordIn	PIECE	SpeedySlime	1800000	3400000	哇!!这么多人啊.	我是~矫健宝宝~史莱姆!	看到我,你整天都会很幸运!	史莱姆中应该没有比我更快的家伙了!			
+#RecordIn	ATTACK	SpeedySlime	50	0	来来,比试一下好吗	嘿,看你那么可爱,我就手下留点情吧.	这是一种欢迎方式.	几岁?住在哪?喜欢什么?你所有的事我都好好奇.			
+#RecordIn	DAMAGED	SpeedySlime	50	0	哎呀!!你偷袭我!!	什么!!想要欺负我吗?	会不会太强了点?!	呜啊啊!!什...什么!!玩笑会不会开太大啦?			
+#RecordIn	DEAD	SpeedySlime	50	0	咕噜噜～	咳!	呕!	唉哟我不行啦!			
+#RecordIn	PIECE	MushRoomFighter	2000000	3600000	我的体内正流着战士的血.	我们家族代代都很优秀的.	没有像我这么有实力的人了!	我是蘑菇战士吗?怎么跟蘑菇吉士只差一个字?			
+#RecordIn	ATTACK	MushRoomFighter	50	0	看招!正拳!	你已经有些怯场了.	应该知道怪物也有等级吧?	可以感觉到你周围同族的怨恨...			
+#RecordIn	DAMAGED	MushRoomFighter	50	0	强...	噢,看样子你也是有来头的.	呼！这种小攻击!!	比史莱姆还糟嘛!			
+#RecordIn	DEAD	MushRoomFighter	50	0	我...输了吗?	赫!!	呃!!太大意了.	呃...真丢脸.			
+#RecordIn	PIECE	Imp	2000000	3600000	当当!!突然出现吓到你了吗?	来这边,我们交个朋友吧.	哎嗨哟!哎嗨哟!	你好~			
+#RecordIn	ATTACK	Imp	40	0	别看我小就以为我好欺负哦,你错了～	应该会点疼...嘿嘿	我的魅力在于这大大的眼睛上,嘻嘻.	什么!!你说我的外貎跟妖精不一样!?我是哪里不好~!!			
+#RecordIn	DAMAGED	Imp	40	0	就那么一点能耐还想跟我斗!	哎哟,饶了我吧!	你也是为任务来欺负我的?	嘎!我错了!!你说的没错,我很丑.嗯嗯～			
+#RecordIn	DEAD	Imp	40	0	咳!竟然是我被打!	等着瞧吧!	打因普的任务,不要,不要～	我要回去了!!			
+#RecordIn	PIECE	FireMushRoom	2000000	3600000	最讨厌吃蘑菇了.怎么能吃蘑菇呢?	我喜欢阴地.阳光强烈我会难受.	这里是沙海.噢,是波浪森林吗...	吃过炒蘑菇吗?那么你就挨揍吧!!			
+#RecordIn	ATTACK	FireMushRoom	50	0	我要让你明白蘑菇不是吃的!喝!	接招!!	经不起这点力量,那就说明有问题.	超强魔菇怪力量~!!			
+#RecordIn	DAMAGED	FireMushRoom	50	0	我也会被吃吗...	也许是这一辈子的最大危机.	请再练功吧.	若体力不够,就使用HP药剂!知道吗?			
+#RecordIn	DEAD	FireMushRoom	50	0	早料到总会有这么一天的.	难道这是我的末日吗,我不甘心.	哦...哦...哦...	也供应HP药剂给怪物!!			
+#RecordIn	PIECE	gangImp	2000000	3600000	拳头痒痒的,有人想试试吗?	全都怕了吧!附近怎么一点动静都没有呢.	我和一般的因普不同.不要乱来哦.	切!最近找我麻烦的人怎么这么多.			
+#RecordIn	ATTACK	gangImp	40	0	好笑,我们是多数!就凭你也想挑战我?	想好后路了吗?要跟这世界道别,只能趁现在.	刚开始我就知道我会赢的.	呼,真的能打倒我们全部吗??			
+#RecordIn	DAMAGED	gangImp	40	0	噢噢,还可以吗.	就这么点水平?	噢!你愿不愿意到我的手下来?	我错了!!我会变成善良的因普!!			
+#RecordIn	DEAD	gangImp	40	0	不敢相信.你是谁?!	怎么会发生这种事呢...	唉呀,真丢脸,还以为能赢呢,得召集人手...	唉哟哟!!我要逃跑了~			
+#RecordIn	PIECE	Crab	2200000	3800000	咕噜咕噜吐泡泡!	我不喜欢酱油!	是谁说的要用我的钳子做衣服夹子?	当初只要没出剪刀,就不会走到今天这个地步....			
+#RecordIn	ATTACK	Crab	40	0	我要让你知道我这个夹子可不是装饰品!	自求多福吧!	感觉良好的我的模样～	跟我剪刀石头布!!你赢了我就饶你.			
+#RecordIn	DAMAGED	Crab	40	0	卡嚓卡嚓钳子夹攻击!!	好吧,放了我就给你隐藏的任务,怎么样?	真紧张!我要把受到的伤害原样还给你!	再不振作的话,会被我的钳子夹的很疼哦!			
+#RecordIn	DEAD	Crab	40	0	这家伙还蛮强的.	呱啦!!	反射!彩虹反射!镜子反射!	不愿意承认的失败...			
+#RecordIn	PIECE	SlowSlime	2200000	3800000	啦啦啦～啦啦啦～啦啦啦～	你是～为了接受爱而来到这世界～	我的魅力在于优雅.从来不会匆忙.	不要对我的名字感到迷惑~!!我是例外的非常快.			
+#RecordIn	ATTACK	SlowSlime	50	0	怎么样?后悔了吧?	再怎么后悔也来不及了.	接招!	噗哈哈!!你真的相信我很快?			
+#RecordIn	DAMAGED	SlowSlime	50	0	好疼,疼死了	反射!!	这时候好羡慕矫健的史莱姆.	走开~!!挥挥~!!走开!!			
+#RecordIn	DEAD	SlowSlime	50	0	哎呀.不行了.	啊,不应该是这样呀...	祈求来生能当矫健的史莱姆吧...	嘎!!			
+#RecordIn	PIECE	SpeedyHoneying	2200000	3800000	在我们这个镇里我跑最快.	更快,更高,更有力地...	可能是忘了以前我就是蜜蜂吧?	哈尼哈尼也想穿漂亮的衣服!!穿上迷你裙的哈尼应该会很漂亮~			
+#RecordIn	ATTACK	SpeedyHoneying	30	0	哪里跑,接招.	狠狠地来一下!	蛰你一下好吗.嘻嘻嘻!	匹咻~!匹咻~!匹咻~!			
+#RecordIn	DAMAGED	SpeedyHoneying	30	0	只不过是痒痒.噢～咳咳!	你用不着使那么大的劲.	救命～救命～	嘎~!救哈尼哈尼～			
+#RecordIn	DEAD	SpeedyHoneying	30	0	不要认为就这么结束了.	我会回来!一定会回来!!	再见到你一定要蛰你的,别忘了!	噢!!痛到发出怪叫声...			
+#RecordIn	PIECE	blueCrab	2200000	3800000	好舒服啊~我光用看的就会让人感到舒服是吧?	真热呀～都快要被烤熟了.	螃蟹为什么横着走,懂吗?	不能告诉小龙虾我最喜欢吃的食物是龙虾餐哦.			
+#RecordIn	ATTACK	blueCrab	40	0	有点疼吧...	劝你咬紧牙关.	嘟嘟...嘟嘟嘟嘟...噢!!打中了!	用可怕的夹子捏你!			
+#RecordIn	DAMAGED	blueCrab	40	0	啊,停!!停!!好痛.	打败我你也捞不到什么好处.到此为止吧!!	是在小看我?还是这就是你的实力?	呜哈~呜哈哈哈~好痒.哈哈哈~			
+#RecordIn	DEAD	blueCrab	40	0	我相信你不会欺负我的.	我是中暑了,不是被你打败的.	放弃!!放弃!!	我以蟹的名字担保!不会原谅你!			
+#RecordIn	PIECE	LittleHob	2200000	3800000	尽量靠近一点看看我,我也算蛮可爱的啦.	请欣赏我迷人的微笑吧～嘻嘻～	以为我小就看不起我,很难过哦.	我可是森林里的实力者!!			
+#RecordIn	ATTACK	LittleHob	30	0	哼!要打就打啊!	咳咳,自然就会微笑.	有修练过哦.	在我身边晃来晃去的虫虫.			
+#RecordIn	DAMAGED	LittleHob	30	0	兄弟们!上啊.	那个程度很难抵得了我哦.	远着呢!还差得远呢!	痛吗?我很快乐!喀喀			
+#RecordIn	DEAD	LittleHob	30	0	救救小霍比族人.	啊!我太大意了吗?	只不过这么一点程度,不要太得意!	如果认为赢过我了,那你就大错特错了!			
+#RecordIn	PIECE	Honeying	2200000	3800000	那远方会有什么呢?	仔细看我这可爱的模样!	啊啊啊啊～要欺负这么可爱的我吗?	闻到花香就会充满力量的哈尼哈尼～花在哪里?			
+#RecordIn	ATTACK	Honeying	30	0	接招~	我要跟我妈说哦!	不要欺负弱小哦!	像蝴蝶一样的飞~像哈尼一样的射!!...好尴尬.			
+#RecordIn	DAMAGED	Honeying	30	0	那远方的花园与...小狗...	帮帮忙,可爱的哈尼哈尼在被折磨呢!	或许,这就是偷吃蜂蜜的结果?	不行!!不行!!不行!!			
+#RecordIn	DEAD	Honeying	30	0	那远方会有什么呢?	好痛啊!GM救救我～	蜂蜜已经吃完了...我再也不敢了!	不要讨厌我.哈尼哈尼被厌恶的心酸...			
+#RecordIn	PIECE	HungryWolf	2400000	4000000	很烦的家伙...	小红帽藏在哪了!?	我是饿狼!	为什么我永远都会肚子饿..			
+#RecordIn	ATTACK	HungryWolf	30	0	哈哈哈哈!	谢谢你提供了食物.	好,老老实实地放弃吧,嘻嘻!	饭耶饭~乖乖的不要动!			
+#RecordIn	DAMAGED	HungryWolf	30	0	噢...不!	我不要小红帽了,行吗?好疼噢!	这点准备都没有,就别想打猎,嘻嘻!	好饿!我要吃东西!			
+#RecordIn	DEAD	HungryWolf	30	0	不...不是闹着玩啊.	不要这样啦~真是!	好饿,只是为了填饱肚子嘛...	咳呃...太强了啊.			
+#RecordIn	PIECE	AngryWolf	2400000	4000000	我经常火气很大,所以小心点.	别惹我生气!	我不是因为肚子饿才发火的,所以不要误会.	被我抓到的家伙我绝不放过!咳勒勒			
+#RecordIn	ATTACK	AngryWolf	30	0	挑战我吗?笨蛋.	正好用来消磨时间.	这个沙袋不错呀.嘿嘿!	我现在非常生气...			
+#RecordIn	DAMAGED	AngryWolf	30	0	喝!你不是我的对手.	啊,这样我会输的.	呕,长得不一样嘛!	就像是在用棉花棒敲打.			
+#RecordIn	DEAD	AngryWolf	30	0	我还没有完全发挥我的实力...所以...	哎呀啊啊!!	我死后会留下皮吧.	啊~好生气~!气死我了!!气死我了!!			
+#RecordIn	PIECE	Phino	2400000	4000000	噢,我亲爱的菲莉!	能遇到菲莉是我的幸运.	其实我不喜欢菲莉,哈哈哈!我的内心和表面是相反的,你知道??	再过一阵子我就要结婚了.			
+#RecordIn	ATTACK	Phino	20	0	菲莉,赶快来看看帅哥我!	吶!接我这正义之招吧!	哇哈哈!这就是我木偶比诺的力量!	来吧!!结婚之前训练一下体力好了.			
+#RecordIn	DAMAGED	Phino	20	0	亲爱的菲莉!帮帮我呀!	算你厉害,但是如果真的激怒了我,我会揍你!	想起我亲爱的木偶菲莉,我得要忍住.	再用点力!!再强一点!!要特别小心.			
+#RecordIn	DEAD	Phino	20	0	再见了,亲爱的菲莉!	就算全世界都抛弃我,只要菲莉爱我就好了.	就让我们这样爱下去吧...我的爱.	什么...还没求婚...			
+#RecordIn	HELPMAIN	Phino	800	800	-	-	-	-			
+#RecordIn	HELPSUB	Phino	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	Phino	800	800	-	-	-	-			
+#RecordIn	PIECE	MiniGreenky	2400000	4000000	你该不会不知道迷你绿妖吧?	我是森林里的淘气鬼!	听到森林里树叶的唧唧喳喳声!	森林里的所有家伙都是站在我这边的!			
+#RecordIn	ATTACK	MiniGreenky	30	0	我的身体是绿色!	吶!接我这正义之招吧!	妨碍我咬舌根者不可原谅!	绿色与森林是一体的.			
+#RecordIn	DAMAGED	MiniGreenky	30	0	你不管去哪里应该都很难找到这种绿色了!	我这美丽的绿色要变成灰了.	呼!只有这个程度?	就让你尝尝绿色的厉害.			
+#RecordIn	DEAD	MiniGreenky	30	0	只要对你有帮助,牺牲一个我算得了什么!	迷你绿妖的荣耀!!	等着瞧!!	啊啊!竟然是我被欺负!			
+#RecordIn	PIECE	PhinoFlie	2600000	4200000	到此为止,现在该轮到我?	今天的妆化很完美,赶快去让比诺看看.	木偶比诺在哪呢?	木偶比诺好像要向我求婚,怎么办...好害羞.			
+#RecordIn	ATTACK	PhinoFlie	20	0	哈哈,被打到了吧!	厉害吧?要向比诺炫耀一下～	是你欺负了我心爱的木偶比诺吧?	木偶比诺,我做好当你新娘的准备了,这样说吗?			
+#RecordIn	DAMAGED	PhinoFlie	20	0	唉~让你失望了...我永远的爱..比诺...	我不高兴了!	坏蛋,你在摸哪里呀!	现在我感觉不到任何痛苦,因为我很幸福.			
+#RecordIn	DEAD	PhinoFlie	20	0	唉,让你失望了,我永远的爱...比诺!	替我报仇,木偶比诺...	就让我们这样爱下去吧...我的爱.	为什么一直妨碍我啊!!			
+#RecordIn	HELPMAIN	PhinoFlie	800	800	-	-	-	-			
+#RecordIn	HELPSUB	PhinoFlie	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	PhinoFlie	800	800	-	-	-	-			
+#RecordIn	PIECE	Ratman	2600000	4200000	只把我当成老鼠看就有点伤人哦.	卡咳!我是帅气的老鼠.	只把我当成老鼠看就有点伤人哦.	卡咳!我是帅气的老鼠.			
+#RecordIn	ATTACK	Ratman	15	0	我非常珍贵!所以千万不要让我受伤!	让你瞧瞧我这炙热的精神力量!!	我非常珍贵!所以千万不要让我受伤!	让你瞧瞧我这炙热的精神力量!!			
+#RecordIn	DAMAGED	Ratman	15	0	不要看我这样,我可是修炼过的鼠大人啊!!	有人要抓老鼠哦~救命哦~!	不要看我这样,我可是修炼过的鼠大人啊!!	有人要抓老鼠哦~救命哦~!			
+#RecordIn	DEAD	Ratman	15	0	咳呃,..修炼的不够吗,,.	你...节制点.	咳呃,..修炼的不够吗,,.	你...节制点.			
+#RecordIn	PIECE	RatmanFighter	2600000	4200000	真正的战士鼠不会惰于修炼!	我很珍贵.	真正的战士鼠不会惰于修炼!	我很珍贵.			
+#RecordIn	ATTACK	RatmanFighter	15	0	你看!我这绚烂的动作!	不要用鼠人之类的跟我比较!	你看!我这绚烂的动作!	不要用鼠人之类的跟我比较!			
+#RecordIn	DAMAGED	RatmanFighter	15	0	咻咻!接这鼠大人的拳招!!	我可是有老鼠的矜持!!	就算抓到我也不会有任何东西!	咻咻!接这鼠大人的拳招!!			
+#RecordIn	DEAD	RatmanFighter	15	0	告诉世人,鼠战士曾经来过这个世界.	月圆时...我...会变成巨大的老鼠,..	月圆时...我...会变成巨大的老鼠,..	告诉世人,鼠战士曾经来过这个世界.			
+#RecordIn	PIECE	Boar	2800000	4400000	据说,这附近有个什么艾德林城...	那里应该有很多好吃的东西.	鼠人那家伙应该已经凭着他敏锐的嗅觉跟上来了,快走吧!	你把我当成熊了吧?有时候连我自己都以为是熊呢..嘻嘻			
+#RecordIn	ATTACK	Boar	15	0	呼...呼...	你看我的爪子怎么样?呼!	把我跟鼠人混为一谈,那是你的失算.呼~	吭吭,你是人类?精灵?还是黑暗精灵?			
+#RecordIn	DAMAGED	Boar	15	0	大哥生气可是很恐怖的...	还差得远呢!呵呵呵.	这个攻击很巧妙,呼呼~	呜呃,怎么打要害!!			
+#RecordIn	DEAD	Boar	15	0	难道要饿着去见上帝么?	如果不是肚子饿...	臭鼠人,每天和我打架,我怎么会去帮他?	我不应该是一个就这样离开的猪啊..			
+#RecordIn	PIECE	SharpBoar	2800000	4400000	肚子饿了心情就不愉快,我现在相当不愉快.	把我当成刺熊就是你的失误.	看到我矫健的身手了吗,这就是我的实力.	我们虽然没有血缘关系,但却是以义气结合的兄弟.			
+#RecordIn	ATTACK	SharpBoar	15	0	一对一也许有希望,不过你看来已经没有胜算...	你要明白!只要被我盯上就算完蛋了.	休想溜走!	只要被我看到的对象,我绝不会让它溜走!我已经看到你了.			
+#RecordIn	DAMAGED	SharpBoar	15	0	不要惹我生气!!	哎呀.水平不一样.	哇,还可以吗?	外表看来还不错,但内在却是空的!			
+#RecordIn	DEAD	SharpBoar	15	0	从来没想到最后会是这样...	哎哟喂～!我不会饶你的!!	这是我们结拜兄弟之后最耻辱的时候...咳...	被小毛头打...啊啊...			
+#RecordIn	PIECE	Boogy	2800000	4400000	想要踩一踩松软的沙土.这里为什么这么潮湿呢.	说邻居的坏话是不应该,但说真的,刺熊真的很野蛮.	我的劲敌应该是海獭吧,海獭也很喜欢贝壳肉.	龟兔赛跑的故事是要告诉我们龟很伟大.			
+#RecordIn	ATTACK	Boogy	15	0	必杀技!贝壳飞弹!!哈哈,是个玩笑.	给我蛤蜊就饶了你!	不知为什么,我总觉得打倒你就会找到蛤蜊.	你只要能打赢我,我就让你欣赏布吉电影~呜哈哈^^*			
+#RecordIn	DAMAGED	Boogy	15	0	如你所见,我的体质是坚硬的.	逃...逃跑吗...	拼命了.	这感觉是...布吉印记的那个嘛!!			
+#RecordIn	DEAD	Boogy	15	0	你不会把我当作战利品展示吧...	头一次埋怨我的腿太短.	埋葬我的时候请把我与蛤蜊葬在一起.	埋藏我的时候,请把我和蛤蜊葬在一起.			
+#RecordIn	PIECE	BoogyKnight	2800000	4400000	把我当成布吉龟了吗?	到现在还是无法区分一般怪和精英怪吗?	由于块头大,所以人见人怕.	用餐还是要在大海里才好吃,调味才会刚刚好.			
+#RecordIn	ATTACK	BoogyKnight	15	0	嘿!力量不一样.	我相信我的能力.	嘿嘿嘿,你也害怕了?不要跑嘛~	呃呃呃,怎么总觉得我的攻击都没什么效果.			
+#RecordIn	DAMAGED	BoogyKnight	15	0	我的贝壳是最优秀的盾牌.	我相信你的实力不怎么样.	你没作弊吧?	咿呃~我的身体...我身体在燃烧~!			
+#RecordIn	DEAD	BoogyKnight	15	0	想再出海一次.	原来我只是井底之龟.	最后应该是在海里...	惨败,绝望...			
+#RecordIn	PIECE	MaraCrew	2800000	4800000	呃,看看有没有可以用的东西?	险些被队长发现了,要知道我没参加训练,她不会饶我的.	我可是有名的刀手!被我盯上了就别想跑.	吱吱...这个海岸在我们玛拉苦力接手后就成了探索海岸.			
+#RecordIn	ATTACK	MaraCrew	10	0	把钱都给我交出来!	怎么样?怎么样啊?咳咳!	看见了吗?我的剑术可是无人能比的!呵呵!	你不怕死,敢进到探索海岸!			
+#RecordIn	DAMAGED	MaraCrew	10	0	哎哟,肚子疼!	好啦...也该吃够了...	英雄饶命!好疼啊～	咿吼呃,不是水兵的第二有实力者吗~			
+#RecordIn	DEAD	MaraCrew	10	0	玛拉!	我只是听从玛拉的命令,饶我一次吧!	我带你去玛拉那儿,请给我一次机会吧!	我入团才一个礼拜...			
+#RecordIn	HELPMAIN	MaraCrew	800	800	莫名其妙	-	-	-			
+#RecordIn	HELPSUB	MaraCrew	800	800	玛拉水兵,还有我呢.	小看了我们玛拉苦力～	找我吗?	我来了!!哇哈哈哦哦~			
+#RecordIn	RACERESCUE	MaraCrew	800	800	-	-	-	-			
+#RecordIn	PIECE	MiniPinky	3000000	5000000	啦啦～啦啦～啦啦拉～?真是好心情～	打个正着~	我是美丽的妖精迷你花精.	迷你花精的美貌前,没有人是不低头的!			
+#RecordIn	ATTACK	MiniPinky	10	0	光看外表,认为我会输吧?	唉哟~唉哟~	唉呦,很痛耶.	你在妒嫉我的美貌吗?			
+#RecordIn	DAMAGED	MiniPinky	10	0	卡!	会痛啦!!唉哟~	怎么可以弄疼迷你花精!讨厌!	我也不能就这样坐视不管!			
+#RecordIn	DEAD	MiniPinky	10	0	讨厌你～!!哼～!	坏坏!!小坏蛋!	嗯嗯!讨厌!坏心眼!	我就是真理!南瓜啊!			
+#RecordIn	PIECE	SpeedyBoogy	3000000	5000000	噗哧噗哧,今天也很充实	今天得出海看一看.	若有比我快的布吉,叫他出来!	咿哟~咿哟~			
+#RecordIn	ATTACK	SpeedyBoogy	10	0	我是敏捷灵敏的布吉!!	提出决斗,勇气可嘉.	如果被我所伤,可是会连运气一并被我吸走的,你懂吗?	你知道辣椒越小越辣的道理吧?不要看我的体格小就看不起我~!			
+#RecordIn	DAMAGED	SpeedyBoogy	10	0	速度居然比我还快?	说老实话,你的攻击是不错的.	快速布吉攻击!!	不是叫你不要小看我吗?			
+#RecordIn	DEAD	SpeedyBoogy	10	0	哎哟!我败了.	你确实比我还强.	伙伴们,以后拜托了～	吼~不象话!			
+#RecordIn	PIECE	MaraElite	3000000	5000000	如果被发现我不会游泳,那就不得了了,该怎么办呢?	一,二,一,二...大家加紧练习.	打劫!留你一条小命,钱给我留下!	昨天训练时有偷点懒,会不会被队长大人查觉到了~			
+#RecordIn	ATTACK	MaraElite	10	0	让你看看我苦练的结果.	拿出所有的钱,我就饶你一命.	这样就对付不了?哇哈哈哈!	呃呃!!你在这里做什么!			
+#RecordIn	DAMAGED	MaraElite	10	0	这个力量,跟队长不相上下!	啊,啊,好疼!还是跑了算了～	不行!现在用钱也买通不了啦!	呃,我好像有学过这种攻击要怎么防御...记不起来...			
+#RecordIn	DEAD	MaraElite	10	0	玛拉!	早知道会有今天,平时更加努力训练...就...	队长,其实想永远追随你...	这次的对决就当作没发生过...不行吗?			
+#RecordIn	HELPMAIN	MaraElite	800	800	唉呦...	大家都到这里来～	展示一下玛拉海盗团的实力吧~	那个!!闲着的菜鸟!马上给我过来.			
+#RecordIn	HELPSUB	MaraElite	800	800	-	-	-	赫!!!			
+#RecordIn	RACERESCUE	MaraElite	800	800	-	-	-	-			
+#RecordIn	PIECE	MaraSailor	3000000	5000000	喂...海盗们集合!!	今天训练玛拉体操第8节,做10次!第几次了?	很想快点收拾完城镇,好好享乐一翻.是不是该请示玛拉?	这些家伙是不是吃了熊胆,连我的训练都敢偷懒!!			
+#RecordIn	ATTACK	MaraSailor	10	0	应该训练训练你了.	我培训得怎样?喜欢吗?	不会让你就这样跑掉的!	现在情绪超低潮,正好.做好准备吧.			
+#RecordIn	DAMAGED	MaraSailor	10	0	哎哟,你的力量!	咳,没想到的是～	不行了,海盗们赶快集合!	这种攻击很容易被疏忽.			
+#RecordIn	DEAD	MaraSailor	10	0	玛拉!	培训日程排得满满...	队长,对不起.	真是,先分析这次战斗后,有可能需要增加些训练.			
+#RecordIn	HELPMAIN	MaraSailor	800	800	-	-	-	-			
+#RecordIn	HELPSUB	MaraSailor	800	800	嘻嘻嘻,敢跟队长作对,由我来处理你.	敢惹玛拉队长.找死吗?	不知天多高地多厚的家伙,敢跟队长作对...嘿嘿嘿...	一,二,一,二,放轻松一点!			
+#RecordIn	RACERESCUE	MaraSailor	800	800	-	-	-	-			
+#RecordIn	PIECE	Mara	3200000	5200000	请叫我女王!	我是纵横在探索海岸的玛拉!	最近老是想起过去的事情,没意义...	若能一棍送走的话,我就给你稀有道具.			
+#RecordIn	ATTACK	Mara	10	0	你来得正好!	不会让你就这样跑掉的!	还蛮可爱的?	真好笑,就拿这个程度想要打我?			
+#RecordIn	DAMAGED	Mara	10	0	啊哟,够厉害的!	你还不错,加入我的组织怎么样?	我恨死你们了,我全家都因你们...	再给我一些更刺激的攻击啊!			
+#RecordIn	DEAD	Mara	10	0	今天我就先撤退!	下次不会再让你了.	把我弄成这个地步...	大哥...			
+#RecordIn	HELPMAIN	Mara	800	800	全都是些没用的家伙...竟然还要我出马~	嘻嘻嘻,用不着我动手了.	受害者其实是我啊!!	有没有人在啊!!			
+#RecordIn	HELPSUB	Mara	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	Mara	800	800	-	-	-	-			
+#RecordIn	PIECE	smartPhino	3200000	5200000	由于有了重力,我们才能够站稳在大地.	木偶比诺和木偶菲莉是很匹配的一对.我也需要.	在艰险的社会里求生存,最重要的是要团结合作.	我跟一般的木偶比诺不同,是用五百年的老树做成的!			
+#RecordIn	ATTACK	smartPhino	30	0	要想清楚,我不是好惹的.	你要当我的木偶菲莉?	想不想成为我的另一半?	请你不要叫我鬼树~			
+#RecordIn	DAMAGED	smartPhino	30	0	哼,没水平,低级.	看来你不是我的对手.	你委婉地拒绝了我.	以我的实力来看,木偶比诺最适合了.			
+#RecordIn	DEAD	smartPhino	30	0	我...我我我...不弱..	发生什么事了?我们是绝对占优势...咳.	可能我的墓碑上会刻着「聪明的木偶比诺凄惨地结束一生」...	结果告诉了我们一切.			
+#RecordIn	PIECE	JokeKebing	3200000	5200000	好无聊哦.谁能跟我一起玩吗?	昨天在克比的帽子上动了点手脚,实在好好玩.	听说最近是有幽默感的人当红?	唉哟~不是要打我吧?对我这脆弱又可爱的...			
+#RecordIn	ATTACK	JokeKebing	10	0	咯咯咯～!跟我玩吧!	你脚边的钱是不是你的?是不是你的?上当了吧!咯咯咯.	在光萌世界里,讲到幽默应该是我属第一吧?嘻嘻嘻.	好生气,我听到有人说我是没用的克比!!哼!			
+#RecordIn	DAMAGED	JokeKebing	10	0	咳!!痛啊.	唉呀～是真的呀.	战斗的时请就不要再开玩笑了.	嘎勒勒~要跟我玩对吧?			
+#RecordIn	DEAD	JokeKebing	10	0	会帮我准备坟墓吧?	唉,没意思.	该死的时候到了就得死.	唉咿~不玩哦!!			
+#RecordIn	PIECE	Kebing	3200000	5200000	还是我克比说了算,嘿嘿!	叮铃铃,咚!	嗨,嗨,嗨!	光之萌约的小可爱克比!!			
+#RecordIn	ATTACK	Kebing	10	0	克比大力!	克比直拳!	克比必杀...哎哟,快没有力气了~	克比吱!!哦..我没有腿哦.			
+#RecordIn	DAMAGED	Kebing	10	0	呀!!猛虎疾风拳!!	哇～不行!痛~	咳咳,现在是在打我吗?一点感觉也没有～	呱!真是鲁莽有力.咳..咳			
+#RecordIn	DEAD	Kebing	10	0	太过分了!	这样就输了,真的好没面子!	谁帮忙恢复一下啊!快点!	我不能死你知道吗?因为我是主角!			
+#RecordIn	PIECE	KebingSpeeder	3400000	5400000	为了梦和理想,努力奋斗!!	客观地讲,克比是可爱的.	今天领着镇里的克比们去郊游吧.	速度!我想大家也知道,意思说我非常快.知道吗?			
+#RecordIn	ATTACK	KebingSpeeder	10	0	你是一位非常上进的人类.很好!	客观地说我是属于帅的.	南瓜头骨碌碌打～吓你呢,鬼脸～	跟我赛跑比赛赢过我试试!那么我就给你好东西~			
+#RecordIn	DAMAGED	KebingSpeeder	10	0	加油!再热情点儿!	耶!你是不是太强了呢?!	不要妨碍!	你也不错哦,虽然比不上我...			
+#RecordIn	DEAD	KebingSpeeder	10	0	哇!速度没掌握好.	形象受损了.	来世再去郊游吧...	我不是一个平凡的草!			
+#RecordIn	PIECE	LittleLizardMan	3200000	5200000	恩,走远点看看吧?	恩恩湿湿的风很满意.	虽然小,但却是强悍的小蜥蜴.	让你尝尝红色食人草的厉害!			
+#RecordIn	ATTACK	LittleLizardMan	10	0	哼,没什么了不起嘛!	啊,皮肤好像变得湿润了.	喂!让人不舒服的脸哦!	不错嘛!			
+#RecordIn	DAMAGED	LittleLizardMan	10	0	跟我生活的那里有什么不同呢?	怎么样?很滑嫰了吧?	让你尝尝我的厉害!	无法相信.			
+#RecordIn	DEAD	LittleLizardMan	10	0	不是这样的吧～	羡慕的话就不要打!用说的吧!	咳,原来是个强者.	哦吼,竟然挡得了我牙齿攻击...			
+#RecordIn	PIECE	ProckZone	3400000	5400000	要注意和我保持距离～	啊,附近没有好玩的家伙吗?	我不是一个平凡的草!	有没有可以让他尝我口中触须滋味的笨家伙呢?			
+#RecordIn	ATTACK	ProckZone	10	0	既然被我发现了,那就放弃吧!	这家伙的皮肤颜色好奇怪.	让你尝尝红色食人草的厉害!	发现目标物!!			
+#RecordIn	DAMAGED	ProckZone	10	0	很奇怪,总是有种委屈...	触感不一样!!	不错嘛!	接住毒液攻击!			
+#RecordIn	DEAD	ProckZone	10	0	我...就这样要变成肥料了吗?	告诉我保养皮肤的秘诀~~~	无法相信.	啊啊...我竟然被攻击...			
+#RecordIn	PIECE	TombRaider	3400000	5400000	奇怪,怎么我总想挖地呢.	啊好忙啊好忙!!	来,咱们就慢慢开始吧.	有些人拿着闪闪发亮的武器,看来应该不少钱.			
+#RecordIn	ATTACK	TombRaider	10	0	不要打扰我!	厉害吧,接招!	接住矿镐之神的技术招!	挖地二十年!我很自豪挖地没有人能比得上我.			
+#RecordIn	DAMAGED	TombRaider	10	0	喂喂,别激动,咱们先聊聊吧!	求求你,你开个价,放过我吧～	我家里有我采集到的很多贵重东西,我都给你,请饶了我吧...	嘿哟!嘿哟!大家都在躲~			
+#RecordIn	DEAD	TombRaider	10	0	我还有很多没吃过的东西~	你们的到来～真让人哭笑不得.	饶...命...	不久前我接获好地点的情报...可能要延到下次了.			
+#RecordIn	PIECE	MageBook	3400000	5400000	啊...第一章的内容是火爆术的诞生背景和历史,还有...	魔法并不是任何人都学得会的,要像我这样聪明才行.	你认为魔法师的体力是差的吗?那只不过是偏见.	黑暗精灵不断的在学新魔法,好羡慕.			
+#RecordIn	ATTACK	MageBook	10	0	感叹啊~我怎么会这么伟大呢.	魔法弹～!火球术～!你真的认为能用的着这些吗?	给你露一手～变成飞虫,咤!!	你告诉我一个新魔法,我就饶你的命!			
+#RecordIn	DAMAGED	MageBook	10	0	嘿!没想到你会这样厉害.	噢,你申请许可证了没?	我的体力是还可以的.	等...等一下!!等等!!我们就以对话来好好化解一下吧~.			
+#RecordIn	DEAD	MageBook	10	0	哦哦～还有很多你没见过的魔法...	打倒了了不起的我,你更了不起.	只有会累而已...	我最后的请求是...把我插回书柜里.			
+#RecordIn	PIECE	PunchMageBook	3400000	5400000	能不能找到一个合适的拳击陪练呢?	掌上压100下,跳绳300下,就是今天的目标.加油!!	什么时候我能正式参加拳击比赛呢.	我想把我所有东西都烧成白色.			
+#RecordIn	ATTACK	PunchMageBook	10	0	一,二,一,二.	出击!直拳!上钩拳!	那时你会为我加油吗?	我这拳头可是数十年反复浸泡锻炼过的铁拳哦!			
+#RecordIn	DAMAGED	PunchMageBook	10	0	好久没见强手了.	要好好加强防御!	我不想理弱者...	冶炼过的装备吗?若冶炼度高,装备应该会闪闪发亮~			
+#RecordIn	DEAD	PunchMageBook	10	0	再来一局!!	噢,要增加运动量.	再见...	我还可以再打,照规矩要倒3次不是吗!			
+#RecordIn	PIECE	BabyBat	3400000	5400000	飞翔在天上会怎么样呢?我也有翅膀应该可以会飞的?	今天是幼儿园的休息日.我要玩一整天.	哎呀～没有人和我玩.叔叔你能当我的朋友吗?	我是蝙蝠...是猪吗?最近我对我的政治性向感到混乱.			
+#RecordIn	ATTACK	BabyBat	10	0	我算强吗?哈哈!	这个程度简直就是搔痒吧?	啊??叔叔??我们做朋友吧.	呃!刚刚你是看着我,心里想着这个愚蠢的猪?			
+#RecordIn	DAMAGED	BabyBat	10	0	哇哇哇～不要打嘛.呜呜,妈妈～	你这是在欺负小孩子!!哇哇哇～	呜呜～不要就不要嘛,为什么打我呀～	一点都不厉害!!我还第一次看到像你这么弱的大人.			
+#RecordIn	DEAD	BabyBat	10	0	真想飞呀...扑棱扑棱～	妈妈～妈妈～	妈妈～妈妈～	嗯嗯嗯～～			
+#RecordIn	PIECE	GoldrySlime	3400000	5400000	是不是哪里还有银色史莱姆呢?嘻嘻!	人生的黄金期!我是黄金!吱什么话呀?	散发着太阳般金光色的史莱姆在这里.	今天也是很耀眼.			
+#RecordIn	ATTACK	GoldrySlime	10	0	接我这灿烂的一招!	抓我啊~抓我~呼~	常会因为闪亮的身体而感到疲惫.	接住我闪闪发亮的攻击!			
+#RecordIn	DAMAGED	GoldrySlime	10	0	很亮吧?怎么样?收下我吧!	不注意的时候身体撞击!!	但是最好小心点,惹我生气我可是会压扁你的.	用那种程度的攻击是赢不了我的.			
+#RecordIn	DEAD	GoldrySlime	10	0	你赢了.	恩啊~不行!	恩恩竟然是我被打.	怎么会这样嗯嗯.			
+#RecordIn	PIECE	MarloneArcher	3400000	5400000	如果被我盯上,谁都跑不了,嘿嘿!	左手只是协助.	从哪里~有人~有了钱时~当当当当	很抱歉!有点事所以晚到了.			
+#RecordIn	ATTACK	MarloneArcher	10	0	是那儿吗?	我从来没有虚发过一箭一弹.	不要小看山贼!	我的弓是千年前,弓手王所使用过的传说之弓!			
+#RecordIn	DAMAGED	MarloneArcher	10	0	哎哟,真没想到会反击!	快去告诉他敌人冲进来了.	没想到山贼还会受到袭击!	咳!我的弓完全使不上力,是怎么会事?			
+#RecordIn	DEAD	MarloneArcher	10	0	玛仑...敌人打进来了!	玛仑!	玛仑家族万...岁...	不行,不能成为笑柄...			
+#RecordIn	HELPMAIN	MarloneArcher	700	700	gogogo~~!	-	-	-			
+#RecordIn	HELPSUB	MarloneArcher	800	800	咳,我就一拳KO他们吧～咯咯!	笨蛋,谁叫你吃那么多～	少了我可不行...	咳哈哈,玛仑弓箭手出马了...			
+#RecordIn	RACERESCUE	MarloneArcher	800	800	-	-	-	-			
+#RecordIn	PIECE	MarloneMegaton	3600000	5600000	大哥太重感情才会这样...	把我们当作普通的盗贼,你可就错了?	玛仑家族无敌!	玛仑!玛仑!玛仑!万~岁~~!!			
+#RecordIn	ATTACK	MarloneMegaton	10	0	嘤～嘤～这可不是嘴里发出的声音.	这才是真正的兆吨级的力量!!	我的身体就是一个可怕的武器.	地下道集合!!			
+#RecordIn	DAMAGED	MarloneMegaton	10	0	哇~小花拳啊?	一拳打三只~	等...等等...中场休息一会儿嘛!	你的攻击,可以用我肚弹阻挡.			
+#RecordIn	DEAD	MarloneMegaton	10	0	啊,玛仑!!	你以为打第一拳就了不起吗?	不能这样...	玛仑...请小心...			
+#RecordIn	HELPMAIN	MarloneMegaton	800	800	人不可貌相,饶命~~	呜呜,都是因为我昨天吃了肉,要不然我不会这么迟钝的...嗯.	喂.别光站在那里!到这里来.	需...需要帮助...咳.			
+#RecordIn	HELPSUB	MarloneMegaton	800	800	-	应该加减也吃点蔬菜.	-	-			
+#RecordIn	RACERESCUE	MarloneMegaton	800	800	-	-	-	-			
+#RecordIn	PIECE	MarloneFighter	3600000	5600000	我曾经也是想当个骑士的见习生...	玛仑,你真相信那件事吗?	玛仑家族无敌!	玛仑!玛仑!玛仑!万~岁~~!!			
+#RecordIn	ATTACK	MarloneFighter	10	0	呜哈哈哈哈!!这么快就退缩啦!	啊哈,你这是自投罗网,不要命了?	你能躲开我的攻击吗?	大哥帮你买一顿白饭.			
+#RecordIn	DAMAGED	MarloneFighter	10	0	上上上上啊!你这种货色,来一卡车我也不怕!	好强啊...但是,就到这儿吧!	是个完全能回避的攻击.	呃,厉...厉害...这样下去有可能是我败北...			
+#RecordIn	DEAD	MarloneFighter	10	0	老大!赶快向玛仑报告...	敌人进来了!	紧急集合!!紧急集合!!	玛仑...请小心...			
+#RecordIn	HELPMAIN	MarloneFighter	800	800	comeon,comeon!	-	-	-			
+#RecordIn	HELPSUB	MarloneFighter	800	800	咳咳咳,大哥我来处理吧.	终于有向哥哥报恩的机会了～	哥哥,有我呢.不要担心.	我让你瞧瞧玛仑的力量.			
+#RecordIn	RACERESCUE	MarloneFighter	800	800	-	-	-	-			
+#RecordIn	PIECE	GlowWolf	3600000	5600000	看我的名字.怎么样?不觉得帅吗?	呼呼呼...	看到彩霞的天空就会感到忧郁.	噢哦~~真正狼的嗥叫声!!			
+#RecordIn	ATTACK	GlowWolf	10	0	看你好像不认为我帅的样子.	没有人有我这种光泽漂亮的毛了.	忧郁+坏心情,就罚你吧!!	咳勒勒			
+#RecordIn	DAMAGED	GlowWolf	10	0	我就让你对我改观!	不能原谅觊觎我光亮狼毛的家伙.	虽然比想象的强,但也不能只是被揍.	试试我牙齿的尖锐!!			
+#RecordIn	DEAD	GlowWolf	10	0	杰森...	你赢了哦.	嗯嗯	与晚霞一起消失...			
+#RecordIn	PIECE	MarloneSoldier	3600000	5600000	玛仑家族可以说最强中的最强.	在这个世界上没有玛仑家族会怎么样呢～这个世界还能有太阳吗～	我是一个自豪的玛仑家族之兵～	玛仑!玛仑!玛仑!万~岁~~!!			
+#RecordIn	ATTACK	MarloneSoldier	10	0	以玛仑家族的名义处决你.	我要显示玛仑家族的力量!	接招!!	既然来到这里,你应该知道生命很难保得住吧!呵呵...			
+#RecordIn	DAMAGED	MarloneSoldier	10	0	噢!!不能小看.	哈哈哈～!可笑.	欧哦,谁来帮我.	浪费我的拳头.			
+#RecordIn	DEAD	MarloneSoldier	10	0	吚...你...你...我孙子会为我...报仇...	怎么...会是...我输呢...	玛仑家族～!万岁!	喀...请...小心...			
+#RecordIn	PIECE	MarloneCaptain	3800000	5800000	我的攻击比一般的战士快三倍.	为什么收集情报呢?当然是想去做一票了.	玛仑家族无敌!	玛仑!玛仑!玛仑!万~岁~~!!			
+#RecordIn	ATTACK	MarloneCaptain	10	0	敢和我们玛仑家族较量,现在就让你后悔.	烈焰谷是我们玛仑家族的王国,玛仑是我们的大王!	我会把这些家伙都赶出去的.	既然我落入我的手里,你应该知道会连骨头都找不到吧!呵呵			
+#RecordIn	DAMAGED	MarloneCaptain	10	0	什么!?是有点厉害.	玛仑的痛苦,你不可能知道.	连我都赢不了,还想挑战玛仑?	玛仑...大人...没脸...见你了...			
+#RecordIn	DEAD	MarloneCaptain	10	0	玛仑家族万岁!	玛仑大人,请为我们报仇...	玛仑...大人...没脸...见你了...	玛仑...大人...没脸...见你了...			
+#RecordIn	HELPMAIN	MarloneCaptain	800	800	哦噢~我的实力还没有发挥...	我还有个约会,战士,你替我打吧～	这里就交给你了.	没必要在这里浪费我的力量吧.			
+#RecordIn	HELPSUB	MarloneCaptain	800	800	再也不能坐视不理了.	你这种家伙竟敢?	这种鸡毛蒜皮的事儿,怎么叫您亲自出马呢.	请您尽管下令.玛仑大人.			
+#RecordIn	RACERESCUE	MarloneCaptain	800	800	-	-	-	-			
+#RecordIn	PIECE	Marlone	4000000	6000000	唔哦哦哦～杀!!	全给我喊玛仑家族的口号!高呼玛仑的名字吧!	各位首领集合,去举行庆祝会!	我们玛仑是无敌的!!			
+#RecordIn	ATTACK	Marlone	10	0	欺负我妹妹的原来就是你啊!	不是强者生存,而是笑到最后的就是强者.	你能赶上我得攻击速度吗?	若能一棒让我睡着,就给你称号~			
+#RecordIn	DAMAGED	Marlone	10	0	你的攻击好像搔痒,嘿嘿!	你的攻击只能激起我隐藏的力量.	别以为这些是我全部的能力.	看来是没有一对一决战的勇气哦!呵呵			
+#RecordIn	DEAD	Marlone	10	0	我不能倒下,我还有很多事要办!	别以为我退却了,我一定会报仇!	真的是那样吗?原来如此.	要挡就来挡啊!			
+#RecordIn	HELPMAIN	Marlone	800	800	哈哈哈,想要挑战我吗?你还不够格呢.	这种小鬼头!!	用不着我亲自出马.	玛仑啊~接命吧~!			
+#RecordIn	HELPSUB	Marlone	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	Marlone	800	800	-	-	-	-			
+#RecordIn	PIECE	SilverySlime	4000000	6000000	也许还有金色史莱姆吧?呵呵呵!	太过份了	我是隐隐发出月亮光色的银色史莱姆!!	晚上有时会把我错认为月亮!			
+#RecordIn	ATTACK	SilverySlime	10	0	切!有刀子之类的东西...进入我的身体里.	我说太过份了	怎么样?是不是很漂亮?	有时候连我自都都会错觉为月亮!!			
+#RecordIn	DAMAGED	SilverySlime	10	0	竟然用刀对我!!	哪里还有地方打嗯嗯	攻击妒嫉我的家伙!!	嗯?是真的啦!			
+#RecordIn	DEAD	SilverySlime	10	0	不会就这样结束!!	讨厌~	但我是真理这个事实是不会改变的!	吶!映照在这里的样子不像月亮吗?			
+#RecordIn	PIECE	Skeleton	4000000	6000000	最近我的肚子一直变大.	哪里来的腥味?嘻嘻～	是!首领!	我看要涂点油了,关节碰撞的声音也蛮烦人的.			
+#RecordIn	ATTACK	Skeleton	10	0	竟敢接近我,我看是吃了熊心豹子胆.接招~!	喀...昨晚的梦不是很好...	我的攻击怎么样?我曾经也是一名勇将!嘻嘻～	不用说太多,就来比个胜负吧!			
+#RecordIn	DAMAGED	Skeleton	10	0	非常遗憾,我是勇士的时候没能与你相见.	真是强有力的攻击,让我回想起了前世!	好犀利的攻击呀.	活着的不再是我的威胁.			
+#RecordIn	DEAD	Skeleton	10	0	我...我就...就这样...	佣兵的实力也会...生锈啊.	这就是永远的安息地吗...	就连这剎那也不会觉得害怕..			
+#RecordIn	HELPMAIN	Skeleton	800	800	-	-	-	-			
+#RecordIn	HELPSUB	Skeleton	800	800	咳咳咳,让我来吧～	喀!有人在吗?	浑身怪痒痒的,来得好.	我会帮你快点解决,要请客哦!			
+#RecordIn	RACERESCUE	Skeleton	800	800	-	-	-	-			
+#RecordIn	PIECE	SkelArcher	4200000	6200000	这里的空气怪怪的?	天气越来越冷了,冷气直往骨头里钻.	污浊空气是皮肤的敌人啊...	欢迎!祭品啊!			
+#RecordIn	ATTACK	SkelArcher	10	0	让你尝一下骨箭的滋味!	这儿不是可以随便出入的地方.	我的同志们,我们一起击退敌人吧!!	我的箭将指向你的要害.			
+#RecordIn	DAMAGED	SkelArcher	10	0	这么快?你的速度升级了?	波宁~!	每个骨关节都酸疼.	这种程度的话,应该不会太无聊吧.			
+#RecordIn	DEAD	SkelArcher	10	0	你已经丢掉了所有的道具.	谢谢你让我又能安眠.	我的份儿也完成了吗?	你...这家伙...			
+#RecordIn	HELPMAIN	SkelArcher	800	800	如果我的身体散架,我不会轻易放你走的.	我是相信你的,但是并不容易啊～	这里出了点问题.	唉咿!!过来一下,快,快点!			
+#RecordIn	HELPSUB	SkelArcher	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	SkelArcher	800	800	-	-	-	-			
+#RecordIn	PIECE	SkeletonSoldier	4200000	6200000	你知道我是谁吗?	最近采探险家多起来了.	肚子饿,hungry.	要等到敌人来好累哦,先打过去好了.			
+#RecordIn	ATTACK	SkeletonSoldier	10	0	小看我,你会倒霉的.	你也是探险家吧..	我看见了你惨败的样子.	好,我们就正式开始吧!			
+#RecordIn	DAMAGED	SkeletonSoldier	10	0	易如反掌.	哦哦,你好像很有实力.	可笑.哼!!	咿咿~这个家伙会让我有种"可能就这么完蛋"的恐惧感.			
+#RecordIn	DEAD	SkeletonSoldier	10	0	怎么我输了呢...	等..等一下,硬盘还没能清出..	这样就完了吗...	我是"不死"...不会轻易就死...			
+#RecordIn	PIECE	SkelWarrior	4200000	6200000	知道我是谁吗!	噢,黑暗的主人!请再次给我们力量...	什么?你说哪里出现了敌人!?	这个时候!!			
+#RecordIn	ATTACK	SkelWarrior	10	0	我有满腔热血!哈哈哈哈!	再加点油,用点力气!	噢,对了,这里是战场.哈哈!	你就是我的对手?既然能动到我,我看你的实力应该也不差..			
+#RecordIn	DAMAGED	SkelWarrior	10	0	对了,就那么打!哈哈哈!	再用点力好不好?	在战场上绝不允许粗心大意.	我们"不死"绝不后退.			
+#RecordIn	DEAD	SkelWarrior	10	0	在我人生中,现在这瞬间...	还没有结束...喂,再来!	来,你来打我试试...	以前的我是...一个平凡的战士...			
+#RecordIn	HELPMAIN	SkelWarrior	800	800	嘎	-	-	-			
+#RecordIn	HELPSUB	SkelWarrior	800	800	骑士请等等,嘻嘻嘻!	竟然向战士大人挑战,应该还不知道他的厉害~	我诅咒你的愚蠢.	想与骑士大人我作对,搞不清状况的人到底是谁!			
+#RecordIn	RACERESCUE	SkelWarrior	800	800	-	-	-	-			
+#RecordIn	PIECE	SkelKnight	4400000	6400000	我要用我的生命来忠于新的君主!	你的精神正常吗?	这里由我们来死守!!	不死们都跟着我吧!			
+#RecordIn	ATTACK	SkelKnight	10	0	好好领教一下我的威力吧,哈哈哈!	与主人作对,不管是什么都不会原谅.	让你们领教一下主人给我的新力量!	看还能撑多久!咳哈			
+#RecordIn	DAMAGED	SkelKnight	10	0	好久未遇的对手啊?	一般的攻击是不能打垮我的,哈哈哈!	厉害,确实厉害.	手下都去了哪里!?这些没用的家伙!			
+#RecordIn	DEAD	SkelKnight	10	0	又让主人失望了吗...咳!	我在地下等着你们,哈哈哈!	不能...就这样倒下去!咳咳咳!!	我的战斗就这样结束啦.			
+#RecordIn	HELPMAIN	SkelKnight	800	800	咳咳咳,是谁叫醒了我～	战士啊,保护我吧.	我会叫你后悔的.	你是谁~			
+#RecordIn	HELPSUB	SkelKnight	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	SkelKnight	800	800	-	-	-	-			
+#RecordIn	PIECE	Bat	4200000	6000000	给我汁液吧!	会不会太过份啦?	我可不是猪!	啪哒啪哒!!我的翅膀是服装,你不知道吗?嘻嘻			
+#RecordIn	ATTACK	Bat	10	0	哎哟,好痒!	嘻嘻,你身上有股香味～	我要用毒液让你安睡.	我可不是沉睡的狮子...竟然敢动蝙蝠的鼻毛...啪哒啪哒!!			
+#RecordIn	DAMAGED	Bat	10	0	啊,这算是垂死抵抗么?以前从未估计过结果会是怎样.	想要逃走,可是身子太沉重?	不疼!不疼!	你这个程度的攻击,根本连一根汗毛都伤不了.			
+#RecordIn	DEAD	Bat	10	0	我的飞行梦啊!!!	我...在...发...抖...吗?	不死!!不死!!	咿...咿噢噢...			
+#RecordIn	PIECE	IceViVi	4200000	6000000	灼热的太阳和燃烧的大地是很有魅力的.	和我长得差不多的还有几个,你知道吗?	看见了好几批成群的人类,有趴吗?	我喜欢冰凉的水晶...			
+#RecordIn	ATTACK	IceViVi	10	0	你喜欢哪个季节?	他们脾气都相当暴躁,见面的话小心为好.	要做比试的话,光明正大地一对一吧.	被你快气死了!!			
+#RecordIn	DAMAGED	IceViVi	10	0	力量好大呀,和我的差不多.	哦,你也不错啊.打起来肯定很精彩.	哦哦,好像我处在劣势.	绝不饶过你!!呱勒勒!!			
+#RecordIn	DEAD	IceViVi	10	0	我不是溶化了吧?	结束了吗,有点遗憾.	不要.不要就这么消失.	阿...力量使用过度了,软叭叭...			
+#RecordIn	PIECE	ArchMageBook	4400000	6400000	我的性格不够慈悲,你们自己小心.	有人进入我的地盘了!谁?	嗅嗅,好像有人类的味道...嗅嗅...噢,原来我没有鼻子...	请你读我~!应该可以获得很重要的情报~!			
+#RecordIn	ATTACK	ArchMageBook	10	0	对于你,我受够了!	魔法具有无限的可能性.	你已经完蛋了!	魔法书245页,不灭火焰魔法攻击!!			
+#RecordIn	DAMAGED	ArchMageBook	10	0	你看透我了吗～!	攻击还算厉害.	不疼不痒的攻击,也算是攻击呀.	接着366页的完美防盾发动!!			
+#RecordIn	DEAD	ArchMageBook	10	0	我是不会倒下...的!!	请再给我一次生命...再给一次...	记忆像走马灯一样闪过脑海.	老虎死了会留皮,书会留下封面...咕噜			
+#RecordIn	PIECE	Spider	4600000	6600000	嗯...嗯...嗯...	札!我的蜘蛛网!!	今天我的网上网住了什么呢?	越是华丽颜色的蜘蛛,毒性就越强越可怕.			
+#RecordIn	ATTACK	Spider	10	0	这不是普通的蜘蛛网!	还可以做两伞型,心型的蜘蛛网!	蜘蛛网的特征就是你越挣扎越绑得牢,你懂吗?	能撑几妙呢?			
+#RecordIn	DAMAGED	Spider	10	0	何必为难我这只蜘蛛呢	嗯..蛮强的嘛.	嘿,我怎么禁不住发笑呢.	你该不会就是那个...专门收集蜘蛛的收集家吧!!			
+#RecordIn	DEAD	Spider	10	0	我的同胞...一定会给我报...仇...	燃烧成...白白的...	怎么输的呢?我怎么记不起来了.	我就说昨天的梦不好...切			
+#RecordIn	HELPMAIN	Spider	800	800	-	-	-	-			
+#RecordIn	HELPSUB	Spider	800	800	谁惹了脾气暴躁的妖狐.	我永远都做好了帮忙的准备.	有能力,当然要帮助别人.	不知是谁这么倒霉.咯咯			
+#RecordIn	RACERESCUE	Spider	800	800	-	-	-	-			
+#RecordIn	PIECE	ScareImp	4600000	6600000	我们啊!	吱吱吱	啊啊,我亲爱的迷你...小草...	那边有一个奇怪的家伙!			
+#RecordIn	ATTACK	ScareImp	10	0	为什么要这样?	非常笨的脸!!	这家伙!竟然欺负我的迷你!!	嗯?我面前也有?!			
+#RecordIn	DAMAGED	ScareImp	10	0	看你很想跟我玩是吗?	呀~歪曲所以脸变得更奇怪了,吱吱吱	嗯?啊,迷你没事啊!是我搞错了.	忍受我的攻击,我就让你活命!!接招!!			
+#RecordIn	DEAD	ScareImp	10	0	呵呵,以你那程度根本不够资格和我玩.	啊,笑得肚子怪爆了.	我们曾经很愉快过.	嗯?哪有这样的?			
+#RecordIn	PIECE	FlyingStaff	4600000	6600000	在所有的关系中,友情和义气是相当宝贵的.	岁月再怎么流失,有一个人,我是忘不了的.	我身上的光彩,会让你感到刺眼吧!	灯蛾为什么明知会死,还是要往火里跳呢?			
+#RecordIn	ATTACK	FlyingStaff	10	0	我们以朋友相识,那该多好.	客观地说,我比较强吧.同意吧?	对于你,这个攻击可能是致命的.	很多人看到我的光彩,明明知道会危险可还是要靠近.			
+#RecordIn	DAMAGED	FlyingStaff	10	0	再不加油,你就危险了...	你和...那个人长得很像...	会变成一个冗长的战斗.	你...不一样.非常特别...			
+#RecordIn	DEAD	FlyingStaff	10	0	可以理解,愿你今后更加勇猛.	认识你...真的很高兴...	...在消失的一剎那还有什么话要留的呢...	就这样消失,我一点都不会婉惜.			
+#RecordIn	PIECE	MasicStaff	4600000	6600000	我要等多久呢?	能和很多人见面,是一件兴奋的事情.	能不能和人类做个朋友呢?我常常感到孤独.	-			
+#RecordIn	ATTACK	MasicStaff	10	0	我要考考你.	你有多么强大?	你会明白我有多么强大.	-			
+#RecordIn	DAMAGED	MasicStaff	10	0	再来强点.就只有这个程度吗?	哦哦,还行呀.	吓,好像彼此都在浪费时间.	-			
+#RecordIn	DEAD	MasicStaff	10	0	你现在也很优秀,但可惜的是,总觉到少了点什么.	毫无意义的失败	起码比我强大.	-			
+#RecordIn	PIECE	KingStaff	4600000	6600000	这里空气很不好.若能呼吸着新鲜空气散步,该有多好.	强者本来就是孤独的.所以我孤独.	世界上充满了喜欢称王称霸的人.	要跟我挑战的人,就堂堂正正的站到我面前来.			
+#RecordIn	ATTACK	KingStaff	10	0	这里不是你来的地方.	可恶的家伙!	你也是属于喜欢权力的吗?	这里不是你该来的地方.			
+#RecordIn	DAMAGED	KingStaff	10	0	知道我是谁吗!无理的家伙.	你伤了我,我不会饶你.	也许你是一个人品不错的家伙.	就算这是我的未日,我也不会乞求活命!			
+#RecordIn	DEAD	KingStaff	10	0	该死的!!我会记住你的!!	啊啊啊!	哦呕呕～!	无法理解的失败.			
+#RecordIn	PIECE	Zombie	4600000	6600000	啊啊啊啊啊!	我...是怎么活过来的呢?	怎么回事,这莫名的饿?现在什么都想吃,简直受不了!	我诅咒巫士,那些...任意把我变成这样的...人...			
+#RecordIn	ATTACK	Zombie	10	0	你,你是谁!是你把我弄成这个样子的?!	谁呀!你是谁?	渴…我要喝...	我要把你变成跟我一样的不朽者.			
+#RecordIn	DAMAGED	Zombie	10	0	不会放过你!不会放过...	没有什么痛苦...感觉不到...	我正在消失吗?	若不想败在我手下,就发挥你的实力吧...			
+#RecordIn	DEAD	Zombie	10	0	我还没清出incoming档案夹...你帮我清一清...	又睡着了吗?	这种舒服的感觉...会是什么呢?	可以再回到地里吗...			
+#RecordIn	HELPMAIN	Zombie	800	800	什么事!在做什么?	呼...	-	-			
+#RecordIn	HELPSUB	Zombie	800	800	那家伙就由我来解决吧.	嘎嘎嘎哈,我帮你抓吗?嘿嘿嘿!	我能帮你吗...	加上我的力量应该没有问题.			
+#RecordIn	RACERESCUE	Zombie	800	800	-	-	-	-			
+#RecordIn	PIECE	OldFox	4800000	6800000	昨夜,我又看见了徘徊的精魄.	它们在身边的时候你会感到寒气袭人.	真是很烦的家伙...	高挂在深蓝天空的月亮,你知道有多美吗?			
+#RecordIn	ATTACK	OldFox	10	0	你能看见自己的精魄吗?	没关系?	钱!钱拿出来!吼!太激动现丑了.	满月天的晚上,要不要跟我一起去赏月亮呢?			
+#RecordIn	DAMAGED	OldFox	10	0	再继续吗?	你,有勇气回头看吗?	你不是好对付的对手	看这么好的东西,你的肝应该会很美味,好想赶快吃哦.			
+#RecordIn	DEAD	OldFox	10	0	我去睡一觉再来,呵呵.	还没结婚耶?	你...你...你的...身后...	再...再等一会就是满月...了...			
+#RecordIn	HELPMAIN	OldFox	800	800	呀～我把你看得太简单了?	喂～帮帮朋友哦.	一个人应付会很吃力哦!	一下下...只要帮我一下下.			
+#RecordIn	HELPSUB	OldFox	800	800	啊~好可怕.	请你...抓住我的手.	-	-			
+#RecordIn	RACERESCUE	OldFox	800	800	-	-	-	-			
+#RecordIn	PIECE	CemWolf	4800000	6800000	我的本能就是挖掘墳墓.	-	-	-			
+#RecordIn	ATTACK	CemWolf	10	0	哼!切!噗!呸!	-	-	-			
+#RecordIn	DAMAGED	CemWolf	10	0	-	-	-	-			
+#RecordIn	DEAD	CemWolf	10	0	再见...	-	-	-			
+#RecordIn	PIECE	Fox	4800000	6800000	我要去找找新鲜的食物.	今天可能不好找猎物...	有个志同道合的朋友是最开心的事.	不要把我跟古墓妖狐搞混!我们可是完全不同的.			
+#RecordIn	ATTACK	Fox	10	0	越看你越感到你是一个挺不错的选择.	想不到这么强.	被我盯上的的猎物,从来没有逃出我的手掌.是吧朋友?	我可以肯定,在各方面我都比古墓妖狐优秀.			
+#RecordIn	DAMAGED	Fox	10	0	你休想打倒我.	你只不过是井底之蛙!	攻击还不错,可不是我的对手.	那么小的体格怎么会有这种力量...咳赫			
+#RecordIn	DEAD	Fox	10	0	不能就这么结束.	赫,现在放心好像早了一点,因为要对付你的妖狐还剩一个...哦,不是吗...	我不会就这么倒下的.	叽哎哎哎哎哎~			
+#RecordIn	PIECE	BabyWereBear	4800000	6800000	我的爸爸是世界上最强的威奥熊.	长大后我要成为跟我爸爸一样的威奥熊!	熊爸爸胖乎乎～熊妈妈很苗条～熊宝宝好可爱～	哼吶			
+#RecordIn	ATTACK	BabyWereBear	10	0	不要小看我!!	疼的话可以叫疼!	我是可爱~可爱~甜美可爱~	啧			
+#RecordIn	DAMAGED	BabyWereBear	10	0	噢～疼.不过我会挺得住的.	哇～!好厉害呀.不过还不是我爸爸的对手～远远不如.	哎呀!我还以为会疼呢,怎么一点也不疼啊.嘻嘻!	爸爸!好像有训练成果了!			
+#RecordIn	DEAD	BabyWereBear	10	0	爸爸,你在哪儿.呜呜呜!	呜呜,不服气～!	呜呜呜,可恶!!我长大了会回来报仇的!	哼嗯!爸爸!输掉了!			
+#RecordIn	PIECE	FireViVi	4800000	6800000	叽叽叽～	你是在窥视我的能力吗?	不要施展冰魔法,尽管我的身体正在燃烧.	火可以让很多事情变得可能,虽然要付出相对的代价.			
+#RecordIn	ATTACK	FireViVi	10	0	好吧,让你尝尝火焰的魔力!	怎么样?是不是直烧到了你的心里!	再来一记火球攻击!	我会把你烤得黄黄的很好吃,你把你的命拿出来吧!			
+#RecordIn	DAMAGED	FireViVi	10	0	那点三脚猫功夫,不会造成我什么影响.	呵呵呵,我的攻击比地狱火还烫!	这个火球会烧尽一切.	拿灭火器是违规!!			
+#RecordIn	DEAD	FireViVi	10	0	啊,啊!我的生命之火快要灭了...	我会诅咒你～!	往火焰里...	既然己经变成这样,会尽可能多烧一些吧!			
+#RecordIn	PIECE	Ghost	5000000	7000000	你能看见我吗?	人怎能知晓黑暗的真理.	你真的能看见我?	不是看得到的就是全部,你知道吗?			
+#RecordIn	ATTACK	Ghost	10	0	必须把你埋葬在黑暗里!	咳咳.你神魂颠倒好可笑!咳咳.	有能力的话就避开.	你看不到我,怎么能赢得了我呢!吱吱			
+#RecordIn	DAMAGED	Ghost	10	0	对于我你的攻击是不起作用的.咳咳咳～	哦噢噢,怎么回事...	啊!好痛苦.	怎么会这样,应该看不到我...怎么办			
+#RecordIn	DEAD	Ghost	10	0	我要生存在你的影子中,时刻盯着你.	呃...呃～啊～我...被消灭...了...	到头来罪有应得.	啊~~不要!!不要!!			
+#RecordIn	PIECE	Robo	5000000	7000000	又...又要发生同样的事情吗?	我要诅咒!我要诅咒我所能看到的所有一切!	为什么只留下我一个...	人类啊~,我会让你们因恐惧而发抖.			
+#RecordIn	ATTACK	Robo	10	0	让你也尝尝同样的痛苦!	痛苦吗?咯咯咯～～～～～～	诅咒的力量...魂之利刃!	若你能从诅咒中解放我,我就给你称号.			
+#RecordIn	DAMAGED	Robo	10	0	小子,继续来!	你让我发自内心地冷笑!	你就只有这种程度吗?	切,原来是个不可轻忽的对象啊.			
+#RecordIn	DEAD	Robo	10	0	终于...我要去那儿了吗?	哇啊...还没有结束呢.	看...见...屋子着火...了吗?难道是...	我无法认可我的失败~			
+#RecordIn	PIECE	Hob	5200000	7200000	竟然要打帅帅...你没长眼吗?	好,很好!哈哈哈哈哈!	抵抗也是没用的!早点放弃吧!	我也算是俊男吧.哈哈哈哈...虽然有点不好意.			
+#RecordIn	ATTACK	Hob	10	0	有没有养宠物的打算呢?	滋味怎样啊?	光明正大地一对一吧!	叭~!啊~噢~!			
+#RecordIn	DAMAGED	Hob	10	0	其实我是被魔法诅咒,而变成了怪物...嘎	怎么会这样?	好了,住手吧!	这时就要三十六计走为上策!			
+#RecordIn	DEAD	Hob	10	0	救帅帅啊~	我的短暂的人生到此为止.再见～!	呕呕～!	YOUWIN!!			
+#RecordIn	PIECE	BoneImp	5200000	7200000	看我美丽的眼神～你的心在悸动了吧!	哪来的这么多不知分寸的蠢货.	在黑暗里我会强大10倍左右.	不觉得只要听到我的名字,就会知道我是个很漂亮的小姐吗?			
+#RecordIn	ATTACK	BoneImp	10	0	你是来和我玩儿的吗?	是我弱了呢?还是你变强了呢?	世上没有比戏弄人类更有意思的事情.	一,二,三,四,五...我在数你被打的次数.			
+#RecordIn	DAMAGED	BoneImp	10	0	我的皮肤是坚硬的,不会感到疼!	轻一点儿!!皮肤会变粗的!	逞能!你这是在逞能!	我好像在哪里见过你,你就是那个每晚偷看我的...!!			
+#RecordIn	DEAD	BoneImp	10	0	好想念那充满树林和大海味道的地方...	哎哟!!救人啊!!啊...我不是人类...	我知道还有比我强的...	连这坚固的甲衣都会碎掉,我也没什么嘛!			
+#RecordIn	PIECE	earthSpider	4600000	6600000	一,二,三,四,我有四条以上的腿呢.	请不要破坏精心建造的房子.	你知道我唯一的弱点吗?呵呵...	你应该知道合则生分则亡这句话吧?			
+#RecordIn	ATTACK	earthSpider	10	0	痛吗?那你为什么惹我.	我敢保证今天会成为你最倒霉的日子.	我当然不会告诉你我的弱点.	喃喃,喃喃喃.你的攻击模式很容易解读.			
+#RecordIn	DAMAGED	earthSpider	10	0	真是危险.	就这点水平想还跟我较劲,胆大包天.	哎哟.你知道我的弱点啦?!	你若要对付我,我看最好是多带几个同伴来.			
+#RecordIn	DEAD	earthSpider	10	0	算我今天倒霉,就这样.	不服气.	不管是谁,一定要为我报仇...	帮帮我!!喂朋友!!			
+#RecordIn	PIECE	Goblin	5200000	7200000	为了哥布林的荣誉!	是!听从王令,毫无怨言!	哇哈哈,一起去洗劫城镇!	怪物幸福哦~			
+#RecordIn	ATTACK	Goblin	10	0	竟敢入侵哥布林的领地!	正好抓你来当我的俘虏,嘿嘿.	有人入侵哥布林王国了,快来支持啊!	攻击哥布林!攻击入侵者!			
+#RecordIn	DAMAGED	Goblin	10	0	哇呀呀!	咳,好厉害,赶快来支援!	以你的实力无法攻破哥布林营地的!	啊~没关系,还可以.			
+#RecordIn	DEAD	Goblin	10	0	哥布林王国万岁!!	昨晚吃的是什么呢...	哥...哥布林壮烈牺牲...了	后面...麻烦你了.			
+#RecordIn	HELPMAIN	Goblin	800	800	-	-	-	-			
+#RecordIn	HELPSUB	Goblin	800	800	剑士,我走了～	剑士,平时有做些运动吧!呵呵	会崇敬的,崇敬谁?	哥布林出动了!!			
+#RecordIn	RACERESCUE	Goblin	800	800	-	-	-	-			
+#RecordIn	PIECE	Prock	5200000	7200000	我唯一的乐趣是修理庭院的花和树.	哥布林和威奥熊都太无礼.	哇嘟哇哩哇哩,呀啦哩嘣嘣...	你知猪笼草是什么吗?常听到这个名字,但就是不知道是什么...
+			
+#RecordIn	ATTACK	Prock	10	0	是你糟蹋了我的庭院吧!!	应该早点料到!!	我嘴巴太大吓到你了吗?	我可以连石头都嚼着吃掉,你应该不会比石头硬.			
+#RecordIn	DAMAGED	Prock	10	0	别想回去!!	不行!!!!我要把你们全都抓住!!	快抓住了你.	喂...喂!要保护植物!停止攻击!!			
+#RecordIn	DEAD	Prock	10	0	把...我...的...庭院...	...没有最后的遗言之类...	呕呕...出丑了.	留下了可耻的伤口.			
+#RecordIn	PIECE	GoblinSwordman	5400000	7400000	我?你不知道吗?	是!听从王令,毫无怨言!	我们的目的要绝对保密!	哥布林万岁～			
+#RecordIn	ATTACK	GoblinSwordman	10	0	听见了吗,寒风凛冽的声音?	我的剑术怎么样?嘿嘿嘿!	你应该见证我们力量,嘿嘿嘿!	是谁!!接我的剑!			
+#RecordIn	DAMAGED	GoblinSwordman	10	0	呃...这...力量!	好强啊,好像拥有可怕的本领啊!	就那么点本领,竟敢侵入我们哥布尔营地?!	你该不会认为没有支持军,可以活着离开这里吧.			
+#RecordIn	DEAD	GoblinSwordman	10	0	好...可怕的...力量...	敌...敌人前进了!	我预知的梦是对的...	完全搞不清楚我是怎么被打的.			
+#RecordIn	HELPMAIN	GoblinSwordman	800	800	你果真是强～	怎么会这样强～来人啊～	HELPME!!HELPME!!	有谁可以来一下这里~			
+#RecordIn	HELPSUB	GoblinSwordman	800	800	哈呀!	-	-	嘎...			
+#RecordIn	RACERESCUE	GoblinSwordman	800	800	-	-	-	-			
+#RecordIn	PIECE	WereBear	5400000	7400000	谁也阻挡不了我的冲击!	给我一场盛宴吧!	今天去见见好久不见的儿子吧?	说熊可爱的那些无知的家伙们!!			
+#RecordIn	ATTACK	WereBear	10	0	埋怨今天的圆月吧!	哼!我的前爪可以击碎岩石!	嘿嘿,正好你来陪我的儿子吧.	我会让你们知道,世上最可怕的就是熊.			
+#RecordIn	DAMAGED	WereBear	10	0	好厉害,让我感到瞬间的恐怖啊...	就那么点水平,应该伤不到我一根毫毛啊!	再来厉害的.没有刺激.	呃,竟然有人可以让我痛苦...咿			
+#RecordIn	DEAD	WereBear	10	0	结果是要死才能解除的诅咒吗?	久违的安息...	啊～从前尝过的蜜糖...很想再吃一次...	还不行!!还不想死!!			
+#RecordIn	PIECE	GoblinMage	5600000	7600000	今天的卜卦有点不寻常啊...	是!听从王令,毫无怨言!	嗯...还是不寻常,和首领商量一下?	进入营地的入侵者增多了,原因是什么呢?			
+#RecordIn	ATTACK	GoblinMage	10	0	诅咒的气息啊,让敌人气息沉睡!	诅咒的死神啊,给敌人强烈的打击吧!	诅咒的气息啊,让敌人笼罩在恐怖中吧!	受到诅咒的死亡之神啊~将你的愤怒给这些...			
+#RecordIn	DAMAGED	GoblinMage	10	0	诅咒的力量啊,让敌人的攻击无效!	竟然把诅咒的防御墙击破,好强啊!	被诅咒的死神啊,给予他神的愤怒吧...	受到诅咒吧~,接受!接受!接受吧!为什么不接受呢?			
+#RecordIn	DEAD	GoblinMage	10	0	诅咒的力量啊,请给予我复...活...?	诅咒的生命啊,快把这讯息传递给大王...	哥...哥布尔王...	啊啊~营...营地有...危险.			
+#RecordIn	HELPMAIN	GoblinMage	800	800	-	嗯?嗯嗯?	-	-			
+#RecordIn	HELPSUB	GoblinMage	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	GoblinMage	800	800	-	-	-	-			
+#RecordIn	PIECE	SandMushroom	5600000	7600000	我是沙滩魔菇!	沙滩魔菇怪剑士是我的全名.	嘿嘿,好痒,好痒啦.	-			
+#RecordIn	ATTACK	SandMushroom	10	0	你看我的斗帽!不帅吗?	嘟喽嘟喽~地里地里~地里里里里~	-	-			
+#RecordIn	DAMAGED	SandMushroom	10	0	沙色所以不怎么样?真没眼光.	-	-	-			
+#RecordIn	DEAD	SandMushroom	10	0	红豆汤红豆汤蘑菇蘑菇蘑菇....	-	-	-			
+#RecordIn	PIECE	GoblinCaptain	5600000	7600000	大王有旨,所有哥布尔都给我听着!	是!听从王令,毫无怨言!	这是什么?阴森的气氛...	没想到王会有那种想法..			
+#RecordIn	ATTACK	GoblinCaptain	10	0	接我一招!咯哈哈哈!	胆敢侵犯我们哥布尔王国?别想活着回去!	我就漂亮的给你吧!咳哈哈哈!	你有在吃饭吗?			
+#RecordIn	DAMAGED	GoblinCaptain	10	0	哈哈哈,就这么点招数?	我是王国光荣的勇士,让我们彻底决一胜负吧!	哥布尔王国是永恒的!!	在这里,打倒我之前,你是一步都没办法移动.			
+#RecordIn	DEAD	GoblinCaptain	10	0	难道是不吉利的征兆吗?	不是就这么结束了吧?	哎哟...计划出了...差错...	哥布尔王大人..			
+#RecordIn	HELPMAIN	GoblinCaptain	800	800	真丢脸,我竟然被这小子打倒...	很久没见过这么强的家伙了,独个儿对付真吃力.	所有哥布尔都加入这场战斗吧.	-			
+#RecordIn	HELPSUB	GoblinCaptain	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	GoblinCaptain	800	800	-	-	-	-			
+#RecordIn	PIECE	GobleKing	5800000	7800000	愿黑暗的力量与你同在...	所有的哥布尔都给我听着!	哥布尔王国永恒!!	那野蛮的人类,制伏于我们脚下了咳哈哈哈.			
+#RecordIn	ATTACK	GobleKing	10	0	能来到这里,真不简单啊?	谁也不能打乱我的计划!	这就是大王我的力量!	若你能一次就打倒我这伟大的哥布尔王,我就给你称号!			
+#RecordIn	DAMAGED	GobleKing	10	0	哈哈哈,干得还蛮漂亮,不过这只是刚开始.	要打倒我,还差远着呢!	没有更厉害的看家本领了吗?	不错哦.但是,打我显然就是你的失误!!			
+#RecordIn	DEAD	GobleKing	10	0	凡人怎么能做到!气...死...我了!	我的计划还没完,下次决不会饶恕你们.	耻辱啊,耻辱!我一定会让你们付出代价!	你要知道,庆祝胜利还嫌太早.咳..			
+#RecordIn	HELPMAIN	GobleKing	800	800	有人在吗?过来保护我.	哦～噢,难受极了.	去处置这个家伙!!	让你瞧瞧哥布尔的力量!!			
+#RecordIn	HELPSUB	GobleKing	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	GobleKing	800	800	-	-	-	-			
+#RecordIn	PIECE	MiniLips	5800000	7800000	我脸的一半是嘴唇.哎哟～	虽然是迷你,嘴唇还是占据了脸的一半,呜呜呜.┬.┬	哦赫～帮帮我～	-			
+#RecordIn	ATTACK	MiniLips	10	0	噢~是我想念的人啊.	-	喂有点礼貌～	-			
+#RecordIn	DAMAGED	MiniLips	10	0	我要惩罚你让我等这么久.	-	适可而止.	-			
+#RecordIn	DEAD	MiniLips	10	0	阿哈,能看到你我好幸福.	真是...如果我能漂亮一点...	-	-			
+#RecordIn	PIECE	Harkan	6200000	8200000	为了狼族荣耀!	前边的那位小姐,歇歇脚啊,	喂...我们的那位姑娘在干什么呢?	噜噜噜~我亲爱的在哪里呢~噜噜噜~			
+#RecordIn	ATTACK	Harkan	10	0	嗯,看得到我燃烧的心脏吗?这是我的心意.	请接受我热情的心.	是爱情的表示.不要着急～	亲爱的~!丢下我一个人去哪里啦亲爱的~!			
+#RecordIn	DAMAGED	Harkan	10	0	喂,不要太激动嘛～	激动并不是什么坏事,不过我不是一般的小伙子?	没关系,哥哥什么都会原谅你的.	嘎~在耍赖吗?			
+#RecordIn	DEAD	Harkan	10	0	我们只是享受一下罢了...	开玩笑了,玩笑,没想到你发那么大火.	美丽的花是带刺的.	太过份了!做到这样!			
+#RecordIn	PIECE	WeakenedOgre	5800000	7800000	我有个远亲和某国的公主结了婚...	我也有个老婆该多好啊.	为什么结婚,子孙,家庭,幸福与我无缘呢...	还我~青春~我的青春~还给~我~嘎~			
+#RecordIn	ATTACK	WeakenedOgre	10	0	竟敢小看我,让我教教你什么叫后悔!	哦呜～我可不是胆小鬼!!!	呜噢!!	让你看看我还没生锈的技术~鸣噢噢噢!!			
+#RecordIn	DAMAGED	WeakenedOgre	10	0	咳,就这个水平吗?	我比想象的还要强吧.	岁月无法抗拒.	喀!生锈啦.			
+#RecordIn	DEAD	WeakenedOgre	10	0	这花真漂亮!	如果再年轻10年...就不会...这么结束的...	呃...昨晚的梦境不是很好...	老了就已经很可悲了...嗯嗯			
+#RecordIn	PIECE	KingCall	6000000	8000000	我要破坏所有这一切!	破坏整个世界!	不许任何人质疑!	全都破坏掉~!!			
+#RecordIn	ATTACK	KingCall	10	0	把你击败!	把你击败掉!	破坏掉!	毁掉!全部!			
+#RecordIn	DAMAGED	KingCall	10	0	呃～	哦...疼...疼!!!!	咳咳咳,我愤怒了.	喀呃呃!!			
+#RecordIn	DEAD	KingCall	10	0	砸...烂...	全...部…毁...掉...	我...死了...	气死...我了...			
+#RecordIn	PIECE	LightingViVi	6200000	8200000	听说梦是可以实现的,是真的呢?	擦肩而过也是一种缘份,希望快点出现我的有缘人!	比起炎魔...我更喜欢冰魔...	噜噜噜噜~			
+#RecordIn	ATTACK	LightingViVi	10	0	喂,你的梦是什么?想干的事情是?想要实现的是?	我们见面并不是偶然.	击败你哦!	-			
+#RecordIn	DAMAGED	LightingViVi	10	0	想要击败我吗?我只是问问而已...	有点儿不好意思,不过你比我差.	咳咳.你相当强哦.	唉哟?唉哟哟?			
+#RecordIn	DEAD	LightingViVi	10	0	冤枉.我还有很多事情要做呢...	如果这就是我的命运,那我接受.	无法后悔就只能接受了.	我要消失了?是吗?			
+#RecordIn	PIECE	VampireBat	6200000	8200000	还是新鲜的好喝...就是不好弄...	人类呀,快来吧!!欢迎你们!!	听说嗜血者是穿这黑色斗篷...我也试一试.	不~太少了~还不够~			
+#RecordIn	ATTACK	VampireBat	10	0	喂!出门的时候至少要把脖子洗干净...	呸,这么难吃,你的不好喝.	噢!感觉不一样.	光萌要保障供应嗜血者新汁液!!要保障!!			
+#RecordIn	DAMAGED	VampireBat	10	0	稍等一下!!不要妨碍!!	吃食的时候狗也有尊严～!	我不需要大蒜,十字架,圣水等.	啧啧!啧!怎么吃都不够!			
+#RecordIn	DEAD	VampireBat	10	0	还...还不是...	听说吃死的鬼是有福气的,可我呢...	哦哦呕～!	咳~!刚刚吃的都吐出来了,好可惜哦.			
+#RecordIn	PIECE	Prisoner	6200000	8200000	15年来我都只吃萝卜咸菜.	天哪,我得到了特赦!我该回去了吗?	还有重要的事要办,绝对不能被抓回去.	被残酷的行刑者发现前快..			
+#RecordIn	ATTACK	Prisoner	10	0	你是谁?别想抓到我.	让你看看我在监狱中锻炼出来的力量.	没时间喽嗦了.	你!!跟行刑者长的很像~!是家人吗?!			
+#RecordIn	DAMAGED	Prisoner	10	0	咳,不能在这里磨蹭呀!	这感觉...是不是行刑者来了?	在危险来临之前,咱们商量一下?	对受行刑者数十年锻炼的我来说,那根本连痒都不会痒.			
+#RecordIn	DEAD	Prisoner	10	0	呃,好不容易逃出了监狱.	终于获得了真正的自由...	喂,行刑者跟我不一样,劝你赶快跑吧!	咿啊啊啊~!			
+#RecordIn	PIECE	Torturer	6400000	8400000	把如此善良的行刑者,说得那么残暴的是谁?	噜噜噜～今天该拷问谁好呢?	嗯...真想马上使用昨晚想到的行刑术.	听到美妙的尖叫声吗?			
+#RecordIn	ATTACK	Torturer	10	0	让你见识我祖传的10大酷刑吧,嘿嘿嘿!	现在才要开始,这是我昨晚研究了整夜的严刑迫供术!嘻嘻嘻!	来...用力地惨叫吧!	喂!没看到狱卒吗?虽然是可以代替狱卒来拷问你...呵喝喝			
+#RecordIn	DAMAGED	Torturer	10	0	你倒有点才能,想做我的徒弟不?我可以把行刑术全都传授给你.	你用的这招叫什么?我要把它记在我的行刑手册中.	你同意的话,我们再来一次.	卡噢~你的技术也还不错哦!			
+#RecordIn	DEAD	Torturer	10	0	原谅我一次吧!下次不敢了,呜呜!	都是上面指示我这样做的,求你饶了我～～～	不,不要,我不想死!饶我一命吧!	我还有很多罪犯要管理..			
+#RecordIn	PIECE	DeadTreeSoul	6400000	8400000	时时刻刻小心火灾,已灭的也要再查!	咳赫赫	-	-			
+#RecordIn	ATTACK	DeadTreeSoul	10	0	哼	打啊,怎么了...怕了吗?	-	-			
+#RecordIn	DAMAGED	DeadTreeSoul	10	0	我也让你变得跟我一样枯干!!	-	-	-			
+#RecordIn	DEAD	DeadTreeSoul	10	0	我不想死...	-	-	-			
+#RecordIn	PIECE	SeniorTorturer	6400000	8400000	这里的生活太死板,需要变化.	当行刑者时,我也很上进.	喜欢欣赏别人的痛苦,那是变态,是变态.	现在我也想看看明亮的光.			
+#RecordIn	ATTACK	SeniorTorturer	10	0	找死吗,还惹我.	看看我这燃烧的眼睛!感觉一下我这卜嗵卜嗵的心脏!	好长时间没发挥我华丽的行刑术了～	我不会对你手软,你就看着办吧!!			
+#RecordIn	DAMAGED	SeniorTorturer	10	0	再加点油,要不然没意思.	哦哦.这是想象不到的.	哦呕,你是行刑者出身吧!	用尽全力打啊!!			
+#RecordIn	DEAD	SeniorTorturer	10	0	我也已经老了吗..	令人厌烦的生活,在这里结束了.	应该要没人见过我...	呵喝喝喝..			
+#RecordIn	PIECE	DisHarkan	6400000	8400000	想吃热腾腾的红茶和奶油蛋糕.	像我这样不错的人狼也少见.呵呵!	这里太潮湿充满霉味.	吭吭吭...			
+#RecordIn	ATTACK	DisHarkan	10	0	欢迎,能给我香喷喷的红茶吗?	我的身材怎么样?一眼就会被迷住吧?	这里的环境会伤到我美丽的皮肤~	-			
+#RecordIn	DAMAGED	DisHarkan	10	0	用说的.使用暴力是野蛮的表现.	够了吧!!够了!!	哈哈哈,可以理解.因为你的实力就摆在那里.	-			
+#RecordIn	DEAD	DisHarkan	10	0	哎哟,我倒下了.	满足吗?你需要的是这个吗?	结果是战势反转.	-			
+#RecordIn	PIECE	KaraSolider	6400000	8400000	巫师太可怕...唉呀!	上山去打猎呢～还是到海边去杀人呢～	我也想学魔法.那么就会像巫师一样强大.	今天也抓了一卡车.下班吧~			
+#RecordIn	ATTACK	KaraSolider	10	0	咤咤咤!!我要叫你跪倒在我面前!	咳哈哈,击败你,巫师会夸奖我的...	咳咳!!接受现实吧吧!	噢!!再抓最后一只你就下班!			
+#RecordIn	DAMAGED	KaraSolider	10	0	哦噢...危险.	啦啦啦～咳咳!什么呀!!无耻地搞突袭吗.	咳咳咳!!我一定能挡住你的攻击.	是看不起我还是怎样!?			
+#RecordIn	DEAD	KaraSolider	10	0	巫...师大人...对不起...	巫师～!!!!	咳～我倒下了.	不行~!!对你好像不太行.去找其他家伙好了~切!!			
+#RecordIn	HELPMAIN	KaraSolider	800	800	-	-	-	-			
+#RecordIn	HELPSUB	KaraSolider	800	800	我来帮你,巫师大人.	不会饶你的,臭小子.	巫师大人!你还有我呢.	唉~!走啦~!			
+#RecordIn	RACERESCUE	KaraSolider	800	800	-	-	-	-			
+#RecordIn	PIECE	KaraTempler	6400000	8400000	这两天卡拉士兵工作效率怎么下降了.	听说在某个地方,有传说中的魔法书...好想要...	卡拉士兵虽然无知不过还是很听话的.	材料不够!士兵怎么都还不来～			
+#RecordIn	ATTACK	KaraTempler	10	0	火焰和诅咒,你要那个?	喂!!在偷看什么?	被我打败是你的光荣.	我就特别以最高的魔法对付你吧.			
+#RecordIn	DAMAGED	KaraTempler	10	0	成为新的实验材料吧.	最后的挣扎,挣扎吧,以后就没有机会了.	唉呀.这对手不能忽视.	好笑吗?嗯?好笑吗?嗯?好笑吗?嗯?好笑吗?嗯?			
+#RecordIn	DEAD	KaraTempler	10	0	我...还没...结婚...	太过于自信自己的力量了...	不行～!!	我一定会报仇.			
+#RecordIn	HELPMAIN	KaraTempler	800	800	呃,快来帮忙!	我的魔法都被破解了?来帮帮我!	全都过来!	若还有余力,就过来帮我吧~!			
+#RecordIn	HELPSUB	KaraTempler	800	800	咳～我来帮你.	感到费劲的话让我来帮你.	我会处理得干净利落.	咿赫.			
+#RecordIn	RACERESCUE	KaraTempler	800	800	-	-	-	-			
+#RecordIn	PIECE	KingSpider	7800000	8800000	走开!这好料是我的!	-	-	-			
+#RecordIn	ATTACK	KingSpider	10	0	切~,是...钓到...我...吗?	-	-	-			
+#RecordIn	DAMAGED	KingSpider	10	0	我的蜘蛛网比同伴的结实!?	-	-	-			
+#RecordIn	DEAD	KingSpider	10	0	谁来...谁来扶我起来...	-	-	-			
+#RecordIn	PIECE	Pixy	7800000	8800000	啪哒啪哒!是你被钓!	-	-	-			
+#RecordIn	ATTACK	Pixy	10	0	让你浑身上下全是伤疤～咯咯咯!	-	-	-			
+#RecordIn	DAMAGED	Pixy	10	0	哎哟!脑袋晕了...	-	-	-			
+#RecordIn	DEAD	Pixy	10	0	吱阿!!	-	-	-			
+#RecordIn	PIECE	ArchonJuinor	7800000	8800000	这里是乌鲁加城.欢迎大家光临～!!	-	-	-			
+#RecordIn	ATTACK	ArchonJuinor	10	0	哎呗勒勒勒!!哎呗勒勒!	-	-	-			
+#RecordIn	DAMAGED	ArchonJuinor	10	0	叽噜!	-	-	-			
+#RecordIn	DEAD	ArchonJuinor	10	0	我信你了,讨厌～	-	-	-			
+#RecordIn	PIECE	Orc	7800000	8800000	吭吭吭...	-	-	-			
+#RecordIn	ATTACK	Orc	10	0	嘎~	-	-	-			
+#RecordIn	DAMAGED	Orc	10	0	煞车~~	-	-	-			
+#RecordIn	DEAD	Orc	10	0	我是单方面被你欺负的...	-	-	-			
+#RecordIn	PIECE	Pinky	7800000	8800000	啦啦啦～哎哟～啦啦啦～天气不错呢.	-	-	-			
+#RecordIn	ATTACK	Pinky	10	0	转啊~转啊~嘎哈哈~	-	-	-			
+#RecordIn	DAMAGED	Pinky	10	0	嗯,我不是说要转吗.	-	-	-			
+#RecordIn	DEAD	Pinky	10	0	唉呀唉呀,我要疯了疯了...@.@	-	-	-			
+#RecordIn	PIECE	MiniJewelKeeper	7800000	8800000	看得到我绚烂的身体吗?这可是很贵的哦~	-	-	-			
+#RecordIn	ATTACK	MiniJewelKeeper	10	0	该不会是觊觎我的宝石吧?	-	-	-			
+#RecordIn	DAMAGED	MiniJewelKeeper	10	0	我给你宝石,不要打啦.	-	-	-			
+#RecordIn	DEAD	MiniJewelKeeper	10	0	妈妈呀~~	-	-	-			
+#RecordIn	PIECE	LittleRunningBas	7800000	8800000	呀呀呀!	-	-	-			
+#RecordIn	ATTACK	LittleRunningBas	10	0	气死你!气死你!	-	-	-			
+#RecordIn	DAMAGED	LittleRunningBas	10	0	只有这么一点程度?	-	-	-			
+#RecordIn	DEAD	LittleRunningBas	10	0	啊...太不象话啦.	-	-	-			
+#RecordIn	PIECE	KingMushRoom	7800000	8800000	让我看一看,没人在吗～	-	-	-			
+#RecordIn	ATTACK	KingMushRoom	10	0	在这1秒里,我打了10下,看见了吗?	-	-	-			
+#RecordIn	DAMAGED	KingMushRoom	10	0	当然不可能看得到我的拳头.	-	-	-			
+#RecordIn	DEAD	KingMushRoom	10	0	吼...	-	-	-			
+#RecordIn	PIECE	GoldenBat	7800000	8800000	呼~?	-	-	-			
+#RecordIn	ATTACK	GoldenBat	10	0	真是,莫名奇妙.	-	-	-			
+#RecordIn	DAMAGED	GoldenBat	10	0	什么乱七八糟的都要来打.	-	-	-			
+#RecordIn	DEAD	GoldenBat	10	0	我们多么辛苦才有今天.咳!	-	-	-			
+#RecordIn	PIECE	OrcHunter	7800000	8800000	大~力!天下壮士~!	-	-	-			
+#RecordIn	ATTACK	OrcHunter	10	0	铁拳!	-	-	-			
+#RecordIn	DAMAGED	OrcHunter	10	0	竟然能接下我这充满力道的攻击!!!!	-	-	-			
+#RecordIn	DEAD	OrcHunter	10	0	嘎...	-	-	-			
+#RecordIn	PIECE	Nox	7800000	8800000	你打啊!	-	-	-			
+#RecordIn	ATTACK	Nox	10	0	你是可以测试我的剑术实力的合适对手,嘻嘻!	-	-	-			
+#RecordIn	DAMAGED	Nox	10	0	哈哈哈!!	-	-	-			
+#RecordIn	DEAD	Nox	10	0	哦哦...我怎么倒下了呢...	-	-	-			
+#RecordIn	PIECE	Lips	7800000	8800000	噢噢～我的爱情!如今你在哪里呢?	-	-	-			
+#RecordIn	ATTACK	Lips	10	0	你?!什么!!你不是我的爱～!!	-	-	-			
+#RecordIn	DAMAGED	Lips	10	0	喂!!是我呀.你世上唯一的爱,请看好.	-	-	-			
+#RecordIn	DEAD	Lips	10	0	不懂我心的你...	-	-	-			
+#RecordIn	PIECE	Incubus	7800000	8800000	好高兴看到你~	-	-	-			
+#RecordIn	ATTACK	Incubus	10	0	喂!我让你做好梦吧～怎么样?	-	-	-			
+#RecordIn	DAMAGED	Incubus	10	0	不要徒劳地反抗!互相都累.	-	-	-			
+#RecordIn	DEAD	Incubus	10	0	接住我结实有力的腿攻击!.	-	-	-			
+#RecordIn	PIECE	Greenky	7800000	8800000	我想要像阳光一样耀眼的玻璃珠.	我藏在草丛里,应该不容易找到.	-	-			
+#RecordIn	ATTACK	Greenky	10	0	我把你的脸打扁,咤!!	你看吧!好笑吧!	-	-			
+#RecordIn	DAMAGED	Greenky	10	0	哇唔!跟我一起玩吶!!	-	-	-			
+#RecordIn	DEAD	Greenky	10	0	咯咿咿...我...就这样...	-	-	-			
+#RecordIn	PIECE	Archon	7800000	8800000	吶吶吶~	-	-	-			
+#RecordIn	ATTACK	Archon	10	0	难道,以为是我才打的吗?	-	-	-			
+#RecordIn	DAMAGED	Archon	10	0	接住我结实有力的腿攻击!	-	-	-			
+#RecordIn	DEAD	Archon	10	0	唉呦...	-	-	-			
+#RecordIn	PIECE	NaiadSoul	7800000	8800000	树和石头是三尺半,天空是五尺半...	-	-	-			
+#RecordIn	ATTACK	NaiadSoul	10	0	有趣的生物.我来帮你分析!	-	-	-			
+#RecordIn	DAMAGED	NaiadSoul	10	0	我看透你了!!	-	-	-			
+#RecordIn	DEAD	NaiadSoul	10	0	喀啊啊啊啊...	-	-	-			
+#RecordIn	PIECE	Stonie	7800000	8800000	你好	-	-	-			
+#RecordIn	ATTACK	Stonie	10	0	要在我这结实的身上留下伤痕不容易吧!	-	-	-			
+#RecordIn	DAMAGED	Stonie	10	0	再怎么锋利的剑,也动不了我一根毫毛.	-	-	-			
+#RecordIn	DEAD	Stonie	10	0	再...再...见...	-	-	-			
+#RecordIn	PIECE	CloverTrumpy	7800000	8800000	你是谁?	-	-	-			
+#RecordIn	ATTACK	CloverTrumpy	10	0	要记住,我的剑是不会对敌人发慈悲的.	-	-	-			
+#RecordIn	DAMAGED	CloverTrumpy	10	0	我承认你有相当的实力!但是,我的剑更高一层!	-	-	-			
+#RecordIn	DEAD	CloverTrumpy	10	0	妈呀~~	-	-	-			
+#RecordIn	PIECE	RatmanKnight	7800000	8800000	我可是受肯定的老鼠骑士!!	-	-	-			
+#RecordIn	ATTACK	RatmanKnight	10	0	侧刺!阻挡!缺点百出!	-	-	-			
+#RecordIn	DAMAGED	RatmanKnight	10	0	就这个程度?	-	-	-			
+#RecordIn	DEAD	RatmanKnight	10	0	为了鼠的荣耀!	-	-	-			
+#RecordIn	PIECE	LizardMan	7800000	8800000	原本我是用四条腿走路,现在怎么变成两条腿走呢?	-	-	-			
+#RecordIn	ATTACK	LizardMan	10	0	咳咳咳,死吧!!咳咳咳,啊...是谁呢...?	-	-	-			
+#RecordIn	DAMAGED	LizardMan	10	0	是谁啊?为什么要攻击?	-	-	-			
+#RecordIn	DEAD	LizardMan	10	0	咳...咳嗯嗯	-	-	-			
+#RecordIn	PIECE	SparkDog	7800000	8800000	咳	-	-	-			
+#RecordIn	ATTACK	SparkDog	10	0	咳噜噜勒	-	-	-			
+#RecordIn	DAMAGED	SparkDog	10	0	吱喳吱喳	-	-	-			
+#RecordIn	DEAD	SparkDog	10	0	吱吱	-	-	-			
+#RecordIn	PIECE	JewelKeeper	7800000	8800000	感觉到了.	-	-	-			
+#RecordIn	ATTACK	JewelKeeper	10	0	从你身上好像可以得到我想要的呢!	-	-	-			
+#RecordIn	DAMAGED	JewelKeeper	10	0	拿出你手中的灵力石来!	-	-	-			
+#RecordIn	DEAD	JewelKeeper	10	0	啊呜.	-	-	-			
+#RecordIn	PIECE	ElvenTree	7800000	8800000	很久以前这里有个叫作精灵的种族.	-	-	-			
+#RecordIn	ATTACK	ElvenTree	10	0	不能饶恕妨碍我的安宁的所有东西!	-	-	-			
+#RecordIn	DAMAGED	ElvenTree	10	0	接我树精长老的铁鞭攻击吧!	-	-	-			
+#RecordIn	DEAD	ElvenTree	10	0	我树精长老可以投入大地的怀抱里了.	-	-	-			
+#RecordIn	PIECE	HeartTrumpy	7800000	8800000	现在你是在向我挑战吗?	-	-	-			
+#RecordIn	ATTACK	HeartTrumpy	10	0	我是特兰斐一族的最高治疗师!	-	-	-			
+#RecordIn	DAMAGED	HeartTrumpy	10	0	嘿!好痒,好痒.你就不能正经点吗?!	-	-	-			
+#RecordIn	DEAD	HeartTrumpy	10	0	竟然是我输了!!	-	-	-			
+#RecordIn	PIECE	ElfKnightSoul	7800000	8800000	我是引以自傲的精灵骑士!!	-	-	-			
+#RecordIn	ATTACK	ElfKnightSoul	10	0	请看我出众的能力!	-	-	-			
+#RecordIn	DAMAGED	ElfKnightSoul	10	0	竟然想用那点能力来对付我!	-	-	-			
+#RecordIn	DEAD	ElfKnightSoul	10	0	漂亮的攻击.	-	-	-			
+#RecordIn	PIECE	RedStonie	7800000	8800000	呀呼!你是来看我的吗?	-	-	-			
+#RecordIn	ATTACK	RedStonie	10	0	为什么要打我?说个理由啊!	-	-	-			
+#RecordIn	DAMAGED	RedStonie	10	0	你不觉得我这扎实的样子很帅吗?	-	-	-			
+#RecordIn	DEAD	RedStonie	10	0	扎实竟然会行不通!!	-	-	-			
+#RecordIn	PIECE	BlueCloverTrumpy	7800000	8800000	欢迎欢迎真的很欢迎!!	-	-	-			
+#RecordIn	ATTACK	BlueCloverTrumpy	10	0	吃过饭了吗?	-	-	-			
+#RecordIn	DAMAGED	BlueCloverTrumpy	10	0	你太小看我这特兰斐最高精英了吧?	-	-	-			
+#RecordIn	DEAD	BlueCloverTrumpy	10	0	这...个坏蛋...	-	-	-			
+#RecordIn	PIECE	Navar	7800000	8800000	当过兵吗?咳,世上没有那么简单的事吧!	这里是哪个战场?	痛苦啊...疼啊...要疼死了...	只有强者可以在战场上生存.			
+#RecordIn	ATTACK	Navar	10	0	经得起我的攻击,我就认同你.	嘿,好久没打过象样的战斗了.	你是谁,怎么见了我也不害怕呢?	抓得好!若能送你上西天,我的心情应该就会好一点.			
+#RecordIn	DAMAGED	Navar	10	0	咳咳咳,这个算攻击吗.	你是哪个佣兵团的!	不是对手.	咳咳咳,看你那德性,我看应该是连一只蚂蚁都杀不了.			
+#RecordIn	DEAD	Navar	10	0	咳哦噢～!	从前...从前...是和平的...	老兵是不会死的...只是消失...嘣～	咳咳...我也是...咳咳...有生命的生命体...啊..			
+#RecordIn	HELPMAIN	Navar	800	800	哎哟,真没想到会反击!	唔～我现在都老了...力不从心喽.	喂,来这里处理一下.	有人在吗...咳~!!			
+#RecordIn	HELPSUB	Navar	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	Navar	800	800	-	-	-	-			
+#RecordIn	PIECE	GiantSparkDog	7800000	8800000	咳勒勒空空!!	-	-	-			
+#RecordIn	ATTACK	GiantSparkDog	10	0	想要跟我斗,好大的胆子.	-	-	-			
+#RecordIn	DAMAGED	GiantSparkDog	10	0	不用付出全力就可以打发了.	-	-	-			
+#RecordIn	DEAD	GiantSparkDog	10	0	不要手软...	-	-	-			
+#RecordIn	PIECE	GiantPixy	7800000	8800000	吱啊啊啊啊!!	-	-	-			
+#RecordIn	ATTACK	GiantPixy	10	0	上啊!你上上看啊!	-	-	-			
+#RecordIn	DAMAGED	GiantPixy	10	0	如果小看大型草精,我可是会难过的!!	-	-	-			
+#RecordIn	DEAD	GiantPixy	10	0	被打了!气死我了!!	-	-	-			
+#RecordIn	PIECE	GoldJewelKeeper	7800000	8800000	用我身上的光在寻找灵力石.	-	-	-			
+#RecordIn	ATTACK	GoldJewelKeeper	10	0	只有这样?嘿嘿!	-	-	-			
+#RecordIn	DAMAGED	GoldJewelKeeper	10	0	再来攻击啊!	-	-	-			
+#RecordIn	DEAD	GoldJewelKeeper	10	0	啊呜...	-	-	-			
+#RecordIn	PIECE	OrcCaptain	7800000	8800000	艾莎东北方的精灵之地...嘟嚷嘟嚷...	-	-	-			
+#RecordIn	ATTACK	OrcCaptain	10	0	兽人们跟我来吧!!	-	-	-			
+#RecordIn	DAMAGED	OrcCaptain	10	0	...你说的话我听得懂.	-	-	-			
+#RecordIn	DEAD	OrcCaptain	10	0	咳哈哈兽人啊~要保重啊!!	-	-	-			
+#RecordIn	PIECE	SpadeGuardTrumpy	7800000	8800000	啊罗哈?	-	-	-			
+#RecordIn	ATTACK	SpadeGuardTrumpy	10	0	可怕的枪攻击,接招吧!	-	-	-			
+#RecordIn	DAMAGED	SpadeGuardTrumpy	10	0	哦哦,不错哦!为了你,我就展现我必杀绝招给你看看吧!!	-	-	-			
+#RecordIn	DEAD	SpadeGuardTrumpy	10	0	噢...Senorita...	-	-	-			
+#RecordIn	PIECE	NaiadDemon	7800000	8800000	没大没小...竟然向我挑战?	-	-	-			
+#RecordIn	ATTACK	NaiadDemon	10	0	哈哈哈!好笑,太好笑了!	-	-	-			
+#RecordIn	DAMAGED	NaiadDemon	10	0	阿哈哈!好高兴!!让我看看你更吃力的表情啦!!	-	-	-			
+#RecordIn	DEAD	NaiadDemon	10	0	用说的我看是说不通了...	-	-	-			
+#RecordIn	PIECE	NavarHenter	7800000	8800000	这嚣张的种族是什么?	-	-	-			
+#RecordIn	ATTACK	NavarHenter	10	0	我不会原谅你.	-	-	-			
+#RecordIn	DAMAGED	NavarHenter	10	0	欸咿!!	-	-	-			
+#RecordIn	DEAD	NavarHenter	10	0	啊啊!	-	-	-			
+#RecordIn	PIECE	GreedyLizardMan	7800000	8800000	我...是男人!	-	-	-			
+#RecordIn	ATTACK	GreedyLizardMan	10	0	你需要的东西我可以给你.	-	-	-			
+#RecordIn	DAMAGED	GreedyLizardMan	10	0	才不会乖乖给你看?除非你给我一个你手上的东西.	-	-	-			
+#RecordIn	DEAD	GreedyLizardMan	10	0	我是...男人啊...	-	-	-			
+#RecordIn	PIECE	Shylph	7800000	8800000	你是来送死的吗?	-	-	-			
+#RecordIn	ATTACK	Shylph	10	0	你身边的风是我的伙伴.	-	-	-			
+#RecordIn	DAMAGED	Shylph	10	0	用我的风好好敎训你.	-	-	-			
+#RecordIn	DEAD	Shylph	10	0	怎么会这样...真不敢...相信...	-	-	-			
+#RecordIn	PIECE	NoxHunter	7800000	8800000	剑上载满力量一次抑制住敌人!!	-	-	-			
+#RecordIn	ATTACK	NoxHunter	10	0	会成为一个好的练剑对象哦.	-	-	-			
+#RecordIn	DAMAGED	NoxHunter	10	0	力量太多了!!	-	-	-			
+#RecordIn	DEAD	NoxHunter	10	0	吱哎哎...我要死了吗?	-	-	-			
+#RecordIn	PIECE	OldArchon	7800000	8800000	喝喝喝~	-	-	-			
+#RecordIn	ATTACK	OldArchon	10	0	嘿,无理的家伙,不懂得尊重老人吗!	-	-	-			
+#RecordIn	DAMAGED	OldArchon	10	0	啊,啊哎	-	-	-			
+#RecordIn	DEAD	OldArchon	10	0	哎哟!!年轻人欺负没有力气的老人啊～	-	-	-			
+#RecordIn	PIECE	DiaTrumpy	7800000	8800000	近来好吗?	-	-	-			
+#RecordIn	ATTACK	DiaTrumpy	10	0	这个世上没有我打不碎的!!我就把你的身子打得满地找牙.	-	-	-			
+#RecordIn	DAMAGED	DiaTrumpy	10	0	我的箭...怎么不能射穿你呢!!	-	-	-			
+#RecordIn	DEAD	DiaTrumpy	10	0	应该在箭上再加些魔法力...	-	-	-			
+#RecordIn	PIECE	RunningBas	7800000	8800000	你还是不要随便惹我～嘻嘻嘻!	-	-	-			
+#RecordIn	ATTACK	RunningBas	10	0	你能赢我吗.	-	-	-			
+#RecordIn	DAMAGED	RunningBas	10	0	啊啊啊...	-	-	-			
+#RecordIn	DEAD	RunningBas	10	0	输掉了?	-	-	-			
+#RecordIn	PIECE	SpadeTrumpy	7800000	8800000	我就是纸牌系的绅士骑士.	-	-	-			
+#RecordIn	ATTACK	SpadeTrumpy	10	0	怎会怎会怎会这样~	-	-	-			
+#RecordIn	DAMAGED	SpadeTrumpy	10	0	你看一副无赖的样子!!	-	-	-			
+#RecordIn	DEAD	SpadeTrumpy	10	0	只是困了...稍躺一下...	-	-	-			
+#RecordIn	PIECE	ElfKnightDemon	7800000	8800000	嘎噢~!	-	-	-			
+#RecordIn	ATTACK	ElfKnightDemon	10	0	那程度的物理攻击,根本伤不了我!	-	-	-			
+#RecordIn	DAMAGED	ElfKnightDemon	10	0	这只会痒痒的...	-	-	-			
+#RecordIn	DEAD	ElfKnightDemon	10	0	咳...	-	-	-			
+#RecordIn	PIECE	AncientStonie	7800000	8800000	人生是残酷的...	-	-	-			
+#RecordIn	ATTACK	AncientStonie	10	0	弱者只能如虫子般.	-	-	-			
+#RecordIn	DAMAGED	AncientStonie	10	0	胡乱攻击我,会损坏你的武器.	-	-	-			
+#RecordIn	DEAD	AncientStonie	10	0	呼...我是虫子...	-	-	-			
+#RecordIn	PIECE	BlackIncubus	7800000	8800000	来啊...宝贝...	-	-	-			
+#RecordIn	ATTACK	BlackIncubus	10	0	哟~雪克雪克宝贝~	-	-	-			
+#RecordIn	DAMAGED	BlackIncubus	10	0	唉哟?我都亲自来到你的梦里了还这样?	-	-	-			
+#RecordIn	DEAD	BlackIncubus	10	0	噢噢...救救俊男...	-	-	-			
+#RecordIn	PIECE	LizardManKnight	7800000	8800000	应该没有像我这种风采的怪物了吧!	-	-	-			
+#RecordIn	ATTACK	LizardManKnight	10	0	哼,那也算是刀艺吗?	-	-	-			
+#RecordIn	DAMAGED	LizardManKnight	10	0	用那种魔法就想要赢我?	-	-	-			
+#RecordIn	DEAD	LizardManKnight	10	0	我最后是...把玫瑰花...	-	-	-			
+#RecordIn	PIECE	JokerTrumpy	7800000	8800000	让女人心情颤动...就是我!!	-	-	-			
+#RecordIn	ATTACK	JokerTrumpy	10	0	要感觉一下我的手感吗～	-	-	-			
+#RecordIn	DAMAGED	JokerTrumpy	10	0	幼稚的家伙!我就把你送入黑暗的空间里吧!	-	-	-			
+#RecordIn	DEAD	JokerTrumpy	10	0	come...on...	-	-	-			
+#RecordIn	PIECE	D_Kebing	3400000	5400000	为什么总是我把门呢?难道我是守门员吗...哼!	如果我是你的话,立即回去找伙伴一起过来!	-	-			
+#RecordIn	ATTACK	D_Kebing	10	0	看清楚我的名字!我可不是平凡的克比.	-	-	-			
+#RecordIn	DAMAGED	D_Kebing	10	0	我要是你的话,马上回去升级以后再来...哼!	-	-	-			
+#RecordIn	DEAD	D_Kebing	10	0	你用了什么卑鄙手段!!	-	-	-			
+#RecordIn	PIECE	D_TombRaider	3400000	5400000	呼咿~	哼,我也去找找礼盒吧～	-	-			
+#RecordIn	ATTACK	D_TombRaider	10	0	休想拿走这里的矿石!都是我的.	走吧～	-	-			
+#RecordIn	DAMAGED	D_TombRaider	10	0	喂,我们协议一下吧,没必要见血嘛.	-	-	-			
+#RecordIn	DEAD	D_TombRaider	10	0	你这...想不开的种族...	-	-	-			
+#RecordIn	PIECE	D_MageBook	3400000	5400000	傻瓜一个～气死你,气死你～	-	-	-			
+#RecordIn	ATTACK	D_MageBook	10	0	真是一个无聊的家伙.嘿,没意思～	-	-	-			
+#RecordIn	DAMAGED	D_MageBook	10	0	嘘～这也叫攻击吗?	-	-	-			
+#RecordIn	DEAD	D_MageBook	10	0	还能打!!我还能打!	-	-	-			
+#RecordIn	PIECE	D_MarloneArcher	3400000	5400000	在这里辅佐玛仑王是我最大的荣幸.	-	-	-			
+#RecordIn	ATTACK	D_MarloneArcher	10	0	为了避开弓箭必须迂回着前进.	-	-	-			
+#RecordIn	DAMAGED	D_MarloneArcher	10	0	我是善于射箭,回避的杰出弓箭手.	-	-	-			
+#RecordIn	DEAD	D_MarloneArcher	10	0	切,生气.	-	-	-			
+#RecordIn	PIECE	D_MarloneMegaton	3400000	5400000	礼盒里有什么呢?好好奇.	哎哟,好饿～我每天都好饿.	-	-			
+#RecordIn	ATTACK	D_MarloneMegaton	10	0	喂!有没有吃的,拿出来!	-	-	-			
+#RecordIn	DAMAGED	D_MarloneMegaton	10	0	哼,哼.	-	-	-			
+#RecordIn	DEAD	D_MarloneMegaton	10	0	哎哟,若不是肚子饿,我会一拳打倒你的...	-	-	-			
+#RecordIn	PIECE	D_MarloneFighter	3400000	5400000	太过于好奇会惹祸上身的.	-	-	-			
+#RecordIn	ATTACK	D_MarloneFighter	10	0	请问有何贵干?	-	-	-			
+#RecordIn	DAMAGED	D_MarloneFighter	10	0	哇,攻击好厉害哦.	-	-	-			
+#RecordIn	DEAD	D_MarloneFighter	10	0	玛仑王,没脸见您了.	-	-	-			
+#RecordIn	PIECE	D_kingMarlone	3400000	5400000	哼!不要再用那粗短的手臂腿挣扎了.	-	-	-			
+#RecordIn	ATTACK	D_kingMarlone	10	0	勇气可嘉!虽然这勇气让你陷入危险...	-	-	-			
+#RecordIn	DAMAGED	D_kingMarlone	10	0	咳哈哈哈～多带几个伙伴,怎么样?	-	-	-			
+#RecordIn	DEAD	D_kingMarlone	10	0	噢,是我一生中最丢脸的事.	-	-	-			
+#RecordIn	PIECE	D_ArchMageBook	4400000	6400000	你再怎么挣扎...嘻嘻.	-	-	-			
+#RecordIn	ATTACK	D_ArchMageBook	10	0	哇哈!好久没碰到过的猎物,好兴奋啊!	-	-	-			
+#RecordIn	DAMAGED	D_ArchMageBook	10	0	啊!可惜不是值得我感叹的对手.遗憾!	-	-	-			
+#RecordIn	DEAD	D_ArchMageBook	10	0	拜拜～拜～拜～	-	-	-			
+#RecordIn	PIECE	D_Spider	4400000	6400000	哦!吓一跳.刚才好像有人盯着我...	-	-	-			
+#RecordIn	ATTACK	D_Spider	10	0	你就是那吓到我的人类!!	-	-	-			
+#RecordIn	DAMAGED	D_Spider	10	0	蜘蛛丝盾牌!会有这种东西吗...	-	-	-			
+#RecordIn	DEAD	D_Spider	10	0	不能这样我一个人!!我要叫你陪着……哈哈哈!!!	-	-	-			
+#RecordIn	PIECE	D_FlyingStaff	4400000	6400000	要挨打试试吗?	-	-	-			
+#RecordIn	ATTACK	D_FlyingStaff	10	0	真的是你自己来的吗?那我就只能笑你愚蠢了.	-	-	-			
+#RecordIn	DAMAGED	D_FlyingStaff	10	0	以你的实力,嘲笑你也是无话可说.	-	-	-			
+#RecordIn	DEAD	D_FlyingStaff	10	0	打倒了我一个就这么趾高气扬吗?	-	-	-			
+#RecordIn	PIECE	D_Zombie	4400000	6400000	嗅嗅,有味.出来吧人类,不要藏着...	-	-	-			
+#RecordIn	ATTACK	D_Zombie	10	0	咳咳,不要害怕.让你也变成不朽者如何?	-	-	-			
+#RecordIn	DAMAGED	D_Zombie	10	0	我是不朽者,感觉不到疼和痛苦.	-	-	-			
+#RecordIn	DEAD	D_Zombie	10	0	不对劲...有点不寻常...	-	-	-			
+#RecordIn	PIECE	D_OldFox	4400000	6400000	嘿嘿嘿嘿!!	-	-	-			
+#RecordIn	ATTACK	D_OldFox	10	0	我自己也没想到我还有这么积极的一面.	-	-	-			
+#RecordIn	DAMAGED	D_OldFox	10	0	我就让此地变成你们的坟墓.	-	-	-			
+#RecordIn	DEAD	D_OldFox	10	0	小心后面,这里有太多盯着你的眼睛.	-	-	-			
+#RecordIn	PIECE	D_Zombieking	4400000	6400000	咳咳...高兴见到你...欢迎你来到地狱...	-	-	-			
+#RecordIn	ATTACK	D_Zombieking	10	0	既然已经看到我就不能活着回去.	-	-	-			
+#RecordIn	DAMAGED	D_Zombieking	10	0	真神奇,就这么一点点能力,竟然可以来这到这里.	-	-	-			
+#RecordIn	DEAD	D_Zombieking	10	0	我不会死...不会死...	-	-	-			
+#RecordIn	PIECE	D_BoneImp	4600000	7200000	怎么知道隐秘的山峰呢?	-	-	-			
+#RecordIn	ATTACK	D_BoneImp	10	0	竟然为了找我来到这里,真是鬼迷心窍～	-	-	-			
+#RecordIn	DAMAGED	D_BoneImp	10	0	我可没有打你的主意!我们不要这样.好吗?啊?	-	-	-			
+#RecordIn	DEAD	D_BoneImp	10	0	哼～我要告诉巨人哥布尔王～呼啦啦～	-	-	-			
+#RecordIn	PIECE	D_Goblin	4600000	7200000	坐着路轨上的车子玩看来很有趣呢～	-	-	-			
+#RecordIn	ATTACK	D_Goblin	10	0	喂,朋友!我要坐车子,你帮我到后面推好吗～嗯?嗯?	-	-	-			
+#RecordIn	DAMAGED	D_Goblin	10	0	哎哟!这位朋友真暴力呀.	-	-	-			
+#RecordIn	DEAD	D_Goblin	10	0	真是的...	-	-	-			
+#RecordIn	PIECE	D_Prock	4600000	7200000	就那几招刀法,你以为可以拿我怎样吗?	-	-	-			
+#RecordIn	ATTACK	D_Prock	10	0	你那是什么狗屎脸!?	-	-	-			
+#RecordIn	DAMAGED	D_Prock	10	0	我并不是你所知道的那个食人草!!不要相同看待!	-	-	-			
+#RecordIn	DEAD	D_Prock	10	0	呱啊竟然是我被打!	-	-	-			
+#RecordIn	PIECE	D_GoblinSwordman	4600000	7200000	哼,不要动.	-	-	-			
+#RecordIn	ATTACK	D_GoblinSwordman	10	0	东张西望的,想去哪里～!!	-	-	-			
+#RecordIn	DAMAGED	D_GoblinSwordman	10	0	你再等一百年,也不是巨人哥布尔王的对手.	-	-	-			
+#RecordIn	DEAD	D_GoblinSwordman	10	0	巨人哥布尔王!!	-	-	-			
+#RecordIn	PIECE	D_WereBear	4600000	7200000	这里好像～从来没有人来过.	-	-	-			
+#RecordIn	ATTACK	D_WereBear	10	0	嘿嘿,正等你!你让我等得太久了.	-	-	-			
+#RecordIn	DAMAGED	D_WereBear	10	0	打倒我就告诉你巨人哥布尔王在哪里,嘿嘿!	-	-	-			
+#RecordIn	DEAD	D_WereBear	10	0	噢欧,巨人哥布尔王...在...那里...呜呼!	-	-	-			
+#RecordIn	PIECE	D_GoblinMage	4600000	7200000	喂!!地牢哥布尔,不要跳了,地都震动了.	-	-	-			
+#RecordIn	ATTACK	D_GoblinMage	10	0	进退两难!这就是你现在的处境.	-	-	-			
+#RecordIn	DAMAGED	D_GoblinMage	10	0	四面楚歌!这也是恰如其分地表达你现在处境的语言.	-	-	-			
+#RecordIn	DEAD	D_GoblinMage	10	0	低级...	-	-	-			
+#RecordIn	PIECE	D_GiantGobleKing	4600000	7200000	呼	-	-	-			
+#RecordIn	ATTACK	D_GiantGobleKing	10	0	哈哈,冲啊!!让敌人尝尝我的厉害!!	-	-	-			
+#RecordIn	DAMAGED	D_GiantGobleKing	10	0	哈哈,怎么不跑呢～!!	-	-	-			
+#RecordIn	DEAD	D_GiantGobleKing	10	0	今天我给你面子～下次就要给我小心点～!	-	-	-			
+#RecordIn	PIECE	D_Pinky	7800000	8800000	我的脸蛋像苹果～又漂亮又嫩～眼睛闪亮～鼻子玲珑??	-	-	-			
+#RecordIn	ATTACK	D_Pinky	10	0	特别来这里看我?我会害羞啦～>口<	-	-	-			
+#RecordIn	DAMAGED	D_Pinky	10	0	喂!不得对淑女无礼～	-	-	-			
+#RecordIn	DEAD	D_Pinky	10	0	啊...悲哀...	-	-	-			
+#RecordIn	PIECE	D_Pixy	7800000	8800000	我是变强的草精灵!	-	-	-			
+#RecordIn	ATTACK	D_Pixy	10	0	到处跑惹出麻烦的是你吗!?	-	-	-			
+#RecordIn	DAMAGED	D_Pixy	10	0	你...若认为你会没事,那就大错特错...	-	-	-			
+#RecordIn	DEAD	D_Pixy	10	0	不是你强,所以不要错觉!	-	-	-			
+#RecordIn	PIECE	D_Greenky	7800000	8800000	真是不怎么样的地方!!	-	-	-			
+#RecordIn	ATTACK	D_Greenky	10	0	这里太无聊了啦!吼哟～	-	-	-			
+#RecordIn	DAMAGED	D_Greenky	10	0	呀呀呀呀!!	-	-	-			
+#RecordIn	DEAD	D_Greenky	10	0	竟然可以击退我,真了不起.	-	-	-			
+#RecordIn	PIECE	D_Nox	7800000	8800000	唉哟?	-	-	-			
+#RecordIn	ATTACK	D_Nox	10	0	我的剑可不讲情面的.	-	-	-			
+#RecordIn	DAMAGED	D_Nox	10	0	让我尽兴尽兴嘛.	-	-	-			
+#RecordIn	DEAD	D_Nox	10	0	啊...这是...什么...?	-	-	-			
+#RecordIn	PIECE	D_OrcCaptain	7800000	8800000	乖乖等人类来进攻,这可不是我的个性.	-	-	-			
+#RecordIn	ATTACK	D_OrcCaptain	10	0	有什么...在我心里翻腾着.	-	-	-			
+#RecordIn	DAMAGED	D_OrcCaptain	10	0	队长的攻击,接招!!	-	-	-			
+#RecordIn	DEAD	D_OrcCaptain	10	0	咳咳咳咳...我要把你的城镇子毁成一片废墟...	-	-	-			
+#RecordIn	PIECE	D_GiantOrcCaptain	7800000	8800000	咿咿咿...好笑,真是好笑.	-	-	-			
+#RecordIn	ATTACK	D_GiantOrcCaptain	10	0	还活到现在说明你真有能耐.咳咳咳!	-	-	-			
+#RecordIn	DAMAGED	D_GiantOrcCaptain	10	0	当下就尽情欢乐吧,死后就连后悔也没机会了...	-	-	-			
+#RecordIn	DEAD	D_GiantOrcCaptain	10	0	喀哦呃呃~	-	-	-			
+#RecordIn	PIECE	D_WeakenedOgre	4800000	6800000	不要以貌判断～我可是善良的.	-	-	-			
+#RecordIn	ATTACK	D_WeakenedOgre	10	0	虽然看起来这样,但很弱啊!	-	-	-			
+#RecordIn	DAMAGED	D_WeakenedOgre	10	0	哎呀～轻一点嘛～	-	-	-			
+#RecordIn	DEAD	D_WeakenedOgre	10	0	咿咿....	-	-	-			
+#RecordIn	PIECE	D_KingCall	4800000	6800000	背后冷飕飕的,应该有人在盯我.	-	-	-			
+#RecordIn	ATTACK	D_KingCall	10	0	一对一绝对有信心.咳咳!!	-	-	-			
+#RecordIn	DAMAGED	D_KingCall	10	0	呜哩呀!呀!!嘻呀!	-	-	-			
+#RecordIn	DEAD	D_KingCall	10	0	不能就这么死!	-	-	-			
+#RecordIn	PIECE	D_Harkan	4800000	6800000	也给我经验值～!!我要升级!!	-	-	-			
+#RecordIn	ATTACK	D_Harkan	10	0	今天的目标是打倒20名人类.	-	-	-			
+#RecordIn	DAMAGED	D_Harkan	10	0	技能点数要放着发霉吗?	-	-	-			
+#RecordIn	DEAD	D_Harkan	10	0	这是198129次的死亡.	-	-	-			
+#RecordIn	PIECE	D_VampireBat	4800000	6800000	嘟嘟嘟～我感觉到了.感觉到了.	-	-	-			
+#RecordIn	ATTACK	D_VampireBat	10	0	特地找到此地,帮我迎接末日.	-	-	-			
+#RecordIn	DAMAGED	D_VampireBat	10	0	我用牙齿咬你.	-	-	-			
+#RecordIn	DEAD	D_VampireBat	10	0	哎哟～世界都疯了.疯了～	-	-	-			
+#RecordIn	PIECE	D_Prisoner	4800000	6800000	再也没有我可以逃跑的地方.	我的偶像宝贝龙～哥哥～!!我好想见你啊.	-	-			
+#RecordIn	ATTACK	D_Prisoner	10	0	总感觉今天特别倒霉!	-	-	-			
+#RecordIn	DAMAGED	D_Prisoner	10	0	以牙还牙,加倍地还!这是我的座右铭.你懂吗!	-	-	-			
+#RecordIn	DEAD	D_Prisoner	10	0	原地别动!!再比试一局吧.	-	-	-			
+#RecordIn	PIECE	D_Torturer	4800000	6800000	执行的人也快乐,接受的人也快乐的行刑术是什么?你知道吗?	-	-	-			
+#RecordIn	ATTACK	D_Torturer	10	0	接招!!必杀技!脚掌发痒!!嘿嘿.	-	-	-			
+#RecordIn	DAMAGED	D_Torturer	10	0	我的武器也需要艾尔.	-	-	-			
+#RecordIn	DEAD	D_Torturer	10	0	哈啊哈啊...	-	-	-			
+#RecordIn	PIECE	D_Torturerking	4800000	6800000	听说最近有人要打倒我...	-	-	-			
+#RecordIn	ATTACK	D_Torturerking	10	0	让你一辈子待在这里去不出～嘿嘿嘿.	-	-	-			
+#RecordIn	DAMAGED	D_Torturerking	10	0	处置他们!	-	-	-			
+#RecordIn	DEAD	D_Torturerking	10	0	阿阿,就这么走了吗?	-	-	-			
+#RecordIn	PIECE	D_CloverTrumpy	8000000	9000000	怀念特兰斐王国的豪华日子.	-	-	-			
+#RecordIn	ATTACK	D_CloverTrumpy	10	0	好像在哪里见过?面熟.	-	-	-			
+#RecordIn	DAMAGED	D_CloverTrumpy	10	0	咳...为什么攻击我...!!	-	-	-			
+#RecordIn	DEAD	D_CloverTrumpy	10	0	你们的存在已经暴露了.	-	-	-			
+#RecordIn	PIECE	D_BlueCloverTrumpy	8000000	9000000	谁能感觉到我们的动静呢..	-	-	-			
+#RecordIn	ATTACK	D_BlueCloverTrumpy	10	0	胆大包天!你知道这里是哪里吗?	你以后不能再踏入遗迹半步了.	-	-			
+#RecordIn	DAMAGED	D_BlueCloverTrumpy	10	0	这里是特兰斐遗迹!不能双手拱让给你们.	-	-	-			
+#RecordIn	DEAD	D_BlueCloverTrumpy	10	0	竟然我会被打...	-	-	-			
+#RecordIn	PIECE	D_HeartTrumpy	8000000	9000000	我的任务是保护和治疗特兰斐兵士.	-	-	-			
+#RecordIn	ATTACK	D_HeartTrumpy	10	0	请不要在妨碍我.	-	-	-			
+#RecordIn	DAMAGED	D_HeartTrumpy	10	0	对于我来说,治疗这种伤疤就像呼吸一样容易.	-	-	-			
+#RecordIn	DEAD	D_HeartTrumpy	10	0	还有很多没接受治疗的患者...	-	-	-			
+#RecordIn	PIECE	D_SpadeGuardTrumpy	8000000	9000000	随时准备痛打侵略者.	-	-	-			
+#RecordIn	ATTACK	D_SpadeGuardTrumpy	10	0	不要回避,接招!	-	-	-			
+#RecordIn	DAMAGED	D_SpadeGuardTrumpy	10	0	我要好好教训教训,让你们以后都不得踏入这里半步.	-	-	-			
+#RecordIn	DEAD	D_SpadeGuardTrumpy	10	0	还没来得急让你尝到滋味就被你打...	-	-	-			
+#RecordIn	PIECE	D_SpadeTrumpy	8000000	9000000	我活着的理由是守护特兰斐遗迹.	-	-	-			
+#RecordIn	ATTACK	D_SpadeTrumpy	10	0	怀疑你有进入这里的资格.	-	-	-			
+#RecordIn	DAMAGED	D_SpadeTrumpy	10	0	看样子不是一般的家伙.	-	-	-			
+#RecordIn	DEAD	D_SpadeTrumpy	10	0	我认输,我服气.	-	-	-			
+#RecordIn	PIECE	D_DiaTrumpy	8000000	9000000	重建特兰斐王国的准备工作,正在有条理地进行.	-	-	-			
+#RecordIn	ATTACK	D_DiaTrumpy	10	0	再怎么坚硬的盾牌和铠甲,也不能抵挡我的箭.	-	-	-			
+#RecordIn	DAMAGED	D_DiaTrumpy	10	0	就如你不是一人,请你要记住我也不是一人.	-	-	-			
+#RecordIn	DEAD	D_DiaTrumpy	10	0	今天你虚度的一天...以后...那什么...	-	-	-			
+#RecordIn	PIECE	D_Harpy	8000000	9000000	在我的脚下下跪.	你是做什么的家伙?	-	-			
+#RecordIn	ATTACK	D_Harpy	10	0	呵呵呵!看你能挺多久.	-	-	-			
+#RecordIn	DAMAGED	D_Harpy	10	0	喂～你们是什么东西,敢在我身上留伤疤?	最好给我记住,惹我生气是件愚蠢的事.	-	-			
+#RecordIn	DEAD	D_Harpy	10	0	我这可怕的脚指甲竟然行不通...	-	-	-			
+#RecordIn	PIECE	P_Goblinmage1	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Goblinmage1	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Goblinmage1	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Goblinmage1	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Goblin1	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Goblin1	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Goblin1	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Goblin1	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Goblin2	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Goblin2	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Goblin2	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Goblin2	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Goblin3	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Goblin3	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Goblin3	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Goblin3	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Goblin4	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Goblin4	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Goblin4	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Goblin4	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Fighter3F	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Fighter3F	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Fighter3F	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Fighter3F	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Cleric3F	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Cleric3F	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Cleric3F	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Cleric3F	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Archer3M	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Archer3M	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Archer3M	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Archer3M	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Mage3F	4600000	7200000	-	-	-	-			
+#RecordIn	ATTACK	P_Mage3F	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Mage3F	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Mage3F	10	0	-	-	-	-			
+#RecordIn	PIECE	P_LightingViVi	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_LightingViVi	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_LightingViVi	10	0	-	-	-	-			
+#RecordIn	DEAD	P_LightingViVi	10	0	-	-	-	-			
+#RecordIn	PIECE	P_KaraSolider1	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_KaraSolider1	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_KaraSolider1	10	0	-	-	-	-			
+#RecordIn	DEAD	P_KaraSolider1	10	0	-	-	-	-			
+#RecordIn	PIECE	P_KaraSolider2	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_KaraSolider2	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_KaraSolider2	10	0	-	-	-	-			
+#RecordIn	DEAD	P_KaraSolider2	10	0	-	-	-	-			
+#RecordIn	PIECE	P_KaraSolider3	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_KaraSolider3	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_KaraSolider3	10	0	-	-	-	-			
+#RecordIn	DEAD	P_KaraSolider3	10	0	-	-	-	-			
+#RecordIn	PIECE	P_KaraSolider4	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_KaraSolider4	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_KaraSolider4	10	0	-	-	-	-			
+#RecordIn	DEAD	P_KaraSolider4	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Fighter2F	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_Fighter2F	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Fighter2F	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Fighter2F	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Cleric2M	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_Cleric2M	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Cleric2M	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Cleric2M	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Archer2F	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_Archer2F	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Archer2F	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Archer2F	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Mage2M	4800000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_Mage2M	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Mage2M	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Mage2M	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Orc1	5200000	9000000	-	-	-	-			
+#RecordIn	ATTACK	P_Orc1	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Orc1	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Orc1	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Orc2	5200000	9000000	-	-	-	-			
+#RecordIn	ATTACK	P_Orc2	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Orc2	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Orc2	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Pinky	5200000	9000000	-	-	-	-			
+#RecordIn	ATTACK	P_Pinky	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Pinky	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Pinky	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Orc3	5200000	9000000	-	-	-	-			
+#RecordIn	ATTACK	P_Orc3	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Orc3	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Orc3	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Orc4	5200000	9000000	-	-	-	-			
+#RecordIn	ATTACK	P_Orc4	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Orc4	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Orc4	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Fighter1M	5200000	9000000	-	-	-	-			
+#RecordIn	ATTACK	P_Fighter1M	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Fighter1M	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Fighter1M	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Cleric1F	5200000	8800000	-	-	-	-			
+#RecordIn	ATTACK	P_Cleric1F	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Cleric1F	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Cleric1F	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Archer1M	5200000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_Archer1M	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Archer1M	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Archer1M	10	0	-	-	-	-			
+#RecordIn	PIECE	P_Mage1F	5200000	6800000	-	-	-	-			
+#RecordIn	ATTACK	P_Mage1F	10	0	-	-	-	-			
+#RecordIn	DAMAGED	P_Mage1F	10	0	-	-	-	-			
+#RecordIn	DEAD	P_Mage1F	10	0	-	-	-	-			
+#RecordIn	PIECE	FireNix	8000000	9000000	咳呃呃呃!!咳!	-	-	-			
+#RecordIn	ATTACK	FireNix	10	0	吱噜~	-	-	-			
+#RecordIn	DAMAGED	FireNix	10	0	吱呀啊啊啊啊鸣鸣鸣	-	-	-			
+#RecordIn	DEAD	FireNix	10	0	吱咿咿...	-	-	-			
+#RecordIn	PIECE	FireSpirit	8000000	9000000	呱啊!	-	-	-			
+#RecordIn	ATTACK	FireSpirit	10	0	呱?	-	-	-			
+#RecordIn	DAMAGED	FireSpirit	10	0	呱呱!!	-	-	-			
+#RecordIn	DEAD	FireSpirit	10	0	咕...咕呜呜...	-	-	-			
+#RecordIn	PIECE	FlameHoneying	8000000	9000000	燃烧吧,哈尼啊!	-	-	-			
+#RecordIn	ATTACK	FlameHoneying	10	0	燃烧吧,哈尼哈尼!	-	-	-			
+#RecordIn	DAMAGED	FlameHoneying	10	0	怎,怎么...哈尼哈尼...?没有思吗?	-	-	-			
+#RecordIn	DEAD	FlameHoneying	10	0	燃烧成...火红色...	-	-	-			
+#RecordIn	PIECE	CoreGuardian-U	8000000	9000000	嗯嗯...	-	-	-			
+#RecordIn	ATTACK	CoreGuardian-U	10	0	胆子还真大,这里都敢来...	-	-	-			
+#RecordIn	DAMAGED	CoreGuardian-U	10	0	我要好好教育教育你!!	-	-	-			
+#RecordIn	DEAD	CoreGuardian-U	10	0	太...不象话...	-	-	-			
+#RecordIn	PIECE	MineMole	8000000	9000000	噢?	-	-	-			
+#RecordIn	ATTACK	MineMole	10	0	哦?	-	-	-			
+#RecordIn	DAMAGED	MineMole	10	0	咳?	-	-	-			
+#RecordIn	DEAD	MineMole	10	0	呜斯.	-	-	-			
+#RecordIn	PIECE	RubyGuardian-U	8000000	9000000	咻咻咻!	-	-	-			
+#RecordIn	ATTACK	RubyGuardian-U	10	0	咻!咻咻!这不是从嘴巴里出来的声音!	-	-	-			
+#RecordIn	DAMAGED	RubyGuardian-U	10	0	看着我这美体动作不会入迷吗?	-	-	-			
+#RecordIn	DEAD	RubyGuardian-U	10	0	倒霉...	-	-	-			
+#RecordIn	PIECE	FlameSpirit	8000000	9000000	呜哦呜呃呃呃~	-	-	-			
+#RecordIn	ATTACK	FlameSpirit	10	0	全都都要教训!!	-	-	-			
+#RecordIn	DAMAGED	FlameSpirit	10	0	哼!	-	-	-			
+#RecordIn	DEAD	FlameSpirit	10	0	怎么连一个捣蛋鬼都处理不了!!	-	-	-			
+#RecordIn	PIECE	KidMon	8000000	9000000	呀呀呀!	-	-	-			
+#RecordIn	ATTACK	KidMon	10	0	阿阿...小看我你就会倒大霉啊!!	-	-	-			
+#RecordIn	DAMAGED	KidMon	10	0	痛吧?很痛吧?	-	-	-			
+#RecordIn	DEAD	KidMon	10	0	啊...没力气.	-	-	-			
+#RecordIn	PIECE	Miner	8000000	9000000	嘻嘻嘻!!	-	-	-			
+#RecordIn	ATTACK	Miner	10	0	宝石全都是我的!!	-	-	-			
+#RecordIn	DAMAGED	Miner	10	0	是我的啦!!!	-	-	-			
+#RecordIn	DEAD	Miner	10	0	你...是我的...	-	-	-			
+#RecordIn	PIECE	UndeadMiner	8000000	9000000	噜噜噜噜~	-	-	-			
+#RecordIn	ATTACK	UndeadMiner	10	0	看这肌肉~	-	-	-			
+#RecordIn	DAMAGED	UndeadMiner	10	0	我是这矿山的绅士~	-	-	-			
+#RecordIn	DEAD	UndeadMiner	10	0	只有肌肉不够吗?	-	-	-			
+#RecordIn	PIECE	KartMiner	8000000	9000000	卡卡卡卡!!	-	-	-			
+#RecordIn	ATTACK	KartMiner	10	0	你以为去市场看得到吗?	-	-	-			
+#RecordIn	DAMAGED	KartMiner	10	0	要把你的骨头装在这里!	-	-	-			
+#RecordIn	DEAD	KartMiner	10	0	去他的....	-	-	-			
+#RecordIn	PIECE	LavaVivi	8000000	9000000	呵勒勒勒勒...	-	-	-			
+#RecordIn	ATTACK	LavaVivi	10	0	卡噢!!	-	-	-			
+#RecordIn	DAMAGED	LavaVivi	10	0	呵哇啊!!	-	-	-			
+#RecordIn	DEAD	LavaVivi	10	0	没想到会有家伙赢过我的火...	-	-	-			
+#RecordIn	PIECE	JewelTree	8000000	9000000	看看我,帅吧?	-	-	-			
+#RecordIn	ATTACK	JewelTree	10	0	也让你的身上长宝石吧?	-	-	-			
+#RecordIn	DAMAGED	JewelTree	10	0	宝石盛开了.	-	-	-			
+#RecordIn	DEAD	JewelTree	10	0	没想到我的攻击竟然会被识破!	-	-	-			
+#RecordIn	PIECE	MagmaTon	8000000	9000000	有点烫吗?	-	-	-			
+#RecordIn	ATTACK	MagmaTon	10	0	像你碰一下就会化掉!!	-	-	-			
+#RecordIn	DAMAGED	MagmaTon	10	0	呵哈,呵哈,呵哈哈...?	-	-	-			
+#RecordIn	DEAD	MagmaTon	10	0	啊...我的热气竟然会没用!	-	-	-			
+#RecordIn	PIECE	FlameMinemole	8000000	9000000	呀,呀,呀	-	-	-			
+#RecordIn	ATTACK	FlameMinemole	10	0	痛吗?痒吗?	-	-	-			
+#RecordIn	DAMAGED	FlameMinemole	10	0	嘻嘻,痒吧?对吧?	-	-	-			
+#RecordIn	DEAD	FlameMinemole	10	0	怎么搔痒都没感觉…	-	-	-			
+#RecordIn	PIECE	RedNix	8000000	9000000	吱咿咿咿!!!	-	-	-			
+#RecordIn	ATTACK	RedNix	10	0	尖石啄!!	-	-	-			
+#RecordIn	DAMAGED	RedNix	10	0	叽!叽咿咿!!	-	-	-			
+#RecordIn	DEAD	RedNix	10	0	吱阿阿!!	-	-	-			
+#RecordIn	PIECE	CrystalGuardian-U	8000000	9000000	会...受伤...哦...	-	-	-			
+#RecordIn	ATTACK	CrystalGuardian-U	10	0	为什么...而...来...	-	-	-			
+#RecordIn	DAMAGED	CrystalGuardian-U	10	0	竟然能躲掉我这锐利的攻击!!	-	-	-			
+#RecordIn	DEAD	CrystalGuardian-U	10	0	想...回去...	-	-	-			
+#RecordIn	PIECE	LavaMagmaton	8000000	9000000	呼,我强太多了.	-	-	-			
+#RecordIn	ATTACK	LavaMagmaton	10	0	接住我这炙热的攻击!!	-	-	-			
+#RecordIn	DAMAGED	LavaMagmaton	10	0	不是你这种家伙可以对付的.	-	-	-			
+#RecordIn	DEAD	LavaMagmaton	10	0	啊~身体慢慢变凉啦.	-	-	-			
+#RecordIn	PIECE	GuardianMaster	8000000	9000000	笨蛋啊...	-	-	-			
+#RecordIn	ATTACK	GuardianMaster	10	0	抛弃欲望吧.	-	-	-			
+#RecordIn	DAMAGED	GuardianMaster	10	0	我就让你知道你有多笨吧!	-	-	-			
+#RecordIn	DEAD	GuardianMaster	10	0	避不了...诅咒...的...	-	-	-			
+#RecordIn	PIECE	Gagoyle	8000000	9000000	呵噜...	-	-	-			
+#RecordIn	ATTACK	Gagoyle	10	0	我...我...本来...不是...禽兽...	-	-	-			
+#RecordIn	DAMAGED	Gagoyle	10	0	你这举动已经触到我的忌讳!无法原谅!	-	-	-			
+#RecordIn	DEAD	Gagoyle	10	0	我怎么会输...	-	-	-			
+#RecordIn	PIECE	GiantMagmaton	8000000	9000000	好笑,真好笑.嘻嘻嘻嘻.	-	-	-			
+#RecordIn	ATTACK	GiantMagmaton	10	0	就那么点能耐就想对付我?	-	-	-			
+#RecordIn	DAMAGED	GiantMagmaton	10	0	先把你击败,再来想办法逃离这里.	-	-	-			
+#RecordIn	DEAD	GiantMagmaton	10	0	为什么...	-	-	-			
+#RecordIn	PIECE	BellowKnight	8000000	9000000	啧.	-	-	-			
+#RecordIn	ATTACK	BellowKnight	10	0	笨家伙.	-	-	-			
+#RecordIn	DAMAGED	BellowKnight	10	0	咳.	-	-	-			
+#RecordIn	DEAD	BellowKnight	10	0	请你记住,我的剑只是短暂的休息!	-	-	-			
+#RecordIn	PIECE	BellowKnight-S	8000000	9000000	无形者骑士!!根本不能跟我比!!哈哈!	-	-	-			
+#RecordIn	ATTACK	BellowKnight-S	10	0	咳喝...!!	-	-	-			
+#RecordIn	DAMAGED	BellowKnight-S	10	0	吼哦哦,吼...哦...!	-	-	-			
+#RecordIn	DEAD	BellowKnight-S	10	0	怎么会是我的剑输...	-	-	-			
+#RecordIn	PIECE	BellowKnight-G	8000000	9000000	你...你是?	-	-	-			
+#RecordIn	ATTACK	BellowKnight-G	10	0	以愤怒骑士的实力也不行吗?	-	-	-			
+#RecordIn	DAMAGED	BellowKnight-G	10	0	你...身份是什么!	-	-	-			
+#RecordIn	DEAD	BellowKnight-G	10	0	只不过是运气比较好.	-	-	-			
+#RecordIn	PIECE	BellowknightRord	8000000	9000000	竟然扰乱和平的地下世界...	-	-	-			
+#RecordIn	ATTACK	BellowknightRord	10	0	愚蠢,愚蠢的你啊~	-	-	-			
+#RecordIn	DAMAGED	BellowknightRord	10	0	对...	-	-	-			
+#RecordIn	DEAD	BellowknightRord	10	0	要回去了吗...	-	-	-			
+#RecordIn	PIECE	D_FlameHoneying	8000000	9000000	欢迎,你也很高兴见到我吧?	-	-	-			
+#RecordIn	ATTACK	D_FlameHoneying	10	0	我们,是不是在哪里有见过?	-	-	-			
+#RecordIn	DAMAGED	D_FlameHoneying	10	0	你,不是说我很可爱吗...	-	-	-			
+#RecordIn	DEAD	D_FlameHoneying	10	0	你怎么可以变心呢?嗯嗯	-	-	-			
+#RecordIn	PIECE	D_LavaVivi	8000000	9000000	吱咿,出...出卖...	-	-	-			
+#RecordIn	ATTACK	D_LavaVivi	10	0	魔...魔...族...	-	-	-			
+#RecordIn	DAMAGED	D_LavaVivi	10	0	你以为我会被你这种家伙打倒?	-	-	-			
+#RecordIn	DEAD	D_LavaVivi	10	0	拉菲尔族啊~要帮我帮报仇!!	-	-	-			
+#RecordIn	PIECE	D_CoreGuardian-U	8000000	9000000	你这些家伙也是贪图这些宝石而来的吗?	-	-	-			
+#RecordIn	ATTACK	D_CoreGuardian-U	10	0	这里没有什么宝石!!	-	-	-			
+#RecordIn	DAMAGED	D_CoreGuardian-U	10	0	回去!回去吧!	-	-	-			
+#RecordIn	DEAD	D_CoreGuardian-U	10	0	宝石会永远与我在一起!!	-	-	-			
+#RecordIn	PIECE	D_RubyGuardian-U	8000000	9000000	咻咻咻咻咻!!	-	-	-			
+#RecordIn	ATTACK	D_RubyGuardian-U	10	0	看那手法是不是很像一只蝴蝶停下来?是艺术!!	-	-	-			
+#RecordIn	DAMAGED	D_RubyGuardian-U	10	0	泰国拳武术,听过了吗?	-	-	-			
+#RecordIn	DEAD	D_RubyGuardian-U	10	0	竟然会刺杀我这种活着的雕像,真不象话!	-	-	-			
+#RecordIn	PIECE	D_CrystalGuardian-U	8000000	9000000	大师在看...	-	-	-			
+#RecordIn	ATTACK	D_CrystalGuardian-U	10	0	只要是为了首领!!	-	-	-			
+#RecordIn	DAMAGED	D_CrystalGuardian-U	10	0	那...那人...那人!!	-	-	-			
+#RecordIn	DEAD	D_CrystalGuardian-U	10	0	很抱歉!首领...	-	-	-			
+#RecordIn	PIECE	D_GuardianMaster	8000000	9000000	我是...地下世界的王...	-	-	-			
+#RecordIn	ATTACK	D_GuardianMaster	10	0	真的,悲哀...	-	-	-			
+#RecordIn	DAMAGED	D_GuardianMaster	10	0	光...	-	-	-			
+#RecordIn	DEAD	D_GuardianMaster	10	0	从你那里...我看到...光了...	-	-	-			
+#RecordIn	PIECE	CaimanJunier	8000000	9000000	咳噜噜噜....	-	-	-			
+#RecordIn	ATTACK	CaimanJunier	10	0	呵哇啊!!	-	-	-			
+#RecordIn	DAMAGED	CaimanJunier	10	0	咳勒勒勒勒....	-	-	-			
+#RecordIn	DEAD	CaimanJunier	10	0	卡勒勒勒...我会...回...来...	-	-	-			
+#RecordIn	PIECE	Caiman	8000000	9000000	酷鸣鸣鸣鸣鸣	-	-	-			
+#RecordIn	ATTACK	Caiman	10	0	咳啊啊	-	-	-			
+#RecordIn	DAMAGED	Caiman	10	0	咳鸣鸣鸣	-	-	-			
+#RecordIn	DEAD	Caiman	10	0	喀呜呜呜~!!!	-	-	-			
+#RecordIn	PIECE	LivingTotem	8000000	9000000	咕噜.	-	-	-			
+#RecordIn	ATTACK	LivingTotem	10	0	咕噜咕?	-	-	-			
+#RecordIn	DAMAGED	LivingTotem	10	0	做什么?	-	-	-			
+#RecordIn	DEAD	LivingTotem	10	0	咕!!噜!!!!咕噜噜...	-	-	-			
+#RecordIn	PIECE	Slug	8000000	9000000	哅...哅...	-	-	-			
+#RecordIn	ATTACK	Slug	10	0	滑溜滑溜...	-	-	-			
+#RecordIn	DAMAGED	Slug	10	0	软软趴趴	-	-	-			
+#RecordIn	DEAD	Slug	10	0	哔咿咿...	-	-	-			
+#RecordIn	PIECE	Shadow	8000000	9000000	不喜欢黑暗...	-	-	-			
+#RecordIn	ATTACK	Shadow	10	0	我...不黑...	-	-	-			
+#RecordIn	DAMAGED	Shadow	10	0	帮你做什么料理好呢?	-	-	-			
+#RecordIn	DEAD	Shadow	10	0	看得到光的世界...	-	-	-			
+#RecordIn	PIECE	RhinoceLord	8000000	9000000	咳哼,噗哼.	-	-	-			
+#RecordIn	ATTACK	RhinoceLord	10	0	这里是...我的地盘!	-	-	-			
+#RecordIn	DAMAGED	RhinoceLord	10	0	充满众多血犀牛精魄的攻击!	-	-	-			
+#RecordIn	DEAD	RhinoceLord	10	0	咳噜...你赢了.	-	-	-			
+#RecordIn	PIECE	MadSlug	8000000	9000000	叽呜呜呜...	-	-	-			
+#RecordIn	ATTACK	MadSlug	10	0	晃啊...晃	-	-	-			
+#RecordIn	DAMAGED	MadSlug	10	0	哔咿咿...	-	-	-			
+#RecordIn	DEAD	MadSlug	10	0	哔...哔咿咿咿...	-	-	-			
+#RecordIn	PIECE	RedShadow	8000000	9000000	我...不是...黑暗...	-	-	-			
+#RecordIn	ATTACK	RedShadow	10	0	你要...看...我...的...本质...	-	-	-			
+#RecordIn	DAMAGED	RedShadow	10	0	答案...就...在...那里...	-	-	-			
+#RecordIn	DEAD	RedShadow	10	0	谢...谢...	-	-	-			
+#RecordIn	PIECE	Raplan	8000000	9000000	哎哟,我不可爱吗?	-	-	-			
+#RecordIn	ATTACK	Raplan	10	0	我是漂亮的花.	-	-	-			
+#RecordIn	DAMAGED	Raplan	10	0	我有散发着蜜香吧...香吧?	-	-	-			
+#RecordIn	DEAD	Raplan	10	0	哎哟~	-	-	-			
+#RecordIn	PIECE	BigMudMan	8000000	9000000	咕噜噜...	-	-	-			
+#RecordIn	ATTACK	BigMudMan	10	0	咕噜...	-	-	-			
+#RecordIn	DAMAGED	BigMudMan	10	0	呱勒勒勒	-	-	-			
+#RecordIn	DEAD	BigMudMan	10	0	咳噢噢...	-	-	-			
+#RecordIn	PIECE	LivingStatue	8000000	9000000	呜,呜噢噢~	-	-	-			
+#RecordIn	ATTACK	LivingStatue	10	0	打…败...敌...人...	-	-	-			
+#RecordIn	DAMAGED	LivingStatue	10	0	下...劈...	-	-	-			
+#RecordIn	DEAD	LivingStatue	10	0	嗯...	-	-	-			
+#RecordIn	PIECE	Phouch	8000000	9000000	啊嘣,啊嘣.	-	-	-			
+#RecordIn	ATTACK	Phouch	10	0	啊嗯,啊嗯,啊嘣.	-	-	-			
+#RecordIn	DAMAGED	Phouch	10	0	轻...轻点!!	-	-	-			
+#RecordIn	DEAD	Phouch	10	0	唉哟哟...	-	-	-			
+#RecordIn	PIECE	LivingStone	8000000	9000000	...怒...神...	-	-	-			
+#RecordIn	ATTACK	LivingStone	10	0	贯...穿...	-	-	-			
+#RecordIn	DAMAGED	LivingStone	10	0	绝...不...原...谅...	-	-	-			
+#RecordIn	DEAD	LivingStone	10	0	可...以...休...息...了...	-	-	-			
+#RecordIn	PIECE	Weasel	8000000	9000000	嘘,嘘咿咿.	-	-	-			
+#RecordIn	ATTACK	Weasel	10	0	卡噢~	-	-	-			
+#RecordIn	DAMAGED	Weasel	10	0	喀啊啊啊啊	-	-	-			
+#RecordIn	DEAD	Weasel	10	0	嘘...	-	-	-			
+#RecordIn	PIECE	RhinoceHunter	8000000	9000000	我,只知道战斗!	-	-	-			
+#RecordIn	ATTACK	RhinoceHunter	10	0	上啊!!	-	-	-			
+#RecordIn	DAMAGED	RhinoceHunter	10	0	还可以对付对付!	-	-	-			
+#RecordIn	DEAD	RhinoceHunter	10	0	小不隆咚的...欸...	-	-	-			
+#RecordIn	PIECE	CaimanGiant	8000000	9000000	呵啊啊啊啊!!	-	-	-			
+#RecordIn	ATTACK	CaimanGiant	10	0	我一口把你吞下去!喀啊啊啊!	-	-	-			
+#RecordIn	DAMAGED	CaimanGiant	10	0	我看你能挡我的攻击到什么时候?喀啊啊!	-	-	-			
+#RecordIn	DEAD	CaimanGiant	10	0	咳咳咳,来吧.愚蠢的生命啊~	-	-	-			
+#RecordIn	PIECE	ShadowMaster	8000000	9000000	我是...谁?	-	-	-			
+#RecordIn	ATTACK	ShadowMaster	10	0	为什么要攻击我呢?	-	-	-			
+#RecordIn	DAMAGED	ShadowMaster	10	0	为什么...	-	-	-			
+#RecordIn	DEAD	ShadowMaster	10	0	竟然,现在才....	-	-	-			
+#RecordIn	PIECE	BlackShadow	8000000	9000000	想摆脱...	-	-	-			
+#RecordIn	ATTACK	BlackShadow	10	0	让你脱离我...	-	-	-			
+#RecordIn	DAMAGED	BlackShadow	10	0	痛若...不喜欢...喘不过气...	-	-	-			
+#RecordIn	DEAD	BlackShadow	10	0	哈,哈哈哈...	-	-	-			
+#RecordIn	PIECE	Helga	8000000	9000000	我是,黑尔戈伊特的王!!	-	-	-			
+#RecordIn	ATTACK	Helga	10	0	咳...咳咿咿...	不...不是...我的错!!	-	-			
+#RecordIn	DAMAGED	Helga	10	0	我...又活回来了吗...?	是要去...怎么会...变成...	-	-			
+#RecordIn	DEAD	Helga	10	0	可以...回去了...	啊...	-	-			
+#RecordIn	PIECE	B_SubHel01	8000000	9000000	不是我杀的.	-	-	-			
+#RecordIn	ATTACK	B_SubHel01	10	0	-	-	-	-			
+#RecordIn	DAMAGED	B_SubHel01	10	0	太笨了...	-	-	-			
+#RecordIn	DEAD	B_SubHel01	10	0	对力量有贪念的人...免不了死的.	-	-	-			
+#RecordIn	PIECE	B_SubHel02	8000000	9000000	你是什么种族呢?	-	-	-			
+#RecordIn	ATTACK	B_SubHel02	10	0	我是谁呢?	-	-	-			
+#RecordIn	DAMAGED	B_SubHel02	10	0	-	-	-	-			
+#RecordIn	DEAD	B_SubHel02	10	0	...	-	-	-			
+#RecordIn	PIECE	B_SubHel03	8000000	9000000	我是谁呢?	-	-	-			
+#RecordIn	ATTACK	B_SubHel03	10	0	你又是...什么?	-	-	-			
+#RecordIn	DAMAGED	B_SubHel03	10	0	-	-	-	-			
+#RecordIn	DEAD	B_SubHel03	10	0	-	-	-	-			
+#RecordIn	PIECE	B_SubHel04	8000000	9000000	我为什么会复活呢...?	-	-	-			
+#RecordIn	ATTACK	B_SubHel04	10	0	-	-	-	-			
+#RecordIn	DAMAGED	B_SubHel04	10	0	-	-	-	-			
+#RecordIn	DEAD	B_SubHel04	10	0	我自己选择了...	-	-	-			
+#RecordIn	PIECE	B_SubHel05	8000000	9000000	...	-	-	-			
+#RecordIn	ATTACK	B_SubHel05	10	0	-	-	-	-			
+#RecordIn	DAMAGED	B_SubHel05	10	0	-	-	-	-			
+#RecordIn	DEAD	B_SubHel05	10	0	他...不可以...复活...	-	-	-			
+#RecordIn	PIECE	B_SubHel06	8000000	9000000	...	-	-	-			
+#RecordIn	ATTACK	B_SubHel06	10	0	-	-	-	-			
+#RecordIn	DAMAGED	B_SubHel06	10	0	-	-	-	-			
+#RecordIn	DEAD	B_SubHel06	10	0	...	-	-	-			
+#RecordIn	PIECE	B_SubHel07	8000000	9000000	...	-	-	-			
+#RecordIn	ATTACK	B_SubHel07	10	0	-	-	-	-			
+#RecordIn	DAMAGED	B_SubHel07	10	0	-	-	-	-			
+#RecordIn	DEAD	B_SubHel07	10	0	一定要...把他...	-	-	-			
+#RecordIn	PIECE	B_SubHel08	8000000	9000000	-	-	-	-			
+#RecordIn	ATTACK	B_SubHel08	10	0	-	-	-	-			
+#RecordIn	DAMAGED	B_SubHel08	10	0	-	-	-	-			
+#RecordIn	DEAD	B_SubHel08	10	0	铲...除...	-	-	-			
+#RecordIn	PIECE	ID_NestBat	1800000	1800000	守护神秘的宝石!	会守住我们的巢穴.	将在这没有人烟的地方安息.	守护神秘的宝石!			
+#RecordIn	ATTACK	ID_NestBat	50	0	咳勒勒勒有人入侵!	人类入侵到这里来了.	让你尝尝这火辣的滋味!	守护神秘的宝石!			
+#RecordIn	DAMAGED	ID_NestBat	50	0	全身者燃烧起来了!	我的痛苦将全部原封还给你们.	咿咿咿咿...	就以这种本事攻击我同伴的吗?			
+#RecordIn	DEAD	ID_NestBat	50	0	铲...除...	不可原谅的入侵者.	你们的终点只有死亡在等待.	-			
+#RecordIn	PIECE	ID_NestCaimanJunior	1800000	1800000	会守住我们的巢穴.	将永远安息在这没有人烟的地方.!	这里是我们的地盘!	贪心鬼人类!			
+#RecordIn	ATTACK	ID_NestCaimanJunior	50	0	咳勒勒勒有人入侵!	将无法获得原谅!	不能对敌人大发慈悲!	绝不原谅!			
+#RecordIn	DAMAGED	ID_NestCaimanJunior	50	0	那么一点能耐,就想入侵这里吗?	人类果然是很弱!	一点都不会痛!	再用力攻击.			
+#RecordIn	DEAD	ID_NestCaimanJunior	50	0	会付出入侵的代价.	你真的认为可以离开这里吗?	同胞们攻击敌人吧!	守护我们的窝巢!			
+#RecordIn	PIECE	ID_NestBoogy	1800000	1800000	我们想要的只是和平!	希望能在这自由地方安享永生.	时间虽然会流逝,但布吉龟的永生将不改变.	有入侵者吗?			
+#RecordIn	ATTACK	ID_NestBoogy	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	ID_NestBoogy	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	怎么会连窝巢都守不住.			
+#RecordIn	DEAD	ID_NestBoogy	50	0	绝对不能原谅人类.	破坏和平者!你们将会受到诅咒.	要打…败...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	ID_NestAlca	1800000	1800000	水精灵会帮助我们.	水精灵请您受护神圣的这块地吧!	巢穴的怪物们!	守住你们的窝巢!			
+#RecordIn	ATTACK	ID_NestAlca	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是我们神圣的地方!	回去吧!			
+#RecordIn	DAMAGED	ID_NestAlca	50	0	水精灵请你帮助我们吧!!	人类的能力就只有这样吗?	阿～水精灵!!	真是无法理解的人类!			
+#RecordIn	DEAD	ID_NestAlca	50	0	铲...除...	真的要就这样吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	ID_NestCaiman	1800000	1800000	呵勒勒勒勒...	咳勒勒..	无法原谅的人类!	这里是我们永远的窝!			
+#RecordIn	ATTACK	ID_NestCaiman	50	0	咳勒勒勒有人入侵!	同胞们攻击敌人吧!	将会无法获得原谅!!	让你看看更强的攻击!			
+#RecordIn	DAMAGED	ID_NestCaiman	50	0	那么一点能耐,就想入侵这里吗?	一点都不会痛!	咿咿咿咿...	一定要守护我们的窝巢!			
+#RecordIn	DEAD	ID_NestCaiman	50	0	铲...除...	人类不能原谅!	贪心的人类将会得到惩罚.	贪心鬼人类!			
+#RecordIn	PIECE	ID_NestMadSlug	1800000	1800000	啾啾啾啾..	巢穴的怪物们!	让永恒时光复活!	-			
+#RecordIn	ATTACK	ID_NestMadSlug	50	0	啾啾啾啾有人入侵!	拜托,人类请回到人类的领域吧!	啾啾啾啾让你见识黑暗的力量!	啾..			
+#RecordIn	DAMAGED	ID_NestMadSlug	50	0	啾啾强哦!	人类还蛮强的哦!	不会就这样送你回去.	无法原谅人类!!			
+#RecordIn	DEAD	ID_NestMadSlug	50	0	人类不能原谅.	要消...灭...	啾啾啾啾一定要打赢!	啾啾..啾啾..			
+#RecordIn	PIECE	ID_NestBaridon	1800000	1800000	水精灵会帮助我们.	水精灵请您受护神圣的这块地吧!	巢穴的怪物们!	守住你们的窝巢!			
+#RecordIn	ATTACK	ID_NestBaridon	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是我们神圣的地方!	回去吧!			
+#RecordIn	DAMAGED	ID_NestBaridon	50	0	水精灵请你帮助我们吧!!	人类的能力就只有这样吗?	阿～水精灵!!	真是无法理解的人类!			
+#RecordIn	DEAD	ID_NestBaridon	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	ID_NestWeasel	1800000	1800000	咻咻咻咻咻!!	咻咻!	要从入侵者手中守护我们的领域!	同伴们!			
+#RecordIn	ATTACK	ID_NestWeasel	50	0	消失到你们的领域去吧	这里是我们神圣的窝巢,人类啊回去吧!	入侵者只有死路一条!	无法得到原谅!			
+#RecordIn	DAMAGED	ID_NestWeasel	50	0	强哦!	但是不能原谅!	回去吧人类啊!	真是无法理解的人类!			
+#RecordIn	DEAD	ID_NestWeasel	50	0	不能就这样消失!	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	ID_NestGagoyle	1800000	1800000	守护这神圣的地方!	咳勒勒勒勒...	这里是我们的窝巢!	咳勒勒勒勒...			
+#RecordIn	ATTACK	ID_NestGagoyle	50	0	人类啊消失吧!	我们很强,可以感觉得到吗?	不会原谅入侵者.	回去吧!回去吧!人类啊!!			
+#RecordIn	DAMAGED	ID_NestGagoyle	50	0	人类的能力只到这个程度吗?	咳勒勒噜...	不会就这样退缩.	蛮强的,但是,也只不过如此.			
+#RecordIn	DEAD	ID_NestGagoyle	50	0	不能就这样消失!	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	ID_NestCrab	1800000	1800000	守护这神圣的地方!	看我这强壮的钳子!	这里是我们的窝巢!	-			
+#RecordIn	ATTACK	ID_NestCrab	50	0	我闪亮的钳子威力如何?	感到恐惧吗?	回去吧!那将是你们唯一的希望.	绝不原谅!			
+#RecordIn	DAMAGED	ID_NestCrab	50	0	呼,真是强啊!	我闪亮的钳子...	我很强,不会就这样消灭!	将永远安息!			
+#RecordIn	DEAD	ID_NestCrab	50	0	啊~我闪亮的钳子...	不想就这样消灭.	再见!我的安息地~	结果是人类连这里都入侵了吗?			
+#RecordIn	PIECE	KingBoogy	1800000	1800000	一定要守护这圣神的地方不受人类破坏!	将会守着永恒时光走下去.	这里是我们的窝巢!	-			
+#RecordIn	ATTACK	KingBoogy	50	0	软弱的人类!	绝不原谅!	无法平安回去!	贪心是要付出代价的!			
+#RecordIn	DAMAGED	KingBoogy	50	0	同胞们!用你们的力量攻击人类吧!	我的朋友们阻挡入侵者吧!	用自己的力量守护窝巢!	我们一定会守住这里!			
+#RecordIn	DEAD	KingBoogy	50	0	咳勒勒勒..永远的生命开始了!	不会让他们活着回去!	你以为打赢我就可以活着回去吗?	你们也会马上看到永恒时光.			
+#RecordIn	PIECE	EmperorCrab	1800000	1800000	安息的地方还是很安静.	看我这强壮的钳子!	这里是我们的窝巢!	绝不容许任何入侵行为.			
+#RecordIn	ATTACK	EmperorCrab	50	0	我闪亮的钳子威力如何?	害怕吗?	回去吧!!	最后的希望就是安静的离开.			
+#RecordIn	DAMAGED	EmperorCrab	50	0	竟然受到人类攻击..	可笑的人类!	你们很快就会后悔.	想要活着回去吗?			
+#RecordIn	DEAD	EmperorCrab	50	0	我闪亮的钳子竟然消失..	真空虚啊!竟然就这样被人类打倒.	你们很快就会后悔.	人类啊!什么让你们那么贪心呢?			
+#RecordIn	PIECE	ViciousLeviathan	1800000	1800000	绝不原谅那些入侵者!	这里是我们神圣的窝巢!	咻咻咻咻!咻咻咻咻咻!	咻咻!			
+#RecordIn	ATTACK	ViciousLeviathan	50	0	你们很快就会后悔你的贪欲!	绝不原谅!	回去吧!人类啊!!	贪欲之火苗将烧毁你们!			
+#RecordIn	DAMAGED	ViciousLeviathan	50	0	就这么一点本事可以来到这里吗?	这里是永远的圣地!唯一不容许他们欲望的地方!	与你的贪念相比,攻击太弱了点.	贪心的你们末日将会来临.			
+#RecordIn	DEAD	ViciousLeviathan	50	0	人类为怎么会有那么多贪念?	人类将因贪欲而走向毁灭之路!	无法原谅的人类!	啊!啊!不能就这样回到永恒的时光!啊!!!			
+#RecordIn	PIECE	T_Imp	2000000	3600000	当当!!突然出现吓到你了吗?	来这边,我们交个朋友吧.	哎嗨哟!哎嗨哟!	你好,光萌的妖精因普!			
+#RecordIn	ATTACK	T_Imp	40	0	别看我小就以为我好欺负哦,你错了~	还不到5级会有点疼的,嘿嘿!	我的魅力在于这大大的眼睛上,嘻嘻.	什么!!你说我的外貎不像妖精!?我哪里不好~!!			
+#RecordIn	DAMAGED	T_Imp	40	0	锁你哦!	哎哟,饶了我吧!	你也是为任务来折磨我的?	嘎!我错了!!你说的没错,我很丑.嗯嗯～			
+#RecordIn	DEAD	T_Imp	40	0	my...pleasure~~	呵呵,任务就是抓我们吗～	打因普的任务,不要,不要～	我要回去了!!			
+#RecordIn	PIECE	T_GangImp	2000000	3600000	拳头痒痒的,有没人想找死的呢.	全都怕了吧!附近怎么一点动静都没有呢.	我和一般的因普不同.不要乱来.	切!最近找我麻烦的人怎么这么多.			
+#RecordIn	ATTACK	T_GangImp	40	0	好笑,我们是多数!就凭你也想挑战我?	找好墓地了吗?要跟这世界道别,只能趁现在.	刚开始我就知道我会赢的.	呼,真的能打倒我们全部吗??			
+#RecordIn	DAMAGED	T_GangImp	40	0	噢噢,还可以吗.	就这么点水平?	噢!你愿不愿意到我的手下来?	我错了!!我会变成善良的因普!!			
+#RecordIn	DEAD	T_GangImp	40	0	不敢相信.你是谁?!	怎么会发生这种事呢...	唉呀,真丢脸,还以为能赢呢,得召集人手...	唉哟哟!!妖精要死了~			
+#RecordIn	PIECE	T_HungryWolf	2400000	4000000	很烦的家伙	小红帽藏在哪了!?	啊呜,肚子好饿!	为什么我永远都会肚子饿..			
+#RecordIn	ATTACK	T_HungryWolf	30	0	哈哈哈哈!	谢谢你提供了食物.	好,老老实实地放弃吧,嘻嘻!	饭耶饭~乖乖的不要动!			
+#RecordIn	DAMAGED	T_HungryWolf	30	0	噢...不!	我不要小红帽了,行吗?好疼噢!	这点准备都没有,就别想打猎,嘻嘻!	喂,若不要吃就不要杀我!			
+#RecordIn	DEAD	T_HungryWolf	30	0	不...不是闹着玩啊.	不要这样啦~真是-_-	好饿,只是为了填饱肚子嘛...	为什么不理我这饥饿的狼所说的话!!			
+#RecordIn	PIECE	T_Ratman	2600000	4200000	看什么?第一次看帅老鼠吗?!	不要再看了!!再看就会像我!	不要再看了!!再看就会像我!	看什么?第一次看帅老鼠吗?!			
+#RecordIn	ATTACK	T_Ratman	15	0	看本尊就要付出代价!	抱歉!!你不是我的菜!!	看本尊就要付出代价!	抱歉!!你不是我的菜!!			
+#RecordIn	DAMAGED	T_Ratman	15	0	危险!!危险!!	有人要抓老鼠哦~救命哦~!	危险!!危险!!	有人要抓老鼠哦~救命哦~!			
+#RecordIn	DEAD	T_Ratman	15	0	竟然杀我这珍贵的老鼠..	你...不该是这样的.	竟然杀我这珍贵的老鼠..	你...不该是这样的.			
+#RecordIn	PIECE	T_Boar	2800000	4400000	据说,这附近有个什么艾德林城...	那里应该有很多好吃的东西.	鼠人那家伙应该已经凭着他敏锐的嗅觉跟上来了,快走吧!	你把我当成熊了吧?有时候连我自己都以为是熊呢..嘻嘻			
+#RecordIn	ATTACK	T_Boar	15	0	呼...呼...~	你看我的爪子怎么样?呼!	把我跟鼠人混为一谈,那是你的失算.呼~	吭吭,你是人类?精灵?还是黑暗精灵?			
+#RecordIn	DAMAGED	T_Boar	15	0	大哥生气可是很恐怖的...	还差得远呢!呵呵呵.	这个攻击很巧妙,呼呼~	呜呃,怎么打要害!!			
+#RecordIn	DEAD	T_Boar	15	0	难道要饿着去见上帝么?	如果不是肚子饿...	臭鼠人,每天和我打架,我怎么会去帮他?	我不应该是一个就这样离开的猪啊..			
+#RecordIn	PIECE	T_Kebing	3200000	5200000	还是我克比说了算,嘿嘿!~	叮铃铃,咚!	嗨,嗨,嗨!	塔的入口由我们克比守护!			
+#RecordIn	ATTACK	T_Kebing	10	0	克比大力!~	克比直拳!	克比必杀...哎哟,快没有力气了~	克比吱!!哦..我没有腿哦.			
+#RecordIn	DAMAGED	T_Kebing	10	0	呀!!猛虎疾风拳!!	哇～不行!痛~	咳咳,现在是在打我吗?一点感觉也没有～	呱!真是鲁莽有力.咳..咳			
+#RecordIn	DEAD	T_Kebing	10	0	太过分了!~	这样就输了,真的好没面子!	谁帮忙恢复一下啊!快点!	我不能死你知道吗?因为我是主角!			
+#RecordIn	PIECE	T_SkelArcher00	4200000	6200000	这里的空气怪怪的?	天气越来越冷了,冷气直往骨头里钻.	污浊空气是皮肤的敌人啊...	欢迎!祭品啊!			
+#RecordIn	ATTACK	T_SkelArcher00	10	0	让你尝一下骨箭的滋味!	这儿不是可以随便出入的地方.	塔骨头们!击退敌人吧!	我的箭将指向你的心脏.			
+#RecordIn	DAMAGED	T_SkelArcher00	10	0	这么快?你的速度升级了?	波宁~!	每个骨关节都酸疼.	这种程度的话,应该不会太无聊吧.			
+#RecordIn	DEAD	T_SkelArcher00	10	0	你已经丢掉了所有的道具.	谢谢你让我又能安眠.	我的份儿也完成了吗?	你...这家伙...			
+#RecordIn	HELPMAIN	T_SkelArcher00	800	800	呃呃,你看那德性??	我是相信你的,但是并不容易啊～	这里出了点问题.	唉咿!!过来一下,快,快点!			
+#RecordIn	HELPSUB	T_SkelArcher00	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	T_SkelArcher00	800	800	-	-	-	-			
+#RecordIn	PIECE	T_SkelArcher01	4200000	6200000	这里的空气怪怪的?	天气越来越冷了,冷气直往骨头里钻.	污浊空气是皮肤的敌人啊...	欢迎!祭品啊!			
+#RecordIn	ATTACK	T_SkelArcher01	10	0	让你尝一下骨箭的滋味!	这儿不是可以随便出入的地方.	塔骨头们!击退敌人吧!	我的箭将指向你			
+#RecordIn	DAMAGED	T_SkelArcher01	10	0	这么快?你的速度升级了?	波宁~!	每个骨关节都酸疼.	这种程度的话,应该不会太无聊吧.			
+#RecordIn	DEAD	T_SkelArcher01	10	0	你已经丢掉了所有的道具.	让我安息...	道具都消失了.	你...这家伙...			
+#RecordIn	HELPMAIN	T_SkelArcher01	800	800	呃呃,你看那德性??	我不能认可!	这里出了点问题.	唉咿!!过来一下,快,快点!			
+#RecordIn	HELPSUB	T_SkelArcher01	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	T_SkelArcher01	800	800	-	-	-	-			
+#RecordIn	PIECE	T_SkelArcher02	4200000	6200000	这里的空气怪怪的?	天气越来越冷了,冷气直往骨头里钻.	污浊空气是皮肤的敌人啊...	欢迎!祭品啊!			
+#RecordIn	ATTACK	T_SkelArcher03	10	0	让你尝一下骨箭的滋味!	这儿不是可以随便出入的地方.	塔同志们!击退敌人吧!	我的箭将指向你的心脏.			
+#RecordIn	DAMAGED	T_SkelArcher04	10	0	这么快?你的速度升级了?	波宁~!	每个骨关节都酸疼.	这种程度的话,应该不会太无聊吧.			
+#RecordIn	DEAD	T_SkelArcher05	10	0	你已经丢掉了所有的道具.	谢谢你让我又能安眠.	我的份儿也完成了吗?	你...这家伙...			
+#RecordIn	HELPMAIN	T_SkelArcher06	800	800	如果我的身体散架,我不会轻易放你走的.	我是相信你的,但是并不容易啊～	这里出了点问题.	唉咿!!过来一下,快,快点!			
+#RecordIn	HELPSUB	T_SkelArcher07	800	800	-	-	-	-			
+#RecordIn	RACERESCUE	T_SkelArcher08	800	800	-	-	-	-			
+#RecordIn	PIECE	T_Skeleton	4000000	6000000	最近我的肚子一直变大.	哪里来的腥味?嘻嘻～	是!首领!	我看要涂点油了,关节碰撞的声音也蛮烦人的.			
+#RecordIn	ATTACK	T_Skeleton	10	0	胆敢入侵光石洞窟,这帮不知天高地厚的家伙!	喀...昨晚的梦不是很好...	我的攻击怎么样?我曾经也是一名勇将!嘻嘻～	不用说太多,就来比个胜负吧!			
+#RecordIn	DAMAGED	T_Skeleton	10	0	非常遗憾,我是勇士的时候没能与你相见.	真是强有力的攻击,让我回想起了前世!	好犀利的攻击呀.	活着的不再是我的威胁.			
+#RecordIn	DEAD	T_Skeleton	10	0	我...我就...就这样...	佣兵的实力也会...生锈啊.	这就是永远的安息地吗...	就连这剎那也不会觉得害怕..			
+#RecordIn	HELPMAIN	T_Skeleton	800	800	-	-	-	-			
+#RecordIn	HELPSUB	T_Skeleton	800	800	上啊!打啊!	喀!有人在吗?	浑身怪痒痒的,来得好.	我会帮你快点解决,要请客哦!			
+#RecordIn	RACERESCUE	T_Skeleton	800	800	-	-	-	-			
+#RecordIn	PIECE	T_SkelWarrior	4200000	6200000	知道我是谁吗!	噢,黑暗的主人!请再次给我们力量...	什么?你说哪里出现了敌人!?	这个时候!!			
+#RecordIn	ATTACK	T_SkelWarrior	10	0	我有满腔热血!哈哈哈哈!	再加点油,用点力气!	噢,对了,这里是战场.哈哈!	你就是我的对手?既然能动到我,我看你的实力应该也不差..			
+#RecordIn	DAMAGED	T_SkelWarrior	10	0	对了,就那么打!哈哈哈!	再用点力好不好?	在战场上绝不允许粗心大意.	我们"不死"绝不后退.			
+#RecordIn	DEAD	T_SkelWarrior	10	0	在我人生中,现在这瞬间...	还没有结束...喂,再来!	来,你来打我试试...	以前的我是...一个平凡的战士...			
+#RecordIn	HELPMAIN	T_SkelWarrior	800	800	嘎	-	-	-			
+#RecordIn	HELPSUB	T_SkelWarrior	800	800	咳嘻嘻嘻嘻嘻!!	竟然向战士大人挑战,应该还不知道他的厉害~	我诅咒你的愚蠢.	想与骑士大人我作对,搞不清状况的人到底是谁!			
+#RecordIn	RACERESCUE	T_SkelWarrior	800	800	-	-	-	-			
+#RecordIn	PIECE	T_ArchMageBook00	4400000	6400000	我的性格不够慈悲,你们自己小心.	有人进入我的地盘了!谁?	嗅嗅,好像有人类的味道...嗅嗅...噢,原来我没有鼻子...	解读一下我吧~!应该可以获得很重要的情报~!			
+#RecordIn	ATTACK	T_ArchMageBook00	10	0	对于你,我受够了!	魔法具有无限的可能性.	你已经死了!	魔法书245页,不灭火焰魔法攻击!!			
+#RecordIn	DAMAGED	T_ArchMageBook00	10	0	你看透我了吗~!	攻击还算厉害.	不疼不痒的攻击,也算是攻击呀.	接着366页的完美防盾发动!!			
+#RecordIn	DEAD	T_ArchMageBook00	10	0	我是不会死...的!!	请再给我一次生命...再给一次...	记忆像走马灯一样闪过脑海.	老虎死了会留皮,书会留下封面...咕噜			
+#RecordIn	PIECE	T_ArchMageBook01	4400000	6400000	我的性格不够慈悲,你们自己小心.	有人进入我的地盘了!谁?	嗅嗅,好像有人类的味道...嗅嗅...噢,原来我没有鼻子...	解读一下我吧~!应该可以获得很重要的情报~!			
+#RecordIn	ATTACK	T_ArchMageBook01	10	0	对于你,我受够了!	魔法具有无限的可能性.	你已经死了!	魔法书245页,不灭火焰魔法攻击!!			
+#RecordIn	DAMAGED	T_ArchMageBook01	10	0	你看透我了吗~!	攻击还算厉害.	不疼不痒的攻击,也算是攻击呀.	接着366页的完美防盾发动!!			
+#RecordIn	DEAD	T_ArchMageBook01	10	0	我是不会有事的!!	请再给我一次机会...再给一次...	记忆像走马灯一样闪过脑海.	老虎死了会留皮,书会留下封面...咕噜			
+#RecordIn	PIECE	T_FlyingStaff00	4600000	6600000	在所有的关系中,友情和义气是相当宝贵的.	岁月再怎么流失,有一个人,我是忘不了的.	我身上的光彩,会让你感到刺眼吧!	灯蛾为什么明知会死,还是要往火里跳呢?			
+#RecordIn	ATTACK	T_FlyingStaff00	10	0	我们以朋友相识,那该多好.	客观地说,我比较强吧.同意吧?	对于你,这个攻击可能是致命的.	很多人看到我的光彩,明明知道会死还是要靠近.			
+#RecordIn	DAMAGED	T_FlyingStaff00	10	0	再不加油,你就危险了...	你和...那个人长得很像...	会变成一个冗长的战斗.	你...不一样.非常特别...			
+#RecordIn	DEAD	T_FlyingStaff00	10	0	可以理解,愿你今后更加勇猛.	认识你...真的很高兴...	...在消失的一剎那还有什么话要留的呢...	就这样消失,我一点都不会惋惜.			
+#RecordIn	PIECE	T_OldFox	4800000	6800000	昨夜,我又看见了徘徊的精魄.	它们在身边的时候你会感到寒气袭人.	真是很烦的家伙...	高挂在深蓝天空的月亮,你知道有多美吗?			
+#RecordIn	ATTACK	T_OldFox	10	0	你能看见自己的精魄吗?	没关系?	肝!肝拿出来!吼!太激动现丑了.	满月天的晚上,要不要跟我一起去赏月亮呢?			
+#RecordIn	DAMAGED	T_OldFox	10	0	再继续吗?	你,有勇气回头看吗?	你不是好对付的对手	看这么好的东西,你的肝应该会很美味,好想赶快吃哦.			
+#RecordIn	DEAD	T_OldFox	10	0	我去睡一觉再来,呵呵.	还没结婚耶?	你...你...你的...身后...	再...再等一会就是满月...了...			
+#RecordIn	HELPMAIN	T_OldFox	800	800	呀～我把你看得太简单了?	喂～帮帮朋友哦.	一个人应付会很吃力哦!	一下下...只要帮我一下下.			
+#RecordIn	HELPSUB	T_OldFox	800	800	啊~好可怕.	请你...抓住我的手.	-	-			
+#RecordIn	RACERESCUE	T_OldFox	800	800	-	-	-	-			
+#RecordIn	PIECE	T_Zombie	4400000	6400000	嗅嗅,有味.出来吧人类,不要藏着...	-	-	-			
+#RecordIn	ATTACK	T_Zombie	10	0	咳咳,不要害怕.让你也变成不朽者如何?	-	-	-			
+#RecordIn	DAMAGED	T_Zombie	10	0	我是不朽者,感觉不到疼和痛苦.	-	-	-			
+#RecordIn	DEAD	T_Zombie	10	0	不对劲...有点不寻常...	-	-	-			
+#RecordIn	PIECE	T_Ghost	5000000	7000000	你能看见我吗?	人怎能知晓黑暗的真理.	你真的能看见我?	不是看得到的就是全部,你知道吗?			
+#RecordIn	ATTACK	T_Ghost	10	0	必须把你埋葬在黑暗里!	咳咳.你神魂颠倒好可笑!咳咳.	有能力的话就避开.	你看不到我,怎么能赢得了我呢!吱吱			
+#RecordIn	DAMAGED	T_Ghost	10	0	对于我你的攻击是不起作用的.咳咳咳～	哦噢噢,怎么回事...	啊!好痛苦.	怎么会这样,应该看不到我...怎么办			
+#RecordIn	DEAD	T_Ghost	10	0	我要生存在你的影子中,时刻盯着你.	呃...呃～啊～我...被消灭...了...	到头来罪有应得.	啊~~不要!!不要!!			
+#RecordIn	PIECE	T_IceViVi	4200000	6000000	灼热的太阳和燃烧的大地是很有魅力的.	和我长得差不多的还有几个,你知道吗?	看见了好几批成群的人类,有趴吗?	-			
+#RecordIn	ATTACK	T_IceViVi	10	0	你喜欢哪个季节?	他们脾气都相当暴躁,见面的话小心为好.	要做比试的话,光明正大地一对一吧.	-			
+#RecordIn	DAMAGED	T_IceViVi	10	0	被关在塔里好闷.	哦,你也不错啊.打起来肯定很精彩.	哦哦,好像我处在劣势.	-			
+#RecordIn	DEAD	T_IceViVi	10	0	我不是溶化了吧?	结束了吗,有点遗憾.	不要.不要就这么消失.	-			
+#RecordIn	PIECE	T_Prock	5200000	7200000	我唯一的乐趣是修理庭院的花和树.	哥布尔和威奥熊都太无礼.	哇嘟哇哩哇哩,呀啦哩嘣嘣...	你知猪笼草是什么吗?常听到这个名字,但就是不知道是什么...
+			
+#RecordIn	ATTACK	T_Prock	10	0	是你糟蹋了我的庭院吧!!	应该早点料到!!	我嘴巴太大吓到你了吗?	我可以连石头都嚼着吃掉,你应该不会比石头硬.			
+#RecordIn	DAMAGED	T_Prock	10	0	别想活着回去!!	不行!!要吃掉你!!把你们都要吃掉!!	一口吞了你.	喂...喂!要保护植物!停止攻击!!			
+#RecordIn	DEAD	T_Prock	10	0	把...我...的...庭院...	...没有最后的遗言之类...	呕呕...出丑了.	留下了可耻的伤口.			
+#RecordIn	PIECE	T_Spider00	7800000	8800000	走开!这好料是我的!	嘘!嘘!这个绝对不是出自嘴巴的声音.	-	-			
+#RecordIn	ATTACK	T_Spider01	10	0	切~,是...钓到...我...吗?	嘘!效果音很棒吧?	-	-			
+#RecordIn	DAMAGED	T_Spider02	10	0	-	-	-	-			
+#RecordIn	DEAD	T_Spider03	10	0	谁来...谁来扶我起来...	-	-	-			
+#RecordIn	PIECE	T_Spider01	7800000	8800000	走开!这好料是我的!	-	-	-			
+#RecordIn	ATTACK	T_Spider02	10	0	切~,是...钓到...我...吗?	-	-	-			
+#RecordIn	DAMAGED	T_Spider03	10	0	-	-	-	-			
+#RecordIn	DEAD	T_Spider04	10	0	谁来...谁来扶我起来...	-	-	-			
+#RecordIn	PIECE	T_KingSpider	7800000	8800000	走开!这好料是我的!	噗咻,噗咻!	-	-			
+#RecordIn	ATTACK	T_KingSpider	10	0	切~,是...钓到...我...吗?	接下我的蜘蛛网吧!	-	-			
+#RecordIn	DAMAGED	T_KingSpider	10	0	-	-	-	-			
+#RecordIn	DEAD	T_KingSpider	10	0	谁来...谁来扶我起来...	-	-	-			
+#RecordIn	PIECE	T_KingCall	4800000	6800000	有人在盯着我.	来啊,来啊!	-	-			
+#RecordIn	ATTACK	T_KingCall	10	0	艾杰是我爸爸!	-	-	-			
+#RecordIn	DAMAGED	T_KingCall	10	0	呜哩呀!呀!!嘻呀!	说,说假的.不要来,不要来!	-	-			
+#RecordIn	DEAD	T_KingCall	10	0	不能就这么死!	再见...	-	-			
+#RecordIn	PIECE	T_FlyingStaff01	4600000	6600000	在所有的关系中,友情和义气是相当宝贵的.	岁月再怎么流失,有一个人,我是忘不了的.	我身上的光彩,会让你感到刺眼吧!	灯蛾为什么明知会死,还是要往火里跳呢?			
+#RecordIn	ATTACK	T_FlyingStaff02	10	0	很久以前,好像有一个叫薇丝的主人.	客观地说,我比较强吧.同意吧?	对于你,这个攻击可能是致命的.	很多人看到我的光彩,明明知道会死还是要靠近.			
+#RecordIn	DAMAGED	T_FlyingStaff03	10	0	再不加油,你就危险了...	你和...那个人长得很像...	会变成一个冗长的战斗.	你...不一样.非常特别...			
+#RecordIn	DEAD	T_FlyingStaff04	10	0	想回到薇丝身边...	认识你...真的很高兴...	...在消失的一剎那还有什么话要留的呢...	就这样消失,我一点都不会惋惜.			
+#RecordIn	PIECE	T_DustGolem	7800000	8800000	喀...杀你哦...你...	咳哦噢!卡噢!卡哦噢!	咻咻,咻咻.	-			
+#RecordIn	ATTACK	T_DustGolem	10	0	喀...喝...喝喝...咳哦哦...	-	咳哈哈!卡!	-			
+#RecordIn	DAMAGED	T_DustGolem	10	0	喀喝!啊,痛.好痛.我不想死.	哴?哴?	我,我...我,很怪,怪怪的.	-			
+#RecordIn	DEAD	T_DustGolem	10	0	妈...妈...妈...	哴啊啊....	-	-			
+#RecordIn	PIECE	T_StoneGolem	7800000	8800000	哇哈哈!!喀哦呃!	咳啊啊啊啊!!咿啊啊啊!!	-	-			
+#RecordIn	ATTACK	T_StoneGolem	10	0	呜哦,哇哈哈呃!	上啊!你这奇怪的生物!	喀...	-			
+#RecordIn	DAMAGED	T_StoneGolem	10	0	呜呃,呜呃.	咯哦...	帮帮...我...	-			
+#RecordIn	DEAD	T_StoneGolem	10	0	......咳噢...	...现在...可以...消失...	...谢...谢...	-			
+#RecordIn	PIECE	T_PoisonGolem	7800000	8800000	咳.喝呃.咳噢欧!!	咳!!	-	-			
+#RecordIn	ATTACK	T_PoisonGolem	10	0	你,你...也想,被毒药...毒死...吗....	不,不要过来!	-	-			
+#RecordIn	DAMAGED	T_PoisonGolem	10	0	不,不要,靠近...我...	好,好可怕.	-	-			
+#RecordIn	DEAD	T_PoisonGolem	10	0	啊...	啊...消失...了...	现在才...好不容易...	-			
+#RecordIn	PIECE	T_IronGolem	7800000	8800000	死了,你...要死吗你....	不要靠近我!想死!受伤哦!会受伤.	不要过来,不要过来!	-			
+#RecordIn	ATTACK	T_IronGolem	10	0	不要来,不要靠过来.	受伤,你,会受伤.	痛,好痛.	-			
+#RecordIn	DAMAGED	T_IronGolem	10	0	痛,好痛苦,我不想痛!	-	-	-			
+#RecordIn	DEAD	T_IronGolem	10	0	我...可以...回去....	现在...要回去了...	让我可以...安息...谢谢...你...	-			
+#RecordIn	PIECE	BlackBear	8000000	9000000	汪...汪....	啊嘣,	-	-			
+#RecordIn	ATTACK	BlackBear	10	0	啊嘣,啊嘣嘣.	哇哈哈呃呃~	-	-			
+#RecordIn	DAMAGED	BlackBear	10	0	喀哦!	-	-	-			
+#RecordIn	DEAD	BlackBear	10	0	哦...	哦哦....	-	-			
+#RecordIn	PIECE	RedBear	8000000	9000000	哇哈哈呃!	-	-	-			
+#RecordIn	ATTACK	RedBear	10	0	喀!	-	-	-			
+#RecordIn	DAMAGED	RedBear	10	0	疲倦啊...走开...	-	-	-			
+#RecordIn	DEAD	RedBear	10	0	汪...	呜噜...	-	-			
+#RecordIn	PIECE	FireShella	8000000	9000000	咳勒勒...	-	-	-			
+#RecordIn	ATTACK	FireShella	10	0	呵哇啊!!!	-	-	-			
+#RecordIn	DAMAGED	FireShella	10	0	我魂...还...	-	-	-			
+#RecordIn	DEAD	FireShella	10	0	红...	-	-	-			
+#RecordIn	PIECE	FireTaitan	4600000	6600000	喀咿...吚吚吚咿...	-	滚开!!	-			
+#RecordIn	ATTACK	FireTaitan	10	0	不要...碰我...	不要惹我生气!	-	-			
+#RecordIn	DAMAGED	FireTaitan	10	0	喀哇啊!!	-	-	-			
+#RecordIn	DEAD	FireTaitan	10	0	我...曾是...精灵...	我的...根本是...	回到...火...	-			
+#RecordIn	PIECE	WaterAlca	8000000	9000000	呼呼...	竟敢,来这里!	-	-			
+#RecordIn	ATTACK	WaterAlca	10	0	黑水...黑水...	嚣张...	-	-			
+#RecordIn	DAMAGED	WaterAlca	10	0	眼前...一片黑...	我,我是...我是...	-	-			
+#RecordIn	DEAD	WaterAlca	10	0	现在...蓝的...	我是...对...我是...水...	我是...水...	-			
+#RecordIn	PIECE	WaterBaridon	8000000	9000000	咳咳,什么?你是...	只不过是个低等生命!	-	-			
+#RecordIn	ATTACK	WaterBaridon	10	0	暗,好暗...	就你那德行!	-	-			
+#RecordIn	DAMAGED	WaterBaridon	10	0	黑,好黑!!	-	-	-			
+#RecordIn	DEAD	WaterBaridon	10	0	现在,要回去了啊...	啊啊...回去...	好美...	-			
+#RecordIn	PIECE	EarthCalerben	8000000	9000000	呜吱.	吱.	不,不要...靠近...	-			
+#RecordIn	ATTACK	EarthCalerben	10	0	吱噜...	抠.	我会杀了你!!杀你!	-			
+#RecordIn	DAMAGED	EarthCalerben	10	0	吱...吱!!吱吱!!	嘻呼.	低级的生命竟敢!	-			
+#RecordIn	DEAD	EarthCalerben	10	0	我要...再回到...大地...	谢,谢谢...	-	-			
+#RecordIn	PIECE	EarthNerpa	4600000	6600000	叽.	咳.	-	-			
+#RecordIn	ATTACK	EarthNerpa	10	0	咳噜...	不,不要...来...	-	-			
+#RecordIn	DAMAGED	EarthNerpa	10	0	咳希,咳希!!	我,我...有...危险....	高兴,好高兴.	-			
+#RecordIn	DEAD	EarthNerpa	10	0	往...地里走啦...	回到...大地...	呼呼呼...	-			
+#RecordIn	PIECE	WindNepilim	8000000	9000000	挥...	-	-	-			
+#RecordIn	ATTACK	WindNepilim	10	0	挥哩哩...	风...风...	-	-			
+#RecordIn	DAMAGED	WindNepilim	10	0	噗嘘,噗嘘.	-	-	-			
+#RecordIn	DEAD	WindNepilim	10	0	...嘘嘘...	飞,飞...走了...	-	-			
+#RecordIn	PIECE	WindLence	8000000	9000000	人...类....	-	-	-			
+#RecordIn	ATTACK	WindLence	10	0	精...灵...?	-	-	-			
+#RecordIn	DAMAGED	WindLence	10	0	风...风...	-	-	-			
+#RecordIn	DEAD	WindLence	10	0	我不会消失的.	-	-	-			
+#RecordIn	PIECE	Seidstar	8000000	9000000	你是敌!敌人!	是敌人啊!	-	-			
+#RecordIn	ATTACK	Seidstar	10	0	服从,服从吧!	呼嗯,呼嗯,呵喝喝呼!!呵哈哈!	呼呜!	-			
+#RecordIn	DAMAGED	Seidstar	10	0	必需要服从!	-	-	-			
+#RecordIn	DEAD	Seidstar	10	0	教,教主...送往天国的...汁....	给,给我...汁液...	痛,痛苦...我...不是怪物...	-			
+#RecordIn	PIECE	Seidwarrior	4600000	6600000	呵喝喝,喝喝喝!!	呵哈哈哈!!咳哈哈!!	喝喝喝...打啊...	-			
+#RecordIn	ATTACK	Seidwarrior	10	0	呵呼,可笑,我强,我很强!	咳咳,好痒.	-	-			
+#RecordIn	DAMAGED	Seidwarrior	10	0	来打!打到最后为止啊!	-	-	-			
+#RecordIn	DEAD	Seidwarrior	10	0	痛,不会痛苦.我,我...还...	我...还...活着...	什,什么.身...身体...	-			
+#RecordIn	PIECE	Magrite	8000000	9000000	呼呼呼,笨蛋家伙.	唉哟,什么?现在你在打我吗?	...是什么?这低级的?	-			
+#RecordIn	ATTACK	Magrite	10	0	跟随我吧!愚蠢者啊!	嘻嘻嘻,竟然对我?	嘻嘻嘻嘻,好痒哦.	-			
+#RecordIn	DAMAGED	Magrite	10	0	让你尝尝送往天国的汁液!	唉咿!	咳,到,到底是谁!	-			
+#RecordIn	DEAD	Magrite	10	0	不要...错觉...杀了我啊...	我...只是个分身而...	叽...吱咿...	-			
+#RecordIn	PIECE	Ruga	8000000	9000000	呜叽叽?	呜叽?	卡噢!	-			
+#RecordIn	ATTACK	Ruga	10	0	喀勒噜...咿...咿...	-	-	-			
+#RecordIn	DAMAGED	Ruga	10	0	叽?	-	-	-			
+#RecordIn	DEAD	Ruga	10	0	叽...	叽咿咿...	-	-			
+#RecordIn	PIECE	Vehimoth	8000000	9000000	咳勒噜...	-	-	-			
+#RecordIn	ATTACK	Vehimoth	10	0	勒勒勒勒噜	-	-	-			
+#RecordIn	DAMAGED	Vehimoth	10	0	咳勒咳勒	-	-	-			
+#RecordIn	DEAD	Vehimoth	10	0	咳...隆...	咳噢...	咳勒勒...	-			
+#RecordIn	PIECE	RedCondor	4600000	6600000	叽噜!	叽!吃的!叽!	-	-			
+#RecordIn	ATTACK	RedCondor	10	0	叽咿咿咿~	点心!点心!	-	-			
+#RecordIn	DAMAGED	RedCondor	10	0	喀,喀!!	-	-	-			
+#RecordIn	DEAD	RedCondor	10	0	食物...我的食物...	-	-	-			
+#RecordIn	PIECE	Shella	8000000	9000000	咳勒勒...	-	-	-			
+#RecordIn	ATTACK	Shella	10	0	卡哦哦哦哦	-	-	-			
+#RecordIn	DAMAGED	Shella	10	0	咳勒噜卡哦哦哦	-	-	-			
+#RecordIn	DEAD	Shella	10	0	喀咿咿...	-	-	-			
+#RecordIn	PIECE	Nerpa	8000000	9000000	咘勒.	-	-	-			
+#RecordIn	ATTACK	Nerpa	10	0	咘勒噜...	-	-	-			
+#RecordIn	DAMAGED	Nerpa	10	0	咘勒咘勒咘勒	-	-	-			
+#RecordIn	DEAD	Nerpa	10	0	咘...	-	-	-			
+#RecordIn	PIECE	KaraWarrior	8000000	9000000	喝喝喝,是人类?是精灵?	-	-	-			
+#RecordIn	ATTACK	KaraWarrior	10	0	可爱...真可爱.	-	-	-			
+#RecordIn	DAMAGED	KaraWarrior	10	0	你是什么东西...	-	-	-			
+#RecordIn	DEAD	KaraWarrior	10	0	不像...话...	-	-	-			
+#RecordIn	PIECE	KaraDarkTempler	4600000	6600000	我的魔法可不是要使用在,像你这种家伙身上...	-	哼.什么嘛?	-			
+#RecordIn	ATTACK	KaraDarkTempler	10	0	是要找我烦麻是不是?	-	-	-			
+#RecordIn	DAMAGED	KaraDarkTempler	10	0	哼,真是好笑.	-	巫,巫师大人应该会帮忙!	-			
+#RecordIn	DEAD	KaraDarkTempler	10	0	什,什么...这是...	根本不象话...	卡,卡拉...大...巫师...	-			
+#RecordIn	PIECE	BattleBeak	8000000	9000000	吱噜~	-	-	-			
+#RecordIn	ATTACK	BattleBeak	10	0	叽!	-	-	-			
+#RecordIn	DAMAGED	BattleBeak	10	0	叽噜噜?	-	-	-			
+#RecordIn	DEAD	BattleBeak	10	0	吱咿...	-	-	-			
+#RecordIn	PIECE	OldLeipoon	8000000	9000000	呜...	-	-	-			
+#RecordIn	ATTACK	OldLeipoon	10	0	呜呜呜呜呜呜呜...	-	-	-			
+#RecordIn	DAMAGED	OldLeipoon	10	0	呜呜呜呜呜呜呜呜呜	-	-	-			
+#RecordIn	DEAD	OldLeipoon	10	0	呜呜呜...	-	-	-			
+#RecordIn	PIECE	Leipoon	8000000	9000000	呜?	-	-	-			
+#RecordIn	ATTACK	Leipoon	10	0	呜呜呜	-	-	-			
+#RecordIn	DAMAGED	Leipoon	10	0	呜呜呜呜呜呜呜!	-	-	-			
+#RecordIn	DEAD	Leipoon	10	0	呜嗯...	-	-	-			
+#RecordIn	PIECE	BabyLeipoon	4600000	6600000	嬷咿.	-	-	-			
+#RecordIn	ATTACK	BabyLeipoon	10	0	嬷嬷嬷?	-	-	-			
+#RecordIn	DAMAGED	BabyLeipoon	10	0	嬷嬷嬷嬷嬷?	-	-	-			
+#RecordIn	DEAD	BabyLeipoon	10	0	嬷...	-	-	-			
+#RecordIn	PIECE	Psyken	8000000	9000000	杀啊!杀啊!杀生命啊!	卡哈哈哈!卡哈!	嘻嘻嘻!!	-			
+#RecordIn	ATTACK	Psyken	10	0	咳嘻嘻嘻,你,真不满意.	快乐,好快乐.	咳嘻嘻!	-			
+#RecordIn	DAMAGED	Psyken	10	0	要杀我吗?嘻嘻嘻,嘻嘻嘻嘻!	哇..鲜艳...红色!!	-	-			
+#RecordIn	DEAD	Psyken	10	0	谢...谢...	你,你好...	现在...好,好...幸福...	-			
+#RecordIn	PIECE	PsykenDog	8000000	9000000	哇!普西肯,叫我吗?	咳啊啊啊!	-	-			
+#RecordIn	ATTACK	PsykenDog	10	0	汪!我咬死你!	哇喳哇喳咀嚼!	-	-			
+#RecordIn	DAMAGED	PsykenDog	10	0	喀啊啊!	汪!汪!汪!	-	-			
+#RecordIn	DEAD	PsykenDog	10	0	咳勒勒勒...杀...普西肯...	-	-	-			
+#RecordIn	PIECE	Karen	8000000	9000000	啊~哈~?	哎哟哟,现在你碰我了?	嘎哈哈!来啦!为我来的吗?	-			
+#RecordIn	ATTACK	Karen	10	0	哎哟?哎咿咿~好痒哦!	你,好可爱~?	唉哟,好痒~就这样而已吗?	-			
+#RecordIn	DAMAGED	Karen	10	0	嘎哈哈哈!全都死吧!全都给我死吧!	噗呼,好痒,好痒啊~?	唉哟,痛,唉哟哟~?	-			
+#RecordIn	DEAD	Karen	10	0	...救...救...他吧...	...希搏克...要去你身边了...现在...那个人怎么办...	...喝咿...现...现在才...好不容易...	-			
+#RecordIn	PIECE	Firepamelia	8000000	9000000	愚蠢的家伙!	在这种地方,像你这种低下等的生命体竟敢...	你是什么?人类吗?	-			
+#RecordIn	ATTACK	Firepamelia	10	0	你还想活着回去吗?	哼.	可笑,可悲,低级的很贴切.	-			
+#RecordIn	DAMAGED	Firepamelia	10	0	呼呼呼...	竟,竟然想要杀我?!	什...什么...这力量是...	-			
+#RecordIn	DEAD	Firepamelia	10	0	...魂以...地狱...	啊...	真是...愚蠢...啊...卡...莲是...死不...了...的...	-			
+#RecordIn	PIECE	IncubusRock	8000000	9000000	喀哇啊啊啊!是人类!人类!	呵喝喝喝!是精灵,精灵!	-	-			
+#RecordIn	ATTACK	IncubusRock	10	0	哦哦哦哦哦哦哦哦哦!	-	喀咿咿...	-			
+#RecordIn	DAMAGED	IncubusRock	10	0	死吧,去死吧!笨蛋种族!	-	愚蠢,低级的家伙!	-			
+#RecordIn	DEAD	IncubusRock	10	0	咳勒勒勒噜...	不可能...的...事情...	守护...女...女王...	-			
+#RecordIn	PIECE	IncubusAgole	8000000	9000000	阿果罗冰裂术!	-	想要尝尝死亡的滋味吗?	-			
+#RecordIn	ATTACK	IncubusAgole	10	0	噗隆!	-	真是笨种族...	-			
+#RecordIn	DAMAGED	IncubusAgole	10	0	原来是丧胆啦!我就让你尝尝我的厉害!	喀,喀咿咿!	-	-			
+#RecordIn	DEAD	IncubusAgole	10	0	被这种下等生物...	守护...女王...	守护...皇...皇后...	-			
+#RecordIn	PIECE	KillerHide	8000000	9000000	欢迎你~,你是人类吗?精灵吗?	呼呼.你愚蠢到爆.	-	-			
+#RecordIn	ATTACK	KillerHide	10	0	喝喝喝.你的肉碰到我的刀...	我的短刀会刺穿你的心.	-	-			
+#RecordIn	DAMAGED	KillerHide	10	0	很好,这个程度刚刚好.	喝喝喝...喝咿...	喀咿...还不错嘛.	-			
+#RecordIn	DEAD	KillerHide	10	0	不,不象话...	噢噢,女王陛下...为了您...这个我...	我...我的皇后...	-			
+#RecordIn	PIECE	KillerHideShadow	8000000	9000000	咳勒勒.	-	-	-			
+#RecordIn	ATTACK	KillerHideShadow	10	0	女王...女王...咳...女王陛下...	我是皇后...	-	-			
+#RecordIn	DAMAGED	KillerHideShadow	10	0	为守护女王!!	-	-	-			
+#RecordIn	DEAD	KillerHideShadow	10	0	噢噢...	喀呃...谁,谁...	-	-			
+#RecordIn	PIECE	Silberk	8000000	9000000	咳勒勒噜...不要靠过来!	喀咿咿...这个地方...不能...过...	回去吧...小生命啊...	-			
+#RecordIn	ATTACK	Silberk	10	0	明明就叫你回去...	咳勒勒...警告...你了...	不要...轻视...生命...	-			
+#RecordIn	DAMAGED	Silberk	10	0	不行...不能送给她...	过...过...不去...咳勒勒!	咿勒勒勒...!!回去!叫你回去...	-			
+#RecordIn	DEAD	Silberk	10	0	卡...莲...	请...守护...我的...小...天使...	我的...小天使...我的...小...卡莲...一定要...	-			
+#RecordIn	PIECE	BloodVampire	8000000	9000000	咳噜咳噜!	-	-	-			
+#RecordIn	ATTACK	BloodVampire	10	0	咳噢噢...	-	喀咿咿...	-			
+#RecordIn	DAMAGED	BloodVampire	10	0	咳噜…叽咿…咳噜…叽咿.	-	卡噢!	-			
+#RecordIn	DEAD	BloodVampire	10	0	我的女王...我的...皇后...	让,让我见她...	-	-			
+#RecordIn	PIECE	HungryZombie	8000000	9000000	呃,呃呃...	啊.	呜.	-			
+#RecordIn	ATTACK	HungryZombie	10	0	肚子饿.	肚子...饿了...	给我...白色...面包...巧克力...	-			
+#RecordIn	DAMAGED	HungryZombie	10	0	就像我的皮肤一样看起来好细嫩.	饭,饭.面,面包.......	肚子好饿...	-			
+#RecordIn	DEAD	HungryZombie	10	0	肚子...饿啊...	-	-	-			
+#RecordIn	PIECE	FogViVi	8000000	9000000	咳噜.	-	-	-			
+#RecordIn	ATTACK	FogViVi	10	0	卡愣.	-	-	-			
+#RecordIn	DAMAGED	FogViVi	10	0	咿勒愣.	-	-	-			
+#RecordIn	DEAD	FogViVi	10	0	魔!	魔...	魔一族啊...永远...	-			
+#RecordIn	PIECE	FogBat	8000000	9000000	啪哒啪哒!!	-	-	-			
+#RecordIn	ATTACK	FogBat	10	0	叽噜噜?	-	-	-			
+#RecordIn	DAMAGED	FogBat	10	0	叽噜噜啪哒啪哒!!	卡愣!	-	-			
+#RecordIn	DEAD	FogBat	10	0	叽咿咿…啪…	-	-	-			
+#RecordIn	PIECE	VampireViVi	8000000	9000000	咳噜噜勒	-	-	-			
+#RecordIn	ATTACK	VampireViVi	10	0	咳勒勒勒	-	-	-			
+#RecordIn	DAMAGED	VampireViVi	10	0	咳噜...!!	卡噢噢!	-	-			
+#RecordIn	DEAD	VampireViVi	10	0	咳...勒…	-	魔...一族...万岁...	-			
+#RecordIn	PIECE	FogWeasel	8000000	9000000	嘘.嘘.	-	-	-			
+#RecordIn	ATTACK	FogWeasel	10	0	嘘咿~嘘咿	嘘!嘘!	-	-			
+#RecordIn	DAMAGED	FogWeasel	10	0	嘘,嘘咿.	-	-	-			
+#RecordIn	DEAD	FogWeasel	10	0	嘘咿咿...	哔咿咿...	叽咿...	-			
+#RecordIn	PIECE	BloodShadow	8000000	9000000	呵喝喝...我...不再被束缚!	-	-	-			
+#RecordIn	ATTACK	BloodShadow	10	0	请你接住这脱束的攻击!	-	-	-			
+#RecordIn	DAMAGED	BloodShadow	10	0	呵吼不错嘛.	打,打啊!不...不要小看我!	-	-			
+#RecordIn	DEAD	BloodShadow	10	0	噢噢...女王啊...	-	-	-			
+#RecordIn	PIECE	DarkShadow	8000000	9000000	呵吼吼吼	呵喝喝喝...	嘻嘻...有趣...	-			
+#RecordIn	ATTACK	DarkShadow	10	0	喀喀喀...	-	-	-			
+#RecordIn	DAMAGED	DarkShadow	10	0	呵…咿…	呵...咿...?	-	-			
+#RecordIn	DEAD	DarkShadow	10	0	…女…王…陛…下…万…岁…	女王陛下...	-	-			
+#RecordIn	PIECE	FogNepilim	8000000	9000000	不.能.过.去.	-	-	-			
+#RecordIn	ATTACK	FogNepilim	10	0	女.王.由.我.来.守护.	风会守护女王.	-	-			
+#RecordIn	DAMAGED	FogNepilim	10	0	不.错.嘛.	-	-	-			
+#RecordIn	DEAD	FogNepilim	10	0	竟.然.没.能.守.护.女.王.陛.下.	女王...陛下...	-	-			
+#RecordIn	PIECE	FogLence	8000000	9000000	嘘嘘~~	-	-	-			
+#RecordIn	ATTACK	FogLence	10	0	死.吧.	-	-	-			
+#RecordIn	DAMAGED	FogLence	10	0	嘘…去.死.啦!	-	-	-			
+#RecordIn	DEAD	FogLence	10	0	嘘…咿…竟然是我死.	-	-	-			
+#RecordIn	PIECE	DirtySoul	8000000	9000000	哈尼哈尼?	哈尼~哈尼!	-	-			
+#RecordIn	ATTACK	DirtySoul	10	0	好想哈尼哈尼!	喵?	-	-			
+#RecordIn	DAMAGED	DirtySoul	10	0	你不是哈尼哈尼啊!	-	-	-			
+#RecordIn	DEAD	DirtySoul	10	0	哈...哈尼哈尼...	喵...	-	-			
+#RecordIn	PIECE	C_DarkArchon	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔怪们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkArchon	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkArchon	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkArchon	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_BigDarkArchon	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔怪们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_BigDarkArchon	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_BigDarkArchon	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_BigDarkArchon	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkBat	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_DarkBat	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_DarkBat	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_DarkBat	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_MasicBat	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_MasicBat	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_MasicBat	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_MasicBat	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_DarkMasFlyingStaff	1800000	1800000	呜鸣呜嗯...	人类不能原谅!	塔同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkMasFlyingStaff	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkMasFlyingStaff	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkMasFlyingStaff	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DefGoblinSwordman	1800000	1800000	呜鸣呜嗯...	人类不能原谅!	塔同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DefGoblinSwordman	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DefGoblinSwordman	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DefGoblinSwordman	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_MagGoblinSwordman	1800000	1800000	呜鸣呜嗯...	人类不能原谅!	塔怪们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_MagGoblinSwordman	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_MagGoblinSwordman	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_MagGoblinSwordman	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkGreenky	1800000	1800000	艾杰请赐我力量!	人类不能原谅!	同伴们一起守护水晶城吧!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkGreenky	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkGreenky	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	是非常强悍的人类!			
+#RecordIn	DEAD	C_DarkGreenky	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkJewelKeeper	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	人类啊!全都给我回去吧!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkJewelKeeper	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	效忠艾杰大人!			
+#RecordIn	DAMAGED	C_DarkJewelKeeper	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkJewelKeeper	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_BigJewelKeeper	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	人类啊!全都给我回去吧!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_BigJewelKeeper	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	效忠艾杰大人!			
+#RecordIn	DAMAGED	C_BigJewelKeeper	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_BigJewelKeeper	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_GoldJewelKeeper	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_GoldJewelKeeper	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_GoldJewelKeeper	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_GoldJewelKeeper	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_BigGoldJewelKeeper	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_BigGoldJewelKeeper	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_BigGoldJewelKeeper	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_BigGoldJewelKeeper	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkKingMushRoom	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkKingMushRoom	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkKingMushRoom	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkKingMushRoom	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_KingMushRoom	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_KingMushRoom	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_KingMushRoom	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_KingMushRoom	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkLegendaryTree	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔怪们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkLegendaryTree	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkLegendaryTree	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkLegendaryTree	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkLips	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_DarkLips	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_DarkLips	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_DarkLips	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_BigDarkLips	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_BigDarkLips	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_BigDarkLips	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_BigDarkLips	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_SkinLips1	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_SkinLips1	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_SkinLips1	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_SkinLips1	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_SkinLips2	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_SkinLips2	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_SkinLips2	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_SkinLips2	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkLizardMan	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	塔同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkLizardMan	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkLizardMan	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkLizardMan	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkComLizardMan	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_DarkComLizardMan	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_DarkComLizardMan	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_DarkComLizardMan	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_LizardManGuardian	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_LizardManGuardian	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_LizardManGuardian	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_LizardManGuardian	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_DarkMarloneArcher	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_DarkMarloneArcher	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_DarkMarloneArcher	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_DarkMarloneArcher	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_DarkNavar	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_DarkNavar	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_DarkNavar	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_DarkNavar	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_CurseDarkNavar	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_CurseDarkNavar	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_CurseDarkNavar	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_CurseDarkNavar	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_DarkOrc	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkOrc	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkOrc	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkOrc	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_CurseDarkOrc	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_CurseDarkOrc	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_CurseDarkOrc	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_CurseDarkOrc	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_HeavyOrc	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_HeavyOrc	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_HeavyOrc	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_HeavyOrc	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkPinky	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkPinky	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkPinky	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkPinky	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkPixy	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkPixy	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkPixy	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkPixy	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkShylph	1800000	1800000	我们想要的只是和平!	想要在艾杰大人自由的塔里渡永生..	时间会流逝,但永生不会改变.	有入侵者吗?			
+#RecordIn	ATTACK	C_DarkShylph	50	0	是人类!	将诅咒妨碍我们和平的人类.	呜呜呜呜有人入侵!	愚蠢的人类!			
+#RecordIn	DAMAGED	C_DarkShylph	50	0	结果是要回到永恒!	要就这样消灭吗?	还想多待一会.	竟然没能守住水晶城.			
+#RecordIn	DEAD	C_DarkShylph	50	0	绝对不会原谅人类!	破坏和平者!你们将会受到诅咒.	要消...灭...	虽然是赢了我,但你们能活着回去吗??			
+#RecordIn	PIECE	C_DarkSkelArcher	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkSkelArcher	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkSkelArcher	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkSkelArcher	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkOneSkelArcher	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkOneSkelArcher	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkOneSkelArcher	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkOneSkelArcher	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_RangerSkelArcher	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_RangerSkelArcher	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_RangerSkelArcher	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_RangerSkelArcher	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkSoulSkeleton	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkSoulSkeleton	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkSoulSkeleton	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkSoulSkeleton	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkSkeletonKnight	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkSkeletonKnight	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkSkeletonKnight	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkSkeletonKnight	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkSkeletonCom	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkSkeletonCom	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkSkeletonCom	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkSkeletonCom	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkSkelWarrior	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkSkelWarrior	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkSkelWarrior	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkSkelWarrior	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkSpakeDog	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkSpakeDog	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkSpakeDog	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkSpakeDog	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_BigDarkSpakeDog	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_BigDarkSpakeDog	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_BigDarkSpakeDog	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_BigDarkSpakeDog	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkStonie	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkStonie	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkStonie	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkStonie	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkStonieCom	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkStonieCom	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkStonieCom	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkStonieCom	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_SkinStonie	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_SkinStonie	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_SkinStonie	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_SkinStonie	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_SkinRedStonie	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_SkinRedStonie	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_SkinRedStonie	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_SkinRedStonie	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_TombRaider	1800000	1800000	唉哟被逮到了!	人类不能原谅!	我还没能找到宝石!	艾杰的宝石会藏在哪里?			
+#RecordIn	ATTACK	C_TombRaider	50	0	不会原谅人类.	人类再多我都可以把他们赶出去!	我有力量!	快跑为妙?			
+#RecordIn	DAMAGED	C_TombRaider	50	0	喀喀喀...	人类的攻击还蛮弱的!	啊!	再强力点攻击啊!			
+#RecordIn	DEAD	C_TombRaider	50	0	铲...除...	不行!宝石就在眼前...	这样下去,没办法到永恒时光~~~啊~~~	啊~艾杰的宝物就在眼前,竟然被终结!			
+#RecordIn	PIECE	C_MagTombRaider	1800000	1800000	唉哟被逮到了!	人类不能原谅!	我还没能找到宝石!	艾杰的宝石会藏在哪里?			
+#RecordIn	ATTACK	C_MagTombRaider	50	0	不会原谅人类.	人类再多我都可以把他们赶出去!	我有力量!	快跑为妙?			
+#RecordIn	DAMAGED	C_MagTombRaider	50	0	喀喀喀...	人类的攻击还蛮弱的!	啊!	再强力点攻击啊!			
+#RecordIn	DEAD	C_MagTombRaider	50	0	铲...除...	不行!宝石就在眼前...	这样下去,没办法到永恒时光~~~啊~~~	啊~艾杰的宝物就在眼前,竟然被终结!			
+#RecordIn	PIECE	C_DarkVampireBat	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkVampireBat	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkVampireBat	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkVampireBat	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_MagVampireBat	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_MagVampireBat	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_MagVampireBat	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_MagVampireBat	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkZombie	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkZombie	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkZombie	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkZombie	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_JewelGolem	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_JewelGolem	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_JewelGolem	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_JewelGolem	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_LizardManIyzel	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_LizardManIyzel	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_LizardManIyzel	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_LizardManIyzel	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_DarkLizardManIyzel	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_DarkLizardManIyzel	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_DarkLizardManIyzel	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_DarkLizardManIyzel	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_OrcIyzel	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_OrcIyzel	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_OrcIyzel	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_OrcIyzel	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_CurseOrcIyzel	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_CurseOrcIyzel	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_CurseOrcIyzel	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_CurseOrcIyzel	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_SkelArcherIyzel	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_SkelArcherIyzel	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_SkelArcherIyzel	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_SkelArcherIyzel	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_OneSkelArcherIyzel	1800000	1800000	守护艾杰的神圣遗物!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_OneSkelArcherIyzel	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_OneSkelArcherIyzel	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_OneSkelArcherIyzel	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	C_BigSpakeDogIyzel	1800000	1800000	我们不能输给那软弱的人类!	人类不能原谅!	水晶城里的同伴们!	效忠艾杰大人!			
+#RecordIn	ATTACK	C_BigSpakeDogIyzel	50	0	回去吧!人类啊!!	拜托,人类请回到人类的领域吧!	这里是艾杰大人的圣地!	回去吧!			
+#RecordIn	DAMAGED	C_BigSpakeDogIyzel	50	0	艾杰请帮助我们!	人类的能力就只有这样吗?	啊!	真是无法理解的人类!			
+#RecordIn	DEAD	C_BigSpakeDogIyzel	50	0	铲...除...	真的要就这样消灭吗?	这样下去,没办法到永恒时光~~~啊~~~	绝不原谅!			
+#RecordIn	PIECE	Lab_25	1800000	1800000	呼呼!要快点进行试验才能变得更强.	呼呼!要快点进行试验才能变得更强.	要怎么把这些家伙变成试验体呢?	小鬼你等着!我让你变得更强!嘻嘻嘻			
+#RecordIn	ATTACK	Lab_25	50	0	必杀攻击请接招!	是可笑的入侵者啊!	对入侵者绝对没有所谓的原谅.	-			
+#RecordIn	DAMAGED	Lab_25	50	0	呼呼!出乎意料的弱哦.	以那种程度来到这里?	惹我更生气前,赶快给我回去!	我给你机会逃跑.快点消失!			
+#RecordIn	DEAD	Lab_25	50	0	不能就这样徒劳倒下	怎会这样!无法相信!	最强试验体的我,竟然会倒下!无法相信.	不行!最后阶段的试验就要完成了,竟然就这样倒下!			
+#RecordIn	PIECE	Lab_20	1800000	1800000	试验应该进行的还顺利吧!?	我是实验室里第二强的生命体!	我没有什么好怕的!	不管是谁,只要入侵这里,就要铲除.			
+#RecordIn	ATTACK	Lab_20	50	0	必杀攻击请接招!	是可笑的入侵者啊!	对入侵者绝对没有所谓的原谅.	-			
+#RecordIn	DAMAGED	Lab_20	50	0	呼呼!出乎意料的弱哦.	以那种程度来到这里?	惹我更生气前,赶快给我回去!	我给你机会逃跑.快点消失!			
+#RecordIn	DEAD	Lab_20	50	0	不能就这样徒劳倒下	怎会这样!无法相信!	我竟然会倒下!无法相信.	不行!最后阶段的试验就要完成了,竟然就这样倒下!			
+#RecordIn	PIECE	Lab_19	1800000	1800000	这个试验结束后,我就会变得很强.	试验正在顺利进行.	再撑一会吧!	我一定要变得更强!			
+#RecordIn	ATTACK	Lab_19	50	0	竟然吵醒我,不可原谅!	守护试验室!	对入侵者绝对没有所谓的原谅.	一棒打尽.			
+#RecordIn	DAMAGED	Lab_19	50	0	你们的攻击,一点都不痛!	好痒,是攻击啊!	你以为攻击我后可以安然无事的回去吗?	你们一定都会付出代价!			
+#RecordIn	DEAD	Lab_19	50	0	竟然被入侵者打倒.	再等一会就可以变强的!	怎会这样!	试验若能稍微再快一点...			
+#RecordIn	PIECE	Lab_23	1800000	1800000	这个试验结束后,我就会变得很强.	试验正在顺利进行.	再撑一会吧!	我一定要变得更强!			
+#RecordIn	ATTACK	Lab_23	50	0	竟然吵醒我,不可原谅!	全都出来守护试验室!	合力击退入侵者吧!	可笑的家伙!			
+#RecordIn	DAMAGED	Lab_23	50	0	你们的攻击,一点都不痛!	好痒,是攻击啊!	你以为攻击我后可以安然无事的回去吗?	你们一定都会付出代价!			
+#RecordIn	DEAD	Lab_23	50	0	怎么会被软弱的入侵者打倒.	再等一会就可以变强的!	怎会这样!	试验若能稍微再快一点...			
+#RecordIn	PIECE	Lab_Guardian01	1800000	1800000	入侵者赶快出来吧!	谁这么大胆入侵这里?	-	-			
+#RecordIn	ATTACK	Lab_Guardian01	100	5000	对入侵者不会有所谓的原谅!	赫赫赫,我是强了点!	-	-			
+#RecordIn	DAMAGED	Lab_Guardian01	100	5000	嗯!怎么会受到敌人的攻击!	竟然被入侵家伙反击,真是耻辱!	-	-			
+#RecordIn	DEAD	Lab_Guardian01	100	5000	入侵者出乎意料的强!合力击退吧!	要快点进行孩子们的试验..	-	-			
+#RecordIn	PIECE	Lab_Guardian02	1800000	1800000	呃!入侵者己经来到这里了?	要让那些不怕死的家伙好看!	-	-			
+#RecordIn	ATTACK	Lab_Guardian02	100	5000	对入侵者不会有所谓的原谅!	我很强,所以你们最好小心一点!	-	-			
+#RecordIn	DAMAGED	Lab_Guardian02	100	5000	呵喝喝喝.完全没有受到打击.	偷偷入侵的家伙攻击力果然很弱!	-	-			
+#RecordIn	DEAD	Lab_Guardian02	100	5000	竟然被入侵者打倒～冤枉啊!	大家合力把入侵者赶回去!	-	-			
+#RecordIn	PIECE	Lab_Watchman01	1800000	1800000	呼呜~呼呜~呼呜~	被我抓到的入侵者,全都要杀光.	喀噜噜噜~喀噜噜噜~	-			
+#RecordIn	ATTACK	Lab_Watchman01	100	5000	怒火攻击接招吧!	跑得再远,对我的攻击应该还是没辄.	-	-			
+#RecordIn	DAMAGED	Lab_Watchman01	100	5000	呼呜~呼呜~呼呜~	不要再让我生气了!	-	-			
+#RecordIn	DEAD	Lab_Watchman01	100	5000	不行!不能就这样把这些家伙送走.	喀噜噜噜~喀噜噜噜~	-	-			
+#RecordIn	PIECE	Lab_Watchman02	1800000	1800000	被我抓到的入侵者,全都要杀光.	呼呜~呼呜~呼呜~	没有人能躲过我监视的眼睛!	-			
+#RecordIn	ATTACK	Lab_Watchman02	100	5000	被我攻击的绝不会活命.	跑跑看啊!呵喝喝喝喝,可以躲过监视吗?	-	-			
+#RecordIn	DAMAGED	Lab_Watchman02	100	5000	呼呜~呼呜~呼呜~	这攻击比想象的弱,以这种程度打不倒的!	不要再惹我生气啦!	-			
+#RecordIn	DEAD	Lab_Watchman02	100	5000	阻挡入侵者!	我真的很想看到试验结果成功..	-	-			
+#RecordIn	PIECE	Lab_Battle01	1800000	1800000	我是试验室里最高级的打手!	看到最厉害的战斗试验体,入侵者应该会逃跑吧!	-	-			
+#RecordIn	ATTACK	Lab_Battle01	100	5000	让你看看最高攻击型试验体的手艺!	呵哈哈哈!被我攻击的感觉如何?	-	-			
+#RecordIn	DAMAGED	Lab_Battle01	100	5000	什么嘛?这个也叫攻击吗?	这攻击也太可笑了吧!	-	-			
+#RecordIn	DEAD	Lab_Battle01	100	5000	我...怎么会..倒下..	全力阻挡!	入侵者出乎意料的强!	-			
+#RecordIn	PIECE	Lab_Battle02	1800000	1800000	笨家伙竟然被入侵者打倒!	最好不要让我碰到那些入侵者,不然我会让他们好看!	-	-			
+#RecordIn	ATTACK	Lab_Battle02	100	5000	让你看看最高攻击型试验体的手艺!	呵哈哈哈!被我攻击的感觉如何?	就让你看点强的吧!	-			
+#RecordIn	DAMAGED	Lab_Battle02	100	5000	什么嘛?这个也叫攻击吗?	那种攻击好痒哦!	-	-			
+#RecordIn	DEAD	Lab_Battle02	100	5000	怎么会这样...就这样徒劳的倒下..	入侵者出乎意料的强!	全部都出来,一起击退入侵者吧!	-			
+#RecordIn	PIECE	Lab_Snake_In	1800000	1800000	啧啧啧啧..	啧勒勒勒...	是谁竟敢进来这里?	-			
+#RecordIn	ATTACK	Lab_Snake_In	100	5000	咻呼~看我的力量!	让你怕到全身起鸡皮疙瘩!	-	-			
+#RecordIn	DAMAGED	Lab_Snake_In	100	5000	咿咿咿咿咿!	竟然敢动我,今天就把你做个了结吧!	-	-			
+#RecordIn	DEAD	Lab_Snake_In	100	5000	现在一定要回去了~	应该要再强点!	-	-			
+#RecordIn	PIECE	Lab_Ghost01	1800000	1800000	我的怨恨什么时候才能回报给你呢?	鄙视我的人,我都要铲除.	若试验有成功,现在就已经是最强的生命体了.....	-			
+#RecordIn	ATTACK	Lab_Ghost01	100	5000	对入侵者没有慈悲可言!	让你感觉一下精魄的愤怒!	-	-			
+#RecordIn	DAMAGED	Lab_Ghost01	100	5000	入侵者的攻击!	竟然这样攻击我,我就让你尝尝比这更苦的痛苦!	-	-			
+#RecordIn	DEAD	Lab_Ghost01	100	5000	怨魂是不会消失的!	总有一天我会复活,你等着!	-	-			
+#RecordIn	PIECE	Lab_Ghost02	1800000	1800000	不会原谅入侵者!	呼呼呼呼呼呼呼~~~	呼呼呼呼呼呼谁敢叫我?	-			
+#RecordIn	ATTACK	Lab_Ghost02	100	5000	看清楚愤怒是什么!!	你以为从这里逃跑得了吗?	-	-			
+#RecordIn	DAMAGED	Lab_Ghost02	100	5000	入侵者的攻击!	我的痛苦也要让你们感受!	-	-			
+#RecordIn	DEAD	Lab_Ghost02	100	5000	只能等待复活时间了.	同胞们击退入侵者!	-	-			
+#RecordIn	PIECE	Lab_Snake_Out	1800000	1800000	守护秘密试验室!	要阻挡探险家妨碍做试验!	-	-			
+#RecordIn	ATTACK	Lab_Snake_Out	100	5000	呼呼~竟然想入侵试验室!	不能原谅入侵者!	-	-			
+#RecordIn	DAMAGED	Lab_Snake_Out	100	5000	咳!探险家比想象的还要厉害哦!	糟糕探险家竟然这么强,要守住试验室..	-	-			
+#RecordIn	DEAD	Lab_Snake_Out	100	5000	不会原谅入侵者!你们也一样.	就算打倒我,试验还是一定会成功!	-	-			
+#RecordIn	PIECE	Lab_Unfinished	1800000	1800000	守护秘密试验室!	要阻挡探险家妨碍做试验!	-	-			
+#RecordIn	ATTACK	Lab_Unfinished	100	5000	呼呼~竟然想入侵试验室!	不能原谅入侵者!	-	-			
+#RecordIn	DAMAGED	Lab_Unfinished	100	5000	咳!探险家比想象的还要厉害哦!	糟糕探险家竟然这么强,要守住试验室..	-	-			
+#RecordIn	DEAD	Lab_Unfinished	100	5000	不会原谅入侵者!你们也一样.	就算打倒我,试验还是一定会成功!	-	-			
+#RecordIn	PIECE	Lab_Slime	1800000	1800000	欢迎你来到秘密试验室.	你好!我是试验中的史莱姆.	试验结束后,我会以新的生命体诞生.	-			
+#RecordIn	ATTACK	Lab_Slime	100	5000	救救小可爱~	咿哼~!	-	-			
+#RecordIn	DAMAGED	Lab_Slime	100	5000	干嘛要打我~	欢迎来到啊咿..咳..痛~	-	-			
+#RecordIn	DEAD	Lab_Slime	100	5000	祝幸运与各位探险家同在!	啊!试验还没完成..哼..	-	-			
+#RecordIn	PIECE	GB_Dealer	10000	20000	参与交易看看啊?	唉哟,再往上抬一下交易费如何?	有一个可以赚三倍的好情报...	试着抓住赚大钱的机会吧!			
+#RecordIn	ATTACK	GB_Dealer	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	GB_Dealer	100	5000	-	-	-	-			
+#RecordIn	DEAD	GB_Dealer	100	5000	-	-	-	-			
+#RecordIn	PIECE	BSpikeHorn	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	BSpikeHorn	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	BSpikeHorn	100	5000	-	-	-	-			
+#RecordIn	DEAD	BSpikeHorn	100	5000	-	-	-	-			
+#RecordIn	PIECE	DApe	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	DApe	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	DApe	100	5000	-	-	-	-			
+#RecordIn	DEAD	DApe	100	5000	-	-	-	-			
+#RecordIn	PIECE	DLich	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	DLich	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	DLich	100	5000	-	-	-	-			
+#RecordIn	DEAD	DLich	100	5000	-	-	-	-			
+#RecordIn	PIECE	DNepilim	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	DNepilim	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	DNepilim	100	5000	-	-	-	-			
+#RecordIn	DEAD	DNepilim	100	5000	-	-	-	-			
+#RecordIn	PIECE	FElfArc	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FElfArc	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FElfArc	100	5000	-	-	-	-			
+#RecordIn	DEAD	FElfArc	100	5000	-	-	-	-			
+#RecordIn	PIECE	FElfCle	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FElfCle	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FElfCle	100	5000	-	-	-	-			
+#RecordIn	DEAD	FElfCle	100	5000	-	-	-	-			
+#RecordIn	PIECE	FElfFig	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FElfFig	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FElfFig	100	5000	-	-	-	-			
+#RecordIn	DEAD	FElfFig	100	5000	-	-	-	-			
+#RecordIn	PIECE	FElfMag	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FElfMag	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FElfMag	100	5000	-	-	-	-			
+#RecordIn	DEAD	FElfMag	100	5000	-	-	-	-			
+#RecordIn	PIECE	FElfSage	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FElfSage	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FElfSage	100	5000	-	-	-	-			
+#RecordIn	DEAD	FElfSage	100	5000	-	-	-	-			
+#RecordIn	PIECE	FKnight	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FKnight	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FKnight	100	5000	-	-	-	-			
+#RecordIn	DEAD	FKnight	100	5000	-	-	-	-			
+#RecordIn	PIECE	FKnuckleman	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FKnuckleman	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FKnuckleman	100	5000	-	-	-	-			
+#RecordIn	DEAD	FKnuckleman	100	5000	-	-	-	-			
+#RecordIn	PIECE	FRanger	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FRanger	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FRanger	100	5000	-	-	-	-			
+#RecordIn	DEAD	FRanger	100	5000	-	-	-	-			
+#RecordIn	PIECE	FSpearman	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	FSpearman	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	FSpearman	100	5000	-	-	-	-			
+#RecordIn	DEAD	FSpearman	100	5000	-	-	-	-			
+#RecordIn	PIECE	GTornado	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	GTornado	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	GTornado	100	5000	-	-	-	-			
+#RecordIn	DEAD	GTornado	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_Chimera	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_Chimera	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_Chimera	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_Chimera	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_LeoPard	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_LeoPard	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_LeoPard	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_LeoPard	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_Mist	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_Mist	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_Mist	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_Mist	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_Pergy	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_Pergy	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_Pergy	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_Pergy	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_Psyken	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_Psyken	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_Psyken	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_Psyken	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_PsykenDog	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_PsykenDog	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_PsykenDog	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_PsykenDog	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_Ruga	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_Ruga	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_Ruga	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_Ruga	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_Wraith	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_Wraith	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_Wraith	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_Wraith	100	5000	-	-	-	-			
+#RecordIn	PIECE	SElfFig	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	SElfFig	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	SElfFig	100	5000	-	-	-	-			
+#RecordIn	DEAD	SElfFig	100	5000	-	-	-	-			
+#RecordIn	PIECE	SElfMag	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	SElfMag	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	SElfMag	100	5000	-	-	-	-			
+#RecordIn	DEAD	SElfMag	100	5000	-	-	-	-			
+#RecordIn	PIECE	Tornado	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Tornado	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Tornado	100	5000	-	-	-	-			
+#RecordIn	DEAD	Tornado	100	5000	-	-	-	-			
+#RecordIn	PIECE	Wape	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	WApe	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	WApe	100	5000	-	-	-	-			
+#RecordIn	DEAD	WApe	100	5000	-	-	-	-			
+#RecordIn	PIECE	WLeoPard	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	WLeoPard	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	WLeoPard	100	5000	-	-	-	-			
+#RecordIn	DEAD	WLeoPard	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_Spider	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_Spider	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_Spider	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_Spider	100	5000	-	-	-	-			
+#RecordIn	PIECE	IncubusG	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	IncubusG	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	IncubusG	100	5000	-	-	-	-			
+#RecordIn	DEAD	IncubusG	100	5000	-	-	-	-			
+#RecordIn	PIECE	Psy_Statue	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Psy_Statue	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Psy_Statue	100	5000	-	-	-	-			
+#RecordIn	DEAD	Psy_Statue	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_Imp	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_Imp	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_Imp	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_Imp	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_Honeying	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_Honeying	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_Honeying	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_Honeying	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_MaraCrew	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_MaraCrew	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_MaraCrew	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_MaraCrew	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_MarloneArcher	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_MarloneArcher	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_MarloneArcher	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_MarloneArcher	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_MaraSailor	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_MaraSailor	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_MaraSailor	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_MaraSailor	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_MaraElite	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_MaraElite	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_MaraElite	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_MaraElite	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_MarloneMegaton	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_MarloneMegaton	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_MarloneMegaton	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_MarloneMegaton	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_MarloneFighter	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_MarloneFighter	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_MarloneFighter	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_MarloneFighter	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_Marlone	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_Marlone	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_Marlone	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_Marlone	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_Mara	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_Mara	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_Mara	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_Mara	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_TrueMara	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_TrueMara	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_TrueMara	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_TrueMara	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_H_SmartPhino	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_H_SmartPhino	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_H_SmartPhino	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_H_SmartPhino	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_H_Ratman	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_H_Ratman	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_H_Ratman	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_H_Ratman	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_H_Fox	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_H_Fox	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_H_Fox	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_H_Fox	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_H_BoneImp	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_H_BoneImp	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_H_BoneImp	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_H_BoneImp	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_H_Prock	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_H_Prock	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_H_Prock	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_H_Prock	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_H_Bat	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_H_Bat	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_H_Bat	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_H_Bat	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_Ghost	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_Ghost	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_Ghost	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_Ghost	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_RatmanKnight	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_RatmanKnight	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_RatmanKnight	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_RatmanKnight	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID__Skeleton	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID__Skeleton	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID__Skeleton	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID__Skeleton	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_SkelArcher	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_SkelArcher	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_SkelArcher	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_SkelArcher	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_SkelWarrior	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_SkelWarrior	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_SkelWarrior	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_SkelWarrior	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_SkelKnight	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_SkelKnight	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_SkelKnight	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_SkelKnight	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_Zombie	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_Zombie	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_Zombie	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_Zombie	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_BossRobo	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_BossRobo	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_BossRobo	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_BossRobo	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_TombRaider	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_TombRaider	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_TombRaider	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_TombRaider	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_JewelKebing	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_JewelKebing	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_JewelKebing	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_JewelKebing	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_MarloneArcher	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_MarloneArcher	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_MarloneArcher	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_MarloneArcher	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_MarloneMegaton	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_MarloneMegaton	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_MarloneMegaton	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_MarloneMegaton	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_MarloneFighter	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_MarloneFighter	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_MarloneFighter	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_MarloneFighter	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_Marlone	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_Marlone	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_Marlone	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_Marlone	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_Skeleton	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_Skeleton	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_Skeleton	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_Skeleton	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_SkelArcher	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_SkelArcher	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_SkelArcher	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_SkelArcher	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_Bat	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_Bat	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_Bat	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_Bat	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_G_BossTombRaider	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_G_BossTombRaider	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_G_BossTombRaider	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_G_BossTombRaider	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_K_Mara	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_K_Mara	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_K_Mara	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_K_Mara	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_K_Pixy	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_K_Pixy	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_K_Pixy	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_K_Pixy	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_K_Marlone	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_K_Marlone	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_K_Marlone	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_K_Marlone	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_K_MiniPinky	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_K_MiniPinky	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_K_MiniPinky	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_K_MiniPinky	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_K_GoblinMage	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_K_GoblinMage	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_K_GoblinMage	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_K_GoblinMage	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_K_Robo	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_K_Robo	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_K_Robo	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_K_Robo	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_K_PhinoFlie	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_K_PhinoFlie	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_K_PhinoFlie	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_K_PhinoFlie	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_K_BossPhino	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_K_BossPhino	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_K_BossPhino	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_K_BossPhino	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_U_TombRaider	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_U_TombRaider	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_U_TombRaider	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_U_TombRaider	100	5000	-	-	-	-			
+#RecordIn	PIECE	MID_U_Greenky	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	MID_U_Greenky	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	MID_U_Greenky	100	5000	-	-	-	-			
+#RecordIn	DEAD	MID_U_Greenky	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_GuardAlber	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_GuardAlber	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_GuardAlber	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_GuardAlber	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_GuardEstelle	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_GuardEstelle	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_GuardEstelle	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_GuardEstelle	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_Fspearman	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_Fspearman	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_Fspearman	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_Fspearman	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_Franger	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_Franger	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_Franger	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_Franger	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_Fknuckleman	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_Fknuckleman	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_Fknuckleman	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_Fknuckleman	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_Dlich	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_Dlich	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_Dlich	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_Dlich	100	5000	-	-	-	-			
+#RecordIn	PIECE	Salare	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Salare	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Salare	100	5000	-	-	-	-			
+#RecordIn	DEAD	Salare	100	5000	-	-	-	-			
+#RecordIn	PIECE	Eglack	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	Eglack	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	Eglack	100	5000	-	-	-	-			
+#RecordIn	DEAD	Eglack	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_Loussier	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_Loussier	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_Loussier	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_Loussier	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_Marlene	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_Marlene	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_Marlene	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_Marlene	100	5000	-	-	-	-			
+#RecordIn	PIECE	AdlF_Karen	10000	20000	-	-	-	-			
+#RecordIn	ATTACK	AdlF_Karen	100	5000	-	-	-	-			
+#RecordIn	DAMAGED	AdlF_Karen	100	5000	-	-	-	-			
+#RecordIn	DEAD	AdlF_Karen	100	5000	-	-	-	-			
+#End											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											

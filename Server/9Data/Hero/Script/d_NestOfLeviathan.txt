@@ -1,0 +1,36 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Start0	各位请小心!		
+#Record	Start1	虽然你会对利维坦很好奇, 但也不要太勉強.这里可是很危险的地方...		
+#Record	Start2	要找到好神器安全回来.虽然不是很容易.....		
+				
+#Record	KingBoogy0	抓到布吉龟了 !		
+#Record	KingBoogy1	辛苦你们了各位 !		
+#Record	KingBoogy2	现在神器也拿到手了, 就到此回去吧?		
+#Record	KingBoogy3	我是认为比起对宝物的贪婪,活着回来更重要...		
+#Record	KingBoogy4	若你们还是要冒着危险前进,我也没有办法.要小心哦 !		
+				
+#Record	KingCrap0	连这黄帝蟹都能处理掉!辛苦了!		
+#Record	KingCrap1	现在该拿到的都拿到了.就回去吧! 再继续往里面走就太牵强了 !		
+#Record	KingCrap2	什么? 要继续前进? 这些固执的家伙,我就再跟你们说一件事吧 !		
+#Record	KingCrap3	有几个队伍曾经进去里面过, 但我没看到半个活着回来.你懂了吗?		
+#Record	KingCrap4	若你确定就算死也不会埋怨我的話...你就看着办吧 ! 我所能说的也只有这些了!		
+				
+#Record	Leviathan0	无法相信!		
+#Record	Leviathan1	真的无法相信! 你们真的铲除了邪恶的利维坦吗?		
+#Record	Leviathan2	那个邪恶的怪物所拿的神器是什么呢? 我知道是很贵的神器,可以给我看一下吗?		
+#Record	Leviathan3	不得了! 你们是被祝福的一群探险家!		
+#Record	Leviathan4	第一次在这里遇到活着回来的探险家... 恭喜,祝你们未来更精彩 !		
+				
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				

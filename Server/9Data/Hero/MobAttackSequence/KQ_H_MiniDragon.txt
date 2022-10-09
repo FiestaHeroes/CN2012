@@ -1,0 +1,23 @@
+
+					
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+
+
+#Table	AttSeq				
+#ColumnType	WORD	STRING[33]			
+#ColumnName	Order	Attack			
+#Record	0	KQ_MD_AtkSkil2_1			
+#Record	1	KQ_MD_AtkSkil2_2			
+#Record	2	KQ_MD_AtkSkil2_3			
+#Record	3	KQ_MD_AtkSkil2_1			
+#Record	4	KQ_MD_AtkSkil2_2			
+#Record	5	KQ_MD_AtkSkil2_3			
+#Record	6	KQ_MD_AtkSkil2_1
+#Record	7	KQ_MD_AtkSkil2_2
+#Record	8	KQ_MD_AtkSkil2_3
+#Record	9	KQ_MD_AtkSkil2_1
+#Record	10	KQ_MD_AtkSkil2_2
+#Record	11	KQ_MD_AtkSkil2_3
+#End		

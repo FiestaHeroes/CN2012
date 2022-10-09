@@ -1,0 +1,100 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		RT_Dn_001	N	5155	2506	0	0	200										
+#record		RT_Dn_002	N	5917	3373	0	0	200										
+#record		RT_Dn_003	N	5619	3674	0	0	200										
+#record		RT_Dn_004	N	5258	3792	0	0	200										
+#record		RT_Dn_005	N	5551	3238	0	0	200										
+#record		RT_Dn_006	N	4684	3086	0	0	200										
+#record		RT_Dn_007	N	4677	2503	0	0	200										
+#record		RT_Dn_008	N	4386	2521	0	0	200										
+#record		RT_Dn_009	N	3952	4066	0	0	200										
+#record		RT_Dn_010	N	4335	4054	0	0	200										
+#record		RT_Dn_011	N	5434	5133	0	0	200										
+#record		RT_Dn_012	N	5435	5898	0	0	200										
+#record		RT_Dn_013	N	5437	6520	0	0	200										
+#record		RT_Dn_014	N	3061	4655	121	609	0										
+#record		RT_Dn_015	N	6663	5416	87	479	0										
+#record		RT_Dn_016	N	5429	4392	480	53	0										
+#record		RT_Dn_017	N	1423	4657	0	0	200										
+#record		RT_Dn_018	N	1075	5128	0	0	200										
+#record		RT_Dn_019	N	8447	5495	0	0	200										
+#record		RT_Dn_020	N	8475	4772	0	0	200										
+#record		RT_Dn_021	N	438	4715	0	0	200										
+#record		RT_Dn_022	N	8854	4247	0	0	200										
+#record		RT_Dn_023	N	9255	5474	0	0	420										
+#record		RT_Dn_026	N	9511	5572	0	0	340										
+#record		RT_Dn_027	N	534	3905	0	0	340										
+#record		RT_Dn_028	N	1229	3389	0	0	340										
+#record		RT_Dn_029	N	1258	3983	0	0	340										
+#record		RT_Dn_030	N	9520	4343	0	0	340										
+#record		RT_Dn_Mine001	N	2223	5212	411	134	0										
+#record		RT_Dn_Mine002	N	6092	5040	402	90	0										
+#record		RT_Dn_Mine003	N	5382	2871	0	0	200										
+#record		RT_Dn_Mine004	N	5153	3111	0	0	200										
+#record		RT_Dn_Mine005	N	7460	5858	497	91	0										
+#record		PresentBox04	N	1223	3706	0	0	452										
+#record		RouTemDn01Guard01	N	5625	2386	0	0	10										
+#record		RouTemDn01Guard02	N	5797	2391	0	0	10										
+#record		RT_Dn_C1_01	N	402	3672	0	0	20										
+#record		RT_Dn_C1_02	N	1594	3703	0	0	20										
+#record		RT_Dn_C1_03	N	1251	4236	0	0	20										
+#record		RT_Dn_C1_04	N	1167	3226	0	0	20										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		RT_Dn_001	D_Spider	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_002	D_Spider	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_003	D_Spider	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_004	D_Spider	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_005	D_Spider	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_006	D_Kebing	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_007	D_Kebing	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_008	D_Kebing	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_009	D_Kebing	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_010	D_Kebing	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_011	D_MageBook	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_012	D_MageBook	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_013	D_MageBook	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_014	D_MageBook	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_015	D_MageBook	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_016	D_MageBook	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_017	D_TombRaider	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_018	D_TombRaider	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_019	D_TombRaider	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_020	D_TombRaider	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_021	D_TombRaider	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_022	D_TombRaider	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_023	LittleRunningBasA	9	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_026	LittleRunningBasA	9	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_027	LittleRunningBasA	9	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_028	LittleRunningBasA	9	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_029	LittleRunningBasA	9	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_030	LittleRunningBasA	9	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
+#record		RT_Dn_Mine001	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
+#record		RT_Dn_Mine002	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
+#record		RT_Dn_Mine003	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
+#record		RT_Dn_Mine004	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
+#record		RT_Dn_Mine005	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
+#record		PresentBox04	PresentBox6	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		RouTemDn01Guard01	GuardMihael00	1	0	8	5	11	-3	5	-2	7	3	9	4	11	0	
+#record		RouTemDn01Guard02	GuardMihael00	1	0	8	5	11	-3	5	-2	7	3	9	4	11	0	
+#record		RT_Dn_C1_01	KebingGhost	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
+#record		RT_Dn_C1_02	KebingGhost	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
+#record		RT_Dn_C1_03	KebingGhost	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
+#record		RT_Dn_C1_04	KebingGhost	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
+																		
+#end																		

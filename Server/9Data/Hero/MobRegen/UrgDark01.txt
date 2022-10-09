@@ -1,0 +1,342 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		Dark01_001A	N	22351	9601	0	0	350										
+#record		Dark01_002A	N	22189	7606	0	0	350										
+#record		Dark01_003A	N	19262	7285	0	0	350										
+#record		Dark01_004A	N	19857	8342	0	0	350										
+#record		Dark01_005A	N	23488	7768	0	0	350										
+#record		Dark01_006A	N	22378	6965	0	0	350										
+#record		Dark01_007A	N	18465	7527	0	0	350										
+#record		Dark01_008A	N	20186	6500	0	0	350										
+#record		Dark01_009A	N	20914	6592	0	0	350										
+#record		Dark01_010A	N	22743	7277	0	0	350										
+#record		Dark01_011A	N	18656	9114	0	0	350										
+#record		Dark01_012A	N	18631	9976	0	0	350										
+#record		Dark01_013A	N	19810	11279	0	0	350										
+#record		Dark01_014A	N	18470	11545	0	0	350										
+#record		Dark01_015A	N	20018	10522	0	0	350										
+#record		Dark01_016A	N	18935	11484	0	0	350										
+#record		Dark01_017A	N	23028	6205	0	0	350										
+#record		Dark01_018A	N	23979	6828	0	0	350										
+#record		Dark01_019A	N	22492	6038	0	0	350										
+#record		Dark01_020A	N	23799	9801	0	0	350										
+#record		Dark01_021A	N	11594	12214	0	0	350										
+#record		Dark01_022A	N	6332	19297	0	0	350										
+#record		Dark01_023A	N	9866	13526	0	0	350										
+#record		Dark01_024A	N	7420	18956	0	0	350										
+#record		Dark01_025A	N	12304	10087	0	0	350										
+#record		Dark01_026A	N	8275	12416	0	0	350										
+#record		Dark01_027A	N	8273	20005	0	0	350										
+#record		Dark01_028A	N	9210	19860	0	0	350										
+#record		Dark01_029A	N	7073	10185	0	0	350										
+#record		Dark01_030A	N	8294	9082	0	0	350										
+#record		Dark01_031A	N	7601	10044	0	0	350										
+#record		Dark01_032A	N	12327	8166	0	0	350										
+#record		Dark01_033A	N	6270	7879	0	0	350										
+#record		Dark01_034A	N	10033	7726	0	0	350										
+#record		Dark01_035A	N	7129	16073	0	0	350										
+#record		Dark01_036A	N	7155	16925	0	0	350										
+#record		Dark01_037A	N	10269	15361	0	0	350										
+#record		Dark01_038A	N	11119	15919	0	0	350										
+#record		Dark01_039A	N	10162	18811	0	0	350										
+#record		Dark01_040A	N	10821	19209	0	0	350										
+#record		Dark01_041A	N	5738	14889	0	0	350										
+#record		Dark01_042A	N	3340	12755	0	0	350										
+#record		Dark01_043A	N	4170	15533	0	0	350										
+#record		Dark01_044A	N	5967	12555	0	0	350										
+#record		Dark01_045A	N	4907	16900	0	0	350										
+#record		Dark01_046A	N	4166	9451	0	0	350										
+#record		Dark01_047A	N	3695	7817	0	0	350										
+#record		Dark01_048A	N	3650	6762	0	0	350										
+#record		Dark01_049A	N	3306	16541	0	0	350										
+#record		Dark01_050A	N	4034	18062	0	0	350										
+#record		Dark01_001B	N	3205	13885	0	0	350										
+#record		Dark01_002B	N	22488	18479	0	0	350										
+#record		Dark01_003B	N	19516	18560	0	0	350										
+#record		Dark01_004B	N	21091	19087	0	0	350										
+#record		Dark01_005B	N	18787	17440	0	0	350										
+#record		Dark01_006B	N	18058	19028	0	0	350										
+#record		Dark01_007B	N	17596	17809	0	0	350										
+#record		Dark01_008B	N	17447	16754	0	0	350										
+#record		Dark01_009B	N	19528	16423	0	0	350										
+#record		Dark01_010B	N	23526	18008	0	0	350										
+#record		Dark01_011B	N	23514	18796	0	0	350										
+#record		Dark01_012B	N	23777	17000	0	0	350										
+#record		Dark01_013B	N	22567	19967	0	0	350										
+#record		Dark01_014B	N	20752	20070	0	0	350										
+#record		Dark01_015B	N	19236	19824	0	0	350										
+#record		Dark01_016B	N	23751	19745	0	0	350										
+#record		Dark01_017B	N	22064	15892	0	0	350										
+#record		Dark01_018B	N	20942	16505	0	0	350										
+#record		Dark01_019B	N	21801	20052	0	0	350										
+#record		Dark01_020B	N	18538	19253	0	0	350										
+#record		Dark01_021B	N	14694	11767	0	0	350										
+#record		Dark01_022B	N	13972	12879	0	0	350										
+#record		Dark01_023B	N	13214	11354	0	0	350										
+#record		Dark01_024B	N	14448	9822	0	0	350										
+#record		Dark01_025B	N	14557	14515	0	0	350										
+#record		Dark01_026B	N	12216	16230	0	0	350										
+#record		Dark01_027B	N	14363	16480	0	0	350										
+#record		Dark01_028B	N	14124	18398	0	0	350										
+#record		Dark01_029B	N	12814	19202	0	0	350										
+#record		Dark01_030B	N	13108	19861	0	0	350										
+#record		Dark01_031B	N	12113	23950	0	0	490										
+#record		Dark01_032B	N	10350	22132	0	0	350										
+#record		Dark01_033B	N	15040	22348	0	0	707										
+#record		Dark01_034B	N	9583	23684	0	0	742										
+#record		Dark01_035B	N	16695	22141	0	0	686										
+#record		Dark01_036B	N	11306	5109	0	0	350										
+#record		Dark01_037B	N	13611	5851	0	0	350										
+#record		Dark01_038B	N	13398	4914	0	0	350										
+#record		Dark01_039B	N	16218	5162	0	0	350										
+#record		Dark01_040B	N	14739	3747	0	0	350										
+#record		Dark01_041B	N	9484	3703	0	0	350										
+#record		Dark01_042B	N	9800	2369	0	0	350										
+#record		Dark01_043B	N	18632	3008	0	0	350										
+#record		Dark01_044B	N	17846	2288	0	0	350										
+#record		Dark01_045B	N	7183	3083	0	0	350										
+#record		Dark01_046B	N	3627	2928	0	0	707										
+#record		Dark01_047B	N	4147	4404	0	0	714										
+#record		Dark01_048B	N	5857	22707	0	0	910										
+#record		Dark01_049B	N	3749	21663	0	0	1029										
+#record		Dark01_050B	N	22298	22624	0	0	1744										
+#record		FLOWER1	N	19951	18843	1982	1033	-3										
+#record		FLOWER2	N	21222	18889	2120	828	-3										
+#record		FLOWER3	N	21190	18860	2626	932	-3										
+#record		FLOWER4	N	20868	18756	2885	864	-3										
+#record		FLOWER5	N	14427	11706	1948	941	-3										
+#record		FLOWER6	N	14446	12067	1919	1110	-3										
+#record		FLOWER7	N	14455	11262	2043	940	-3										
+#record		FLOWER8	N	9817	19615	2409	1118	-3										
+#record		FLOWER9	N	9732	19666	2374	960	-3										
+#record		FLOWER10	N	9673	19666	2128	880	26										
+#record		HERB1	N	20873	18814	2416	910	-3										
+#record		HERB2	N	14302	12846	2019	747	-3										
+#record		WOOD8	N	14415	12870	2023	920	-3										
+#record		WOOD9	N	9685	20092	2473	996	-3										
+#record		MUSHROOM8	N	20870	18785	2218	948	-3										
+#record		MUSHROOM9	N	14360	12900	2200	979	-3										
+#record		P01	N	12783	6740	2773	4500	26										
+#record		P02	N	12021	20948	5729	3000	-3										
+#record		UrgDark01Guard01	N	21436	13341	0	0	13										
+#record		UrgDark01Guard02	N	15030	13569	0	0	27										
+#record		UrgDark01Guard03	N	9349	21697	0	0	13										
+#record		Dark01_h1_01	N	20422	5938	0	0	90										
+#record		Dark01_h1_02	N	24129	16595	0	0	76										
+#record		Dark01_h1_03	N	12971	18280	0	0	69										
+#record		Dark01_h1_04	N	3775	2303	0	0	90										
+#record		Dark01_C1_01	N	4856	17652	0	0	90										
+#record		Dark01_h2_01	N	22290	6121	0	0	69										
+#record		Dark01_h2_02	N	22725	16697	0	0	69										
+#record		Dark01_h2_03	N	12745	19932	0	0	97										
+#record		Dark01_h2_04	N	2635	3808	0	0	69										
+#record		Dark01_C2_01	N	3522	18411	0	0	62										
+#record		Dark01_h3_01	N	19823	6470	0	0	111										
+#record		Dark01_h3_02	N	23397	17912	0	0	55										
+#record		Dark01_h3_03	N	13608	19139	0	0	118										
+#record		Dark01_h3_04	N	4189	4246	0	0	83										
+#record		Dark01_C3_01	N	3231	16294	0	0	125										
+#record		Dark01_h4_01	N	21441	6368	0	0	90										
+#record		Dark01_h4_02	N	23451	16336	0	0	69										
+#record		Dark01_h4_03	N	14301	18044	0	0	41										
+#record		Dark01_h4_04	N	4963	3020	0	0	76										
+#record		Dark01_C4_01	N	5662	16695	0	0	69										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		Dark01_001A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_002A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_003A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_004A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_005A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_006A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_007A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_008A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_009A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_010A	Leipoon	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_011A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_012A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_013A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_014A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_015A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_016A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_017A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_018A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_019A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_020A	BattleBeak	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_021A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_021A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_022A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_022A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_023A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_023A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_024A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_024A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_025A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_025A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_026A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_026A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_027A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_027A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_028A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_028A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_029A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_029A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_030A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_030A	EarthCalerben	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_031A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_031A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_032A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_032A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_033A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_033A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_034A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_034A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_035A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_035A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_036A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_036A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_037A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_037A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_038A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_038A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_039A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_039A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_040A	EarthNerpa	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_040A	EarthCalerben	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_041A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_042A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_043A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_044A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_045A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_046A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_047A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_048A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_049A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_050A	PsykenDog	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_001B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_001B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_002B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_002B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_003B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_003B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_004B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_004B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_005B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_005B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_006B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_006B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_007B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_007B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_008B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_008B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_009B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_009B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_010B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_010B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_011B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_011B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_012B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_012B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_013B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_013B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_014B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_014B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_015B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_015B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_016B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_016B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_017B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_017B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_018B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_018B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_019B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_019B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_020B	LivingStatue	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_020B	LivingStone	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_021B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_022B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_023B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_024B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_025B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_026B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_027B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_028B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_029B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_030B	Shella	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_031B	Shadow	4	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_032B	Shadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_033B	Shadow	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_034B	Shadow	7	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_035B	Shadow	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_036B	Shadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_037B	Shadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_038B	Shadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_039B	Shadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_040B	Shadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_041B	RedShadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_042B	RedShadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_043B	RedShadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_044B	RedShadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_045B	RedShadow	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_046B	RedShadow	7	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_047B	RedShadow	7	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_048B	RedShadow	7	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_049B	RedShadow	10	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		Dark01_050B	RedShadow	10	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER1	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER2	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER3	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER4	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER5	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER6	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER7	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER8	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER9	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		FLOWER10	FLOWER9	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		HERB1	HERB9	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		HERB2	HERB9	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		WOOD8	WOOD8	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		WOOD9	WOOD9	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		MUSHROOM8	MUSHROOM8	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		MUSHROOM9	MUSHROOM9	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
+#record		P01	PresentBox15	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		P02	PresentBox15	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		UrgDark01Guard01	GuardLue04	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		UrgDark01Guard02	GuardLue04	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		UrgDark01Guard03	GuardLue04	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		Dark01_h1_01	DarkFog	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h1_02	HarpyThunder	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h1_03	HarpyMoon	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h1_04	BlackShadow	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_C1_01	Psyken	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		Dark01_h2_01	DarkFog	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h2_02	HarpyThunder	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h2_03	HarpyMoon	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h2_04	BlackShadow	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_C2_01	Psyken	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		Dark01_h3_01	DarkFog	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h3_02	HarpyThunder	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h3_03	HarpyMoon	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h3_04	BlackShadow	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_C3_01	Psyken	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		Dark01_h4_01	DarkFog	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h4_02	HarpyThunder	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h4_03	HarpyMoon	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_h4_04	BlackShadow	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
+#record		Dark01_C4_01	Psyken	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+																		
+#end																		

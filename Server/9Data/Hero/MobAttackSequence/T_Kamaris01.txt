@@ -1,0 +1,15 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+						
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+						
+#Record	0	T_Kamaris01_Atk0				
+#Record	1	T_Kamaris01_Wide0				
+#Record	2	T_Kamaris01_Wide1				
+#End						

@@ -1,0 +1,147 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		KQ_MiniDragon_Boss1	N	4428	2089	0	0	50										
+#record		KQ_MiniDragon_1_1	N	2098	2574	0	0	200										
+#record		KQ_MiniDragon_1_2	Y	3312	2533	0	0	300										
+#record		KQ_MiniDragon_1_3	Y	3818	2943	0	0	300										
+#record		KQ_MiniDragon_1_4	Y	3918	2236	0	0	300										
+#record		KQ_MiniDragon_1_5	Y	4423	2527	0	0	300										
+#record		KQ_MiniDragon_Boss2	N	8405	3249	0	0	50										
+#record		KQ_MiniDragon_2_1	N	5526	2212	0	0	200										
+#record		KQ_MiniDragon_2_2	N	6457	2366	0	0	200										
+#record		KQ_MiniDragon_2_3	Y	7511	2670	0	0	300										
+#record		KQ_MiniDragon_2_4	Y	8181	2398	0	0	300										
+#record		KQ_MiniDragon_2_5	Y	8069	2980	0	0	300										
+#record		KQ_MiniDragon_2_6	Y	8086	3526	0	0	300										
+#record		KQ_MiniDragon_2_7	Y	8687	2954	0	0	300										
+#record		KQ_MiniDragon_Boss3	N	3127	7462	0	0	50										
+#record		KQ_MiniDragon_3_1	N	7994	4510	0	0	200										
+#record		KQ_MiniDragon_3_2	N	8012	5393	0	0	200										
+#record		KQ_MiniDragon_3_3	N	7439	6024	0	0	200										
+#record		KQ_MiniDragon_3_4	N	6242	5967	0	0	200										
+#record		KQ_MiniDragon_3_5	Y	4729	6155	0	0	300										
+#record		KQ_MiniDragon_3_6	Y	4048	6121	0	0	300										
+#record		KQ_MiniDragon_3_7	Y	4772	6851	0	0	300										
+#record		KQ_MiniDragon_3_8	Y	3708	6873	0	0	300										
+#record		KQ_MiniDragon_3_9	Y	3126	7023	0	0	300										
+#record		KQ_MiniDragon_3_10	Y	3191	7548	0	0	300										
+#record		KQ_MiniDragon_Boss4	N	8142	11382	0	0	50										
+#record		KQ_MiniDragon_4_1	N	5407	8168	0	0	200										
+#record		KQ_MiniDragon_4_2	N	6308	8198	0	0	200										
+#record		KQ_MiniDragon_4_3	N	7406	8215	0	0	200										
+#record		KQ_MiniDragon_4_4	N	8359	8595	0	0	200										
+#record		KQ_MiniDragon_4_5	Y	8946	9172	0	0	300										
+#record		KQ_MiniDragon_4_6	N	7009	9737	0	0	200										
+#record		KQ_MiniDragon_4_7	N	8136	9728	0	0	200										
+#record		KQ_MiniDragon_4_8	N	6267	10201	0	0	200										
+#record		KQ_MiniDragon_4_9	N	6674	10897	0	0	200										
+#record		KQ_MiniDragon_4_10	Y	7839	11241	0	0	300										
+#record		KQ_MiniDragon_4_11	Y	8203	11419	0	0	300										
+#record		KQ_MiniDragon_MINE1	N	11233	11520	0	0	500										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		KQ_MiniDragon_Boss1	KQ_FireShella	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_1	KQ_FireTaitan	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_2	KQ_RedNix	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_2	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_3	KQ_Gagoyle	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_3	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_4	KQ_Gagoyle	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_4	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_5	KQ_WindLence	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_1_5	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_Boss2	KQ_RedCondorMaster	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_1	KQ_FireTaitan	5	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_2	KQ_RedNix	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_2	KQ_FlameSpirit	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_2	KQ_Gagoyle	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_3	KQ_RedNix	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_3	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_3	KQ_Gagoyle	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_4	KQ_RedNix	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_4	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_4	KQ_Gagoyle	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_5	KQ_RedCondor	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_5	KQ_RedNix	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_5	KQ_FlameSpirit	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_5	KQ_Gagoyle	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_6	KQ_RedCondor	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_6	KQ_RedNix	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_6	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_6	KQ_Gagoyle	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_7	KQ_RedCondor	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_7	KQ_RedNix	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_7	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_2_7	KQ_Gagoyle	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_Boss3	KQ_BossRobo2	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_1	KQ_RedNix	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_1	KQ_FlameSpirit	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_2	KQ_Gagoyle	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_2	KQ_FlameSpirit	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_3	KQ_WindLence	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_3	KQ_FlameSpirit	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_4	KQ_FlameSpirit	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_4	KQ_Gagoyle	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_5	KQ_Ruga	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_5	KQ_RedNix	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_5	KQ_Gagoyle	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_6	KQ_RedCondor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_6	KQ_Ruga	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_6	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_7	KQ_RedCondor	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_7	KQ_Ruga	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_7	KQ_Gagoyle	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_8	KQ_RedCondor	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_8	KQ_Ruga	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_8	KQ_RedNix	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_9	KQ_HeavyOgre	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_9	KQ_Ruga	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_9	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_10	KQ_HeavyOgre	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_10	KQ_RedCondor	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_3_10	KQ_FlameSpirit	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_Boss4	KQ_GobleKing	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_1	KQ_Gagoyle	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_1	KQ_WindLence	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_2	KQ_WindLence	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_2	KQ_Ruga	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_3	KQ_Ruga	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_3	KQ_RedCondor	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_4	KQ_RedCondor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_4	KQ_Gagoyle	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_5	KQ_HeavyOgre	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_5	KQ_Gagoyle	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_5	KQ_WindLence	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_5	KQ_Ruga	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_5	KQ_RedCondor	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_6	KQ_HeavyOgre	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_6	KQ_Gagoyle	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_7	KQ_HeavyOgre	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_7	KQ_WindLence	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_8	KQ_HeavyOgre	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_8	KQ_Ruga	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_9	KQ_HeavyOgre	2	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_9	KQ_RedCondor	3	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_10	KQ_HeavyOgre	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_10	KQ_Gagoyle	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_10	KQ_WindLence	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_11	KQ_HeavyOgre	4	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_11	KQ_Ruga	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_4_11	KQ_RedCondor	1	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+#record		KQ_MiniDragon_MINE1	KQ_MINE1	15	0	9	1	15	-4	5	-2	8	0	10	2	13	4	
+																		
+#end																		

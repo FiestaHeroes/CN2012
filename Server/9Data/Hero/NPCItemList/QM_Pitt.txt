@@ -1,0 +1,145 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+								
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]	
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05	
+#Record	0	SappColl00	TigerColl00	PinkColl00	-	-	-	
+#Record	1	Set_F50Armor01	Set_C50Armor01	Set_A50Armor01	Set_M50Armor01	Set_J50Armor01	-	
+#Record	2	Set_F60Armor01	Set_C60Armor01	Set_A60Armor01	Set_M60Armor01	Set_J60Armor01	-	
+#Record	3	Set_F70Armor01	Set_C70Armor01	Set_A70Armor01	Set_M70Armor01	Set_J70Armor01	-	
+#Record	4	Set_F80Armor01	Set_C80Armor01	Set_A80Armor01	Set_M80Armor01	Set_J80Armor01	-	
+								
+#End								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+	0							
+	1							
+	2							
+	3							

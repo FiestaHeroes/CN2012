@@ -1,0 +1,131 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		GblDn01_001	N	4494	1450	0	0	350										
+#record		GblDn01_002	N	5729	1454	0	0	350										
+#record		GblDn01_003	N	5071	3645	0	0	350										
+#record		GblDn01_004	N	5081	3914	0	0	350										
+#record		GblDn01_005	N	4623	4598	0	0	237										
+#record		GblDn01_006	N	5588	4692	0	0	244										
+#record		GblDn01_011	N	4582	5339	0	0	265										
+#record		GblDn01_012	N	5560	5447	0	0	272										
+#record		GblDn01_013	N	4666	6402	0	0	307										
+#record		GblDn01_014	N	5374	6366	0	0	321										
+#record		GblDn01_015	N	3272	5139	108	1244	0										
+#record		GblDn01_016	N	6896	4991	72	1341	0										
+#record		GblDn01_026	N	1000	5196	0	0	286										
+#record		GblDn01_027	N	1297	5752	0	0	279										
+#record		GblDn01_028	N	1090	4461	0	0	293										
+#record		GblDn01_029	N	9171	5192	0	0	300										
+#record		GblDn01_030	N	9285	4551	0	0	300										
+#record		GblDn01_031	N	8375	2597	0	0	300										
+#record		GblDn01_032	N	1534	2739	0	0	279										
+#record		GblDn01_033	N	9209	5760	0	0	328										
+#record		GblDn01_034	N	8690	3124	0	0	300										
+#record		GblDn01_035	N	1783	3069	0	0	300										
+#record		GblDn01_036	N	1624	7117	0	0	350										
+#record		GblDn01_037	N	1812	7584	0	0	350										
+#record		GblDn01_038	N	8367	7535	0	0	350										
+#record		GblDn01_039	N	8639	7223	0	0	350										
+#record		GblDn01_040	N	4488	9183	0	0	350										
+#record		GblDn01_041	N	5128	8769	0	0	350										
+#record		GblDn01_042	N	5634	9141	0	0	350										
+#record		GblDn01_043	N	5107	7421	0	0	350										
+#record		GblDn01_MINE1	N	4750	4483	0	0	202										
+#record		GblDn01_MINE2	N	5488	4569	0	0	223										
+#record		GblDn01_MINE3	N	4646	5827	0	0	244										
+#record		GblDn01_MINE4	N	5510	5943	0	0	251										
+#record		GblDn01_MINE5	N	1446	4833	0	0	188										
+#record		GblDn01_MINE6	N	1429	5245	0	0	188										
+#record		GblDn01_MINE7	N	1464	5389	0	0	209										
+#record		GblDn01_MINE8	N	8789	5455	0	0	272										
+#record		GblDn01_MINE9	N	8804	4970	0	0	237										
+#record		GblDn01_MINE10	N	8763	4491	0	0	300										
+#record		GblDn01_Present	N	5081	7437	0	0	350										
+#record		GblDn01Guard01	N	4874	969	0	0	13										
+#record		GblDn01Guard02	N	5290	967	0	0	13										
+#record		GblDn01_C1_01	N	5096	9258	0	0	97										
+#record		GblDn01_C2_01	N	5120	7525	0	0	111										
+#record		GblDn01_C3_01	N	8802	6976	0	0	104										
+#record		GblDn01_C4_01	N	1379	7036	0	0	90										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		GblDn01_001	D_WereBear	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_002	D_WereBear	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_003	D_WereBear	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_004	D_WereBear	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_005	D_WereBear	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_006	D_WereBear	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_011	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_012	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_013	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_014	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_015	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_016	D_Goblin	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_026	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_027	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_027	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_028	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_028	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_029	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_029	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_030	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_030	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_031	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_031	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_032	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_032	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_033	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_033	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_034	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_034	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_035	D_GoblinSwordman	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_035	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_036	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_036	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_037	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_037	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_038	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_038	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_039	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_039	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_040	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_040	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_041	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_041	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_042	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_042	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_043	D_GoblinMage	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_043	GoblinCaptainB	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE1	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE2	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE3	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE4	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE5	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE6	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE7	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE8	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE9	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_MINE10	MINE4	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
+#record		GblDn01_Present	PresentBox9	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		GblDn01Guard01	GuardMihael01	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		GblDn01Guard02	GuardMihael01	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
+#record		GblDn01_C1_01	GobleKing	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		GblDn01_C2_01	GobleKing	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		GblDn01_C3_01	GobleKing	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+#record		GblDn01_C4_01	GobleKing	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
+																		
+#end																		

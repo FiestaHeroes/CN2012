@@ -1,0 +1,34 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	ReftMob10	现在还剩10只以上不朽者.	
+#Record	ReftMob9	现在还剩9只不朽者.	
+#Record	ReftMob8	现在还剩8只不朽者.	
+#Record	ReftMob7	现在还剩7只不朽者.	
+#Record	ReftMob6	现在还剩6只不朽者.	
+#Record	ReftMob5	现在还剩5只不朽者.	
+#Record	ReftMob4	现在还剩4只不朽者.	
+#Record	ReftMob3	现在还剩3只不朽者.	
+#Record	ReftMob2	现在还剩2只不朽者.	
+#Record	ReftMob1	现在只剩最后1只不朽者.	
+			
+#Record	Scream0	啊!!	
+#Record	Scream1	呜啊!	
+#Record	Scream2	呃!	
+			
+#Record	KQReturn30	30秒后移动到转职管理员肖恩处.	
+#Record	KQReturn20	20秒后移动到转职管理员肖恩处.	
+#Record	KQReturn10	10秒后移动到转职管理员肖恩处.	
+#Record	KQReturn5	5秒后移动到转职管理员肖恩处.	
+			
+#Record	RouReturn30	30秒后移动到罗恩镇.	
+#Record	RouReturn20	20秒后移动到罗恩镇.	
+#Record	RouReturn10	10秒后移动到罗恩镇.	
+#Record	RouReturn5	5秒后移动到罗恩镇.	
+			
+#End			

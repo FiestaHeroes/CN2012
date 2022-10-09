@@ -1,0 +1,43 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+						
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+						
+#Record	0	ECrabDash				
+#Record	1	ECrabAtkSkill				
+#Record	2	-				
+#Record	3	-				
+#Record	4	ECrabStun				
+#Record	5	ECrabSpine01				
+#Record	6	-				
+#Record	7	-				
+#Record	8	ECrabGum				
+#Record	9	ECrabAtkSkill				
+#Record	10	-				
+#Record	11	-				
+#Record	12	ECrabStun				
+#Record	13	ECrabSpine01				
+#Record	14	-				
+#Record	15	-				
+#Record	16	ECrabAtkSkill				
+#Record	17	-				
+#Record	18	-				
+#Record	19	ECrabStun				
+#Record	20	ECrabSpine01				
+#Record	21	-				
+#Record	22	ECrabSummon				
+						
+#Table	SkillChange			
+#ColumnType	Index	Index	String[33]	String[33]		
+#ColumnName	Condition	Value	From	To		
+#Record	OutOfRange	-	-	ECrabDash	
+#Record	OutOfRange	-	ECrabAtkSkill	ECrabDash	
+#Record	OutOfRange	-	ECrabStun	ECrabDash	
+						
+#End						

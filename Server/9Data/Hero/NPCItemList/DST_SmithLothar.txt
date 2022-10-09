@@ -1,0 +1,148 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+																																		
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	BridgeSword	Cutlas	EdgedSword	Splitter	-	-																											
+#Record	1	Crusader	Zweihander	BastardSword	Claymore	-	-																											
+#Record	2	HideAxe	TwoHandAxe	PoleAxe	Halberd	-	-																											
+																																		
+#Table	Tab01	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	ScailBoots	ScailHelmet	ScailPants	ScailArmor	FKiteShield	-																											
+#Record	1	MithrilBoots	MithrilHelmet	MithrilPants	MithrilArmor	FTargeShield	-																											
+#Record	2	BrigandineBoots	BrigandineHelmet	BrigandinePants	BrigandineArmor	FSplendor	-																											
+#Record	3	LightPlateBoots	LightPlateHelmet	LightPlatePants	LightPlateArmor	AvantGardeShield	-																											
+																																		
+#Table	Tab02	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	StoutMace	HorsemansFlail	MorningStar	WarMace	-	-																											
+#Record	1	StoutHammer	HorsemansHammer	Morgenstern	WarHammer	-	-																											
+																																		
+#Table	Tab03	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	SplintBoots	SplintHelmet	SplintPants	SplintArmor	KiteShield	-																											
+#Record	1	SacredBoots	SacredHelmet	SacredPants	SacredArmor	TargeShield	-																											
+#Record	2	PlateBoots	PlateHelmet	PlatePants	PlateArmor	Splendor	-																											
+#Record	3	FieldPlateBoots	FieldPlateHelmet	FieldPlatePants	FieldPlateArmor	ReflectionShield	-																											
+																																		
+#Table	Tab04	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	CloseBow	HeavyBow	CompositBow	WarBow	-	-																											
+#Record	1	CloseCrossBow	HeavyCrossBow	CompositCrossBow	WarCrossBow	-	-																											
+																																		
+#Table	Tab05	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	SneakBoots	SneakHat	SneakPants	SneakArmor	-	-																											
+#Record	1	RobberBoots	RobberHat	RobberPants	RobberArmor	-	-																											
+#Record	2	HunterBoots	HunterHat	HunterPants	HunterArmor	-	-																											
+#Record	3	MasterBoots	MasterHat	MasterPants	MasterArmor	-	-																											
+																																		
+#Table	Tab06	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	ZestStaff	PowerStaff	SpiritStaff	FairyStaff	-	-																											
+#Record	1	ZestWand	PowerWand	SpiritWand	FairyWand	-	-																											
+																																		
+#Table	Tab07	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	SilkBoots	SilkHat	SilkPants	SilkShirt	-	-																											
+#Record	1	MentalBoots	MentalHat	MentalPants	MentalShirt	-	-																											
+#Record	2	NatureBoots	NatureHat	NaturePants	NatureShirt	-	-																											
+#Record	3	ElementBoots	ElementHat	ElementPants	ElementShirt	-	-																											
+																																		
+#Table	Tab08	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	SpinClaw	MonClaw	MidianClaw	RingClaw	-	-																											
+#Record	1	SpinDoubleSword	MonDoubleSword	MidianDoubleSword	RingDoubleSword	-	-																											
+																																		
+#Table	Tab09	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	TerraBoots	TerraHood	TerraPants	TerraArmor	-	-																											
+#Record	1	MusicaBoots	MusicaHood	MusicaPants	MusicaArmor	-	-																											
+#Record	2	LupeBoots	LupeHood	LupePants	LupeArmor	-	-																											
+#Record	3	StellaBoots	StellaHood	StellaPants	StellaArmor	-	-																											
+																																		
+#Table	Tab10	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	StrGoldRing	ConGoldRing	DexGoldRing	IntGoldRing	MenGoldRing	-																											
+#Record	1	StrGraceRing	ConGraceRing	DexGraceRing	IntGraceRing	MenGraceRing	-																											
+#Record	2	StrAquaMarineRing	ConAquaMarineRing	DexAquaMarineRing	IntAquaMarineRing	MenAquaMarineRing	-																											
+																																		
+#End																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+	0																																	
+	1																																	
+	2																																	
+	3																																	

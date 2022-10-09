@@ -1,0 +1,120 @@
+;	Shine Monster Regeneration Table			V0.3														
+;	Monster Group																	
+#ignore	\o042																	
+#exchange	#	\x20																
+																		
+#table	MobRegenGroup																	
+;		GroupID	Family	Regen Region														
+;			Y/N	X	Y	X	Y	Range/Degree										
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
+#record		UFireDn01_001	N	4721	11808	0	0	350										
+#record		UFireDn01_002	N	4595	10980	0	0	350										
+#record		UFireDn01_003	N	6414	11941	0	0	350										
+#record		UFireDn01_004	N	4525	9405	0	0	350										
+#record		UFireDn01_005	N	4921	8693	0	0	350										
+#record		UFireDn01_006	N	6213	9930	0	0	350										
+#record		UFireDn01_007	N	6254	10607	0	0	350										
+#record		UFireDn01_008	N	4460	8773	0	0	350										
+#record		UFireDn01_011	N	6071	7618	0	0	350										
+#record		UFireDn01_012	N	6301	6982	0	0	350										
+#record		UFireDn01_013	N	6970	7517	0	0	350										
+#record		UFireDn01_014	N	9921	11367	0	0	350										
+#record		UFireDn01_015	N	10796	11860	0	0	350										
+#record		UFireDn01_016	N	9685	12253	0	0	350										
+#record		UFireDn01_017	N	9999	9565	75	1010	-35										
+#record		UFireDn01_021	N	10129	4067	0	0	350										
+#record		UFireDn01_022	N	8861	3661	0	0	350										
+#record		UFireDn01_023	N	9116	4296	0	0	350										
+#record		UFireDn01_024	N	9552	3458	0	0	350										
+#record		UFireDn01_025	N	9586	7667	50	647	63										
+#record		UFireDn01_031	N	6495	4153	0	0	350										
+#record		UFireDn01_032	N	7059	4369	0	0	350										
+#record		UFireDn01_033	N	5657	4244	0	0	350										
+#record		UFireDn01_034	N	5769	4999	0	0	350										
+#record		UFireDn01_035	N	7972	5275	800	36	-20										
+#record		UFireDn01_041	N	3598	6350	0	0	350										
+#record		UFireDn01_042	N	3387	5902	0	0	350										
+#record		UFireDn01_043	N	2342	4233	0	0	350										
+#record		UFireDn01_044	N	2875	3892	0	0	350										
+#record		UFireDn01_045	N	2345	6046	0	0	350										
+#record		UFireDn01_046	N	3240	3720	0	0	350										
+#record		UFireDn01_047	N	3584	4811	0	0	350										
+#record		UFireDn01_048	N	2232	5143	0	0	350										
+#record		UFireDn01_MINE01	N	6528	7589	0	0	350										
+#record		UFireDn01_MINE02	N	6404	7494	0	0	350										
+#record		UFireDn01_MINE03	N	6509	7466	0	0	350										
+#record		UFireDn01_MINE04	N	9425	3828	0	0	350										
+#record		UFireDn01_MINE05	N	9260	3849	0	0	350										
+#record		UFireDn01_MINE06	N	9444	3706	0	0	350										
+#record		UFireDn01_MINE07	N	2996	4640	0	0	350										
+#record		UFireDn01_MINE08	N	3496	4358	0	0	350										
+#record		UFireDn01_MINE09	N	3195	4528	0	0	350										
+#record		UFireDn01_MINE10	N	3325	4531	0	0	350										
+#record		P01	N	2439	5181	0	0	350										
+#record		UrgFireDn01Guard01	N	3261	11504	0	0	13										
+#record		UrgFireDn01Guard02	N	3262	11172	0	0	13										
+#record		UFireDn01_C1_01	N	2197	4076	0	0	34										
+#record		UFireDn01_C2_01	N	3378	3979	0	0	20										
+#record		UFireDn01_C3_01	N	3013	6211	0	0	55										
+#record		UFireDn01_C4_01	N	2242	5298	0	0	48										
+																		
+																		
+																		
+#table	MobRegen																	
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
+#record		UFireDn01_001	RedNixA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_002	RedNixA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_003	RedNixA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_004	RedNixA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_005	RedNixA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_006	RedNixA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_007	RedNixA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_008	RedNixA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_011	MagmaTonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_012	MagmaTonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_013	MagmaTonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_014	MagmaTonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_015	MagmaTonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_016	MagmaTonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_017	MagmaTonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_021	LavaMagmatonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_022	LavaMagmatonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_023	LavaMagmatonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_024	LavaMagmatonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_025	LavaMagmatonA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_031	BellowKnightA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_032	BellowKnightA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_033	BellowKnightA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_034	BellowKnightA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_035	BellowKnightA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_041	BellowKnight-SA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_042	BellowKnight-SA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_043	BellowKnight-SA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_044	BellowKnight-SA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_045	BellowKnight-SA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_046	BellowKnight-SA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_047	BellowKnight-SA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_048	BellowKnight-SA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE01	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE02	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE03	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE04	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE05	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE06	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE07	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE08	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE09	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		UFireDn01_MINE10	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
+#record		P01	PresentBox15	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
+#record		UrgFireDn01Guard01	GuardMihael03	1	0	60	36	84	-24	36	-12	48	24	72	30	84	0	
+#record		UrgFireDn01Guard02	GuardMihael03	1	0	60	36	84	-24	36	-12	48	24	72	30	84	0	
+#record		UFireDn01_C1_01	BellowknightRord	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		UFireDn01_C2_01	BellowknightRord	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		UFireDn01_C3_01	BellowknightRord	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+#record		UFireDn01_C4_01	BellowknightRord	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
+																		
+#end																		

@@ -1,0 +1,69 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	MissionObj	在限定时间内寻找需要帮助的人		
+				
+#Record	FirstR0	呵,谁呀,你？		
+#Record	FirstR1	那些人让你来的？要把我们都杀掉吗!		
+#Record	FirstE2	冷静!这个人好像对我们没什么敌意.		
+#Record	FirstR3	真的吗？那么我们要赶紧避开这里,这里很危险.		
+#Record	FirstE4	要斟酌一下吧,他们是被追赶的怪物,而且又受了伤		
+#Record	FirstE5	追我们的家伙好像马上就要到这了.		
+#Record	FirstR6	虽然30分钟以后援军到了他们就会撤退...		
+#Record	FirstR7	他们已经来了!		
+				
+#Record	SecondR0	看看,我们都是负伤的人,没有余力照顾你啊.		
+#Record	SecondE1	对啊,和我们在一起,你要是也受伤了可不行.		
+#Record	SecondE2	敌人涌上来之前快点...天哪,快点藏起来吧.		
+				
+#Record	ThirdR0	不要对现在的抵抗情况自我感觉良好,敌人的大本营还没到呢.		
+#Record	ThirdE1	我认为把这里交给我们,阻止怪物是很合适的		
+#Record	ThirdR2	那边又来了,敌人到来之前快点!		
+				
+#Record	ForthR0	这些坏家伙们的兵力到底有多少,这样源源不断的到来.		
+#Record	ForthE1	援军还有多久到？		
+#Record	ForthR2	不知道,但是那些坏家伙现在正在过来.小心!		
+				
+#Record	FifthR0	从现在还活着的情况来看,比想象的有实力		
+#Record	FifthR1	但是敌人还会继续涌出来,没有信心的话现在先避一下.		
+#Record	FifthE2	对啊,要区别开勇猛和蛮勇.		
+				
+#Record	SixthE0	昨天敌人渐渐开始躲起来了是吧？		
+#Record	SixthR1	敌人慌了,我们可以坚持这么久.		
+#Record	SixthE2	数量虽多但是渐渐倒下了,但是敌人还是继续增多的.		
+				
+#Record	SeventhE0	现在敌人的慌张对我们是个机会		
+#Record	SeventhR1	你说什么？		
+#Record	SeventhE2	我说现在援军到来的话是把敌人击退的机会		
+				
+#Record	EighthR0	你太有才了,反而是我们给你添麻烦了...		
+#Record	EighthE1	敌人还有很多,想要安心还早呢.		
+#Record	EighthR2	那边有新的敌人过来了,小心!		
+				
+#Record	NinethE0	罗恩,伤口怎么样了？可以忍受吗？		
+#Record	NinethR1	不要担心,艾德林,这种程度我自己可以对抗一天.		
+#Record	NinethE2	是吗,太好了,那边敌人又来了,自己对抗试试吧.		
+				
+#Record	TenthR0	刚才想到了一点,艾德林,我们把这里当做新兵训练场怎么样？		
+#Record	TenthE1	那边敌人又来了,不要开玩笑了.		
+#Record	TenthR2	切,明明是你先开玩笑的...		
+				
+#Record	SucR0	什么？敌人为什么都撤退了？		
+#Record	SucE1	是援军,援军袭击了敌人的大本营!		
+#Record	SucR2	有救了,我们有救了		
+#Record	SucE3	真的好感谢,谢谢救了我们的性命.		
+#Record	SucR4	你是如今这样混乱的时代需要的人物.		
+#Record	SucR5	有时间一定要来找我.		
+#Record	SucR6	戴着这条项链就可以见到我.		
+				
+#Record	RouReturn30	30秒之后移动到罗恩镇		
+#Record	RouReturn20	20秒之后移动到罗恩镇		
+#Record	RouReturn10	10秒之后移动到罗恩镇		
+#Record	RouReturn5	5秒之后移动到罗恩镇		
+				
+#End				

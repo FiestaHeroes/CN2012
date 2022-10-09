@@ -1,0 +1,42 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Guardian	警卫枪兵		
+				
+#Record	KQStart60	60秒后,王国任务即将开始.		
+#Record	KQStart30	30秒后,王国任务即将开始.		
+#Record	KQStart20	20秒后,王国任务即将开始.		
+#Record	KQStart10	10秒后,王国任务即将开始.		
+#Record	KQStart5	5秒后,王国任务即将开始.		
+				
+#Record	KingSlime0	那些侮辱神圣史莱姆的可恶的家伙们!		
+#Record	KingSlime1	你们将永远被诅咒!		
+#Record	KingSlimeSummon	史莱姆们,用我赋予的力量去消灭他们吧!		
+#Record	KingSlimeDead	神啊!请告诉我,史莱姆的时代真的已经过了吗?		
+#Record	King1StaageBoss10	史莱姆王子击退敌人吧!		
+#Record	King1StaageBoss11	这些家伙比预料的强啊!		
+#Record	King2StaageBoss20	史莱姆女王击退敌人吧!		
+#Record	King2StaageBoss21	你们虽然厉害,但也只限于此了!不会再原谅你们!		
+				
+#Record	StartWarn0	在这做什么,难道不知道我们现在正处于危机中吗?		
+#Record	StartWarn1	史莱姆王的军队开始进攻了.		
+#Record	StartWarn2	必须要消灭全部史莱姆,否则会出大事.		
+#Record	StartWarn3	我去找援军.		
+#Record	StartWarn4	你们不要阻拦,赶快避一避吧!		
+				
+#Record	GuardianSuc0	你们没事吧?		
+#Record	GuardianSuc1	大概过5分钟,援军就会到了.		
+#Record	GuardianSuc2	这期间,请大家要躲到安全的地方去.		
+				
+
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				

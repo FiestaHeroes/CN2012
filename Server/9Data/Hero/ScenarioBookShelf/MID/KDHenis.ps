@@ -1,0 +1,350 @@
+open [main]
+    var InterruptBlock      1
+        InterruptArg        2
+        Door1               3
+        Door2               4
+        Door3               5
+        Guard               "6"
+        EffDoor1            "7"
+        EffDoor2            "8"
+        EffDoor3            "9"
+        AntiHenis110           "ABCDE".
+		;ReturnGate			""
+		;CompleteGate		"".
+
+    doorbuild Door1 "KQ_SlimeGate" 9860 6094  272 1000 "Normal".      ; 1층과 2층 사이
+    doorbuild Door2 "KQ_SlimeGate" 6692 3944    6 1000 "Normal".      ; 2층과 3층 사이
+    doorbuild Door3 "KQ_SlimeGate" 5894 6098   88 1000 "Normal".      ; 3층과 4층 사이
+
+    doorclose Door1 "CloseGate01".           ; 모든 문을 닫음
+    doorclose Door2 "CloseGate02".
+    doorclose Door3 "CloseGate03".
+
+    effectobj EffDoor1 Door1 "KQ_SlimeGate" 3600000 1000.
+    effectobj EffDoor2 Door2 "KQ_SlimeGate" 3600000 1000.
+    effectobj EffDoor3 Door3 "KQ_SlimeGate" 3600000 1000.
+	
+	;npcstand	ReturnGate 		"Gate_ID_Exit" 		1097	11515	0 1000	"Normal". ;매칭인던으로 주석처리
+
+    waitlogin Guard.
+    if Guard == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+
+
+    scriptfile "KQAntiHenis100".
+
+    npcstand Guard "EldSpeGuard01" 2099 10440 180 1000 "Normal".
+
+    chatwin "EldSpeGuard01" "StartWarn0".
+    pause Sec 3.                        ; 3초간 대기
+
+    chatwin "EldSpeGuard01" "StartWarn1".
+    pause Sec 3.                        ; 3초간 대기
+
+    chatwin "EldSpeGuard01" "StartWarn2".
+    pause Sec 3.                        ; 3초간 대기
+
+    chatwin "EldSpeGuard01" "StartWarn3".
+    pause Sec 3.                        ; 3초간 대기
+
+    chatwin "EldSpeGuard01" "StartWarn4".
+    pause Sec 3.                        ; 3초간 대기
+
+    vanish Guard.
+
+    ;;timelimit Min 50.
+
+    call "FirstFloor".
+    call "SecondFloor".
+    call "ThirdFloor".
+    call "TopFloor".
+close
+
+;; 문 테스트용, 10초마다 문 여닫기
+;open [FirstFloor]
+;    interruptclear.
+;    interruptset TimeInterval 10000 "DoorOC".
+;    var DoorState.
+;    DoorState = "Close".
+;    infinite
+;    open
+;        waitinterrupt InterruptBlock "InterruptArg".
+;        call InterruptBlock.
+;    close
+;close
+;
+;open [DoorOC]
+;    if DoorState === "Close"
+;    then open
+;        dooropen Door1 "CloseGate01".
+;        DoorState = "Open".
+;    close
+;    else open
+;        doorclose Door1 "CloseGate01".
+;        DoorState = "Close".
+;    close
+;close
+;
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [FirstFloor]
+    regengroup "KDHenis" "AntiHenisArea05".
+    regengroup "KDHenis" "AntiHenisArea06".
+    regengroup "KDHenis" "AntiHenisArea07".
+    regengroup "KDHenis" "AntiHenisArea08".
+    regengroup "KDHenis" "AntiHenisArea09".
+    regengroup "KDHenis" "AntiHenisArea10".
+    regengroup "KDHenis" "AntiHenisArea11".
+    regengroup "KDHenis" "AntiHenisArea12".
+    regengroup "KDHenis" "AntiHenisArea13".
+    regengroup "KDHenis" "AntiHenisArea14".
+    regengroup "KDHenis" "AntiHenisArea15".
+    regengroup "KDHenis" "AntiHenisArea16".
+    regengroup "KDHenis" "AntiHenisArea24".
+	
+	pause Sec 5.
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "FirstMobEleminate".
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".;매칭인던으로 주석처리
+
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [FirstMobEleminate]
+    dooropen Door1 "CloseGate01".
+    vanish EffDoor1.
+    break "FirstFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [SecondFloor]
+    regengroup "KDHenis" "AntiHenisArea17".
+    regengroup "KDHenis" "AntiHenisArea18".
+    regengroup "KDHenis" "AntiHenisArea19".
+    regengroup "KDHenis" "AntiHenisArea20".
+    regengroup "KDHenis" "AntiHenisArea21".
+    regengroup "KDHenis" "AntiHenisArea28".
+    regengroup "KDHenis" "AntiHenisArea48".
+    regengroup "KDHenis" "AntiHenisArea49".
+    regengroup "KDHenis" "AntiHenisArea50".
+    regengroup "KDHenis" "AntiHenisArea51".
+    regengroup "KDHenis" "AntiHenisArea52".
+    regengroup "KDHenis" "AntiHenisArea53".
+    regengroup "KDHenis" "AntiHenisArea56".
+    regengroup "KDHenis" "AntiHenisArea57".
+
+	pause Sec 5.
+	
+    interruptclear.
+    ;;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;;interruptset TimeOut "" 1 "QuestFail".
+    interruptset 	MobEliminate "" 1 "SecondMobEleminate".
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".;매칭인던으로 주석처리
+
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [SecondMobEleminate]
+    dooropen Door2 "CloseGate02".
+    vanish EffDoor2.
+    break "SecondFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [ThirdFloor]
+    regengroup "KDHenis" "AntiHenisArea03".
+    regengroup "KDHenis" "AntiHenisArea04".
+    regengroup "KDHenis" "AntiHenisArea22".
+    regengroup "KDHenis" "AntiHenisArea23".
+    regengroup "KDHenis" "AntiHenisArea25".
+    regengroup "KDHenis" "AntiHenisArea26".
+    regengroup "KDHenis" "AntiHenisArea27".
+    regengroup "KDHenis" "AntiHenisArea29".
+    regengroup "KDHenis" "AntiHenisArea30".
+    regengroup "KDHenis" "AntiHenisArea44".
+    regengroup "KDHenis" "AntiHenisArea45".
+    regengroup "KDHenis" "AntiHenisArea46".
+    regengroup "KDHenis" "AntiHenisArea47".
+
+	pause Sec 5.
+	
+    interruptclear.
+    ;;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;;interruptset TimeOut "" 1 "QuestFail".
+    interruptset 	MobEliminate "" 1 "ThirdMobEleminate".
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".;매칭인던으로 주석처리
+
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [ThirdMobEleminate]
+    dooropen Door3 "CloseGate03".
+    vanish EffDoor3.
+    break "ThirdFloor".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [TopFloor]
+    mobregen AntiHenis110 "Anti_Henis_G_F90" 7081 5972 90 1000 "Normal".
+
+    chatwin "Anti_Henis_G_F110" "AntiHenis0".
+    pause Sec 2.                        ; 2초간 대기
+    chatwin "Anti_Henis_G_F110" "AntiHenis1".
+	
+	pause Sec 3.
+	
+    interruptclear.
+    ;;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;;interruptset TimeOut "" 1 "QuestFail".
+    interruptset MobEliminate "" 1 "QuestSuccess".
+    interruptset HPLow "" 1 AntiHenis110 800 "AntiHenisSummon1".
+    interruptset HPLow "" 1 AntiHenis110 600 "AntiHenisSummon2".
+    interruptset HPLow "" 1 AntiHenis110 400 "AntiHenisSummon3".
+    interruptset HPLow "" 1 AntiHenis110 200 "AntiHenisSummon4".
+    interruptset DeadHandle "" 1 AntiHenis110 "AntiHenis110Dead".
+	
+	;interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".;매칭인던으로 주석처리
+
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [AntiHenisSummon1]
+    npcshout AntiHenis110 "AntiHenisSummon".
+    summonmob AntiHenis110 "Anti_Henis_M86" 1.
+    summonmob AntiHenis110 "Anti_Henis_F86" 1.
+    summonmob AntiHenis110 "Anti_Henis_A86" 1.
+close
+
+open [AntiHenisSummon2]
+    npcshout AntiHenis110 "AntiHenisSummon".
+    summonmob AntiHenis110 "Anti_Henis_F87" 1.
+    summonmob AntiHenis110 "Anti_Henis_C87" 1.
+    summonmob AntiHenis110 "Anti_Henis_M87" 1.
+close
+
+open [AntiHenisSummon3]
+    npcshout AntiHenis110 "AntiHenisSummon".
+    summonmob AntiHenis110 "Anti_Henis_A88" 2.
+    summonmob AntiHenis110 "Anti_Henis_M88" 2.
+close
+
+open [AntiHenisSummon4]
+    npcshout AntiHenis110 "AntiHenisSummon".
+    summonmob AntiHenis110 "Anti_Henis_C89" 1.
+    summonmob AntiHenis110 "Anti_Henis_A89" 1.
+    summonmob AntiHenis110 "Anti_Henis_F89" 1.
+    summonmob AntiHenis110 "Anti_Henis_M89" 1.
+close
+
+open [AntiHenis110Dead]
+    npcshout AntiHenis110 "AntiHenis110Dead".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [QuestSuccess]
+    questresult Suc.                   ; 성공패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+    reward MID. ; 킹퀘 매칭으로 보상 명령어 변경됨
+    MIDClearCount Online.;킹퀘 플레이 카운트 설정
+
+    someoneshout "Guardian" "GuardianSuc0".
+    pause Sec 2.                        ; 2초간 대기
+
+    someoneshout "Guardian" "GuardianSuc1".
+    pause Sec 2.                        ; 2초간 대기
+
+    someoneshout "Guardian" "GuardianSuc2".
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+    break "main".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;open [QuestSuccess]
+;    questresult Suc.                   ; 성공패킷 날림
+	
+;	interruptclear.
+	
+;	npcstand	ReturnGate 		"Gate_ID_Exit" 		1097	11515	0 1000	"Normal".
+;	npcstand	CompleteGate 	"Gate_ID_Complete" 	7251	6131	0 1000	"Normal".
+	
+;	interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+;	interruptset	NPCClickHandle	"CompleteGateClick"		1	CompleteGate		"onCompleteGateClick".
+	
+;	someoneshout "Guardian" "GuardianSuc0".
+;    pause Sec 2.                        ; 2초간 대기
+
+;    someoneshout "Guardian" "GuardianSuc1".
+;    pause Sec 2.                        ; 2초간 대기
+
+;   someoneshout "Guardian" "GuardianSuc2".
+	
+;	infinite
+;    open
+;        waitinterrupt InterruptBlock "InterruptArg".
+;        call InterruptBlock.
+;    close
+	
+;close
+
+;open [onReturnGateClick]
+;  var mclicker 0.
+;  whoclickme mclicker InterruptArg.
+;	linkto	mclicker	"EldFor01"	"EldFor01" 6875 6769.
+;  interruptset	NPCClickHandle	"ReturnGateClick"		1	ReturnGate		"onReturnGateClick".
+;close
+
+;open [onCompleteGateClick]
+;  var mclicker 0.
+;  whoclickme mclicker InterruptArg.
+;	linkto	mclicker	"EldFor01"	"EldFor01" 6875 6769.
+; interruptset	NPCClickHandle	"CompleteGateClick"		1	CompleteGate	"onCompleteGateClick".
+;close
+

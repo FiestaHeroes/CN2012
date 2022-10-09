@@ -1,0 +1,43 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	ScoutCamarisDown	敌方发动攻击了!全体紧急就位!!!		
+#Record	GateKnock	紧急就位!!敌人已经进攻到入口了,快把『革玛里斯』召唤到城门口来!!!		
+#Record	OutGateDown0	报告队长! 城门已被敌人攻破了.		
+#Record	OutGateDown1	动作快点!!召唤『革玛里斯』来,没有人可以赢得了『革玛里斯』.		
+#Record	OutGateDown2	收到了,队长! 在召唤『革玛里斯』的这段时间里,希望不要冲进来.		
+				
+#Record	SucMessage	众神的祝福与通过胜者考验的勇士们同在!		
+#Record	FailMessage	闯关失败,你已在战场上败北了!		
+				
+#Record	KQReturnEld30	30秒后离开王国任务		
+#Record	KQReturnEld20	20秒后离开王国任务		
+#Record	KQReturnEld10	10秒后离开王国任务		
+#Record	KQReturnEld5	5秒后离开王国任务		
+				
+#Record	KQReturnUrg30	30秒后离开王国任务		
+#Record	KQReturnUrg20	20秒后离开王国任务		
+#Record	KQReturnUrg10	10秒后离开王国任务		
+#Record	KQReturnUrg5	5秒后离开王国任务		
+				
+#Record	KQLbMessage1	走吧! 勇士们! 击垮黑暗的革玛里斯,通过胜者考验吧 !		
+#Record	KQLbMessage2	黑暗的革玛里斯已被击败了!就以这速度持续进攻!去突破卡尔班的守护门吧!		
+#Record	KQLbMessage3	摧毁隐藏的黑暗碧珠, 向卡尔班挑战吧 !		
+#Record	KQLbMessage4	摧毁这时空里所有的黑暗碧珠! 将会开启一条全新的通道,勇士们,继续进攻吧!		
+#Record	KQLbMessage5	这里是安存卡尔班灵魂之地,勇士们奋力摧毁黑暗的革玛里斯吧 !		
+#Record	KQLbMessage6	当所有黑暗的革玛里斯被摧毁时, 卡尔班将会接受你们最后的挑战!		
+#Record	KQLbMessage7	现在开始会是与卡尔班的生死战! 勇士们,努力证明自己是碧绿胜地的战胜者吧 !		
+#Record	KQLbMessage8	向通过卡尔班考验的勇者们表示敬意.		
+#Record	KQLbMessage9	通过战胜者考验的勇士们,祝你们有个美好的未来!		
+				
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				

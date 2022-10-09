@@ -1,0 +1,29 @@
+
+						
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+
+						
+#Table	AttSeq					
+#ColumnType	WORD	STRING[33]				
+#ColumnName	Order	Attack				
+#Record	0	Anti_Henis_M81FireBall				
+#Record	1	Anti_Henis_M81IceBlast				
+#Record	2	Anti_Henis_M81MagicBurst				
+#Record	3	Anti_Henis_M81ManaBurn				
+#Record	4	Anti_Henis_M81FireBall				
+#Record	5	Anti_Henis_M81IceBlast				
+#Record	6	Anti_Henis_M81MagicBurst				
+#Record	7	Anti_Henis_M81ManaBurn				
+#Record	8	Anti_Henis_M81FireBall				
+#Record	9	Anti_Henis_M81IceBlast				
+#Record	10	Anti_Henis_M81MagicBurst				
+#Record	11	Anti_Henis_M81ManaBurn				
+						
+#Table	SkillChange			
+#ColumnType	Index	Index	String[33]	String[33]		
+#ColumnName	Condition	Value	From	To		
+#Record	OutOfRange	-	Anti_Henis_M81MagicBurst	Anti_Henis_M81FireBall	
+#Record	OutOfRange	-	-	Anti_Henis_M81FireBall	
+#End						

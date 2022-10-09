@@ -1,0 +1,645 @@
+open [main]
+    var Wait            ""
+        InterruptBlock  ""
+        InterruptArg    ""
+        KQ_BossRobo 	0.
+		;CompleteGate	"". ;킹퀘 매칭으로 인한 주석처리
+
+    waitlogin Wait.
+    if Wait == 0                            ; 일정시간 지나도록 로긴 안함
+    then open
+        call "QuestFail".
+    close
+    pause Sec 5.
+
+    scriptfile "KQUnderHall".
+
+    broadcast all "KQStart60".
+    pause sec 30.
+    broadcast all "KQStart30".
+    pause sec 10.
+    broadcast all "KQStart20".
+    pause sec 10.
+    broadcast all "KQStart10".
+    pause sec 5.
+    broadcast all "KQStart5".
+    pause sec 5.
+    ;timelimit Min 30.
+	
+    call "First".
+    call "Second".
+    call "Third".
+    call "Forth".
+    call "Fifth".
+    call "Sixth".
+    call "Seventh".
+    call "Eighth".
+    call "Nineth".
+    call "Tenth".
+    call "Eleventh".
+    call "Twelveth".
+    call "Thirteenth".
+    call "Forteenth".
+    call "Fifteenth".
+    call "Sixteenth".
+    call "Seventeenth".
+    call "Eighteenth".
+    call "Nineteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [First]
+
+ ;   mobregen KQ_BossRobo "KQ_BossRobo" 2397 2555 90 1000 "Normal".
+    regengroup "KDUnHall" "KDUnderArea1".
+    regengroup "KDUnHall" "KDUnderArea2".
+    regengroup "KDUnHall" "KDUnderArea3".
+    regengroup "KDUnHall" "KDUnderArea4".
+
+    interruptclear.
+    interruptset Sec "EndTime" 1 60 "FirstEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate1".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate1]
+	interruptset Sec "EndTime" 1 15 "FirstEnd".
+close
+
+open [FirstEnd]
+	interrupterase "EndTime".
+    break "First".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Second]
+    regengroup "KDUnHall" "KDUnderArea5".
+    regengroup "KDUnHall" "KDUnderArea6".
+    regengroup "KDUnHall" "KDUnderArea7".
+    regengroup "KDUnHall" "KDUnderArea8".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 60	"SecondEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate2".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate2]
+	interruptset Sec "EndTime" 1 15 "SecondEnd".
+close
+
+open [SecondEnd]
+	interrupterase "EndTime".
+    break "Second".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Third]
+    regengroup "KDUnHall" "KDUnderArea9".
+    regengroup "KDUnHall" "KDUnderArea10".
+    regengroup "KDUnHall" "KDUnderArea11".
+    regengroup "KDUnHall" "KDUnderArea12".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 60 "ThirdEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate3".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate3]
+	interruptset Sec "EndTime" 1 15 "ThirdEnd".
+close
+
+open [ThirdEnd]
+	interrupterase "EndTime".
+    break "Third".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Forth]
+    regengroup "KDUnHall" "KDUnderArea13".
+    regengroup "KDUnHall" "KDUnderArea14".
+    regengroup "KDUnHall" "KDUnderArea15".
+    regengroup "KDUnHall" "KDUnderArea16".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 120 "ForthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate4".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate4]
+	interruptset Sec "EndTime" 1 15 "ForthEnd".
+close
+
+open [ForthEnd]
+	interrupterase "EndTime".
+    break "Forth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Fifth]
+    regengroup "KDUnHall" "KDUnderArea17".
+    regengroup "KDUnHall" "KDUnderArea18".
+    regengroup "KDUnHall" "KDUnderArea19".
+    regengroup "KDUnHall" "KDUnderArea20".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 120 "FifthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate5".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate5]
+	interruptset Sec "EndTime" 1 15 "FifthEnd".
+close
+
+open [FifthEnd]
+	interrupterase "EndTime".
+    break "Fifth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Sixth]
+    regengroup "KDUnHall" "KDUnderArea21".
+    regengroup "KDUnHall" "KDUnderArea22".
+    regengroup "KDUnHall" "KDUnderArea23".
+    regengroup "KDUnHall" "KDUnderArea24".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 180 "SixthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate6".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate6]
+	interruptset Sec "EndTime" 1 15 "SixthEnd".
+close
+
+open [SixthEnd]
+	interrupterase "EndTime".
+    break "Sixth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Seventh]
+    regengroup "KDUnHall" "KDUnderArea25".
+    regengroup "KDUnHall" "KDUnderArea26".
+    regengroup "KDUnHall" "KDUnderArea27".
+    regengroup "KDUnHall" "KDUnderArea28".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 180 "SeventhEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate7".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate7]
+	interruptset Sec "EndTime" 1 15 "SeventhEnd".
+close
+
+open [SeventhEnd]
+	interrupterase "EndTime".
+    break "Seventh".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eighth]
+    regengroup "KDUnHall" "KDUnderArea29".
+    regengroup "KDUnHall" "KDUnderArea30".
+    regengroup "KDUnHall" "KDUnderArea31".
+    regengroup "KDUnHall" "KDUnderArea32".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 240 "EighthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate8".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate8]
+	interruptset Sec "EndTime" 1 15 "EighthEnd".
+close
+
+open [EighthEnd]
+	interrupterase "EndTime".
+    break "Eighth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Nineth]
+    regengroup "KDUnHall" "KDUnderArea33".
+    regengroup "KDUnHall" "KDUnderArea34".
+    regengroup "KDUnHall" "KDUnderArea35".
+    regengroup "KDUnHall" "KDUnderArea36".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 240 "NinethEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate9".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate9]
+	interruptset Sec "EndTime" 1 15 "NinethEnd".
+close
+
+open [NinethEnd]
+	interrupterase "EndTime".
+    break "Nineth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Tenth]
+    regengroup "KDUnHall" "KDUnderArea37".
+    regengroup "KDUnHall" "KDUnderArea38".
+    regengroup "KDUnHall" "KDUnderArea39".
+    regengroup "KDUnHall" "KDUnderArea40".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 300 "TenthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate10".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate10]
+	interruptset Sec "EndTime" 1 15 "TenthEnd".
+close
+
+open [TenthEnd]
+	interrupterase "EndTime".
+    break "Tenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eleventh]
+    regengroup "KDUnHall" "KDUnderArea41".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 300 "EleventhEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate11".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate11]
+	interruptset Sec "EndTime" 1 15 "EleventhEnd".
+close
+
+open [EleventhEnd]
+	interrupterase "EndTime".
+    break "Eleventh".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Twelveth]
+    regengroup "KDUnHall" "KDUnderArea42".
+    regengroup "KDUnHall" "KDUnderArea43".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 360 "TwelvethEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate12".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate12]
+	interruptset Sec "EndTime" 1 15 "TwelvethEnd".
+close
+
+open [TwelvethEnd]
+	interrupterase "EndTime".
+    break "Twelveth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Thirteenth]
+    regengroup "KDUnHall" "KDUnderArea44".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 360 "ThirteenthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate13".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate13]
+	interruptset Sec "EndTime" 1 15 "onMobEliminate13".
+close
+
+open [ThirteenthEnd]
+	interrupterase "EndTime".
+    break "Thirteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Forteenth]
+    regengroup "KDUnHall" "KDUnderArea45".
+    regengroup "KDUnHall" "KDUnderArea46".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 420 "ForteenthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate14".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate14]
+	interruptset Sec "EndTime" 1 15 "ForteenthEnd".
+close
+
+open [ForteenthEnd]
+	interrupterase "EndTime".
+    break "Forteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Fifteenth]
+    regengroup "KDUnHall" "KDUnderArea47".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 420 "FifteenthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate15".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate15]
+	interruptset Sec "EndTime" 1 15 "FifteenthEnd".
+close
+
+open [FifteenthEnd]
+	interrupterase "EndTime".
+    break "Fifteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Sixteenth]
+    regengroup "KDUnHall" "KDUnderArea48".
+    regengroup "KDUnHall" "KDUnderArea49".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 500 "SixteenthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate16".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate16]
+	interruptset Sec "EndTime" 1 15 "SixteenthEnd".
+close
+
+open [SixteenthEnd]
+	interrupterase "EndTime".
+    break "Sixteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Seventeenth]
+    regengroup "KDUnHall" "KDUnderArea50".
+    regengroup "KDUnHall" "KDUnderArea51".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 500 "SeventeenthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate17".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate17]
+	interruptset Sec "EndTime" 1 15 "SeventeenthEnd".
+close
+
+open [SeventeenthEnd]
+	interrupterase "EndTime".
+    break "Seventeenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Eighteenth]
+    regengroup "KDUnHall" "KDUnderArea52".
+
+    interruptclear.
+    ;interruptset PlayerEliminate "" 1 "QuestFail".
+    ;interruptset TimeOut "" 1 "QuestSuc".
+    interruptset Sec "EndTime" 1 600 "EighteenthEnd".
+	interruptset MobEliminate "EndTime" 1 "onMobEliminate18".
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [onMobEliminate18]
+	interruptset Sec "EndTime" 1 15 "EighteenthEnd".
+close
+
+open [EighteenthEnd]
+	interrupterase "EndTime".
+    break "Eighteenth".
+close
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+open [Nineteenth]
+
+    mobregen KQ_BossRobo "KQ_BossRobo" 2300 2500 90 1000 "Normal".
+
+    interruptclear.
+	interruptset DeadHandle "" 1 KQ_BossRobo "QuestSuc".
+	
+    interruptset HPLow "" 1 KQ_BossRobo 800 "Summon1".
+    interruptset HPLow "" 1 KQ_BossRobo 600 "Summon2".
+    interruptset HPLow "" 1 KQ_BossRobo 400 "Summon3".
+    interruptset HPLow "" 1 KQ_BossRobo 200 "Summon4".
+    interruptset HPLow "" 1 KQ_BossRobo 100 "Summon5".
+	
+
+    infinite
+    open
+        waitinterrupt InterruptBlock "InterruptArg".
+        call InterruptBlock.
+    close
+close
+
+open [Summon1]
+      summonmob KQ_BossRobo "KQ_DesertWolf" 2.
+      summonmob KQ_BossRobo "KQ_GiantMushRoom" 1.
+close
+
+open [Summon2]
+      summonmob KQ_BossRobo "KQ_Skeleton" 3.
+close
+
+open [Summon3]
+      summonmob KQ_BossRobo "KQ_SkelWarrior" 1.
+      summonmob KQ_BossRobo "KQ_SkelKnight" 1.
+      summonmob KQ_BossRobo "KQ_SkelArcher" 2.
+close
+
+open [Summon4]
+      summonmob KQ_BossRobo "KQ_Skeleton" 2.
+      summonmob KQ_BossRobo "KQ_WildKebing" 2.
+      summonmob KQ_BossRobo "KQ_Zombie" 2.
+close
+
+open [Summon5]
+      summonmob KQ_BossRobo "KQ_SkelWarrior" 2.
+      summonmob KQ_BossRobo "KQ_RapidBoar" 3.
+      summonmob KQ_BossRobo "KQ_FireViVi" 2.
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+open [QuestSuc]
+    questresult Suc.                   ; 성공패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+    reward MID. ; 킹퀘 매칭으로 보상 명령어 변경됨
+    MIDClearCount Online.;킹퀘 플레이 카운트 설정
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+    break "main".
+close
+
+open [QuestFail]
+    questresult Fail.                  ; 실패패킷 날림
+    revival all. ;모두 부활 시킴(20111209 추가)
+
+    broadcast all "KQReturn30".
+    pause sec 10.
+    broadcast all "KQReturn20".
+    pause sec 10.
+    broadcast all "KQReturn10".
+    pause sec 5.
+    broadcast all "KQReturn5".
+    pause sec 5.
+
+    endofmid. ;매칭 인던으로 수정함
+    break "main".
+close
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 킹퀘 매칭으로 인해 주석 처리
+;open [QuestSuc]
+;	interruptclear.
+;	pause Sec 3.
+;    questresult Suc.                   ; 성공패킷 날림
+	
+;	npcstand	CompleteGate 	"Gate_ID_Complete" 	2398	3328	0 1000	"Normal".
+;	interruptset	NPCClickHandle	"CompleteGateClick"		1	CompleteGate		"onCompleteGateClick".
+	
+;	infinite
+;    open
+;        waitinterrupt InterruptBlock "InterruptArg".
+ ;       call InterruptBlock.
+;    close
+	
+;close
+
+;open [onCompleteGateClick]
+;  var mclicker 0.
+;  whoclickme mclicker InterruptArg.
+;	linkto	mclicker	"EldCem02"	"EldCem02" 9880 9170.
+;  interruptset	NPCClickHandle	"CompleteGateClick"		1	CompleteGate	"onCompleteGateClick".
+;close
+
+

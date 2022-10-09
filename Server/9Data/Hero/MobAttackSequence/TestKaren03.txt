@@ -1,0 +1,14 @@
+
+									
+#Ignore	\o042				
+#Exchange	#	\x20			
+
+									
+									
+#Table	AttSeq								
+#ColumnType	WORD	STRING[33]							
+#ColumnName	Order	Attack							
+									
+#Record	0	KarenSPMinus							
+#Record	1	KarenSPMinusHeal							
+#End									

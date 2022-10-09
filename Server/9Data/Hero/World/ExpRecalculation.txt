@@ -1,0 +1,102 @@
+
+#ignore	\o042				
+#exchange	#	\x20			
+#delimiter	\x20				
+						
+#Table	ByPartyMem					
+#ColumnType	BYTE	WORD				
+#ColumnName	PartyMember	Bonus				
+#Record	0	1000		
+#Record	1	1000		
+#Record	2	1200		
+#Record	3	1400		
+#Record	4	1600		
+#Record	5	1800		
+#Record	6	1800		
+#Record	7	1800				
+#Record	8	1800				
+#Record	9	1800				
+#Record	10	1800				
+#Record	11	1800				
+#Record	12	1800				
+#Record	13	1800				
+#Record	14	1800				
+#Record	15	1800				
+#Record	16	1800				
+#Record	17	1800				
+#Record	18	1800				
+#Record	19	1800				
+#Record	20	1800				
+#Record	21	1800				
+#Record	22	1800				
+#Record	23	1800				
+#Record	24	1800				
+#Record	25	1800				
+#Record	26	1800				
+#Record	27	1800				
+#Record	28	1800				
+#Record	29	1800				
+#Record	30	1800				
+#Record	31	1800				
+#Record	32	1800				
+#Record	33	1800				
+#Record	34	1800				
+#Record	35	1800				
+#Record	36	1800				
+#Record	37	1800				
+#Record	38	1800				
+#Record	39	1800				
+#Record	40	1800				
+						
+						
+#Table	ByLevelDiff					
+#ColumnType	WORD	WORD				
+#ColumnName	LevelDiff	Bonus				
+
+#Record	-150	0				
+
+#Record	-30	0				
+#Record	-29	200				
+#Record	-28	400				
+#Record	-27	600				
+#Record	-26	800				
+#Record	-25	1000				
+#Record	-24	1200				
+
+#Record	-10	1200				
+#Record	-9	1200				
+#Record	-8	1200				
+#Record	-7	1200				
+#Record	-6	1200				
+#Record	-5	1200				
+#Record	-4	1150				
+#Record	-3	1100				
+#Record	-2	1050				
+#Record	-1	1000				
+#Record	0	1000				
+#Record	1	800				
+#Record	2	600				
+#Record	3	400				
+#Record	4	300				
+#Record	5	200				
+#Record	6	150				
+#Record	7	100				
+#Record	8	50				
+#Record	9	10				
+#Record	10	5				
+#Record	11	0				
+
+#Record	150	0				
+						
+						
+#Table	StandardDeviation					
+#ColumnType	WORD	WORD				
+#ColumnName	LowerBound100	HandicapRate				
+#Record	0	1000	
+#Record	1501	800	
+#Record	1601	600				
+#Record	1701	400				
+#Record	1801	200				
+#Record	1901	0	
+						
+#end						

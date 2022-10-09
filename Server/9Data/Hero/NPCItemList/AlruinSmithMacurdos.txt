@@ -1,0 +1,123 @@
+
+#ignore	\o042			
+#exchange	#	\x20		
+
+																																		
+#Table	Tab00	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	SerpentSword	-	-	-	-	-																											
+#Record	1	GiantSword	-	-	-	-	-																											
+#Record	2	GiantAxe	-	-	-	-	-																											
+																																		
+#Table	Tab01	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	MightyPlateBoots	MightyPlateHelmet	MightyPlatePants	MightyPlateArmor	HeaterShield	-																											
+																																		
+#Table	Tab02	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	GiantMace	-	-	-	-	-																											
+#Record	1	GiantHammer	-	-	-	-	-																											
+																																		
+#Table	Tab03	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	HolyBoots	HolyHelmet	HolyPants	HolyArmor	HolyShield	-																											
+																																		
+#Table	Tab04	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	GiantBow	-	-	-	-	-																											
+#Record	1	GiantCrossBow	-	-	-	-	-																											
+																																		
+#Table	Tab05	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	DarknessBoots	DarknessHat	DarknessPants	DarknessArmor	-	-																											
+																																		
+#Table	Tab06	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	GiantStaff	-	-	-	-	-																											
+#Record	1	GiantWand	-	-	-	-	-																											
+																																		
+#Table	Tab07	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	wisdomBoots	wisdomHat	wisdomPants	wisdomShirt	-	-																											
+																																		
+#Table	Tab08	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	RedeyeClaw	-	-	-	-	-																											
+#Record	1	RedeyeDoubleSword	-	-	-	-	-																											
+																																		
+#Table	Tab09	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	OrdoBoots	OrdoHood	OrdoPants	OrdoArmor	-	-																											
+																																		
+#Table	Tab10	
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																											
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05																											
+#Record	0	-	-	-	-	-	-																											
+#Record	1	-	-	-	-	-	-																											
+																																		
+#End																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+																																		
+	0																																	
+	1																																	
+	2																																	
+	3																																	

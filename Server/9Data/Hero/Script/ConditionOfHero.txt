@@ -1,0 +1,27 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	Intro0	欢迎未來的英雄们.		
+#Record	Intro1	这个国家正处于危机之中,非常需要大家帮助.		
+#Record	Intro2	尽情发挥你们的才能吧		
+#Record	Intro3	对了,这个地方不可以使用生命石和魔法石.		
+#Record	Intro4	不过这矿石里藏着药水,大家可以找找看.		
+				
+#Record	DualStart	战斗开始!!		
+				
+#Record	DualStop	战斗结束!停止所有动作!!		
+				
+#Record	DualResult	第一名%s,第二名%s,第三名%s.以上3位可以获得特定的奖品.		
+				
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				
+

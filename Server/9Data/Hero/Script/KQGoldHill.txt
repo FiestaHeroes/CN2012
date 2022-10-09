@@ -1,0 +1,41 @@
+
+#ignore	\o042		
+#exchange	#	\x20	
+
+#Table	Script			
+#ColumnType	INDEX	STRING[128]		
+#ColumnName	ScrIndex	ScrString		
+				
+#Record	KQStart60	60秒后,王国任务即将开始.		
+#Record	KQStart30	30秒后,王国任务即将开始.		
+#Record	KQStart20	20秒后,王国任务即将开始.		
+#Record	KQStart10	10秒后,王国任务即将开始.		
+#Record	KQStart5	5秒后,王国任务即将开始.		
+				
+#Record	Intro0	哈哈哈....你们这些愚昧的家伙,这里根本没有你们要找的黄金.		
+#Record	Intro1	哈哈哈....这里是为了引诱你们上钩的陷阱,现在已经被我的部下包围了.		
+#Record	Intro2	哈哈哈....你们不来还真没意思,告诉你们一个秘密,我把钥匙藏在矿石里面,看你们能不能找到.		
+				
+#Record	FirstGateOpen	哈哈哈....找钥匙可不是那么容易的事情.仔细在矿石的隙缝里找找看,不要急哦～哈哈哈～		
+				
+#Record	SecondGateOpen	哈哈哈....我的部下是不是妨碍你们找钥匙了？我只不过吩咐他们给你们按摩一下,哈哈哈～		
+				
+#Record	ThirdGateOpen	哈哈哈....已经等得不耐烦了,还停留在最高层吗？你们还配叫做远征队吗？哈哈哈～		
+				
+#Record	LastGateOpen0	哈哈哈....快点下来....什么时候跑到这里来了？		
+#Record	LastGateOpen1	哈哈哈....有我在这里,你们呢....就別想逃出去.		
+				
+
+#Record	ItemDrop	隐藏的钥匙被发现了,请持有钥匙的人,前往开启冰封之门.		
+				
+
+#Record	KQReturn30	30秒后离开王国任务		
+#Record	KQReturn20	20秒后离开王国任务		
+#Record	KQReturn10	10秒后离开王国任务		
+#Record	KQReturn5	5秒后离开王国任务		
+				
+#End				
+				
+				
+				
+				
