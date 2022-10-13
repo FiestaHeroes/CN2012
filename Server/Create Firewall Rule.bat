@@ -1,1 +1,0 @@
-netsh advfirewall firewall add rule name="_CN2012" dir=in action=allow protocol=TCP localport=9010,9013,9016,9019,9022,9025
