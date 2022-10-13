@@ -1,174 +1,214 @@
-;	Shine Monster Regeneration Table			V0.3														
-;	Monster Group																	
-#ignore	\o042																	
-#exchange	#	\x20																
-																		
-#table	MobRegenGroup																	
-;		GroupID	Family	Regen Region														
-;			Y/N	X	Y	X	Y	Range/Degree										
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
-#record		ValDn01_001	N	2064	10235	0	0	259										
-#record		ValDn01_002	N	3843	10296	0	0	302										
-#record		ValDn01_003	N	3278	6736	0	0	302										
-#record		ValDn01_004	N	3256	10701	0	0	302										
-#record		ValDn01_005	N	4350	8438	0	0	302										
-#record		ValDn01_006	N	1570	8979	0	0	302										
-#record		ValDn01_007	N	1655	8405	0	0	302										
-#record		ValDn01_008	N	2957	6937	0	0	302										
-#record		ValDn01_009	N	1940	5743	0	0	302										
-#record		ValDn01_010	N	2428	5450	0	0	302										
-#record		ValDn01_011	N	1916	4530	0	0	302										
-#record		ValDn01_012	N	1355	4723	0	0	302										
-#record		ValDn01_013	N	4384	2518	0	0	617										
-#record		ValDn01_014	N	2765	8820	0	0	302										
-#record		ValDn01_015	N	3719	2881	0	0	302										
-#record		ValDn01_016	N	4830	2406	0	0	302										
-#record		ValDn01_017	N	4315	3666	0	0	302										
-#record		ValDn01_021	N	6686	6882	0	0	302										
-#record		ValDn01_022	N	7358	3446	0	0	302										
-#record		ValDn01_023	N	5995	7121	0	0	302										
-#record		ValDn01_024	N	7688	3815	0	0	302										
-#record		ValDn01_025	N	8517	2621	0	0	302										
-#record		ValDn01_026	N	11422	4584	0	0	302										
-#record		ValDn01_027	N	10308	4816	0	0	302										
-#record		ValDn01_028	N	10265	5283	0	0	302										
-#record		ValDn01_029	N	8913	7825	0	0	302										
-#record		ValDn01_030	N	8059	8316	0	0	302										
-#record		ValDn01_031	N	8316	8583	0	0	302										
-#record		ValDn01_032	N	9219	8150	0	0	302										
-#record		ValDn01_033	N	8445	5588	0	0	302										
-#record		ValDn01_034	N	8000	2650	0	0	302										
-#record		ValDn01_035	N	5511	4745	0	0	302										
-#record		ValDn01_036	N	4988	4897	0	0	302										
-#record		ValDn01_037	N	8601	5885	0	0	302										
-#record		ValDn01_041	N	10735	10272	0	0	302										
-#record		ValDn01_042	N	6522	5845	0	0	302										
-#record		ValDn01_043	N	4892	6128	0	0	302										
-#record		ValDn01_044	N	4705	5818	0	0	302										
-#record		ValDn01_045	N	6452	4962	0	0	302										
-#record		ValDn01_046	N	5338	6340	0	0	302										
-#record		ValDn01_047	N	11043	8139	0	0	302										
-#record		ValDn01_048	N	11668	7947	0	0	302										
-#record		ValDn01_049	N	10508	2208	412	132	58										
-#record		ValDn01_050	N	10863	1170	414	73	-16										
-#record		ValDn01P01	N	2936	8037	0	0	296										
-#record		ValDn01P02	N	3835	9410	0	0	261										
-#record		ValDn01P03	N	6477	7913	0	0	149										
-#record		ValDn01P04	N	4994	4061	0	0	331										
-#record		ValDn01P05	N	10937	6559	0	0	198										
-#record		ValDn01P06	N	9378	8741	0	0	240										
-#record		ValDn01P07	N	7795	5436	266	162	-30										
-#record		ValDn01P08	N	1402	4866	0	0	436										
-#record		ValDn01P09	N	7916	2895	0	0	521										
-#record		PBox01	N	5391	5214	0	0	302										
-#record		ValDn01Guard01	N	1604	10401	0	0	13										
-#record		ValDn01Guard02	N	1897	10742	0	0	13										
-#record		ValDn01_C1_01	N	6214	4785	0	0	35										
-#record		ValDn01_C2_01	N	5652	5361	0	0	35										
-#record		ValDn01_C3_01	N	5077	6345	0	0	14										
-#record		ValDn01_C4_01	N	5865	6924	0	0	28										
-																		
-																		
-																		
-#table	MobRegen																	
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
-#record		ValDn01_001	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_001	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_002	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_002	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_003	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_003	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_004	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_004	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_005	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_005	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_006	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_006	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_007	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_007	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_008	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_008	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_009	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_009	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_010	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_010	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_011	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_011	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_012	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_012	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_013	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_013	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_014	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_014	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_015	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_015	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_016	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_016	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_017	D_Prock	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_017	D_MarloneFighter	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_021	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_021	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_022	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_022	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_023	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_023	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_024	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_024	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_025	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_025	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_026	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_026	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_027	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_027	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_028	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_028	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_029	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_029	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_030	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_030	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_031	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_031	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_032	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_032	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_033	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_033	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_034	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_034	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_035	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_035	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_036	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_036	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_037	D_MarloneArcher	1	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_037	D_MarloneMegaton	2	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_041	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_042	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_043	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_044	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_045	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_046	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_047	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_048	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_049	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01_050	MarloneCaptainA	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P01	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P02	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P03	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P04	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P05	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P06	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P07	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P08	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		ValDn01P09	MINE3	3	0	22	15	29	-8	15	-4	19	9	25	11	29	0	
-#record		PBox01	PresentBox7	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		ValDn01Guard01	GuardMihael01	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
-#record		ValDn01Guard02	GuardMihael01	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
-#record		ValDn01_C1_01	Marlone	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
-#record		ValDn01_C2_01	Marlone	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
-#record		ValDn01_C3_01	Marlone	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
-#record		ValDn01_C4_01	Marlone	1	0	180	90	270	-150	90	-80	126	80	234	150	270	0	
-																		
-#end																		
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		ValDn01Mo01	N	3570	10463	575	189	34
+#record		ValDn01Mo02	N	1800	8124	0	0	302
+#record		ValDn01Mo03	N	1847	9179	0	0	420
+#record		ValDn01Mo04	N	2684	8806	0	0	386
+#record		ValDn01Mo05	N	4049	8758	368	143	-83
+#record		ValDn01Mo06	N	3698	6799	183	543	37
+#record		ValDn01Mo07	N	1735	5102	0	0	723
+#record		ValDn01Mo08	N	4008	3345	251	581	42
+#record		ValDn01Mo09	N	3055	7841	105	488	-137
+#record		ValDn01Mo10	N	8247	2912	0	0	582
+#record		ValDn01Mo11	N	10320	1445	472	51	53
+#record		ValDn01Mo12	N	11139	1815	102	335	-36
+#record		ValDn01Mo13	N	10514	2240	82	363	-35
+#record		ValDn01Mo14	Y	11018	1199	223	99	-33
+#record		ValDn01Mo15	Y	10285	5052	0	0	204
+#record		ValDn01Mo16	Y	11547	8033	213	130	28
+#record		ValDn01Mo17	N	10415	7739	255	347	-28
+#record		ValDn01Mo18	Y	8290	8591	0	0	205
+#record		ValDn01Mo19	N	9930	9434	561	171	99
+#record		ValDn01Mo20	N	10482	10128	574	95	0
+#record		ValDn01Mo21	N	8128	5673	0	0	358
+#record		ValDn01Mo22	Y	5278	4550	331	144	32
+#record		ValDn01Mo23	N	6035	6780	0	0	546
+#record		ValDn01Mo24	N	6730	5791	370	417	-5
+#record		ValDn01Mo25	N	5125	5399	633	285	28
+#record		ValDn01Mo26	Y	4815	6294	0	0	297
+#record		ValDn01Mo27	N	1971	10374	485	236	38
+#record		ValDn01Mo28	N	9539	3069	488	99	5
+#record		ValDn01Mo29	N	8588	6624	59	541	-7
+#record		ValDn01Mo30	Y	9144	5790	0	0	142
+#record		ValDnM31	N	6233	2759	1129	111	-7
+#record		ValDnM32	N	5795	6126	0	0	1745
+#record		ValDnM33	N	10094	4294	2416	2624	-1
+#record		ValDnM34	N	3232	9877	573	138	42
+#record		ValDnM35	N	4958	8709	161	670	46
+#record		ValDnM36	Y	1188	6738	183	189	33
+#record		ValDnM347	N	2944	6868	339	191	44
+#record		ValDnM38	N	9582	6743	108	699	56
+#record		ValDnM349	N	4986	2564	140	604	55
+#record		ValDnM40	Y	7533	3692	0	0	253
+#record		ValDn01Mo41	Y	10353	9689	0	0	121
+#record		ValDn01Mo42	N	10803	1131	301	51	-7
+#record		ValDn01Mo43	N	7178	3089	60	537	-3
+#record		ValDn01Mo44	Y	6237	4986	0	0	254
+#record		ValDn01Mo45	Y	2527	5213	0	0	212
+#record		ValDn01Mo46	N	1687	7266	0	0	226
+#record		ValDn01Mo47	N	3089	3885	532	98	34
+#record		ValDn01Mo48	Y	4289	2731	0	0	205
+#record		ValDn01Mo49	Y	9183	7772	0	0	191
+#record		ValDn01Mo50	N	8159	7965	214	336	-30
+#record		ValDn01Mo60	N	8925	8378	0	0	633
+#record		ValDn01Mo5	N	11261	7456	0	0	128
+#record		ValDn01Mo53	N	11341	6933	0	0	135
+#record		ValDn01Mo55	N	11153	4913	0	0	871
+#record		ValDn01Mo56	N	10697	6090	174	386	18
+#record		ValDn01Mo57	N	10302	3491	0	0	135
+#record		ValDn01Mo58	N	3181	8776	0	0	2033
+#record		ValDn01Mo59	N	11254	8094	405	210	15
+#record		ValDn01Mo61	N	5939	8854	324	50	30
+#record		ValDn01Mo62	N	6497	7922	54	368	6
+#record		ValDn01Mo64	N	4622	8917	0	0	373
+#record		ValDn01Mo65	N	4162	7868	0	0	282
+#record		ValDn01P01	N	2936	8037	0	0	296
+#record		ValDn01P02	N	3835	9410	0	0	261
+#record		ValDn01P2	N	6477	7913	0	0	149
+#record		ValDn01P04	N	4994	4061	0	0	331
+#record		ValDn01P05	N	10937	6559	0	0	198
+#record		ValDn01P06	N	9378	8741	0	0	240
+#record		ValDn01P07	N	7795	5436	266	162	-30
+#record		ValDn01P08	N	1402	4866	0	0	436
+#record		ValDn01P09	N	7916	2895	0	0	521									
+#record		ValDn01Mo66	N	5601	6303	0	0	107									
+#record		ValDn01Mo67	N	6437	5958	0	0	107									
+#record		ValDn01Mo68	N	5544	5373	0	0	107									
+#record		ValDn01Mo69	N	4782	3208	511	302	33									
+#record		ValDn01Mo70	N	1690	5848	0	0	149									
+#record		PBox	N	3098	3938	2454	1331	39									
+#record		Pbox1	N	9724	8581	2301	1927	0									
+
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		ValDn01Mo01	D_Kebing	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo01	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo02	D_Kebing	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo02	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo03	D_Kebing	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo03	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo04	D_Kebing	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo04	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo05	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo05	D_MageBook	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo06	D_TombRaider	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo06	D_MageBook	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo07	D_MageBook	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo07	D_TombRaider	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo08	D_MageBook	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo08	D_TombRaider	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo09	D_TombRaider	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo09	D_MageBook	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo10	D_MarloneArcher	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo10	D_MarloneMegaton	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo11	D_MarloneArcher	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo11	D_MarloneMegaton	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo12	D_MarloneArcher	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo12	D_MarloneMegaton	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo13	D_MarloneArcher	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo14	D_MarloneMegaton	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo14	D_kingMarlone	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo15	D_MarloneMegaton	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo15	D_MarloneFighter	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo16	D_MarloneMegaton	3	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo16	D_kingMarlone	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo17	D_MarloneMegaton	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo18	D_MarloneFighter	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo18	D_MarloneMegaton	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo19	D_MarloneFighter	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo20	D_MarloneFighter	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo21	D_MarloneFighter	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo22	D_MageBook	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo23	D_MarloneArcher	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo23	D_MarloneFighter	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo24	D_MarloneFighter	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo24	D_MarloneArcher	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo25	D_MarloneMegaton	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo26	D_kingMarlone	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo26	D_MarloneFighter	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo27	D_Kebing	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo28	D_MarloneArcher	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo28	D_MarloneMegaton	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo29	D_MarloneFighter	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo30	D_MarloneMegaton	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM31	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM32	PresentBox4	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM33	PresentBox4	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM34	D_Kebing	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM34	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM35	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM35	D_MageBook	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM36	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM347	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM38	D_MarloneArcher	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM38	D_MarloneMegaton	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM349	D_MageBook	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM349	D_TombRaider	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM40	D_kingMarlone	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDnM40	D_MarloneFighter	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo41	D_kingMarlone	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo41	D_MarloneArcher	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo41	D_MarloneFighter	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo42	D_MarloneFighter	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo43	D_MarloneArcher	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo44	D_kingMarlone	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo44	D_MarloneArcher	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo44	D_MarloneMegaton	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo45	D_kingMarlone	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo45	D_MarloneArcher	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo46	D_Kebing	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo46	D_TombRaider	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo47	D_MageBook	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo48	D_MageBook	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo48	D_TombRaider	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo49	D_MarloneMegaton	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo49	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo50	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo50	D_MarloneMegaton	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo60	D_MarloneMegaton	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo60	D_MarloneFighter	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo5	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo53	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo55	D_MarloneMegaton	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo55	D_MarloneFighter	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo56	D_MarloneArcher	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo56	D_MarloneMegaton	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo57	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo58	PresentBox4	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo59	D_MarloneMegaton	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo59	D_MarloneFighter	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo61	D_TombRaider	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo62	D_MageBook	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo64	D_TombRaider	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo65	D_MageBook	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P01	MINE2	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P02	MINE3	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P2	MINE1	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P04	MINE1	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P05	MINE1	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P06	MINE3	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P07	MINE3	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P08	MINE2	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01P09	MINE2	1	0	300	296	304	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo66	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo67	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo68	D_MarloneArcher	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo69	D_TombRaider	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		ValDn01Mo70	D_TombRaider	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		PBox	PresentBox4	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+#record		Pbox1	PresentBox4	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4
+
+#end																	

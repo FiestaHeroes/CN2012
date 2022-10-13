@@ -6,8 +6,8 @@
 #ColumnType	INDEX	STRING[128]	
 #ColumnName	ScrIndex	ScrString	
 
-#Record	HelgaBuff	"헬가에게 에너지가 주입되고 있습니다"
-#Record	Invader	"침입자다!!!"	
-#Record	HelgaWake	"헬가님을 깨워라!, 헬가님에게 힘을!!!"
+#Record	HelgaBuff	"Be careful, the energy is being injected into Helga!"
+#Record	Invader	"Intruder!"	
+#Record	HelgaWake	"The soldiers have awakened Helga, beware of its power!!"
 
 #END			

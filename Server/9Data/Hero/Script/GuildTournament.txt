@@ -2,11 +2,11 @@
 #ignore	\o042		
 #exchange	#	\x20	
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-#Record	KQReturn30	30秒后离开王国任务		
-#Record	KQReturn20	20秒后离开王国任务		
-#Record	KQReturn10	10秒后离开王国任务		
-#Record	KQReturn50	5秒后离开王国任务		
-#End				
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	KQReturn30	Moveing to Elderine in 30 seconds.	
+#Record	KQReturn20	Moveing to Elderine in 20 seconds.	
+#Record	KQReturn10	Moveing to Elderine in 10 seconds.	
+#Record	KQReturn50	Moveing to Elderine in 5 seconds.	
+#End			

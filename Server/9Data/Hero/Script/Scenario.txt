@@ -2,109 +2,129 @@
 #ignore	\o042		
 #exchange	#	\x20	
 
-#Table	Script					
-#ColumnType	INDEX	STRING[128]				
-#ColumnName	ScrIndex	ScrString				
+#Table	Script				
+#ColumnType	INDEX	STRING[128]			
+#ColumnName	ScrIndex	ScrString			
 
-#Record	Mara00	Ã»ÓÐÊ±¼äÀíÄãÕâÖÖÐ¡¹íÍ·.ÔÙ¼û!	
-#Record	Mara01	µ½´¦Ðû³ÆÊÇºÕÄáË¹Ì½ÏÕÍÅµÄÄÇÐ©Ð¡¹í...	
-#Record	Mara02	½ñÌìÄãÃÇ½«»á³ÉÎªÎÒ½£ÏÂµÄÊ¬Ìå,´ò°¡~~	
-#Record	Mara03	ßÞ~ ÔõÃ´»áÕâÃ´¿ÕÐé...ÎÒ±¾À´ÎÞÂÛÈçºÎ¶¼ÏëÎªÂèÂè±¨³ðµÄ ßÞ~ ßÀ~ (ÂêÀ­¹òÏÂÍÂÑª)	
-#Record	Robin01	ÂêÀ­! Äã¶ÔÂÞ¶÷Õò»¹»³ÓÐÔ¹ºÞÂð?	
-#Record	Mara04	ÄãÊÇÂæ~~±ö!! ºôºôºô! ¿´µ½ÎÒÕâ¸öÑù×ÓÄãÐÄÀïÊæ·þÂð?	
-#Record	Robin02	Äã,ÔõÃ´»á±ä³ÉÕâÃ´ºÝ¶¾µÄ¸´³ð»¯ÉíÄØ? ÎÒµ±È»ÖªµÀÄãµÄÍ´Èô,µ«ÄãµÄ·½·¨²»¶Ô.	
-#Record	Mara05	ºÃÁË~~ ÄãÊ²Ã´¶¼²»ÖªµÀ,²»ÒªÔÚÄÇÀïÒ»Ö±Äî.ÈôÄãÕæµÄÄÜÉÔÎ¢Ìå»áÎÒ¸úÎÒ¼Ò×åµÄÍ´¿à, Äã¾Í¸øÎÒ±Õ×ì.	
-#Record	Mara06	ËäÈ»½ñÌìÊ§°ÜÁË,µ«ÎÒÒ»¶¨»á~~ °ÑÄãÃÇ¶ªÈë¸´³ðµÄµØÓüÉîÔ¨Àï.	
-#Record	Robin03	ÂêÀ­!! (ÕâÊÇ¶àÃ´±¯°§µÄÃüÔË×÷Åª...)	
-#Record	Mara20	¸ã²»Çå×Ô¼ºµÄÖØÁ¿,»¹ÔÚÄÇÀïÏùÕÅ... »ØÈ¥ÔÙ³ÔÒ»Ð©ÂèÂèµÄÄÌ»ØÀ´..	
+#Record	Mara00	ŒN’B‚Ì‚æ‚¤‚È‚±‚í‚Á‚Ï‚Æ‚±‚êˆÈã—V‚ñ‚Å‚¢‚éƒqƒ}‚Í‚È‚¢¡ —§‚¿‹Ž‚êI	
+#Record	Mara01	‚¨‘O’B‚ªƒwƒjƒX–`Œ¯’c‚Æ‘›‚®ŽÒ‚½‚¿‚©I	
+#Record	Mara02	¡¤Ž„‚ÌŒ•‚Ì‘O‚É‚¨‘O‚ç‚ÌŽ€‘Ì‚ðÏ‚Ýã‚°‚Ä‚â‚é! ‚©‚©‚Á‚Ä‚±‚¢!	
+#Record	Mara03	"‚¤‚Á¤‚±‚Ì‚æ‚¤‚É‹•‚µ‚¢‚±‚Æ‚ª... 
+•ê‚³‚ñ‚Ì•œQ‚ð...‚µ‚æ‚¤‚Æ‚µ‚½‚ª...‚¤‚Á(ƒ}[ƒ‰[‚ª‚Ð‚´‚Ü‚¸‚¢‚ÄŒŒ‚ð“f‚­)"	
+#Record	Robin01	ƒ}[ƒ‰[I‚Ü‚¾ƒ‹[ƒƒ“‚Ì‘º‚É‘Î‚·‚é¦‚Ý‚ªŽc‚Á‚Ä‚¢‚é‚Ì‚©H	
+#Record	Mara04	ƒƒrƒ“IIƒtƒtIŽ„‚Ì‚±‚¤‚¢‚¤Žp‚ðŒ©‚é‚Æ‹C‚ªŠy‚É‚È‚é‚©H	
+#Record	Robin02	"‚È‚ºl‚Ì‰¼–Ê‚ð‚©‚Ô‚è‚»‚ñ‚È‚É‚ ‚­‚Ç‚¢•œQ‚Ì‰»g‚É‚È‚Á‚½‚ñ‚¾H  
+ŒN‚Ì‹ê’É‚Í‰ð‚ç‚È‚­‚à‚È‚¢‚ª¤‚»‚ê‚Å‚àŒN‚Ì‚â‚è•û‚Í³‚µ‚­‚È‚©‚Á‚½..."	
+#Record	Mara05	"‚ ‚È‚½‚É‰½‚ª•ª‚©‚é‚Æ‚¢‚¤‚ñ‚¾... 
+‚ ‚È‚½‚ªŽ„’B‰Æ‘°‚Ì‹ê’É‚ð­‚µ‚Å‚à—‰ð‚µ‚Ä‚­‚ê‚é‚Ì‚È‚ç‚Î¤‚»‚Ì‚Ü‚Ü–Ù‚Á‚Ä‚¢‚Ä..."	
+#Record	Mara06	"¡“ú‚Í‚±‚¤‚µ‚Ä”s‚ê‚½‚ª 
+Ž„‚Í•K‚¸‹A‚Á‚Ä‚«‚ÄŒN‚½‚¿‚ð•œQ‚Ì’n–‚É—Ž‚Æ‚·‚¾‚ë‚¤¡"	
+#Record	Robin03	ƒ}[ƒ‰[I(‚±‚ê‚Í¤‚È‚ñ‚Æ”ß‚µ‚¢‰^–½‚Ì‚¢‚½‚¸‚ç‚È‚Ì‚©...)	
+#Record	Mara20	g‚Ì’ö‚à’m‚ç‚È‚¢‚Ó‚´‚¯‚½‚â‚Â‚ß...	
 			
 			
 
 			
-#Record	Marlone00	¹þ¹þ¹þ! ÄãÊÇÄÇÓ×È®µÄÁìµ¼Âð? ¿´ÆðÀ´Ö»²»¹ýÊÇ¸öº¢×Ó,»Ø¼ÒÔÙ³ÔµãÂèÂèµÄÄÌ»ØÀ´...	
-#Record	Marlone01	Ê²Ã´ÊÂÕâÃ´³³! ÓÐÊ²Ã´ÊÂ? Ê²Ã´? °¬µÂÁÖµÄÊ¿±øÃÇ¹¥´ò¹ýÀ´... ¹þ¹þ¹þ! ÈË¼Ò¾ÍËµÓ×È®²»ÖªÀÏ»¢µÄ¿ÉÅÂ,ÎÒ¾ÍÇ××ÔÀ´½â¾öËûÃÇ°É.	
-#Record	Marlone02	ÄãÊÇÄÇ¸öÍþÐ²°¬µÂÁÖµÄÉ½ÔôÂêÂØÂð?	
-#Record	Marlone03	¹þ¹þ¹þ! ÄãÊÇÄÇÓ×È®µÄÁìµ¼Âð? ¿´ÆðÀ´Ö»²»¹ýÊÇ¸öº¢×Ó,»Ø¼ÒÔÙ³ÔµãÂèÂèµÄÄÌ»ØÀ´...	
-#Record	Marlone04	ÎÒÔõÃ´»á... ±»ÄãÃÇÕâÐ©º¢×Ó... (Ì¯×øÔÚµØÉÏÍû×ÅÌì¿Õ)	
-#Record	Marlone05	¸ç¸ç! ¸ç¸ç~~ ¿ìµãÆðÀ´~ ÆðÀ´À²! ÏÖÔÚµ¹ÏÂÔõÃ´Îª¿ÉÁ¯µÄÂèÂè±¨³ð... ¿ìµã~~ Æð~~ À´~~	
-#Record	Marlone06	ÂêÀ­~~¶Ô²»Æð.ÎÒµÄÄÜÁ¦ºÃÏñ¾ÍÖ»ÄÜ... µ½´Ë...	
-#Record	Marlone07	(ÆøµÃÒ§ÑÀÇÐ³Ý) ¾ø¶Ô²»»áÔ­ÁÂÄãÃÇ... ¾ø¶Ô²»»á...	
-#Record	Marlone08	¾¹È»ÎÒ»áÊä... ÆøËÀÎÒÁË¿È~~ (Á÷×ÅÑªµ¹ÏÂ)	
-#Record	Marlone09	àÅ~ Õâ¸ö³¡ºÏ²»ÖªµÀÎÒ¸Ã²»¸Ã½éÈë... ÂêÀ­~~ ÂêÂØ~~ ÏÖÔÚ¿ªÊ¼ÌýºÃÎÒËµµÄ»°...ÎÒÒªËµÒ»¸öÄãÃÇËù²»ÖªµÀµÄ°®¶ûÞ±ÁÕÓë¿¨À­Ë¹µÄ¹ÊÊÂ.	
-#Record	Marlone10	°®¶ûÞ±ÁÕµ±Ê±ÊÇÂÞ¶÷ÕòÀïÉîÊÜÔÞÓþµÄÐÞÅ®, Ëýò¯³ÏµÄÐÅÑöÓë·îÏ×¾«Éñ,Ê¹ÂÞ¶÷ÕòÀïµÄËùÓÐÇàÄêÎªÖ®×ÅÃÔ.	
-		¾ÍÔÚÕâÖ®ÖÐ, ËýÓëÃÕÒ»ÑùµÄÄÐ×Ó-¿¨À­Ë¹×¹ÈëÇéÍø, ¾ö¶¨Òª·ÅÆúÒ»ÇÐ.µ«ÊÇÐÒ¸£²¢Ã»ÓÐÎ¬³ÖÌ«¾Ã...	
-		Í»ÈçÆäÀ´µÄ¿¨À­Ë¹Ê§×Ù... Óë¿ÝÎíÉ­ÁÖµÄ¹ÖÒì×Ú½Ì¼¯ÍÅµÇ³¡... 	
-		ÂÞ¶÷ÕòÑ©ÉÏ¼ÓËªµÄÓÖ¹ÎÆðÁË×çÖä·ç±©, ´åÃñÃÇÉîÐÅ¹ÖÒì×Ú½Ì¼¯ÍÅÒª»ÙÃðÂÞ¶÷Õò. 	
-		µ«ÊÇ,¸üÈÃ´åÃñ¸Ðµ½²»°²µÄÊÇ... ¿¨À­Ë¹ÊÇ¹ÖÒì×Ú½Ì¼¯ÍÅµÄÊ×ÄÔÕâ¸öÏûÏ¢.	
-		µ½µ×ÊÇË­... ÔÚ´«ÄÇÐ©Ã»¸ù¾ÝµÄÒ¥ÑÔ?...	
-#Record	Marlone11	ºÜ±§Ç¸... ´«ÄÇÒ¥ÑÔµÄ¾ÍÊÇÎÒ... (µÍ×ÅÍ·) ºÜ¾ÃÖ®Ç°ÎÒ¾Í°®Ä½×Å°®¶ûÞ±ÁÕ...  	
-#Record	Marlone12	 Í»È»Ìýµ½ÎÒËù°®Ä½µÄ°®¶ûÞ±ÁÕÒª¸ú¿¨À­Ë¹½á»éµÄÏûÏ¢,¶Ê»ðÃÉ×¡ÁËÎÒµÄË«ÑÛ... ¾ÍÔÚ¿¨À­Ë¹Ê§×ÙµÄµÚ¶þÌì	
-		 Í»È»Ìýµ½ÎÒËù°®Ä½µÄ°®¶ûÞ±ÁÕÒª¸ú¿¨À­Ë¹½á»éµÄÏûÏ¢,¶Ê»ðÃÉ×¡ÁËÎÒµÄË«ÑÛ... ¾ÍÔÚ¿¨À­Ë¹Ê§×ÙµÄµÚ¶þÌì	
-		ÎÒÖÆÔìÁËËûÍ¶ÉíÓÚ¹ÖÒì×Ú½ÌÍÅÌå,²¢»á×çÖäÂÞ¶÷ÕòµÄ¼ÙÏûÏ¢.µ«ÊÇ, »Ñ»°»áÔÙÉú»Ñ»°,	
-#Record	Marlone13	¾ÍÔÚÎÒÀë¿ª³ÇÕòµÄ¶ÌÔÝÊ±¼äÀï, °®¶ûÞ±ÁÕ±³×ÅÓë¶ñÄ§Ö®Ô´½Ó´¥µÄ×ïÃû,±»ÓÀÔ¶ÇýÖð³öÁËÂÞ¶÷Õò.	
-		ÎÒËäÈ»ºÜÏë¸ú´åÃñÌ¹³ÏËµ, ÕâÒ»ÇÐ¶¼ÊÇÎÒÄóÔìµÄ»ÑÑÔ.µ«ÄÇÒÑ¾­ÊÇ°®¶ûÞ±ÁÕÀë¿ªÂÞ¶÷ÕòÒÔºóµÄÊÂ... 	
-		ÎÒÖ»ÄÜ¼êÄ¬... ÂêÀ­! ÂêÂØ! ·Ç³£±§Ç¸.ÇëÄãÔ­ÁÂÎÒÕâÂæ±ö°É....	
+#Record	Marlone00	ƒnƒnƒnIŒN‚ªŽR‘¯“¢”°’c‚ÌƒŠ[ƒ_[‚©H‚Ü‚¾Žá‘¢‚É‰ß‚¬‚ñ‚ÈB¡‚·‚®‚É‰Æ‚É‹A‚Á‚Äƒ}ƒ}‚ÌƒIƒbƒpƒC‚Å‚àˆù‚ñ‚Å‚«‚½‚ç‚Ç‚¤‚¾I	
+#Record	Marlone01	"‰½‚¾‚¤‚é‚³‚¢I‰½‚Ì‘›‚¬‚¾H
+‰½‚¾HƒGƒ‹ƒhƒŠƒ“‚Ì•”‰º‚½‚¿‚ªU‚ß‚Ä‚«‚½EEE
+ƒnƒnƒnIƒ}[ƒƒ“ŽR‘¯’cƒAƒWƒg‚Ì‹°‚ë‚µ‚³‚ª‰ð‚ç‚È‚¢‚Æ‚Í¥¥¡Ž„‚ª’¼Ú‚â‚Â‚ç‚Ì‘ŠŽè‚ð‚µ‚Ä‚â‚é‚©B"	
+#Record	Marlone02	ŒN‚ªƒGƒ‹ƒ_ƒŠƒ“‚ð‹º‚©‚·ŽR‘¯‰¤‚¶‚á‚È‚Ì‚©H	
+#Record	Marlone03	ƒnƒnƒnIŒN‚ªŽR‘¯“¢”°’c‚ÌƒŠ[ƒ_[‚©H‚Ü‚¾Žá‘¢‚É‰ß‚¬‚ñ‚ÈB¡‚·‚®‚É‰Æ‚É‹A‚Á‚Äƒ}ƒ}‚ÌƒIƒbƒpƒC‚Å‚àˆù‚ñ‚Å‚«‚½‚ç‚Ç‚¤‚¾I	
+#Record	Marlone04	Ž„‚ª‰½ŒÌ... ‚¨‘O‚ç‚Ì‚æ‚¤‚ÈŽá‘¢‚É... (‚Ø‚½‚ñ‚ÆÀ‚èž‚ñ‚Å‹ó‚ð’­‚ß‚é)	
+#Record	Marlone05	"ŒZ‚³‚ñIŒZ‚³‚ñ~
+‹N‚«‚Ä~¡“|‚ê‚Ä‚µ‚Ü‚Á‚½‚çA‚©‚í‚¢‚»‚¤‚È‚¨•ê‚³‚ñ‚Ì‚½‚ß‚Ì•œQ‚Í‚Ç‚¤‚È‚é‚ÌEEE‹N‚«‚ÄI"	
+#Record	Marlone06	ƒ}[ƒ‰[\‚µ–ó‚È‚¢¡ Ž„‚ª‚Å‚«‚é‚Ì‚Í‚±‚±‚Ü‚Å‚¾...	
+#Record	Marlone07	â‘Î‹–‚³‚È‚¢...â‘Î‚É...	
+#Record	Marlone08	Ž„‚ª•‰‚¯‚é‚Æ‚Í... ‰÷‚µ‚¢... ƒKƒNƒb (ŒŒ‚ð—¬‚µ‚Ä“|‚ê‚é)	
+#Record	Marlone09	"‚¤‚Á¤‚¢‚Ü¤Ž„‚ªo‚é–‹‚Å‚È‚¢‚Ì‚Í‚í‚©‚é‚ªA‚¤‚¤‚Áƒ}[ƒ‰[‚æ¥¥¥¥¡‚©‚çŽ„‚Ì˜b‚ð‚æ‚­•·‚¯... 
+¡‚©‚çŒN‚½‚¿‚ª’m‚ç‚¸‚É‚¢‚½ƒGƒ‹ƒuƒŠƒ“‚ÆƒJƒ‰ƒX‚Ì˜b‚ð‚·‚é¡"	
+#Record	Marlone10	ƒGƒ‹ƒuƒŠƒ“‚Í’N‚ª‚È‚ñ‚ÆŒ¾‚Á‚Ä‚àƒ‹[ƒƒ“Å‚‚Ì–‚pŽtB‚»‚Ì[‚¢M‹ÂS‚Æ•òŽd¸_‚Í‚·‚×‚Ä‚Ìƒ‹[ƒƒ“‘º‚ÌŽáŽÒ‚½‚¿‚ÌS‚ð’D‚¤‚Ù‚ÇŒ£g“I‚¾‚Á‚½‚æ¡ ‚»‚¤‚±‚¤‚µ‚Ä‚¢‚éŠÔ‚ÉƒJƒ‰ƒX‚Æ‚¢‚¤Žá‚¢–‚pŽt‚Æˆ¤‚ÉŠ×‚Á‚½”Þ—‚Í‘S‚Ä‚ðŽÌ‚Ä‚ÄŒ‹¥‚ðŒˆS‚µ‚½‚ñ‚¾‚ë‚¤¡ ‚¾‚ª¤‚»‚ÌK•Ÿ‚Í’·‚­‚Í‘±‚©‚È‚©‚Á‚½...	
+		‚»‚¤‚±‚¤‚µ‚Ä‚¢‚éŠÔ‚ÉƒJƒ‰ƒX‚Æ‚¢‚¤Žá‚¢–‚pŽt‚Æˆ¤‚ÉŠ×‚Á‚½”Þ—‚Í‘S‚Ä‚ðŽÌ‚Ä‚ÄŒ‹¥‚ðŒˆS‚µ‚½‚ñ‚¾‚ë‚¤¡ ‚¾‚ª¤‚»‚ÌK•Ÿ‚Í’·‚­‚Í‘±‚©‚È‚©‚Á‚½...	
+		“Ë‘RƒJƒ‰ƒX‚Ìs•û•s–¾...‚»‚ê‚Æ–¶‰B‚ê‚ÌX‚Ì‚¨‚©‚µ‚È@‹³W’c‚Ì“oê... 	
+		‚»‚±‚ÉŽã‚è–Ú‚É‚½‚½‚è–Ú‚ÅAƒ‹[ƒƒ“‚Ì‘º‚ÉŽô‚¢‚Ì–\•—‚Ü‚Åƒtƒ‰ƒ“ƒXŒê‚Ì‘º‚ÌlXŠF‚ª‚¨‚©‚µ‚È@‹³W’c‚ªƒ‹[ƒƒ“‚Ì‘º‚ð”j‰ó‚·‚é‚ÆM‚¶Žn‚ß‚½¡ 	
+		‚¾‚ª¤‚±‚ê‚ç‚·‚×‚Ä‚ÌªŒ¹‚Æ‚È‚é‘º‚ÌlX‚ð•sˆÀ‚É‚³‚¹‚½‚à‚Ì‚Í...ƒJƒ‰ƒX‚ª‚¨‚©‚µ‚È@‹³W’c‚Ìe•ª‚Æ‚¢‚¤ƒfƒ}‚¾‚Á‚½¡	
+		‚¢‚Á‚½‚¢’N‚ª...‚»‚Ì‚æ‚¤‚È‚Þ‚È‚µ‚¢‚¤‚í‚³‚ð...	
+#Record	Marlone11	\‚µ–ó‚È‚¢...‰\‚ÌŽå‚Æ‚µ‚Ä‚·‚®‚É–¼æ‚èo‚ê‚Î‚æ‚©‚Á‚½... (“ª‚ð‰º‚°‚Ä) Ž„‚Í‚¸‚Á‚ÆˆÈ‘O‚©‚çƒGƒ‹ƒuƒŠƒ“‚ðˆ¤‚µ‚Ä‚¢‚½... 	
+#Record	Marlone12	‚»‚ñ‚È”Þ—‚ª“Ë‘RƒJƒ‰ƒX‚Æ‚¢‚¤ŽáŽÒ‚ÆŒ‹¥‚·‚é‚Æ‚¢‚¤˜b‚ð•·‚¢‚ÄŽv‚í‚¸Ž¹“iS‚Å... 	
+		ƒJƒ‰ƒX‚ªs•û•s–¾‚É‚È‚Á‚½—‚“úA”Þ‚ª‚¨‚©‚µ‚È@‹³W’c‚Ég‚ð’u‚¢‚Äƒ‹[ƒƒ“‚Ì‘º‚ÉŽô‚¢‚ð’Ç‚¢—§‚Ä‚é‚Æ‚¢‚¤‹U‚è‚Ì‚¤‚í‚³‚ðì‚èo‚µ‚½¡ 	
+		‚¾‚ª¤‰R‚Í‚Ü‚½¤‰R‚ð‚¤‚Ý¤Ž„‚ª‚µ‚Î‚ç‚­‘º‚ð—£‚ê‚Ä‚¢‚éŠÔ‚ÉƒGƒ‹ƒuƒŠƒ“‚Íˆ«–‚‚ÌŽí‚ÆÚG‚µ‚½‚Æ‚¢‚¤‰˜–¼‚Åƒ‹[ƒƒ“‚Ì‘º‚©‚ç‰i‰“‚É’Ç•ú‚³‚ê‚Ä‚¢‚½¡	
+#Record	Marlone13	Ž„‚ª‚µ‚Î‚ç‚­‘º‚ð—£‚ê‚Ä‚¢‚éŠÔ‚ÉƒGƒ‹ƒuƒŠƒ“‚Íˆ«–‚‚ÌŽí‚ÆÚG‚µ‚½‚Æ‚¢‚¤‰˜–¼‚Åƒ‹[ƒƒ“‚Ì‘º‚©‚ç‰i‰“‚É’Ç•ú‚³‚ê‚Ä‚¢‚½¡	
+		‚±‚ê‚ç‚·‚×‚Ä‚ªŽ„‚ªì‚èo‚µ‚½‰R‚¾‚Æ‘º‚ÌlX‚É’m‚ç‚¹‚½‚©‚Á‚½‚ª¤‚·‚Å‚ÉƒGƒ‹ƒuƒŠƒ“‚Íƒ‹[ƒƒ“‚Ì‘º‚©‚çÁ‚¦‚½Œã‚Å‚ ‚è... 	
+		"‚±‚ê‚ç‚·‚×‚Ä‚ªŽ„‚ªì‚èo‚µ‚½‰R‚¾‚Æ‘º‚ÌlX‚É’m‚ç‚¹‚½‚©‚Á‚½‚ª¤Ž„‚ÍŒû‚ð•Â‚¶‚È‚¯‚ê‚Î‚È‚ç‚¸... 
+–{“–‚ÉŠÔˆá‚Á‚Ä‚¢‚½¡‚±‚Ìƒƒrƒ“‚ð‹–‚µ‚Ä‚­‚ê..."	
 #Record	Marlone14		
-#Record	Marlone15	ºôºôºô! Ëµ³ö²ØÁË¼¸Ê®ÄêµÄÃØÃÜ, ÐÄÀïÒ»¶¨ºÜÊæ·þ°É! µ«ÓÐÒ»¼þÊÂÊÇÂæ±öÄã... Ëù²»ÖªµÀµÄ... 	
-#Record	Marlone16	ÎªÊ²Ã´ÎÒÃÇÕâÃ´Ô÷ºÞÂÞ¶÷ÕòµÄÕæÕýÔ­Òò... Âæ±ö~  ÄãËµµÄ¿¨À­Ë¹ÊôÓÚ¹ÖÒì×Ú½Ì¼¯ÍÅµÄÄÇ¸ö¼ÙÏûÏ¢... ²»ÊÇ¼ÙÏûÏ¢...	
-#Record	Marlone17	ÎÒºÍ¸ç¸çÒ»¿ªÊ¼Ò²¶¼²»ÏàÐÅ.µ«...ÔÚÎÒÄ¸Ç×²¡ÊÅºó, ÎÒÃÇÐÖÃÃ¶þÈË¾­¹ýÇ§·½°Ù¼ÆµÄÌ½Ìý, ×îºóÖÕÓÚÔÚ¿ÝÎíÉ­ÁÖÀïÕÒµ½ÁËÎÒ¸¸Ç×.
-ÎÒÃÇ¸ßÐËµÃÀáÁ÷ÂúÃæ,³öÏÖÔÚ¸¸Ç×ÃæÇ°.µ«ÊÇ,Ëû²¢Ã»ÓÐÈÏ³öÎÒÃÇ,¶øÊÇ¼ÌÐøÓë ÉÏµÄºÚÓ°Ëµ»°.ÄÇÊ±ÎÒÃÇÉîÐÅ¸¸Ç×ÊÇ±»Ä³ÖÖÁ¦Á¿¿ØÖÆ, ËùÒÔ´òËãÒª´Ý»ÙÄÇÁ¦Á¿... ½á¹ûÎÒÃÇ·´¶øÊÇ±»ÀïÃæµÄÊ¿±ø´òµÃ±éÌåÁÛÉË...±»¸ÏÁË³öÀ´... 	
-#Record	Marlone18	Ê²Ã´???	
-#Record	Marlone19	ÎÒÃÇºÃ²»ÈÝÒ×¿Ë·þ×ÅÉËÍ´,±£×¡ÁËÉúÃü... µ«ÎÒÃÇÃ÷°×, ÒÔÎÒÃÇµÄÁ¦Á¿ÊÇÎÞ·¨¾È³ö¸¸Ç×µÄ... ÎÒÃÇÑ°ÇóÁËÆäËû·½·¨, ÄÇ¾ÍÊÇÂÞ¶÷ÕòÓë°¬µÂÁÖµÄÉñÃØÁéÁ¦Ê¯...  ÎÒÃÇÉîÐÅÖ»ÓÐÕâ¸öÁéÁ¦Ê¯,¿ÉÒÔÈÃÎÒÃÇÓµÓÐÈÎºÎÇ¿´óµÄÁ¦Á¿... ÓÚÊÇÎÒÃÇ¾Í±ä³ÉÁËº£µÁÍõÓëÉ½ÔôÍõ, Ö»ÎªÁË´ÓÄãÃÇÊÖÖÐÇÀ¶áÁéÁ¦Ê¯... µ«È´¶¼ÊÇ°×Ã¦Ò»³¡.	
-#Record	Marlone20	ÂèÂè!  »¹ÓÐ°Ö°Ö! Ò»Ö±ÏëÎÊÄãÃÇÒ»¸öÎÊÌâ... Ò»¶¨~~~~ ¿È¿È~~ (Á÷×ÅÑÛÀá,ÍÂ×ÅÑª±§×ÅÂêÂØÍ£Ö¹ÁËºôÎü)	
+#Record	Marlone15	"ƒtƒtƒtI
+”\”N‚ÌŠÔA‰B‚µ‚Ä‚¢‚½”é–§‚ð–¾‚ç‚©‚É‚·‚é‚±‚Æ‚Í¤‚Ç‚ê‚¾‚¯‚·‚Á‚«‚è‚µ‚½‚¾‚ë‚¤B 
+‚¾‚ªƒƒrƒ“A‚ ‚È‚½‚à‚µ‚ç‚È‚¢‚±‚Æ‚ª...‚ ‚é‚ñ‚Å‚·..."	
+#Record	Marlone16	Ž„‚½‚¿‚ªƒ‹[ƒƒ“‚Ì‘º‚ð‘ž‚Þ^‚Ì——R‚É‚Â‚¢‚Ä‚Å‚·... ƒƒrƒ“A‚ ‚È‚½‚ª’m‚Á‚Ä‚¢‚éƒJƒ‰ƒX‚ª‚¨‚©‚µ‚È@‹³W’c‚ÉŠ‘®‚µ‚Ä‚¢‚½‚Æ‚¢‚¤‚»‚Ì‰\...‚»‚Ì‰\‚Í‹U‚è‚Å‚Í‚ ‚è‚Ü‚¹‚ñ‚Å‚µ‚½...	
+#Record	Marlone17	"ŒZ‚³‚ñ‚à‰‚ß‚ÍM‚¶‚Ü‚¹‚ñ‚Å‚µ‚½B 
+‚¾‚ª¤‚¨•ê‚³‚ñ‚ª•a‚Å–S‚­‚È‚Á‚Ä‚©‚çAŽ„‚½‚¿‚ÌŒZ’í‚Í‚¨•ƒ‚³‚ñ‚ð’T‚·‚½‚ßA‚Ç‚ñ‚È¬‚³‚ÈŽè‚©‚ª‚è‚Å‚à’ú‚ß‚¸‘{‚µ¤‚»‚µ‚Ä–¶‰B‚ê‚ÌX‚Å‚¨•ƒ‚³‚ñ‚ð’T‚·‚±‚Æ‚ª‚Å‚«‚Ü‚µ‚½¡ 
+Ž„‚½‚¿‚ÍŠì‚Ñ‚Ì—Ü‚ð—¬‚µ‚Ä‚¨•ƒ‚³‚ñ‚Ì‘O‚És‚Á‚½‚ª¤‚¨•ƒ‚³‚ñ‚ÍU‚è•Ô‚ç‚¸•Ç‚É‚‚ê‚½•‚¢ˆÅ‚Ì‘¶Ý‚Æ˜b‚ðŒð‚í‚µ‚Ä‚¢‚Ü‚µ‚½¡ 
+‚»‚ÌŽžŽ„‚½‚¿‚Í‚¨•ƒ‚³‚ñ‚ª‚Ç‚ñ‚È—Í‚É‘€c‚³‚ê‚Ä‚¢‚é‚©‚à’m‚ç‚¸A‚»‚ÌˆÅ‚Ì—Í‚ð”j‰ó‚µ‚æ‚¤‚Æ‚µ‚½‚ª... 
+‚»‚Ì’†‚Ì•ºŽm‚½‚¿‚É‚æ‚è‚ð•‰‚Á‚½‚ª‚È‚ñ‚Æ‚©“¦‚°o‚µ‚½EE"	
+#Record	Marlone18	‰½‚¾‚Á‚ÄH	
+#Record	Marlone19	"‚¾‚¯‚Ç¤Ž„‚½‚¿‚Ì—Í‚Å‚Í‚¨•ƒ‚³‚ñ‚ð‹~‚¢o‚·‚±‚Æ‚ª‚Å‚«‚È‚¢‚Æ‚¢‚¤‚±‚Æ‚ðŒå‚è...‘¼‚Ì•û–@‚ð–Íõ‚µ‚Ü‚µ‚½¤‚»‚µ‚Äƒ‹[ƒƒ“‚Ì‘º‚ÆƒGƒ‹ƒhƒŠƒ“‚É•ÛŠÇ‚³‚ê‚Ä‚¢‚é‚Æ‚¢‚¤_”é‚Ì•¨Ž¿ƒ\ƒEƒ‹ƒXƒg[ƒ“... 
+‚»‚ê‚ª‚ ‚ê‚Î‹­‘å‚È—Í‚ðŽè‚É“ü‚ê‚é‚±‚Æ‚ª‚Å‚«‚é‚Æ‚¢‚¤Šó–]‚ð‚à‚Á‚Ä... 
+Ž„‚½‚¿‚ÍŠC‘¯‰¤‚ÆŽR‘¯‰¤‚É‚È‚Á‚Ä‚ ‚È‚½•û‚Ì‚»‚ê‚ð’D‚¨‚¤‚Æ‚µ‚½‚ª... ¡ 
+‚±‚ê‚ç‚·‚×‚Ä‚Ì‚à‚Ì‚ªA‚Ý‚È–³‘Êœ‚É‚È‚Á‚Ä‚µ‚Ü‚¢‚Ü‚µ‚½B"	
+#Record	Marlone20	"‚¨•ê‚³‚ñ¤‚¨•ƒ‚³‚ñI  
+”Þ‚É•·‚«‚½‚¢‚±‚Æ‚ª‚ ‚Á‚½‚Ì‚É... 
+‚à‚¤‚»‚Ì¬‚³‚¢–²‚Í‚±‚ê‚­‚ç‚¢‚É‚µ‚ÄEEE
+‚»‚ê‚Å¤‚Í¥¥¥ƒNƒ‹¥¥¡ (—Ü‚ÆŒŒ‚ð“f‚¢‚Äƒ}[ƒ‰[‚Í‘§‚ð‚Ð‚«‚Æ‚é¡)"	
 			
 			
 			
 
-#Record	Skelkinght01	Ì°ÓûÖ®Éñ°¡! Çë½«ÔÂ¹âÄ¹Ô°µÄÁé»êÈ«¶¼ÊÕÎªÄãÏ¥ÏÂ°É!!ÊÇË­? ÄãÃÇÊÇºÕÄáË¹... Õâ×îÖÕÒÇÊ½Òª½áÊø»¹ÐèÒªÒ»¶ÎÊ±¼ä...	
-#Record	User02	²»ÃðÕßÆïÊ¿!! Äã¾ÍÊÇÄÇ¸öÔÚÔÂ¹âÄ¹Ô°ÖÆÔìÆæ¹Ö¹ÖÎïµÄÖ÷·¸°É?¹ÖÒìµÄÒÇÊ½½ñÌìÒ²ÊÇ×îºóÒ»´ÎÁË.  	
-#Record	Skelkinght02	Ã»°ì·¨ÁË,¾ÍËãÔÝÊ±ÒªÍ£Ö¹Õâ×îÖÕÒÇÊ½, ÎÒÒ²ÒªÏÈ²ù³ýÄãÃÇ, ¿©¿©¿©¿©!!! È¥ËÀ°É!	
-#Record	Skelkinght03	ÄãÃÇÓÐÕâÃ´Ç¿Âð? Èç¹ûÎÒÓÐÍê³É×îÖÕÒÇÊ½,Ó¦¸Ã¾Í¿ÉÒÔÒ»°ô²ù³ý...	
-#Record	User03	ÄÇ×îÖÕÒÇÊ½µ½µ×ÊÇÊ²Ã´? »¹ÓÐ, ÎÒÃÇÎªÊ²Ã´Òª¸úÔÂ¹âÄ¹Ô°µÄ¹ÖÒìÊ¬ÌåÒ»ÆðÆðÎèÄØ?	
-#Record	Skelkinght04	ÎÒ·èÁËÂð! ÎÒÔõÃ´»á½²Õâ¸ö... ¿©¿©¿©! ÏÖÔÚÄãÃÇ¿ÉÄÜÒòÎª´òµ¹ÁËÎÒ¶ø°²ÐÄ... ÄãÃÇºÕÄáË¹...Ì½ÏÕ¼Ò»ï,½ÓÏÂÀ´ÄãÃÇ¶¼»áËÀÔÚ°Í¶ûµÂË¹´óÈËÊÖÀï.¿©¿©¿©! (µ¹ÏÂËÀÍö)	
-#Record	User04	°Í¶ûµÂË¹??? °Í¶ûµÂË¹µ½µ×ÊÇË­°¡?	
+#Record	Skelkinght01	æÃ—~‚Ì_—l‚æI ŒŽ‚ÌŒõ•æ’n‚Ì°‚ç‚ð‘S•”‚ ‚È‚½‚Ì•”‰º‚Æ‚µ‚Ä‚¨”[‚ß‰º‚³‚¢BŒN‚½‚¿‚ÍƒwƒjƒXEEEÅI‹VŽ®‚ðI‚¦‚é‚É‚Í‚Ü‚¾ŽžŠÔ‚ª•K—v‚¾‚ªEEE	
+#Record	User02	ƒXƒPƒ‹ƒgƒ“ƒiƒCƒgII‚¨‘O‚ª‚¨‚©‚µ‚ÈŒŽ‚Ì‰º‚Ì•æ’n‚Åƒ‚ƒ“ƒXƒ^[‚ðì‚èo‚µ‚Ä‚¢‚éŽå”Æ‚¾‚ë‚¤H¡“ú‚Å‚»‚ÌˆÙí‚Èsˆ×‚àÅŒã‚¾¡ 	
+#Record	Skelkinght02	Žd•û‚È‚¢‚È‚Ÿ¡ ‚±‚ÌÅI‹VŽ®‚ð‚µ‚Î‚ç‚­Ž~‚ß‚ÄŒN‚½‚¿‚ðœ‹Ž‚·‚é‚Ù‚©‚É‚È‚¢‚©‚ŸƒNƒEƒNƒEIŽ€‚ðI	
+#Record	Skelkinght03	ŒN‚½‚¿‚ª‚±‚ñ‚È‚É‹­‚©‚Á‚½‚©‚Ì‚©H‚±‚ÌÅI‹VŽ®‚¾‚¯I‚¦‚é‚±‚Æ‚ª‚Å‚«‚½‚Æ‚·‚ê‚ÎŒN‚½‚¿‚Í‚à‚Ç‚¤‚·‚é‚±‚Æ‚à‚Å‚«‚È‚©‚Á‚½‚¾‚ë‚¤‚É...	
+#Record	User03	‚»‚ÌÅI‹VŽ®‚Í‚¢‚Á‚½‚¢‰½‚¾H‚È‚ºŒŽ‰º‚Ì•æ’n‚ÅŽ€‘Ì‚ð•¦‚«—§‚½‚¹‚é‚ñ‚¾H	
+#Record	Skelkinght04	‚¢‚©‚ê‚Ä‚éIŽ„‚ª‚»‚ê‚ð˜b‚·‚Æ‚Å‚àEEE¡‚ÍŽ„‚ð“|‚µ‚ÄˆÀS‚µ‚Ä‚¢‚é‚¾‚ë‚¤‚ªEEE‚¨‘O‚çƒwƒjƒXEEE–`Œ¯’c‚ÍƒpƒQƒ‹ƒX—l‚Ì‘O‚Å‚Ý‚ñ‚ÈŽ€‚ñ‚¾–½‚¾I(“|‚ê‚Ä–½‚Â‚«‚é)	
+#Record	User04	ƒpƒQƒ‹ƒXHHƒpƒQƒ‹ƒX‚Á‚Ä‚¢‚Á‚½‚¢’N‚È‚ñ‚¾I	
 			
 			
 
-#Record	Robo01	¹þ¹þ¹þ! ÎÒÔç¾ÍÖªµÀÄãÃÇ»áÀ´ÕâÀï.ÎÒ¾ÍÈÃÕâÀï³ÉÎªÄãÃÇµÄ·ØÄ¹°É.	
-#Record	User05	°¡~ÄÇ¸öÔõÃ´»á?	
-#Record	Robo03	ÄãÃÇ²ÈÔÚ½ÅÏÂµÄÕâ¿éµØ-ÌÙÂû·ØÄ¹... ËüµÄÃ¿¿éµØ·½¶¼ÓëÎÒÐÄÔàÏàÁ¬.
-¾ÍÔÚÄãÃÇÌ¤ÈëµÄÉ²ÄÇ, ÎÒµÄÐÄÔàÒòÆÚ´ýÓëÄãÃÇ¼¤ÁÒÕ½¶·¶øÅéÅéÂÒÌø.¿ìµãÉÏ°É!!	
-#Record	Robo04	¿¦! ÎÒÊäÀ²~ ÎÒµÄÄÜÁ¦Ö»²»¹ýÈç´ËÂð? àÅ~~ ²»ÄÜÔÚÕâÀïµ¹ÏÂ¸Â~~~ àÞ~~~ (ÀÇÍõ¿´×ÅÌì¿ÕºÅßû´ó¿Þ)	
-#Record	User06	ÔõÃ´»áÓÖ¸´»î???	
-#Record	Robo05	»¹ÊÇ²»ÖªµÀÎÒÂð? ÎÒÊÇÀÇÍõ.	
-#Record	Robo06	½á¹ûÊÇÒªÕâÑù×Ó½áÊøÂð! ºôºôºôºôºôºô!	
-#Record	Robo07	ÎÒ±¾À´ÊÇÒ»¸öÆ½·²µÄÀÇ,µ«ÊÇ,ÔÚÒ»¸öÌì¿ÕÈ¾ºìµÄÒ¹Íí,ÎÒµÄ¼ÒÈËÓëÍ¬°éÃÇ, ¶¼Òò¹ÖÒìµÄ¹â±ä³ÉÁË¿ÉÅÂµÄ¹ÖÎï. 	
-#Record	Robo08	µ«ÊÇÄãÃÇºÕÄáË¹~~
-Ö»ÒòÎªÎÒÃÇ³óÂª¼°ÓëÄãÃÇ³¤µÄ²»Í¬Õâ¸öÀíÓÉ,¾Í²ÐÈÌµÄ¼ùÌ¤ÎÒÃÇ.	
-#Record	User06	ÄÇÊÇ³¡Îó»á! ¾ÝÎÒËùÌýµ½µÄÊÇËµ, ÄãÃÇÏÈ¹¥»÷ÁËÎÒÃÇ.	
-#Record	Robo09	¸øÎÒ±Õ×ì! ÄãÃÇ´ÓÀ´¶¼Ã»Ïë¹ý, ÓÐÐ©¹ÖÎï»áÎÞÒâÊ¶µÄ¹¥»÷ÄãÃÇÂð?  Òò²ÐÈÌµÄÕ½Õù¶øÑªÈâÄ£ºý... ÎÒÕæµÄºÜÅÂÕâÖÖÊÂ.	
-#Record	Robo10	ÏÖÔÚÎÒËùÄÜ×öµÄ... ¾ÍÖ»ÓÐ°ÑÁé»êÏ×¸øÉÏÌì, ÔÙÖØÐÂÉúµÃÇ¿Ò»µã.ÎÒ²»»áºó»ÚÎÒÏÖÔÚµÄÑù×Ó, Ö»ÊÇÒÅº¶Ã»ÄÜ°ÑÄãÃÇºÕÄáË¹Á¬¹Ç³Ôµô ... 	
-#Record	User07	°¡ÄÇÊÇ...	
-#Record	Robo11	½ñÌìÄãÃÇ¿ÉÄÜÈÏÎªÄãÃÇÓ®ÁË, µ«ÎÒÒ»¶¨... Ò»¶¨... »á»ØÀ´, Îª±»ÄãÃÇ³¹µ×¼ùÌ¤µÄÎÒ¼ÒÈË¡¢Í¬°é±¨³ð.	
+#Record	Robo01	ƒnƒnƒnIŒN‚½‚¿‚ª‚±‚¿‚ç‚É—ˆ‚é‚±‚Æ‚ðŠù‚É’m‚Á‚Ä‚¢‚½¡ ‚±‚±‚ÉŒN‚½‚¿‚Ì•æ‚ðì‚è‚Ü‚·‚æ¡	
+#Record	User05	‚È‚ñ‚¾‚Æ‚ÁH	
+#Record	Robo03	"‚¨‘O‚ç‚ª“¥‚ñ‚Å‚¢‚é‚±‚Ì“y’n’Ó‚Ì•æEEE‚±‚±‚Ì’Ó‚Ìˆê‚Âˆê‚Â‚ª‚Ý‚ÈŽ„‚ÌS‘Ÿ‚Æ˜AŒ‹‚³‚ê‚Ä‚¢‚é¡ 
+ŒN‚½‚¿‚ª‚±‚±‚É“ü‚éuŠÔ‚©‚çŽ„‚ÌS‘Ÿ‚Í‚¨‘O‚ç‚Æ‚ÌŒƒ—ó‚Èí“¬‚ÌŠú‘ÒŠ´‚Å‘‚µ‚Ä‚¢‚½¡ ‚³‚ ”ò‚Ñ‚©‚©‚êII"	
+#Record	Robo04	¶Þ¸ƒbI‰ä‚ª•‰‚¯‚½¡‰ä‚Ì”\—Í‚Í‚±‚Ì’ö“x‚©EEE‚±‚±‚Å“|‚ê‚é‚í‚¯‚É‚Í‚¢‚©‚È‚¢~ƒEƒH~~ (‹ó‚ð’­‚ß‚Ä‚Ù‚¦‚é)	
+#Record	User06	‚Ç‚¤‚â‚Á‚Ä•œŠˆ‚µ‚½‚ñ‚¾I	
+#Record	Robo05	‚Ü‚¾‰ä‚ê‚ð’m‚ç‚È‚¢‚æ‚¤‚¾‚ÈH‰ä‚Í–ìb‰¤‚¾¡	
+#Record	Robo06	Œ‹‹Ç‚±‚¤‚â‚Á‚ÄI‚í‚Á‚Ä‚µ‚Ü‚¤‚Ì‚ª¥¥¥	
+#Record	Robo07	‰ä‚Í–{—ˆ•½–}‚ÈƒIƒIƒJƒ~‚Å‚ ‚Á‚½¡ ‚¾‚ª¤‹ó‚ªÔ‚­õ‚Ü‚Á‚½‚»‚Ì–é¤‰Æ‘°‚Æ“¯—»‚Í‚¨‚©‚µ‚ÈŒõ‚É‚æ‚Á‚ÄŒ¯ˆ«‚Èƒ‚ƒ“ƒXƒ^[‚É•Ï‚í‚Á‚Äs‚Á‚½¡ 	
+#Record	Robo08	"‚»‚ê‚ð¤‚¨‘O‚çƒwƒjƒX‚Í¤
+Ž„‚½‚¿‚ðXˆ«‚Å¤‚¨‘O‚ç‚Æ‚Íˆá‚Á‚½‚Æ‚¢‚¤——R‚¾‚¯‚Å–³ŽS‚É“¥‚Ý‚É‚¶‚Á‚½‚¾‚ë‚¤¡"	
+#Record	User06	‚»‚ê‚ÍŒë‰ð‚¾IŽ„‚Í‚¨‘O‚ç‚ªæ‚ÉŽ„‚½‚¿‚ðUŒ‚‚µ‚Ä‚¢‚½‚Æ•·‚¢‚½¡	
+#Record	Robo09	‚Ó‚ñIƒ‚ƒ“ƒXƒ^[’B‚ªŽ©g‚ÌˆÓŽu‚ÆŠÖŒW‚È‚­‚¨‘O‚ç‚ðUŒ‚‚µ‚½‚±‚Æ‚Í‚È‚¢‚Æˆê“x‚àl‚¦‚Ä‚Ý‚½‚±‚Æ‚à‚È‚©‚ë‚¤H  Žc“‚Èí‘ˆ‚Å‰˜‚³‚ê‚½ŒŒEEEŽ„‚Í–{“–‚É‚»‚ê‚ª‹°‚ë‚µ‚©‚Á‚½¡	
+#Record	Robo10	Œ‹‹Ç¤Ž„‚ª‚Å‚«‚é‚±‚Æ‚Æ‚ÍEEE‚Ü‚³‚É“V‚Ì”Þ‚ÉŽ©•ª‚Ì°‚ð”„‚Á‚Ä‹­‚­¶‚Ü‚ê•Ï‚í‚é‚¾‚¯‚¾‚Á‚½¡ ¡‚ÌŽ„‚ÌŽp‚ÉŒã‰÷‚Í‚È‚­¤‚½‚¾‚â‚Â‚ç‚ðœ‚Ü‚ÅŠš‚ñ‚Å‚©‚ñ‚ÅH‚×‚é‚±‚Æ‚ª‚Å‚«‚È‚¢‚Æ‚¢‚¤‚±‚Æ‚ªŽc”O‚È‚¾‚¯‚¾EEE	
+#Record	User07	‚»‚ê‚ÍEEE	
+#Record	Robo11	¡“ú‚ÍŒN‚ç‚ªŸ‚Á‚½‚Æl‚¦‚é‚¾‚ë‚¤EEE‚µ‚©‚µŽ„‚Í•K‚¸EEE•K‚¸EEE‹A‚Á‚ÄŒN‚½‚¿‚É“¥‚Ý‚É‚¶‚ç‚ê‚½Ž„‚Ì‰Æ‘°‚Æ“¯—»‚ç‚Ì•œQ‚ð‚·‚é‚¾‚ë‚¤¡	
 			
 			
 
-#Record	GoKing01	ÖÕÓÚÍê³ÉÁË. ÐÂµÄ¹ãÓòÄ§·¨-¸ç²¼ÁÖÍõÄ§·¨! ¹þ¹þ¹þ! Äã¹ûÈ»ÁË²»Æð...	
-#Record	User01	¸ç²¼ÁÖÍõÍ£Ö¹! ÄãµÄ¶ñÐÐ¾Íµ½´ËÎªÖ¹. 	
-#Record	GoKing02	ßÞÄÇ¸öÉ¢·¢ÐÈÎ¶µÄÐ¡¹íÊÇÊ²Ã´? ÄãÃÇÒª¶Ô¸¶ÎÒ¹þ¹þ¹þ! Â·¹ýµÄ¹·¶¼»áÐ¦ÄãÃÇ.ÈôÕæµÄÄÇÃ´ÏëËÀ¾Í´ò°É!	
-#Record	GoKing03	¿¦~~ ßÀ! ÎÞ·¨ÏàÐÅ.ÎÒ»á±»ÄãÃÇÕâÐ©...Ð¡¹íÍ·... ´ò... ¸üºÎ¿öÎÒ»¹ÓÐ½ÓÊÜËûµÄÁ¦Á¿, ÎªÊ²Ã´... ÎªÊ²Ã´... ÎªÊ²Ã´...	
-#Record	User02	Ëû? µ½µ×ÊÇË­?	
-#Record	GoKing04	ºôºôºô! ÄÇ... ²»Ó¦¸ÃÊÇÄãÃÇÕâÖÖµÍ¼ú‚í»ï,¿ÉÒÔËæ±ã¹ÒÔÚ×ìÉÏµÄ... ßÞ~~ Í´¿àÓ¿ÉÏíÁË.	
-#Record	GoKing05	ÎÒÒ»¶¨»á»ØÀ´... Ö±µ½´ÓÕâ´óµØÉÏ°ÑÄãÃÇºÕÄáË¹É¨µ´¹âÎªÖ¹... ÎÒµÄÉíÌåÀïÓÐËûµÄÁé»êÔÚºôÎüßÞ~~ °¡~~	
-#Record	Shutian01	ºÇºÇ! ÎÒÃÇÍíÁËÒ»²½.µ«ÊÇ¸ç²¼ÁÖÍõ, ¸ç²¼ÁÖÍõÔÚÄÄÀï?	
-#Record	User03	¶Ó³¤! ¸ç²¼ÁÖÍõÏûÊ§ÁË.	
-#Record	Shutian02	Ê²Ã´ÏûÊ§? ÊÇÎÒÃÇÍíÁËÒ»²½. ËûÓÐÃ»ÓÐÁôÏÂÊ²Ã´»°?	
-#Record	User04	àÅ~ Ëµ¸ç²¼ÁÖÒ»¶¨»áÔÙ»ØÀ´ÏòÎÒÃÇ±¨³ð.»¹ÓÐ,ËµÄÇ¸öÊ²Ã´×Ô¼ºÉíÌåÀïÓÐËûµÄÁé»êÔÚºôÎüÊ²Ã´µÄ... 	
-#Record	User05	ÄÇ¸öËûµ½µ×ÊÇË­ÄØ? (»á²»»áÊÇÉÏ´ÎÀÇÍõËùËµµÄÄÇ¸öËûÄØ?)	
+#Record	GoKing01	‚Â‚¢‚ÉŠ®¬‚µ‚½¡ V‚µ‚¢Lˆæ–‚–@ƒRƒuƒŠƒ“ƒNƒ“ƒOƒuƒŒƒCƒhIƒnƒnƒnI‚â‚Í‚è‚·‚²‚¢‚Å‚·‚ ‚È‚½‚ÍEEE	
+#Record	User01	‚â‚ß‚ëƒSƒuƒŠƒ“ƒLƒ“ƒOI‚¨‘O‚Ìˆ«s‚Í‚±‚±‚Ü‚Å‚¾¡ 	
+#Record	GoKing02	‚±‚Ì—c’t‚ÈŽá‘¢‚ç‚Í‚È‚ñ‚¾H‚¨‘O‚ç‚ªŽ„‚ð‘ŠŽè‚É‚·‚é‚ÆEEEƒnƒnƒnIŽ€‚É‚½‚¢‚È‚ç‚©‚©‚Á‚Ä‚±‚¢I	
+#Record	GoKing03	M‚¶‚ç‚ê‚È‚¢¡‚í‚½‚µ‚ª‚¨‘O‚çŽá‘¢‚½‚¿‚É•‰‚¯‚é‚ÆEEE‚ÍEEE‚µ‚©‚à¤Ž„‚Í”Þ‚Ì—Í‚Ü‚ÅŽó‚¯‚½‚Ì‚É‚È‚ºEEE‚È‚ºEEE‚È‚ºEEEH	
+#Record	User02	‚»‚Ì”Þ‚Æ‚Í’N‚¾EEEH	
+#Record	GoKing04	ƒtƒtƒtI‚¨‘O‚ç‚Ì‚æ‚¤‚È‚Â‚Ü‚ç‚È‚¢‚â‚Â‚ç‚ª‚Þ‚â‚Ý‚ÉŒû‚É‚·‚é‘¶Ý‚Å‚Í‚È‚¢EEE‹ê’É‚ª‰Ÿ‚µŠñ‚¹‚éEEEB	
+#Record	GoKing05	Ž„‚Í•K‚¸‹A‚Á‚Ä‚­‚éEEE‚¨‘O‚çƒwƒjƒX‚Ì‚â‚Â‚ç‚ð‚±‚Ì“y’n‚Å‰i‰“‚É‘’‚è‹Ž‚éŽž‚Ü‚ÅEEEŽ„‚Ì‚©‚ç‚¾’†‚É‚Í”Þ‚Ì°‚ª‘§‚ð‚µ‚Ä‚¢‚éEEE‚¤‚£~~	
+#Record	Shutian01	‚Í‚Á‚Í‚Á‚Æ! ‰´‚½‚¿¤­‚µ’x‚ê‚½‚æ¡ ‚Æ‚±‚ë‚ÅƒSƒuƒŠƒ“ƒLƒ“ƒOAƒRƒuƒLƒ“‚ÍH	
+#Record	User03	‘à’·IƒSƒuƒŠƒ“ƒLƒ“ƒO‚ÍÁ‚¦‚Ü‚µ‚½¡	
+#Record	Shutian02	Á‚¦‚éHˆê‘«’x‚©‚Á‚½‚©¡‰½‚©¤”Þ‚ªŽc‚µ‚½˜b‚Í‚È‚¢‚Ì‚©H	
+#Record	User04	‚¤~‚ñ¤ƒRƒuƒ‹ƒLƒ“ƒOA‚¢‚Â‚©‚Ü‚½–ß‚Á‚ÄŽ„‚½‚¿‚É•œQ‚·‚é‚Á‚Ä¡ ‚Ü‚½¤‚È‚É‚©Ž©g‚Ì’†‚É¢”Þ‚Ì°£‚ª‘§‚ð‚µ‚Ä‚¢‚é‚ÆEEE	
+#Record	User05	¢”Þ‚Á‚Ä£‚¢‚Á‚½‚¢’N‚È‚ñ‚Å‚·‚©‚Ë? (‚Ð‚å‚Á‚Æ‚µ‚ÄÛÎÞ½‚ª˜b‚µ‚½‘¶Ý‚Å‚Í‚È‚¢‚©‚ÈH)	
 			
 			
 
-#Record	User06	ÎÖ×È? ÄãÔõÃ´»áÔÚÕâÀïÄØ?	
+#Record	User06	ƒEƒH[ƒYHŒN‚ª‚±‚±‚É‚È‚º‚¢‚é‚ÌH	
 #Record			
 #Record			
 #Record			
 #Record			
 #Record			
-						
-#End						
+					
+#End					

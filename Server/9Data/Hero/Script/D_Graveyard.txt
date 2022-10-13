@@ -2,15 +2,15 @@
 #ignore	\o042		
 #exchange	#	\x20	
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
 
-#Record	DeathCry	"气死我了~ 我怨我恨~ 我一定要毁灭你~~. 光之遗族啊~受到诅咒的...生命啊~.I'll be back~~		
-#Record	NoKey	不是这把钥匙唷!再找找吧!		
-#Record	KQReturn30	30秒后离开王国任务		
-#Record	KQReturn20	20秒后离开王国任务		
-#Record	KQReturn10	10秒后离开王国任务		
-#Record	KQReturn5	5秒后离开王国任务		
-				
-#End				
+#Record	DeathCry	Insignificant humans...I curse you to oblivion...I shall...return...	
+#Record	NoKey	You do not have the correct key.	
+#Record	KQReturn30	Move to town in 30 seconds.	
+#Record	KQReturn20	Move to town in 20 seconds.	
+#Record	KQReturn10	Move to town in 10 seconds.	
+#Record	KQReturn5	"Move to town in 5 seconds. Everyone, you did a wonderful job."	
+
+#END			

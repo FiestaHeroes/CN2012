@@ -1,27 +1,27 @@
 
 #ignore	\o042		
-#exchange	#	\x20	
+#exchange	#	\x20	; # => space
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-				
-#Record	KQStart60	60秒后,王国任务即将开始.		
-#Record	KQStart30	30秒后,王国任务即将开始.		
-#Record	KQStart20	20秒后,王国任务即将开始.		
-#Record	KQStart10	10秒后,王国任务即将开始.		
-#Record	KQStart5	5秒后,王国任务即将开始.		
-				
-#Record	KQReturn60	幼龙矿石掉落了		
-#Record	KQReturn50	剩下的時间里,认真开采幼龙矿石吧.		
-#Record	KQReturn40	没剩下多少时间了,你还是努力采矿吧.		
-#Record	KQReturn30	30秒后离开王国任务.快点去采矿吧.		
-#Record	KQReturn20	20秒后离开王国任务.没有时间了.		
-#Record	KQReturn10	10秒后离开王国任务		
-#Record	KQReturn50	5秒后离开王国任务		
-				
-#Record	KQFReturn30	30秒后离开王国任务		
-#Record	KQFReturn20	20秒后离开王国任务		
-#Record	KQFReturn10	10秒后离开王国任务		
-#Record	KQFReturn5	5秒后离开王国任务		
-#End				
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+
+#Record	KQStart60	The KingdomQuest will begin in 60 Seconds.		
+#Record	KQStart30	The KingdomQuest will begin in 30 Seconds.		
+#Record	KQStart20	The KingdomQuest will begin in 20 Seconds.		
+#Record	KQStart10	The KingdomQuest will begin in 10 Seconds.		
+#Record	KQStart5	The KingdomQuest will begin in 5 Seconds.		
+
+#Record	KQReturn60	The Mini Dragon ore has regenerated.	
+#Record	KQReturn50	Dig as much Minidragon mineral as you can for the limited time.	
+#Record	KQReturn40	Not much time left. Try harder.	
+#Record	KQReturn30	Move to Elderine in 30 seconds. Dig the mineral harder.	
+#Record	KQReturn20	Move to Elderine in 20 seconds. Time is almost up.	
+#Record	KQReturn10	Move to Elderine in 10 seconds.	
+#Record	KQReturn50	Move to Elderine in 5 seconds.	
+			
+#Record	KQFReturn30	Move to Elderine in 30 seconds.	
+#Record	KQFReturn20	Move to Elderine in 20 seconds.
+#Record	KQFReturn10	Move to Elderine in 10 seconds.
+#Record	KQFReturn5	Move to Elderine in 5 seconds.
+#End		

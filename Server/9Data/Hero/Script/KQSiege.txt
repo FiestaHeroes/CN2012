@@ -1,0 +1,40 @@
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 인용부호 무시
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[64]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	KQStart60	The KingdomQuest will begin in 60 Seconds.		
+#Record	KQStart30	The KingdomQuest will begin in 30 Seconds.		
+#Record	KQStart20	The KingdomQuest will begin in 20 Seconds.		
+#Record	KQStart10	The KingdomQuest will begin in 10 Seconds.		
+#Record	KQStart5	The KingdomQuest will begin in 5 Seconds.		
+
+#Record	Guardian	Spear Guard	
+			
+#Record	DarkFog00	Now I'll show you what true power is.
+#Record	DarkFog01	I shall curse all souls that are here today!
+#Record	DarkFog02	I'm not alone in this world.. get them my minions!
+#Record	DarkFog03	This isn't the last you hear of me.. I shall return!
+			
+#Record	StartWarn0	What are you doing in my Garden?	
+#Record	StartWarn1	Oh i see.. you dare to overthrow my position eh?
+#Record	StartWarn2	We are in big trouble if we don't defeat them within 60 minutes.
+#Record	StartWarn3	Quick, gear up and prepare for an all out war.
+#Record	StartWarn4	You're going to wish you never stepped foot into this realm.
+		
+#Record	GuardianSuc0	We did it.. We defeated a reincarnation of Karvokx.
+#Record	GuardianSuc1	Hang ten, we will get you guys out of there.
+
+#Record	KarvokxSuc1	Don't think you've won just yet..
+#Record	KarvokxSuc2	This battle may be over, but the war will never end!.
+		
+;	KQ Return Chat
+#Record	KQReturn30	Leaving the KingdomQuest in 30 seconds.
+#Record	KQReturn20	Leaving the KingdomQuest in 20 seconds.
+#Record	KQReturn10	Leaving the KingdomQuest in 10 seconds.
+#Record	KQReturn5	Leaving the KingdomQuest in 5 seconds.
+		
+#End		

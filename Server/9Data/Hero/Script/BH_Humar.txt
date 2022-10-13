@@ -6,6 +6,6 @@
 #ColumnType	INDEX	STRING[128]	
 #ColumnName	ScrIndex	ScrString	
 			
-#Record	Summon	"부하들이여, 저들을 공격하라!!!"
+#Record	Summon	"I shall not be defeated, Attack them my minions!!"
 
 #End			

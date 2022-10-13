@@ -1,69 +1,69 @@
 
-#ignore	\o042		
-#exchange	#	\x20	
+#ignore	\o042		; 牢侩何龋 公矫
+#exchange	#	\x20	; # => space
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-				
-#Record	MissionObj	在限定时间内寻找需要帮助的人		
-				
-#Record	FirstR0	呵,谁呀,你？		
-#Record	FirstR1	那些人让你来的？要把我们都杀掉吗!		
-#Record	FirstE2	冷静!这个人好像对我们没什么敌意.		
-#Record	FirstR3	真的吗？那么我们要赶紧避开这里,这里很危险.		
-#Record	FirstE4	要斟酌一下吧,他们是被追赶的怪物,而且又受了伤		
-#Record	FirstE5	追我们的家伙好像马上就要到这了.		
-#Record	FirstR6	虽然30分钟以后援军到了他们就会撤退...		
-#Record	FirstR7	他们已经来了!		
-				
-#Record	SecondR0	看看,我们都是负伤的人,没有余力照顾你啊.		
-#Record	SecondE1	对啊,和我们在一起,你要是也受伤了可不行.		
-#Record	SecondE2	敌人涌上来之前快点...天哪,快点藏起来吧.		
-				
-#Record	ThirdR0	不要对现在的抵抗情况自我感觉良好,敌人的大本营还没到呢.		
-#Record	ThirdE1	我认为把这里交给我们,阻止怪物是很合适的		
-#Record	ThirdR2	那边又来了,敌人到来之前快点!		
-				
-#Record	ForthR0	这些坏家伙们的兵力到底有多少,这样源源不断的到来.		
-#Record	ForthE1	援军还有多久到？		
-#Record	ForthR2	不知道,但是那些坏家伙现在正在过来.小心!		
-				
-#Record	FifthR0	从现在还活着的情况来看,比想象的有实力		
-#Record	FifthR1	但是敌人还会继续涌出来,没有信心的话现在先避一下.		
-#Record	FifthE2	对啊,要区别开勇猛和蛮勇.		
-				
-#Record	SixthE0	昨天敌人渐渐开始躲起来了是吧？		
-#Record	SixthR1	敌人慌了,我们可以坚持这么久.		
-#Record	SixthE2	数量虽多但是渐渐倒下了,但是敌人还是继续增多的.		
-				
-#Record	SeventhE0	现在敌人的慌张对我们是个机会		
-#Record	SeventhR1	你说什么？		
-#Record	SeventhE2	我说现在援军到来的话是把敌人击退的机会		
-				
-#Record	EighthR0	你太有才了,反而是我们给你添麻烦了...		
-#Record	EighthE1	敌人还有很多,想要安心还早呢.		
-#Record	EighthR2	那边有新的敌人过来了,小心!		
-				
-#Record	NinethE0	罗恩,伤口怎么样了？可以忍受吗？		
-#Record	NinethR1	不要担心,艾德林,这种程度我自己可以对抗一天.		
-#Record	NinethE2	是吗,太好了,那边敌人又来了,自己对抗试试吧.		
-				
-#Record	TenthR0	刚才想到了一点,艾德林,我们把这里当做新兵训练场怎么样？		
-#Record	TenthE1	那边敌人又来了,不要开玩笑了.		
-#Record	TenthR2	切,明明是你先开玩笑的...		
-				
-#Record	SucR0	什么？敌人为什么都撤退了？		
-#Record	SucE1	是援军,援军袭击了敌人的大本营!		
-#Record	SucR2	有救了,我们有救了		
-#Record	SucE3	真的好感谢,谢谢救了我们的性命.		
-#Record	SucR4	你是如今这样混乱的时代需要的人物.		
-#Record	SucR5	有时间一定要来找我.		
-#Record	SucR6	戴着这条项链就可以见到我.		
-				
-#Record	RouReturn30	30秒之后移动到罗恩镇		
-#Record	RouReturn20	20秒之后移动到罗恩镇		
-#Record	RouReturn10	10秒之后移动到罗恩镇		
-#Record	RouReturn5	5秒之后移动到罗恩镇		
-				
-#End				
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	MissionObj	You should find the one in need in the limited time.	
+			
+#Record	FirstR0	"Huh, who are you?"	
+#Record	FirstR1	Did they send you to kill us?	
+#Record	FirstE2	"Calm down, this person seems to have to hostility."	
+#Record	FirstR3	"Are you sure? Then, you should get out of here. This is very dangerous place."	
+#Record	FirstE4	"As you could guess, we are on the runˇand we are injured.."	
+#Record	FirstE5	Those chasers will arrive here soon.	
+#Record	FirstR6	They will back off when the reinforcements arrives in 30 minutesˇ
+#Record	FirstR7	"Oh my, they are already here!"
+		
+#Record	SecondR0	"Hey, we are injured. We cannot help you."
+#Record	SecondE1	"Yes, you will be attacked if you are stay with us."
+#Record	SecondE2	"Go and find somewhere safe before more enemies arrive!!!.OH, no, take cover!!"
+		
+#Record	ThirdR0	Don't overestimate yourself for surviving this long. Their military headquarters haven't arrived yet.
+#Record	ThirdE1	"I think it's better for you to escape from here, we will take care of this place."
+#Record	ThirdR2	"There they come, hurry up!!"
+		
+#Record	ForthR0	How big is their army? It seems their numbers are infinite!!
+#Record	ForthE1	How long should we wait for the reinforcements?
+#Record	ForthR2	I don't know! But the enemies are approaching Watch out!
+		
+#Record	FifthR0	They are better than I expected. They are still aliveˇ
+#Record	FifthR1	"But the enemies will keep coming out, if you cannot take it, take off now."
+#Record	FifthE2	"Right, being courageous and being foolhardy is different."
+		
+#Record	SixthE0	Don't you think their size is getting bigger and bigger??
+#Record	SixthR1	The enemies seem embarrassed to see how well we are handling this.
+#Record	SixthE2	Their number is big but the intensity of their attack is getting lower. But they are still coming!
+		
+#Record	SeventhE0	"This is the opportunity when they are embarrassed,"
+#Record	SeventhR1	What?
+#Record	SeventhE2	"This is the golden opportunity for us to beat them, only if the reinforcements are with us."
+		
+#Record	EighthR0	"You are good, we are beholden to youˇ"
+#Record	EighthE1	"There must be more enemies to come, it's early to relieve."
+#Record	EighthR2	"Well, there they come, new ones, be careful!"
+		
+#Record	NinethE0	"Roumen, how's your wound? Are you alright?"
+#Record	NinethR1	"Don't worry, Elderine, I can handle this for all day long by myself."
+#Record	NinethE2	"Can you? That's good, there they are. Take it by yourself then."
+		
+#Record	TenthR0	"It just came across, Elderine, we should use this place as our newcomers training spot."
+#Record	TenthE1	"There they come again, stop joking."
+#Record	TenthR2	You started firstˇ
+		
+#Record	SucR0	What's going on? Why are they withdrawing?
+#Record	SucE1	"Reinforcements, they attacked their military headquarter!"
+#Record	SucR2	"Good, we are alive!!"
+#Record	SucE3	"Thank you so much, you saved our lives."
+#Record	SucR4	You are the one this dark world needs.
+#Record	SucR5	Please visit us someday.
+#Record	SucR6	"Keep this necklace, and we will meet again."
+		
+#Record	RouReturn30	Move to Roumen in 30 seconds.
+#Record	RouReturn20	Move to Roumen in 20 seconds.
+#Record	RouReturn10	Move to Roumen in 10 seconds.
+#Record	RouReturn5	Move to Roumen in 5 seconds.
+
+#End		

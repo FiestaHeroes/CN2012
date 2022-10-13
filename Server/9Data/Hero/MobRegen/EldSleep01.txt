@@ -1,246 +1,186 @@
-;	Shine Monster Regeneration Table			V0.3																
-;	Monster Group																			
-#ignore	\o042																			
-#exchange	#	\x20																		
-																				
-#table	MobRegenGroup																			
-;		GroupID	Family	Regen Region																
-;			Y/N	X	Y	X	Y	Range/Degree												
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD												
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree												
-#record		EldSleep01_001	N	11294	7783	0	0	553												
-#record		EldSleep01_002	N	11718	7257	0	0	511												
-#record		EldSleep01_003	N	12953	7413	0	0	469												
-#record		EldSleep01_004	N	13488	8302	0	0	469												
-#record		EldSleep01_005	N	14117	7560	0	0	539												
-#record		EldSleep01_006	N	11789	9887	285	563	0												
-#record		EldSleep01_007	N	12936	10223	98	982	-28												
-#record		EldSleep01_008	N	9836	11543	0	0	490												
-#record		EldSleep01_009	N	10411	13019	0	0	448												
-#record		EldSleep01_010	N	8603	12415	894	211	0												
-#record		EldSleep01_011	N	8771	13230	0	0	490												
-#record		EldSleep01_012	N	9246	14006	0	0	532												
-#record		EldSleep01_013	N	8266	15442	294	906	20												
-#record		EldSleep01_014	N	9560	15499	0	0	350												
-#record		EldSleep01_015	N	8631	16939	395	141	49												
-#record		EldSleep01_016	N	11503	14236	0	0	623												
-#record		EldSleep01_017	N	11379	15735	522	378	53												
-#record		EldSleep01_018	N	13149	12066	0	0	476												
-#record		EldSleep01_019	N	13441	13154	0	0	518												
-#record		EldSleep01_020	N	13136	15125	0	0	861												
-#record		EldSleep01_021	N	15901	10989	0	0	637												
-#record		EldSleep01_022	N	10447	17906	0	0	623												
-#record		EldSleep01_023	N	16010	9176	677	238	56												
-#record		EldSleep01_024	N	14004	11691	602	602	0												
-#record		EldSleep01_025	N	10584	16675	0	0	574												
-#record		EldSleep01_026	N	18164	9960	203	860	54												
-#record		EldSleep01_027	N	15701	8263	78	896	-33												
-#record		EldSleep01_028	N	15125	9962	185	480	30												
-#record		EldSleep01_029	N	15957	11987	319	359	0												
-#record		EldSleep01_030	N	19292	10659	910	247	11												
-#record		EldSleep01_031	N	14593	16856	0	0	511												
-#record		EldSleep01_032	N	19028	13356	0	0	448												
-#record		EldSleep01_033	N	18092	13362	0	0	483												
-#record		EldSleep01_034	N	15397	15643	0	0	440												
-#record		EldSleep01_035	N	16330	15218	0	0	448												
-#record		EldSleep01_036	N	16906	16962	0	0	595												
-#record		EldSleep01_037	N	18432	15300	0	0	461												
-#record		EldSleep01_038	N	17026	14665	0	0	539												
-#record		EldSleep01_039	N	15846	17048	0	0	483												
-#record		EldSleep01_040	N	17879	15883	0	0	427												
-#record		EldSleep01_041	N	19090	16871	0	0	511												
-#record		EldSleep01_042	N	16912	18302	0	0	497												
-#record		EldSleep01_043	N	19435	16210	0	0	560												
-#record		EldSleep01_044	N	21373	11296	0	0	546												
-#record		EldSleep01_045	N	19491	14690	0	0	350												
-#record		EldSleep01_046	N	17969	18409	0	0	497												
-#record		EldSleep01_047	N	21233	12922	0	0	532												
-#record		EldSleep01_048	N	20170	14878	0	0	476												
-#record		EldSleep01_049	N	20442	14280	0	0	462												
-#record		EldSleep01_050	N	17948	17457	0	0	427												
-#record		EldSleep01_051	N	20618	17857	840	367	8												
-#record		EldSleep01_052	N	20986	16218	316	716	44												
-#record		EldSleep01_053	N	18828	19517	288	780	-63												
-#record		EldSleep01_054	N	20493	19145	248	690	-64												
-#record		FLOWER1	N	9036	13222	0	0	431												
-#record		FLOWER2	N	8627	13987	0	0	431												
-#record		FLOWER3	N	8362	14519	0	0	431												
-#record		FLOWER4	N	8291	15206	0	0	431												
-#record		FLOWER5	N	14515	15857	0	0	431												
-#record		FLOWER6	N	14349	14630	0	0	431												
-#record		FLOWER7	N	14354	14028	0	0	431												
-#record		FLOWER8	N	18075	13944	0	0	431												
-#record		FLOWER9	N	19294	15261	0	0	431												
-#record		FLOWER10	N	18483	14840	0	0	431												
-#record		HERB1	N	13732	14051	0	0	431												
-#record		HERB2	N	18030	15413	0	0	431												
-#record		WOOD8	N	14827	14389	0	0	381												
-#record		WOOD9	N	19011	14345	0	0	431												
-#record		MUSHROOM8	N	13857	16193	0	0	431												
-#record		MUSHROOM9	N	19468	13882	0	0	431												
-#record		EldSleep01P01	N	19577	18212	1948	751	39												
-#record		EldSleep01P02	N	11112	11644	471	5154	146												
-#record		EldSleep01Guard01	N	10592	9263	0	0	20												
-#record		EldSleep01Guard02	N	12930	13962	0	0	13												
-#record		EldSleep01_H1_01	N	11907	7607	0	0	55												
-#record		EldSleep01_H1_02	N	12031	11520	0	0	47												
-#record		EldSleep01_H1_03	N	8467	13172	0	0	13												
-#record		EldSleep01_H1_04	N	7837	16634	0	0	13												
-#record		EldSleep01_H1_05	N	15580	11318	0	0	41												
-#record		EldSleep01_H1_06	N	18462	12847	0	0	27												
-#record		EldSleep01_H2_01	N	13029	7653	0	0	48												
-#record		EldSleep01_H2_02	N	10662	12362	0	0	33												
-#record		EldSleep01_H2_03	N	9288	13364	0	0	13												
-#record		EldSleep01_H2_04	N	8935	16453	0	0	34												
-#record		EldSleep01_H2_05	N	14769	9844	0	0	27												
-#record		EldSleep01_H2_06	N	15361	17270	0	0	13												
-#record		EldSleep01_H3_01	N	12571	7130	0	0	55												
-#record		EldSleep01_H3_02	N	11714	11918	0	0	33												
-#record		EldSleep01_H3_03	N	9120	14179	0	0	13												
-#record		EldSleep01_H3_04	N	9298	17476	0	0	13												
-#record		EldSleep01_H3_05	N	18298	9833	0	0	27												
-#record		EldSleep01_H3_06	N	17957	15271	0	0	34												
-#record		EldSleep01_H4_01	N	12539	8204	0	0	13												
-#record		EldSleep01_H4_02	N	10602	11390	0	0	33												
-#record		EldSleep01_H4_03	N	8216	14312	0	0	41												
-#record		EldSleep01_H4_04	N	8568	17656	0	0	41												
-#record		EldSleep01_H4_05	N	18606	11205	0	0	20												
-#record		EldSleep01_H4_06	N	16787	17242	0	0	20												
-																				
-																				
-																				
-#table	MobRegen																			
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base							
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta				
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD			
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4			
-#record		EldSleep01_001	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_001	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_002	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_002	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_003	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_003	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_004	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_004	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_005	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_005	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_006	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_006	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_007	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_007	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_008	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_008	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_009	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_009	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_010	Shylph	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_010	Shylph	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_011	Shylph	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_012	Shylph	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_013	Shylph	6	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_014	Shylph	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_015	Shylph	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_016	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_017	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_018	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_019	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_020	ElvenTree	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_021	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_022	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_023	ElvenTree	4	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_024	ElvenTree	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_025	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_026	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_027	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_028	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_029	ElvenTree	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_030	ElvenTree	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_031	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_031	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_032	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_032	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_033	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_033	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_034	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_034	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_035	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_035	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_036	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_036	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_037	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_037	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_038	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_038	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_039	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_039	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_040	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_040	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_041	Stonie	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_041	Stonie	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_042	Stonie	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_042	Stonie	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_043	Stonie	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_043	Stonie	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_044	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_044	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_045	Stonie	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_045	Stonie	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_046	Stonie	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_046	Stonie	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_047	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_047	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_048	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_048	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_049	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_049	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_050	ElvenTree	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_050	ElvenTree	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_051	Stonie	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_052	Stonie	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_053	RedStonie	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01_054	RedStonie	4	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER1	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER2	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER3	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER4	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER5	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER6	FLOWER8	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER7	FLOWER8	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER8	FLOWER8	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER9	FLOWER8	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		FLOWER10	FLOWER8	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		HERB1	HERB6	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		HERB2	HERB7	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		WOOD8	WOOD8	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		WOOD9	WOOD9	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		MUSHROOM8	MUSHROOM8	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		MUSHROOM9	MUSHROOM9	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0			
-#record		EldSleep01P01	PresentBox11	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4			
-#record		EldSleep01P02	PresentBox12	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4			
-#record		EldSleep01Guard01	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0			
-#record		EldSleep01Guard02	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0			
-#record		EldSleep01_H1_01	RedShylph	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H1_02	GiantElvenTree	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H1_03	PrinceRaplan	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H1_04	PrincessRaplan	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H1_05	MarvellBook00	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H1_06	AlkemisBook00	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H2_01	RedShylph	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H2_02	GiantElvenTree	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H2_03	PrinceRaplan	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H2_04	PrincessRaplan	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H2_05	MarvellBook00	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H2_06	AlkemisBook00	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H3_01	RedShylph	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H3_02	GiantElvenTree	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H3_03	PrinceRaplan	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H3_04	PrincessRaplan	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H3_05	MarvellBook00	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H3_06	AlkemisBook00	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H4_01	RedShylph	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H4_02	GiantElvenTree	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H4_03	PrinceRaplan	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H4_04	PrincessRaplan	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H4_05	MarvellBook00	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-#record		EldSleep01_H4_06	AlkemisBook00	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0			
-																				
-#end																				
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		EldSleep01_01	N	11496	10735	213	522	-49
+#record		EldSleep01_02	N	13470	8332	830	149	178
+#record		EldSleep01_03	N	11791	9696	288	532	178
+#record		EldSleep01_04	N	11657	7787	0	0	920
+#record		EldSleep01_05	N	13592	7576	924	517	-1
+#record		EldSleep01_06	N	9935	14969	750	431	-17
+#record		EldSleep01_07	N	13624	9013	0	0	496
+#record		EldSleep01_08	N	10198	13507	1166	148	49
+#record		EldSleep01_09	N	9187	15948	487	717	-14
+#record		EldSleep01_10	N	8783	17232	543	511	71
+#record		EldSleep01_11	N	8014	16087	297	929	-2
+#record		EldSleep01_12	N	14173	8681	0	0	91
+#record		EldSleep01_13	N	14334	11960	0	0	606
+#record		EldSleep01_14	N	14362	13863	192	555	48
+#record		EldSleep01_15	N	13373	11578	1029	301	36
+#record		EldSleep01_16	N	13316	12838	0	0	695
+#record		EldSleep01_17	N	8155	12965	0	0	767
+#record		EldSleep01_18	N	7899	14449	666	588	84
+#record		EldSleep01_19	N	10010	11904	260	1170	128
+#record		EldSleep01_20	N	11435	14131	561	564	37
+#record		EldSleep01_21	N	11279	18209	675	934	-41
+#record		EldSleep01_22	N	17563	13960	239	1013	159
+#record		EldSleep01_23	N	10155	17768	294	675	-5
+#record		EldSleep01_24	N	13776	15617	1003	750	-16
+#record		EldSleep01_25	N	16671	15305	1014	389	169
+#record		EldSleep01_26	N	10130	16574	61	554	-18
+#record		EldSleep01_27	N	16165	16277	558	1316	79
+#record		EldSleep01_28	N	11852	16588	203	675	-30
+#record		EldSleep01_29	N	17277	11379	256	645	6
+#record		EldSleep01_30	N	17683	9971	254	577	39
+#record		EldSleep01_31	N	16768	8715	108	310	-23
+#record		EldSleep01_32	N	15882	11647	522	324	101
+#record		EldSleep01_33	N	16158	10712	282	68	84
+#record		EldSleep01_34	N	15429	10332	238	834	27
+#record		EldSleep01_35	N	16301	9445	0	0	488
+#record		EldSleep01_36	N	15729	8340	852	189	58
+#record		EldSleep0001	N	12998	10250	3498	5829	87
+#record		EldSleep002	N	12748	16343	2653	5989	87
+#record		EldSleep003	N	12725	7757	1656	603	-2									
+#record		EldSleep004	N	8653	15105	1432	1129	172									
+#record		EldSleep005	N	11174	18150	295	737	-40									
+#record		EldSleep006	N	8917	13012	1357	914	172									
+#record		EldSleep007	N	12597	10721	116	1393	-33									
+#record		EldSleep008	N	13416	15557	0	0	1144									
+#record		EldSleep009	N	16703	15439	735	1750	-48									
+#record		EldSleep010	N	15860	9874	709	2329	-1									
+#record		S_GaintStone01	Y	13982	10449	255	524	5									
+#record		EldSleep110	Y	15244	12941	0	0	337									
+
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		EldSleep01_01	SpadeGuardTrumpy	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_02	SpadeGuardTrumpy	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_02	OrcCaptain	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_03	SpadeGuardTrumpy	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_04	OrcCaptain	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_04	SpadeGuardTrumpy	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_05	SpadeGuardTrumpy	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_05	OrcCaptain	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_06	GreedyLizardMan	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_06	NaiadDemon	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_06	BlueArchon	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep01_07	SpadeGuardTrumpy	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_07	OrcCaptain	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_08	GreedyLizardMan	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_08	NaiadDemon	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_09	NaiadDemon	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_09	GreedyLizardMan	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_09	BlueArchon	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep01_10	GreedyLizardMan	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_10	NaiadDemon	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_11	Shylph	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_12	OrcCaptain	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_13	AncientStonie	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_13	ElfKnightDemon	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_14	AncientStonie	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_15	AncientStonie	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_15	ElfKnightDemon	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_16	AncientStonie	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_16	ElfKnightDemon	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_17	Shylph	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_17	RedShylph	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_18	Shylph	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_18	RedShylph	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_18	BlueArchon	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep01_19	Shylph	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_19	RedShylph	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_20	OldArchon	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_20	DiaTrumpy	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_21	DiaTrumpy	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_21	OldArchon	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_22	ElfKnightDemon	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_22	SpadeTrumpy	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_23	OldArchon	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_23	DiaTrumpy	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_24	SpadeTrumpy	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_24	ElfKnightDemon	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_25	ElfKnightDemon	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_25	SpadeTrumpy	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_26	DiaTrumpy	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_26	OldArchon	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_27	SpadeTrumpy	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_27	ElfKnightDemon	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_28	OldArchon	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_28	DiaTrumpy	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_29	LizardManKnight	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_29	JokerTrumpy	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_30	LizardManKnight	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_30	JokerTrumpy	1	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_31	LizardManKnight	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_32	LizardManKnight	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_32	JokerTrumpy	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_33	LizardManKnight	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_34	LizardManKnight	3	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_34	JokerTrumpy	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_35	JokerTrumpy	2	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_35	LizardManKnight	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep01_36	WhiteJokerTrumpy	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep01_36	LizardManKnight	4	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep0001	PresentBox15	1	0	14400	14385	14415	-15	8	-10	15	0	60	10	120	15
+#record		EldSleep002	PresentBox15	1	0	14400	14385	14415	-15	8	-10	15	0	60	10	120	15
+#record		EldSleep003	MUSHROOM7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep003	MUSHROOM8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep003	MUSHROOM9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep003	HERB7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep003	HERB8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep003	HERB9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep004	MUSHROOM7	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep004	MUSHROOM8	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep004	MUSHROOM9	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep004	HERB7	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep004	HERB8	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep004	HERB9	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep005	WOOD7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep005	WOOD8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep005	WOOD9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep006	MUSHROOM7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep006	MUSHROOM8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep006	MUSHROOM9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep006	HERB7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep006	HERB8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep006	HERB9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep007	MUSHROOM7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep007	MUSHROOM8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep007	MUSHROOM9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep007	HERB7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep007	HERB8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep007	HERB9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep007	GreedyLizardMan	5	0	25	23	27	-2	8	-1	15	0	60	1	120	2
+#record		EldSleep007	BlueArchon	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep008	WOOD7	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep008	WOOD8	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep008	WOOD9	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep009	WOOD7	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep009	WOOD8	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep009	WOOD9	2	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	WOOD7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	WOOD8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	WOOD9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	HERB7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	HERB8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	HERB9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	MUSHROOM7	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	MUSHROOM8	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep010	MUSHROOM9	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		S_GaintStone01	S_Stonie	1	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		S_GaintStone01	Stonie	4	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		EldSleep110	LegendaryTree	1	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+#record		EldSleep110	GiantElvenTree	3	0	300	200	310	-100	5	-50	15	0	150	5	300	10
+
+#end																	

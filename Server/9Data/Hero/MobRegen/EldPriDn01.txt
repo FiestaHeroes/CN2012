@@ -1,157 +1,278 @@
-;	Shine Monster Regeneration Table			V0.3																
-;	Monster Group																			
-#ignore	\o042																			
-#exchange	#	\x20																		
-																				
-#table	MobRegenGroup																			
-;		GroupID	Family	Regen Region																
-;			Y/N	X	Y	X	Y	Range/Degree												
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD												
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree												
-#record		EldPriDn01_001	N	2329	8415	0	0	201												
-#record		EldPriDn01_002	N	3284	7573	0	0	314												
-#record		EldPriDn01_003	N	1761	9133	457	45	0												
-#record		EldPriDn01_004	N	1936	8102	0	0	216												
-#record		EldPriDn01_005	N	2455	7107	376	45	0												
-#record		EldPriDn01_006	N	1692	8589	0	0	216												
-#record		EldPriDn01_007	N	1652	7941	104	439	0												
-#record		EldPriDn01_008	N	1753	7207	0	0	258												
-#record		EldPriDn01_009	N	3102	6335	138	386	0												
-#record		EldPriDn01_010	N	3070	4559	141	537	0												
-#record		EldPriDn01_011	N	2212	6050	0	0	314												
-#record		EldPriDn01_012	N	1633	4939	0	0	496												
-#record		EldPriDn01_013	N	1371	6036	0	0	412												
-#record		EldPriDn01_014	N	544	4786	0	0	440												
-#record		EldPriDn01_015	N	475	6019	0	0	433												
-#record		EldPriDn01_016	N	2112	2941	0	0	258												
-#record		EldPriDn01_017	N	1463	1754	0	0	350												
-#record		EldPriDn01_018	N	2924	1726	0	0	350												
-#record		EldPriDn01_019	N	2166	1170	0	0	350												
-#record		EldPriDn01_020	N	2884	745	0	0	350												
-#record		EldPriDn01_021	N	4452	2806	599	123	0												
-#record		EldPriDn01_022	N	4593	4224	0	0	272												
-#record		EldPriDn01_023	N	4651	3524	0	0	279												
-#record		EldPriDn01_024	N	5574	4220	0	0	272												
-#record		EldPriDn01_025	N	5546	3557	0	0	307												
-#record		EldPriDn01_026	N	4523	6213	0	0	307												
-#record		EldPriDn01_027	N	5550	5492	0	0	258												
-#record		EldPriDn01_028	N	4522	5518	0	0	279												
-#record		EldPriDn01_029	N	5590	6298	0	0	216												
-#record		EldPriDn01_031	N	7219	6527	509	149	-46												
-#record		EldPriDn01_032	N	8774	6202	526	187	0												
-#record		EldPriDn01_033	N	8464	7378	0	0	265												
-#record		EldPriDn01_034	N	9226	7281	0	0	300												
-#record		EldPriDn01_035	N	10101	7543	345	474	0												
-#record		EldPriDn01_036	N	10076	4915	327	484	0												
-#record		EldPriDn01_037	N	11701	7736	0	0	363												
-#record		EldPriDn01_038	N	10132	6107	305	487	0												
-#record		EldPriDn01_039	N	12194	4743	512	350	0												
-#record		EldPriDn01_040	N	11497	6033	0	0	272												
-#record		EldPriDn01_041	N	11466	9901	672	66	-49												
-#record		EldPriDn01_042	N	8651	1249	321	735	0												
-#record		EldPriDn01_043	N	9903	1134	288	679	0												
-#record		EldPriDn01_044	N	11799	11861	0	0	615												
-#record		EldPriDn01_045	N	9251	616	745	197	0												
-#record		EldPriDn01_046	N	4650	1804	0	0	433												
-#record		EldPriDn01_047	N	8786	9448	0	0	587												
-#record		EldPriDn01_048	N	5625	9494	462	346	0												
-#record		EldPriDn01_049	N	5290	8241	1080	102	0												
-#record		EldPriDn01_050	N	4643	1188	0	0	538												
-#record		EldPriDn01P01	N	4305	1526	0	0	216												
-#record		PriDn01_Mine01	N	12459	5606	0	0	216												
-#record		PriDn01_Mine02	N	12415	6070	0	0	216												
-#record		PriDn01_Mine03	N	12431	6424	0	0	216												
-#record		PriDn01_Mine04	N	12351	6790	0	0	216												
-#record		PriDn01_Mine05	N	12135	6933	0	0	216												
-#record		PriDn01_Mine06	N	3190	9873	0	0	216												
-#record		PriDn01_Mine07	N	2704	9691	0	0	216												
-#record		PriDn01_Mine08	N	2707	10077	0	0	216												
-#record		PriDn01_Mine09	N	2483	9862	0	0	216												
-#record		PriDn01_Mine10	N	3112	10098	0	0	216												
-#record		EldPriDn01Guard01	N	3003	8690	0	0	12												
-#record		EldPriDn01Guard02	N	3224	8679	0	0	12												
-#record		EldPriDn01_C1_01	N	4243	972	0	0	26												
-#record		EldPriDn01_C2_01	N	5085	2180	0	0	26												
-#record		EldPriDn01_C3_01	N	4303	1974	0	0	12												
-#record		EldPriDn01_C4_01	N	5085	910	0	0	19												
-																				
-																				
-																				
-#table	MobRegen																			
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base							
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta				
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD			
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4			
-#record		EldPriDn01_001	KingSpiderA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_002	KingSpiderA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_003	KingSpiderA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_004	KingSpiderA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_005	KingSpiderA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_006	KingSpiderA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_007	KingSpiderA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_008	KingSpiderA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_009	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_010	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_011	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_012	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_013	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_014	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_015	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_016	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_017	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_018	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_019	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_020	KaraWarriorA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_021	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_021	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_022	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_022	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_023	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_023	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_024	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_024	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_025	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_025	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_026	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_026	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_027	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_027	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_028	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_028	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_029	KaraDarkTemplerA	2	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_029	KaraDarkTemplerA	1	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_031	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_032	NoxA	4	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_033	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_034	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_035	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_036	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_037	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_038	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_039	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_040	NoxA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_041	NoxHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_042	NoxHunterA	5	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_043	NoxHunterA	5	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_044	NoxHunterA	7	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_045	NoxHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_046	NoxHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_047	NoxHunterA	6	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_048	NoxHunterA	4	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_049	NoxHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01_050	NoxHunterA	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01P01	PresentBox12	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4			
-#record		PriDn01_Mine01	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine02	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine03	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine04	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine05	MINE6	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine06	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine07	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine08	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine09	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		PriDn01_Mine10	MINE7	3	0	48	29	67	-18	29	-9	39	19	57	24	67	0			
-#record		EldPriDn01Guard01	GuardMihael02	1	0	45	28	63	-18	28	-9	37	18	54	23	63	0			
-#record		EldPriDn01Guard02	GuardMihael02	1	0	45	28	63	-18	28	-9	37	18	54	23	63	0			
-																				
-#end																				
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		EldPriDn01Area01	N	1326	7559	59	441	0
+#record		EldPriDn01Area02	N	2038	9352	112	50	0
+#record		EldPriDn01Area03	N	2058	10407	115	417	0
+#record		EldPriDn01Area04	N	3141	10721	363	97	0
+#record		EldPriDn01Area05	N	2682	9612	228	126	0
+#record		EldPriDn01Area06	N	3368	9577	170	247	89
+#record		EldPriDn01Area07	N	3438	10061	153	132	0
+#record		EldPriDn01Area08	N	2720	10112	208	277	88
+#record		EldPriDn01Area09	N	3537	12188	127	281	0
+#record		EldPriDn01Area10	N	3068	12164	128	289	0
+#record		EldPriDn01Area11	N	2506	12135	145	393	0
+#record		EldPriDn01Area12	N	3399	11348	276	215	0
+#record		EldPriDn01Area13	N	694	8750	129	676	0
+#record		EldPriDn01Area14	N	509	8735	51	474	-29
+#record		EldPriDn01Area15	N	1457	9242	109	134	0
+#record		EldPriDn01Area16	N	3015	7539	612	351	1
+#record		EldPriDn01Area17	N	3100	5501	173	418	-1
+#record		EldPriDn01Area18	N	3063	3923	165	472	16
+#record		EldPriDn01Area19	N	8741	9462	587	516	47
+#record		EldPriDn01Area20	N	5088	3717	355	459	-26
+#record		EldPriDn01Area21	N	1383	5719	352	73	0
+#record		EldPriDn01Area22	N	1965	5407	112	322	88
+#record		EldPriDn01Area23	N	2440	6154	247	77	89
+#record		EldPriDn01Area24	N	2065	5927	73	241	0
+#record		EldPriDn01Area26	N	1194	6326	215	99	0
+#record		EldPriDn01Area27	N	185	6203	252	92	91
+#record		EldPriDn01Area28	N	349	5732	236	75	0
+#record		EldPriDn01Area29	N	1407	5261	239	119	-88
+#record		EldPriDn01Area30	N	2914	6468	6127	3214	90
+#record		EldPriDn01Area31	N	610	4988	127	182	0
+#record		EldPriDn01Area32	N	2354	4895	239	122	89
+#record		EldPriDn01Area33	N	2338	4437	184	83	0
+#record		EldPriDn01Area34	N	1382	4568	133	160	90
+#record		EldPriDn01Area35	N	1554	3460	151	425	-44
+#record		EldPriDn01Area36	N	541	4470	350	97	1
+#record		EldPriDn01Area37	N	5101	5855	396	512	-42
+#record		EldPriDn01Area38	N	2774	728	0	0	511
+#record		EldPriDn01Area39	N	2792	1777	0	0	492
+#record		EldPriDn01Area40	N	1554	1202	513	985	0
+#record		EldPriDn01Area41	N	3656	3942	179	513	0
+#record		EldPriDn01Area42	N	4362	2830	468	164	1
+#record		EldPriDn01Area43	N	5184	3519	709	179	0
+#record		EldPriDn01Area44	N	9809	3053	566	147	0
+#record		EldPriDn01Area45	N	5436	4119	471	249	0
+#record		EldPriDn01Area47	N	5377	5418	460	144	7
+#record		EldPriDn01Area48	N	4791	6319	490	145	0
+#record		EldPriDn01Area49	N	4865	5835	531	97	-44
+#record		EldPriDn01Area50	N	6071	5823	366	89	0
+#record		EldPriDn01Area51	N	7210	6541	535	131	-47
+#record		EldPriDn01Area52	N	9411	6753	224	788	0
+#record		EldPriDn01Area53	N	8387	6753	138	783	-1
+#record		EldPriDn01Area54	N	8807	6773	125	770	0
+#record		EldPriDn01Area55	N	10101	7153	332	112	0
+#record		EldPriDn01Area56	N	10114	7969	358	117	1
+#record		EldPriDn01Area57	N	10880	6255	67	1723	0
+#record		EldPriDn01Area58	N	10101	6082	292	478	0
+#record		EldPriDn01Area59	N	10146	5291	352	100	0
+#record		EldPriDn01Area60	N	10145	4447	338	101	0
+#record		EldPriDn01Area61	N	10148	4896	345	114	0
+#record		EldPriDn01Area62	N	11423	6100	195	142	0
+#record		EldPriDn01Area63	N	11519	6466	352	115	0
+#record		EldPriDn01Area64	N	11538	5669	350	98	1
+#record		EldPriDn01Area65	N	11795	4732	100	387	0
+#record		EldPriDn01Area66	N	12073	7662	117	338	0
+#record		EldPriDn01Area67	N	12166	4740	144	355	0
+#record		EldPriDn01Area68	N	12572	4721	133	368	0
+#record		EldPriDn01Area69	N	11286	7708	109	340	0
+#record		EldPriDn01Area70	N	11672	7737	99	324	0
+#record		EldPriDn01Area71	N	12543	6344	143	818	0
+#record		EldPriDn01Area72	N	11303	4866	158	469	0
+#record		EldPriDn01Area73	N	4702	8286	717	166	0
+#record		EldPriDn01Area74	N	5320	9465	170	309	0
+#record		EldPriDn01Area75	N	5923	9476	176	321	0
+#record		EldPriDn01Area76	N	6580	8819	716	131	-62
+#record		EldPriDn01Area77	N	8729	9827	398	248	0
+#record		EldPriDn01Area78	N	8711	8969	432	241	0
+#record		EldPriDn01Area79	N	11895	11883	0	0	738
+#record		EldPriDn01Area80	N	11378	9914	569	187	-44
+#record		EldPriDn01Area81	N	10028	9407	143	497	89
+#record		EldPriDn01Area82	N	10831	3659	119	382	0
+#record		EldPriDn01Area83	N	9269	1663	844	333	1
+#record		EldPriDn01Area84	N	9384	737	860	325	0
+#record		EldPriDn01Area85	N	6002	1548	304	173	0
+#record		EldPriDn01Area86	N	7224	1169	555	169	0
+#record		EldPriDn01Area87	N	4800	1483	304	787	0
+#record		EldPriDn01Area88	N	9293	6475	2935	6109	0
+#record		EldPriDn0189	N	4774	1490	568	432	0									
+#record		PriDn01MINE01	N	310	8727	60	605	0									
+#record		PriDn01MINE02	N	3018	12612	50	542	-90									
+#record		PriDn01MINE03	N	11338	6993	200	183	0									
+#record		PriDn01MINE04	N	12091	6102	57	589	0									
+#record		PriDn01MINE05	N	9312	1670	163	817	89									
+#record		PriDn01MINE06	N	3323	1268	923	51	-90									
+#record		EldPriDn01AReaQst01	N	1645	7771	84	539	-1									
+#record		EldPriDn01Area55-1	N	9997	7548	235	74	0									
+#record		EldPriDn0156	N	2389	3072	0	0	240									
+
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		EldPriDn01Area01	RedStonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area02	RedStonie	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area03	RedStonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area03	Navar	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area04	RedStonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area04	Navar	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area05	Navar	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area06	Navar	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area07	Navar	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area08	Navar	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area09	Navar	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area10	Navar	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area11	Navar	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area12	Navar	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area13	RedStonie	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area14	RedStonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area15	RedStonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area16	KaraSolider	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area16	KaraTempler	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area16	Q_Waste_Herb	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area17	KaraTempler	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area17	KingSpider	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area17	Q_Waste_Herb	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area18	MiniJewelKeeper	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area19	Q_Waste_Herb	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area20	Q_Waste_Herb	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area21	KingSpider	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area21	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area22	KingSpider	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area22	KaraTempler	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area23	KingSpider	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area23	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area24	KingSpider	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area24	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area26	KingSpider	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area26	MiniJewelKeeper	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area27	KingSpider	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area27	MiniJewelKeeper	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area28	KingSpider	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area28	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area29	KingSpider	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area29	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area30	PresentBox11	1	0	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+#record		EldPriDn01Area31	KingSpider	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area31	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area32	KingSpider	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area32	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area33	KingSpider	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area33	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area34	KingSpider	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area34	MiniJewelKeeper	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area35	MiniJewelKeeper	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area36	MiniJewelKeeper	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area37	Q_Waste_Herb	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area38	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area38	GoldenBat	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area38	Q_QueenSpider	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area39	MiniJewelKeeper	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area39	GoldenBat	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area39	Q_Waste_Herb	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area39	Q_QueenSpider	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area40	MiniJewelKeeper	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area40	GoldenBat	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area40	Q_QueenSpider	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area41	GoldenBat	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area41	LittleRunningBas	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area42	LittleRunningBas	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area42	GoldenBat	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area43	LittleRunningBas	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area43	GoldenBat	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area44	RatmanKnight	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area45	LittleRunningBas	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area45	GoldenBat	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area47	OrcHunter	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area48	OrcHunter	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area49	OrcHunter	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area50	OrcHunter	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area51	OrcHunter	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area52	Nox	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area52	Q_NoxCaptain	1	0	170	155	185	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area52	Incubus	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area53	Nox	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area53	Incubus	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area54	Nox	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area54	Q_NoxCaptain	1	0	170	155	185	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area54	Q_BrightGoldenBat	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area55	Archon	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area55	Q_Rat_EL_Knight	1	0	170	155	185	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area56	Archon	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area57	Incubus	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area57	Nox	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area57	Q_NoxCaptain	2	0	170	155	185	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area57	Q_BrightGoldenBat	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area57	Q_Rat_EL_Knight	1	0	170	155	185	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area58	Archon	8	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area58	Q_BrightGoldenBat	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area59	Archon	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area59	Q_Rat_EL_Knight	1	0	170	155	185	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area60	Archon	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area61	Archon	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area62	NaiadSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area62	Stonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area63	NaiadSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area63	Stonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area63	Q_BrightGoldenBat	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area64	NaiadSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area64	Stonie	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area65	Stonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area65	NaiadSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area66	NaiadSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area66	Stonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area67	Stonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area68	NaiadSoul	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area69	NaiadSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area69	Stonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area70	NaiadSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area70	Stonie	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area70	Q_BrightGoldenBat	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area71	Stonie	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area71	NaiadSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area71	Q_BrightGoldenBat	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area72	Stonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area73	RedStonie	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area73	ElfKnightSoul	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area74	RedStonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area74	ElfKnightSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area75	RedStonie	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area75	ElfKnightSoul	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area76	ElfKnightSoul	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area76	RedStonie	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area77	ElfKnightSoul	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area78	ElfKnightSoul	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area79	ElfKnightSoul	8	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area80	ElfKnightSoul	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area80	SparkDog	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area81	ElfKnightSoul	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area81	SparkDog	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area82	RatmanKnight	4	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area83	RatmanKnight	7	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area84	RatmanKnight	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area84	SparkDog	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area85	SparkDog	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area85	JewelKeeper	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area86	JewelKeeper	5	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area86	SparkDog	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area87	SparkDog	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area88	PresentBox11	1	0	14400	14400	14400	0	5	0	8	0	10	0	13	0
+#record		EldPriDn0189	JewelKeeper	7	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE01	MINE6	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE01	RedStonie	3	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE02	MINE5	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE02	MINE6	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE02	MINE4	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE03	MINE6	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE04	MINE5	4	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE05	MINE4	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE06	MINE4	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		PriDn01MINE06	MINE6	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01AReaQst01	KaraTempler	1	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01AReaQst01	KaraSolider	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn01Area55-1	Archon	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+#record		EldPriDn0156	Q_QueenSpider	2	0	35	20	50	-15	8	-10	15	0	60	10	120	15
+
+#end																	

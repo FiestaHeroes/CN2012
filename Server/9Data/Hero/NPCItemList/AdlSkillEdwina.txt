@@ -1,0 +1,71 @@
+;		ItemList in NPC					
+#ignore	\o042			; 인용부호 무시			
+#exchange	#	\x20		; # => space			
+;		2011.10.18					
+							
+#Table	Tab00	;파이터 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab01	;파이터 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab02	;클레릭 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab03	;클레릭 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab04	;아처 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab05	;아처 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab06	;메이지 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab07	;메이지 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab08	;조커 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab09	;조커 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab10	;연금술 					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab11	;센티넬 액티브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#Table	Tab12	;센티넬 패시브					
+#ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]
+#ColumnName	Rec	Column00	Column01	Column02	Column03	Column04	Column05
+#Record	0	-	-	-	-	-	-
+							
+#End							

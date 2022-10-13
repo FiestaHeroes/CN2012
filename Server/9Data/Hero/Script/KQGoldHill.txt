@@ -1,41 +1,37 @@
 
-#ignore	\o042		
-#exchange	#	\x20	
+#ignore	\o042		; 牢侩何龋 公矫
+#exchange	#	\x20	; # => space
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-				
-#Record	KQStart60	60秒后,王国任务即将开始.		
-#Record	KQStart30	30秒后,王国任务即将开始.		
-#Record	KQStart20	20秒后,王国任务即将开始.		
-#Record	KQStart10	10秒后,王国任务即将开始.		
-#Record	KQStart5	5秒后,王国任务即将开始.		
-				
-#Record	Intro0	哈哈哈....你们这些愚昧的家伙,这里根本没有你们要找的黄金.		
-#Record	Intro1	哈哈哈....这里是为了引诱你们上钩的陷阱,现在已经被我的部下包围了.		
-#Record	Intro2	哈哈哈....你们不来还真没意思,告诉你们一个秘密,我把钥匙藏在矿石里面,看你们能不能找到.		
-				
-#Record	FirstGateOpen	哈哈哈....找钥匙可不是那么容易的事情.仔细在矿石的隙缝里找找看,不要急哦～哈哈哈～		
-				
-#Record	SecondGateOpen	哈哈哈....我的部下是不是妨碍你们找钥匙了？我只不过吩咐他们给你们按摩一下,哈哈哈～		
-				
-#Record	ThirdGateOpen	哈哈哈....已经等得不耐烦了,还停留在最高层吗？你们还配叫做远征队吗？哈哈哈～		
-				
-#Record	LastGateOpen0	哈哈哈....快点下来....什么时候跑到这里来了？		
-#Record	LastGateOpen1	哈哈哈....有我在这里,你们呢....就別想逃出去.		
-				
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	KQStart60	The KingdomQuest will begin in 60 Seconds.		
+#Record	KQStart30	The KingdomQuest will begin in 30 Seconds.		
+#Record	KQStart20	The KingdomQuest will begin in 20 Seconds.		
+#Record	KQStart10	The KingdomQuest will begin in 10 Seconds.		
+#Record	KQStart5	The KingdomQuest will begin in 5 Seconds.		
 
-#Record	ItemDrop	隐藏的钥匙被发现了,请持有钥匙的人,前往开启冰封之门.		
-				
+#Record	Intro0	"You, stupid and covetous fool, there is no such gold that you are looking for."	
+#Record	Intro1	It was just a trick to make Haness show up.	
+#Record	Intro2	"Muhaha, since killing you all now seems boring, I'll give you a chance. I hid a key in ore. You go find it and bring to be."	
+			
+#Record	FirstGateOpen	"It isn't easy to find the key. But if you look carefully among the minerals, you will find it. No need to hurry."	
+			
+#Record	SecondGateOpen	"Are my soldiers disturbing you? They will take real good care of you, Hahahah!"	
+			
+#Record	ThirdGateOpen	I grow tiresome of waiting for you.  Are you still on the top floor?? You are not even worth the name of Heneath expedition.
+		
+#Record	LastGateOpen0	Hurry up and get down hereˇHuh? When did you get here?
+#Record	LastGateOpen1	"As long as I am standing here, you cannot leave."
+		
 
-#Record	KQReturn30	30秒后离开王国任务		
-#Record	KQReturn20	20秒后离开王国任务		
-#Record	KQReturn10	10秒后离开王国任务		
-#Record	KQReturn5	5秒后离开王国任务		
-				
-#End				
-				
-				
-				
-				
+#Record	ItemDrop	The hidden key has been discovered.
+		
+
+#Record	KQReturn30	Move to Elderine in 30 seconds.
+#Record	KQReturn20	Move to Elderine in 20 seconds.
+#Record	KQReturn10	Move to Elderine in 10 seconds.
+#Record	KQReturn5	Move to Elderine in 5 seconds.
+
+#End

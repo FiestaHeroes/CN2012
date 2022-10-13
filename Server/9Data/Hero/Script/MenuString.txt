@@ -2,33 +2,32 @@
 #ignore	\o042		
 #exchange	#	\x20	
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-				
-#Record	LinkTitle	要移动到%s吗?		
-				
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
 
-#Record	SilverWingTitle	使用银翼		
-#Record	SilverWingLocSet	记录当前位置		
-#Record	SilverWingPortal	飞行		
-				
+#Record	LinkTitle	Do you want to move to %s field?	
 
-#Record	Revive	现在要复活吗?		
-				
 
-#Record	ItemBreakWarn0	丢弃该道具时将会自动破坏无法恢复.		
-#Record	ItemBreakWarn1	要破坏所选择的道具吗?		
+#Record	SilverWingTitle	Use silver wings	
+#Record	SilverWingLocSet	Save location	
+#Record	SilverWingPortal	Fly to the saved location	
+			
 
-#Record	ItemDropWarn	要丢弃道具吗?		
-				
+#Record	Revive	Do you want to revive now?	
 
-#Record	ID_DeleteNow	有保留中的王国任务, 要初始化吗?		
-				
 
-#Record	Summons	配偶在召唤你, 要移动吗?		
-#Record	InstantDivorce	使用申请书,会消耗道具,无法取消申请.		
-				
+#Record	ItemBreakWarn0	If you discard this item, it will automatically be destroyed.	
+#Record	ItemBreakWarn1	Do you want to destroy the selected item?	
+#Record	ItemDropWarn	Do you want to discard the item?	
 
-#Record	ReleasePrison	服刑期限已满, 可以出狱了.1分钟后自动离开.		
-#End				
+
+#Record	ID_DeleteNow	怲here's no one inside. Would you like to quit?	
+
+
+#Record	Summons	Would you like to be summoned by your spouse?	
+#Record	InstantDivorce	Item will be consumed and cannot be cancelled once used.	
+
+
+#Record	ReleasePrison	You're free to leave now, I hope you've learnt your lesson.	
+#End

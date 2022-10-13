@@ -1,332 +1,460 @@
-;	Shine Monster Regeneration Table			V0.3														
-;	Monster Group																	
-#ignore	\o042																	
-#exchange	#	\x20																
-																		
-#table	MobRegenGroup																	
-;		GroupID	Family	Regen Region														
-;			Y/N	X	Y	X	Y	Range/Degree										
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
-#record		Swa01_001A	N	9305	5782	0	0	350										
-#record		Swa01_002A	N	4916	5039	0	0	350										
-#record		Swa01_003A	N	6185	5382	0	0	350										
-#record		Swa01_004A	N	8850	5087	0	0	350										
-#record		Swa01_005A	N	7535	6430	0	0	350										
-#record		Swa01_006A	N	8955	9256	0	0	350										
-#record		Swa01_007A	N	7892	7560	0	0	350										
-#record		Swa01_008A	N	7688	8388	0	0	350										
-#record		Swa01_009A	N	9056	8459	0	0	350										
-#record		Swa01_010A	N	9687	7995	0	0	350										
-#record		Swa01_011A	N	7232	9840	0	0	350										
-#record		Swa01_012A	N	7213	9217	0	0	350										
-#record		Swa01_013A	N	8508	10126	0	0	350										
-#record		Swa01_014A	N	8659	10891	0	0	350										
-#record		Swa01_015A	N	8064	11229	0	0	350										
-#record		Swa01_016A	N	12917	9982	0	0	350										
-#record		Swa01_017A	N	11450	10561	0	0	350										
-#record		Swa01_018A	N	12231	11350	0	0	350										
-#record		Swa01_019A	N	13958	11481	0	0	350										
-#record		Swa01_020A	N	12162	12400	0	0	350										
-#record		Swa01_021A	N	15013	11988	0	0	350										
-#record		Swa01_022A	N	12042	13512	0	0	350										
-#record		Swa01_023A	N	13841	14158	0	0	350										
-#record		Swa01_024A	N	13117	13865	0	0	350										
-#record		Swa01_025A	N	15027	13638	0	0	350										
-#record		Swa01_026A	N	17918	14146	0	0	350										
-#record		Swa01_027A	N	17207	13507	0	0	350										
-#record		Swa01_028A	N	18528	12122	0	0	350										
-#record		Swa01_029A	N	17650	13051	0	0	350										
-#record		Swa01_030A	N	18043	15087	0	0	350										
-#record		Swa01_031A	N	19446	12663	0	0	350										
-#record		Swa01_032A	N	20727	14386	0	0	350										
-#record		Swa01_033A	N	19350	13617	0	0	350										
-#record		Swa01_034A	N	21404	14225	0	0	350										
-#record		Swa01_035A	N	22016	14158	0	0	350										
-#record		Swa01_036A	N	19986	16415	0	0	350										
-#record		Swa01_037A	N	18644	16741	0	0	350										
-#record		Swa01_038A	N	18487	17489	0	0	350										
-#record		Swa01_039A	N	14607	16288	0	0	350										
-#record		Swa01_040A	N	15999	16995	0	0	350										
-#record		Swa01_041A	N	19796	18616	0	0	350										
-#record		Swa01_042A	N	20643	20011	0	0	350										
-#record		Swa01_043A	N	13740	17625	0	0	350										
-#record		Swa01_044A	N	19023	20243	0	0	350										
-#record		Swa01_045A	N	15288	18507	0	0	350										
-#record		Swa01_046A	N	14749	20354	0	0	350										
-#record		Swa01_047A	N	13719	18646	0	0	350										
-#record		Swa01_048A	N	13463	20757	0	0	350										
-#record		Swa01_049A	N	18786	21156	0	0	350										
-#record		Swa01_050A	N	21136	20740	0	0	350										
-#record		Swa01_001B	N	5573	6626	0	0	350										
-#record		Swa01_002B	N	6438	6878	0	0	350										
-#record		Swa01_003B	N	5305	7816	0	0	350										
-#record		Swa01_004B	N	6394	8467	0	0	350										
-#record		Swa01_005B	N	4631	8049	0	0	350										
-#record		Swa01_006B	N	3284	10810	0	0	350										
-#record		Swa01_007B	N	4116	11286	0	0	350										
-#record		Swa01_008B	N	6002	11677	0	0	350										
-#record		Swa01_009B	N	6679	11711	0	0	350										
-#record		Swa01_010B	N	3608	8978	0	0	350										
-#record		Swa01_011B	N	4253	9237	0	0	350										
-#record		Swa01_012B	N	4859	9478	0	0	350										
-#record		Swa01_013B	N	5902	10689	0	0	350										
-#record		Swa01_014B	N	5159	10365	0	0	350										
-#record		Swa01_015B	N	4899	11551	0	0	350										
-#record		Swa01_016B	N	12304	9244	0	0	350										
-#record		Swa01_017B	N	12040	6699	0	0	350										
-#record		Swa01_018B	N	13148	5403	0	0	350										
-#record		Swa01_019B	N	14708	4555	0	0	350										
-#record		Swa01_020B	N	16098	9726	0	0	350										
-#record		Swa01_021B	N	14477	9755	0	0	350										
-#record		Swa01_022B	N	15105	8066	0	0	350										
-#record		Swa01_023B	N	17194	8978	0	0	350										
-#record		Swa01_024B	N	14903	6350	0	0	350										
-#record		Swa01_025B	N	16988	7050	0	0	350										
-#record		Swa01_026B	N	19142	9557	0	0	350										
-#record		Swa01_027B	N	19229	8177	0	0	350										
-#record		Swa01_028B	N	18325	5338	0	0	350										
-#record		Swa01_029B	N	18281	8079	0	0	350										
-#record		Swa01_030B	N	20002	8642	0	0	350										
-#record		Swa01_031B	N	20867	10993	0	0	350										
-#record		Swa01_032B	N	21113	8707	0	0	350										
-#record		Swa01_033B	N	20860	9978	0	0	350										
-#record		Swa01_034B	N	20085	4953	0	0	350										
-#record		Swa01_035B	N	18910	4714	0	0	350										
-#record		Swa01_036B	N	10905	20609	0	0	350										
-#record		Swa01_037B	N	9697	19969	0	0	350										
-#record		Swa01_038B	N	10481	17691	0	0	350										
-#record		Swa01_039B	N	10111	16809	0	0	350										
-#record		Swa01_040B	N	9609	18108	0	0	350										
-#record		Swa01_041B	N	8382	16615	0	0	350										
-#record		Swa01_042B	N	8891	15442	0	0	350										
-#record		Swa01_043B	N	8411	19468	0	0	350										
-#record		Swa01_044B	N	7946	17764	0	0	350										
-#record		Swa01_045B	N	7508	15209	0	0	350										
-#record		Swa01_046B	N	5390	18819	0	0	350										
-#record		Swa01_047B	N	5029	17333	0	0	350										
-#record		Swa01_048B	N	4118	15638	0	0	350										
-#record		Swa01_049B	N	5607	15673	0	0	350										
-#record		Swa01_050B	N	3725	19058	0	0	350										
-#record		FLOWER1	N	8525	8116	1239	1516	1										
-#record		FLOWER2	N	7711	9386	1330	1793	1										
-#record		FLOWER3	N	7256	9185	1763	1810	1										
-#record		FLOWER4	N	14672	12175	1752	1479	1										
-#record		FLOWER5	N	16870	12163	1643	1701	1										
-#record		FLOWER6	N	16037	13564	1868	1719	1										
-#record		FLOWER7	N	15710	12722	1701	1756	1										
-#record		FLOWER8	N	14291	20000	1534	1647	1										
-#record		FLOWER9	N	14374	19811	1424	1618	1										
-#record		FLOWER10	N	14568	19924	1719	1665	1										
-#record		HERB1	N	15654	12836	1672	1668	1										
-#record		HERB2	N	14432	19749	1545	1720	1										
-#record		WOOD8	N	15826	12691	1293	1698	1										
-#record		WOOD9	N	14588	19758	1544	1632	1										
-#record		MUSHROOM8	N	16195	12727	991	1717	1										
-#record		MUSHROOM9	N	14442	19914	1395	1785	1										
-#record		P01	N	15182	9093	4002	5036	1										
-#record		P02	N	6566	18219	3272	3417	1										
-#record		UrgSwa01Guard01	N	8581	7000	0	0	13										
-#record		UrgSwa01Guard02	N	13490	12717	0	0	13										
-#record		UrgSwa01Guard03	N	14185	19112	0	0	13										
-#record		Swa01_h1_01	N	5494	9281	0	0	20										
-#record		Swa01_h1_02	N	9487	9984	0	0	76										
-#record		Swa01_h1_03	N	14081	4537	0	0	27										
-#record		Swa01_h1_04	N	21595	16370	0	0	69										
-#record		Swa01_h1_05	N	7299	20436	0	0	55										
-#record		Swa01_h2_01	N	5776	10113	0	0	55										
-#record		Swa01_h2_02	N	8642	10976	0	0	27										
-#record		Swa01_h2_03	N	12737	5098	0	0	48										
-#record		Swa01_h2_04	N	22154	14645	0	0	41										
-#record		Swa01_h2_05	N	6418	19927	0	0	41										
-#record		Swa01_h3_01	N	4866	10048	0	0	27										
-#record		Swa01_h3_02	N	9264	8971	0	0	55										
-#record		Swa01_h3_03	N	11590	4364	0	0	20										
-#record		Swa01_h3_04	N	21336	14050	0	0	62										
-#record		Swa01_h3_05	N	7259	19821	0	0	41										
-#record		Swa01_h4_01	N	6500	9547	0	0	62										
-#record		Swa01_h4_02	N	8614	10043	0	0	55										
-#record		Swa01_h4_03	N	13129	4398	0	0	41										
-#record		Swa01_h4_04	N	21302	15133	0	0	48										
-#record		Swa01_h4_05	N	6778	19315	0	0	55										
-																		
-																		
-																		
-#table	MobRegen																	
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
-#record		Swa01_001A	Slug	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_002A	Slug	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_003A	Slug	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_004A	Slug	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_005A	Slug	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_006A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_006A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_007A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_007A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_008A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_008A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_009A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_009A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_010A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_010A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_011A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_011A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_012A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_012A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_013A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_013A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_014A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_014A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_015A	MadSlug	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_015A	LivingTotem	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_016A	MantrapPlant	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_017A	MantrapPlant	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_018A	MantrapPlant	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_019A	MantrapPlant	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_020A	MantrapPlant	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_021A	Mandrake	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_022A	Mandrake	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_023A	Mandrake	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_024A	Mandrake	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_025A	Mandrake	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_026A	Ruga	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_027A	Ruga	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_028A	Ruga	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_029A	Ruga	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_030A	Ruga	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_031A	Kruge	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_032A	Kruge	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_033A	Kruge	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_034A	Kruge	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_035A	Kruge	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_036A	Rhinoce	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_037A	Rhinoce	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_038A	Rhinoce	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_039A	Rhinoce	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_040A	Rhinoce	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_041A	RhinoceLord	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_042A	RhinoceLord	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_043A	RhinoceLord	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_044A	RhinoceLord	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_045A	RhinoceLord	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_046A	RhinoceHunter	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_047A	RhinoceHunter	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_048A	RhinoceHunter	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_049A	RhinoceHunter	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_050A	RhinoceHunter	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_001B	Raplansia	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_002B	Raplansia	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_003B	Raplansia	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_004B	Raplansia	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_005B	Raplansia	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_006B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_006B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_007B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_007B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_008B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_008B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_009B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_009B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_010B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_010B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_011B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_011B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_012B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_012B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_013B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_013B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_014B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_014B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_015B	CaimanJunior	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_015B	Caiman	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_016B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_016B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_017B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_017B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_018B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_018B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_019B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_019B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_020B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_020B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_021B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_021B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_022B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_022B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_023B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_023B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_024B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_024B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_025B	Alka	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_025B	Baridon	1	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_026B	RedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_027B	RedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_028B	RedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_029B	RedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_030B	RedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_031B	GiantRedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_032B	GiantRedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_033B	GiantRedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_034B	GiantRedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_035B	GiantRedCondor	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_036B	MudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_037B	MudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_038B	MudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_039B	MudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_040B	MudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_041B	BigMudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_042B	BigMudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_043B	BigMudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_044B	BigMudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_045B	BigMudMan	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_046B	Weasel	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_047B	Weasel	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_048B	Weasel	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_049B	Weasel	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		Swa01_050B	Weasel	3	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER1	FLOWER8	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER2	FLOWER8	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER3	FLOWER8	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER4	FLOWER8	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER5	FLOWER8	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER6	FLOWER9	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER7	FLOWER9	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER8	FLOWER9	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER9	FLOWER9	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		FLOWER10	FLOWER9	2	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		HERB1	HERB8	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		HERB2	HERB9	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		WOOD8	WOOD8	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		WOOD9	WOOD9	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		MUSHROOM8	MUSHROOM8	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		MUSHROOM9	MUSHROOM9	5	0	25	17	34	-8	17	-4	22	10	29	13	34	0	
-#record		P01	PresentBox13	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		P02	PresentBox14	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		UrgSwa01Guard01	GuardLue03	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
-#record		UrgSwa01Guard02	GuardLue03	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
-#record		UrgSwa01Guard03	GuardLue03	1	0	20	14	26	-8	14	-4	18	8	22	10	26	0	
-#record		Swa01_h1_01	DoppelgngerHans	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h1_02	SuperLivingTotem	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h1_03	DoppelgngerChyburn	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h1_04	KrugeForce	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h1_05	IceLich	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h2_01	DoppelgngerHans	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h2_02	SuperLivingTotem	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h2_03	DoppelgngerChyburn	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h2_04	KrugeForce	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h2_05	IceLich	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h3_01	DoppelgngerHans	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h3_02	SuperLivingTotem	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h3_03	DoppelgngerChyburn	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h3_04	KrugeForce	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h3_05	IceLich	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h4_01	DoppelgngerHans	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h4_02	SuperLivingTotem	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h4_03	DoppelgngerChyburn	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h4_04	KrugeForce	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-#record		Swa01_h4_05	IceLich	1	0	100	50	150	-80	50	-40	70	40	130	80	150	0	
-																		
-#end																		
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		Swa01_23	N	9648	3598	0	0	450
+#record		Swa01_24	N	8296	4008	0	0	450
+#record		Swa01_25	N	5064	4157	0	0	450
+#record		Swa01_26	N	7136	5313	0	0	450
+#record		Swa01_27	N	6524	3907	0	0	450
+#record		Swa01_28	N	5961	4842	0	0	450
+#record		Swa01_29	N	5025	5825	0	0	450
+#record		Swa01_30	N	6910	7198	0	0	450
+#record		Swa01_31	N	8215	7559	0	0	450
+#record		Swa01_32	N	17201	4853	0	0	450
+#record		Swa01_33	N	7765	6220	0	0	450
+#record		Swa01_34	N	4020	4811	0	0	450
+#record		Swa01_35	N	10920	3828	0	0	450
+#record		Swa01_36	N	17787	3775	0	0	450
+#record		Swa01_37	N	18818	4729	0	0	450
+#record		Swa01_38	N	12875	5397	0	0	450
+#record		Swa01_39	N	14007	6085	0	0	450
+#record		Swa01_40	N	3412	5950	0	0	450
+#record		Swa01_41	N	9023	5332	0	0	450
+#record		Swa01_42	N	11590	5178	0	0	450
+#record		Swa01_43	N	12168	4276	0	0	450
+#record		Swa01_44	N	13280	4303	0	0	450
+#record		Swa01_45	N	4374	9389	0	0	450
+#record		Swa01_46	N	6136	9712	0	0	450
+#record		Swa01_47	N	6172	10972	0	0	450
+#record		Swa01_48	N	4381	7796	0	0	450
+#record		Swa01_49	N	2838	10446	0	0	450
+#record		Swa01_50	N	5357	6982	0	0	450
+#record		Swa01_51	N	9393	7839	0	0	450
+#record		Swa01_52	N	9448	6493	0	0	450
+#record		Swa01_53	N	14527	5017	0	0	450
+#record		Swa01_54	N	14817	3911	0	0	450
+#record		Swa01_55	N	15997	4123	0	0	450
+#record		Swa01_56	N	15864	5256	0	0	450
+#record		Swa01_57	N	7368	10808	0	0	450
+#record		Swa01_58	N	7423	9591	0	0	450
+#record		Swa01_59	N	12947	6932	0	0	450
+#record		Swa01_60	N	9328	9223	0	0	450
+#record		Swa01_61	N	3348	8969	0	0	450
+#record		Swa01_62	N	5304	8587	0	0	450
+#record		Swa01_63	N	5100	10315	0	0	450
+#record		Swa01_64	N	3760	10678	0	0	450
+#record		Swa01_65	N	6076	7744	0	0	450
+#record		Swa01_66	N	6340	6223	0	0	450
+#record		Swa01_67	N	4138	6716	0	0	450
+#record		Swa01_68	N	16821	9704	0	0	450
+#record		Swa01_69	N	17778	8491	0	0	450
+#record		Swa01_70	N	18017	9502	0	0	450
+#record		Swa01_71	N	16696	8605	0	0	450
+#record		Swa01_72	N	13377	10485	0	0	450
+#record		Swa01_73	N	12714	9110	0	0	450
+#record		Swa01_74	N	12386	11206	0	0	450
+#record		Swa01_75	N	12167	10225	0	0	450
+#record		Swa01_76	N	9293	10781	0	0	450
+#record		Swa01_77	N	10833	6485	0	0	450
+#record		Swa01_78	N	8440	10052	0	0	450
+#record		Swa01_79	N	5576	11876	0	0	450
+#record		Swa01_80	N	3102	7970	0	0	450
+#record		Swa01_81	N	4419	11374	0	0	450
+#record		Swa01_82	N	6978	12054	0	0	450
+#record		Swa01_83	N	19125	9140	0	0	450
+#record		Swa01_84	N	18681	8091	0	0	450
+#record		Swa01_85	N	20244	8758	0	0	450
+#record		Swa01_86	N	19890	9981	0	0	450
+#record		Swa01_87	N	12321	12402	0	0	450
+#record		Swa01_88	N	11421	12052	0	0	450
+#record		Swa01_89	N	12855	13279	0	0	450
+#record		Swa01_90	N	13798	12538	0	0	450
+#record		Swa01_91	N	11087	9837	0	0	450
+#record		Swa01_92	N	13779	9395	0	0	450
+#record		Swa01_93	N	11258	11049	0	0	450
+#record		Swa01_94	N	8237	11493	0	0	450
+#record		Swa01_95	N	10933	7800	0	0	450
+#record		Swa01_96	N	11871	6368	0	0	450
+#record		Swa01_97	N	18600	10393	0	0	450
+#record		Swa01_98	N	17401	10612	0	0	450
+#record		Swa01_99	N	15965	10766	0	0	450
+#record		Swa01_100	N	20893	10725	0	0	450
+#record		Swa01_101	N	20856	9706	0	0	450
+#record		Swa01_102	N	14117	13538	0	0	450
+#record		Swa01_103	N	14963	12541	0	0	450
+#record		Swa01_104	N	13228	14378	0	0	450
+#record		Swa01_105	N	15363	13531	0	0	450
+#record		Swa01_106	N	15753	9649	0	0	450
+#record		Swa01_107	N	14787	11323	0	0	450
+#record		Swa01_108	N	14498	10150	0	0	450
+#record		Swa01_109	N	13451	11559	0	0	450
+#record		Swa01_110	N	15957	14571	0	0	450
+#record		Swa01_111	N	19772	12360	0	0	450
+#record		Swa01_112	N	15560	15571	0	0	450
+#record		Swa01_113	N	18616	12668	0	0	450
+#record		Swa01_114	N	15261	18295	0	0	450
+#record		Swa01_115	N	13940	17824	0	0	450
+#record		Swa01_116	N	13783	16827	0	0	450
+#record		Swa01_118	N	16067	11915	0	0	450
+#record		Swa01_119	N	16477	12982	0	0	450
+#record		Swa01_120	N	17174	12043	0	0	450
+#record		Swa01_121	N	14749	14480	0	0	450
+#record		Swa01_122	N	17507	13156	0	0	450
+#record		Swa01_123	N	18359	11629	0	0	450
+#record		Swa01_124	N	19610	11298	0	0	450
+#record		Swa01_125	N	16396	16267	0	0	450
+#record		Swa01_126	N	16978	14078	0	0	450
+#record		Swa01_127	N	14521	15413	0	0	450
+#record		Swa01_128	N	14896	16490	0	0	450
+#record		Swa01_129	N	16815	15255	0	0	450
+#record		Swa01_130	N	18311	13839	0	0	450
+#record		Swa01_131	N	19486	13511	0	0	450
+#record		Swa01_132	N	17885	15032	0	0	450
+#record		Swa01_133	N	14494	18615	0	0	450
+#record		Swa01_134	N	16209	18266	0	0	450
+#record		Swa01_135	N	14842	17505	0	0	450
+#record		Swa01_136	N	17627	16149	0	0	450
+#record		Swa01_137	N	19043	14694	0	0	450
+#record		Swa01_138	N	18830	16020	0	0	450
+#record		Swa01_139	N	15681	17055	0	0	450
+#record		Swa01_140	N	19912	15584	0	0	450
+#record		Swa01_144	N	22678	15590	0	0	450
+#record		Swa01_145	N	20413	16526	0	0	450
+#record		Swa01_146	N	21151	15699	0	0	450
+#record		Swa01_147	N	20208	14371	0	0	450
+#record		Swa01_148	N	21813	14909	0	0	450
+#record		Swa01_149	N	13036	18253	0	0	450
+#record		Swa01_150	N	13597	18971	0	0	450
+#record		Swa01_151	N	15304	19130	0	0	450
+#record		Swa01_152	N	11036	20610	0	0	450
+#record		Swa01_153	N	11326	19085	0	0	450
+#record		Swa01_154	N	10513	19774	0	0	450
+#record		Swa01_155	N	10704	21605	0	0	450
+#record		Swa01_156	N	9918	20770	0	0	450
+#record		Swa01_157	N	9335	19819	0	0	450
+#record		Swa01_158	N	18960	20136	0	0	450
+#record		Swa01_159	N	20428	20214	0	0	450
+#record		Swa01_160	N	21439	22410	0	0	450
+#record		Swa01_161	N	18204	21042	0	0	450
+#record		Swa01_162	N	21394	20387	0	0	450
+#record		Swa01_163	N	12181	20620	0	0	450
+#record		Swa01_164	N	13056	21051	0	0	450
+#record		Swa01_165	N	14181	20632	0	0	450
+#record		Swa01_166	N	12833	22027	0	0	450
+#record		Swa01_167	N	10075	22472	0	0	450
+#record		Swa01_168	N	9372	21704	0	0	450
+#record		Swa01_169	N	8705	20774	0	0	450
+#record		Swa01_170	N	23217	19473	0	0	450
+#record		Swa01_171	N	22494	20426	0	0	450
+#record		Swa01_172	N	23473	20437	0	0	450
+#record		Swa01_173	N	5992	20868	0	0	450
+#record		Swa01_174	N	5200	21784	0	0	450
+#record		Swa01_175	N	4871	20781	0	0	450
+#record		Swa01_176	N	13510	19887	0	0	450
+#record		Swa01_177	N	14423	19771	0	0	450
+#record		Swa01_178	N	12684	19201	0	0	450
+#record		Swa01_179	N	10739	18195	0	0	450
+#record		Swa01_180	N	9953	18744	0	0	450
+#record		Swa01_181	N	20970	19386	0	0	450
+#record		Swa01_182	N	22098	19547	0	0	450
+#record		Swa01_183	N	4045	21589	0	0	450
+#record		Swa01_184	N	4891	19804	0	0	450
+#record		Swa01_185	N	3851	20572	0	0	450
+#record		Swa01_186	N	4748	18728	0	0	450
+#record		Swa01_187	N	3412	18569	0	0	450
+#record		Swa01_188	N	2341	18299	0	0	450
+#record		Swa01_189	N	4223	17942	0	0	450
+#record		Swa01_190	N	15446	20191	0	0	450
+#record		Swa01_191	N	16065	20979	0	0	450
+#record		Swa01_192	N	15036	21144	0	0	450
+#record		Swa01_193	N	2734	20300	0	0	450
+#record		Swa01_194	N	3793	19431	0	0	450
+#record		Swa01_195	N	2997	21355	0	0	450
+#record		Swa01_196	N	2684	19185	0	0	450
+#record		Swa01_197	N	5187	17744	0	0	450
+#record		Swa01_198	N	3077	17565	0	0	450
+#record		Swa01_199	N	5077	16752	0	0	450
+#record		Swa01_200	N	2228	15907	0	0	450
+#record		Swa01_201	N	3184	15341	0	0	450
+#record		Swa01_202	N	4088	15864	0	0	450
+#record		Swa01_203	N	2183	17231	0	0	450
+#record		Swa01_204	N	3984	16945	0	0	450
+#record		Swa01_205	N	3055	16501	0	0	450
+#record		Swa01_206	N	8750	17242	0	0	450
+#record		Swa01_207	N	9478	16228	0	0	450
+#record		Swa01_208	N	7762	16692	0	0	450
+#record		Swa01_209	N	3564	14289	0	0	450
+#record		Swa01_210	N	4390	14871	0	0	450
+#record		Swa01_211	N	9460	15096	0	0	450
+#record		Swa01_212	N	8539	15876	0	0	450
+#record		Swa01_213	N	8605	14625	0	0	450
+#record		Swa01_214	N	4547	13881	0	0	450
+#record		Swa01_215	N	6923	16080	0	0	450
+#record		Swa01_216	N	7743	15408	0	0	450
+#record		Swa01_217	N	7675	14466	0	0	450
+#record		Swa01_218	N	8162	13676	0	0	450
+#record		Swa01_219	N	6772	15000	0	0	450
+#record		Swa01_221	N	12074	7643	0	0	450
+#record		Swa01_222	N	14371	7124	0	0	450
+#record		Swa01_223	N	14378	8312	0	0	450
+#record		Swa01_224	N	11596	8826	0	0	450
+#record		Swa01_225	N	15897	7525	0	0	450
+#record		Swa01_226	N	15366	6970	0	0	450
+#record		Swa01_227	N	13250	8075	0	0	450
+#record		Swa01_228	N	15531	8549	0	0	450
+#record		Swa01B01	N	5620	14232	0	0	344
+#record		Swa01B02	N	21727	11171	0	0	182
+#record		Swa01B03	N	12405	14394	0	0	154
+#record		Swa01B04	N	17304	17591	0	0	126
+#record		Swa01B05	N	12031	14191	0	0	133
+#record		Swa01B06	N	11560	14223	0	0	154
+#record		Swa01B07	N	9823	17210	0	0	154
+#record		Swa01H01	N	21185	6317	444	1885	22
+#record		Swa01H02	N	8287	10830	578	1395	124
+#record		Swa01H03	N	17966	4776	869	2224	88
+#record		Swa01M01	N	21244	14734	1603	299	105
+#record		Swa01M02	N	22396	21722	1340	263	-145
+#record		Swa01W01	N	8666	15516	1505	690	-62
+
+
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Swa01_23	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_24	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_25	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_26	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_27	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_28	Gagoyle	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_29	CaimanJunior	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_30	CaimanJunior	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_31	CaimanJunior	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_32	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_33	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_34	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_35	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_36	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_37	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_38	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_39	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_40	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_41	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_42	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_43	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_44	GagoyleA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_45	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_46	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_47	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_48	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_49	Caiman	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_50	CaimanJuniorA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_51	CaimanJuniorA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_52	CaimanJuniorA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_53	GagoyleB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_54	GagoyleB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_55	GagoyleB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_56	GagoyleB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_57	Rhinoce	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_58	Rhinoce	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_59	Rhinoce	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_60	Rhinoce	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_61	CaimanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_62	CaimanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_63	CaimanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_64	CaimanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_65	CaimanJuniorB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_66	CaimanJuniorB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_67	CaimanJuniorB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_68	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_69	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_70	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_71	Mandrake	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_72	MudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_73	MudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_74	MudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_75	MudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_76	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_77	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_78	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_79	CaimanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_80	CaimanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_81	CaimanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_82	CaimanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_83	MandrakeA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_84	MandrakeA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_85	MandrakeA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_86	MandrakeA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_87	MantrapPlant	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_88	MantrapPlant	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_89	MantrapPlant	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_90	MantrapPlant	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_91	MudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_92	MudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_93	MudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_94	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_95	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_96	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_97	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_98	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_99	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_100	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_101	MandrakeB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_102	MantrapPlantA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_103	MantrapPlantA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_104	MantrapPlantA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_105	MantrapPlantA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_106	MudManB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_107	MudManB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_108	MudManB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_109	MudManB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_110	WereBoar	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_111	WereBoar	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_112	WereBoar	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_113	WereBoar	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_114	LivingTotem	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_115	LivingTotem	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_116	LivingTotem	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_118	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_119	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_120	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_121	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_122	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_123	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_124	MantrapPlantB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_125	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_126	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_127	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_128	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_129	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_130	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_131	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_132	WereBoarA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_133	LivingTotemA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_134	LivingTotemA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_135	LivingTotemA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_136	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_137	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_138	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_139	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_140	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_144	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_145	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_146	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_147	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_148	WereBoarB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_149	LivingTotemB	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_150	LivingTotemB	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_151	LivingTotemB	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_152	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_153	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_154	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_155	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_156	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_157	RhinoceLord	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_158	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_159	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_160	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_161	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_162	Shadow	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_163	Raplan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_164	Raplan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_165	Raplan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_166	Raplan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_167	RhinoceLordA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_168	RhinoceLordA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_169	RhinoceLordA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_170	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_171	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_172	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_173	BigMudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_174	BigMudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_175	BigMudMan	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_176	RaplanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_177	RaplanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_178	RaplanA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_179	RhinoceLordB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_180	RhinoceLordB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_181	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_182	ShadowA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_183	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_184	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_185	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_186	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_187	Phouch	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_188	Phouch	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_189	Phouch	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_190	RaplanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_191	RaplanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_192	RaplanB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_193	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_194	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_195	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_196	BigMudManA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_197	PhouchA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_198	PhouchA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_199	PhouchA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_200	Weasel	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_201	Weasel	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_202	Weasel	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_203	PhouchB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_204	PhouchB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_205	PhouchB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_206	RhinoceHunter	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_207	RhinoceHunter	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_208	RhinoceHunter	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_209	WeaselA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_210	WeaselA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_211	RhinoceHunterA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_212	RhinoceHunterA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_213	RhinoceHunterA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_214	WeaselB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_215	RhinoceHunterA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_216	RhinoceHunterA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_217	RhinoceHunterA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_218	RhinoceHunterA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_219	RhinoceHunterA	1	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_221	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_222	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_223	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_224	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_225	RhinoceA	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_226	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_227	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01_228	RhinoceB	3	0	2	0	3	0	4	0	5	0	0	0	0	0
+#record		Swa01B01	CaimanGiant	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		Swa01B02	LittleMimic	1	0	35	30	40	60	10	120	15	0	0	0	0	0
+#record		Swa01B03	TameMimic	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		Swa01B04	CrazyMimic	1	0	65	55	80	60	10	120	15	0	0	0	0	0
+#record		Swa01B05	TameMimic	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		Swa01B06	TameMimic	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		Swa01B07	RhinoceKing	1	0	30	25	35	60	10	120	15	0	0	0	0	0
+#record		Swa01H01	HERB7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01H01	HERB8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01H01	HERB9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01H02	HERB7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01H02	HERB8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01H02	HERB9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01H03	HERB7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01H03	HERB8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01H03	HERB9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01M01	MUSHROOM7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01M01	MUSHROOM8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01M01	MUSHROOM9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01M02	MUSHROOM7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01M02	MUSHROOM8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01M02	MUSHROOM9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01W01	WOOD7	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01W01	WOOD8	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+#record		Swa01W01	WOOD9	2	0	5	15	0	60	5	120	10	0	0	0	0	0
+
+#end																	

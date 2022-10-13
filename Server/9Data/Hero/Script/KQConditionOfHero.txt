@@ -6,22 +6,22 @@
 #ColumnType	INDEX	STRING[128]	
 #ColumnName	ScrIndex	ScrString	
 			
-#Record	Intro0	欢迎未來的英雄们。	
-#Record	Intro1	这个国家正处于危机之中，非常需要大家帮助。	
-#Record	Intro2	尽情发挥你们的才能吧	
-#Record	Intro3	对了，这个地方不可以使用生命石和魔法石。	
-#Record	Intro4	不过这矿石里藏着药水，大家可以找找看。	
+#Record	Intro0	"Welcome everyone, who wants to participate in the hero tests."	
+#Record	Intro1	"To save this country in danger, we need heroes like you."	
+#Record	Intro2	Show us the results of your training.	
+#Record	Intro3	"You cannot use pots/scrolls here, What? Ah, I am talking about HP/SP Pots or any Buff Scrolls."	
+#Record	Intro4	"Instead, liquid medicine is hidden in this mineral, look for the liquid medicine first."	
 			
-#Record	DualStart	战斗开始！！	
+#Record	DualStart	Fight start!!	
 			
-#Record	DualStop	战斗结束！停止所有动作！！	
-			
-#Record	DualResult	第一名%s，第二名%s，第三名%s。以上3位可以获得特定的奖品。	
-			
-#Record	KQReturn30	30秒钟后移动到艾德林城。	
-#Record	KQReturn20	20秒钟后移动到艾德林城。	
-#Record	KQReturn10	10秒钟后移动到艾德林城。	
-#Record	KQReturn5	5秒钟后移动到艾德林城。	
-			
-#End			
+#Record	DualStop	Fight over!! Don't move!!	
+		
+#Record	DualResult	"The winner of the first prize is %s, the second is %s, the third one is %s, these three will get prizes."	
+		
+#Record	KQReturn30	Move to Elderine in 30 seconds.	
+#Record	KQReturn20	Move to Elderine in 20 seconds.	
+#Record	KQReturn10	Move to Elderine in 10 seconds.	
+#Record	KQReturn5	Move to Elderine in 5 seconds.	
+
+#End		
 

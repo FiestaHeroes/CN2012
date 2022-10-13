@@ -1,27 +1,28 @@
-
-#ignore	\o042		
-#exchange	#	\x20	
-
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-				
-#Record	Intro0	欢迎未來的英雄们.		
-#Record	Intro1	这个国家正处于危机之中,非常需要大家帮助.		
-#Record	Intro2	尽情发挥你们的才能吧		
-#Record	Intro3	对了,这个地方不可以使用生命石和魔法石.		
-#Record	Intro4	不过这矿石里藏着药水,大家可以找找看.		
-				
-#Record	DualStart	战斗开始!!		
-				
-#Record	DualStop	战斗结束!停止所有动作!!		
-				
-#Record	DualResult	第一名%s,第二名%s,第三名%s.以上3位可以获得特定的奖品.		
-				
-#Record	KQReturn30	30秒后离开王国任务		
-#Record	KQReturn20	20秒后离开王国任务		
-#Record	KQReturn10	10秒后离开王国任务		
-#Record	KQReturn5	5秒后离开王国任务		
-				
-#End				
-
+;	Shine NPC table(ShineNPC.txt)		
+#ignore	\o042		; 牢侩何龋 公矫
+#exchange	#	\x20	; # => space
+;#delimiter	\x20		
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	Intro0	"To those who wishes to test their might, I welcome you."	
+#Record	Intro1	"In such turbulent times as this, we are in dire need of heroes like you."	
+#Record	Intro2	"Let go of your inhibitions, and unleash all the strength and knowledge you have accumulated so far."	
+#Record	Intro3	"Please remember that in the Mystic Weapon Chest, you'll find mighty weapon that you may have not seen yet."	
+#Record	Intro4	Best of the best will be rewarded accordingly.	
+			
+#Record	DualStart	Let the battle begin!	
+			
+#Record	DualStop	Stop!  Battle is over!	
+			
+#Record	DualResult	"1st place %s, 2nd place %s, and 3rd place goes to %s.  These three are truly the mightiest warriors!"	
+			
+#Record	KQReturn30	Returning to Elderine in 30 seconds	
+#Record	KQReturn20	Returning to Elderine in 20 seconds	
+#Record	KQReturn10	Returning to Elderine in 10 seconds	
+#Record	KQReturn5	Returning to Elderine in 5 seconds	
+			
+#End			
+;	2008-08-29 眠啊		
+			

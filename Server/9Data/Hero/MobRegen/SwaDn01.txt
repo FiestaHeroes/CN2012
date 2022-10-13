@@ -1,130 +1,161 @@
-;	Shine Monster Regeneration Table			V0.3														
-;	Monster Group																	
-#ignore	\o042																	
-#exchange	#	\x20																
-																		
-#table	MobRegenGroup																	
-;		GroupID	Family	Regen Region														
-;			Y/N	X	Y	X	Y	Range/Degree										
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
-#record		SwaDn01_001	N	4319	9507	0	0	344										
-#record		SwaDn01_002	N	9082	9525	0	0	358										
-#record		SwaDn01_003	N	4117	9090	0	0	344										
-#record		SwaDn01_004	N	9242	8984	0	0	337										
-#record		SwaDn01_005	N	6845	8510	0	0	358										
-#record		SwaDn01_006	N	6262	8554	0	0	344										
-#record		SwaDn01_011	N	3729	7596	0	0	330										
-#record		SwaDn01_012	N	4079	6937	0	0	323										
-#record		SwaDn01_013	N	8685	7327	0	0	337										
-#record		SwaDn01_014	N	9167	7099	0	0	358										
-#record		SwaDn01_015	N	6312	6877	0	0	407										
-#record		SwaDn01_016	N	7414	6312	0	0	365										
-#record		SwaDn01_017	N	6628	6192	0	0	400										
-#record		SwaDn01_021	N	10502	6464	0	0	316										
-#record		SwaDn01_022	N	11128	6194	0	0	316										
-#record		SwaDn01_023	N	10929	4589	0	0	323										
-#record		SwaDn01_024	N	11762	4598	0	0	330										
-#record		SwaDn01_025	N	1716	6193	0	0	337										
-#record		SwaDn01_026	N	2625	6161	0	0	358										
-#record		SwaDn01_027	N	1266	4210	0	0	344										
-#record		SwaDn01_028	N	1704	4418	0	0	344										
-#record		SwaDn01_031	N	2450	3609	0	0	358										
-#record		SwaDn01_032	N	1450	3372	0	0	337										
-#record		SwaDn01_033	N	2026	3179	0	0	309										
-#record		SwaDn01_034	N	10863	3676	0	0	330										
-#record		SwaDn01_035	N	11506	3545	0	0	316										
-#record		SwaDn01_036	N	12037	3820	0	0	358										
-#record		SwaDn01_037	N	4235	4559	0	0	337										
-#record		SwaDn01_038	N	4959	4642	0	0	358										
-#record		SwaDn01_039	N	8974	5216	0	0	372										
-#record		SwaDn01_040	N	8346	4520	0	0	330										
-#record		SwaDn01_041	N	4047	2184	0	0	358										
-#record		SwaDn01_042	N	5117	1598	0	0	372										
-#record		SwaDn01_043	N	3905	1640	0	0	330										
-#record		SwaDn01_044	N	8941	2339	0	0	358										
-#record		SwaDn01_045	N	10036	2300	0	0	400										
-#record		SwaDn01_046	N	9262	1581	0	0	386										
-#record		SwaDn01_047	N	7078	1375	0	0	519										
-#record		SwaDn01_MINE01	N	1599	4029	0	0	148										
-#record		SwaDn01_MINE02	N	1805	3861	0	0	148										
-#record		SwaDn01_MINE03	N	4481	1401	0	0	148										
-#record		SwaDn01_MINE04	N	4579	1878	0	0	148										
-#record		SwaDn01_MINE05	N	4644	2220	0	0	148										
-#record		SwaDn01_MINE06	N	4376	1740	0	0	148										
-#record		SwaDn01_MINE07	N	4424	2167	0	0	148										
-#record		SwaDn01_MINE08	N	11424	4295	0	0	148										
-#record		SwaDn01_MINE09	N	11371	4379	0	0	148										
-#record		SwaDn01_MINE10	N	6494	8831	0	0	148										
-#record		P01	N	7094	1426	0	0	302										
-#record		SwaDn01Guard01	N	5953	10209	0	0	14										
-#record		SwaDn01Guard02	N	6315	10226	0	0	14										
-#record		SwaDn01_C1_01	N	4586	1830	0	0	133										
-#record		SwaDn01_C2_01	N	9625	1952	0	0	154										
-#record		SwaDn01_C3_01	N	6590	1379	0	0	133										
-#record		SwaDn01_C4_01	N	7516	1483	0	0	133										
-																		
-																		
-																		
-#table	MobRegen																	
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
-#record		SwaDn01_001	RedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_002	RedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_003	RedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_004	RedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_005	RedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_006	RedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_011	GiantRedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_012	GiantRedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_013	GiantRedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_014	GiantRedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_015	GiantRedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_016	GiantRedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_017	GiantRedCondorA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_021	MudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_022	MudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_023	MudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_024	MudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_025	MudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_026	MudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_027	MudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_028	MudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_031	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_032	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_033	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_034	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_035	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_036	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_037	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_038	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_039	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_040	BigMudManA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_041	WeaselA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_042	WeaselA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_043	WeaselA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_044	WeaselA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_045	WeaselA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_046	WeaselA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_047	WeaselA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE01	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE02	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE03	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE04	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE05	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE06	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE07	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE08	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE09	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_MINE10	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		P01	PresentBox14	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		SwaDn01Guard01	GuardMihael03	1	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01Guard02	GuardMihael03	1	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		SwaDn01_C1_01	CaimanGiant	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
-#record		SwaDn01_C2_01	CaimanGiant	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
-#record		SwaDn01_C3_01	CaimanGiant	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
-#record		SwaDn01_C4_01	CaimanGiant	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
-																		
-#end																		
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		Normal_01	Y	6312	9551	0	0	148
+#record		Normal_02	N	6498	8815	0	0	542
+#record		Normal_03	Y	6484	8844	0	0	176
+#record		Normal_04	Y	7224	9101	0	0	170
+#record		Normal_06	Y	8325	9457	0	0	198
+#record		Normal_07	Y	5273	9084	0	0	162
+#record		Normal_08	N	4311	9236	0	0	556
+#record		Normal_09	N	8993	9312	322	481	0
+#record		Normal_10	Y	4365	8485	0	0	141
+#record		Normal_11	Y	4110	9299	0	0	170
+#record		Normal_12	Y	9011	8746	0	0	198
+#record		Normal_13	Y	8774	9121	0	0	51
+#record		Normal_14	Y	9128	9418	0	0	51
+#record		Normal_16	Y	3137	7566	0	0	198
+#record		Normal_18	Y	3801	6985	0	0	198
+#record		Normal_20	Y	7587	7038	0	0	212
+#record		Normal_21	Y	7432	6105	0	0	219
+#record		Normal_22	Y	6534	6190	0	0	226
+#record		Normal_23	Y	6763	5273	0	0	254
+#record		Normal_25	Y	5761	5675	0	0	205
+#record		Normal_27	Y	6520	6968	0	0	212
+#record		Normal_28	Y	5551	6681	0	0	212
+#record		Normal_29	Y	4415	7321	0	0	191
+#record		Normal_30	Y	8968	7946	0	0	184
+#record		Normal_31	Y	8434	7391	0	0	198
+#record		Normal_32	Y	9595	7325	0	0	205
+#record		Normal_34	Y	10436	6906	0	0	212
+#record		Normal_35	Y	10977	5824	0	0	212
+#record		Normal_37	Y	8211	5529	0	0	162
+#record		Normal_38	Y	8909	4134	0	0	162
+#record		Normal_40	Y	5045	4979	0	0	212
+#record		Normal_41	Y	4500	4073	0	0	212
+#record		Normal_43	Y	2176	7008	0	0	184
+#record		Normal_44	Y	2538	5638	0	0	191
+#record		Normal_46	Y	1686	6105	0	0	191
+#record		Boss_01	Y	1650	3528	0	0	212
+#record		Boss_02	Y	4784	1516	0	0	268
+#record		Boss_03	Y	7169	981	0	0	205
+#record		Boss_04	Y	9785	1578	0	0	254
+#record		Boss_05	Y	11427	3632	0	0	219
+#record		Normal_48	Y	1499	4341	0	0	190
+#record		Normal_49	Y	2414	3476	0	0	183
+#record		Normal_50	N	1372	3040	0	0	58
+#record		Normal_51	N	1183	3693	0	0	51
+#record		Normal_52	N	1927	3020	0	0	51
+#record		Normal_53	Y	4488	3106	0	0	184
+#record		Normal_54	Y	3908	2079	0	0	246
+#record		Normal_55	Y	5079	2316	0	0	225
+#record		Normal_56	N	4595	959	0	0	51
+#record		Normal_57	N	5281	1498	0	0	51
+#record		Normal_58	N	6826	3443	51	1014	-3
+#record		Normal_59	Y	6884	2112	0	0	184
+#record		Normal_60	Y	7443	1584	0	0	177
+#record		Normal_61	Y	6712	1457	0	0	184
+#record		Normal_62	Y	9272	3191	0	0	148
+#record		Normal_63	Y	9048	2080	0	0	218
+#record		Normal_64	Y	9978	2335	0	0	225
+#record		Normal_65	Y	11317	4984	0	0	198
+#record		Normal_66	Y	11887	4361	0	0	197
+#record		Normal_67	Y	10701	4359	0	0	190
+#record		Normal_68	N	11987	3582	0	0	51
+#record		Normal_69	N	10871	3606	0	0	51
+#record		Normal_54_1	N	4546	2153	0	0	500
+#record		Normal_38_1	N	8679	4888	0	0	492
+#record		Normal_62_1	N	9511	2141	0	0	850
+#record		Normal_34_1	N	10606	6266	0	0	500
+#record		Normal_65_1	N	11323	4308	0	0	500
+
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		Normal_01	D_Rhinoce	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_02	D_CaimanJunier	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_03	D_Rhinoce	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_04	D_Rhinoce	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_06	D_Rhinoce	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_07	D_Rhinoce	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_08	D_CaimanJunier	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_09	D_CaimanJunier	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_10	D_Rhinoce	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_11	D_Rhinoce	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_12	D_Rhinoce	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_13	D_Rhinoce	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_14	D_Rhinoce	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_16	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_18	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_20	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_21	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_22	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_23	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_25	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_27	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_28	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_29	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_30	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_31	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_32	D_Kaiman	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_34	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_35	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_37	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_38	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_40	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_41	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_43	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_44	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_46	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Boss_01	D_CaimanGiant	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_01	D_RhinoceLoad	3	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_02	D_CaimanGiant	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_02	D_RhinoceLoad	3	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_03	D_CaimanGiant	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_03	D_RhinoceLoad	3	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_04	D_CaimanGiant	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_04	D_Raplan	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_04	D_RhinoceLoad	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_05	D_CaimanGiant	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_05	D_Raplan	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Boss_05	D_RhinoceLoad	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		Normal_48	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_49	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_50	D_RhinoceLoad	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_51	D_RhinoceLoad	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_52	D_RhinoceLoad	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_53	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_54	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_55	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_56	D_RhinoceLoad	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_57	D_RhinoceLoad	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_58	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_59	D_Raplan	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_60	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_61	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_62	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_63	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_64	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_65	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_66	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_67	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_68	D_RhinoceLoad	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_69	D_RhinoceLoad	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_54_1	D_Raplan	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_38_1	D_RhinoceLoad	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_62_1	D_RhinoceLoad	4	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_34_1	D_RhinoceLoad	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_65_1	D_RhinoceLoad	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+
+#end

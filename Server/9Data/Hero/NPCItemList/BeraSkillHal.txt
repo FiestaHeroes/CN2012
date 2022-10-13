@@ -103,8 +103,6 @@
 #Record	5	FatalCondition03	FatalCondition04	-	-	-	-																																																												
 #Record	6	FinalDynastBlood03	FinalDynastBlood04	FinalDynastBlood05	-	-	-																																																												
 #Record	7	ShockEnemy03	ShockEnemy04	-	-	-	-																																																												
-#Record	8	FatalShadow03	FatalShadow04	-	-	-	-																																																												
-																																																																			
 																																																																			
 #Table	Tab10	
 #ColumnType	BYTE	String[33]	String[33]	String[33]	String[33]	String[33]	String[33]																																																												

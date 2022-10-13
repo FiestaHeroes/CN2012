@@ -1,175 +1,193 @@
-;	Shine Monster Regeneration Table			V0.3														
-;	Monster Group																	
-#ignore	\o042																	
-#exchange	#	\x20																
-																		
-#table	MobRegenGroup																	
-;		GroupID	Family	Regen Region														
-;			Y/N	X	Y	X	Y	Range/Degree										
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
-#record		RouTemDn02_001	N	4840	2276	0	0	446										
-#record		RouTemDn02_002	N	4427	3011	0	0	474										
-#record		RouTemDn02_003	N	5688	2228	0	0	453										
-#record		RouTemDn02_004	N	5203	3622	0	0	349										
-#record		RouTemDn02_005	N	5981	3000	0	0	453										
-#record		RouTemDn02_006	N	5617	4013	0	0	278										
-#record		RouTemDn02_007	N	4779	4047	0	0	292										
-#record		RouTemDn02_008	N	5189	4748	0	0	272										
-#record		RouTemDn02_009	N	7134	2860	0	0	314										
-#record		RouTemDn02_010	N	3243	2896	0	0	314										
-#record		RouTemDn02_011	N	3746	4896	127	421	0										
-#record		RouTemDn02_012	N	6652	4826	132	438	0										
-#record		RouTemDn02_013	N	5190	5862	342	159	0										
-#record		RouTemDn02_014	N	7282	5854	476	145	0										
-#record		RouTemDn02_015	N	3165	5869	608	121	0										
-#record		RouTemDn02_016	N	1596	5557	151	408	0										
-#record		RouTemDn02_017	N	8787	5391	113	523	0										
-#record		RouTemDn02_018	N	4595	6339	158	459	0										
-#record		RouTemDn02_019	N	5794	6343	152	450	0										
-#record		RouTemDn02_021	N	6176	7268	156	345	0										
-#record		RouTemDn02_022	N	4995	7268	154	323	0										
-#record		RouTemDn02_023	N	4203	7255	158	334	0										
-#record		RouTemDn02_024	N	5458	7254	160	333	0										
-#record		RouTemDn02_025	N	4591	8231	111	385	0										
-#record		RouTemDn02_026	N	5773	8260	122	353	0										
-#record		RouTemDn02_027	N	5192	9249	0	0	244										
-#record		RouTemDn02_028	N	4650	9783	0	0	215										
-#record		RouTemDn02_029	N	5762	9813	0	0	215										
-#record		RouTemDn02_030	N	5197	8737	0	0	272										
-#record		RouTemDn02_031	N	403	5058	0	0	181										
-#record		RouTemDn02_032	N	1021	4642	0	0	167										
-#record		RouTemDn02_033	N	1580	4268	0	0	167										
-#record		RouTemDn02_034	N	1108	5085	0	0	167										
-#record		RouTemDn02_035	N	875	4238	0	0	167										
-#record		RouTemDn02_036	N	9323	4783	0	0	167										
-#record		RouTemDn02_037	N	9919	4582	0	0	167										
-#record		RouTemDn02_038	N	9403	4351	0	0	167										
-#record		RouTemDn02_039	N	8808	4288	0	0	167										
-#record		RouTemDn02_040	N	8804	3404	0	0	167										
-#record		RouTemDn02_041	N	8923	2786	915	154	0										
-#record		RouTemDn02_042	N	8787	1721	0	0	300										
-#record		RouTemDn02_043	N	9669	1729	0	0	272										
-#record		RouTemDn02_044	N	398	3664	134	345	0										
-#record		RouTemDn02_045	N	1036	2845	0	0	335										
-#record		RouTemDn02_046	N	1534	2835	0	0	405										
-#record		RouTemDn02_047	N	679	1752	0	0	398										
-#record		RouTemDn02_048	N	643	2261	0	0	363										
-#record		RouTemDn02_049	N	9325	2227	577	215	0										
-#record		RouTemDn02_050	N	10956	1900	0	0	349										
-#record		Box01	N	10955	1887	0	0	362										
-#record		Mine01	N	2185	5875	123	312	90										
-#record		Mine02	N	5201	5008	331	51	0										
-#record		Mine03	N	8455	5817	52	522	-89										
-#record		Mine04	N	4603	7243	130	313	0										
-#record		Mine05	N	5165	9745	161	355	89										
-#record		Mine06	N	1304	2241	204	402	44										
-#record		Mine07	N	9144	1434	610	94	0										
-#record		RouTemDn02Guard01	N	5062	1211	0	0	11										
-#record		RouTemDn02Guard02	N	5359	1211	0	0	11										
-#record		RouTemDn02_C1_01	N	4247	10112	0	0	26										
-#record		RouTemDn02_C1_02	N	8855	2149	0	0	47										
-#record		RouTemDn02_C2_01	N	6195	8458	0	0	26										
-#record		RouTemDn02_C2_02	N	11239	1434	0	0	47										
-#record		RouTemDn02_C3_01	N	6190	10154	0	0	26										
-#record		RouTemDn02_C3_02	N	11279	2050	0	0	47										
-#record		RouTemDn02_C4_01	N	4209	8471	0	0	26										
-#record		RouTemDn02_C4_02	N	9477	2083	0	0	47										
-																		
-																		
-																		
-#table	MobRegen																	
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
-#record		RouTemDn02_001	EarthSpiderA	6	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_002	EarthSpiderA	6	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_003	EarthSpiderA	6	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_004	EarthSpiderA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_005	EarthSpiderA	6	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_006	D_VampireBat	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_007	D_VampireBat	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_008	D_VampireBat	5	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_009	D_VampireBat	5	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_010	D_VampireBat	5	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_011	GoldenBatA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_011	D_ArchMageBook	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_012	GoldenBatA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_012	D_ArchMageBook	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_013	GoldenBatA	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_013	D_ArchMageBook	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_014	GoldenBatA	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_014	D_ArchMageBook	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_015	GoldenBatA	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_015	D_ArchMageBook	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_016	GoldenBatA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_016	D_ArchMageBook	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_017	GoldenBatA	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_017	D_ArchMageBook	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_018	GoldenBatA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_018	D_ArchMageBook	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_019	GoldenBatA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_019	D_ArchMageBook	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_021	D_FlyingStaff	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_022	D_FlyingStaff	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_023	D_FlyingStaff	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_024	D_FlyingStaff	4	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_025	D_FlyingStaff	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_026	RatmanKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_027	RatmanKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_028	RatmanKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_029	RatmanKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_030	RatmanKnightA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_031	SkeletonA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_031	SkelArcherA	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_032	SkeletonA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_032	SkelArcherA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_033	SkeletonA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_033	SkelArcherA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_034	SkeletonA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_034	SkelArcherA	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_035	SkeletonA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_035	SkelArcherA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_036	SkeletonA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_036	SkelArcherA	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_037	SkeletonA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_037	SkelArcherA	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_038	SkeletonA	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_038	SkelArcherA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_039	SkeletonA	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_039	SkelArcherA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_040	SkeletonA	1	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_040	SkelArcherA	2	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_041	SkelWarriorA	6	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_042	SkelWarriorA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_043	SkelWarriorA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_044	SkelWarriorA	3	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_045	SkelWarriorA	5	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_046	SkelSoldierA	5	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_047	SkelSoldierA	5	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_048	SkelSoldierA	5	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_049	SkelSoldierA	6	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		RouTemDn02_050	SkelSoldierA	6	0	17	12	23	-6	12	-3	15	7	19	9	23	0	
-#record		Box01	PresentBox7	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		Mine01	MINE2	5	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		Mine02	MINE2	5	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		Mine03	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		Mine04	MINE2	5	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		Mine05	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		Mine05	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		Mine06	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		Mine06	MINE2	3	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		Mine07	MINE2	6	0	25	16	35	-10	16	-5	21	10	30	13	35	0	
-#record		RouTemDn02Guard01	GuardMihael00	1	0	8	5	11	-3	5	-2	7	3	9	4	11	0	
-#record		RouTemDn02Guard02	GuardMihael00	1	0	8	5	11	-3	5	-2	7	3	9	4	11	0	
-#record		RouTemDn02_C1_01	FireLavaVivi	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
-#record		RouTemDn02_C1_02	SkelKnight	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
-#record		RouTemDn02_C2_01	FireLavaVivi	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
-#record		RouTemDn02_C2_02	SkelKnight	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
-#record		RouTemDn02_C3_01	FireLavaVivi	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
-#record		RouTemDn02_C3_02	SkelKnight	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
-#record		RouTemDn02_C4_01	FireLavaVivi	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
-#record		RouTemDn02_C4_02	SkelKnight	1	0	120	60	180	-104	60	-52	84	50	156	100	180	0	
-																		
-#end																		
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		RouTemDn02Area01	N	5213	1871	575	403	-1
+#record		RouTemDn02Area02	N	7110	2859	0	0	281
+#record		RouTemDn02Area03	N	3318	2861	0	0	260
+#record		RouTemDn02Area04	N	5227	3755	595	312	0
+#record		RouTemDn02Area05	N	4171	2805	175	773	0
+#record		RouTemDn02Area06	N	6228	2829	150	789	0
+#record		RouTemDn02Area07	N	5206	4725	0	0	274
+#record		RouTemDn02Area08	N	3781	4484	137	422	-10
+#record		RouTemDn02Area09	N	6638	4777	75	490	0
+#record		RouTemDn02Area10	N	3014	5871	1433	154	0
+#record		RouTemDn02Area11	N	7236	5874	1116	126	0
+#record		RouTemDn02Area12	N	4989	7265	113	274	0
+#record		RouTemDn02Area13	N	6103	7284	143	319	0
+#record		RouTemDn02Area14	N	5200	9158	0	0	366
+#record		RouTemDn02Area15	N	5673	9851	244	136	0
+#record		RouTemDn02Area16	N	4675	9763	153	202	-1
+#record		RouTemDn02Area17	N	9002	4786	293	105	0
+#record		RouTemDn02Area18	N	4558	8372	96	218	0
+#record		RouTemDn02Area19	N	5857	8445	80	246	0
+#record		RouTemDn02Area20	N	653	5076	336	135	0
+#record		RouTemDn02Area21	N	1314	4645	353	127	0
+#record		RouTemDn02Area22	N	669	4211	335	111	0
+#record		RouTemDn02Area23	N	1188	2170	507	166	-44
+#record		RouTemDn02Area24	N	388	2485	136	706	0
+#record		RouTemDn02Area25	N	1255	3111	477	87	0
+#record		RouTemDn02Area26	N	1810	2800	0	0	261
+#record		RouTemDn02Area27	N	8795	4149	312	140	89
+#record		RouTemDn02Area28	N	9479	2846	325	153	0
+#record		RouTemDn02Area29	N	8257	2738	0	0	303
+#record		RouTemDn02Area30	N	9550	1401	694	76	0
+#record		RouTemDn02Area31	N	8186	1508	128	171	0
+#record		RouTemDn02Area32	N	9476	2286	196	213	0
+#record		RouTemDn02Area33	N	8673	1962	148	219	0
+#record		RouTemDn02Area34	N	9747	2407	0	0	121
+#record		RouTemDn02Area35	N	9795	1796	107	132	0
+#record		RouTemDn02Area36	N	11032	1746	315	335	0
+#record		RouTemDn02Area37	N	10975	1789	333	333	0
+#record		RouTemDn02Area38	N	6179	8478	0	0	121
+#record		RouTemDn02Area39	N	4216	8449	0	0	114					
+#record		RouTemDn02Area40	N	4259	10061	0	0	128					
+#record		RouTemDn02Area41	N	6137	10086	0	0	128					
+#record		RouTemDn02MINE02	N	5213	4982	331	51	0					
+#record		RouTemDn02MINE01	N	3058	5807	52	461	90					
+#record		RouTemDn02MINE03	N	8455	5817	52	522	-89					
+#record		RouTemDn02MINE04	N	4142	7225	50	319	0					
+#record		RouTemDn02MINE05	N	5892	9455	51	594	0					
+#record		RouTemDn02MINE06	N	1478	2346	51	750	46					
+#record		RouTemDn02MINE07	N	9214	2308	371	121	0					
+#record		RouTemDn02AreaPbox01	N	5951	5900	4225	5715	90					
+
+
+
+#table	MobRegen												
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		RouTemDn02Area01	Bat	4	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area01	SkelArcher	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area02	Bat	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area02	SkelArcher	3	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area02	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area03	Bat	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area03	SkelArcher	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area03	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area04	Bat	5	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area04	SkelArcher	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area04	SkelWarrior	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area04	SkelSoldier	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area05	Bat	3	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area05	SkelArcher	3	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area06	Bat	3	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area06	SkelArcher	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area07	ArchMageBook	3	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area07	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area08	Bat	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area08	SkelArcher	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area08	SkelWarrior	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area08	SkelSoldier	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area09	Bat	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area09	SkelArcher	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area09	SkelWarrior	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area10	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area10	Bat	4	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area10	SkelWarrior	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area11	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area11	Bat	5	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area11	SkelWarrior	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area11	SkelSoldier	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area12	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area12	SkelWarrior	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area12	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area13	ArchMageBook	3	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area13	SkelWarrior	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area13	SkelSoldier	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area14	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area14	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area14	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area14	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area15	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area15	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area15	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area16	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area16	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area16	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area17	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area17	Bat	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area18	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area18	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area18	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area19	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area19	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area20	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area20	Bat	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area20	SkelWarrior	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area21	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area21	SkelSoldier	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area21	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area22	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area22	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area22	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area23	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area23	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area23	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area23	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area24	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area24	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area24	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area25	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area25	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area25	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area26	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area26	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area26	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area27	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area27	SkelWarrior	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area27	SkelSoldier	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area27	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area28	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area28	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area29	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area29	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area29	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area29	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area30	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area30	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area30	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area31	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area31	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area32	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area32	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area32	Spider	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area33	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area33	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area34	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area34	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area35	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area36	ArchMageBook	2	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area36	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area36	Spider	3	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area36	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area37	SkelKnight	1	0	360	345	375	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area38	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area39	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area39	FlyingStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area40	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area40	Spider	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area41	ArchMageBook	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02Area41	MasicStaff	1	0	25	10	40	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE02	MINE4	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE01	MINE5	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE03	MINE6	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE04	MINE4	1	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE04	MINE5	1	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE05	MINE6	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE05	MINE4	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE06	MINE5	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE06	MINE6	2	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE07	MINE4	1	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02MINE07	MINE5	1	0	150	135	165	-15	8	-10	15	0	60	10	120	15
+#record		RouTemDn02AreaPbox01	PresentBox5	1	0	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+
+#end

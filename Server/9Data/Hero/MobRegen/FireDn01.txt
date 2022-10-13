@@ -1,116 +1,121 @@
-;	Shine Monster Regeneration Table			V0.3														
-;	Monster Group																	
-#ignore	\o042																	
-#exchange	#	\x20																
-																		
-#table	MobRegenGroup																	
-;		GroupID	Family	Regen Region														
-;			Y/N	X	Y	X	Y	Range/Degree										
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
-#record		FireDn01_001	N	6903	8218	487	55	8										
-#record		FireDn01_002	N	9139	8048	81	524	-10										
-#record		FireDn01_003	N	4783	6347	61	528	8										
-#record		FireDn01_004	N	6893	3375	369	61	-19										
-#record		FireDn01_005	N	5192	3769	579	126	26										
-#record		FireDn01_006	N	3248	6467	137	411	0										
-#record		FireDn01_007	N	5081	9898	91	546	37										
-#record		FireDn01_008	N	5151	8259	44	416	-44										
-#record		FireDn01_009	N	5856	5029	490	103	8										
-#record		FireDn01_010	N	7876	6904	85	481	-16										
-#record		FireDn01_012	N	11407	3224	0	0	310										
-#record		FireDn01_013	N	10902	3510	0	0	331										
-#record		FireDn01_014	N	10803	3080	0	0	366										
-#record		FireDn01_015	N	8559	4256	48	512	46										
-#record		FireDn01_016	N	9403	6400	57	386	0										
-#record		FireDn01_017	N	11360	3712	0	0	338										
-#record		FireDn01_021	N	3256	8273	53	587	17										
-#record		FireDn01_024	N	2411	10906	0	0	373										
-#record		FireDn01_025	N	1846	10866	0	0	296										
-#record		FireDn01_026	N	2055	10256	0	0	303										
-#record		FireDn01_031	N	8449	9678	459	90	-25										
-#record		FireDn01_032	N	6841	9898	385	94	9										
-#record		FireDn01_033	N	10583	10271	0	0	303										
-#record		FireDn01_034	N	10433	11195	0	0	303										
-#record		FireDn01_036	N	11016	10317	0	0	345										
-#record		FireDn01_037	N	11001	11319	0	0	359										
-#record		FireDn01_043	N	3737	5021	112	421	-35										
-#record		FireDn01_044	N	3087	2408	0	0	345										
-#record		FireDn01_045	N	3671	1695	0	0	366										
-#record		FireDn01_046	N	3856	2456	0	0	373										
-#record		FireDn01_049	N	3388	1638	0	0	429										
-#record		FireDn01_MINE01	N	2131	10644	0	0	135										
-#record		FireDn01_MINE02	N	2209	10802	0	0	135										
-#record		FireDn01_MINE03	N	10827	10996	0	0	135										
-#record		FireDn01_MINE04	N	10910	10708	0	0	135										
-#record		FireDn01_MINE05	N	11020	10672	0	0	135										
-#record		FireDn01_MINE06	N	11609	3210	0	0	135										
-#record		FireDn01_MINE07	N	11303	2928	0	0	135										
-#record		FireDn01_MINE08	N	11188	3343	0	0	135										
-#record		FireDn01_MINE09	N	11386	3212	0	0	135										
-#record		FireDn01_MINE10	N	11213	3174	0	0	135										
-#record		P01	N	2279	10633	0	0	135										
-#record		FireDn01Guard01	N	6027	6936	0	0	15										
-#record		FireDn01Guard02	N	6661	6468	0	0	15										
-#record		FireDn01_C1_01	N	2569	10939	0	0	135										
-#record		FireDn01_C2_01	N	1656	10376	0	0	135										
-#record		FireDn01_C3_01	N	1905	11036	0	0	135										
-#record		FireDn01_C4_01	N	2299	10097	0	0	135										
-																		
-																		
-																		
-#table	MobRegen																	
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
-#record		FireDn01_001	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_002	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_003	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_004	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_005	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_006	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_007	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_008	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_009	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_010	MinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_012	UndeadMinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_013	UndeadMinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_014	UndeadMinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_015	UndeadMinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_016	UndeadMinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_017	UndeadMinerA	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_021	D_RubyGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_024	D_RubyGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_025	D_RubyGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_026	D_RubyGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_031	D_CoreGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_032	D_CoreGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_033	D_CoreGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_034	D_CoreGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_036	D_CoreGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_037	D_CoreGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_043	D_CrystalGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_044	D_CrystalGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_045	D_CrystalGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_046	D_CrystalGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_049	D_CrystalGuardian-U	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE01	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE02	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE03	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE04	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE05	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE06	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE07	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE08	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE09	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		FireDn01_MINE10	MINE9	3	0	65	39	92	-24	39	-12	52	26	79	33	92	0	
-#record		P01	PresentBox14	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		FireDn01Guard01	GuardMihael03	1	0	60	36	84	-24	36	-12	48	24	72	30	84	0	
-#record		FireDn01Guard02	GuardMihael03	1	0	60	36	84	-24	36	-12	48	24	72	30	84	0	
-#record		FireDn01_C1_01	GiantMagmaton	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
-#record		FireDn01_C2_01	GiantMagmaton	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
-#record		FireDn01_C3_01	GiantMagmaton	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
-#record		FireDn01_C4_01	GiantMagmaton	1	0	300	150	450	-250	150	-150	210	150	390	250	450	0	
-																		
-#end																		
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		boss01_01	Y	11599	11092	0	0	135
+#record		boss01_02	N	10782	10740	0	0	766
+#record		boos02_01	Y	11401	3107	0	0	142
+#record		boss02_02	N	10906	3600	0	0	612
+#record		boss03_01	Y	3370	1432	0	0	170
+#record		boss03_02	N	3556	2311	0	0	766
+#record		boss04_01	Y	1821	10892	0	0	142
+#record		boss04_02	N	2345	10404	0	0	598
+#record		Normal_01	N	6340	5736	135	350	20
+#record		Normal_02	N	7232	6802	388	140	-14
+#record		Normal_03	N	6354	7655	174	300	-5
+#record		Normal_04	N	5533	6440	405	144	-30
+#record		Normal_05	Y	5407	5107	0	0	100
+#record		Normal_06	Y	5363	4215	0	0	114
+#record		Normal_07	Y	4116	7084	0	0	93
+#record		Normal_08	Y	7321	4269	0	0	100
+#record		Normal_09	Y	4274	5276	0	0	93
+#record		Normal_10	N	6381	4973	1176	265	-5
+#record		Normal_11	N	4815	6307	264	885	12
+#record		Normal_12	N	7776	6925	214	836	-6
+#record		Normal_13	N	6292	8110	1174	226	-4
+#record		Normal_14	Y	8562	6172	0	0	114
+#record		Normal_15	Y	7721	8826	0	0	135
+#record		Normal_16	Y	4842	8734	0	0	128
+#record		Normal_17	N	3951	4817	269	625	-34
+#record		Normal_18	Y	3670	3941	0	0	128
+#record		Normal_19	N	5167	3777	885	209	30
+#record		Normal_20	Y	8435	7693	0	0	121
+#record		Normal_21	N	7519	3663	1155	218	-22
+#record		Normal_22	Y	9853	4377	0	0	142
+#record		Normal_23	N	9058	4836	688	145	-53
+#record		Normal_24	N	9403	6205	198	634	-4
+#record		Normal_25	N	9083	8073	202	687	-14
+#record		Normal_26	N	7666	9697	1243	158	10
+#record		Normal_27	Y	9449	10080	0	0	128
+#record		Normal_28	N	4969	9754	874	137	-42
+#record		Normal_29	Y	3334	9586	0	0	163
+#record		Normal_30	N	3396	8217	160	1264	22
+#record		Normal_31	N	3251	6447	219	559	-13									
+
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		boss01_01	D_GuardianMaster	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		boss01_01	D_CrystalGuardian-U	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		boss01_02	D_CrystalGuardian-U	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		boos02_01	D_GuardianMaster	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		boos02_01	D_CrystalGuardian-U	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		boss02_02	D_CrystalGuardian-U	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		boss03_01	D_GuardianMaster	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		boss03_01	D_CrystalGuardian-U	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		boss03_02	D_CrystalGuardian-U	5	0	240	236	204	-4	5	-2	8	0	10	2	13	4
+#record		boss04_01	D_GuardianMaster	1	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		boss04_01	D_CrystalGuardian-U	2	0	600	540	600	-4	5	-2	8	0	10	2	13	4
+#record		boss04_02	D_CrystalGuardian-U	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_01	D_FlameHoneying	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_02	D_FlameHoneying	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_03	D_FlameHoneying	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_04	D_FlameHoneying	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_05	D_CoreGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_06	D_LavaVivi	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_06	D_CoreGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_07	D_FlameHoneying	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_08	D_FlameHoneying	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_09	D_CoreGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_10	D_CoreGuardian-U	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_10	D_LavaVivi	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_11	D_CoreGuardian-U	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_11	D_LavaVivi	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_11	D_FlameHoneying	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_12	D_LavaVivi	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_12	D_CoreGuardian-U	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_13	D_CoreGuardian-U	5	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_13	D_LavaVivi	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_14	D_CoreGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_15	D_CoreGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_16	D_LavaVivi	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_16	D_CoreGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_17	D_RubyGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_17	D_CrystalGuardian-U	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_18	D_CrystalGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_19	D_RubyGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_19	D_CrystalGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_20	D_CoreGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_21	D_CrystalGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_21	D_RubyGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_22	D_CrystalGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_22	D_RubyGuardian-U	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_23	D_RubyGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_23	D_CrystalGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_24	D_RubyGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_24	D_CrystalGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_25	D_RubyGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_25	D_CrystalGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_26	D_CrystalGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_26	D_RubyGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_27	D_CrystalGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_28	D_RubyGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_28	D_CrystalGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_29	D_CrystalGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_29	D_RubyGuardian-U	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_30	D_RubyGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_30	D_CrystalGuardian-U	3	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_31	D_RubyGuardian-U	1	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+#record		Normal_31	D_CrystalGuardian-U	2	0	240	236	244	-4	5	-2	8	0	10	2	13	4
+
+#end																	

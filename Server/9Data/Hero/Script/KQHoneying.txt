@@ -2,32 +2,32 @@
 #ignore	\o042		
 #exchange	#	\x20	
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-				
-#Record	KQStart60	60秒后,王国任务即将开始.		
-#Record	KQStart30	30秒后,王国任务即将开始.		
-#Record	KQStart20	20秒后,王国任务即将开始.		
-#Record	KQStart10	10秒后,王国任务即将开始.		
-#Record	KQStart5	5秒后,王国任务即将开始.		
-				
-#Record	KQReturn60	终于消灭了巨型哈尼哈尼.		
-#Record	KQReturn50	50秒后离开王国任务		
-#Record	KQReturn40	40秒后离开王国任务		
-#Record	KQReturn30	30秒后离开王国任务		
-#Record	KQReturn20	20秒后离开王国任务		
-#Record	KQReturn10	10秒后离开王国任务		
-#Record	KQReturn50	5秒后离开王国任务		
-				
-#Record	KQFReturn30	30秒后离开王国任务		
-#Record	KQFReturn20	20秒后离开王国任务		
-#Record	KQFReturn10	10秒后离开王国任务		
-#Record	KQFReturn5	5秒后离开王国任务		
-				
-#Record	Honeying01	这里可不是随便可以闯入的地方!		
-#Record	Honeying02	你们这些家伙一定要尝尝我的厉害!		
-				
-#Record	Summon01	兄弟们!一定要消灭掉这些家伙!!		
-				
-#End				
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+
+#Record	KQStart60	The KingdomQuest will begin in 60 Seconds.		
+#Record	KQStart30	The KingdomQuest will begin in 30 Seconds.		
+#Record	KQStart20	The KingdomQuest will begin in 20 Seconds.		
+#Record	KQStart10	The KingdomQuest will begin in 10 Seconds.		
+#Record	KQStart5	The KingdomQuest will begin in 5 Seconds.		
+
+#Record	KQReturn60	Giant Honeying is defeated.	
+#Record	KQReturn50	Move to Elderine in 50 seconds.	
+#Record	KQReturn40	Move to Elderine in 40 seconds.	
+#Record	KQReturn30	Move to Elderine in 30 seconds.	
+#Record	KQReturn20	Move to Elderine in 20 seconds.	
+#Record	KQReturn10	Move to Elderine in 10 seconds.	
+#Record	KQReturn50	Move to Elderine in 5 seconds.	
+			
+#Record	KQFReturn30	Move to Elderine in 30 seconds.	
+#Record	KQFReturn20	Move to Elderine in 20 seconds.
+#Record	KQFReturn10	Move to Elderine in 10 seconds.
+#Record	KQFReturn5	Move to Elderine in 5 seconds.
+		
+#Record	Honeying01	Where do you think you are!
+#Record	Honeying02	You want to get stung!!?
+		
+#Record	Summon01	Friends! Attack those worthless people!!
+
+#End		

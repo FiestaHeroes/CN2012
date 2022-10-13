@@ -2,48 +2,47 @@
 #ignore	\o042		
 #exchange	#	\x20	
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-				
-#Record	SpyName	警备枪兵		
-#Record	MaraName	威风凛凛的玛拉		
-#Record	MarloneName	领袖风范的玛仑		
-				
-#Record	KQStart60	60秒后,王国任务即将开始.		
-#Record	KQStart30	30秒后,王国任务即将开始.		
-#Record	KQStart20	20秒后,王国任务即将开始.		
-#Record	KQStart10	10秒后,王国任务即将开始.		
-#Record	KQStart5	5秒后,王国任务即将开始.		
-				
-#Record	SpyLie0	啊,吓我一跳!		
-#Record	SpyLie1	啊,不好意思,以为被海盗发现了........		
-#Record	SpyLie2	为了剿灭海盜,我正在监视呢.		
-#Record	SpyLie3	稍等,我去拿武器来帮你.		
-#Record	SpyReport0	什么?讨伐军来了?		
-#Record	SpyReport1	是的.幸亏我赶紧跑过来,要不........		
-#Record	SpyReport2	全军戒备!无论发生什么情况也要在出港之前先撑50分钟!		
-#Record	SpyReport3	你赶快报告给司令官.		
-#Record	SpyReport4	是!		
-#Record	MiddleReport0	中间防线被占领.		
-#Record	MiddleReport1	真是没用的家伙.		
-#Record	MiddleReport2	別担心,玛拉,我玛仑会帮你消灭掉全部敌人.		
-#Record	MiddleReport3	哼!不能独自好好欣赏.		
-#Record	MiddleReport4	全体准备进攻!		
-#Record	MidMaraDead	可恶啊,气死我啦..		
-#Record	MidMarloneDead	不行!		
-#Record	LastMaraDead	这,这样结束了吗?		
-#Record	LastMarloneDead	天空真美丽........		
-				
-#Record	Fail0	首领大人,没有我在的话,一定会遭到突袭.		
-#Record	Fail1	不是我要夸赞我自己,只是就是这样啊, 嘿嘿嘿		
-#Record	Fail2	所以,前几天做的承诺........		
-#Record	Fail3	给我滚蛋.不要再让我看到!		
-				
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+			
+#Record	SpyName	Spear Guard	
+#Record	MaraName	Commanding Mara	
+#Record	MarloneName	Charismatic Marlone	
+			
+#Record	KQStart60	The KingdomQuest will begin in 60 Seconds.		
+#Record	KQStart30	The KingdomQuest will begin in 30 Seconds.		
+#Record	KQStart20	The KingdomQuest will begin in 20 Seconds.		
+#Record	KQStart10	The KingdomQuest will begin in 10 Seconds.		
+#Record	KQStart5	The KingdomQuest will begin in 5 Seconds.		
 
-#Record	KQReturn30	30秒后离开王国任务		
-#Record	KQReturn20	20秒后离开王国任务		
-#Record	KQReturn10	10秒后离开王国任务		
-#Record	KQReturn5	5秒后离开王国任务		
-				
-#End				
+#Record	SpyLie0	"Oh my, what  a surprise!"	
+#Record	SpyLie1	I am sorry. I thought the pirates discovered us...	
+#Record	SpyLie2	I was keeping my eyes on the pirates to wipe them out.	
+#Record	SpyLie3	"Wait a minute, I am getting equipped so I can help you."	
+#Record	SpyReport0	What? The enemies are here?	
+#Record	SpyReport1	"Yes, if did not hurryˇ"	
+#Record	SpyReport2	Emergency! Withstand 50 more minutes until we can take off!	
+#Record	SpyReport3	You! Go and inform the general.	
+#Record	SpyReport4	"Yes, sir!"	
+#Record	MiddleReport0	The line of defense has been broken through.	
+#Record	MiddleReport1	You are so useless.	
+#Record	MiddleReport2	"Don't worry, Mara. I, Marlone, will destroy them all."	
+#Record	MiddleReport3	I cannot let you have all the fun.	
+#Record	MiddleReport4	"Everyone, get ready!!"	
+#Record	MidMaraDead	"Oh, this is so resentful.."	
+#Record	MidMarloneDead	No!!!	
+#Record	LastMaraDead	Is this really the end.....???	
+#Record	LastMarloneDead	It's such a beautiful skyˇ	
+		
+#Record	Fail0	"Boss, we surely would have been raided had it not been for me."	
+#Record	Fail1	"Well, I am not bragging, just sayingˇ hahaha"	
+#Record	Fail2	I remember you promised me something beforeˇ	
+#Record	Fail3	Take this and go away. I don't want to see your face again.	
+
+#Record	KQReturn30	Move to Elderine in 30 seconds.	
+#Record	KQReturn20	Move to Elderine in 20 seconds.	
+#Record	KQReturn10	Move to Elderine in 10 seconds.	
+#Record	KQReturn5	Move to Elderine in 5 seconds.	
+			
+#End			

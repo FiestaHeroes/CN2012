@@ -1,246 +1,429 @@
-;	Shine Monster Regeneration Table			V0.3														
-;	Monster Group																	
-#ignore	\o042																	
-#exchange	#	\x20																
-																		
-#table	MobRegenGroup																	
-;		GroupID	Family	Regen Region														
-;			Y/N	X	Y	X	Y	Range/Degree										
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
-#record		EldPri01_001	N	1850	5091	86	735	0										
-#record		EldPri01_002	N	4383	2584	0	0	413										
-#record		EldPri01_003	N	3127	4818	784	43	-33										
-#record		EldPri01_004	N	6195	3608	600	164	33										
-#record		EldPri01_005	N	1926	4670	0	0	350										
-#record		EldPri01_006	N	6900	3077	605	102	42										
-#record		EldPri01_007	N	1861	6073	0	0	350										
-#record		EldPri01_008	N	3185	6302	106	827	-46										
-#record		EldPri01_009	N	5687	5604	386	272	0										
-#record		EldPri01_010	N	945	3160	0	0	434										
-#record		EldPri01_011	N	3306	994	0	0	427										
-#record		EldPri01_012	N	3687	1965	580	184	68										
-#record		EldPri01_013	N	5170	2934	198	488	-27										
-#record		EldPri01_014	N	986	6103	143	999	-8										
-#record		EldPri01_015	N	5962	1959	424	257	10										
-#record		EldPri01_016	N	1017	7834	0	0	483										
-#record		EldPri01_017	N	8294	1407	450	213	14										
-#record		EldPri01_018	N	8307	2400	302	357	10										
-#record		EldPri01_019	N	9160	2142	0	0	350										
-#record		EldPri01_020	N	9237	1273	418	178	0										
-#record		EldPri01_021	N	1665	7383	0	0	518										
-#record		EldPri01_022	N	4674	712	0	0	448										
-#record		EldPri01_023	N	7113	1112	0	0	434										
-#record		EldPri01_024	N	6473	839	0	0	406										
-#record		EldPri01_026	N	4394	7279	389	225	64										
-#record		EldPri01_027	N	5390	7827	561	231	70										
-#record		EldPri01_028	N	11421	3240	185	480	52										
-#record		EldPri01_029	N	9953	4012	778	34	25										
-#record		EldPri01_030	N	11941	3961	183	373	0										
-#record		EldPri01_031	N	10731	4940	0	0	455										
-#record		EldPri01_032	N	10367	4662	0	0	371										
-#record		EldPri01_033	N	3995	8626	0	0	350										
-#record		EldPri01_034	N	3719	9375	0	0	350										
-#record		EldPri01_035	N	9538	5001	0	0	350										
-#record		EldPri01_036	N	3184	10005	0	0	350										
-#record		EldPri01_037	N	9080	5194	0	0	350										
-#record		EldPri01_038	N	7823	5108	0	0	350										
-#record		EldPri01_039	N	8972	5934	911	41	-8										
-#record		EldPri01_040	N	2740	10703	161	588	-26										
-#record		EldPri01_041	N	7359	11832	0	0	518										
-#record		EldPri01_042	N	4917	11372	0	0	462										
-#record		EldPri01_043	N	6057	11198	0	0	490										
-#record		EldPri01_044	N	6320	9235	0	0	350										
-#record		EldPri01_045	N	8541	7410	0	0	406										
-#record		EldPri01_046	N	11533	7299	0	0	483										
-#record		EldPri01_047	N	11968	8747	240	864	23										
-#record		EldPri01_048	N	9852	7633	461	234	0										
-#record		EldPri01_049	N	10174	11067	0	0	350										
-#record		FLOWER1	N	5679	2388	603	357	0										
-#record		FLOWER2	N	6293	2154	502	372	0										
-#record		FLOWER3	N	7143	2029	647	191	0										
-#record		FLOWER4	N	4382	1185	566	263	0										
-#record		FLOWER5	N	4874	7655	808	373	0										
-#record		FLOWER6	N	4716	8086	708	254	0										
-#record		FLOWER7	N	4455	8521	642	165	0										
-#record		FLOWER8	N	10765	7561	763	269	0										
-#record		FLOWER9	N	10617	7626	739	223	0										
-#record		FLOWER10	N	10534	7804	880	199	-27										
-#record		HERB1	N	5969	2210	880	363	0										
-#record		HERB2	N	4560	8237	1196	100	52										
-#record		WOOD8	N	6159	2293	1186	180	12										
-#record		WOOD9	N	4450	8180	974	78	52										
-#record		MUSHROOM8	N	4509	8123	1167	84	43										
-#record		MUSHROOM9	N	10441	7752	1225	74	-10										
-#record		EldPri01AreaPbox01	N	6307	2120	2566	1233	0										
-#record		EldPri01AreaPbox02	N	6197	10733	1236	963	0										
-#record		EldPri01Guard01	N	4916	5775	0	0	27										
-#record		EldPri01Guard02	N	12172	10571	0	0	13										
-#record		EldPri01_H1_01	N	4453	3360	0	0	40										
-#record		EldPri01_H1_02	N	2506	6734	0	0	19										
-#record		EldPri01_H1_03	N	7218	1398	0	0	82										
-#record		EldPri01_H1_04	N	9818	4011	0	0	19										
-#record		EldPri01_H1_05	N	10236	5284	0	0	54										
-#record		EldPri01_H1_06	N	3357	10222	0	0	26										
-#record		EldPri01_H1_07	N	4935	11766	0	0	48										
-#record		EldPri01_H1_08	N	8281	7844	0	0	27										
-#record		EldPri01_H1_09	N	7213	9175	0	0	20										
-#record		EldPri01_H2_01	N	4657	2669	0	0	26										
-#record		EldPri01_H2_02	N	1844	5060	0	0	12										
-#record		EldPri01_H2_03	N	6400	672	0	0	12										
-#record		EldPri01_H2_04	N	9297	4381	0	0	40										
-#record		EldPri01_H2_05	N	10268	4454	0	0	12										
-#record		EldPri01_H2_06	N	2958	9849	0	0	26										
-#record		EldPri01_H2_07	N	4916	10969	0	0	62										
-#record		EldPri01_H2_08	N	9622	7589	0	0	41										
-#record		EldPri01_H2_09	N	6484	9419	0	0	34										
-#record		EldPri01_H3_01	N	4388	1890	0	0	54										
-#record		EldPri01_H3_02	N	1695	6324	0	0	54										
-#record		EldPri01_H3_03	N	5799	1226	0	0	54										
-#record		EldPri01_H3_04	N	11295	3051	0	0	12										
-#record		EldPri01_H3_05	N	11045	5004	0	0	40										
-#record		EldPri01_H3_06	N	2531	11148	0	0	12										
-#record		EldPri01_H3_07	N	6141	11696	0	0	41										
-#record		EldPri01_H3_08	N	8172	7288	0	0	13										
-#record		EldPri01_H3_09	N	6661	10267	0	0	13										
-#record		EldPri01_H4_01	N	4063	2556	0	0	47										
-#record		EldPri01_H4_02	N	1956	5708	0	0	40										
-#record		EldPri01_H4_03	N	7031	762	0	0	19										
-#record		EldPri01_H4_04	N	10435	3796	0	0	26										
-#record		EldPri01_H4_05	N	9848	4832	0	0	47										
-#record		EldPri01_H4_06	N	2677	10524	0	0	33										
-#record		EldPri01_H4_07	N	5541	11366	0	0	34										
-#record		EldPri01_H4_08	N	8989	7525	0	0	41										
-#record		EldPri01_H4_09	N	7309	10142	0	0	34										
-																		
-																		
-																		
-#table	MobRegen																	
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
-#record		EldPri01_001	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_002	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_003	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_004	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_005	KingMushRoom	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_006	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_007	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_008	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_009	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_010	GoldenBat	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_011	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_012	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_013	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_014	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_015	Harkan	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_016	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_016	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_017	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_017	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_018	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_018	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_019	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_019	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_020	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_020	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_021	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_021	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_022	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_022	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_023	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_023	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_024	DisHarkan	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_024	LittleRunningBas	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_026	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_027	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_028	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_029	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_030	Prisoner	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_031	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_032	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_033	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_034	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_035	Torturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_036	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_037	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_038	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_039	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_040	SeniorTorturer	3	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_041	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_041	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_042	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_042	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_043	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_043	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_044	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_044	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_045	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_045	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_046	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_046	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_047	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_047	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_048	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_048	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_049	KaraSolider	2	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01_049	KaraTempler	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER1	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER2	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER3	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER4	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER5	FLOWER6	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER6	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER7	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER8	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER9	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		FLOWER10	FLOWER7	1	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		HERB1	HERB5	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		HERB2	HERB6	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		WOOD8	WOOD8	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		WOOD9	WOOD9	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		MUSHROOM8	MUSHROOM8	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		MUSHROOM9	MUSHROOM9	5	0	19	13	26	-6	13	-3	16	8	22	10	26	0	
-#record		EldPri01AreaPbox01	PresentBox10	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		EldPri01AreaPbox02	PresentBox11	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		EldPri01Guard01	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
-#record		EldPri01Guard02	GuardLue02	1	0	15	11	20	-6	11	-3	14	6	17	8	20	0	
-#record		EldPri01_H1_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H1_02	Q_BrightGoldenBat	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H1_03	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H1_04	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H1_05	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H1_06	LittleMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H1_07	FireGolem	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H1_08	Q_A_KaraTempler	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H1_09	TameMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_02	Q_BrightGoldenBat	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_03	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_04	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_05	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_06	LittleMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_07	FireGolem	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_08	Q_A_KaraTempler	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H2_09	TameMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_02	Q_BrightGoldenBat	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_03	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_04	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_05	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_06	LittleMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_07	FireGolem	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_08	Q_A_KaraTempler	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H3_09	TameMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_01	PokaPolkaBook06	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_02	Q_BrightGoldenBat	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_03	PokaPolkaBook07	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_04	PokaPolkaBook08	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_05	PokaPolkaBook09	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_06	LittleMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_07	FireGolem	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_08	Q_A_KaraTempler	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-#record		EldPri01_H4_09	TameMimic	1	0	80	40	120	-60	40	-30	56	30	104	60	120	0	
-																		
-#end																		
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		EldPri01Area01	N	4441	943	0	0	431
+#record		EldPri01Area02	N	3340	1158	0	0	344
+#record		EldPri01Area03	N	8460	3374	467	108	12
+#record		EldPri01Area04	N	4811	1903	171	373	79
+#record		EldPri01Area05	N	4956	1791	190	205	-2
+#record		EldPri01Area06	N	6036	1922	676	191	-3
+#record		EldPri01Area07	N	5090	3401	101	303	61
+#record		EldPri01Area08	N	5503	2707	0	0	438
+#record		EldPri01Area09	N	8668	1388	618	206	8
+#record		EldPri01Area10	N	8204	2294	446	190	-58
+#record		EldPri01Area11	N	8697	1473	174	151	2
+#record		EldPri01Area12	N	6528	822	384	236	2
+#record		EldPri01Area13	N	7614	641	231	52	-1
+#record		EldPri01Area14	N	7492	1021	286	115	51
+#record		EldPri01Area15	N	10424	1748	122	355	-13
+#record		EldPri01Area16	N	9825	715	216	178	0
+#record		EldPri01Area17	N	10219	3774	385	146	36
+#record		EldPri01Area18	N	9134	2077	0	0	414
+#record		EldPri01Area19	N	7083	2992	131	422	-38
+#record		EldPri01Area20	N	5868	4196	371	229	10
+#record		EldPri01Area21	N	11940	3707	81	372	24
+#record		EldPri01Area22	N	4366	2553	174	314	-20
+#record		EldPri01Area23	N	4177	2855	249	194	-21
+#record		EldPri01Area24	N	1923	4799	0	0	347
+#record		EldPri01Area25	N	3285	4856	206	599	54
+#record		EldPri01Area26	N	6008	5752	425	231	-19
+#record		EldPri01Area27	N	3371	6112	629	141	47
+#record		EldPri01Area28	N	1842	6107	0	0	353
+#record		EldPri01Area29	N	2348	4445	0	0	377
+#record		EldPri01Area30	N	839	3175	137	484	65
+#record		EldPri01Area31	N	848	2999	95	462	3
+#record		EldPri01Area32	N	782	4624	136	351	62
+#record		EldPri01Area33	N	971	5629	0	0	346
+#record		EldPri01Area34	N	1026	6549	138	371	26
+#record		EldPri01Area35	N	1566	8041	0	0	534
+#record		EldPri01Area36	N	2178	7136	355	151	147
+#record		EldPri01Area37	N	909	9286	145	389	0
+#record		EldPri01Area38	N	2921	7551	0	0	236
+#record		EldPri01Area39	N	2443	8651	0	0	265
+#record		EldPri01Area40	N	5011	8602	53	755	-41
+#record		EldPri01Area41	N	5486	7593	0	0	352
+#record		EldPri01Area42	N	4357	7607	0	0	358
+#record		EldPri01Area43	N	4004	8666	0	0	401
+#record		EldPri01Area44	N	3114	9926	0	0	345
+#record		EldPri01Area45	N	3482	10099	52	494	-52
+#record		EldPri01Area46	N	4916	11418	0	0	548
+#record		EldPri01Area47	N	6838	11331	0	0	345
+#record		EldPri01Area48	N	6779	10427	376	124	-7
+#record		EldPri01Area49	N	5913	11357	0	0	525
+#record		EldPri01Area50	N	7395	10673	310	61	98
+#record		EldPri01Area51	N	6942	8938	0	0	427
+#record		EldPri01Area52	N	7755	11187	51	290	45
+#record		EldPri01Area53	N	7601	9716	195	53	-9
+#record		EldPri01Area54	N	8672	11015	216	50	21
+#record		EldPri01Area55	N	10114	4888	186	340	53
+#record		EldPri01Area56	N	11474	3619	132	695	26
+#record		EldPri01Area57	N	9291	4286	351	90	21
+#record		EldPri01Area58	N	7626	5301	399	159	86
+#record		EldPri01Area59	N	10906	5004	107	344	135
+#record		EldPri01Area60	N	8450	4619	108	184	-57
+#record		EldPri01Area61	N	9334	5285	162	101	-76
+#record		EldPri01Area62	N	11944	4629	156	338	19
+#record		EldPri01Area63	N	7527	11566	394	219	157
+#record		EldPri01Area64	N	8275	4740	0	0	253
+#record		EldPri01Area65	N	10813	5691	308	50	15
+#record		EldPri01Area66	N	11483	9015	0	0	333
+#record		EldPri01Area67	N	11342	7249	0	0	333
+#record		EldPri01Area68	N	6811	9811	0	0	420
+#record		EldPri01Area69	N	9658	7698	258	425	77
+#record		EldPri01Area70	N	8507	7516	0	0	403
+#record		EldPri01Area71	N	9408	10850	170	88	1
+#record		EldPri01Area72	N	12150	9330	0	0	396
+#record		EldPri01Area73	N	11907	8360	0	0	519
+#record		EldPri01Area74	N	10400	10327	110	412	33
+#record		EldPri01Area75	N	12181	10367	0	0	372
+#record		EldPri01Area76	N	10442	9478	50	189	-40
+#record		EldPri01Area77	N	10107	11136	330	197	-7
+#record		EldPri01Area78	N	9811	9513	242	121	-49
+#record		EldPri01Area79	N	9054	9488	97	299	-53
+#record		EldPri01Area81	N	10665	7906	0	0	387
+#record		EldPri01Area82	N	6220	10093	0	0	632
+#record		EldPri01AreaW1	N	4052	1051	908	420	0
+#record		EldPri01AreaW2	N	5827	2362	756	452	54
+#record		EldPri01AreaW3	N	11797	4195	295	799	0
+#record		EldPri01AreaW4	N	10004	4944	975	325	16
+#record		EldPri01AreaW5	N	1386	7683	0	0	891
+#record		EldPri01AreaW6	N	868	4453	1381	80	83
+#record		EldPri01AreaW7	N	6508	11703	324	1211	-108
+#record		EldPri01AreaW8	N	6704	992	659	363	-9
+#record		EldPri01AreaH1	N	6772	3582	725	261	-7
+#record		EldPri01AreaH2	N	2046	5971	133	641	21
+#record		EldPri01AreaH3	N	5034	9439	209	1663	-41
+#record		EldPri01AreaH4	N	10418	7677	249	1195	91
+#record		EldPri01AreaH5	N	6800	2093	0	0	800
+#record		EldPri01AreaH6	N	4345	2034	0	0	100
+#record		EldPri01AreaH7	N	7820	1560	0	0	100
+#record		EldPri01AreaH8	N	5945	1117	0	0	100
+#record		EldPri01AreaG1	Y	11829	7260	0	0	93
+#record		EldPri01AreaQ01	N	1593	9560	0	0	337
+#record		EldPri01AreaQ02	N	6196	9166	107	91	-92
+#record		EldPri01AreaQ03	N	7804	12167	266	54	-29
+#record		EldPri01AreaQ04	N	8862	10427	78	143	30
+#record		EldPri01AreaQ05	N	12435	9916	0	0	135
+#record		EldPri01AreaPbox01	N	6446	6311	6155	5879	0
+#record		EldPri01Area83	N	1409	8839	0	0	128
+#record		EldPri01Area84	N	2660	11071	0	0	303
+#record		EldPri01Area85	N	4791	8350	0	0	415
+#record		EldPri01Area86	N	5235	10227	608	171	-90
+#record		EldPri01Area87	N	7252	11971	0	0	380
+#record		EldPri01Area88	N	3545	9350	0	0	345
+#record		EldPri01Area89	N	12212	10932	0	0	121
+#record		EldPri01Area90	N	11588	9655	1043	50	-62
+#record		EldPri01Area91	N	10449	7143	0	0	233
+#record		EldPri01Area92	N	9563	7654	0	0	324
+#record		EldPri01Area93	N	3441	2108	0	0	345
+#record		EldPri01Area94	N	9134	5981	757	51	-8
+#record		EldPri01Area95	N	4145	5508	0	0	401
+
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		EldPri01Area01	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area01	WeakenedOgre	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area02	WeakenedOgre	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area02	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area03	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area03	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area03	LightingViVi	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area04	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area05	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area05	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area06	KingCall	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area06	LightingViVi	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area06	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area07	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area07	WeakenedOgre	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area08	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area08	KingCall	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area09	KingCall	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area09	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area10	KingCall	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area10	WeakenedOgre	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area11	Ogre	1	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area11	WeakenedOgre	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area12	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area12	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area13	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area13	WeakenedOgre	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area14	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area14	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area15	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area15	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area15	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area16	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area16	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area17	VampireBat	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area17	LightingViVi	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area18	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area18	WeakenedOgre	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area19	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area19	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area20	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area20	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area20	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area21	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area22	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area22	WeakenedOgre	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area23	WeakenedOgre	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area23	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area24	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area24	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area24	WeakenedOgre	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area25	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area25	KingCall	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area26	VampireBat	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area26	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area26	KingCall	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area27	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area27	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area27	KingCall	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area28	KingCall	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area28	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area29	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area29	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area29	WeakenedOgre	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area30	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area30	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area30	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area31	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area31	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area32	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area32	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area32	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area33	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area33	KingCall	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area34	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area34	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area34	KingCall	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area35	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area35	KingCall	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area36	Prisoner	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area36	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area37	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area37	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area37	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area38	KaraSolider	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area38	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area38	DisHarkan	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area39	KaraSolider	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area39	DisHarkan	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area39	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area40	VampireBat	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area41	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area41	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area42	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area42	VampireBat	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area43	Prisoner	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area43	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area44	Prisoner	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area44	Torturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area45	Prisoner	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area45	Torturer	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area46	Prisoner	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area46	SeniorTorturer	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area47	KaraSolider	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area47	Torturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area48	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area48	Torturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area48	SeniorTorturer	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area49	Prisoner	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area49	Torturer	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area50	KaraSolider	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area50	DisHarkan	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area50	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area51	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area51	Torturer	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area52	KaraSolider	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area52	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area53	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area53	KaraSolider	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area54	KaraSolider	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area54	DisHarkan	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area55	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area55	LightingViVi	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area56	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area56	LightingViVi	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area57	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area57	WeakenedOgre	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area57	KingCall	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area58	Prisoner	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area58	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area59	Prisoner	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area59	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area60	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area61	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area62	Prisoner	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area62	VampireBat	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area63	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area63	KaraSolider	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area64	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area65	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area66	SeniorTorturer	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area66	DeadTreeSoul	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area67	Q_A_KaraTempler	1	0	45	40	50	-5	10	-2	8	0	10	2	13	5
+#record		EldPri01Area67	SeniorTorturer	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area68	Prisoner	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area68	Torturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area68	SeniorTorturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area69	Prisoner	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area69	Torturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area69	SeniorTorturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area70	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area70	Torturer	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area70	Q_A_KaraTempler	1	0	45	40	50	-5	10	-2	8	0	10	2	13	5
+#record		EldPri01Area71	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area72	KaraSolider	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area72	KaraTempler	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area73	KaraSolider	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area73	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area73	DisHarkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area74	KaraSolider	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area74	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area75	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area75	KaraSolider	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area76	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area77	KaraSolider	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area77	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area77	DisHarkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area78	KaraSolider	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area78	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area79	KaraSolider	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area79	KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area79	Q_A_KaraTempler	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area81	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area81	Torturer	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area82	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area82	Torturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area82	SeniorTorturer	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01AreaW1	HERB4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW1	HERB5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW1	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW1	MUSHROOM4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW1	MUSHROOM5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW1	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW2	MUSHROOM5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW2	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW2	HERB5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW2	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW2	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW2	WOOD4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW3	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW3	HERB4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW3	MUSHROOM4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW3	WOOD5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW3	WOOD4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW3	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW3	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW3	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW4	HERB4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW4	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW4	MUSHROOM4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW4	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW4	FLOWER1	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW5	HERB5	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW5	HERB6	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW5	WOOD4	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW5	MUSHROOM6	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW5	MUSHROOM5	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW6	HERB4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW6	HERB5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW6	MUSHROOM5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW6	MUSHROOM4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW6	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW6	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW6	WOOD4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW6	WOOD5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	WOOD4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	WOOD5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	MUSHROOM4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	MUSHROOM5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	HERB4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	HERB5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW7	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW8	HERB4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW8	WOOD4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW8	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaW8	MUSHROOM4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH1	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH1	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH1	WOOD4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH1	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH1	HERB5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH1	MUSHROOM5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH2	MUSHROOM5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH2	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH2	WOOD5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH2	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH2	HERB5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH2	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH3	MUSHROOM4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH3	MUSHROOM5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH3	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH3	HERB4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH3	HERB5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH3	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH4	WOOD4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH4	HERB6	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH4	FLOWER1	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH4	MUSHROOM6	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH4	MUSHROOM4	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH4	HERB4	2	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH5	MUSHROOM4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH5	MUSHROOM5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH5	MUSHROOM6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH5	HERB4	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH5	HERB5	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH5	HERB6	1	0	180	80	190	-100	5	-50	15	0	150	5	300	10
+#record		EldPri01AreaH6	KingCall3stBrother	1	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01AreaH7	KingCall2stBrother	1	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01AreaH8	KingCall1stBrother	1	0	55	40	65	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01AreaG1	S_VampireBat	1	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		EldPri01AreaG1	VampireBat	3	0	21600	21590	21610	-10	8	-5	15	0	60	5	120	10
+#record		EldPri01AreaQ01	Q_A_KaraTempler	1	0	45	40	50	-5	5	-2	8	0	10	2	13	5
+#record		EldPri01AreaQ01	KaraSolider	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01AreaQ02	Q_A_KaraTempler	1	0	45	40	50	-5	5	-2	8	0	10	2	13	5
+#record		EldPri01AreaQ03	Q_A_KaraTempler	1	0	45	40	50	-5	5	-2	8	0	10	2	13	5
+#record		EldPri01AreaQ04	Q_A_KaraTempler	1	0	45	40	50	-5	5	-2	8	0	10	2	13	5
+#record		EldPri01AreaQ05	Q_A_KaraTempler	1	0	45	40	50	-5	5	-2	8	0	10	2	13	5
+#record		EldPri01AreaPbox01	PresentBox10	1	0	14400	14390	14410	-10	8	-5	15	0	60	5	120	10
+#record		EldPri01Area83	DeadTreeSoul	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area84	DeadTreeSoul	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area84	Prisoner	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area84	Torturer	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area85	DeadTreeSoul	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area85	Prisoner	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area86	DeadTreeSoul	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area86	Prisoner	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area87	KaraSolider	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area87	KaraTempler	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area88	DeadTreeSoul	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area88	Prisoner	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area88	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area89	DeadTreeSoul	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area90	DeadTreeSoul	4	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area91	DeadTreeSoul	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area92	DeadTreeSoul	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area93	Harkan	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area94	Torturer	3	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area95	Harkan	2	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+#record		EldPri01Area95	VampireBat	1	0	30	15	40	-15	10	-10	25	0	60	5	120	10
+
+#end																	

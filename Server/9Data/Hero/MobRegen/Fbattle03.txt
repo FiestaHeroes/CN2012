@@ -1,20 +1,31 @@
-;	Shine Monster Regeneration Table			V0.3														
-;	Monster Group																	
-#ignore	\o042																	
-#exchange	#	\x20																
-																		
-#table	MobRegenGroup																	
-;		GroupID	Family	Regen Region														
-;			Y/N	X	Y	X	Y	Range/Degree										
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
-																		
-																		
-																		
-#table	MobRegen																	
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
-																		
-#end																		
+;	Shine Monster Regeneration Table			V0.3													
+;	Monster Group																
+#ignore	\o042																
+#exchange	#	\x20															
+																	
+#table	MobRegenGroup																
+;		GroupID	Family	Regen Region													
+;			Y/N	X	Y	X	Y	Range/Degree									
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD									
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree									
+																	
+;		Fbattle03H01	N	2369	1383	0	0	341									
+;		Fbattle03H02	N	2147	2272	0	0	299									
+;		Fbattle03H03	N	859	2313	0	0	236									
+																	
+																	
+																	
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta	
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+																	
+;		Fbattle03H01	HalloWeenPhino03	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0
+;		Fbattle03H02	HalloWeenPhino03	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0
+;		Fbattle03H03	HalloWeenPhino03	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0
+																	
+#end																	
+																	
+																	
+																	

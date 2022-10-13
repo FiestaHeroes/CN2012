@@ -2,55 +2,45 @@
 #ignore	\o042		
 #exchange	#	\x20	
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-#Record	Cancel	取消		
-#Record	Yes	是 		
-#Record	No	不是		
-				
-				
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
 
-#Record	RecallDisableField	不可移动地区		
-#Record	KQEntryInCamp0	进入王国任务地域		
-#Record	KQEntryInCamp1	请收起迷你屋		
-				
+#Record	Cancel	Cancel	
+#Record	Yes	Yes	
+#Record	No	No	
+			
+#Record	RecallDisableField	This location is not accessible via Warping.	
+#Record	KQEntryInCamp0	You have entered Kingdom Quest field.	
+#Record	KQEntryInCamp1	Please close active Vendor to enter the Kingdom Quest.	
+			
+#Record	PresentBoxInvenFull	"Inventory is full, the box cannot be opened."	
+#Record	PresentBoxInformCall	Loading the box information.  Please check again soon.	
+			
+#Record	LevelLimit	The level limit for this area is (%d-%d).	
+#Record	PartyLimitedField	"To enter the map, please leave your party."	
+			
+#Record	ButtonOK	OK	
+#Record	ButtonCancel	Cancel	
+			
+#Record	DeamonDead	We honor those who returned Helga to his ancient home.	
+			
+#Record	NeedPartyOrQuest	You must belong in a party to enter.	
+#Record	NeedItem	You must have the admission item to enter Instance Dungeon.	
+#Record	CannotAddAnymore	You can not enter because Instance Dungeon is currently full. 	
+#Record	InstanceDungeonMaxPlayer	You can not enter because Instance Dungeon is currently full. 	
+			
+#Record	BoothInterior	Repairing	
+			
+#Record	PKCannotTrade	You can not trade at this time, please try again later.	
+#Record	PKCannotQuest	You can not quest at this time, please try again later.	
+#Record	PKCannotInstant	You can not enter an instance dungeon at this time, please try again later.	
+			
+#Record	LimitTimeMessageFirst	Time is running out, hurry!!	
+#Record	LimitTimeMessageSecond	Hurry, you're time is about to end!!	
+			
+#Record	DungeonTimeout	Sorry, you have run out of time.	
+			
+#Record	GordonMasterFail	GordonMasterFail	
 
-#Record	PresentBoxInvenFull	背包已满无法开启宝箱.		
-#Record	PresentBoxInformCall	正在读取宝箱资料.请稍后再开.		
-				
-
-#Record	LevelLimit	有级别限制(%d-%d)		
-#Record	PartyLimitedField	在组队状态下无法进入的地图		
-				
-				
-
-#Record	ButtonOK	确认		
-#Record	ButtonCancel	取消		
-				
-
-#Record	DeamonDead	将黑戈尔灵魂归还给古代的勇士们,向他们表示敬意.		
-				
-
-#Record	NeedPartyOrQuest	王国任务只能组队或通过任务入场.		
-#Record	NeedItem	王国任务必需要有入场道具才能进入.		
-#Record	CannotAddAnymore	超出王国任务的限定人数,无法入场.		
-#Record	InstanceDungeonMaxPlayer	超出王国任务可以入场人数, 无法入场.		
-				
-#Record	BoothInterior	内部整修中.		
-				
-
-#Record	PKCannotTrade	性向不同无法交易		
-#Record	PKCannotQuest	性向不同无法接任务.		
-#Record	PKCannotInstant	红人或红人等待状态,无法进入王国任务.		
-				
-
-#Record	LimitTimeMessageFirst	王国任务保留时间还剩5分钟.		
-#Record	LimitTimeMessageSecond	王国任务保留时间还剩1分钟.		
-				
-
-#Record	DungeonTimeout	限定时间已到,自动放弃王国任务.		
-				
-
-#Record	GordonMasterFail	暗黑古代雕像被破坏无法继续进行		
-#End				
+#End			

@@ -1,260 +1,395 @@
-;	Shine Monster Regeneration Table			V0.3														
-;	Monster Group																	
-#ignore	\o042																	
-#exchange	#	\x20																
-																		
-#table	MobRegenGroup																	
-;		GroupID	Family	Regen Region														
-;			Y/N	X	Y	X	Y	Range/Degree										
-#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD										
-#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree										
-#record		EldCem02_001	N	1184	2829	0	0	265										
-#record		EldCem02_002	N	2135	3189	0	0	392										
-#record		EldCem02_003	N	1114	3670	0	0	272										
-#record		EldCem02_004	N	1340	5204	0	0	314										
-#record		EldCem02_005	N	3439	1540	0	0	279										
-#record		EldCem02_006	N	4299	1381	0	0	279										
-#record		EldCem02_007	N	5135	887	0	0	293										
-#record		EldCem02_008	N	1851	1231	0	0	286										
-#record		EldCem02_009	N	1031	4436	0	0	279										
-#record		EldCem02_010	N	2684	1836	0	0	420										
-#record		EldCem02_011	N	3203	5579	0	0	307										
-#record		EldCem02_012	N	1945	7664	0	0	427										
-#record		EldCem02_013	N	2680	5996	0	0	350										
-#record		EldCem02_014	N	5180	3096	0	0	350										
-#record		EldCem02_015	N	6058	3810	0	0	350										
-#record		EldCem02_016	N	4390	6709	0	0	350										
-#record		EldCem02_017	N	3513	7028	0	0	385										
-#record		EldCem02_018	N	2304	6814	0	0	350										
-#record		EldCem02_019	N	5888	2895	0	0	293										
-#record		EldCem02_020	N	6669	3861	0	0	518										
-#record		EldCem02_021	N	6364	2265	150	685	135										
-#record		EldCem02_022	N	7067	3294	350	350	0										
-#record		EldCem02_023	N	4269	5921	0	0	335										
-#record		EldCem02_024	N	4154	7560	0	0	371										
-#record		EldCem02_025	N	3389	7887	0	0	392										
-#record		EldCem02_026	N	5901	5977	0	0	385										
-#record		EldCem02_027	N	7764	5951	0	0	455										
-#record		EldCem02_028	N	5749	7106	213	525	0										
-#record		EldCem02_029	N	7046	6167	297	631	-24										
-#record		EldCem02_030	N	8165	5313	0	0	350										
-#record		EldCem02_031	N	6449	8219	0	0	350										
-#record		EldCem02_032	N	6888	7519	0	0	350										
-#record		EldCem02_033	N	7859	7507	131	614	24										
-#record		EldCem02_034	N	8541	7006	193	517	28										
-#record		EldCem02_035	N	7442	8198	0	0	350										
-#record		EldCem02_036	N	6284	12089	795	207	1										
-#record		EldCem02_037	N	5645	9524	398	133	15										
-#record		EldCem02_038	N	4757	10066	0	0	448										
-#record		EldCem02_039	N	10240	4987	488	712	34										
-#record		EldCem02_040	N	12109	4618	127	457	0										
-#record		EldCem02_041	N	6049	10423	0	0	469										
-#record		EldCem02_042	N	7075	10937	205	492	-34										
-#record		EldCem02_043	N	9924	3588	0	0	455										
-#record		EldCem02_044	N	10872	4283	234	589	34										
-#record		EldCem02_045	N	11678	5517	78	574	-52										
-#record		EldCem02_046	N	3599	11936	1053	192	0										
-#record		EldCem02_047	N	3130	10771	968	140	-14										
-#record		EldCem02_048	N	1725	11350	0	0	658										
-#record		EldCem02_049	N	11587	2607	0	0	483										
-#record		EldCem02_050	N	11220	3061	0	0	462										
-#record		FLOWER1	N	6228	3316	0	0	644										
-#record		FLOWER2	N	6806	2616	0	0	644										
-#record		FLOWER3	N	7294	2190	0	0	644										
-#record		FLOWER4	N	6388	2999	0	0	644										
-#record		FLOWER5	N	7068	7612	0	0	644										
-#record		FLOWER6	N	7967	7037	0	0	644										
-#record		FLOWER7	N	6669	6177	0	0	644										
-#record		FLOWER8	N	5876	10201	0	0	644										
-#record		FLOWER9	N	6203	10905	0	0	644										
-#record		FLOWER10	N	5920	11391	0	0	644										
-#record		HERB1	N	6413	3024	0	0	644										
-#record		HERB2	N	6686	10905	0	0	644										
-#record		WOOD4	N	7163	2383	0	0	644										
-#record		WOOD5	N	5939	10998	0	0	644										
-#record		MUSHROOM4	N	5903	3277	0	0	644										
-#record		MUSHROOM5	N	5524	10134	0	0	644										
-#record		EldCem02AreaPbox01	N	3310	6895	0	0	1278										
-#record		EldCem02AreaPbox02	N	7258	6979	1576	1766	129										
-#record		EldCem02Guard01	N	1467	1569	0	0	12										
-#record		EldCem02Guard02	N	10849	11416	0	0	12										
-#record		EldCem02_H1_01	N	3937	1871	0	0	12										
-#record		EldCem02_H1_02	N	2693	1998	0	0	27										
-#record		EldCem02_H1_03	N	5981	2871	0	0	20										
-#record		EldCem02_H1_04	N	6402	3614	0	0	20										
-#record		EldCem02_H1_05	N	4199	7273	0	0	41										
-#record		EldCem02_H1_06	N	7696	6153	38	17	-24										
-#record		EldCem02_H1_07	N	9653	4394	25	19	34										
-#record		EldCem02_H1_08	N	12128	5369	47	12	-52										
-#record		EldCem02_H1_09	N	2002	11706	12	22	-14										
-#record		EldCem02_H1_10	N	12006	2910	0	0	13										
-#record		EldCem02_H2_01	N	4117	1399	0	0	12										
-#record		EldCem02_H2_02	N	2136	1429	0	0	13										
-#record		EldCem02_H2_03	N	4992	2954	0	0	34										
-#record		EldCem02_H2_04	N	6823	3959	0	0	27										
-#record		EldCem02_H2_05	N	2136	7967	0	0	41										
-#record		EldCem02_H2_06	N	7947	7195	25	23	-24										
-#record		EldCem02_H2_07	N	9834	5251	32	14	34										
-#record		EldCem02_H2_08	N	12056	4863	26	13	-52										
-#record		EldCem02_H2_09	N	1756	10686	22	17	-14										
-#record		EldCem02_H2_10	N	10779	2878	0	0	13										
-#record		EldCem02_H3_01	N	4014	843	0	0	19										
-#record		EldCem02_H3_02	N	1454	2096	0	0	13										
-#record		EldCem02_H3_03	N	5480	2759	0	0	13										
-#record		EldCem02_H3_04	N	6091	4096	0	0	13										
-#record		EldCem02_H3_05	N	3449	7110	0	0	27										
-#record		EldCem02_H3_06	N	6810	7464	23	32	-24										
-#record		EldCem02_H3_07	N	10556	4513	10	25	34										
-#record		EldCem02_H3_08	N	11777	5419	34	14	-52										
-#record		EldCem02_H3_09	N	2204	11124	45	24	-14										
-#record		EldCem02_H3_10	N	11281	2279	0	0	27										
-#record		EldCem02_H4_01	N	4560	1149	0	0	19										
-#record		EldCem02_H4_02	N	3298	1632	0	0	55										
-#record		EldCem02_H4_03	N	5193	3376	0	0	20										
-#record		EldCem02_H4_04	N	7193	3699	0	0	13										
-#record		EldCem02_H4_05	N	3436	7967	0	0	27										
-#record		EldCem02_H4_06	N	6616	6618	26	21	-24										
-#record		EldCem02_H4_07	N	10580	5271	24	18	48										
-#record		EldCem02_H4_08	N	12036	4338	40	16	-52										
-#record		EldCem02_H4_09	N	3067	10540	16	21	-14										
-#record		EldCem02_H4_10	N	11473	3141	0	0	55										
-																		
-																		
-																		
-#table	MobRegen																	
-;		GroupID	MobIndex	number	number	Regen Time(sec)							Base					
-;					Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta		
-#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	
-#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4	
-#record		EldCem02_001	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_001	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_002	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_002	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_003	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_003	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_004	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_004	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_005	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_005	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_006	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_006	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_007	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_007	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_008	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_008	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_009	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_009	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_010	EarthSpider	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_010	Wd_Prock	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_011	SubFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_012	SubFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_013	SubFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_014	SubFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_015	SubFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_016	Fox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_017	Fox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_018	Fox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_019	Fox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_020	Fox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_021	OldFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_022	OldFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_023	OldFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_024	OldFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_025	OldFox	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_026	DeadTreeSoul	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_027	DeadTreeSoul	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_028	DeadTreeSoul	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_029	DeadTreeSoul	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_030	DeadTreeSoul	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_031	DesertTree	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_032	DesertTree	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_033	DesertTree	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_034	DesertTree	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_035	DesertTree	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_036	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_036	Ghost	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_037	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_037	Ghost	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_038	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_038	Ghost	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_039	Wd_Lips	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_039	Ghost	4	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_040	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_040	Ghost	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_041	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_041	Ghost	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_042	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_042	Ghost	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_043	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_043	Ghost	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_044	Wd_Lips	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_044	Ghost	3	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_045	Wd_Lips	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_045	Ghost	2	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_046	Zombie	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_047	Zombie	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_048	Zombie	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_049	Zombie	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02_050	Zombie	4	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER1	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER2	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER3	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER4	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER5	FLOWER4	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER6	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER7	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER8	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER9	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		FLOWER10	FLOWER5	1	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		HERB1	HERB4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		HERB2	HERB5	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		WOOD4	WOOD4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		WOOD5	WOOD5	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		MUSHROOM4	MUSHROOM4	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		MUSHROOM5	MUSHROOM5	5	0	15	10	21	-4	10	-2	13	6	18	8	21	0	
-#record		EldCem02AreaPbox01	PresentBox7	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		EldCem02AreaPbox02	PresentBox8	1	0	14400	14396	14404	-4	5	-2	8	0	10	2	13	4	
-#record		EldCem02Guard01	GuardLue01	1	0	11	8	15	-4	8	-2	10	4	12	6	15	0	
-#record		EldCem02Guard02	GuardLue01	1	0	11	8	15	-4	8	-2	10	4	12	6	15	0	
-#record		EldCem02_H1_01	AlkemisBook06	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_02	KingCall1stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_03	KingCall2stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_04	KingCall3stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_05	WildSandRatMan	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_06	AlkemisBook07	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_07	AlkemisBook08	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_08	GhostLump	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_09	ZombieKnight	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H1_10	ZombieMaster	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_01	AlkemisBook06	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_02	KingCall1stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_03	KingCall2stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_04	KingCall3stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_05	WildSandRatMan	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_06	AlkemisBook07	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_07	AlkemisBook08	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_08	GhostLump	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_09	ZombieKnight	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H2_10	ZombieMaster	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_01	AlkemisBook06	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_02	KingCall1stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_03	KingCall2stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_04	KingCall3stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_05	WildSandRatMan	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_06	AlkemisBook07	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_07	AlkemisBook08	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_08	GhostLump	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_09	ZombieKnight	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H3_10	ZombieMaster	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_01	AlkemisBook06	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_02	KingCall1stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_03	KingCall2stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_04	KingCall3stBrother	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_05	WildSandRatMan	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_06	AlkemisBook07	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_07	AlkemisBook08	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_08	GhostLump	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_09	ZombieKnight	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-#record		EldCem02_H4_10	ZombieMaster	1	0	60	30	90	-40	30	-20	42	20	78	40	90	0	
-																		
-#end																		
+;	Shine Monster Regeneration Table			V0.2				
+;	Monster Group							
+#ignore	\o042							
+#exchange	#	\x20						
+
+#table	MobRegenGroup							
+;		GroupID	Family	Regen Region				
+;			Y/N	X	Y	X	Y	Range/Degree
+#columntype		INDEX	STRING[1]	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		GroupIndex	IsFamily	CenterX	CenterY	Width	Height	RangeDegree
+#record		EldCem02Area01	N	1018	5192	0	0	344
+#record		EldCem02Area02	N	2778	1819	0	0	433
+#record		EldCem02Area03	N	2153	3292	90	348	2
+#record		EldCem02Area04	N	1154	3761	288	867	-3
+#record		EldCem02Area05	N	2923	991	390	52	10
+#record		EldCem02Area06	N	1854	1335	54	205	-35
+#record		EldCem02Area07	N	1286	2243	211	67	68
+#record		EldCem02Area08	N	4821	1074	718	259	7
+#record		EldCem02Area09	N	6314	3527	579	186	14
+#record		EldCem02Area10	N	5162	2873	345	111	42
+#record		EldCem02Area11	N	5471	3098	494	180	39
+#record		EldCem02Area12	N	7091	1475	0	0	275
+#record		EldCem02Area13	N	7440	1940	271	267	38
+#record		EldCem02Area14	N	3880	7659	253	607	-57
+#record		EldCem02Area15	N	3324	7033	0	0	393
+#record		EldCem02Area16	N	1869	7551	215	373	15
+#record		EldCem02Area17	N	2319	6739	284	245	69
+#record		EldCem02Area18	N	2097	9188	409	284	0
+#record		EldCem02Area19	N	5230	9547	644	159	55
+#record		EldCem02Area20	N	4720	9924	153	405	-34
+#record		EldCem02Area21	N	6721	11648	153	491	90
+#record		EldCem02Area22	N	5644	11684	431	268	-28
+#record		EldCem02Area23	N	1622	11585	556	55	-79
+#record		EldCem02Area24	N	3304	10906	686	220	-25
+#record		EldCem02Area25	N	1362	11121	57	632	-21
+#record		EldCem02Area26	N	5761	10753	0	0	370
+#record		EldCem02Area27	N	7207	10578	563	122	87
+#record		EldCem02Area28	N	7341	6232	276	275	39
+#record		EldCem02Area29	N	6517	8425	0	0	273
+#record		EldCem02Area30	N	6904	7463	335	57	36
+#record		EldCem02Area31	N	8441	7200	307	215	113
+#record		EldCem02Area32	N	7908	7711	50	393	37
+#record		EldCem02Area33	N	10407	5510	0	0	505
+#record		EldCem02Area34	N	11957	4739	201	658	-4
+#record		EldCem02Area35	N	10301	3291	297	320	29
+#record		EldCem02Area36	N	11296	2575	0	0	297
+#record		EldCem02Area37	N	11246	3034	66	646	71
+#record		EldCem02Area38	N	9683	4103	133	328	-8
+#record		EldCem02Area39	N	11761	2635	110	538	12
+#record		EldCem02Area40	N	8922	1451	442	242	48
+#record		EldCem02Area41	N	10245	1403	0	0	422
+#record		EldCem02Area42	N	10380	9833	0	0	141
+#record		EldCem02Area43	N	9403	8846	0	0	414
+#record		EldCem02Area44	N	10377	9020	0	0	363
+#record		EldCem02Area45	N	9829	9384	0	0	370
+#record		EldCem02Area46	N	9366	9831	0	0	408
+#record		EldCem02Area47	N	3059	5787	298	606	-45
+#record		EldCem02Area48	N	7063	3016	241	185	-36
+#record		EldCem02Area49	N	4561	8706	774	79	27
+#record		EldCem02Area50	N	10629	4748	558	91	-27
+#record		EldCem02Area51	N	11809	10002	83	573	-2
+#record		EldCem02Area52	N	11627	7887	0	0	435
+#record		EldCem02Area53	N	9202	6881	140	472	-28
+#record		EldCem02Area55	N	8396	4090	204	446	-7
+#record		EldCem02Area54	N	10456	11465	609	278	10
+#record		EldCEm02Area56	N	6503	1993	87	449	-47
+#record		EldCem02Area57	N	1958	2972	145	120	38
+#record		EldCem02Area58	N	3948	1741	338	130	41
+#record		EldCem02Area59	N	820	5723	161	177	-6
+#record		EldCem02Area60	N	4437	4012	55	193	53
+#record		EldCem02Area61	N	6646	3953	424	224	19
+#record		EldCem02Area62	N	6197	2481	283	80	170
+#record		EldCem02Area63	N	9466	2034	0	0	384
+#record		EldCem02Area64	N	6554	6639	162	229	-6
+#record		EldCem02Area65	N	5520	4900	52	465	63
+#record		EldCem02Area66	N	7305	5554	555	154	8
+#record		EldCem02Area67	N	5831	7066	121	479	10
+#record		EldCem02Area68	N	8023	5559	205	404	18
+#record		EldCem02Area69	N	4266	6404	243	456	20
+#record		EldCem02Area70	N	2944	11772	0	0	415
+#record		EldCem02Area71	N	2576	8398	233	182	-5
+#record		EldCem02Area72	N	2794	9396	277	94	22
+#record		EldCem02Area73	N	7466	8207	356	131	15
+#record		EldCem02Area74	N	2056	10856	0	0	465
+#record		EldCem02Area76	N	8728	11125	138	767	39
+#record		EldCem02Arean01	N	4051	1380	356	1327	-71
+#record		EldCem02Arean02	N	1601	3550	0	0	821
+#record		EldCem02Arean03	N	2540	6834	352	1281	-26
+#record		EldCem02Arean04	N	7586	6657	0	0	1206
+#record		EldCem02Arean05	N	6435	3258	0	0	918
+#record		EldCem02Arean06	N	10801	4330	730	1179	-11
+#record		EldCem02Arean07	N	3202	10863	968	183	-15
+#record		EldCem02Arean08	N	5219	9864	766	300	14
+#record		EldCem02Arean09	N	9815	9283	0	0	863
+#record		EldCem02AreaG1	Y	11143	3885	0	0	134
+#record		EldCem02AreaPbox01	N	6588	3675	3493	5835	90
+#record		EldCem02Area77	N	2061	4178	102	667	-23
+#record		EldCem02AreaPbox02	N	11268	4402	5768	2576	0
+#record		Cem02Mush01	N	1147	9144	256	494	0
+#record		Cem02Wood01	N	11604	8534	151	895	-4
+#record		Cem02Wood02	N	8127	9853	127	645	14
+#record		Cem02Wood03	N	8744	11071	126	503	43
+#record		Cem02Wood04	N	11917	6923	142	484	-13
+#record		Cem02Area78	N	7524	6920	0	0	324
+#record		EldCem02Area79	N	8330	6428	0	0	352
+#record		EldCem02Area80	N	11204	3633	0	0	500
+#record		EldCem02Area81	N	4499	11504	212	275	0
+#record		EldCem02Area82	N	6245	9956	0	0	380
+#record		EldCem02Area83	N	6606	10742	0	0	324
+#record		EldCem02)84	N	1245	9140	0	0	500
+#record		EldCem02_85	N	8030	9617	116	842	16
+
+
+
+#table	MobRegen																
+;		GroupID	MobIndex	number	number	Regen Time(sec)							Base				
+;						Standard	Min	Max	delta	sec	delta	sec	delta	sec	delta	sec	delta
+#columntype		INDEX	STRING[33]	BYTE	BYTE	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD	DWRD
+#columnname		RegenIndex	MobIndex	MobNum	KillNum	RegStandard	RegMin	RegMax	RegDelta0	RegSec0	RegDelta1	RegSec1	RegDelta2	RegSec2	RegDelta3	RegSec3	RegDelta4
+#record		EldCem02Area01	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area01	OldFox	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area01	CemWolf	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area02	OldFox	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area02	BabyWereBear	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area02	CemWolf	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area03	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area03	OldFox	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area04	FireViVi	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area04	OldFox	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area04	BabyWereBear	4	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area04	CemWolf	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area05	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area05	OldFox	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area06	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area07	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area08	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area08	OldFox	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area08	BabyWereBear	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area09	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area09	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area09	BabyWereBear	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area10	Ghost	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area10	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area11	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area11	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area11	BabyWereBear	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area12	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area12	Ghost	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area13	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area13	Ghost	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area13	BabyWereBear	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area14	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area14	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area14	BabyWereBear	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area15	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area15	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area16	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area16	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area17	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area17	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area18	FireViVi	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area18	Hob	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area18	HobFighter	1	0	50	35	65	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area19	EarthSpider	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area19	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area19	HobFighter	1	0	50	35	65	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area19	Prock	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area20	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area20	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area21	EarthSpider	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area21	BoneImp	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area21	HobFighter	1	0	50	35	65	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area21	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area22	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area22	EarthSpider	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area22	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area23	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area23	EarthSpider	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area23	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area24	BoneImp	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area24	EarthSpider	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area24	Prock	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area25	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area25	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area26	EarthSpider	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area26	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area26	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area27	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area27	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area27	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area28	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area28	Hob	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area29	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area29	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area30	Ghost	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area31	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area31	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area31	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area32	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area32	Hob	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area33	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area33	EarthSpider	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area33	Hob	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area34	EarthSpider	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area34	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area34	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area34	HobFighter	1	0	50	18	65	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area34	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area35	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area35	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area36	EarthSpider	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area36	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area36	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area36	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area37	BoneImp	4	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area37	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area38	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area38	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area38	HobFighter	1	0	50	35	65	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area38	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area39	EarthSpider	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area39	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area39	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area40	Hob	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area40	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area40	BabyWereBear	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area41	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area41	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area41	HobFighter	1	0	50	35	65	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area42	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area42	Robo	1	0	365	350	380	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area43	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area43	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area44	EarthSpider	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area44	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area45	BoneImp	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area45	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area46	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area46	EarthSpider	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area47	FireViVi	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area47	Ghost	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area47	BabyWereBear	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area48	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area48	BabyWereBear	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area49	Ghost	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area49	Hob	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area50	EarthSpider	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area50	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area51	BoneImp	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area51	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area52	BoneImp	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area52	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area53	EarthSpider	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area53	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area53	Prock	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area55	FireViVi	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area55	Ghost	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area55	Hob	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area54	BoneImp	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area54	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCEm02Area56	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCEm02Area56	BabyWereBear	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area57	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area58	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area59	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area60	OldFox	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area61	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area61	BabyWereBear	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area62	Ghost	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area63	Hob	4	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area63	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area63	BabyWereBear	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area64	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area64	Hob	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area65	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area65	Hob	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area66	Ghost	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area66	Hob	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area67	BoneImp	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area67	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area68	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area68	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area69	FireViVi	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area69	Ghost	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area70	BoneImp	4	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area70	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area71	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area71	BabyWereBear	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area72	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area72	BabyWereBear	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area73	BoneImp	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area73	Hob	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area74	EarthSpider	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area74	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area74	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area76	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Arean01	MUSHROOM4	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean01	MUSHROOM5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean01	HERB4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean01	HERB5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean01	WOOD1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean01	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean02	HERB4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean02	HERB5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean02	MUSHROOM4	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean02	WOOD1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean02	WOOD2	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean02	MUSHROOM5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean02	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean02	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean03	HERB4	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean03	HERB5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean03	MUSHROOM4	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean03	WOOD1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean03	WOOD2	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean03	MUSHROOM5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean03	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean03	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	HERB4	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	HERB5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	MUSHROOM4	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	HERB6	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	MUSHROOM5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	MUSHROOM6	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	WOOD4	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	WOOD5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	WOOD6	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean04	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean05	MUSHROOM5	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean05	MUSHROOM6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean05	HERB5	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean05	HERB6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean05	WOOD1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean05	WOOD2	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean05	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean06	HERB4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean06	HERB5	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean06	HERB6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean06	MUSHROOM4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean06	MUSHROOM5	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean06	MUSHROOM6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean07	MUSHROOM4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean07	MUSHROOM5	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean07	MUSHROOM6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean07	HERB4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean07	HERB5	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean07	HERB6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean08	HERB6	3	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean08	MUSHROOM6	3	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean08	FLOWER1	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean08	WOOD1	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean08	WOOD2	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean09	HERB5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean09	HERB6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean09	MUSHROOM5	1	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02Arean09	MUSHROOM6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		EldCem02AreaG1	S_Zombie	1	0	21600	21590	21610	-10	10	-5	20	0	60	5	120	10
+#record		EldCem02AreaG1	Zombie	3	0	21600	21590	21610	-10	10	-5	20	0	60	5	120	10
+#record		EldCem02AreaPbox01	PresentBox8	1	0	14400	14390	14410	-10	10	-5	20	0	60	5	120	10
+#record		EldCem02Area77	FireViVi	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02AreaPbox02	PresentBox8	1	0	14400	14390	14410	-10	10	-5	20	0	60	5	120	10
+#record		Cem02Mush01	MUSHROOM5	5	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Mush01	MUSHROOM6	5	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Mush01	MUSHROOM4	5	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood01	WOOD4	3	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood01	WOOD5	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood01	WOOD6	3	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood02	WOOD4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood02	WOOD5	3	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood02	WOOD6	4	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood03	WOOD4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood03	WOOD5	3	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood03	WOOD6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood04	WOOD4	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood04	WOOD5	3	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Wood04	WOOD6	2	0	300	290	310	-10	3	-5	15	0	60	5	120	10
+#record		Cem02Area78	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		Cem02Area78	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area79	Ghost	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area79	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area80	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area80	EarthSpider	1	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area81	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area81	EarthSpider	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area82	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area82	BoneImp	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area83	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02Area83	Hob	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02)84	FireViVi	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02)84	Ghost	3	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02_85	BoneImp	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+#record		EldCem02_85	Prock	2	0	33	18	48	-15	10	-10	20	0	60	10	120	15
+
+#end																	

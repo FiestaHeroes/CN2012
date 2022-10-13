@@ -1,37 +1,48 @@
 
-#ignore	\o042		
-#exchange	#	\x20	
+#ignore	\o042		; ï¿½Î¿ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½
+#exchange	#	\x20	; # => space
 
-#Table	Script			
-#ColumnType	INDEX	STRING[128]		
-#ColumnName	ScrIndex	ScrString		
-				
-#Record	Intro00	....6!Îª720,6C2Îª9,ÕâÖÖÊ±ºò·Ö²¼µÄ±ê×¼Îó²îÊÇ2,43....!!		
-#Record	Intro01	ßÀ?ÖÕÓÚÀ´ÁË.ÎÒÔ¤²âÄãÀ´µÄ¸ÅÂÊÎª97.5%		
-#Record	Intro02	¸ÕËã³öÀ´µÄ?ÊÇÄã»ñÊ¤µÄ¸ÅÂÊ		
-#Record	Intro03	ºÜ²»ĞÒ,ÄãµÄÊ¤Ëã²»µ½1.03%.»¹ÒªÌôÕ½Âğ?		
-#Record	Intro04	ÓÎÏ·ºÜ¼òµ¥,ÄãÏÈÑ¡ÔñÒ»¸ö÷»×Ó,È»ºó×ª¶¯ÂÖÅÌ.		
-#Record	Intro05	Èç¹ûÄãµÄÑ¡ÔñÊÇ´íµÄ,ÄÇµ½Ê±ºò¾Í»áºÍÎÒµÄÅ«Á¥ÃÇÒ»Æğ¶È¹ıÃÀºÃµÄÈÕ×Ó.		
-				
-#Record	Roulette1	Ñ¡Ôñ÷»×Óºó,×ª¶¯ÂÖÅÌ		
-				
-#Record	PlayerWin	ÎÒµÄºÃÔËºÃÏñÒ²µ½¾¡Í·ÁË.		
-				
-#Record	Reward	Ò»¶¨Òª×ñÊØÔ¼¶¨.´ÓÄÇ¸öÃÅ½øÈ¥È¡±¦Îï°É.		
-				
 
-#Record	Betray	½ÓÏÂÀ´,¿ªÊ¼µÚ¶ş³¡±ÈÈü°É? Á½¸öµ±ÖĞÖ»ÄÜ»îÒ»¸ö.ÔõÃ´Ñù?		
-				
-#Record	NotSelect	Ñ¡Ôñ÷»×Óºó,×ª¶¯ÂÖÅÌ		
-#Record	Luck	×£ÄãºÃÔË....×£ÎÒ¸ü¸üºÃÔË....ÎûÎû....		
-				
-#Record	RouReturn30	30ÃëºóÒÆ¶¯µ½ÂŞ¶÷Õò.		
-#Record	RouReturn20	20ÃëºóÒÆ¶¯µ½ÂŞ¶÷Õò.		
-#Record	RouReturn10	10ÃëºóÒÆ¶¯µ½ÂŞ¶÷Õò.		
-#Record	RouReturn5	10ÃëºóÒÆ¶¯µ½ÂŞ¶÷Õò.		
-				
-
-#Record	LastScript0	´ÓÄÄ¶ù¿ªÊ¼Ëã´íÁËÄØ£¿ÊÇÊ±¿ÕËéÆ¬!¶Ô,¾ÍÊÇËüÕÚ×¡ÁËÎÒµÄÑÛ.		
-#Record	LastScript1	ºÃ°¡,Äã¾ÍÄÃ×ßÄÇÊ±¿ÕËéÆ¬°É.Ô¸ËüÒ²ÄÜÕÚ×¡ÄãµÄÑÛ¾¦!		
-				
-#End				
+#Table	Script		
+#ColumnType	INDEX	STRING[128]	
+#ColumnName	ScrIndex	ScrString	
+#Record	RouReturn30	Move to Roumen in 30 seconds.	
+#Record	RouReturn20	Move to Roumen in 20 seconds.	
+#Record	RouReturn10	Move to Roumen in 10 seconds.	
+#Record	RouReturn5	Move to Roumen in 5 seconds.	
+#Record	Enter1	Welcome to ...	
+#Record	Enter2	Welcome to ...	
+#Record	Enter3	Welcome to ...	
+#Record	Enter4	Welcome to ...	
+#Record	Enter5	Welcome to ...	
+#Record	FighterW1-1	You are a figter and this is message 1 of wave 1	
+#Record	FighterW1-2	You are a figter and this is message 2 of wave 1	
+#Record	FighterW1-3	You are a figter and this is message 3 of wave 1	
+#Record	FighterW2-1	You are a figter and this is message 1 of wave 2	
+#Record	FighterW2-2	You are a figter and this is message 2 of wave 2	
+#Record	FighterW2-3	You are a figter and this is message 3 of wave 2	
+#Record	ClericW1-3	You are a cleric and this is message 1 of wave 1	
+#Record	ClericW1-3	You are a cleric and this is message 2 of wave 1	
+#Record	ClericW1-3	You are a cleric and this is message 3 of wave 1	
+#Record	ClericW2-1	You are a cleric and this is message 1 of wave 2	
+#Record	ClericW2-2	You are a cleric and this is message 2 of wave 2	
+#Record	ClericW2-3	You are a cleric and this is message 3 of wave 2	
+#Record	ArcherW1-3	You are a archer and this is message 1 of wave 1	
+#Record	ArcherW1-3	You are a archer and this is message 2 of wave 1	
+#Record	ArcherW1-3	You are a archer and this is message 3 of wave 1	
+#Record	ArcherW2-1	You are a archer and this is message 1 of wave 2	
+#Record	ArcherW2-2	You are a archer and this is message 2 of wave 2	
+#Record	ArcherW2-3	You are a archer and this is message 3 of wave 2	
+#Record	MageW1-3	You are a mage and this is message 1 of wave 1	
+#Record	MageW1-3	You are a mage and this is message 2 of wave 1	
+#Record	MageW1-3	You are a mage and this is message 3 of wave 1	
+#Record	MageW2-1	You are a mage and this is message 1 of wave 2	
+#Record	MageW2-2	You are a mage and this is message 2 of wave 2	
+#Record	MageW2-3	You are a mage and this is message 3 of wave 2	
+#Record	JokerW1-3	You are a Joker and this is message 1 of wave 1	
+#Record	JokerW1-3	You are a Joker and this is message 2 of wave 1	
+#Record	JokerW1-3	You are a Joker and this is message 3 of wave 1	
+#Record	JokerW2-1	You are a Joker and this is message 1 of wave 2	
+#Record	JokerW2-2	You are a Joker and this is message 2 of wave 2	
+#Record	JokerW2-3	You are a Joker and this is message 3 of wave 2	
+#end
