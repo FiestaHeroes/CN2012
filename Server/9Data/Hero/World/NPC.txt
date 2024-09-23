@@ -490,8 +490,6 @@
 ;	#recordin	ShineNPC	TempSoul	RouCos03	7088	16054	-41	1	Merchant	Item									
 ;	#recordin	ShineNPC	TempSkill	RouCos03	7574	16040	-41	1	Merchant	Skill									
 ;	대련장 입구																		
-	#recordin	ShineNPC	FbattleGate	Rou	4215	5219	-22	0	Gate	Fbattle011									
-	#recordin	LinkTable								Fbattle011	Fbattle01	Fbattle01	923	3305	0	1	20	1	
 	#recordin	ShineNPC	FbattleGate	Eld	10223	11180	-89	0	Gate	Fbattle021									
 	#recordin	LinkTable								Fbattle021	Fbattle02	Fbattle02	3666	4363	0	21	60	1	
 	#recordin	ShineNPC	FbattleGate	Urg	4405	6439	49	0	Gate	Fbattle031									
@@ -614,7 +612,7 @@
 	#recordin	ShineNPC	IDMapLinkGate03	IDGate01	1027	1412	0	0	IDGate	IDGate011									
 	#recordin	LinkTable								IDGate011	Leviathan	Leviathan	3006	5422	0	1	105	1		
 	#recordin	ShineNPC	MapLinkGate	IDGate01	389	1420	0	0	Gate	IDGate012										
-	#recordin	LinkTable								IDGate012	Rou	Rou	4071	2879	0	1	150	1		
+	#recordin	LinkTable								IDGate012	RouCos02	RouCos02	8308	6479	0	1	150	1		
 	#recordin	ShineNPC	Raphael	IDGate01	1066	198	135	1	QuestNpc	Quest										
 ;	가시나무 동굴																			
 	#recordin	ShineNPC	KarenGate	AdlThorn01	11459	11393	225	0	Gate	Karen001										
